@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "utc": "2026-09-06T07:25:32.873999+00:00",
+  "url": "http://127.0.0.1:8765",
+  "fixture_sha256": "8dbfad5536db23888bc667ec73653e3f63128b7503acf510371fc5625e5dff02",
+  "before": {
+    "document_count": 0,
+    "time_s": 85.4194110999997,
+    "ticks": 855,
+    "revision": 0
+  },
+  "http_batch": {
+    "added": 60,
+    "existing": 0,
+    "live_revision": 1
+  },
+  "external_cli_import": {
+    "path": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\memory.sqlite3",
+    "revision": 2,
+    "added": 60,
+    "existing": 60
+  },
+  "after": {
+    "document_count": 120,
+    "time_s": 86.51447350000035,
+    "ticks": 868,
+    "revision": 2,
+    "energy": 3634.6737101114954
+  },
+  "answers": [
+    {
+      "prompt": "Hallo",
+      "answer": "Hallo! Schön, dass du da bist. Wie geht es dir heute?",
+      "id": "chat-001"
+    },
+    {
+      "prompt": "Wie geht es dir?",
+      "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+      "id": "chat-007"
+    },
+    {
+      "prompt": "Danke",
+      "answer": "Gern. Du kannst in deinem Tempo weitererzählen.",
+      "id": "chat-082"
+    },
+    {
+      "prompt": "Tschüss",
+      "answer": "Tschüss! Hab einen angenehmen Tag.",
+      "id": "chat-120"
+    }
+  ],
+  "store": {
+    "path": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\memory.sqlite3",
+    "revision": 2,
+    "document_count": 120,
+    "archive_document_count": 48,
+    "history_count": 4,
+    "relation_count": 0,
+    "canonical_format": "sqlite_text",
+    "wave_storage": "derived_in_memory",
+    "configuration": {
+      "dimensions": 4096,
+      "feature_mode": "morphology",
+      "min_coverage": 0.6,
+      "min_score": 0.18,
+      "retrieval_policy": "coverage"
+    },
+    "live_revision": 2,
+    "persistent": true
+  },
+  "server_restart_during_import": false,
+  "all_fixture_rows_verified": true,
+  "old_rows_deleted": false,
+  "existing_wave_clock_preserved": true
+}

@@ -1,0 +1,100 @@
+{
+  "primary_downloads": [
+    {
+      "path": "memory/sources/openassistant-oasst2/DATASET_CARD.md",
+      "url": "https://huggingface.co/datasets/OpenAssistant/oasst2/raw/179dd21fc55192153d94adb0e0ce8f69e222bf75/README.md",
+      "bytes": 10606
+    },
+    {
+      "path": "memory/sources/openassistant-oasst2/LICENSE.txt",
+      "url": "https://huggingface.co/datasets/OpenAssistant/oasst1/raw/fdf72ae0827c1cda404aff25b6603abec9e3399b/LICENSE",
+      "bytes": 11357
+    },
+    {
+      "path": "memory/sources/deepset-germanquad/DATASET_CARD.md",
+      "url": "https://huggingface.co/datasets/deepset/germanquad/raw/fff05ceaf2ffbe5b65c7e0c57e678f7b7e1a0581/README.md",
+      "bytes": 6493
+    }
+  ],
+  "search_queries": [
+    {
+      "path": "results\\public_corpus\\research\\search-1.json",
+      "provider": "searxng",
+      "isFallback": false,
+      "results": 0,
+      "query": "OpenAssistant oasst2 German dataset Apache 2.0 deutsch dataset download"
+    },
+    {
+      "path": "results\\public_corpus\\research\\search-10.json",
+      "provider": "searxng",
+      "isFallback": false,
+      "results": 0,
+      "query": "\"German\" \"Dolly\" \"huggingface.co/datasets\""
+    },
+    {
+      "path": "results\\public_corpus\\research\\search-11.json",
+      "provider": "searxng",
+      "isFallback": false,
+      "results": 8,
+      "query": "\"GermanQuAD\" \"dataset\""
+    },
+    {
+      "path": "results\\public_corpus\\research\\search-2.json",
+      "provider": "searxng",
+      "isFallback": false,
+      "results": 0,
+      "query": "OpenAssistant oasst1 Hugging Face German conversation dataset license"
+    },
+    {
+      "path": "results\\public_corpus\\research\\search-3.json",
+      "provider": "searxng",
+      "isFallback": false,
+      "results": 8,
+      "query": "German instruction dataset conversations licensed public German assistant dataset"
+    },
+    {
+      "path": "results\\public_corpus\\research\\search-4.json",
+      "provider": "searxng",
+      "isFallback": false,
+      "results": 0,
+      "query": "OpenAssistant oasst2"
+    },
+    {
+      "path": "results\\public_corpus\\research\\search-5.json",
+      "provider": "searxng",
+      "isFallback": false,
+      "results": 1,
+      "query": "Dolly-15k-de Deutsche Telekom dataset"
+    },
+    {
+      "path": "results\\public_corpus\\research\\search-6.json",
+      "provider": "searxng",
+      "isFallback": false,
+      "results": 8,
+      "query": "OpenAssistant Conversations Dataset German"
+    },
+    {
+      "path": "results\\public_corpus\\research\\search-7.json",
+      "provider": "searxng",
+      "isFallback": false,
+      "results": 8,
+      "query": "\"dolly\" \"deutsch\" dataset"
+    },
+    {
+      "path": "results\\public_corpus\\research\\search-8.json",
+      "provider": "searxng",
+      "isFallback": false,
+      "results": 8,
+      "query": "\"dolly-15k-de\""
+    },
+    {
+      "path": "results\\public_corpus\\research\\search-9.json",
+      "provider": "searxng",
+      "isFallback": false,
+      "results": 1,
+      "query": "\"German Dolly\""
+    }
+  ],
+  "all_provider_verified": true,
+  "search_fallback_used": false
+}

@@ -1,0 +1,1 @@
+[{"type":"directory","oid":"f21bb28a45b64bbcbf34eb2b79ef65a306c1fa23","size":0,"path":"plain_text"},{"type":"file","oid":"4093af6d09a1c9c47cf480975af7732e28c92bfe","size":959,"path":".gitattributes"}]

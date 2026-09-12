@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "corpus_version": 1,
+  "path": "memory/information/conversation_lexicon_v1.jsonl",
+  "sha256": "092dbbb0bf668bc6e5c404f1bfcc2e03b3f22c75ae2d9cff7c2b421606762f2e",
+  "records": 48,
+  "bytes": 42436,
+  "text_utf8_bytes": 2730,
+  "class_counts": {
+    "greeting": 8,
+    "farewell": 8,
+    "gratitude": 8,
+    "courtesy": 8,
+    "agreement": 8,
+    "negation": 8
+  },
+  "inventory_fixed_before_evaluation": {
+    "greeting": [
+      "Hallo",
+      "Hi",
+      "Hey",
+      "Moin",
+      "Guten Morgen",
+      "Guten Tag",
+      "Guten Abend",
+      "Grüß dich"
+    ],
+    "farewell": [
+      "Tschüss",
+      "Tschau",
+      "Ciao",
+      "Servus",
+      "Auf Wiedersehen",
+      "Bis bald",
+      "Bis später",
+      "Mach's gut"
+    ],
+    "gratitude": [
+      "Danke",
+      "Dankeschön",
+      "Besten Dank",
+      "Vielen Dank",
+      "Herzlichen Dank",
+      "Tausend Dank",
+      "Lieben Dank",
+      "Danke sehr"
+    ],
+    "courtesy": [
+      "Bitte",
+      "Bitteschön",
+      "Entschuldigung",
+      "Verzeihung",
+      "Pardon",
+      "Bitte sehr",
+      "Entschuldigen Sie",
+      "Entschuldige bitte"
+    ],
+    "agreement": [
+      "Ja",
+      "Jawohl",
+      "Genau",
+      "Einverstanden",
+      "Gern",
+      "In Ordnung",
+      "Alles klar",
+      "Das stimmt"
+    ],
+    "negation": [
+      "Nein",
+      "Nö",
+      "Nee",
+      "Keineswegs",
+      "Nicht wirklich",
+      "Auf keinen Fall",
+      "Überhaupt nicht",
+      "Ganz und gar nicht"
+    ]
+  },
+  "authored_scope": "Independent lexical membership facts, not dialogue turns or instructions selecting an answer for a prompt.",
+  "all_prompt_fields_absent": true,
+  "source_qa_pairs_used": false,
+  "evaluation_files_read": [],
+  "original_facts": {
+    "path": "memory/information/conversation_facts.jsonl",
+    "sha256": "688706468d39cc203f83cd8c2f0e4b9b8f7b65261a4469d6bcfcff3c274cea5e",
+    "unchanged": true
+  },
+  "legacy_text_overlap_audit": {
+    "database": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\memory.sqlite3",
+    "snapshot_revision": 6,
+    "read_only": true,
+    "legacy_rows_compared": 12048,
+    "unique_legacy_texts": 10494,
+    "comparison": "Whitespace-normalized full new record text and declarative body against complete legacy record texts; no fuzzy overlap or token ban.",
+    "matches": [],
+    "limitation": "Common German words can occur in both corpora. This check excludes direct reuse of old complete answer texts, not shared vocabulary."
+  },
+  "editorial_review": {
+    "every_record_is_a_lexical_membership_statement": true,
+    "contains_prompt_conditions_or_response_instructions": false,
+    "contains_turn_pairs_or_chat_role_markup": false,
+    "category_is_not_exclusive": true,
+    "note": "Expressions such as Servus or Bitte can have additional contextual meanings; the lexicon does not assert a unique pragmatic function."
+  },
+  "database_changed": false,
+  "prepublication_integrity_note": "Source tests caught shell-pipe loss of non-ASCII letters during preparation. Original intended spellings were restored before publication, then hashes and the read-only legacy-text comparison were rerun."
+}

@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:8765/",
+  "utc": "2026-09-06T06:53:45.237395+00:00",
+  "document_count": [
+    8,
+    8
+  ],
+  "ticks": [
+    800,
+    821
+  ],
+  "time_s": [
+    79.90950080000039,
+    82.02209140000014
+  ],
+  "energies": [
+    241.9750249903881,
+    241.97502499038828
+  ],
+  "energy_absolute_difference": 1.7053025658242404e-13,
+  "wave_changed": true,
+  "prompt": "Was ist Interferenz?",
+  "answer": "Interferenz bezeichnet die Überlagerung von Wellen. Gleiche Phasen verstärken sich; entgegengesetzte Phasen können sich auslöschen.",
+  "sources": [
+    "FreqAI-Demotext"
+  ],
+  "checks": [
+    "Echte UI beantwortet Was ist Interferenz? mit Überlagerung und Quellen",
+    "Beide Snapshots enthalten unverändert 8 Demo-Texte",
+    "Ticks und Simulationszeit steigen ohne Datenänderung",
+    "Auslenkung ändert sich während der Quadraturnorm konstant bleibt",
+    "Keine JavaScript-Fehler; Server läuft nach Prüfung weiter"
+  ],
+  "page_errors": [],
+  "screenshot": "live-demo.png",
+  "documents_mutated": false,
+  "server_stopped": false
+}

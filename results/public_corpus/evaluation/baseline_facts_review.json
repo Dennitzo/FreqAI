@@ -1,0 +1,163 @@
+{
+  "reviewer": "Independent AI evaluation agent; not a human study",
+  "run_path": "results/public_corpus/evaluation/baseline_facts.json",
+  "run_sha256": "54fb6bfa6a1a9a2451f94615b4f8e3f469b9d2b8999ec58bd3e4603fe62b9bea",
+  "decisions": [
+    {
+      "id": 36431,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 38853,
+      "factually_correct_against_source": false,
+      "reason": "Conversational answer is unrelated to the factual question and contains no reference fact."
+    },
+    {
+      "id": 37104,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 40487,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 37407,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 36597,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 36539,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 38059,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 37442,
+      "factually_correct_against_source": false,
+      "reason": "Conversational answer is unrelated to the factual question and contains no reference fact."
+    },
+    {
+      "id": 37689,
+      "factually_correct_against_source": false,
+      "reason": "Conversational answer is unrelated to the factual question and contains no reference fact."
+    },
+    {
+      "id": 38590,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 37707,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 38157,
+      "factually_correct_against_source": false,
+      "reason": "Conversational answer is unrelated to the factual question and contains no reference fact."
+    },
+    {
+      "id": 44115,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 37208,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 41047,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 36667,
+      "factually_correct_against_source": false,
+      "reason": "Conversational answer is unrelated to the factual question and contains no reference fact."
+    },
+    {
+      "id": 41467,
+      "factually_correct_against_source": false,
+      "reason": "Conversational answer is unrelated to the factual question and contains no reference fact."
+    },
+    {
+      "id": 38115,
+      "factually_correct_against_source": false,
+      "reason": "Conversational answer is unrelated to the factual question and contains no reference fact."
+    },
+    {
+      "id": 40515,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 36558,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 37180,
+      "factually_correct_against_source": false,
+      "reason": "Conversational answer is unrelated to the factual question and contains no reference fact."
+    },
+    {
+      "id": 40421,
+      "factually_correct_against_source": false,
+      "reason": "Conversational answer is unrelated to the factual question and contains no reference fact."
+    },
+    {
+      "id": 38331,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 38791,
+      "factually_correct_against_source": false,
+      "reason": "Conversational answer is unrelated to the factual question and contains no reference fact."
+    },
+    {
+      "id": 41390,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 37688,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 41503,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 36639,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 37692,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    }
+  ],
+  "summary": {
+    "correct": 0,
+    "questions": 30,
+    "empty_answers": 20
+  },
+  "reference_caveat": "Several test records contain mutually inconsistent answer annotations (44115, 37208, 37180); factual review must inspect source context rather than accept every string as correct. This baseline contains none of the answers anyway."
+}

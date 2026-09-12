@@ -1,0 +1,87 @@
+{
+  "documents": 20093,
+  "modal_count": 10087577,
+  "display_points": 256,
+  "precision": "float64/complex128",
+  "snapshot_cpu": {
+    "median_s": 0.8519271999975899,
+    "samples_s": [
+      0.9379375999997137,
+      0.9027252999985649,
+      0.8378431000019191,
+      0.8394351000024471,
+      0.8519271999975899
+    ]
+  },
+  "snapshot_cuda_first_s": 0.23355910000100266,
+  "snapshot_cuda": {
+    "median_s": 0.03214920000027632,
+    "samples_s": [
+      0.03369870000096853,
+      0.03011559999868041,
+      0.03287049999926239,
+      0.03214920000027632,
+      0.028444800002034754
+    ]
+  },
+  "snapshot_speedup": 26.499172607413794,
+  "snapshot_max_abs_error": 5.895284260759581e-14,
+  "energy_relative_error": 0.0,
+  "fft_shape": [
+    2048,
+    4096
+  ],
+  "fft_cpu": {
+    "median_s": 0.09059139999953914,
+    "samples_s": [
+      0.09059139999953914,
+      0.08276760000080685,
+      0.08828559999892605,
+      0.10034690000247792,
+      0.09263329999885173
+    ]
+  },
+  "fft_cuda": {
+    "median_s": 0.10162380000110716,
+    "samples_s": [
+      0.0948924000003899,
+      0.10162380000110716,
+      0.10648439999931725,
+      0.10113759999876493,
+      0.12291019999975106
+    ]
+  },
+  "fft_max_abs_error": 2.7755575615628914e-15,
+  "compute": {
+    "requested_backend": "cuda",
+    "cuda_probed": true,
+    "cuda_available": true,
+    "cuda_devices": [
+      {
+        "id": 0,
+        "name": "Quadro RTX 8000",
+        "total_memory_bytes": 51539279872
+      },
+      {
+        "id": 1,
+        "name": "Quadro RTX 8000",
+        "total_memory_bytes": 51539279872
+      }
+    ],
+    "fallback_reason": null,
+    "last_backend": "cuda",
+    "precision": "float64/complex128",
+    "cpu_workers": 32,
+    "cuda_min_elements": 262144,
+    "completed_operations": {
+      "cpu_fft": 7,
+      "cpu_wave_snapshot": 6,
+      "cuda_wave_snapshot": 6,
+      "cuda_fft": 6
+    },
+    "device_completed_operations": {
+      "0": 12,
+      "1": 12
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "corpus_sha256": "8473462b187b219f7270db292e0fdc95ee82245ad047efb21e69b4eb16c77497",
+  "unpaired_records": 20000,
+  "codec_checks": 80000,
+  "all_exact": true,
+  "new_text_metadata_modes": 10808954,
+  "codec_seconds": 8.954641399999673,
+  "scope": "Reversible bytes and numerical wave throughput, not language quality.",
+  "combined_records": 32000,
+  "wave_build_seconds": 46.58228769999914,
+  "frames": [
+    {
+      "time_s": 0.0,
+      "seconds": 1.0751434999983758,
+      "energy": 2483464.1330872737,
+      "modal_count": 16773598,
+      "key_mode_count": 131072000
+    },
+    {
+      "time_s": 13.75,
+      "seconds": 1.0496325999993132,
+      "energy": 2483464.1330872737,
+      "modal_count": 16773598,
+      "key_mode_count": 131072000
+    },
+    {
+      "time_s": 86400.125,
+      "seconds": 1.0457239000024856,
+      "energy": 2483464.1330872737,
+      "modal_count": 16773598,
+      "key_mode_count": 131072000
+    }
+  ],
+  "median_snapshot_seconds": 1.0496325999993132
+}

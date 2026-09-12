@@ -1,0 +1,66 @@
+{
+  "request": {
+    "query": "Tony Plate 1995 Holographic reduced representations circular convolution sequences Fourier",
+    "maximumResults": 8,
+    "language": "de-DE"
+  },
+  "http_status": 200,
+  "retrieved_utc": "2026-09-06T08:23:18.348905+00:00",
+  "response": {
+    "query": "Tony Plate 1995 Holographic reduced representations circular convolution sequences Fourier",
+    "results": [
+      {
+        "title": "Veranstaltungsarchiv - Institut für Mathematik Potsdam",
+        "url": "https://www.math.uni-potsdam.de/institut/veranstaltungen/archiv",
+        "snippet": "An LLM is a conditional distribution over token sequences, not a function, so a single generation is one sample and most of what is called prompt engineering is ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-aaTCw6KXjbozo8_VI54UoY06t7uIziRDjdfYLKibte3KkUaqxOI1aSLa"
+      },
+      {
+        "title": "DAGA 2021 - 47. Jahrestagung für Akustik",
+        "url": "https://pub.dega-akustik.de/DAGA_2021/data/bytitle.html",
+        "snippet": "18.08.2021 ... Their speech recognition performance in noise can be further reduced due to a degradation of the internal sound representation. In common ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQCo-CynSaV3Ca4kmkPFb1A8NM6h_kUt-r8JQLygGrLEQpqXYLONRGVqrGP"
+      },
+      {
+        "title": "Institutionen der Universität Bayreuth Fakultät für Mathematik, Physik ...",
+        "url": "https://eref.uni-bayreuth.de/view/divisions/110000.type.html",
+        "snippet": "Grüne, Lars ; Sperl, Mario ; Chatterjee, Debasish: Representation of practical nonsmooth control Lyapunov functions by piecewise affine functions and neural ...",
+        "source": "google cse",
+        "thumbnailUrl": ""
+      },
+      {
+        "title": "Browse by Item type - heiDOK",
+        "url": "https://archiv.ub.uni-heidelberg.de/volltextserver/view/type/doctoralThesis.html",
+        "snippet": "... Reduced Reaction Mechanisms : A Case for Diesel Engine. [Dissertation]. Agustar, Hani Kartini Binti (2018) Aminoquinolines susceptibility of Plasmodium ...",
+        "source": "google cse",
+        "thumbnailUrl": ""
+      },
+      {
+        "title": "Einträge von 1997 - TUbiblio - TU Darmstadt",
+        "url": "https://tubiblio.ulb.tu-darmstadt.de/view/year/1997.html",
+        "snippet": "Johannesburg, South-Africa (29.08.1995-01.09.1995) doi: 10.1016/S0263-4368(96)00046-7. Konferenzveröffentlichung, Bibliographie. Drossel, Barbara (1997)",
+        "source": "google cse",
+        "thumbnailUrl": ""
+      },
+      {
+        "title": "Institutionen der Universität Bayreuth Fakultät für Mathematik, Physik ...",
+        "url": "https://eref.uni-bayreuth.de/view/divisions/110000.html",
+        "snippet": "Deciphering the commensurately modulated monoclinic phase of Rb₂ZnCl₄ at low temperatures. In: Journal of Solid State Chemistry. Bd. 345 (2025) . - 125226. DOI: ...",
+        "source": "google cse",
+        "thumbnailUrl": ""
+      },
+      {
+        "title": "Institutionen der Universität Bayreuth Fakultät für Mathematik, Physik ...",
+        "url": "https://eref.uni-bayreuth.de/view/divisions/110000.person_view_name.html",
+        "snippet": "Akbar, Fariia Iasmin ; Aslandukova, Alena ; Aslandukov, Andrii ; Yin, Yuqing ; Bykova, Elena ; Bykov, Maxim ; Laniel, Dominique ; Milkin, Pavel ; Fedotenko, ...",
+        "source": "google cse",
+        "thumbnailUrl": ""
+      }
+    ],
+    "provider": "searxng",
+    "isFallback": false,
+    "retrievedAt": "2026-09-06T08:23:18.3476084+00:00"
+  }
+}

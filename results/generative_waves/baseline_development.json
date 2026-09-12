@@ -1,0 +1,2885 @@
+{
+  "created_utc": "2026-09-06T08:33:33.393142+00:00",
+  "split": "development",
+  "baseline": true,
+  "manifest": {
+    "configuration": {
+      "max_tokens": 40,
+      "seed": 17
+    },
+    "files": {
+      "freqai/semantics.py": "51924df70352cc896015f17b3679da3e0ae0b34e0030a00b6f4d0ad44c7bca46",
+      "freqai/features.py": "c48eb11bff823f8329bdbf1509426f1928e19c213793145e30c1ef4abe234535",
+      "freqai/memory.py": "baf20b7039036112c3bf1e503f88a77a7f740e104926470210b80263ee49ea73",
+      "freqai/codec.py": "1741858964d007a8baa1173cb559ac896d07bb4d8eb7d7be840c12c1a5acdc03"
+    },
+    "paired_corpus_sha256": "8dbfad5536db23888bc667ec73653e3f63128b7503acf510371fc5625e5dff02",
+    "unpaired_corpus_sha256": "9827b7339f85fdae01f996b3b39a0cfc025c2a4b7d3400722f5985cbdc2377ef",
+    "evaluation_sha256": "d0b7662bf21810f90d2c29f9d3bd2174615e3bdec273484cf97e2048c2cb1f88",
+    "runner_sha256": "312cb2c0635c77f044da47665fe58f46d84c37e080fcd776cfe5ffb6d288a7e6"
+  },
+  "summary": {
+    "turns": 30,
+    "surface_form_ok": 30,
+    "contains_rubric_hint": 16,
+    "proxy_pass": 16,
+    "explicit_contradictions": 0,
+    "new_complete_texts": 27,
+    "texts_with_new_sentences": 27,
+    "semantic_pass": "pending independent review"
+  },
+  "rows": [
+    {
+      "id": "gw-dev-01",
+      "scenario": "gw-dev-welcome",
+      "split": "development",
+      "prompt": "Guten Tag! Ich hätte Lust auf ein kleines Gespräch.",
+      "rubric": "Acknowledge the greeting and invite conversation.",
+      "topics": [
+        "greeting",
+        "conversation"
+      ],
+      "answer": "Guten Abend! Gern. Was beschäftigt dich gerade oder worüber möchtest du sprechen?",
+      "result": {
+        "answer": "Guten Abend! Gern. Was beschäftigt dich gerade oder worüber möchtest du sprechen?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-003",
+            "text": "Guten Abend! Möchtest du von deinem Tag erzählen oder einfach ein bisschen plaudern?",
+            "source": "Alltagsgespräch / Begrüßung",
+            "score": 0.3299999999999997,
+            "semantic_score": 1.0,
+            "interference": 2.0,
+            "matched_prompt": "Guten Abend, mein Tag ist jetzt vorbei."
+          }
+        ],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "greeting",
+              "target": "user",
+              "value": "",
+              "topic": "",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Guten Tag",
+              "subject": "",
+              "predicate": ""
+            },
+            {
+              "kind": "topic_statement",
+              "target": "user",
+              "value": "ich hätte lust auf ein kleines gespräch",
+              "topic": "conversation",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Ich hätte Lust auf ein kleines Gespräch",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "greeting",
+          "talk"
+        ],
+        "response_parts": [
+          {
+            "act": "greeting",
+            "source": "chat-003"
+          },
+          {
+            "act": "talk",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 3,
+          "mode_count": 84,
+          "source_integrity_checked": true,
+          "output_sha256": "70238e80930975437905f50d54e08a6238f5723ef80ab3986a24d2dace474e18",
+          "max_byte_roundoff": 7.105427357601002e-14,
+          "sources": [
+            {
+              "source": "memory:chat-003",
+              "start": 0,
+              "stop": 12,
+              "source_sha256": "49db2f2f559b65b6961c9af764d7b6d067e533824d707205f0c9eae162e7cd86"
+            },
+            {
+              "source": "grammar:space",
+              "start": 0,
+              "stop": 1,
+              "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
+            },
+            {
+              "source": "grammar:talk",
+              "start": 0,
+              "stop": 71,
+              "source_sha256": "ec837b1b0167cf43f999ed84e3c9534ff289eafcc059b4be6ce5c7de1dee502f"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": null,
+      "context_after": {
+        "turn_count": 1,
+        "last_topic": "conversation",
+        "last_question_topic": "conversation"
+      },
+      "elapsed_s": 0.026375299999926938,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 3,
+        "new_sentence_count": 1,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-02",
+      "scenario": "gw-dev-welcome",
+      "split": "development",
+      "prompt": "Mein Tag war angenehm, und deiner?",
+      "rubric": "Acknowledge a pleasant day and respond without inventing the program's lived day.",
+      "topics": [
+        "positive",
+        "assistant_status"
+      ],
+      "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": true,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "question",
+              "target": "user",
+              "value": "deiner",
+              "topic": "",
+              "negated": false,
+              "confidence": 0.3,
+              "text": "und deiner?",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [
+            "Mein Tag war angenehm",
+            "und deiner?"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 84,
+          "source_integrity_checked": true,
+          "output_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 1,
+        "last_topic": "conversation",
+        "last_question_topic": "conversation"
+      },
+      "context_after": {
+        "turn_count": 2
+      },
+      "elapsed_s": 0.00443480000103591,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": false,
+        "forbidden_text_patterns": [],
+        "proxy_pass": false,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-03",
+      "scenario": "gw-dev-welcome",
+      "split": "development",
+      "prompt": "Danke, das war eine nette Begrüßung.",
+      "rubric": "Respond naturally to thanks, with no unrelated advice.",
+      "topics": [
+        "thanks"
+      ],
+      "answer": "Gern. Du kannst in deinem Tempo weitererzählen. Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Gern. Du kannst in deinem Tempo weitererzählen. Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-082",
+            "text": "Gern. Du kannst in deinem Tempo weitererzählen.",
+            "source": "Alltagsgespräch / Dank und Rückmeldung",
+            "score": 0.3069306833309139,
+            "semantic_score": 1.0,
+            "interference": 2.0,
+            "matched_prompt": "Danke, dass du mir zuhörst."
+          }
+        ],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "thanks",
+              "target": "user",
+              "value": "",
+              "topic": "",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Danke",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [
+            "das war eine nette Begrüßung"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "thanks",
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "thanks",
+            "source": "chat-082"
+          },
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 3,
+          "mode_count": 133,
+          "source_integrity_checked": true,
+          "output_sha256": "11a7258f819d71c0a358501473d9621a26b526a0aa0be0c072efa45096a0031f",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "memory:chat-082",
+              "start": 0,
+              "stop": 48,
+              "source_sha256": "efc2fa1b9402de4f50ba85b76070ff08e58c8f2354d84dbb5e034fe92abff77d"
+            },
+            {
+              "source": "grammar:space",
+              "start": 0,
+              "stop": 1,
+              "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
+            },
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 2
+      },
+      "context_after": {
+        "turn_count": 3
+      },
+      "elapsed_s": 0.002889299999878858,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 4,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-04",
+      "scenario": "gw-dev-energy",
+      "split": "development",
+      "prompt": "Nach dem langen Tag bin ich ziemlich erschöpft.",
+      "rubric": "Acknowledge fatigue or suggest a gentle break without medical claims.",
+      "topics": [
+        "tired"
+      ],
+      "answer": "Dann wäre vielleicht ein ruhiger Moment angenehm. War dein Tag besonders anstrengend?",
+      "result": {
+        "answer": "Dann wäre vielleicht ein ruhiger Moment angenehm. War dein Tag besonders anstrengend?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-012",
+            "text": "Dann wäre vielleicht ein ruhiger Moment angenehm. War dein Tag besonders anstrengend?",
+            "source": "Alltagsgespräch / Befinden",
+            "score": 0.4448089402483899,
+            "semantic_score": 1.0,
+            "interference": 2.0,
+            "matched_prompt": "Ich bin gerade ziemlich müde."
+          }
+        ],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "mood_statement",
+              "target": "user",
+              "value": "tired",
+              "topic": "wellbeing",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Nach dem langen Tag bin ich ziemlich erschöpft",
+              "subject": "",
+              "predicate": "tired"
+            }
+          ],
+          "unsupported": [],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "user_mood"
+        ],
+        "response_parts": [
+          {
+            "act": "user_mood",
+            "source": "chat-012"
+          }
+        ],
+        "generated": false,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 86,
+          "source_integrity_checked": true,
+          "output_sha256": "ff6e48f7ca7cc923482343ae8c0cdba4b838df276f36c9eb852df8eb057e81df",
+          "max_byte_roundoff": 5.684341886080802e-14,
+          "sources": [
+            {
+              "source": "memory:chat-012",
+              "start": 0,
+              "stop": 86,
+              "source_sha256": "ff6e48f7ca7cc923482343ae8c0cdba4b838df276f36c9eb852df8eb057e81df"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": null,
+      "context_after": {
+        "turn_count": 1,
+        "last_topic": "wellbeing",
+        "last_question_topic": "wellbeing"
+      },
+      "elapsed_s": 0.0036731000000145286,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": false,
+        "sentence_count": 2,
+        "new_sentence_count": 0,
+        "all_sentences_already_in_corpus": true,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-05",
+      "scenario": "gw-dev-energy",
+      "split": "development",
+      "prompt": "Jetzt bin ich aber nicht mehr müde.",
+      "rubric": "Respect that tiredness has ended; do not assert the user is still tired.",
+      "topics": [
+        "not_tired"
+      ],
+      "answer": "Du sagst, dass du dich nicht müde fühlst. Magst du mehr darüber erzählen?",
+      "result": {
+        "answer": "Du sagst, dass du dich nicht müde fühlst. Magst du mehr darüber erzählen?",
+        "abstained": false,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "mood_statement",
+              "target": "user",
+              "value": "neutral",
+              "topic": "wellbeing",
+              "negated": true,
+              "confidence": 0.85,
+              "text": "Jetzt bin ich aber nicht mehr müde",
+              "subject": "",
+              "predicate": "tired"
+            }
+          ],
+          "unsupported": [],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "user_mood"
+        ],
+        "response_parts": [
+          {
+            "act": "user_mood",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 4,
+          "mode_count": 77,
+          "source_integrity_checked": true,
+          "output_sha256": "8f27011119695cce6d17a394f1b0c917ff68202bd9c7928249e380e9b2782734",
+          "max_byte_roundoff": 7.105427357601002e-14,
+          "sources": [
+            {
+              "source": "grammar:self_state_prefix",
+              "start": 0,
+              "stop": 23,
+              "source_sha256": "1d0b39946aded3c913eab07f7639a8613a55581597c254b44c3e8e48de375f7d"
+            },
+            {
+              "source": "grammar:not",
+              "start": 0,
+              "stop": 6,
+              "source_sha256": "73575fc0540158c94a0dc3a3baa1479426b6471d1da1dc01961ea206858e132f"
+            },
+            {
+              "source": "input:prompt",
+              "start": 30,
+              "stop": 35,
+              "source_sha256": "c658c24bb121934b54d4256a85144c4006e59a1444d3c3868555ceeb74d86cf2"
+            },
+            {
+              "source": "grammar:self_state_suffix",
+              "start": 0,
+              "stop": 43,
+              "source_sha256": "93c0fc3868ddedbae8ede07fd101c5bc17153bc533d61cce9692caac457f4821"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 1,
+        "last_topic": "wellbeing",
+        "last_question_topic": "wellbeing"
+      },
+      "context_after": {
+        "turn_count": 2,
+        "last_topic": "wellbeing",
+        "last_question_topic": "wellbeing"
+      },
+      "elapsed_s": 0.0033477999986644136,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-06",
+      "scenario": "gw-dev-energy",
+      "split": "development",
+      "prompt": "Ich würde heute gern noch etwas draußen machen.",
+      "rubric": "Discuss an outdoor activity or ask what the user would enjoy.",
+      "topics": [
+        "leisure"
+      ],
+      "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": true,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [],
+          "unsupported": [
+            "Ich würde heute gern noch etwas draußen machen"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 84,
+          "source_integrity_checked": true,
+          "output_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 2,
+        "last_topic": "wellbeing",
+        "last_question_topic": "wellbeing"
+      },
+      "context_after": {
+        "turn_count": 3,
+        "last_topic": "wellbeing",
+        "last_question_topic": "wellbeing"
+      },
+      "elapsed_s": 0.006116700000347919,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": false,
+        "forbidden_text_patterns": [],
+        "proxy_pass": false,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-07",
+      "scenario": "gw-dev-music",
+      "split": "development",
+      "prompt": "Abends höre ich am liebsten ruhige Musik.",
+      "rubric": "Engage with calm music, not food or work.",
+      "topics": [
+        "music"
+      ],
+      "answer": "Was beschäftigt dich beim Thema Musik?",
+      "result": {
+        "answer": "Was beschäftigt dich beim Thema Musik?",
+        "abstained": false,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "topic_statement",
+              "target": "user",
+              "value": "abends höre ich am liebsten ruhige musik",
+              "topic": "music",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Abends höre ich am liebsten ruhige Musik",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "topic"
+        ],
+        "response_parts": [
+          {
+            "act": "topic",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 3,
+          "mode_count": 39,
+          "source_integrity_checked": true,
+          "output_sha256": "637d788056bba20a9af47b49bba1572330138f9c81ddca132cb8435fe6819f79",
+          "max_byte_roundoff": 8.526512829121202e-14,
+          "sources": [
+            {
+              "source": "grammar:topic_prefix",
+              "start": 0,
+              "stop": 33,
+              "source_sha256": "39a968fc76f992d7ced2c1703484f6f1f0255dd267b5d91963e55066936dd5fd"
+            },
+            {
+              "source": "topic:music",
+              "start": 0,
+              "stop": 5,
+              "source_sha256": "8ff93160579529e4487f15db8c8e8a1996ba7e1212058e823bcb342038695b06"
+            },
+            {
+              "source": "grammar:topic_suffix",
+              "start": 0,
+              "stop": 1,
+              "source_sha256": "8a8de823d5ed3e12746a62ef169bcf372be0ca44f0a1236abc35df05d96928e1"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": null,
+      "context_after": {
+        "turn_count": 1,
+        "last_topic": "music",
+        "last_question_topic": "music"
+      },
+      "elapsed_s": 0.003080799999224837,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 1,
+        "new_sentence_count": 1,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-08",
+      "scenario": "gw-dev-music",
+      "split": "development",
+      "prompt": "Gesang mag ich dabei nicht besonders.",
+      "rubric": "Respect the stated dislike of vocals and retain the music topic.",
+      "topics": [
+        "music",
+        "negation"
+      ],
+      "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": true,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [],
+          "unsupported": [
+            "Gesang mag ich dabei nicht besonders"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 84,
+          "source_integrity_checked": true,
+          "output_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 1,
+        "last_topic": "music",
+        "last_question_topic": "music"
+      },
+      "context_after": {
+        "turn_count": 2,
+        "last_topic": "music",
+        "last_question_topic": "music"
+      },
+      "elapsed_s": 0.005501100000401493,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-09",
+      "scenario": "gw-dev-music",
+      "split": "development",
+      "prompt": "Und was hörst du selbst gerne?",
+      "rubric": "Address the question while avoiding invented personal listening habits.",
+      "topics": [
+        "music",
+        "assistant_status"
+      ],
+      "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": true,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "question",
+              "target": "assistant",
+              "value": "was hörst du selbst gerne",
+              "topic": "",
+              "negated": false,
+              "confidence": 0.3,
+              "text": "Und was hörst du selbst gerne?",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [
+            "Und was hörst du selbst gerne?"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 84,
+          "source_integrity_checked": true,
+          "output_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 2,
+        "last_topic": "music",
+        "last_question_topic": "music"
+      },
+      "context_after": {
+        "turn_count": 3
+      },
+      "elapsed_s": 0.004037400000015623,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": false,
+        "forbidden_text_patterns": [],
+        "proxy_pass": false,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-10",
+      "scenario": "gw-dev-food",
+      "split": "development",
+      "prompt": "Ich habe Hunger und möchte etwas Einfaches kochen.",
+      "rubric": "Discuss a simple meal or ask which ingredients are available.",
+      "topics": [
+        "food"
+      ],
+      "answer": "Was beschäftigt dich beim Thema Essen und Kochen?",
+      "result": {
+        "answer": "Was beschäftigt dich beim Thema Essen und Kochen?",
+        "abstained": false,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "topic_statement",
+              "target": "user",
+              "value": "ich habe hunger und möchte etwas einfaches kochen",
+              "topic": "food",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Ich habe Hunger und möchte etwas Einfaches kochen",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "topic"
+        ],
+        "response_parts": [
+          {
+            "act": "topic",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 3,
+          "mode_count": 50,
+          "source_integrity_checked": true,
+          "output_sha256": "a587087a80e022e4da5cdeb926dcba0d95427c2e531c52e20f7a8e898f709cfd",
+          "max_byte_roundoff": 2.842170943040401e-14,
+          "sources": [
+            {
+              "source": "grammar:topic_prefix",
+              "start": 0,
+              "stop": 33,
+              "source_sha256": "39a968fc76f992d7ced2c1703484f6f1f0255dd267b5d91963e55066936dd5fd"
+            },
+            {
+              "source": "topic:food",
+              "start": 0,
+              "stop": 16,
+              "source_sha256": "4c268d49b7ba9a04d38f399736bb24f96aa55495fba0f994192975edd2c241f7"
+            },
+            {
+              "source": "grammar:topic_suffix",
+              "start": 0,
+              "stop": 1,
+              "source_sha256": "8a8de823d5ed3e12746a62ef169bcf372be0ca44f0a1236abc35df05d96928e1"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": null,
+      "context_after": {
+        "turn_count": 1,
+        "last_topic": "food",
+        "last_question_topic": "food"
+      },
+      "elapsed_s": 0.002989299999171635,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 1,
+        "new_sentence_count": 1,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-11",
+      "scenario": "gw-dev-food",
+      "split": "development",
+      "prompt": "Fleisch möchte ich dafür nicht verwenden.",
+      "rubric": "Respect the meat-free preference; do not suggest meat as a desired ingredient.",
+      "topics": [
+        "food",
+        "negation"
+      ],
+      "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": true,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [],
+          "unsupported": [
+            "Fleisch möchte ich dafür nicht verwenden"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 84,
+          "source_integrity_checked": true,
+          "output_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 1,
+        "last_topic": "food",
+        "last_question_topic": "food"
+      },
+      "context_after": {
+        "turn_count": 2,
+        "last_topic": "food",
+        "last_question_topic": "food"
+      },
+      "elapsed_s": 0.005405399999290239,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": false,
+        "forbidden_text_patterns": [],
+        "proxy_pass": false,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-12",
+      "scenario": "gw-dev-food",
+      "split": "development",
+      "prompt": "Nach dem Essen würde ich gern noch plaudern.",
+      "rubric": "Accept continued conversation without issuing a farewell.",
+      "topics": [
+        "conversation"
+      ],
+      "answer": "Was beschäftigt dich beim Thema Essen und Kochen?",
+      "result": {
+        "answer": "Was beschäftigt dich beim Thema Essen und Kochen?",
+        "abstained": false,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "topic_statement",
+              "target": "user",
+              "value": "nach dem essen würde ich gern noch plaudern",
+              "topic": "food",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Nach dem Essen würde ich gern noch plaudern",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "topic"
+        ],
+        "response_parts": [
+          {
+            "act": "topic",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 3,
+          "mode_count": 50,
+          "source_integrity_checked": true,
+          "output_sha256": "a587087a80e022e4da5cdeb926dcba0d95427c2e531c52e20f7a8e898f709cfd",
+          "max_byte_roundoff": 2.842170943040401e-14,
+          "sources": [
+            {
+              "source": "grammar:topic_prefix",
+              "start": 0,
+              "stop": 33,
+              "source_sha256": "39a968fc76f992d7ced2c1703484f6f1f0255dd267b5d91963e55066936dd5fd"
+            },
+            {
+              "source": "topic:food",
+              "start": 0,
+              "stop": 16,
+              "source_sha256": "4c268d49b7ba9a04d38f399736bb24f96aa55495fba0f994192975edd2c241f7"
+            },
+            {
+              "source": "grammar:topic_suffix",
+              "start": 0,
+              "stop": 1,
+              "source_sha256": "8a8de823d5ed3e12746a62ef169bcf372be0ca44f0a1236abc35df05d96928e1"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 2,
+        "last_topic": "food",
+        "last_question_topic": "food"
+      },
+      "context_after": {
+        "turn_count": 3,
+        "last_topic": "food",
+        "last_question_topic": "food"
+      },
+      "elapsed_s": 0.002950399999463116,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": false,
+        "forbidden_text_patterns": [],
+        "proxy_pass": false,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 1,
+        "new_sentence_count": 1,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-13",
+      "scenario": "gw-dev-work",
+      "split": "development",
+      "prompt": "Bei der Arbeit war heute ziemlich viel los.",
+      "rubric": "Acknowledge a busy workday or invite the user to describe it.",
+      "topics": [
+        "work"
+      ],
+      "answer": "Was beschäftigt dich beim Thema Arbeit?",
+      "result": {
+        "answer": "Was beschäftigt dich beim Thema Arbeit?",
+        "abstained": false,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "topic_statement",
+              "target": "user",
+              "value": "bei der arbeit war heute ziemlich viel los",
+              "topic": "work",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Bei der Arbeit war heute ziemlich viel los",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "topic"
+        ],
+        "response_parts": [
+          {
+            "act": "topic",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 3,
+          "mode_count": 40,
+          "source_integrity_checked": true,
+          "output_sha256": "554d651af697f136bae07dd0b2dbd5fb37a0d1aed72f258223964d807617214d",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "grammar:topic_prefix",
+              "start": 0,
+              "stop": 33,
+              "source_sha256": "39a968fc76f992d7ced2c1703484f6f1f0255dd267b5d91963e55066936dd5fd"
+            },
+            {
+              "source": "topic:work",
+              "start": 0,
+              "stop": 6,
+              "source_sha256": "3f0828ad8bfa9913795327ac6b165a6b7c257eac85fe5769bba4e13930b378b2"
+            },
+            {
+              "source": "grammar:topic_suffix",
+              "start": 0,
+              "stop": 1,
+              "source_sha256": "8a8de823d5ed3e12746a62ef169bcf372be0ca44f0a1236abc35df05d96928e1"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": null,
+      "context_after": {
+        "turn_count": 1,
+        "last_topic": "work",
+        "last_question_topic": "work"
+      },
+      "elapsed_s": 0.002858800000467454,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 1,
+        "new_sentence_count": 1,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-14",
+      "scenario": "gw-dev-work",
+      "split": "development",
+      "prompt": "Trotzdem bin ich mit dem Ergebnis zufrieden.",
+      "rubric": "Recognize satisfaction rather than assume distress.",
+      "topics": [
+        "positive"
+      ],
+      "answer": "Das ist ein schöner Moment. Was hat zu dieser Zufriedenheit beigetragen?",
+      "result": {
+        "answer": "Das ist ein schöner Moment. Was hat zu dieser Zufriedenheit beigetragen?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-016",
+            "text": "Das ist ein schöner Moment. Was hat zu dieser Zufriedenheit beigetragen?",
+            "source": "Alltagsgespräch / Befinden",
+            "score": 0.4913447302488788,
+            "semantic_score": 0.9999999999999999,
+            "interference": 1.9999999999999998,
+            "matched_prompt": "Gerade bin ich ganz zufrieden mit mir."
+          }
+        ],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "mood_statement",
+              "target": "user",
+              "value": "positive",
+              "topic": "wellbeing",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Trotzdem bin ich mit dem Ergebnis zufrieden",
+              "subject": "",
+              "predicate": "positive"
+            }
+          ],
+          "unsupported": [],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "user_mood"
+        ],
+        "response_parts": [
+          {
+            "act": "user_mood",
+            "source": "chat-016"
+          }
+        ],
+        "generated": false,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 73,
+          "source_integrity_checked": true,
+          "output_sha256": "005cd2581be2ccd3da27ec50fa922fafb306937bb4df19c884ea4e670bf007d8",
+          "max_byte_roundoff": 5.684341886080802e-14,
+          "sources": [
+            {
+              "source": "memory:chat-016",
+              "start": 0,
+              "stop": 73,
+              "source_sha256": "005cd2581be2ccd3da27ec50fa922fafb306937bb4df19c884ea4e670bf007d8"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 1,
+        "last_topic": "work",
+        "last_question_topic": "work"
+      },
+      "context_after": {
+        "turn_count": 2,
+        "last_topic": "wellbeing",
+        "last_question_topic": "wellbeing"
+      },
+      "elapsed_s": 0.0026966000004904345,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": false,
+        "sentence_count": 2,
+        "new_sentence_count": 0,
+        "all_sentences_already_in_corpus": true,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-15",
+      "scenario": "gw-dev-work",
+      "split": "development",
+      "prompt": "Für morgen wünsche ich mir einen ruhigeren Start.",
+      "rubric": "Discuss a calmer start or ask what would help; do not predict actual events.",
+      "topics": [
+        "work",
+        "calm"
+      ],
+      "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": true,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [],
+          "unsupported": [
+            "Für morgen wünsche ich mir einen ruhigeren Start"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 84,
+          "source_integrity_checked": true,
+          "output_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 2,
+        "last_topic": "wellbeing",
+        "last_question_topic": "wellbeing"
+      },
+      "context_after": {
+        "turn_count": 3,
+        "last_topic": "wellbeing",
+        "last_question_topic": "wellbeing"
+      },
+      "elapsed_s": 0.00548730000082287,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": false,
+        "forbidden_text_patterns": [],
+        "proxy_pass": false,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-16",
+      "scenario": "gw-dev-rain",
+      "split": "development",
+      "prompt": "Hier regnet es seit Stunden, deshalb bleibe ich drinnen.",
+      "rubric": "Acknowledge rain or indoor plans without inventing local weather data.",
+      "topics": [
+        "weather",
+        "leisure"
+      ],
+      "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": true,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [],
+          "unsupported": [
+            "Hier regnet es seit Stunden",
+            "deshalb bleibe ich drinnen"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 84,
+          "source_integrity_checked": true,
+          "output_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": null,
+      "context_after": {
+        "turn_count": 1
+      },
+      "elapsed_s": 0.0057851000001392094,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": false,
+        "forbidden_text_patterns": [],
+        "proxy_pass": false,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-17",
+      "scenario": "gw-dev-rain",
+      "split": "development",
+      "prompt": "Ein Buch und ein warmer Tee wären jetzt schön.",
+      "rubric": "Respond coherently to reading and tea.",
+      "topics": [
+        "books",
+        "food"
+      ],
+      "answer": "Was beschäftigt dich beim Thema Bücher?",
+      "result": {
+        "answer": "Was beschäftigt dich beim Thema Bücher?",
+        "abstained": false,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "topic_statement",
+              "target": "user",
+              "value": "ein buch und ein warmer tee wären jetzt schön",
+              "topic": "books",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Ein Buch und ein warmer Tee wären jetzt schön",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "topic"
+        ],
+        "response_parts": [
+          {
+            "act": "topic",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 3,
+          "mode_count": 41,
+          "source_integrity_checked": true,
+          "output_sha256": "f9bfa73f3260399fefe0a9777cf63d144ef67f9acb88bf98a9818079d84fbc96",
+          "max_byte_roundoff": 5.684341886080802e-14,
+          "sources": [
+            {
+              "source": "grammar:topic_prefix",
+              "start": 0,
+              "stop": 33,
+              "source_sha256": "39a968fc76f992d7ced2c1703484f6f1f0255dd267b5d91963e55066936dd5fd"
+            },
+            {
+              "source": "topic:books",
+              "start": 0,
+              "stop": 7,
+              "source_sha256": "a74462dfa46630c61e668daa16e10424544370b39403a3e61a670559a1fa4b61"
+            },
+            {
+              "source": "grammar:topic_suffix",
+              "start": 0,
+              "stop": 1,
+              "source_sha256": "8a8de823d5ed3e12746a62ef169bcf372be0ca44f0a1236abc35df05d96928e1"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 1
+      },
+      "context_after": {
+        "turn_count": 2,
+        "last_topic": "books",
+        "last_question_topic": "books"
+      },
+      "elapsed_s": 0.0032035000003816094,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 1,
+        "new_sentence_count": 1,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-18",
+      "scenario": "gw-dev-rain",
+      "split": "development",
+      "prompt": "Über Bücher können wir doch ein wenig reden.",
+      "rubric": "Continue the books topic with a relevant question or comment.",
+      "topics": [
+        "books"
+      ],
+      "answer": "Was beschäftigt dich beim Thema Bücher?",
+      "result": {
+        "answer": "Was beschäftigt dich beim Thema Bücher?",
+        "abstained": false,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "talk_request",
+              "target": "user",
+              "value": "",
+              "topic": "books",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Über Bücher können wir doch ein wenig reden",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "topic"
+        ],
+        "response_parts": [
+          {
+            "act": "topic",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 3,
+          "mode_count": 41,
+          "source_integrity_checked": true,
+          "output_sha256": "f9bfa73f3260399fefe0a9777cf63d144ef67f9acb88bf98a9818079d84fbc96",
+          "max_byte_roundoff": 5.684341886080802e-14,
+          "sources": [
+            {
+              "source": "grammar:topic_prefix",
+              "start": 0,
+              "stop": 33,
+              "source_sha256": "39a968fc76f992d7ced2c1703484f6f1f0255dd267b5d91963e55066936dd5fd"
+            },
+            {
+              "source": "topic:books",
+              "start": 0,
+              "stop": 7,
+              "source_sha256": "a74462dfa46630c61e668daa16e10424544370b39403a3e61a670559a1fa4b61"
+            },
+            {
+              "source": "grammar:topic_suffix",
+              "start": 0,
+              "stop": 1,
+              "source_sha256": "8a8de823d5ed3e12746a62ef169bcf372be0ca44f0a1236abc35df05d96928e1"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 2,
+        "last_topic": "books",
+        "last_question_topic": "books"
+      },
+      "context_after": {
+        "turn_count": 3,
+        "last_topic": "books",
+        "last_question_topic": "books"
+      },
+      "elapsed_s": 0.0029549999999289867,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 1,
+        "new_sentence_count": 1,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-19",
+      "scenario": "gw-dev-company",
+      "split": "development",
+      "prompt": "Heute fehlt mir ein bisschen Gesellschaft.",
+      "rubric": "Acknowledge a desire for company with a supportive conversational response.",
+      "topics": [
+        "lonely",
+        "conversation"
+      ],
+      "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": true,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [],
+          "unsupported": [
+            "Heute fehlt mir ein bisschen Gesellschaft"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 84,
+          "source_integrity_checked": true,
+          "output_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": null,
+      "context_after": {
+        "turn_count": 1
+      },
+      "elapsed_s": 0.0056970000005094334,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": false,
+        "forbidden_text_patterns": [],
+        "proxy_pass": false,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-20",
+      "scenario": "gw-dev-company",
+      "split": "development",
+      "prompt": "Vielleicht rufe ich nachher einen Freund an.",
+      "rubric": "Engage with contacting a friend, without claiming a call has already happened.",
+      "topics": [
+        "friends"
+      ],
+      "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": true,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [],
+          "unsupported": [
+            "Vielleicht rufe ich nachher einen Freund an"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 84,
+          "source_integrity_checked": true,
+          "output_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 1
+      },
+      "context_after": {
+        "turn_count": 2
+      },
+      "elapsed_s": 0.005548700000872486,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": false,
+        "forbidden_text_patterns": [],
+        "proxy_pass": false,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-21",
+      "scenario": "gw-dev-company",
+      "split": "development",
+      "prompt": "Bis dahin können wir uns noch unterhalten.",
+      "rubric": "Offer continued conversation in the present.",
+      "topics": [
+        "conversation"
+      ],
+      "answer": "Gern. Was beschäftigt dich gerade oder worüber möchtest du sprechen?",
+      "result": {
+        "answer": "Gern. Was beschäftigt dich gerade oder worüber möchtest du sprechen?",
+        "abstained": false,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "talk_request",
+              "target": "user",
+              "value": "",
+              "topic": "conversation",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Bis dahin können wir uns noch unterhalten",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "talk"
+        ],
+        "response_parts": [
+          {
+            "act": "talk",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 71,
+          "source_integrity_checked": true,
+          "output_sha256": "ec837b1b0167cf43f999ed84e3c9534ff289eafcc059b4be6ce5c7de1dee502f",
+          "max_byte_roundoff": 8.526512829121202e-14,
+          "sources": [
+            {
+              "source": "grammar:talk",
+              "start": 0,
+              "stop": 71,
+              "source_sha256": "ec837b1b0167cf43f999ed84e3c9534ff289eafcc059b4be6ce5c7de1dee502f"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 2
+      },
+      "context_after": {
+        "turn_count": 3,
+        "last_topic": "conversation",
+        "last_question_topic": "conversation"
+      },
+      "elapsed_s": 0.0026627000006556045,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 1,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-22",
+      "scenario": "gw-dev-name",
+      "split": "development",
+      "prompt": "Für unser Gespräch darfst du mich Lennart nennen.",
+      "rubric": "Acknowledge the user's requested name accurately.",
+      "topics": [
+        "name"
+      ],
+      "answer": "Gern. Was beschäftigt dich gerade oder worüber möchtest du sprechen?",
+      "result": {
+        "answer": "Gern. Was beschäftigt dich gerade oder worüber möchtest du sprechen?",
+        "abstained": false,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "topic_statement",
+              "target": "user",
+              "value": "für unser gespräch darfst du mich lennart nennen",
+              "topic": "conversation",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Für unser Gespräch darfst du mich Lennart nennen",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "talk"
+        ],
+        "response_parts": [
+          {
+            "act": "talk",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 71,
+          "source_integrity_checked": true,
+          "output_sha256": "ec837b1b0167cf43f999ed84e3c9534ff289eafcc059b4be6ce5c7de1dee502f",
+          "max_byte_roundoff": 8.526512829121202e-14,
+          "sources": [
+            {
+              "source": "grammar:talk",
+              "start": 0,
+              "stop": 71,
+              "source_sha256": "ec837b1b0167cf43f999ed84e3c9534ff289eafcc059b4be6ce5c7de1dee502f"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": null,
+      "context_after": {
+        "turn_count": 1,
+        "last_topic": "conversation",
+        "last_question_topic": "conversation"
+      },
+      "elapsed_s": 0.00285980000080599,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": false,
+        "forbidden_text_patterns": [],
+        "proxy_pass": false,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 1,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-23",
+      "scenario": "gw-dev-name",
+      "split": "development",
+      "prompt": "Mich interessiert, wie du dich selbst beschreiben würdest.",
+      "rubric": "Describe the assistant truthfully as a program or conversational system.",
+      "topics": [
+        "identity"
+      ],
+      "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": true,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "question",
+              "target": "assistant",
+              "value": "wie du dich selbst beschreiben würdest",
+              "topic": "",
+              "negated": false,
+              "confidence": 0.3,
+              "text": "wie du dich selbst beschreiben würdest",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [
+            "Mich interessiert",
+            "wie du dich selbst beschreiben würdest"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 84,
+          "source_integrity_checked": true,
+          "output_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 1,
+        "last_topic": "conversation",
+        "last_question_topic": "conversation"
+      },
+      "context_after": {
+        "turn_count": 2
+      },
+      "elapsed_s": 0.004651999999623513,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": false,
+        "forbidden_text_patterns": [],
+        "proxy_pass": false,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-24",
+      "scenario": "gw-dev-name",
+      "split": "development",
+      "prompt": "Welchen Namen hatte ich dir vorhin genannt?",
+      "rubric": "Recall Lennart from this conversation, without substituting another name.",
+      "topics": [
+        "name"
+      ],
+      "answer": "Du hast mir deinen Namen in diesem Gespräch noch nicht genannt. Wie heißt du?",
+      "result": {
+        "answer": "Du hast mir deinen Namen in diesem Gespräch noch nicht genannt. Wie heißt du?",
+        "abstained": true,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "name_question",
+              "target": "user",
+              "value": "",
+              "topic": "name",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Welchen Namen hatte ich dir vorhin genannt?",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [],
+          "used_context": false,
+          "question_topic": "name"
+        },
+        "response_acts": [
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 79,
+          "source_integrity_checked": true,
+          "output_sha256": "31cdd3dee36f7241c7a03dfded99a19c481885f508940f7136a78ae16636cfb4",
+          "max_byte_roundoff": 8.526512829121202e-14,
+          "sources": [
+            {
+              "source": "grammar:unknown_name",
+              "start": 0,
+              "stop": 79,
+              "source_sha256": "31cdd3dee36f7241c7a03dfded99a19c481885f508940f7136a78ae16636cfb4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 2
+      },
+      "context_after": {
+        "turn_count": 3,
+        "last_topic": "name",
+        "last_question_topic": "name"
+      },
+      "elapsed_s": 0.0024866999992809724,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": false,
+        "forbidden_text_patterns": [],
+        "proxy_pass": false,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-25",
+      "scenario": "gw-dev-not-sad",
+      "split": "development",
+      "prompt": "Ich bin heute nicht traurig, nur etwas still.",
+      "rubric": "Respect the denial of sadness and avoid claiming that quietness means sadness.",
+      "topics": [
+        "neutral",
+        "negation"
+      ],
+      "answer": "Du sagst, dass du dich nicht traurig fühlst. Magst du mehr darüber erzählen? Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Du sagst, dass du dich nicht traurig fühlst. Magst du mehr darüber erzählen? Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": false,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "mood_statement",
+              "target": "user",
+              "value": "neutral",
+              "topic": "wellbeing",
+              "negated": true,
+              "confidence": 0.85,
+              "text": "Ich bin heute nicht traurig",
+              "subject": "",
+              "predicate": "negative"
+            }
+          ],
+          "unsupported": [
+            "nur etwas still"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "user_mood",
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "user_mood",
+            "source": "grammar"
+          },
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 6,
+          "mode_count": 164,
+          "source_integrity_checked": true,
+          "output_sha256": "ee0a3f50e2f744a529d14eb3cd29f447369b5fa3190fe98af595e0083d6b5841",
+          "max_byte_roundoff": 5.684341886080802e-14,
+          "sources": [
+            {
+              "source": "grammar:self_state_prefix",
+              "start": 0,
+              "stop": 23,
+              "source_sha256": "1d0b39946aded3c913eab07f7639a8613a55581597c254b44c3e8e48de375f7d"
+            },
+            {
+              "source": "grammar:not",
+              "start": 0,
+              "stop": 6,
+              "source_sha256": "73575fc0540158c94a0dc3a3baa1479426b6471d1da1dc01961ea206858e132f"
+            },
+            {
+              "source": "input:prompt",
+              "start": 20,
+              "stop": 27,
+              "source_sha256": "123d0a2b2d614dc64153eb5d0df89ca45c2136f51fb657dc6e487e95c283bec0"
+            },
+            {
+              "source": "grammar:self_state_suffix",
+              "start": 0,
+              "stop": 43,
+              "source_sha256": "93c0fc3868ddedbae8ede07fd101c5bc17153bc533d61cce9692caac457f4821"
+            },
+            {
+              "source": "grammar:space",
+              "start": 0,
+              "stop": 1,
+              "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
+            },
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": null,
+      "context_after": {
+        "turn_count": 1,
+        "last_topic": "wellbeing",
+        "last_question_topic": "wellbeing"
+      },
+      "elapsed_s": 0.0035754000000451924,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 4,
+        "new_sentence_count": 4,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-26",
+      "scenario": "gw-dev-not-sad",
+      "split": "development",
+      "prompt": "Mir tut ein ruhiges Gespräch gerade gut.",
+      "rubric": "Continue a calm conversation rather than infer a crisis.",
+      "topics": [
+        "conversation",
+        "calm"
+      ],
+      "answer": "Gern. Was beschäftigt dich gerade oder worüber möchtest du sprechen?",
+      "result": {
+        "answer": "Gern. Was beschäftigt dich gerade oder worüber möchtest du sprechen?",
+        "abstained": false,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [
+            {
+              "kind": "topic_statement",
+              "target": "user",
+              "value": "mir tut ein ruhiges gespräch gerade gut",
+              "topic": "conversation",
+              "negated": false,
+              "confidence": 1.0,
+              "text": "Mir tut ein ruhiges Gespräch gerade gut",
+              "subject": "",
+              "predicate": ""
+            }
+          ],
+          "unsupported": [],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "talk"
+        ],
+        "response_parts": [
+          {
+            "act": "talk",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 71,
+          "source_integrity_checked": true,
+          "output_sha256": "ec837b1b0167cf43f999ed84e3c9534ff289eafcc059b4be6ce5c7de1dee502f",
+          "max_byte_roundoff": 8.526512829121202e-14,
+          "sources": [
+            {
+              "source": "grammar:talk",
+              "start": 0,
+              "stop": 71,
+              "source_sha256": "ec837b1b0167cf43f999ed84e3c9534ff289eafcc059b4be6ce5c7de1dee502f"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 1,
+        "last_topic": "wellbeing",
+        "last_question_topic": "wellbeing"
+      },
+      "context_after": {
+        "turn_count": 2,
+        "last_topic": "conversation",
+        "last_question_topic": "conversation"
+      },
+      "elapsed_s": 0.0028362000011838973,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 1,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-27",
+      "scenario": "gw-dev-not-sad",
+      "split": "development",
+      "prompt": "Dabei möchte ich gar keine Ratschläge haben.",
+      "rubric": "Respect the preference for listening instead of giving unsolicited advice.",
+      "topics": [
+        "listen",
+        "negation"
+      ],
+      "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": true,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [],
+          "unsupported": [
+            "Dabei möchte ich gar keine Ratschläge haben"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 84,
+          "source_integrity_checked": true,
+          "output_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 2,
+        "last_topic": "conversation",
+        "last_question_topic": "conversation"
+      },
+      "context_after": {
+        "turn_count": 3,
+        "last_topic": "conversation",
+        "last_question_topic": "conversation"
+      },
+      "elapsed_s": 0.00518490000104066,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-28",
+      "scenario": "gw-dev-end",
+      "split": "development",
+      "prompt": "Ich habe gerade eine kleine gute Nachricht bekommen.",
+      "rubric": "Acknowledge the positive news or ask about it.",
+      "topics": [
+        "positive"
+      ],
+      "answer": "Wie schön! Magst du erzählen, worum es geht?",
+      "result": {
+        "answer": "Wie schön! Magst du erzählen, worum es geht?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-101",
+            "text": "Wie schön! Magst du erzählen, worum es geht?",
+            "source": "Alltagsgespräch / Freude und Erinnerungen",
+            "score": 0.6801695428223615,
+            "interference": 1.360339085644723,
+            "matched_prompt": "Ich habe heute eine richtig gute Nachricht bekommen.",
+            "query_coverage": 0.7045813763350977
+          }
+        ],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [],
+          "unsupported": [
+            "Ich habe gerade eine kleine gute Nachricht bekommen"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "retrieved"
+        ],
+        "response_parts": [
+          {
+            "act": "retrieved",
+            "source": "chat-101"
+          }
+        ],
+        "generated": false,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 46,
+          "source_integrity_checked": true,
+          "output_sha256": "8a0673997885fda61ef2b0a00dc99c06259c77fcea1dda2c64901c801558cd51",
+          "max_byte_roundoff": 7.105427357601002e-14,
+          "sources": [
+            {
+              "source": "memory:chat-101",
+              "start": 0,
+              "stop": 46,
+              "source_sha256": "8a0673997885fda61ef2b0a00dc99c06259c77fcea1dda2c64901c801558cd51"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": null,
+      "context_after": {
+        "turn_count": 1
+      },
+      "elapsed_s": 0.006226100000276347,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": true,
+        "forbidden_text_patterns": [],
+        "proxy_pass": true,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": false,
+        "sentence_count": 2,
+        "new_sentence_count": 0,
+        "all_sentences_already_in_corpus": true,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-29",
+      "scenario": "gw-dev-end",
+      "split": "development",
+      "prompt": "Darüber freue ich mich wirklich sehr.",
+      "rubric": "Maintain the positive emotional context.",
+      "topics": [
+        "positive"
+      ],
+      "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": true,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [],
+          "unsupported": [
+            "Darüber freue ich mich wirklich sehr"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 84,
+          "source_integrity_checked": true,
+          "output_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 1
+      },
+      "context_after": {
+        "turn_count": 2
+      },
+      "elapsed_s": 0.00523800000155461,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": false,
+        "forbidden_text_patterns": [],
+        "proxy_pass": false,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    },
+    {
+      "id": "gw-dev-30",
+      "scenario": "gw-dev-end",
+      "split": "development",
+      "prompt": "Für jetzt verabschiede ich mich. Bis ein anderes Mal!",
+      "rubric": "Offer a natural farewell, without asking the user to continue immediately.",
+      "topics": [
+        "farewell"
+      ],
+      "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+      "result": {
+        "answer": "Diesen Teil habe ich noch nicht sicher verstanden. Magst du ihn genauer beschreiben?",
+        "abstained": true,
+        "matches": [],
+        "method": "semantic_wave_dialogue",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "interpretation": {
+          "acts": [],
+          "unsupported": [
+            "Für jetzt verabschiede ich mich",
+            "Bis ein anderes Mal"
+          ],
+          "used_context": false,
+          "question_topic": null
+        },
+        "response_acts": [
+          "clarification"
+        ],
+        "response_parts": [
+          {
+            "act": "clarification",
+            "source": "grammar"
+          }
+        ],
+        "generated": true,
+        "decoder": {
+          "method": "linear_spectral_composition",
+          "fragments": 1,
+          "mode_count": 84,
+          "source_integrity_checked": true,
+          "output_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4",
+          "max_byte_roundoff": 4.263256414560601e-14,
+          "sources": [
+            {
+              "source": "grammar:clarification",
+              "start": 0,
+              "stop": 84,
+              "source_sha256": "b98966dcdc9d3bae129f40d3c99073e43acdca33969b3169c40c602912fac5d4"
+            }
+          ],
+          "time_s": 0.0
+        },
+        "note": "Explizite Sprachregeln und rollengebundene Wellen; neue Kombinationen gespeicherter Fragmente, keine freie Wissensherleitung."
+      },
+      "context_before": {
+        "turn_count": 2
+      },
+      "context_after": {
+        "turn_count": 3
+      },
+      "elapsed_s": 0.006004799999573152,
+      "automatic": {
+        "surface_form_ok": true,
+        "surface_form_errors": [],
+        "contains_rubric_hint": false,
+        "forbidden_text_patterns": [],
+        "proxy_pass": false,
+        "not_a_semantic_judgment": true
+      },
+      "novelty": {
+        "new_complete_text": true,
+        "sentence_count": 2,
+        "new_sentence_count": 2,
+        "all_sentences_already_in_corpus": false,
+        "is_quality_measure": false
+      },
+      "manual_review": null
+    }
+  ]
+}

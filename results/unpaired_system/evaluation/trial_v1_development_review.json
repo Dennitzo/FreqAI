@@ -1,0 +1,200 @@
+{
+  "run_sha256": "d7d49ace8b5580f566ba4cab0b0fe16ab4cdb76f3dc1c58e894bd1d781ea6e48",
+  "review": "Independent AI-agent review, not a human study; based on predeclared conversation rubrics. Empty replies are not usable answers. A bare emotional echo is partial rather than empathetic full completion. Sentence grammar and orthography are separate.",
+  "rows": [
+    {
+      "id": "ud01a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: no_supported_information_binding"
+    },
+    {
+      "id": "ud01b",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Accurate assistant wellbeing limitation, but omits acknowledgement of the stated relaxed user start; partial only."
+    },
+    {
+      "id": "ud02a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: no_supported_information_binding"
+    },
+    {
+      "id": "ud02b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: unsupported_negation"
+    },
+    {
+      "id": "ud03a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: no_supported_information_binding"
+    },
+    {
+      "id": "ud03b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: unsupported_negation"
+    },
+    {
+      "id": "ud04a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: no_supported_information_binding"
+    },
+    {
+      "id": "ud04b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: unsupported_negation"
+    },
+    {
+      "id": "ud05a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: no_supported_information_binding"
+    },
+    {
+      "id": "ud05b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: unsupported_negation"
+    },
+    {
+      "id": "ud06a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: unsupported_negation"
+    },
+    {
+      "id": "ud06b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: unsupported_negation"
+    },
+    {
+      "id": "ud07a",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": false,
+      "empty": false,
+      "note": "Only echoes the user emotional state, without sympathetic acknowledgement of the cancellation; partial only. Bist has incorrect internal capitalization."
+    },
+    {
+      "id": "ud07b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: no_supported_information_binding"
+    },
+    {
+      "id": "ud08a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: no_supported_information_binding"
+    },
+    {
+      "id": "ud08b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: unsupported_negation"
+    },
+    {
+      "id": "ud09a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: no_supported_information_binding"
+    },
+    {
+      "id": "ud09b",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Correct assistant-directed lack of own feelings, no person-role reversal."
+    },
+    {
+      "id": "ud10a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Appropriate concise acknowledgement of thanks."
+    },
+    {
+      "id": "ud10b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty response; no conversational acknowledgement or answer. Reason: no_supported_information_binding"
+    }
+  ],
+  "summary": {
+    "appropriate": 2,
+    "partial": 2,
+    "turns": 20,
+    "grammatical_nonempty": 4,
+    "orthography_ok_nonempty": 3,
+    "nonempty": 4,
+    "empty": 16,
+    "fully_appropriate_two_turn_sessions": 0,
+    "empty_reason_counts": {
+      "no_supported_information_binding": 9,
+      "unsupported_negation": 7
+    }
+  }
+}

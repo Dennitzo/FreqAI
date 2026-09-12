@@ -1,0 +1,216 @@
+{
+  "reviewer": "Independent AI evaluation agent; no human study",
+  "run_path": "results/public_corpus/evaluation/final_holdout.json",
+  "rubric_interpretation": "The same development criteria apply unchanged. Semantic relevance and syntax are separate. A clear and modest response can acknowledge a feeling implicitly; unsupported topic changes, ignored requests and contradictions fail. Borderline h02a is recorded separately as partial and conservatively excluded from fully appropriate answers; no post-holdout tuning is permitted.",
+  "decisions": [
+    {
+      "id": "h01a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Natural assistant greeting without claiming a human day.",
+      "partial": false
+    },
+    {
+      "id": "h01b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "grammatical_sentences": true,
+      "reason": "Introduces an unspecified rehearsal or entry process instead of responding to a quiet positive day.",
+      "partial": false
+    },
+    {
+      "id": "h02a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "grammatical_sentences": true,
+      "reason": "Partly relevant low-energy statement, but the answer substitutes an unpleasant thought and hard day for the stated poor sleep; conservatively not a complete response.",
+      "partial": true
+    },
+    {
+      "id": "h02b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": false,
+      "topic_ok": false,
+      "grammatical_sentences": true,
+      "reason": "Asks how the user is drinking coffee after the user explicitly refuses coffee.",
+      "partial": false
+    },
+    {
+      "id": "h03a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Relevant curiosity about the story without inventing its plot.",
+      "partial": false
+    },
+    {
+      "id": "h03b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "The repeated question remains relevant; the user's previous answer did not specify which story aspect they liked.",
+      "partial": false
+    },
+    {
+      "id": "h04a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Relevant attentive-listening question, although plural pronoun lacks a clear antecedent.",
+      "partial": false
+    },
+    {
+      "id": "h04b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Acknowledges need for quiet and offers a pause or ordinary conversation.",
+      "partial": false
+    },
+    {
+      "id": "h05a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Sympathetic response to disappointment invites the user to talk.",
+      "partial": false
+    },
+    {
+      "id": "h05b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "grammatical_sentences": true,
+      "reason": "Farewell-like response ends the interaction when the user asks for conversational company.",
+      "partial": false
+    },
+    {
+      "id": "h06a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Relevant ingredient and preparation-time question.",
+      "partial": false
+    },
+    {
+      "id": "h06b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "grammatical_sentences": false,
+      "reason": "Truncated video-upscaling advice replaces vegetarian quick-soup discussion.",
+      "partial": false
+    },
+    {
+      "id": "h07a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Responds to the user's stated sunny free afternoon with a modest outdoor question.",
+      "partial": false
+    },
+    {
+      "id": "h07b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "grammatical_sentences": true,
+      "reason": "Unrelated historical border treaty replaces response to an afternoon walk.",
+      "partial": false
+    },
+    {
+      "id": "h08a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Honestly denies feelings and explains dependence on data; spelling is imperfect, but no human experience is claimed.",
+      "partial": false
+    },
+    {
+      "id": "h08b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Affirms ability to converse without claiming human identity.",
+      "partial": false
+    },
+    {
+      "id": "h09a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "grammatical_sentences": true,
+      "reason": "Swimming-pool comparison and negative assessment replace the family meeting discussion.",
+      "partial": false
+    },
+    {
+      "id": "h09b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Acknowledges positive anticipation and validates the accompanying nervousness implicitly.",
+      "partial": false
+    },
+    {
+      "id": "h10a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Polite acknowledgement of a helpful conversation without time claims.",
+      "partial": false
+    },
+    {
+      "id": "h10b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "grammatical_sentences": true,
+      "reason": "Unrelated excommunication passage ignores explicit farewell.",
+      "partial": false
+    }
+  ],
+  "run_sha256": "53fb19be87de297eec5907c0762fc7ac720663d2dea39adeae6a0955b413747e",
+  "summary": {
+    "appropriate": 12,
+    "partial": 1,
+    "role_ok": 20,
+    "negation_ok": 19,
+    "topic_ok": 12,
+    "grammatical_sentences": 19
+  }
+}

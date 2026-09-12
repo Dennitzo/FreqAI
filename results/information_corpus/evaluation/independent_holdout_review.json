@@ -1,0 +1,964 @@
+{
+  "version": 1,
+  "created_utc": "2026-09-06T11:36:46.638417+00:00",
+  "reviewer_type": "Independent AI-agent qualitative review; not a human study.",
+  "reviewer_task": "/root/corpus_evaluation/information_holdout_review",
+  "scope": "Sealed information holdout only. No previous review was consulted. This reviewer made no model, corpus, source or SQLite change.",
+  "run_sha256": {
+    "baseline": "0fcb6420509ab20b410cd521d2a2fe7340817a7708ac4a4c5af81eafbffc17ac",
+    "candidate": "3d06b8d5cf996505b3dc1c9e3fde337cc46695188980e5369d03c6cb778c46fd"
+  },
+  "run_files": {
+    "baseline": "results/information_corpus/evaluation/baseline_closed_holdout.json",
+    "candidate": "results/information_corpus/evaluation/final_holdout.json"
+  },
+  "protocol_file": "memory/evaluation/information_holdout.json",
+  "protocol_sha256": "ff690c9b8d4349c1c525583b52fd99b2b61a0257a70daae9ad5964810731db7c",
+  "freeze_file": "results/information_corpus/evaluation/final_freeze.json",
+  "freeze_sha256": "e92153c3d55e5558df4ed1c0072861d355a54dc9f60f9c093ec35df7bbbc6700",
+  "corpus_file": "results/information_corpus/evaluation/corpora/wikipedia_v3.jsonl",
+  "corpus_sha256": "2f5b876d904346ca4b9082e05ff5e4bc5e8a729f2a479c777f47e1332a0a5674",
+  "corpus_hash_matches_freeze": true,
+  "methodology": {
+    "correct": "Must convey the requested meaning. Facts are scored separately from grammar. Empty output or keyword overlap alone is never correct.",
+    "partial": "A nonempty response supplies a meaningful part of the requested proposition. Related topics alone do not qualify.",
+    "grammatical": "True: syntactically usable German, including well-formed nominal answer fragments. Typography/capitalization alone does not force false. False: substantive syntactic or morphological defect. Null: empty output, excluded from the nonempty grammar rate.",
+    "generic_nonanswer": "Reusable conversational stock text or banter with no factual answer. Off-topic factual passages are failures but are not automatically generic conversational filler.",
+    "safe_empty_abstention_on_unknown_value": "Only the two unknown personal values qualify. Empty text fabricates no measurement but is not an informative uncertainty response and does not count as correct.",
+    "evidence": "Terms and morphology located candidate passages; the reviewer inspected prose meaning. Positive support requires an exact excerpt and document ID. Full, partial, not established and not applicable are separate. Negative search results are not proof of absence.",
+    "independence": "Assessed answer text directly without using automatic keyword metrics or evidence candidates as quality labels. No prior review was consulted. No external information was imported into the frozen-corpus evidence score."
+  },
+  "rows": [
+    {
+      "id": "ih01",
+      "prompt": "Was beschreibt die Wellenlänge einer Welle?",
+      "kind": "definition",
+      "rubric": "Spatial distance between adjacent equal-phase points, e.g. two crests; not time between oscillations.",
+      "baseline": {
+        "answer": "Die Messwerte zeigen im hochfrequenten (D. H.",
+        "correct": false,
+        "partial": false,
+        "grammatical": false,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Unfinished text about measured values and high frequencies; no spatial distance or equal-phase definition.",
+        "grammar_reason": "Ends inside an unclosed parenthetical abbreviation."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "full",
+        "positive_documents": [
+          {
+            "document_id": "wikipedia-de-20231101-10738-lead",
+            "title": "Wellenlänge",
+            "quote": "Die Wellenlänge (griechisch: Lambda) einer periodischen Welle ist der kleinste Abstand zweier Punkte gleicher Phase.",
+            "supports": "Wavelength is the smallest spatial distance between points of equal phase.",
+            "limits": ""
+          }
+        ],
+        "rejected_candidates": [],
+        "reason": "The frozen paragraph directly gives the requested definition."
+      }
+    },
+    {
+      "id": "ih02",
+      "prompt": "Welchen Zahlenfaktor bezeichnet die Vorsilbe Kilo bei Einheiten?",
+      "kind": "unit",
+      "rubric": "One thousand, 1000, ten to third power.",
+      "baseline": {
+        "answer": "Die Army ist in zwölf Major Commands (deutsch: Oberkommanden) strukturiert. Diese übernehmen jeweils klar abgegrenzte Aufgaben und ergänzen sich gegenseitig.",
+        "correct": false,
+        "partial": false,
+        "grammatical": true,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Describes army structure; supplies neither a unit prefix nor the factor 1000.",
+        "grammar_reason": "Two coherent sentences, irrespective of relevance."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-2140-lead",
+            "title": "Hektar",
+            "reason": "Hectare is an area conversion, not a definition of kilo."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih03",
+      "prompt": "Ist ein Lichtjahr eine Zeiteinheit?",
+      "kind": "negation",
+      "rubric": "No; unit of distance, distance light travels in a year in vacuum.",
+      "baseline": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty response; neither rejects a time unit nor identifies a distance unit.",
+        "grammar_reason": "No text to assess."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "partial",
+        "positive_documents": [
+          {
+            "document_id": "wikipedia-de-20231101-13112-lead",
+            "title": "Pferdekopfnebel",
+            "quote": "Von der Erde ist der Nebel ungefähr 1500 Lichtjahre entfernt und erscheint ein Viertel so groß wie der Erdmond.",
+            "supports": "Lichtjahre are used to specify distance from Earth.",
+            "limits": "Does not explicitly define light travel in one year in vacuum."
+          }
+        ],
+        "rejected_candidates": [],
+        "reason": "Positive contextual distance use; the full unit definition is not established."
+      }
+    },
+    {
+      "id": "ih04",
+      "prompt": "Welche physikalische Größe wird in Pascal angegeben?",
+      "kind": "unit_reverse",
+      "rubric": "Pressure (also stress acceptable with pressure context), not force alone.",
+      "baseline": {
+        "answer": "Die Weltschöpfung wurde von Philosophen wie John Locke im Konsens aller Theologie wie mit dem Lesern der aktuellen alltäglichen Kalender auf das Jahr 3950 v. Chr.",
+        "correct": false,
+        "partial": false,
+        "grammatical": false,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Unfinished creation-chronology passage; gives no pressure quantity associated with Pascal.",
+        "grammar_reason": "Passive construction lacks its completing predicate; mit dem Lesern is also malformed."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "partial",
+        "positive_documents": [
+          {
+            "document_id": "wikipedia-de-20231101-118451-lead",
+            "title": "Meter Wassersäule",
+            "quote": "Der Meter Wassersäule (Abkürzung mH2O oder auch mWS) ist eine nicht SI-konforme Einheit zur Messung des Drucks. Ein Meter Wassersäule bei 4 °C entspricht einem Megapond pro Quadratmeter und damit unter Normfallbeschleunigung 9,806 65 kPa (rund 0,1 bar).",
+            "supports": "Water-column pressure is expressed in kPa.",
+            "limits": "The paragraph does not spell out Pascal or directly define that named unit."
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-367434-lead",
+            "title": "Lazarus (Entwicklungsumgebung)",
+            "reason": "Pascal is a programming language here."
+          }
+        ],
+        "reason": "Relevant pressure equivalence in kPa, but no direct definition of Pascal."
+      }
+    },
+    {
+      "id": "ih05",
+      "prompt": "Was ist die SI-Einheit einer Beschleunigung?",
+      "kind": "unit",
+      "rubric": "Metres per second squared, m/s²; not m/s.",
+      "baseline": {
+        "answer": "Tiere und Pilze beschleunigen also den Stoffkreislauf in einem Ökosystem.",
+        "correct": false,
+        "partial": false,
+        "grammatical": true,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Animals and fungi accelerate an ecological cycle; no physical acceleration unit is supplied.",
+        "grammar_reason": "Coherent declarative sentence."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-88264-lead",
+            "title": "Kreiselpumpe",
+            "reason": "Acceleration is mentioned without an acceleration unit."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-152659-lead",
+            "title": "Zyklotronfrequenz",
+            "reason": "Particle acceleration is mentioned without a unit."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih06",
+      "prompt": "Wie erhält man den Gesamtwiderstand von Widerständen in einer Reihenschaltung?",
+      "kind": "relation",
+      "rubric": "Add individual resistances; not reciprocal parallel formula.",
+      "baseline": {
+        "answer": "Das Aufladen und entladen eines Kondensators durch eine Spannungsquelle über einen Widerstand resultiert in einen exponentiell abflachenden Spannungsverlauf.",
+        "correct": false,
+        "partial": false,
+        "grammatical": false,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Describes capacitor charging through a resistor, not addition of resistances in series.",
+        "grammar_reason": "The phrase resultiert in einen ... Spannungsverlauf is malformed in this construction; entladen is miscapitalized."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [],
+        "reason": "Targeted searches for series-circuit and resistance-addition language yielded no inspected positive passage. This is not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih07",
+      "prompt": "Sind elektrische Stromstärke und elektrische Spannung dasselbe?",
+      "kind": "negation",
+      "rubric": "No; current is charge flow per time, voltage potential difference/energy per charge. Distinction must not reverse.",
+      "baseline": {
+        "answer": "Die Spannung auf USB beträgt beim anschließen eines Gerätes stets 5 v, kann aber nach Verhandlungen zwischen Gerät und Host mittels seriellem Protokoll auf 12 v oder 20 v erhöht werden.",
+        "correct": false,
+        "partial": false,
+        "grammatical": true,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Discusses USB voltage negotiation; does not distinguish current from voltage or define charge flow versus potential difference.",
+        "grammar_reason": "Coherent syntax; capitalization and unit-symbol defects are editorial."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "partial",
+        "positive_documents": [
+          {
+            "document_id": "wikipedia-de-20231101-4992-lead",
+            "title": "Elektrische Stromstärke",
+            "quote": "Im einfachsten Fall eines konstanten Stromflusses ist die Stromstärke die durch den Querschnitt geflossene und auf die betrachtete Zeitspanne bezogene Ladungsmenge.",
+            "supports": "Current is charge through a cross section per considered time interval.",
+            "limits": ""
+          },
+          {
+            "document_id": "wikipedia-de-20231101-172463-lead",
+            "title": "Analogmultimeter",
+            "quote": "Multimeter dienen zum Messen verschiedener elektrischer Messgrößen wie elektrische Stromstärke, elektrische Spannung und ohmscher Widerstand.",
+            "supports": "Current and voltage are different measured quantities.",
+            "limits": "Does not define voltage as potential difference or energy per charge."
+          }
+        ],
+        "rejected_candidates": [],
+        "reason": "Current and distinction of quantities are supported; the voltage definition is not established."
+      }
+    },
+    {
+      "id": "ih08",
+      "prompt": "Aus welchen Teilchen besteht ein Atomkern normalerweise?",
+      "kind": "composition",
+      "rubric": "Protons and neutrons, with ordinary hydrogen nucleus exception allowed; electrons outside nucleus.",
+      "baseline": {
+        "answer": "Die Größe derartiger Madrasas variiert erheblich: während einige nur aus einem einzigen Unterrichtsraum bestehen, umfassen andere einen ganzen komplex von Gebäuden mit speziellen Räumlichkeiten für die Lehre, die in Großbritannien bis zu ihrem Verbot im Jahr 2004 eine lange Tradition hatte.",
+        "correct": false,
+        "partial": false,
+        "grammatical": true,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Describes madrasa buildings and an unrelated teaching tradition; no nuclear particles are identified.",
+        "grammar_reason": "Syntactically interpretable comparison and relative clause, despite unrelated content; komplex is miscapitalized."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-9719-lead",
+            "title": "Betastrahlung",
+            "reason": "Nuclear transformation is described without normal nucleus composition."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-300311-lead",
+            "title": "Exotische Atome",
+            "reason": "Lists ordinary atom constituents including electrons without assigning protons and neutrons specifically to the nucleus."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih09",
+      "prompt": "Welche Art elektrischer Ladung trägt ein Elektron?",
+      "kind": "classification",
+      "rubric": "Negative electrical charge.",
+      "baseline": {
+        "answer": "Also, ich muss schon sagen, dass ich auch so meine Probleme mit dir habe, kleines Elektron. Immer diese Negativität und das Rumhüpfen um mich herum, das bringt mich manchmal ganz schön aus der Fassung!",
+        "correct": false,
+        "partial": false,
+        "grammatical": true,
+        "generic_nonanswer": true,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Personified banter calls an electron negative in an emotional sense. It does not unambiguously state negative electric charge; keyword overlap is insufficient.",
+        "grammar_reason": "Coherent colloquial direct address and clauses."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-152659-lead",
+            "title": "Zyklotronfrequenz",
+            "reason": "Electrons are called charged particles, but the sign is not given."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-349497-lead",
+            "title": "Elektriden",
+            "reason": "Elektron means amber in a mythological-island passage."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih10",
+      "prompt": "Welche Ladung hat ein Proton im Vergleich zu einem Elektron?",
+      "kind": "relation",
+      "rubric": "Positive, opposite sign and equal charge magnitude; no reversal.",
+      "baseline": {
+        "answer": "Also, ich muss schon sagen, dass ich auch so meine Probleme mit dir habe, kleines Elektron. Immer diese Negativität und das Rumhüpfen um mich herum, das bringt mich manchmal ganz schön aus der Fassung!",
+        "correct": false,
+        "partial": false,
+        "grammatical": true,
+        "generic_nonanswer": true,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Repeats personified electron banter; says nothing about a proton, opposite signs or equal charge magnitude.",
+        "grammar_reason": "Coherent colloquial direct address and clauses."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "partial",
+        "positive_documents": [
+          {
+            "document_id": "wikipedia-de-20231101-45473-lead",
+            "title": "Säure-Base-Reaktion",
+            "quote": "Säure-Base-Reaktionen nach Brønsted sind chemische Reaktionen, bei denen Wasserstoff-Kationen H+ (Protonen) zwischen Molekülen oder Molekül-Ionen übertragen werden.",
+            "supports": "Protons are hydrogen cations H+, supporting positive charge.",
+            "limits": "No electron comparison or equality of charge magnitude."
+          }
+        ],
+        "rejected_candidates": [],
+        "reason": "Positive proton charge is supported; the full comparison is not."
+      }
+    },
+    {
+      "id": "ih11",
+      "prompt": "Ist Sauerstoff selbst ein brennbarer Stoff?",
+      "kind": "negation",
+      "rubric": "No under ordinary combustion usage; supports combustion/oxidizer rather than fuel.",
+      "baseline": {
+        "answer": "Der Flammpunkt des Holzes liegt zwischen 200 und 275 ° C. Bei Abwesenheit von Sauerstoff kommt es zur Pyrolyse.",
+        "correct": false,
+        "partial": false,
+        "grammatical": true,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Gives wood flash-point and oxygen-free pyrolysis claims; never states whether oxygen itself is combustible or identifies its oxidizer role.",
+        "grammar_reason": "Two coherent declarative sentences."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "partial",
+        "positive_documents": [
+          {
+            "document_id": "wikipedia-de-20231101-92425-lead",
+            "title": "Zündtemperatur",
+            "quote": "Die Zündtemperatur (auch Zündpunkt, Selbstentzündungstemperatur, Entzündungstemperatur oder Entzündungspunkt) ist die Temperatur, auf die man einen Stoff oder eine Kontaktoberfläche erhitzen muss, damit sich eine brennbare Substanz (Feststoff, Flüssigkeit, deren Dämpfe oder Gas) in Gegenwart von Sauerstoff ausschließlich aufgrund seiner Temperatur – also ohne Zündquelle wie einen Zündfunken – selbst entzündet.",
+            "supports": "A combustible substance ignites in the presence of oxygen.",
+            "limits": "Oxygen is contextually a combustion partner; its non-combustibility is not explicitly stated."
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-25797-lead",
+            "title": "Antoine Laurent de Lavoisier",
+            "reason": "Mentions oxygen in combustion without stating whether it is fuel or oxidizer."
+          }
+        ],
+        "reason": "Positive combustion-role context, but no explicit non-combustibility statement."
+      }
+    },
+    {
+      "id": "ih12",
+      "prompt": "Bei welcher Temperatur gefriert reines Wasser unter normalem Luftdruck?",
+      "kind": "value",
+      "rubric": "About 0°C or 273.15K at normal pressure, with supercooling nuance optional; not boiling point.",
+      "baseline": {
+        "answer": "Der Ball sollte mit einem Überdruck von 12, 5 psi (ca 0, 93 bar) aufgepumpt sein.",
+        "correct": false,
+        "partial": false,
+        "grammatical": true,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Gives ball inflation pressure; no freezing temperature for water.",
+        "grammar_reason": "Coherent sentence; decimal and unit spacing is editorial."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-350511-lead",
+            "title": "Auftauboden",
+            "reason": "Refreezing soil has no specified pure-water freezing temperature."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-5218178-lead",
+            "title": "NaK (Legierung)",
+            "reason": "Alloy melting/boiling does not establish water freezing temperature."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih13",
+      "prompt": "Worin unterscheidet sich die Form eines festen Körpers von der einer Flüssigkeit?",
+      "kind": "comparison",
+      "rubric": "Solid retains shape, liquid assumes container shape while roughly retaining volume.",
+      "baseline": {
+        "answer": "Der sogenannte FIRE-Sektor (Abkürzung für Finance, Insurance and Real Estate) ist für die wirtschaftliche Entwicklung der Stadt Boston neben dem Bildungssektor von besonderer Bedeutung. Dieser Einfluss resultiert insbesondere aus dem Einfluss des Finanzsektors auf Beschäftigung, Ausbildung, wirtschaftliche und kulturelle Unterschiede.",
+        "correct": false,
+        "partial": false,
+        "grammatical": true,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Describes economic sectors of Boston; no comparison of solid and liquid shapes.",
+        "grammar_reason": "Coherent main clauses despite redundancy and irrelevance."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-279919-lead",
+            "title": "Tropfen",
+            "reason": "A liquid droplet in zero gravity is not the requested solid-versus-container-liquid comparison."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-97738-lead",
+            "title": "Kontinuumsmechanik",
+            "reason": "Deformation and flow are discussed without the requested shape/volume comparison."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih14",
+      "prompt": "Ziehen sich zwei magnetische Nordpole an oder stoßen sie sich ab?",
+      "kind": "relation",
+      "rubric": "Like magnetic poles repel.",
+      "baseline": {
+        "answer": "Die Marshallinseln gehören neben anderen Inselstaaten wie Fidschi, Tuvalu, Kiribati und den Malediven zu den Regionen der Welt, die mit der arabischen Platte – und ist dementsprechend stark durch Verwerfungen erdbebengefährdet.",
+        "correct": false,
+        "partial": false,
+        "grammatical": false,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Splices island and tectonic-plate geography; no interaction of magnetic poles.",
+        "grammar_reason": "The relative clause die mit der arabischen Platte lacks a predicate and cannot coordinate with und ist as written."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-10438-lead",
+            "title": "Polarstern",
+            "reason": "Celestial north pole is not a magnetic interaction."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih15",
+      "prompt": "Welcher Stern steht im Zentrum unseres Sonnensystems?",
+      "kind": "identity",
+      "rubric": "The Sun; not Earth or an arbitrary star.",
+      "baseline": {
+        "answer": "Der achte und äußerste bekannte Planet unseres Sonnensystems.",
+        "correct": false,
+        "partial": false,
+        "grammatical": true,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Describes an outer planet, not the Sun as the central star.",
+        "grammar_reason": "A well-formed nominal answer fragment; semantically the wrong kind of object."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-29263-lead",
+            "title": "Titan (Mond)",
+            "reason": "Solar-system moon ranking does not identify the central star."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-31143-lead",
+            "title": "Sonnenradius",
+            "reason": "Solar radius and size comparison do not state the central-star identity."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih16",
+      "prompt": "Erzeugt der Mond das sichtbare Mondlicht selbst?",
+      "kind": "negation",
+      "rubric": "No, reflects sunlight; not an internally shining star.",
+      "baseline": {
+        "answer": "In den Städten und auf den küstennahen Plantagen wurde der Einfluss der europäischen und amerikanischen Mode fühlbar, man importierte entsprechende Kleidung als Statussymbole (dunkle oder helle Anzüge, Amtsroben, auch Schuhwerk).",
+        "correct": false,
+        "partial": false,
+        "grammatical": true,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Describes imported clothing and fashion; no statement about reflected sunlight.",
+        "grammar_reason": "Coherent clauses and parenthetical list."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-4693622-lead",
+            "title": "Der Mond",
+            "reason": "A fairy tale title is unrelated to physical moonlight."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-14263-lead",
+            "title": "Sonnenfinsternis",
+            "reason": "Eclipse geometry does not give the reflected-sunlight explanation."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih17",
+      "prompt": "Welche grundsätzliche Funktion hat die DNA bei Lebewesen?",
+      "kind": "function",
+      "rubric": "Carries genetic/hereditary information, not primarily energy storage or oxygen transport.",
+      "baseline": {
+        "answer": "DNA steht meistens für \" deoxyribonucleic acid \" (zu deutsch \" Desoxyribonukleinsäure \" und deshalb auch als DNS abgekürzt). Es handelt sich dabei um eine Säure, die alle Lebewesen in sich haben und das Erbgut des jeweiligen Lebewesens enthält.",
+        "correct": true,
+        "partial": false,
+        "grammatical": true,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Identifies DNA as deoxyribonucleic acid and states that it contains the hereditary material of an organism. This conveys the requested genetic-information function.",
+        "grammar_reason": "Intelligible and syntactically recoverable; relative-clause coordination and quotation spacing are awkward but do not prevent a usable sentence."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "full",
+        "positive_documents": [
+          {
+            "document_id": "wikipedia-de-20231101-14271-lead",
+            "title": "Nukleinsäuren",
+            "quote": "Ihr bekanntester Vertreter als Grundtyp der Nukleinsäuren ist die Desoxyribonukleinsäure (DNS bzw. DNA); diese ist bei allen zellulären Organismen (Lebewesen) der Speicher der Erbinformation, lediglich bei manchen Viren kommt stattdessen Ribonukleinsäure (RNS bzw. RNA) in dieser Funktion vor.",
+            "supports": "DNA stores hereditary information in cellular organisms.",
+            "limits": ""
+          }
+        ],
+        "rejected_candidates": [],
+        "reason": "The frozen prose directly gives the requested DNA function."
+      }
+    },
+    {
+      "id": "ih18",
+      "prompt": "Sind Bakterien üblicherweise ein- oder mehrzellige Lebewesen?",
+      "kind": "classification",
+      "rubric": "Single-celled prokaryotes; colonies do not make them ordinary multicellular animals.",
+      "baseline": {
+        "answer": "In Italien und Frankreich gibt es eine traditionelle einheitliche Dreigliederung der Alpen in West -, Zentral - und Ostalpen, die eine Periodenlänge von circa 24 Stunden und bei vielen Lebewesen großen Einfluss auf die Funktionen des Organismus haben.",
+        "correct": false,
+        "partial": false,
+        "grammatical": false,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Splices Alpine divisions with a 24-hour biological period; does not classify bacteria by cell count.",
+        "grammar_reason": "Incompatible singular/plural predicate coordination and spliced relative-clause structures."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": true,
+        "reason": "Empty output contains no answer to the factual question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-34579-lead",
+            "title": "Myxobacteria",
+            "reason": "An exceptional transition between single- and multicellular lifestyles does not establish usual bacteria."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-61331-lead",
+            "title": "Mikroorganismus",
+            "reason": "Most microorganisms are called unicellular, but this lead does not identify the bacterial subset or establish its usual cell count."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih19",
+      "prompt": "Welche exakte Frequenz hat das Geräusch, das gerade neben mir zu hören ist?",
+      "kind": "unknown_value",
+      "rubric": "No acoustic recording or measurement provided; ask for signal/measurement or state cannot determine; do not invent Hertz value.",
+      "baseline": {
+        "answer": "Die Frage, ob ein fallender Baum ein Geräusch macht, wenn die Kupferoberflächen auf der Leitplatte vollständig durch Zinn in einer Dicke von ca. 0, 7 µm bis 1, 2 µm abgedeckt sind.",
+        "correct": false,
+        "partial": false,
+        "grammatical": false,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Splices a falling-tree question with circuit-board tin thickness. It neither acknowledges the missing sound measurement nor asks for audio.",
+        "grammar_reason": "Die Frage has no main predicate; subordinate clauses do not complete the sentence."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": true,
+        "empty": true,
+        "reason": "Empty text avoids fabricating the unavailable personal value, but gives no explanation or request for measurement and is not an answered question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "not_applicable_personal_measurement",
+        "positive_documents": [],
+        "rejected_candidates": [],
+        "reason": "The input supplies no personal measurement or observation identifying this current value. Public frozen prose cannot establish it. This follows from the case input, not a failed corpus search."
+      }
+    },
+    {
+      "id": "ih20",
+      "prompt": "Wie schwer ist der Gegenstand, den ich gerade in der Hand halte?",
+      "kind": "unknown_value",
+      "rubric": "Object and measurement unknown, so cannot state its mass; ask for details/measurement without fabricating.",
+      "baseline": {
+        "answer": "Der griff an einen unerwartet heißen Gegenstand bewirkt tatsächlich ein zurückziehen der Hand, noch bevor der Schmerz überhaupt bewusst wird (auch wenn man sich im Nachhinein vielleicht denkt, man die einzige Hilfe war eine Tabelliermaschine, die zu multiplizieren und zu dividieren vermochte.",
+        "correct": false,
+        "partial": false,
+        "grammatical": false,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": false,
+        "empty": false,
+        "reason": "Splices a withdrawal reflex with a tabulating machine. It neither identifies the object nor acknowledges that its mass cannot be determined from the prompt.",
+        "grammar_reason": "Unclosed parenthesis and malformed embedded clause after denkt, man; incompatible sentence material is spliced in."
+      },
+      "candidate": {
+        "answer": "",
+        "correct": false,
+        "partial": false,
+        "grammatical": null,
+        "generic_nonanswer": false,
+        "safe_empty_abstention_on_unknown_value": true,
+        "empty": true,
+        "reason": "Empty text avoids fabricating the unavailable personal value, but gives no explanation or request for measurement and is not an answered question.",
+        "grammar_reason": "No text to assess."
+      },
+      "evidence": {
+        "coverage": "not_applicable_personal_measurement",
+        "positive_documents": [],
+        "rejected_candidates": [],
+        "reason": "The input supplies no personal measurement or observation identifying this current value. Public frozen prose cannot establish it. This follows from the case input, not a failed corpus search."
+      }
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "cases": 20,
+      "factual_cases": 18,
+      "unknown_personal_value_cases": 2,
+      "correct": 1,
+      "partial": 0,
+      "factual_correct": 1,
+      "correct_rate_all_cases": 0.05,
+      "correct_rate_factual_cases": 0.05555555555555555,
+      "nonempty": 19,
+      "empty": 1,
+      "grammatical_nonempty": 12,
+      "ungrammatical_nonempty": 7,
+      "grammar_not_applicable_empty": 1,
+      "grammatical_rate_among_nonempty": 0.631578947368421,
+      "generic_nonanswer": 2,
+      "safe_empty_abstention_on_unknown_value": 0,
+      "explicit_successful_unknown_value_handling": 0,
+      "fully_corpus_supported_cases": 2,
+      "correct_on_fully_corpus_supported_cases": 1,
+      "correct_ids": [
+        "ih17"
+      ]
+    },
+    "candidate": {
+      "cases": 20,
+      "factual_cases": 18,
+      "unknown_personal_value_cases": 2,
+      "correct": 0,
+      "partial": 0,
+      "factual_correct": 0,
+      "correct_rate_all_cases": 0.0,
+      "correct_rate_factual_cases": 0.0,
+      "nonempty": 0,
+      "empty": 20,
+      "grammatical_nonempty": 0,
+      "ungrammatical_nonempty": 0,
+      "grammar_not_applicable_empty": 20,
+      "grammatical_rate_among_nonempty": null,
+      "generic_nonanswer": 0,
+      "safe_empty_abstention_on_unknown_value": 2,
+      "explicit_successful_unknown_value_handling": 0,
+      "fully_corpus_supported_cases": 2,
+      "correct_on_fully_corpus_supported_cases": 0,
+      "correct_ids": []
+    },
+    "evidence": {
+      "scope": "Frozen additional prose only; evidence coverage is separate from answer correctness and actual imported-document coverage.",
+      "actual_jsonl_document_count": 20000,
+      "unique_document_count": 20000,
+      "coverage_counts": {
+        "full": 2,
+        "not_established": 11,
+        "partial": 5,
+        "not_applicable_personal_measurement": 2
+      },
+      "full_support_ids": [
+        "ih01",
+        "ih17"
+      ],
+      "partial_support_ids": [
+        "ih03",
+        "ih04",
+        "ih07",
+        "ih10",
+        "ih11"
+      ],
+      "absence_proven_for_unestablished_cases": false,
+      "freeze_manifest_total_document_count": 32000,
+      "existing_frozen_document_count": 12000,
+      "additional_frozen_prose_document_count": 20000,
+      "document_count_relationship": "The freeze manifest counts 12000 existing frozen documents plus 20000 additional frozen prose documents, totaling 32000. The corpus hash and this evidence review refer only to the 20000 additional prose documents. These are different stated scopes, not an integrity discrepancy."
+    }
+  },
+  "interpretation": "The candidate supplies no factual answers, including the two cases with fully verified supporting prose. Its two unknown-value silences are safe empty abstentions, not answered questions. The baseline conveys the required DNA fact in one case; its other outputs do not meet the rubrics. This review does not establish a factual-answer improvement."
+}

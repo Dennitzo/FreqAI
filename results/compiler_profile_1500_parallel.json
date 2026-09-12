@@ -1,0 +1,35 @@
+{
+  "records": 1500,
+  "serial": false,
+  "profiled_seconds": 5.272044900000765,
+  "map_phases": {
+    "_normalize_record": 1.7302965999988373,
+    "_concept_set_of": 0.10375500000009197,
+    "_statement_bundle": 0.12160429999858025,
+    "ContextFormsPass": 0.07262199999968288,
+    "_TransitionPass": 0.9326317999984894,
+    "_parse_declarations": 0.06390679999822169
+  },
+  "model_storage": {
+    "record_count": 1500,
+    "statement_count": 4305,
+    "vocabulary_size": 20708,
+    "group_count": 5392,
+    "prefix_fields": 266187,
+    "observed_edges": 401448,
+    "unaddressed_statement_count": 186,
+    "context_surface_forms": 5185,
+    "complex_coefficient_bytes": 6423168,
+    "support_index_bytes": 3211584,
+    "numerical_payload_bytes": 10099104,
+    "no_gradient_optimization": true,
+    "no_qa_pairs": true,
+    "excludes": "Python objects, token strings and temporary compilation counts",
+    "declarative_facts": 1061,
+    "lexical_role_bytes": 464352,
+    "explicit_grammar": true,
+    "optimizer_steps": 0,
+    "requires_question_answer_pairs": false
+  },
+  "cumulative_profile": "         2777340 function calls (2777038 primitive calls) in 5.270 seconds\n\n   Ordered by: cumulative time\n   List reduced from 474 to 45 due to restriction <45>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.039    0.039    5.272    5.272 unpaired.py:151(__init__)\n        1    0.825    0.825    5.038    5.038 information.py:405(__init__)\n        6    0.001    0.000    3.025    0.504 profile_compiler.py:36(timed_map)\n        6    0.002    0.000    3.023    0.504 parallel.py:184(map)\n      768    0.005    0.000    2.873    0.004 _base.py:428(result)\n      565    0.003    0.000    2.867    0.005 threading.py:295(wait)\n     1901    2.861    0.002    2.861    0.002 {method 'acquire' of '_thread.lock' objects}\n        1    0.007    0.007    1.838    1.838 information.py:190(normalize_records)\n   266187    0.205    0.000    0.425    0.000 spectral_storage.py:28(__init__)\n        1    0.043    0.043    0.308    0.308 information.py:311(compile_statements)\n    20849    0.215    0.000    0.230    0.000 _pocketfft.py:58(_raw_fft)\n    18765    0.019    0.000    0.224    0.000 _pocketfft.py:219(ifft)\n   553223    0.222    0.000    0.222    0.000 {built-in method numpy.asarray}\n      768    0.003    0.000    0.140    0.000 process.py:788(submit)\n        1    0.027    0.027    0.118    0.118 {built-in method builtins.sum}\n      768    0.001    0.000    0.117    0.000 process.py:754(_adjust_process_count)\n       32    0.000    0.000    0.115    0.004 process.py:777(_spawn_process)\n       32    0.000    0.000    0.114    0.004 process.py:110(start)\n    79553    0.054    0.000    0.111    0.000 __init__.py:660(update)\n       32    0.000    0.000    0.110    0.003 context.py:333(_Popen)\n       32    0.001    0.000    0.108    0.003 popen_spawn_win32.py:45(__init__)\n        1    0.001    0.001    0.105    0.105 information.py:242(collect_concepts)\n   266188    0.062    0.000    0.091    0.000 information.py:460(<genexpr>)\n       32    0.089    0.003    0.089    0.003 {built-in method _winapi.CreateProcess}\n     3183    0.021    0.000    0.072    0.000 unpaired.py:243(_role)\n    41138    0.046    0.000    0.072    0.000 spectral_ops.py:11(stable_frequency)\n568096/568016    0.058    0.000    0.058    0.000 {built-in method builtins.len}\n     1680    0.004    0.000    0.057    0.000 information.py:81(_concept)\n    25610    0.046    0.000    0.049    0.000 __init__.py:587(__init__)\n        1    0.010    0.010    0.049    0.049 information.py:424(<dictcomp>)\n     1680    0.003    0.000    0.047    0.000 information.py:76(_terms)\n    75086    0.021    0.000    0.044    0.000 {built-in method builtins.isinstance}\n        1    0.006    0.006    0.042    0.042 unpaired.py:166(<listcomp>)\n        1    0.006    0.006    0.042    0.042 information.py:421(<listcomp>)\n    20425    0.015    0.000    0.039    0.000 __init__.py:610(most_common)\n     4021    0.003    0.000    0.038    0.000 information.py:77(<genexpr>)\n     2341    0.011    0.000    0.032    0.000 features.py:29(canonical_term)\n     2084    0.002    0.000    0.029    0.000 _pocketfft.py:120(fft)\n      197    0.000    0.000    0.026    0.000 {built-in method builtins.next}\n      196    0.000    0.000    0.026    0.000 information.py:211(<genexpr>)\n      431    0.003    0.000    0.026    0.000 information.py:97(_subject)\n     4355    0.008    0.000    0.023    0.000 {built-in method builtins.any}\n    53943    0.013    0.000    0.023    0.000 <frozen abc>:117(__instancecheck__)\n    20425    0.011    0.000    0.022    0.000 heapq.py:523(nlargest)\n     1500    0.003    0.000    0.017    0.000 __init__.py:183(dumps)\n\n\n"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "accessed_date": "2026-09-06",
+  "source_policy": "Primary papers and official numerical documentation only. Search discovery exclusively through local SearXNG. Direct primary-source retrieval also used.",
+  "sources": [
+    {
+      "id": "plate1995",
+      "title": "Holographic Reduced Representations",
+      "authors": ["Tony A. Plate"],
+      "year": 1995,
+      "doi": "10.1109/72.377968",
+      "url": "https://redwood.berkeley.edu/wp-content/uploads/2020/08/Plate-HRR-IEEE-TransNN.pdf",
+      "read_scope": "Abstract, sections II and VIII; PDF pages 1-5 and 10-11",
+      "type": "peer_reviewed_primary_paper",
+      "supports": ["Circular convolution binding", "Fourier-domain inversion with unitary keys", "Crosstalk and need for cleanup memory"],
+      "does_not_establish": ["Universal training-free text generation", "Unlimited exact memory capacity"]
+    },
+    {
+      "id": "jones_mewhort2007",
+      "title": "Representing Word Meaning and Order Information in a Composite Holographic Lexicon",
+      "authors": ["Michael N. Jones", "Douglas J. K. Mewhort"],
+      "year": 2007,
+      "doi": "10.1037/0033-295X.114.1.1",
+      "url": "https://cseweb.ucsd.edu/~gary/PAPER-SUGGESTIONS/jones-mewhort-psych-rev-2007.pdf",
+      "read_scope": "Abstract and introduction, PDF page 1",
+      "type": "peer_reviewed_primary_paper",
+      "supports": ["Holographic word meaning and order representations predate this project", "Convolution and superposition used with unsupervised language experience"],
+      "does_not_establish": ["No corpus learning", "General response generation solely from physical vibration"]
+    },
+    {
+      "id": "kanerva2009",
+      "title": "Hyperdimensional Computing: An Introduction to Computing in Distributed Representation with High-Dimensional Random Vectors",
+      "authors": ["Pentti Kanerva"],
+      "year": 2009,
+      "doi": "10.1007/s12559-009-9009-8",
+      "url": "https://link.springer.com/article/10.1007/s12559-009-9009-8",
+      "read_scope": "Publisher abstract and bibliography only; paywalled full text was not read",
+      "type": "author_tutorial_paper",
+      "supports": ["Existing family of high-dimensional symbolic representations", "Prior related work includes HRR and holographic lexicons"]
+    },
+    {
+      "id": "frady2018",
+      "title": "A theory of sequence indexing and working memory in recurrent neural networks",
+      "authors": ["E. Paxon Frady", "Denis Kleyko", "Friedrich T. Sommer"],
+      "year": 2018,
+      "url": "https://arxiv.org/abs/1803.00412",
+      "full_text_url": "https://arxiv.org/pdf/1803.00412",
+      "read_scope": "Abstract; Fourier HRR discussion on PDF page 16; implementation appendix around PDF pages 47-48",
+      "type": "primary_paper_author_manuscript",
+      "supports": ["Complex random phase symbol codes", "Sequence retrieval with finite memory capacity", "Crosstalk-limited retrieval accuracy"]
+    },
+    {
+      "id": "jimenez2023",
+      "title": "Learning algorithms for oscillatory neural networks as associative memory for pattern recognition",
+      "authors": ["Manuel Jimenez", "Maria J. Avedillo", "Bernabe Linares-Barranco", "Juan Nunez"],
+      "year": 2023,
+      "doi": "10.3389/fnins.2023.1257611",
+      "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2023.1257611/full",
+      "read_scope": "Abstract and section 2.2",
+      "type": "peer_reviewed_primary_paper",
+      "supports": ["Oscillatory associative memory precedent", "This architecture uses learning rules for oscillator coupling"],
+      "does_not_establish": ["Training-free general language capability"]
+    },
+    {
+      "id": "saklakov2025",
+      "title": "Phase-Coded Memory and Morphological Resonance: A Next-Generation Retrieval-Augmented Generator Architecture",
+      "authors": ["Denis V. Saklakov"],
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2511.11848",
+      "read_scope": "Abstract and author-provided comments only",
+      "type": "conceptual_white_paper_preprint",
+      "supports": ["Very similar architecture concept was publicly proposed before this project"],
+      "does_not_establish": ["Independently validated performance", "Unlimited effective context", "Reproduced universal generator"]
+    },
+    {
+      "id": "shannon1948",
+      "title": "A Mathematical Theory of Communication",
+      "authors": ["C. E. Shannon"],
+      "year": 1948,
+      "url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf",
+      "read_scope": "Introduction and communication-system definitions, PDF pages 1-3",
+      "type": "primary_paper_reprint",
+      "supports": ["Technical reconstruction of messages is distinct from semantics", "Finite communication channels have capacity limits"]
+    },
+    {
+      "id": "numpy_fft",
+      "title": "Discrete Fourier Transform - NumPy manual",
+      "authors": ["NumPy developers"],
+      "url": "https://numpy.org/doc/stable/reference/routines.fft.html",
+      "read_scope": "DFT definitions, inverse transform, normalization, real-input symmetry",
+      "type": "official_software_documentation",
+      "supports": ["FFT and inverse FFT conventions", "Complex phase and original length must be handled correctly"]
+    }
+  ],
+  "unsuccessful_direct_reads": [
+    {"url": "https://doi.org/10.1109/72.377968", "error": "Web retrieval safety/fetch error; used the primary paper hosted by Berkeley instead"},
+    {"url": "https://ieeexplore.ieee.org/document/377968", "error": "JavaScript/robot verification page; paper content not obtained from this endpoint"},
+    {"url": "https://doi.org/10.1007/s12559-009-9009-8", "error": "Redirect fetch error; publisher article URL subsequently read directly"},
+    {"url": "https://www.cs.toronto.edu/~hinton/absps/plate95.pdf", "error": "Fetch error; no factual claims derived from this attempted URL"}
+  ],
+  "interpretation": {
+    "novelty": "Broad novelty claim contradicted by existing related systems; no exhaustive novelty or patent search performed",
+    "working_definition_training_free": "No gradient optimization, pretrained learned weights, or learned parameter updates; corpus indexing remains necessary",
+    "demonstrable_target": "Invertible encoding plus finite, source-grounded associative text retrieval",
+    "unproven_target": "Natural physical semantic-frequency law or universal language reasoning from linear interference alone"
+  }
+}

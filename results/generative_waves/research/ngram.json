@@ -1,0 +1,73 @@
+{
+  "request": {
+    "query": "Claude Shannon 1948 mathematical theory communication approximations English word generation Markov",
+    "maximumResults": 8,
+    "language": "de-DE"
+  },
+  "http_status": 200,
+  "retrieved_utc": "2026-09-06T08:23:19.104495+00:00",
+  "response": {
+    "query": "Claude Shannon 1948 mathematical theory communication approximations English word generation Markov",
+    "results": [
+      {
+        "title": "How does Shannon's entropy measure relate to message probability distributions?",
+        "url": "https://www.academia.edu/87374628/Claude_Shannon_and_A_Mathematical_Theory_of_Communication_",
+        "snippet": "Using English as his major example (see section 2.4), he argues that, in fact, an ergodic Markov chain is a good approximation of a source in most cases and he extends the definition of entropy for ergodic Markov chains in a very natural way.",
+        "source": "brave",
+        "thumbnailUrl": "https://imgs.search.brave.com/6HyxjJk9KPFnNkOK_1otixhESrLY8Gwc7yKfsMIRsTQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hdHRh/Y2htZW50cy5hY2Fk/ZW1pYS1hc3NldHMu/Y29tLzkxNjAwNjQz/L3RodW1ibmFpbHMv/MS5qcGc"
+      },
+      {
+        "title": "KI-Zeitstrahl - Basiswissen KI",
+        "url": "https://basiswissen-ki.de/de/ai-timeline/",
+        "snippet": "1948 veröffentlichte Claude Shannon bei Bell Labs A Mathematical Theory of Communication und begründete die Informationstheorie. Er führte das Bit als ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ1V0Gs1_ECz6acF8SK5O9aq8QCr61KmAmmEI_l6F9t4-MId4SLKkaWroG7"
+      },
+      {
+        "title": "ChatGPT und andere »Quatschmaschinen",
+        "url": "https://www.ssoar.info/ssoar/bitstream/handle/document/89958/ssoar-2023-Tuschling_et_al-ChatGPT_und_andere_Quatschmaschinen.pdf?sequence=3&isAllowed=y&lnkname=ssoar-2023-Tuschling_et_al-ChatGPT_und_andere_Quatschmaschinen.pdf",
+        "snippet": "1 Claude E. Shannon, The Mathematical Theory of Communication, The University of Illinois Press: Urbana 1964, pp. 29-125, quotation p. 56. Page 98. 96 ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSBc_o5gplPU1afMxlhy67b5vmwQQ9eA7hemeWc-CSsDpXhFJaAspWd9MU"
+      },
+      {
+        "title": "DIE ENTSTEHUNG VON INFORMATIONSKONZEPTEN IN DER ...",
+        "url": "https://www.weisses-rauschen.de/hero/hagemeyer/hagemeyer_dissertation.pdf",
+        "snippet": "... CLAUDE SHANNON. 40. 3.2.2. TECHNISCHE UND THEORETISCHE MODELLE. 40. 3.3 PHYSIK UND INFORMATIONSTHEORIE. 44. II INDUSTRIEFORSCHUNG UND TECHNIK (1924-1939). 47. 1 ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRunzMb75iAQzRxyAYmAqKGLKbbpnZnJZmXTiux9zERnJfIzYtSJI0oIv8"
+      },
+      {
+        "title": "Andrey Markov & Claude Shannon Counted Letters to Build the First Language-Generation Models - IEEE Spectrum",
+        "url": "https://spectrum.ieee.org/andrey-markov-and-claude-shannon-built-the-first-language-generation-models",
+        "snippet": "hannon’s paper outlined a way ... Shannon was fascinated by Markov’s idea that in a given text, the likelihood of some letter or word appearing could be approximated....",
+        "source": "brave",
+        "thumbnailUrl": "https://imgs.search.brave.com/4_TJ8WciK_n8PEtkv27xGWo7C_Cr6wwemQsttlUnr30/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zcGVj/dHJ1bS5pZWVlLm9y/Zy9tZWRpYS1saWJy/YXJ5L3J1c3NpYW4t/bWF0aGVtYXRpY2lh/bi1hbmRyZXktYW5k/cmV5ZXZpY2gtbWFy/a292LWluLWZyb250/LW9mLWhpcy1zdGF0/aXN0aWNhbC1hbmFs/eXNlcy1vZi1hbGV4/YW5kZXItcHVzaGtp/bnMtbm92ZWwtZXVn/ZW5lLW9uZWdpbi5q/cGc_aWQ9MjU1ODk4/ODUmd2lkdGg9MTIw/MCZoZWlnaHQ9NjAw/JmNvb3JkaW5hdGVz/PTAlMkMxNTUlMkMw/JTJDMTU1"
+      },
+      {
+        "title": "Oberwolfach Jahresbericht Annual Report 2008",
+        "url": "https://publications.mfo.de/bitstream/handle/mfo/471/annual-report-2008.pdf?sequence=1&isAllowed=y",
+        "snippet": "21.04.2009 ... All the non-scientific activities of the Mathematisches Forschungsinstitut. Oberwolfach have been committed to the Year of Mathematics and have ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTtdb9NzZxUgQKZtobnsRFZi36sP-fGVkOt9hZ3xyD1AhGutu7CJuFABOo"
+      },
+      {
+        "title": "Einträge mit Themengebiet \"Institut für Methodik der Fernerkundung ...",
+        "url": "https://elib.dlr.de/view/subjects/imf-pb.html",
+        "snippet": "In: The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XLII-2, Seiten 43-48. ISPRS TC II Mid-term Symposium 2018 ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSOWMBROJWMBehnH3LNYMQDhuBSssy9WJYLC5pgmx72hfeE8VEjGYIA5A"
+      },
+      {
+        "title": "Publikationen - emergenCITY",
+        "url": "https://www.emergencity.de/de/publications/",
+        "snippet": "Menschliches oder technisches Versagen, Naturkatastrophen, Pandemien, Cyber- oder Terrorangriffe können auch in Deutschland zu einem überregionalen Stromausfall ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRIMD3E5BhP-8dFC6u6eJW1c1xthQFH0cWY2JTZJQO1-FfeyvNnuEndrUs"
+      }
+    ],
+    "provider": "searxng",
+    "isFallback": false,
+    "retrievedAt": "2026-09-06T08:23:19.1035011+00:00"
+  }
+}

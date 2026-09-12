@@ -1,0 +1,55 @@
+{
+  "dataset": "wikimedia/wikipedia",
+  "configuration": "20231101.de",
+  "revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+  "files": [
+    {
+      "type": "file",
+      "oid": "1fb780d12b600307c19ed3d69d36ce09d67af340",
+      "size": 781271996,
+      "lfs": {
+        "oid": "8778fa2f0907e4eb65917b27092a911a400f9f2ee2eea4271423b706c29249a6",
+        "size": 781271996,
+        "pointerSize": 134
+      },
+      "xetHash": "d4e3ea171899eb320db014f45ff2d1eda3c192b15da4bbff5c94493817d2ee3f",
+      "path": "20231101.de/train-00000-of-00020.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "6ebc10824a6cffeb0ae800ed90dfc4410b81d45e",
+      "size": 258122020,
+      "lfs": {
+        "oid": "e35fec0fe1ca3614b2a44c53db7251e94863cb3c72a20b7cce73ede0bd4fae96",
+        "size": 258122020,
+        "pointerSize": 134
+      },
+      "xetHash": "4547b1546a76d9478da68b144195cdf6a1a2143d9512b02d0e898eab47aee28e",
+      "path": "20231101.de/train-00007-of-00020.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "af969580333cf8b0e498c77d405093c3443a3827",
+      "size": 228591696,
+      "lfs": {
+        "oid": "69d92a94ba4b28a9ea38311a33070b7f9cebf31f0bea51ba13e4e2ef9867409f",
+        "size": 228591696,
+        "pointerSize": 134
+      },
+      "xetHash": "c28a7d3030a15550a8022fa6c3f876074392c5844bafe28100601a03f891a523",
+      "path": "20231101.de/train-00013-of-00020.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "9d28f7ffd0ce53686b42b1ebd5da486e903292da",
+      "size": 228498582,
+      "lfs": {
+        "oid": "380fdb4baf70df935d3fec62761d36c8bff2f000a2cc7b720ebde743a8352e18",
+        "size": 228498582,
+        "pointerSize": 134
+      },
+      "xetHash": "7753eef6aa2c4c28ac00636fba9294002fecfdc2968c8ad1f80684a4cb8cc16b",
+      "path": "20231101.de/train-00019-of-00020.parquet"
+    }
+  ]
+}

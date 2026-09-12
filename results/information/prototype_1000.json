@@ -1,0 +1,239 @@
+{
+  "created_utc": "2026-09-06T10:53:13.594927+00:00",
+  "corpus_path": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\imports\\information_wikipedia_20000.jsonl",
+  "corpus_sha256": "8473462b187b219f7270db292e0fdc95ee82245ad047efb21e69b4eb16c77497",
+  "requested_records": 1000,
+  "core_sha256": "d11797477a21dcacd01640fe749ee643baea77df669d2a7e3a48fec2b213c29c",
+  "build_seconds": 5.512931299999764,
+  "storage": {
+    "record_count": 1000,
+    "statement_count": 3018,
+    "vocabulary_size": 15264,
+    "group_count": 3654,
+    "prefix_fields": 183597,
+    "observed_edges": 277372,
+    "unaddressed_statement_count": 64,
+    "complex_coefficient_bytes": 4437952,
+    "support_index_bytes": 2218976,
+    "numerical_payload_bytes": 6656928,
+    "no_gradient_optimization": true,
+    "no_qa_pairs": true,
+    "excludes": "Python objects, token strings and temporary compilation counts"
+  },
+  "probes": [
+    {
+      "prompt": "Was ist eine Frequenz?",
+      "answer": "Die Frequenz (von; auch Schwingungszahl genannt) ist in Physik und Technik ein Maß dafür, wie schnell bei einem periodischen Vorgang die Wiederholungen aufeinander folgen, z.",
+      "tokens": [
+        "die",
+        "frequenz",
+        "(",
+        "von",
+        ";",
+        "auch",
+        "schwingungszahl",
+        "genannt",
+        ")",
+        "ist",
+        "in",
+        "physik",
+        "und",
+        "technik",
+        "ein",
+        "mass",
+        "dafür",
+        ",",
+        "wie",
+        "schnell",
+        "bei",
+        "einem",
+        "periodischen",
+        "vorgang",
+        "die",
+        "wiederholungen",
+        "aufeinander",
+        "folgen",
+        ",",
+        "z",
+        "."
+      ],
+      "ended": true,
+      "reason": "",
+      "seconds": 0.019572600001993123,
+      "analysis": {
+        "supported": true,
+        "subjects": [
+          "frequenz"
+        ],
+        "facets": [
+          "definition"
+        ],
+        "groups_by_facet": {
+          "definition": [
+            1238,
+            1239
+          ]
+        },
+        "used_context": false,
+        "reason": ""
+      },
+      "numerics": [
+        {
+          "prefix": [],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.9074706810781104,
+          "active_tokens": 1,
+          "carrier_size": 1
+        },
+        {
+          "prefix": [
+            "die",
+            "frequenz",
+            "("
+          ],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.9924287699690908,
+          "active_tokens": 1,
+          "carrier_size": 1
+        },
+        {
+          "prefix": [
+            "die",
+            "frequenz",
+            "(",
+            "von",
+            ";",
+            "auch",
+            "schwingungszahl",
+            "genannt"
+          ],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.9924287699690908,
+          "active_tokens": 1,
+          "carrier_size": 1
+        }
+      ]
+    },
+    {
+      "prompt": "In welcher Einheit wird die Frequenz gemessen?",
+      "answer": "",
+      "tokens": [],
+      "ended": true,
+      "reason": "no_supported_information_binding",
+      "seconds": 0.00018460000137565657,
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "frequenz"
+        ],
+        "facets": [
+          "unit"
+        ],
+        "groups_by_facet": {
+          "unit": []
+        },
+        "used_context": false,
+        "reason": "no_supported_information_binding"
+      },
+      "numerics": []
+    },
+    {
+      "prompt": "Wie hängen Frequenz und Periodendauer zusammen?",
+      "answer": "Die Frequenz ist der Kehrwert der Periodendauer.",
+      "tokens": [
+        "die",
+        "frequenz",
+        "ist",
+        "der",
+        "kehrwert",
+        "der",
+        "periodendauer",
+        "."
+      ],
+      "ended": true,
+      "reason": "",
+      "seconds": 0.004567199997836724,
+      "analysis": {
+        "supported": true,
+        "subjects": [
+          "frequenz"
+        ],
+        "facets": [
+          "relation"
+        ],
+        "groups_by_facet": {
+          "relation": [
+            1241
+          ]
+        },
+        "used_context": false,
+        "reason": ""
+      },
+      "numerics": [
+        {
+          "prefix": [],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.9165001383239999,
+          "active_tokens": 1,
+          "carrier_size": 1
+        },
+        {
+          "prefix": [
+            "die",
+            "frequenz",
+            "ist"
+          ],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.833000276648,
+          "active_tokens": 1,
+          "carrier_size": 1
+        },
+        {
+          "prefix": [
+            "die",
+            "frequenz",
+            "ist",
+            "der",
+            "kehrwert",
+            "der",
+            "periodendauer",
+            "."
+          ],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.9165001383239999,
+          "active_tokens": 1,
+          "carrier_size": 1
+        }
+      ]
+    }
+  ],
+  "scope": "Numerical/scaling probes authored in this script; no evaluation/holdout data is read.",
+  "peak_process_working_set_bytes": 290410496,
+  "signature": {
+    "corpus_digest": "eda2c8b43d0f1d1510b6b0e63c7d438e40b85bdbf61d92b60113c64ae5ece5ab",
+    "coefficient_sha256": "2c0d0ba250ea2760bca296cde5cd92819e31b796dfdf793940d8fb7a47d89f2b",
+    "order": 2,
+    "coefficient_rule": "sqrt(count/sum(count))",
+    "storage": {
+      "record_count": 1000,
+      "statement_count": 3018,
+      "vocabulary_size": 15264,
+      "group_count": 3654,
+      "prefix_fields": 183597,
+      "observed_edges": 277372,
+      "unaddressed_statement_count": 64,
+      "complex_coefficient_bytes": 4437952,
+      "support_index_bytes": 2218976,
+      "numerical_payload_bytes": 6656928,
+      "no_gradient_optimization": true,
+      "no_qa_pairs": true,
+      "excludes": "Python objects, token strings and temporary compilation counts"
+    }
+  }
+}

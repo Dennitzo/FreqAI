@@ -1,0 +1,31 @@
+{
+ "corpus": {
+  "documents": 20093,
+  "vocabulary_size": 117055,
+  "build_seconds": 97.73
+ },
+ "data_wave": {
+  "mode_count": 116792,
+  "carrier_size": 117128,
+  "energy": 1.0000000000000002,
+  "fingerprint": "a45982a4850a4188"
+ },
+ "audited_states": 1089,
+ "max_operator_direct_error": 1.1121372701617487e-15,
+ "tolerance": 1e-11,
+ "worst_state": {
+  "max_error": 1.1121372701617487e-15,
+  "prompt": "Braucht Licht zur Ausbreitung Luft?",
+  "prefix": [],
+  "order_policy": "all",
+  "prompt_gain": 1.0,
+  "data_gain": 0.15,
+  "phase_error": 0.0
+ },
+ "single_mode_states": 819,
+ "multi_mode_states": 270,
+ "coupled_by_prompt_wave": 172,
+ "coupled_by_data_wave": 216,
+ "prompt_data_resonance_mean": 0.041955336435203806,
+ "invariant_failures": []
+}

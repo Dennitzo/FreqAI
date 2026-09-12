@@ -1,0 +1,10 @@
+---
+task_categories:
+- text-generation
+language:
+- de
+---
+
+A reformatted version of the [DRXD1000/Dolly-15k-German](https://huggingface.co/datasets/DRXD1000/Dolly-15k-German) dataset. 
+
+Available for finetuning in [hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory).

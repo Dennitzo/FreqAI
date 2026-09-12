@@ -1,0 +1,9 @@
+{
+  "command": ".venv/Scripts/python.exe -m pytest -q",
+  "date": "2026-09-06",
+  "passed": 536,
+  "failed": 0,
+  "elapsed_seconds": 20.07,
+  "information_core_sha256": "5c4726b86f05ba794aaf8e6a4cca3a91cee82a7520893484db3dd9a44a08f2d7",
+  "scope": "Entire technical suite after generic information question routing; not a language quality benchmark."
+}

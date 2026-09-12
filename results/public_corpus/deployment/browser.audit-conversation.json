@@ -1,0 +1,34 @@
+{
+  "session_id": "a2106535-2fbb-48e6-9cc2-9a6025d31822",
+  "conversation_revision": 3,
+  "turns": [
+    {
+      "prompt": "Hallo",
+      "answer": "Hallo! Schön, dass du hier bist.",
+      "abstained": false,
+      "generated": true,
+      "method": "autoregressive_spectral_decoder",
+      "revision": 1,
+      "created_at": "2026-09-06T10:12:41.331Z"
+    },
+    {
+      "prompt": "Mir geht es gut, wie geht es dir denn?",
+      "answer": "Es ist schön, wenn dir etwas gut gelingt. Ich kann Text verarbeiten, besitze aber kein menschliches Erleben.",
+      "abstained": false,
+      "generated": true,
+      "method": "autoregressive_spectral_decoder",
+      "revision": 2,
+      "created_at": "2026-09-06T10:12:43.378Z"
+    },
+    {
+      "prompt": "Danke.",
+      "answer": "Es ist gut zu wissen, was für dich passend war. Ich kann auf deine nächste Frage eingehen.",
+      "abstained": false,
+      "generated": true,
+      "method": "autoregressive_spectral_decoder",
+      "revision": 3,
+      "created_at": "2026-09-06T10:12:45.646Z"
+    }
+  ],
+  "truncated": false
+}

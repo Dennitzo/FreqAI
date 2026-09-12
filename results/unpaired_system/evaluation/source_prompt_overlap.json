@@ -1,0 +1,13 @@
+{
+  "description": "Exact normalized full user-prompt overlap audit only. Does not reveal heldout prompts to importer or decoder. Partial topical overlap is expected and not absence of evaluation novelty.",
+  "development": {
+    "suite_sha256": "f1ab9b582b95c8223fab9b78b29f670ebe81fc85956537859d67c9077be03e8d",
+    "turn_count": 20,
+    "complete_prompt_substring_matches": 0
+  },
+  "holdout": {
+    "suite_sha256": "83512a3cf7936f91f85f4c153172ca89618d31aca18b69b0b92befad6153ae8e",
+    "turn_count": 20,
+    "complete_prompt_substring_matches": 0
+  }
+}

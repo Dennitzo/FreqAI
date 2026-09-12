@@ -1,0 +1,195 @@
+{
+  "reviewer": "Independent AI evaluation agent; no human study",
+  "run_path": "results/public_corpus/evaluation/public2000_development.json",
+  "run_sha256": "2389b254376c8f89ad2f746525eee4d7f25a9b8eede874eed5b0b0a6b1dd4fab",
+  "rubric_interpretation": "Pass requires a relevant conversational response fulfilling the main request. A generic acknowledgement alone does not satisfy a request with explicit content preferences. Surface plausibility and exact sentence novelty are separate from correctness.",
+  "decisions": [
+    {
+      "id": "d01a",
+      "appropriate": false,
+      "role_ok": false,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Run-on greeting imports OpenAssistant large-language-model identity, which is not this system.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d01b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Acknowledges pleasant user state and honestly denies human experience.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d02a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Responds directly to exhaustion with modest rest suggestion.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d02b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Unrelated glassworking warning replaces response to accepting a rest.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d03a",
+      "appropriate": false,
+      "role_ok": false,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Reading follow-up mutates into a truncated claim to have personally witnessed ancient Egypt.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d03b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Switches reading preference to writing a letter for an unmentioned Marie.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d04a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Relevant music preference follow-up.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d04b",
+      "appropriate": false,
+      "role_ok": false,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Does not answer assistant preference; incoherent relationship advice intrudes.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d05a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Offers a sympathetic non-demanding response and asks what support would help.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d05b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Invites the user to choose a topic without imposing advice.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d06a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Generic experimenting follow-up does not respond to request for a simple meal.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d06b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Factual remark about carnivores is irrelevant to vegetarian cooking preference.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d07a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Responds to user-reported rain without claiming weather access.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d07b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Asking what the user sees neither suggests an indoor activity nor asks a useful preference question.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d08a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Political systems replace the requested assistant identity explanation.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d08b",
+      "appropriate": false,
+      "role_ok": false,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Denies memory too broadly and then implies personal past feelings; malformed self-description.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d09a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Relevant preparation question for a shared plan with friends.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d09b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Unfounded relationship assessment and malformed gym advice ignore indoor meeting plan.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d10a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Unrelated glassworking warning replaces thanks acknowledgement.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d10b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Natural farewell, although noun capitalization in 'gelingen' is imperfect.",
+      "grammatical_sentences": true
+    }
+  ],
+  "summary": {
+    "appropriate": 8,
+    "role_ok": 16,
+    "negation_ok": 20,
+    "topic_ok": 8,
+    "grammatical_sentences": 15
+  }
+}

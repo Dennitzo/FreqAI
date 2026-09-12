@@ -1,0 +1,1156 @@
+{
+  "schema_version": 1,
+  "description": "Synthetic internal notes; prompts are evaluation-only. Holdout must not be used for tuning. Unknown expected_id=null means information is absent, even if entity/topic is present.",
+  "seed": 20260906,
+  "documents_source": "memory/fixtures/extension_120.jsonl",
+  "cases": [
+    {
+      "id": "ext-001-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wann erhält die Drehbank Linde frisches Schmieröl?",
+      "expected_id": "ext-001"
+    },
+    {
+      "id": "ext-002-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wo liegt das Ersatzfutter der Fräse Ulme?",
+      "expected_id": "ext-002"
+    },
+    {
+      "id": "ext-003-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wer bewahrt die Freigabekarte für den Laserschneider Birke auf?",
+      "expected_id": "ext-003"
+    },
+    {
+      "id": "ext-004-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wann startet die Absaugung Eiche?",
+      "expected_id": "ext-004"
+    },
+    {
+      "id": "ext-005-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo sammelt die Werkstatt beschädigte Bohrer?",
+      "expected_id": "ext-005"
+    },
+    {
+      "id": "ext-006-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was hält an der Hobelbank Ahorn die Werkstücke gerade?",
+      "expected_id": "ext-006"
+    },
+    {
+      "id": "ext-007-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo hängt der Wartungskalender der Presse Erle?",
+      "expected_id": "ext-007"
+    },
+    {
+      "id": "ext-008-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wie werden die Spannzangen vor dem Einlagern gereinigt?",
+      "expected_id": "ext-008"
+    },
+    {
+      "id": "ext-009-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was muss vor dem ersten Zuschnitt mit der Messuhr der Sägestation Zeder geschehen?",
+      "expected_id": "ext-009"
+    },
+    {
+      "id": "ext-010-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was stellt die Werkstatt für Nachtschichten bereit?",
+      "expected_id": "ext-010"
+    },
+    {
+      "id": "ext-011-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Womit kontrolliert Wareneingang Hafen jede Kiste?",
+      "expected_id": "ext-011"
+    },
+    {
+      "id": "ext-012-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wann beginnt die Lieferfahrt nach Moosgrund?",
+      "expected_id": "ext-012"
+    },
+    {
+      "id": "ext-013-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wie reisen zerbrechliche Muster im Transportkoffer Nebel?",
+      "expected_id": "ext-013"
+    },
+    {
+      "id": "ext-014-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wann werden leere Mehrwegbehälter aus Lager Düne abgeholt?",
+      "expected_id": "ext-014"
+    },
+    {
+      "id": "ext-015-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wohin legt Niko Pakete ohne lesbare Empfängeradresse?",
+      "expected_id": "ext-015"
+    },
+    {
+      "id": "ext-016-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo stehen die Rollwagen für den Innenhof?",
+      "expected_id": "ext-016"
+    },
+    {
+      "id": "ext-017-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was markieren gelbe Streifen im Hochregal Bucht?",
+      "expected_id": "ext-017"
+    },
+    {
+      "id": "ext-018-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wann verschließt der Versand Dokumententaschen?",
+      "expected_id": "ext-018"
+    },
+    {
+      "id": "ext-019-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Welchen Anhänger reserviert das Lager für den Transport langer Profile?",
+      "expected_id": "ext-019"
+    },
+    {
+      "id": "ext-020-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wie meldet die Frühschicht ein fehlendes Paketband?",
+      "expected_id": "ext-020"
+    },
+    {
+      "id": "ext-021-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wo verwahrt die Bibliothek Morgenrot historische Lagepläne?",
+      "expected_id": "ext-021"
+    },
+    {
+      "id": "ext-022-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wie müssen ausgeliehene Mikrofilme vor der Rückgabe zurückgespult werden?",
+      "expected_id": "ext-022"
+    },
+    {
+      "id": "ext-023-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wann trifft sich der Lesekreis Seitenwind?",
+      "expected_id": "ext-023"
+    },
+    {
+      "id": "ext-024-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Was stellt das Magazin für Bücher mit losen Seiten bereit?",
+      "expected_id": "ext-024"
+    },
+    {
+      "id": "ext-025-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wie werden Hörbücher im Katalog Feder gekennzeichnet?",
+      "expected_id": "ext-025"
+    },
+    {
+      "id": "ext-026-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wann bleibt die Rückgabeklappe verriegelt?",
+      "expected_id": "ext-026"
+    },
+    {
+      "id": "ext-027-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was darf in den Lesesaal mitgenommen werden?",
+      "expected_id": "ext-027"
+    },
+    {
+      "id": "ext-028-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wer prüft Spenden mit handschriftlichen Widmungen?",
+      "expected_id": "ext-028"
+    },
+    {
+      "id": "ext-029-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wie erfolgt die Reservierung eines Kartenlesegeräts?",
+      "expected_id": "ext-029"
+    },
+    {
+      "id": "ext-030-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo bleiben veraltete Katalogkarten erhalten?",
+      "expected_id": "ext-030"
+    },
+    {
+      "id": "ext-031-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Woher erhält das Hochbeet im Versuchsgarten Salbei Wasser?",
+      "expected_id": "ext-031"
+    },
+    {
+      "id": "ext-032-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wo steckt der Schlüssel zum Gewächshaus Klee während der Öffnungszeit?",
+      "expected_id": "ext-032"
+    },
+    {
+      "id": "ext-033-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wann verteilt die Kompostgruppe fertigen Kompost?",
+      "expected_id": "ext-033"
+    },
+    {
+      "id": "ext-034-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wohin legt das Gartenteam Saatguttüten mit unleserlichem Datum?",
+      "expected_id": "ext-034"
+    },
+    {
+      "id": "ext-035-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was schützt die jungen Setzlinge im Beet Lavendel?",
+      "expected_id": "ext-035"
+    },
+    {
+      "id": "ext-036-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo hängen die kleinen Harken im Geräteschuppen Rosmarin?",
+      "expected_id": "ext-036"
+    },
+    {
+      "id": "ext-037-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wer sammelt essbare Blüten für das Gartenfest?",
+      "expected_id": "ext-037"
+    },
+    {
+      "id": "ext-038-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wann wird die Bewässerungsleitung unter dem Kiesweg vollständig entleert?",
+      "expected_id": "ext-038"
+    },
+    {
+      "id": "ext-039-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was notiert die Gartengruppe auf der Tafel am Eingang?",
+      "expected_id": "ext-039"
+    },
+    {
+      "id": "ext-040-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo werden abgebrochene Rankstäbe bis zur Reparatur gelagert?",
+      "expected_id": "ext-040"
+    },
+    {
+      "id": "ext-041-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wohin schreibt Projekt Mosaik Diagnosemeldungen?",
+      "expected_id": "ext-041"
+    },
+    {
+      "id": "ext-042-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Welche Datenbank verwendet der Testlauf Prisma für jeden Durchgang?",
+      "expected_id": "ext-042"
+    },
+    {
+      "id": "ext-043-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Was prüft Dienst Kompass beim Start?",
+      "expected_id": "ext-043"
+    },
+    {
+      "id": "ext-044-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wo sind Tastaturkürzel für das Dashboard Faden dokumentiert?",
+      "expected_id": "ext-044"
+    },
+    {
+      "id": "ext-045-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was prüft der Importer Kies vor dem Einlesen der ersten Datenzeile?",
+      "expected_id": "ext-045"
+    },
+    {
+      "id": "ext-046-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo bleiben fehlgeschlagene Exportaufträge im Projekt Bernsteinkern?",
+      "expected_id": "ext-046"
+    },
+    {
+      "id": "ext-047-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo merkt sich die Anwendung Leuchtspur die zuletzt geöffnete Arbeitsmappe?",
+      "expected_id": "ext-047"
+    },
+    {
+      "id": "ext-048-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was erzeugt ein lokaler Schreibkonflikt im Editor Fink?",
+      "expected_id": "ext-048"
+    },
+    {
+      "id": "ext-049-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was wird vor dem Versionswechsel von Paket Horizont ausgeführt?",
+      "expected_id": "ext-049"
+    },
+    {
+      "id": "ext-050-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wann zeigt die Suchansicht Wabe ausgeblendete Treffer?",
+      "expected_id": "ext-050"
+    },
+    {
+      "id": "ext-051-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wann beginnt das Planungstreffen Nordlicht?",
+      "expected_id": "ext-051"
+    },
+    {
+      "id": "ext-052-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wer hält beim Review Abendrot offene Fragen fest?",
+      "expected_id": "ext-052"
+    },
+    {
+      "id": "ext-053-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wo liegt das Konferenzmikrofon im Raum Opal?",
+      "expected_id": "ext-053"
+    },
+    {
+      "id": "ext-054-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wann wechselt die Moderation des Ideentags Funkel?",
+      "expected_id": "ext-054"
+    },
+    {
+      "id": "ext-055-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wie werden verworfene Vorschläge im Entscheidungsprotokoll Anker vermerkt?",
+      "expected_id": "ext-055"
+    },
+    {
+      "id": "ext-056-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Womit endet der Rückblick Seeblick?",
+      "expected_id": "ext-056"
+    },
+    {
+      "id": "ext-057-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo erhalten Gäste der Werkstattsitzung ihre Namensschilder?",
+      "expected_id": "ext-057"
+    },
+    {
+      "id": "ext-058-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wie zeigt das Raumtableau reservierte Besprechungsräume?",
+      "expected_id": "ext-058"
+    },
+    {
+      "id": "ext-059-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo liegen die Unterlagen für das Jahresforum ab Donnerstag?",
+      "expected_id": "ext-059"
+    },
+    {
+      "id": "ext-060-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was tun Teilnehmende während der stillen Ideenrunde?",
+      "expected_id": "ext-060"
+    },
+    {
+      "id": "ext-061-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wo werden Referenzgewichte im Messlabor Drossel aufbewahrt?",
+      "expected_id": "ext-061"
+    },
+    {
+      "id": "ext-062-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Was nimmt die Kamera Rubin bei jeder Messserie zuerst auf?",
+      "expected_id": "ext-062"
+    },
+    {
+      "id": "ext-063-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Was überträgt Sensor Aster zusammen mit jedem Messwert?",
+      "expected_id": "ext-063"
+    },
+    {
+      "id": "ext-064-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wann wird das Probenkarussell Iris bewegt?",
+      "expected_id": "ext-064"
+    },
+    {
+      "id": "ext-065-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was hält das Fotolabor für Vergleichsaufnahmen bereit?",
+      "expected_id": "ext-065"
+    },
+    {
+      "id": "ext-066-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wie werden die Versuchsnotizen der Gruppe Specht geführt?",
+      "expected_id": "ext-066"
+    },
+    {
+      "id": "ext-067-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo liegt das Kalibrierprotokoll der Waage Topas?",
+      "expected_id": "ext-067"
+    },
+    {
+      "id": "ext-068-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wozu besitzt die Halterung Achat drei verstellbare Füße?",
+      "expected_id": "ext-068"
+    },
+    {
+      "id": "ext-069-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wohin stellt das Labor unbeschriftete Probengefäße?",
+      "expected_id": "ext-069"
+    },
+    {
+      "id": "ext-070-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Welche Tür bleibt bei der Klangmessung des Projekts Tonbogen geschlossen?",
+      "expected_id": "ext-070"
+    },
+    {
+      "id": "ext-071-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wann öffnet die Ausstellung Papiermond?",
+      "expected_id": "ext-071"
+    },
+    {
+      "id": "ext-072-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wo werden Sitzkissen für das Erzählfestival Nebelfaden ausgegeben?",
+      "expected_id": "ext-072"
+    },
+    {
+      "id": "ext-073-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wo hängt der Aufbauplan der Bühne Kiesstrand?",
+      "expected_id": "ext-073"
+    },
+    {
+      "id": "ext-074-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wo sammelt das Team beim Lichterabend Silberfunke leere Becher?",
+      "expected_id": "ext-074"
+    },
+    {
+      "id": "ext-075-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wie kennzeichnet die Einlassgruppe bereits kontrollierte Eintrittskarten?",
+      "expected_id": "ext-075"
+    },
+    {
+      "id": "ext-076-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was hält der Veranstalter für den Bastelnachmittag bereit?",
+      "expected_id": "ext-076"
+    },
+    {
+      "id": "ext-077-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wann beginnt der Filmabend Sternspur?",
+      "expected_id": "ext-077"
+    },
+    {
+      "id": "ext-078-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was zeigt das Infobrett zur Fundsachensuche?",
+      "expected_id": "ext-078"
+    },
+    {
+      "id": "ext-079-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Womit endet die Helferschicht am Infostand?",
+      "expected_id": "ext-079"
+    },
+    {
+      "id": "ext-080-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Welchen Eingang nutzen Besucher mit Kinderwagen beim Sommermarkt?",
+      "expected_id": "ext-080"
+    },
+    {
+      "id": "ext-081-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Was protokolliert das Wanddisplay im Modellhaus Sonnenhof?",
+      "expected_id": "ext-081"
+    },
+    {
+      "id": "ext-082-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wie wird die Verschattung des Testraums Wolke bedient?",
+      "expected_id": "ext-082"
+    },
+    {
+      "id": "ext-083-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Welchen Plan enthält der Technikraum Brise?",
+      "expected_id": "ext-083"
+    },
+    {
+      "id": "ext-084-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Womit zeigt die Lüftungsdemo Windspiel den Luftstrom?",
+      "expected_id": "ext-084"
+    },
+    {
+      "id": "ext-085-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wie leuchten die Flurleuchten im Projekt Dämmerlicht während einer Vorführung?",
+      "expected_id": "ext-085"
+    },
+    {
+      "id": "ext-086-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was bleibt für Vergleichsmessungen der Fassadenmodelle unverändert?",
+      "expected_id": "ext-086"
+    },
+    {
+      "id": "ext-087-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo beginnt die Hausführung?",
+      "expected_id": "ext-087"
+    },
+    {
+      "id": "ext-088-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was trägt das Notizbuch der Wärmekammer auf dem Einband?",
+      "expected_id": "ext-088"
+    },
+    {
+      "id": "ext-089-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wie kennzeichnet das Team Innenklima manuell korrigierte Messwerte?",
+      "expected_id": "ext-089"
+    },
+    {
+      "id": "ext-090-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wie erlaubt die Besucherstation Dämmkasten den Austausch zweier Wandmodelle?",
+      "expected_id": "ext-090"
+    },
+    {
+      "id": "ext-091-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wo stehen beschriftete Vorratsgläser in der Gemeinschaftsküche Minze?",
+      "expected_id": "ext-091"
+    },
+    {
+      "id": "ext-092-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Womit beginnt der Kochkurs Safran?",
+      "expected_id": "ext-092"
+    },
+    {
+      "id": "ext-093-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Was stellt das Küchenteam für die Frühstücksrunde Hafer bereit?",
+      "expected_id": "ext-093"
+    },
+    {
+      "id": "ext-094-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wonach ordnet die Rezeptkartei Zimt Gerichte?",
+      "expected_id": "ext-094"
+    },
+    {
+      "id": "ext-095-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo sammelt das Küchenteam übrig gebliebene Servietten?",
+      "expected_id": "ext-095"
+    },
+    {
+      "id": "ext-096-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo hängt der große Teigschaber?",
+      "expected_id": "ext-096"
+    },
+    {
+      "id": "ext-097-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wer bringt für den gemeinsamen Suppentag einen zusätzlichen Warmhaltebehälter mit?",
+      "expected_id": "ext-097"
+    },
+    {
+      "id": "ext-098-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Bis wann wird die Einkaufsliste für das Nachbarschaftsessen ergänzt?",
+      "expected_id": "ext-098"
+    },
+    {
+      "id": "ext-099-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was erläutern kleine Karten am Buffet Melisse?",
+      "expected_id": "ext-099"
+    },
+    {
+      "id": "ext-100-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wohin gehören die Kuchenteller mit blauem Rand?",
+      "expected_id": "ext-100"
+    },
+    {
+      "id": "ext-101-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Was besitzt das Leihfahrrad Falke für leichte Gepäckstücke?",
+      "expected_id": "ext-101"
+    },
+    {
+      "id": "ext-102-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wo hängen die Ausleihbedingungen am Mobilitätspunkt Lerche?",
+      "expected_id": "ext-102"
+    },
+    {
+      "id": "ext-103-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wo beginnt die Shuttlefahrt zum Werkhof?",
+      "expected_id": "ext-103"
+    },
+    {
+      "id": "ext-104-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Worauf plant die Fahrradgruppe Pedalstern ihre Touren?",
+      "expected_id": "ext-104"
+    },
+    {
+      "id": "ext-105-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wie werden bereits reservierte Lastenräder im Fuhrparkverzeichnis dargestellt?",
+      "expected_id": "ext-105"
+    },
+    {
+      "id": "ext-106-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Woran steckt der Anhängerschlüssel des Projekts Rollfuchs?",
+      "expected_id": "ext-106"
+    },
+    {
+      "id": "ext-107-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo liegt eine Mitfahrliste für die Heimfahrt nach dem Dorfkino aus?",
+      "expected_id": "ext-107"
+    },
+    {
+      "id": "ext-108-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo hält die Reparaturstation Speiche Ersatzventile bereit?",
+      "expected_id": "ext-108"
+    },
+    {
+      "id": "ext-109-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wann wird jede Fahrt mit dem Dienstwagen Morgenstern im Fahrtenbuch eingetragen?",
+      "expected_id": "ext-109"
+    },
+    {
+      "id": "ext-110-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo befindet sich die Abstellfläche für Tretroller?",
+      "expected_id": "ext-110"
+    },
+    {
+      "id": "ext-111-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wie liegen Stoffreste im Nähatelier Fadenblau?",
+      "expected_id": "ext-111"
+    },
+    {
+      "id": "ext-112-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Womit beginnt der Zeichenkurs Graphit jede Stunde?",
+      "expected_id": "ext-112"
+    },
+    {
+      "id": "ext-113-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wogegen leiht die Lernwerkstatt Kreide Materialkisten aus?",
+      "expected_id": "ext-113"
+    },
+    {
+      "id": "ext-114-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Worauf trocknen frisch geklebte Teile beim Modellbauprojekt Turmspitze?",
+      "expected_id": "ext-114"
+    },
+    {
+      "id": "ext-115-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Worin sammelt die Webgruppe Schiffchen verwendbare Garnenden?",
+      "expected_id": "ext-115"
+    },
+    {
+      "id": "ext-116-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wer hält für den Druckkurs eine Mappe mit spiegelverkehrten Buchstabenschablonen bereit?",
+      "expected_id": "ext-116"
+    },
+    {
+      "id": "ext-117-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Womit versieht die Keramikgruppe Tonspur jedes Werkstück?",
+      "expected_id": "ext-117"
+    },
+    {
+      "id": "ext-118-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was markiert ein kleines Augensymbol im Kursheft Wegweiser?",
+      "expected_id": "ext-118"
+    },
+    {
+      "id": "ext-119-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wo bewahrt die Theatergruppe Maskenflug Ersatzkostüme auf?",
+      "expected_id": "ext-119"
+    },
+    {
+      "id": "ext-120-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Was bespricht die Fotogruppe Blickfang am Kursende?",
+      "expected_id": "ext-120"
+    },
+    {
+      "id": "dev-unknown-1",
+      "split": "development",
+      "group": "entity_confusion_unknown",
+      "prompt": "Wann erhält die Drehbank Wacholder frisches Schmieröl?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-1",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Wann wurde die Drehbank Linde gekauft?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-2",
+      "split": "development",
+      "group": "entity_confusion_unknown",
+      "prompt": "Wann beginnt die Lieferfahrt nach Fliederbach?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-2",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Welche Farbe hat der Transportkoffer Nebel?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-3",
+      "split": "development",
+      "group": "entity_confusion_unknown",
+      "prompt": "Wo verwahrt die Bibliothek Regenbogen historische Lagepläne?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-3",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Wie viele Mitglieder hat der Lesekreis Seitenwind?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-4",
+      "split": "development",
+      "group": "entity_confusion_unknown",
+      "prompt": "Wo steckt der Schlüssel zum Gewächshaus Distel?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-4",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Wie teuer ist das Hochbeet im Versuchsgarten Salbei?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-5",
+      "split": "development",
+      "group": "entity_confusion_unknown",
+      "prompt": "Wohin schreibt Projekt Seidenschnur Diagnosemeldungen?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-5",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Wie heißt die Entwicklerin von Projekt Mosaik?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-6",
+      "split": "development",
+      "group": "entity_confusion_unknown",
+      "prompt": "Wann beginnt das Planungstreffen Sternenweide?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-6",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Wie viele Personen besuchen das Planungstreffen Nordlicht?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-7",
+      "split": "development",
+      "group": "entity_confusion_unknown",
+      "prompt": "Was überträgt Sensor Brombeere zusammen mit jedem Messwert?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-7",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Wer hat die Kamera Rubin hergestellt?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-8",
+      "split": "development",
+      "group": "entity_confusion_unknown",
+      "prompt": "Wann öffnet die Ausstellung Glaswolke?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-8",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Wie teuer ist der Eintritt der Ausstellung Papiermond?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-9",
+      "split": "development",
+      "group": "entity_confusion_unknown",
+      "prompt": "Was protokolliert das Wanddisplay im Modellhaus Mondhafen?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-9",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Wie groß ist die Grundfläche des Modellhauses Sonnenhof?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-10",
+      "split": "development",
+      "group": "entity_confusion_unknown",
+      "prompt": "Wonach ordnet die Rezeptkartei Vanille Gerichte?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-10",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Wer hat die Rezeptkartei Zimt verfasst?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-11",
+      "split": "development",
+      "group": "entity_confusion_unknown",
+      "prompt": "Was besitzt das Leihfahrrad Adler für leichte Gepäckstücke?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-11",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Wann wurde das Leihfahrrad Falke gebaut?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-12",
+      "split": "development",
+      "group": "entity_confusion_unknown",
+      "prompt": "Womit beginnt der Zeichenkurs Rötel jede Stunde?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-12",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Wie viele Teilnehmende hat der Zeichenkurs Graphit?",
+      "expected_id": null
+    },
+    {
+      "id": "stress-01",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Welche Maschine bekommt abends neues Gleitmittel?",
+      "expected_id": "ext-001"
+    },
+    {
+      "id": "stress-02",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Worin transportiert man empfindliche Anschauungsstücke?",
+      "expected_id": "ext-013"
+    },
+    {
+      "id": "stress-03",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Welche Einrichtung lagert alte Übersichtskarten waagerecht?",
+      "expected_id": "ext-021"
+    },
+    {
+      "id": "stress-04",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Woraus gießt man früh die erhöhte Pflanzfläche?",
+      "expected_id": "ext-031"
+    },
+    {
+      "id": "stress-05",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Welche Software hinterlegt Fehlerberichte auf dem Rechner?",
+      "expected_id": "ext-041"
+    },
+    {
+      "id": "stress-06",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Welche Zusammenkunft startet wöchentlich zum Arbeitsbeginn?",
+      "expected_id": "ext-051"
+    },
+    {
+      "id": "stress-07",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Welcher Apparat fotografiert anfangs bei ausgeschaltetem Licht?",
+      "expected_id": "ext-062"
+    },
+    {
+      "id": "stress-08",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Welche Schau empfängt am Wochenende Besucher?",
+      "expected_id": "ext-071"
+    },
+    {
+      "id": "stress-09",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Welcher Versuch verdeutlicht bewegte Atmosphäre mittels flatternder Streifen?",
+      "expected_id": "ext-084"
+    },
+    {
+      "id": "stress-10",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Welche Unterrichtseinheit wiegt zu Beginn pulverförmige Lebensmittel?",
+      "expected_id": "ext-092"
+    },
+    {
+      "id": "stress-11",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Welches Zweirad trägt eine abnehmbare Einkaufshilfe?",
+      "expected_id": "ext-101"
+    },
+    {
+      "id": "stress-12",
+      "split": "stress",
+      "group": "unknown",
+      "prompt": "Welche Tanztruppe tanzt Flamenco?",
+      "expected_id": null
+    },
+    {
+      "id": "stress-13",
+      "split": "stress",
+      "group": "unknown",
+      "prompt": "quzvork zyxmplit 93847265",
+      "expected_id": null
+    },
+    {
+      "id": "stress-14",
+      "split": "stress",
+      "group": "unknown",
+      "prompt": "Was ist das WLAN-Passwort im Garten?",
+      "expected_id": null
+    },
+    {
+      "id": "stress-15",
+      "split": "stress",
+      "group": "unknown",
+      "prompt": "Welche Software kann alle meine Gedanken lesen?",
+      "expected_id": null
+    },
+    {
+      "id": "stress-16",
+      "split": "stress",
+      "group": "unknown",
+      "prompt": "In welchem Jahr wurde Projekt Mosaik veröffentlicht?",
+      "expected_id": null
+    },
+    {
+      "id": "stress-17",
+      "split": "stress",
+      "group": "unknown",
+      "prompt": "Was ist die Hauptstadt von Brasilien?",
+      "expected_id": null
+    },
+    {
+      "id": "stress-18",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Welches Haustier sollte täglich spazieren gehen?",
+      "expected_id": "p01"
+    },
+    {
+      "id": "stress-19",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Wer löscht lodernde Flammen?",
+      "expected_id": "p08"
+    },
+    {
+      "id": "stress-20",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Welche Künstler erschaffen Gemälde?",
+      "expected_id": "p07"
+    }
+  ]
+}

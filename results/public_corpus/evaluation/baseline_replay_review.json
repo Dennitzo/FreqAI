@@ -1,0 +1,113 @@
+{
+  "reviewer": "Independent AI evaluation agent; no human study",
+  "run_path": "results/public_corpus/evaluation/baseline_replay.json",
+  "run_sha256": "59d25131977c3f6ded72d75b1085ce099725a2e21bd6d1dfe149a052eb9bbba5",
+  "scope": "Known original import questions. This is in-sample storage/generation capacity, never held-out generalization or a standard QA benchmark.",
+  "decisions": [
+    {
+      "id": "germanquad-train-47788",
+      "factually_correct_against_source": false,
+      "reason": "Unrelated smalltalk does not supply the requested fact."
+    },
+    {
+      "id": "germanquad-train-52954",
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": "germanquad-train-65182",
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": "germanquad-train-57510",
+      "factually_correct_against_source": false,
+      "reason": "Unrelated smalltalk does not supply the requested fact."
+    },
+    {
+      "id": "germanquad-train-57877",
+      "factually_correct_against_source": false,
+      "reason": "Unrelated smalltalk does not supply the requested fact."
+    },
+    {
+      "id": "germanquad-train-70054",
+      "factually_correct_against_source": false,
+      "reason": "Unrelated smalltalk does not supply the requested fact."
+    },
+    {
+      "id": "germanquad-train-49306",
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": "germanquad-train-46948",
+      "factually_correct_against_source": false,
+      "reason": "Unrelated smalltalk does not supply the requested fact."
+    },
+    {
+      "id": "germanquad-train-59003",
+      "factually_correct_against_source": false,
+      "reason": "Unrelated smalltalk does not supply the requested fact."
+    },
+    {
+      "id": "germanquad-train-67340",
+      "factually_correct_against_source": false,
+      "reason": "Unrelated smalltalk does not supply the requested fact."
+    },
+    {
+      "id": "germanquad-train-70366",
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": "germanquad-train-59157",
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": "germanquad-train-69819",
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": "germanquad-train-59964",
+      "factually_correct_against_source": false,
+      "reason": "Unrelated smalltalk does not supply the requested fact."
+    },
+    {
+      "id": "germanquad-train-47334",
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": "germanquad-train-69174",
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": "germanquad-train-65807",
+      "factually_correct_against_source": false,
+      "reason": "Unrelated smalltalk does not supply the requested fact."
+    },
+    {
+      "id": "germanquad-train-67294",
+      "factually_correct_against_source": false,
+      "reason": "Unrelated smalltalk does not supply the requested fact."
+    },
+    {
+      "id": "germanquad-train-65921",
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": "germanquad-train-59644",
+      "factually_correct_against_source": false,
+      "reason": "Unrelated smalltalk does not supply the requested fact."
+    }
+  ],
+  "summary": {
+    "correct": 0,
+    "questions": 20,
+    "known_import_records": 0
+  }
+}

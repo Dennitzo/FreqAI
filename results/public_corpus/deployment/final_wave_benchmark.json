@@ -1,0 +1,15 @@
+{
+  "documents": 12000,
+  "build_seconds": 8.152548100000786,
+  "snapshot_seconds": [
+    0.4395786999994016,
+    0.4509245000008377,
+    0.44832550000137417,
+    0.48612689999936265
+  ],
+  "median_seconds": 0.44962500000110595,
+  "modal_count": 5964644,
+  "distinct_transform_lengths": 743,
+  "energy": 800789.8169011918,
+  "note": "All full q/p and inverse-DCT values computed in batches; only display coordinates retained, full modal energy audited."
+}

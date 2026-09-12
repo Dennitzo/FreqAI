@@ -1,0 +1,610 @@
+{
+  "scope": "Independent unit-test Toy prose only; no evaluation questions.",
+  "core_sha256": "5c4726b86f05ba794aaf8e6a4cca3a91cee82a7520893484db3dd9a44a08f2d7",
+  "checked_states": 54,
+  "finite_probability_states": 48,
+  "destructive_zero_refusals": 6,
+  "operator_direct_max_error": 0.0,
+  "time_max_error": 0.0,
+  "data_phase_total_variations": [
+    0.0
+  ],
+  "prompt_null_refused": true,
+  "actual_complex_data_null_refused": true,
+  "prefix_null_total_variation": 0.8139752780868139,
+  "relative_phase_total_variation_at_example_prefix": 0.0,
+  "multiple_mode_data_phase_total_variation": 0.333065807313,
+  "multiple_mode_relative_phase_total_variation": 0.666666666667,
+  "multiple_mode_relative_phase_changes_top_token": true,
+  "coefficient_rebuild_equal": true,
+  "coefficient_sha256": "d86f5b151837e1a1e65703fcf3de0ab843c0af7ae2f30f085e8e36658a7bd966",
+  "new_sentence_examples": [
+    {
+      "seed": 7,
+      "text": "Blaue Katzen schlafen.",
+      "tokens": [
+        "blaue",
+        "katzen",
+        "schlafen",
+        "."
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "intervention": "observed",
+      "prefix": [],
+      "time_s": 0,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [],
+      "time_s": 0,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [],
+      "time_s": 0,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [],
+      "time_s": 73.125,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [],
+      "time_s": 73.125,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [],
+      "time_s": 73.125,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 0,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 0,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 0,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": true,
+      "error": "Interference has no supported finite energy"
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 73.125,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 73.125,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 73.125,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": true,
+      "error": "Interference has no supported finite energy"
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 1000000000.0,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 1000000000.0,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 1000000000.0,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": true,
+      "error": "Interference has no supported finite energy"
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 0,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 0,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 0,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 73.125,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 73.125,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 73.125,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 1000000000.0,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 1000000000.0,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "observed",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 1000000000.0,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [],
+      "time_s": 0,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [],
+      "time_s": 0,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [],
+      "time_s": 0,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [],
+      "time_s": 73.125,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [],
+      "time_s": 73.125,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [],
+      "time_s": 73.125,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 0,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 0,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 0,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": true,
+      "error": "Interference has no supported finite energy"
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 73.125,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 73.125,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 73.125,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": true,
+      "error": "Interference has no supported finite energy"
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 1000000000.0,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 1000000000.0,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "die"
+      ],
+      "time_s": 1000000000.0,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": true,
+      "error": "Interference has no supported finite energy"
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 0,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 0,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 0,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 73.125,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 73.125,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 73.125,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 1000000000.0,
+      "phase_error": 0,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 1000000000.0,
+      "phase_error": 0.8,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    },
+    {
+      "intervention": "complex_phase",
+      "prefix": [
+        "frequenz",
+        "ist"
+      ],
+      "time_s": 1000000000.0,
+      "phase_error": 3.141592653589793,
+      "destructive_zero_refusal": false,
+      "operator_direct_error": 0.0,
+      "time_error": 0.0
+    }
+  ],
+  "interpretation": [
+    "Coefficients are numerical weights calculated from observed counts; no gradient optimization.",
+    "No dataset-specific gains or old dialogue mixture coefficients are used.",
+    "Numerical dependence and new Toy combinations do not prove general factual understanding."
+  ]
+}

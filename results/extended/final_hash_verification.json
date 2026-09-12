@@ -1,0 +1,50 @@
+﻿[
+    {
+        "path":  "memory\\fixtures\\extension_120.jsonl",
+        "unchanged":  true
+    },
+    {
+        "path":  "memory\\evaluation\\extension_queries.json",
+        "unchanged":  true
+    },
+    {
+        "path":  "memory\\fixtures\\demo.jsonl",
+        "unchanged":  true
+    },
+    {
+        "path":  "memory\\fixtures\\benchmark.json",
+        "unchanged":  true
+    },
+    {
+        "path":  "freqai\\memory.py",
+        "unchanged":  true
+    },
+    {
+        "path":  "freqai\\features.py",
+        "unchanged":  true
+    },
+    {
+        "path":  "freqai\\codec.py",
+        "unchanged":  true
+    },
+    {
+        "path":  "experiments\\run_extended.py",
+        "unchanged":  true
+    },
+    {
+        "path":  "results\\extended\\baseline_source\\freqai\\__init__.py",
+        "unchanged":  true
+    },
+    {
+        "path":  "results\\extended\\baseline_source\\freqai\\codec.py",
+        "unchanged":  true
+    },
+    {
+        "path":  "results\\extended\\baseline_source\\freqai\\features.py",
+        "unchanged":  true
+    },
+    {
+        "path":  "results\\extended\\baseline_source\\freqai\\memory.py",
+        "unchanged":  true
+    }
+]

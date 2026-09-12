@@ -1,0 +1,148 @@
+{
+  "checked_at": "2026-09-06T07:59:33.119519+00:00",
+  "deployment_stage": "V1",
+  "url": "http://127.0.0.1:8765",
+  "reported_three_turn_dialogue_passed": true,
+  "reload_restored_history_and_context": true,
+  "contextual_reciprocal_after_reload_passed": true,
+  "tabs_have_independent_sessions": true,
+  "session_histories_have_no_name_leakage": true,
+  "new_conversation_resets_context": true,
+  "javascript_errors": [],
+  "wave_advanced_ticks": 27,
+  "wave_advanced_seconds": 2.6999900999999227,
+  "live_revision_unchanged": 2,
+  "backup": {
+    "documents_sha256": "8ac2c2496d8395e4d76905e42c0453679224ff8bd22a0ad4ebb1d327722fc697",
+    "document_count": 120,
+    "archive_count": 48,
+    "history_count": 10,
+    "integrity_check": "ok"
+  },
+  "active_before": {
+    "documents_sha256": "8ac2c2496d8395e4d76905e42c0453679224ff8bd22a0ad4ebb1d327722fc697",
+    "document_count": 120,
+    "archive_count": 48,
+    "history_count": 10,
+    "integrity_check": "ok"
+  },
+  "active_after": {
+    "documents_sha256": "8ac2c2496d8395e4d76905e42c0453679224ff8bd22a0ad4ebb1d327722fc697",
+    "document_count": 120,
+    "archive_count": 48,
+    "history_count": 22,
+    "integrity_check": "ok"
+  },
+  "documents_and_archive_unchanged": true,
+  "ordinary_test_queries": 12,
+  "replies": [
+    {
+      "prompt": "Hallo",
+      "answer": "Hallo! Schön, dass du da bist. Wie geht es dir heute?",
+      "abstained": false,
+      "generated": false,
+      "method": "semantic_wave_dialogue",
+      "session_id": "5eb1dd77-aff2-417b-92f4-520ece6437dc",
+      "conversation_revision": 1
+    },
+    {
+      "prompt": "Mir geht es gut, wie geht es dir denn?",
+      "answer": "Das klingt schön. Ich bin bereit für unser Gespräch.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "session_id": "5eb1dd77-aff2-417b-92f4-520ece6437dc",
+      "conversation_revision": 2
+    },
+    {
+      "prompt": "gut und dir?",
+      "answer": "Das klingt schön. Ich bin bereit für unser Gespräch.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "session_id": "5eb1dd77-aff2-417b-92f4-520ece6437dc",
+      "conversation_revision": 3
+    },
+    {
+      "prompt": "Und dir?",
+      "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+      "abstained": false,
+      "generated": false,
+      "method": "semantic_wave_dialogue",
+      "session_id": "5eb1dd77-aff2-417b-92f4-520ece6437dc",
+      "conversation_revision": 4
+    },
+    {
+      "prompt": "Ich heiße Elena.",
+      "answer": "Schön, dich kennenzulernen, Elena.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "session_id": "5eb1dd77-aff2-417b-92f4-520ece6437dc",
+      "conversation_revision": 5
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir gesagt, dass du Elena heißt.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "session_id": "5eb1dd77-aff2-417b-92f4-520ece6437dc",
+      "conversation_revision": 6
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir deinen Namen in diesem Gespräch noch nicht genannt. Wie heißt du?",
+      "abstained": true,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "session_id": "b3a773b8-3333-4d2e-9cb4-fdefb36f6c59",
+      "conversation_revision": 1
+    },
+    {
+      "prompt": "Ich heiße Sofia.",
+      "answer": "Schön, dich kennenzulernen, Sofia.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "session_id": "b3a773b8-3333-4d2e-9cb4-fdefb36f6c59",
+      "conversation_revision": 2
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir gesagt, dass du Sofia heißt.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "session_id": "b3a773b8-3333-4d2e-9cb4-fdefb36f6c59",
+      "conversation_revision": 3
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir gesagt, dass du Elena heißt.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "session_id": "5eb1dd77-aff2-417b-92f4-520ece6437dc",
+      "conversation_revision": 7
+    },
+    {
+      "prompt": "Und dir?",
+      "answer": "Worauf beziehst du dich mit deiner Rückfrage?",
+      "abstained": true,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "session_id": "ef223c65-edae-40e0-8c20-02836d4c3925",
+      "conversation_revision": 1
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir deinen Namen in diesem Gespräch noch nicht genannt. Wie heißt du?",
+      "abstained": true,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "session_id": "ef223c65-edae-40e0-8c20-02836d4c3925",
+      "conversation_revision": 2
+    }
+  ]
+}

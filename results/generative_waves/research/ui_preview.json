@@ -1,0 +1,8 @@
+{
+  "default_mode": "wave",
+  "legacy_answer": "FreqAI\nHallo! Schön, dass du da bist. Wie geht es dir heute?",
+  "reload_preserves_session_and_mode": true,
+  "new_conversation_clears_display": true,
+  "javascript_errors": [],
+  "tested_generation": false
+}

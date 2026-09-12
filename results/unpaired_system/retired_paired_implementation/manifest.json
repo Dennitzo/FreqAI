@@ -1,0 +1,75 @@
+{
+  "reason": "Removed paired language runtime and obsolete paired-runtime tests; originals retained for historical reproduction. Current tests cover the information-only replacement.",
+  "files": [
+    {
+      "original_path": "freqai/dialogue.py",
+      "archive_path": "results\\unpaired_system\\retired_paired_implementation\\freqai\\dialogue.py",
+      "sha256": "21d1287fe86a396223870baa5b65dca15e7d03bbf9bf09cc23b3f8d4deb8f15d"
+    },
+    {
+      "original_path": "freqai/semantics.py",
+      "archive_path": "results\\unpaired_system\\retired_paired_implementation\\freqai\\semantics.py",
+      "sha256": "51924df70352cc896015f17b3679da3e0ae0b34e0030a00b6f4d0ad44c7bca46"
+    },
+    {
+      "original_path": "freqai/generative.py",
+      "archive_path": "results\\unpaired_system\\retired_paired_implementation\\freqai\\generative.py",
+      "sha256": "d6a475c270bba5ebbc838a37b250a2fdc2ec9aed2024f4b8a9331a2e3744d172"
+    },
+    {
+      "original_path": "tests/test_dialogue.py",
+      "archive_path": "results\\unpaired_system\\retired_paired_implementation\\tests\\test_dialogue.py",
+      "sha256": "84a16432e8c2eb8e5fae07a62e3258a994d903e4f1063a662ad20dcd2ebb0f9d"
+    },
+    {
+      "original_path": "tests/test_dialogue_generalization.py",
+      "archive_path": "results\\unpaired_system\\retired_paired_implementation\\tests\\test_dialogue_generalization.py",
+      "sha256": "33de661d46cc055df4baea79c04ba5fc5fb9703184e1e04c2727033f4ff3b90b"
+    },
+    {
+      "original_path": "tests/test_dialogue_runtime.py",
+      "archive_path": "results\\unpaired_system\\retired_paired_implementation\\tests\\test_dialogue_runtime.py",
+      "sha256": "825f7192782232791b7a19a761847428571ed77479e0ffcdc9d8109ef7615219"
+    },
+    {
+      "original_path": "tests/test_semantics.py",
+      "archive_path": "results\\unpaired_system\\retired_paired_implementation\\tests\\test_semantics.py",
+      "sha256": "cedd8f1f1867610ef48b975f105c430838ac89818e68c3346cc5b55333ab5614"
+    },
+    {
+      "original_path": "tests/test_generation_conditioning.py",
+      "archive_path": "results\\unpaired_system\\retired_paired_implementation\\tests\\test_generation_conditioning.py",
+      "sha256": "e2f00a12672c3873b001fa4079cc05b8621e3620ae48ba83e2feb88d3806da60"
+    },
+    {
+      "original_path": "tests/test_generative_carrier.py",
+      "archive_path": "results\\unpaired_system\\retired_paired_implementation\\tests\\test_generative_carrier.py",
+      "sha256": "bd161dc8dcbce71447d9d67ed1378d7bfa1a724c0abf3733bc1505f6a2a9ad22"
+    },
+    {
+      "original_path": "tests/test_generative_fields.py",
+      "archive_path": "results\\unpaired_system\\retired_paired_implementation\\tests\\test_generative_fields.py",
+      "sha256": "d0d5ee8176464559e7e927b958782f61b8c8bdfa74eaffab1bfdbb5da94c79f3"
+    },
+    {
+      "original_path": "tests/test_generative_scaling.py",
+      "archive_path": "results\\unpaired_system\\retired_paired_implementation\\tests\\test_generative_scaling.py",
+      "sha256": "c309a05ed1fd9170371ad7d33ca0983ecd0357ecd7a04f07251d11b307707434"
+    },
+    {
+      "original_path": "tests/test_corpus_source_weights.py",
+      "archive_path": "results\\unpaired_system\\retired_paired_implementation\\tests\\test_corpus_source_weights.py",
+      "sha256": "3e4d113459147ce39742460400195516015dbe26d06d4b9a264a889e7c91c609"
+    },
+    {
+      "original_path": "tests/test_generation_runtime.py",
+      "archive_path": "results\\unpaired_system\\retired_paired_implementation\\tests\\test_generation_runtime.py",
+      "sha256": "ef4923536dc16615c8296b17e701b6ce379dd61b675e8c4fb271d54728bb0a42"
+    },
+    {
+      "original_path": "tests/test_information_runtime.py",
+      "archive_path": "results\\unpaired_system\\retired_paired_implementation\\tests\\test_information_runtime.py",
+      "sha256": "eb7e1cd1a76dbc64f1d8304383a5aea2a6b9197f17cdba9ea410c0e58af1c9ee"
+    }
+  ]
+}

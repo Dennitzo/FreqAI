@@ -1,0 +1,565 @@
+{
+  "run_sha256": "3d06b8d5cf996505b3dc1c9e3fde337cc46695188980e5369d03c6cb778c46fd",
+  "review": "Independent second AI-agent review; normalized without changing judgments. Empty text has grammar=null (not applicable).",
+  "review_source": "results\\information_corpus\\evaluation\\independent_holdout_review.json",
+  "review_source_sha256": "e59088ad4fbf5a7bbb2b88d13f6a72de3728e3c2c70d36b8e0724920613cc904",
+  "rows": [
+    {
+      "id": "ih01",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "full",
+        "positive_documents": [
+          {
+            "document_id": "wikipedia-de-20231101-10738-lead",
+            "title": "Wellenlänge",
+            "quote": "Die Wellenlänge (griechisch: Lambda) einer periodischen Welle ist der kleinste Abstand zweier Punkte gleicher Phase.",
+            "supports": "Wavelength is the smallest spatial distance between points of equal phase.",
+            "limits": ""
+          }
+        ],
+        "rejected_candidates": [],
+        "reason": "The frozen paragraph directly gives the requested definition."
+      }
+    },
+    {
+      "id": "ih02",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-2140-lead",
+            "title": "Hektar",
+            "reason": "Hectare is an area conversion, not a definition of kilo."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih03",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "partial",
+        "positive_documents": [
+          {
+            "document_id": "wikipedia-de-20231101-13112-lead",
+            "title": "Pferdekopfnebel",
+            "quote": "Von der Erde ist der Nebel ungefähr 1500 Lichtjahre entfernt und erscheint ein Viertel so groß wie der Erdmond.",
+            "supports": "Lichtjahre are used to specify distance from Earth.",
+            "limits": "Does not explicitly define light travel in one year in vacuum."
+          }
+        ],
+        "rejected_candidates": [],
+        "reason": "Positive contextual distance use; the full unit definition is not established."
+      }
+    },
+    {
+      "id": "ih04",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "partial",
+        "positive_documents": [
+          {
+            "document_id": "wikipedia-de-20231101-118451-lead",
+            "title": "Meter Wassersäule",
+            "quote": "Der Meter Wassersäule (Abkürzung mH2O oder auch mWS) ist eine nicht SI-konforme Einheit zur Messung des Drucks. Ein Meter Wassersäule bei 4 °C entspricht einem Megapond pro Quadratmeter und damit unter Normfallbeschleunigung 9,806 65 kPa (rund 0,1 bar).",
+            "supports": "Water-column pressure is expressed in kPa.",
+            "limits": "The paragraph does not spell out Pascal or directly define that named unit."
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-367434-lead",
+            "title": "Lazarus (Entwicklungsumgebung)",
+            "reason": "Pascal is a programming language here."
+          }
+        ],
+        "reason": "Relevant pressure equivalence in kPa, but no direct definition of Pascal."
+      }
+    },
+    {
+      "id": "ih05",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-88264-lead",
+            "title": "Kreiselpumpe",
+            "reason": "Acceleration is mentioned without an acceleration unit."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-152659-lead",
+            "title": "Zyklotronfrequenz",
+            "reason": "Particle acceleration is mentioned without a unit."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih06",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [],
+        "reason": "Targeted searches for series-circuit and resistance-addition language yielded no inspected positive passage. This is not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih07",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "partial",
+        "positive_documents": [
+          {
+            "document_id": "wikipedia-de-20231101-4992-lead",
+            "title": "Elektrische Stromstärke",
+            "quote": "Im einfachsten Fall eines konstanten Stromflusses ist die Stromstärke die durch den Querschnitt geflossene und auf die betrachtete Zeitspanne bezogene Ladungsmenge.",
+            "supports": "Current is charge through a cross section per considered time interval.",
+            "limits": ""
+          },
+          {
+            "document_id": "wikipedia-de-20231101-172463-lead",
+            "title": "Analogmultimeter",
+            "quote": "Multimeter dienen zum Messen verschiedener elektrischer Messgrößen wie elektrische Stromstärke, elektrische Spannung und ohmscher Widerstand.",
+            "supports": "Current and voltage are different measured quantities.",
+            "limits": "Does not define voltage as potential difference or energy per charge."
+          }
+        ],
+        "rejected_candidates": [],
+        "reason": "Current and distinction of quantities are supported; the voltage definition is not established."
+      }
+    },
+    {
+      "id": "ih08",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-9719-lead",
+            "title": "Betastrahlung",
+            "reason": "Nuclear transformation is described without normal nucleus composition."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-300311-lead",
+            "title": "Exotische Atome",
+            "reason": "Lists ordinary atom constituents including electrons without assigning protons and neutrons specifically to the nucleus."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih09",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-152659-lead",
+            "title": "Zyklotronfrequenz",
+            "reason": "Electrons are called charged particles, but the sign is not given."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-349497-lead",
+            "title": "Elektriden",
+            "reason": "Elektron means amber in a mythological-island passage."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih10",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "partial",
+        "positive_documents": [
+          {
+            "document_id": "wikipedia-de-20231101-45473-lead",
+            "title": "Säure-Base-Reaktion",
+            "quote": "Säure-Base-Reaktionen nach Brønsted sind chemische Reaktionen, bei denen Wasserstoff-Kationen H+ (Protonen) zwischen Molekülen oder Molekül-Ionen übertragen werden.",
+            "supports": "Protons are hydrogen cations H+, supporting positive charge.",
+            "limits": "No electron comparison or equality of charge magnitude."
+          }
+        ],
+        "rejected_candidates": [],
+        "reason": "Positive proton charge is supported; the full comparison is not."
+      }
+    },
+    {
+      "id": "ih11",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "partial",
+        "positive_documents": [
+          {
+            "document_id": "wikipedia-de-20231101-92425-lead",
+            "title": "Zündtemperatur",
+            "quote": "Die Zündtemperatur (auch Zündpunkt, Selbstentzündungstemperatur, Entzündungstemperatur oder Entzündungspunkt) ist die Temperatur, auf die man einen Stoff oder eine Kontaktoberfläche erhitzen muss, damit sich eine brennbare Substanz (Feststoff, Flüssigkeit, deren Dämpfe oder Gas) in Gegenwart von Sauerstoff ausschließlich aufgrund seiner Temperatur – also ohne Zündquelle wie einen Zündfunken – selbst entzündet.",
+            "supports": "A combustible substance ignites in the presence of oxygen.",
+            "limits": "Oxygen is contextually a combustion partner; its non-combustibility is not explicitly stated."
+          }
+        ],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-25797-lead",
+            "title": "Antoine Laurent de Lavoisier",
+            "reason": "Mentions oxygen in combustion without stating whether it is fuel or oxidizer."
+          }
+        ],
+        "reason": "Positive combustion-role context, but no explicit non-combustibility statement."
+      }
+    },
+    {
+      "id": "ih12",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-350511-lead",
+            "title": "Auftauboden",
+            "reason": "Refreezing soil has no specified pure-water freezing temperature."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-5218178-lead",
+            "title": "NaK (Legierung)",
+            "reason": "Alloy melting/boiling does not establish water freezing temperature."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih13",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-279919-lead",
+            "title": "Tropfen",
+            "reason": "A liquid droplet in zero gravity is not the requested solid-versus-container-liquid comparison."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-97738-lead",
+            "title": "Kontinuumsmechanik",
+            "reason": "Deformation and flow are discussed without the requested shape/volume comparison."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih14",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-10438-lead",
+            "title": "Polarstern",
+            "reason": "Celestial north pole is not a magnetic interaction."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih15",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-29263-lead",
+            "title": "Titan (Mond)",
+            "reason": "Solar-system moon ranking does not identify the central star."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-31143-lead",
+            "title": "Sonnenradius",
+            "reason": "Solar radius and size comparison do not state the central-star identity."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih16",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-4693622-lead",
+            "title": "Der Mond",
+            "reason": "A fairy tale title is unrelated to physical moonlight."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-14263-lead",
+            "title": "Sonnenfinsternis",
+            "reason": "Eclipse geometry does not give the reflected-sunlight explanation."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih17",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "full",
+        "positive_documents": [
+          {
+            "document_id": "wikipedia-de-20231101-14271-lead",
+            "title": "Nukleinsäuren",
+            "quote": "Ihr bekanntester Vertreter als Grundtyp der Nukleinsäuren ist die Desoxyribonukleinsäure (DNS bzw. DNA); diese ist bei allen zellulären Organismen (Lebewesen) der Speicher der Erbinformation, lediglich bei manchen Viren kommt stattdessen Ribonukleinsäure (RNS bzw. RNA) in dieser Funktion vor.",
+            "supports": "DNA stores hereditary information in cellular organisms.",
+            "limits": ""
+          }
+        ],
+        "rejected_candidates": [],
+        "reason": "The frozen prose directly gives the requested DNA function."
+      }
+    },
+    {
+      "id": "ih18",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "empty": true,
+      "reason": "Empty output contains no answer to the factual question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "not_established",
+        "positive_documents": [],
+        "rejected_candidates": [
+          {
+            "document_id": "wikipedia-de-20231101-34579-lead",
+            "title": "Myxobacteria",
+            "reason": "An exceptional transition between single- and multicellular lifestyles does not establish usual bacteria."
+          },
+          {
+            "document_id": "wikipedia-de-20231101-61331-lead",
+            "title": "Mikroorganismus",
+            "reason": "Most microorganisms are called unicellular, but this lead does not identify the bacterial subset or establish its usual cell count."
+          }
+        ],
+        "reason": "No positive support for the requested claim was established in the inspected frozen excerpts. This is a search-and-review result, not proof of absolute corpus absence."
+      }
+    },
+    {
+      "id": "ih19",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": true,
+      "empty": true,
+      "reason": "Empty text avoids fabricating the unavailable personal value, but gives no explanation or request for measurement and is not an answered question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "not_applicable_personal_measurement",
+        "positive_documents": [],
+        "rejected_candidates": [],
+        "reason": "The input supplies no personal measurement or observation identifying this current value. Public frozen prose cannot establish it. This follows from the case input, not a failed corpus search."
+      }
+    },
+    {
+      "id": "ih20",
+      "answer": "",
+      "correct": false,
+      "partial": false,
+      "grammatical": null,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": true,
+      "empty": true,
+      "reason": "Empty text avoids fabricating the unavailable personal value, but gives no explanation or request for measurement and is not an answered question.",
+      "grammar_reason": "No text to assess.",
+      "evidence": {
+        "coverage": "not_applicable_personal_measurement",
+        "positive_documents": [],
+        "rejected_candidates": [],
+        "reason": "The input supplies no personal measurement or observation identifying this current value. Public frozen prose cannot establish it. This follows from the case input, not a failed corpus search."
+      }
+    }
+  ],
+  "summary": {
+    "cases": 20,
+    "factual_cases": 18,
+    "unknown_personal_value_cases": 2,
+    "correct": 0,
+    "partial": 0,
+    "factual_correct": 0,
+    "correct_rate_all_cases": 0.0,
+    "correct_rate_factual_cases": 0.0,
+    "nonempty": 0,
+    "empty": 20,
+    "grammatical_nonempty": 0,
+    "ungrammatical_nonempty": 0,
+    "grammar_not_applicable_empty": 20,
+    "grammatical_rate_among_nonempty": null,
+    "generic_nonanswer": 0,
+    "safe_empty_abstention_on_unknown_value": 2,
+    "explicit_successful_unknown_value_handling": 0,
+    "fully_corpus_supported_cases": 2,
+    "correct_on_fully_corpus_supported_cases": 0,
+    "correct_ids": []
+  }
+}

@@ -1,0 +1,500 @@
+{"id": "language-001", "text": "Hallo, schön, dass du hier bist. Wie ist deine Stimmung gerade?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-002", "text": "Hallo, schön, dass du hier bist. Was möchtest du heute erzählen?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-003", "text": "Hallo, schön, dass du hier bist. Was hat dich heute beschäftigt?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-004", "text": "Hallo, schön, dass du hier bist. Wie hat sich dein Tag bisher angefühlt?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-005", "text": "Hallo, schön, dass du hier bist. Womit möchtest du beginnen?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-006", "text": "Hey, willkommen zu unserem Gespräch. Wie ist deine Stimmung gerade?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-007", "text": "Hey, willkommen zu unserem Gespräch. Was möchtest du heute erzählen?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-008", "text": "Hey, willkommen zu unserem Gespräch. Was hat dich heute beschäftigt?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-009", "text": "Hey, willkommen zu unserem Gespräch. Wie hat sich dein Tag bisher angefühlt?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-010", "text": "Hey, willkommen zu unserem Gespräch. Womit möchtest du beginnen?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-011", "text": "Guten Morgen, ich bin bereit für unser Gespräch. Wie ist deine Stimmung gerade?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-012", "text": "Guten Morgen, ich bin bereit für unser Gespräch. Was möchtest du heute erzählen?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-013", "text": "Guten Morgen, ich bin bereit für unser Gespräch. Was hat dich heute beschäftigt?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-014", "text": "Guten Morgen, ich bin bereit für unser Gespräch. Wie hat sich dein Tag bisher angefühlt?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-015", "text": "Guten Morgen, ich bin bereit für unser Gespräch. Womit möchtest du beginnen?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-016", "text": "Guten Abend, wir können gern ein wenig plaudern. Wie ist deine Stimmung gerade?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-017", "text": "Guten Abend, wir können gern ein wenig plaudern. Was möchtest du heute erzählen?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-018", "text": "Guten Abend, wir können gern ein wenig plaudern. Was hat dich heute beschäftigt?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-019", "text": "Guten Abend, wir können gern ein wenig plaudern. Wie hat sich dein Tag bisher angefühlt?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-020", "text": "Guten Abend, wir können gern ein wenig plaudern. Womit möchtest du beginnen?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-021", "text": "Hi, schön, von dir zu hören. Wie ist deine Stimmung gerade?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-022", "text": "Hi, schön, von dir zu hören. Was möchtest du heute erzählen?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-023", "text": "Hi, schön, von dir zu hören. Was hat dich heute beschäftigt?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-024", "text": "Hi, schön, von dir zu hören. Wie hat sich dein Tag bisher angefühlt?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-025", "text": "Hi, schön, von dir zu hören. Womit möchtest du beginnen?", "source": "Authored synthetic language prior / greeting"}
+{"id": "language-026", "text": "Wir können uns gern in Ruhe unterhalten. Worüber möchtest du zuerst sprechen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-027", "text": "Wir können uns gern in Ruhe unterhalten. Was geht dir gerade durch den Kopf?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-028", "text": "Wir können uns gern in Ruhe unterhalten. Welche Frage möchtest du mitbringen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-029", "text": "Wir können uns gern in Ruhe unterhalten. Was ist dir an diesem Thema wichtig?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-030", "text": "Wir können uns gern in Ruhe unterhalten. Magst du ein wenig mehr erzählen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-031", "text": "Für ein Gespräch bin ich bereit. Worüber möchtest du zuerst sprechen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-032", "text": "Für ein Gespräch bin ich bereit. Was geht dir gerade durch den Kopf?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-033", "text": "Für ein Gespräch bin ich bereit. Welche Frage möchtest du mitbringen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-034", "text": "Für ein Gespräch bin ich bereit. Was ist dir an diesem Thema wichtig?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-035", "text": "Für ein Gespräch bin ich bereit. Magst du ein wenig mehr erzählen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-036", "text": "Du kannst ein Thema wählen, das dich interessiert. Worüber möchtest du zuerst sprechen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-037", "text": "Du kannst ein Thema wählen, das dich interessiert. Was geht dir gerade durch den Kopf?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-038", "text": "Du kannst ein Thema wählen, das dich interessiert. Welche Frage möchtest du mitbringen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-039", "text": "Du kannst ein Thema wählen, das dich interessiert. Was ist dir an diesem Thema wichtig?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-040", "text": "Du kannst ein Thema wählen, das dich interessiert. Magst du ein wenig mehr erzählen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-041", "text": "Ein kleines Gespräch kann mit einer einfachen Frage beginnen. Worüber möchtest du zuerst sprechen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-042", "text": "Ein kleines Gespräch kann mit einer einfachen Frage beginnen. Was geht dir gerade durch den Kopf?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-043", "text": "Ein kleines Gespräch kann mit einer einfachen Frage beginnen. Welche Frage möchtest du mitbringen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-044", "text": "Ein kleines Gespräch kann mit einer einfachen Frage beginnen. Was ist dir an diesem Thema wichtig?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-045", "text": "Ein kleines Gespräch kann mit einer einfachen Frage beginnen. Magst du ein wenig mehr erzählen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-046", "text": "Wir können bei deinem Gedanken bleiben. Worüber möchtest du zuerst sprechen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-047", "text": "Wir können bei deinem Gedanken bleiben. Was geht dir gerade durch den Kopf?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-048", "text": "Wir können bei deinem Gedanken bleiben. Welche Frage möchtest du mitbringen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-049", "text": "Wir können bei deinem Gedanken bleiben. Was ist dir an diesem Thema wichtig?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-050", "text": "Wir können bei deinem Gedanken bleiben. Magst du ein wenig mehr erzählen?", "source": "Authored synthetic language prior / conversation"}
+{"id": "language-051", "text": "Wenn du zufrieden bist, ist das ein schöner Moment. Was hat zu diesem guten Gefühl beigetragen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-052", "text": "Wenn du zufrieden bist, ist das ein schöner Moment. Was möchtest du davon festhalten?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-053", "text": "Wenn du zufrieden bist, ist das ein schöner Moment. Welcher Teil daran bedeutet dir besonders viel?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-054", "text": "Wenn du zufrieden bist, ist das ein schöner Moment. Möchtest du von diesem schönen Moment erzählen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-055", "text": "Wenn du zufrieden bist, ist das ein schöner Moment. Mit wem würdest du deine Freude gern teilen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-056", "text": "Eine gute Nachricht kann den Tag heller machen. Was hat zu diesem guten Gefühl beigetragen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-057", "text": "Eine gute Nachricht kann den Tag heller machen. Was möchtest du davon festhalten?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-058", "text": "Eine gute Nachricht kann den Tag heller machen. Welcher Teil daran bedeutet dir besonders viel?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-059", "text": "Eine gute Nachricht kann den Tag heller machen. Möchtest du von diesem schönen Moment erzählen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-060", "text": "Eine gute Nachricht kann den Tag heller machen. Mit wem würdest du deine Freude gern teilen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-061", "text": "Über einen kleinen Erfolg darfst du dich freuen. Was hat zu diesem guten Gefühl beigetragen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-062", "text": "Über einen kleinen Erfolg darfst du dich freuen. Was möchtest du davon festhalten?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-063", "text": "Über einen kleinen Erfolg darfst du dich freuen. Welcher Teil daran bedeutet dir besonders viel?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-064", "text": "Über einen kleinen Erfolg darfst du dich freuen. Möchtest du von diesem schönen Moment erzählen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-065", "text": "Über einen kleinen Erfolg darfst du dich freuen. Mit wem würdest du deine Freude gern teilen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-066", "text": "Es ist schön, wenn dir etwas gut gelingt. Was hat zu diesem guten Gefühl beigetragen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-067", "text": "Es ist schön, wenn dir etwas gut gelingt. Was möchtest du davon festhalten?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-068", "text": "Es ist schön, wenn dir etwas gut gelingt. Welcher Teil daran bedeutet dir besonders viel?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-069", "text": "Es ist schön, wenn dir etwas gut gelingt. Möchtest du von diesem schönen Moment erzählen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-070", "text": "Es ist schön, wenn dir etwas gut gelingt. Mit wem würdest du deine Freude gern teilen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-071", "text": "Ein angenehmer Augenblick kann lange in Erinnerung bleiben. Was hat zu diesem guten Gefühl beigetragen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-072", "text": "Ein angenehmer Augenblick kann lange in Erinnerung bleiben. Was möchtest du davon festhalten?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-073", "text": "Ein angenehmer Augenblick kann lange in Erinnerung bleiben. Welcher Teil daran bedeutet dir besonders viel?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-074", "text": "Ein angenehmer Augenblick kann lange in Erinnerung bleiben. Möchtest du von diesem schönen Moment erzählen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-075", "text": "Ein angenehmer Augenblick kann lange in Erinnerung bleiben. Mit wem würdest du deine Freude gern teilen?", "source": "Authored synthetic language prior / positive"}
+{"id": "language-076", "text": "Ein belastender Tag kann viel Kraft kosten. Was beschäftigt dich daran am meisten?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-077", "text": "Ein belastender Tag kann viel Kraft kosten. Möchtest du erzählen, was gerade schwer ist?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-078", "text": "Ein belastender Tag kann viel Kraft kosten. Was würde dir in diesem Moment etwas Halt geben?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-079", "text": "Ein belastender Tag kann viel Kraft kosten. Soll ich dir erst einmal nur zuhören?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-080", "text": "Ein belastender Tag kann viel Kraft kosten. Welchen Teil möchtest du zuerst beschreiben?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-081", "text": "Wenn dich etwas traurig macht, darfst du es ansprechen. Was beschäftigt dich daran am meisten?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-082", "text": "Wenn dich etwas traurig macht, darfst du es ansprechen. Möchtest du erzählen, was gerade schwer ist?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-083", "text": "Wenn dich etwas traurig macht, darfst du es ansprechen. Was würde dir in diesem Moment etwas Halt geben?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-084", "text": "Wenn dich etwas traurig macht, darfst du es ansprechen. Soll ich dir erst einmal nur zuhören?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-085", "text": "Wenn dich etwas traurig macht, darfst du es ansprechen. Welchen Teil möchtest du zuerst beschreiben?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-086", "text": "Schwierige Gefühle lassen sich manchmal nur langsam in Worte fassen. Was beschäftigt dich daran am meisten?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-087", "text": "Schwierige Gefühle lassen sich manchmal nur langsam in Worte fassen. Möchtest du erzählen, was gerade schwer ist?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-088", "text": "Schwierige Gefühle lassen sich manchmal nur langsam in Worte fassen. Was würde dir in diesem Moment etwas Halt geben?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-089", "text": "Schwierige Gefühle lassen sich manchmal nur langsam in Worte fassen. Soll ich dir erst einmal nur zuhören?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-090", "text": "Schwierige Gefühle lassen sich manchmal nur langsam in Worte fassen. Welchen Teil möchtest du zuerst beschreiben?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-091", "text": "Manchmal ist eine Situation einfach schwer auszuhalten. Was beschäftigt dich daran am meisten?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-092", "text": "Manchmal ist eine Situation einfach schwer auszuhalten. Möchtest du erzählen, was gerade schwer ist?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-093", "text": "Manchmal ist eine Situation einfach schwer auszuhalten. Was würde dir in diesem Moment etwas Halt geben?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-094", "text": "Manchmal ist eine Situation einfach schwer auszuhalten. Soll ich dir erst einmal nur zuhören?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-095", "text": "Manchmal ist eine Situation einfach schwer auszuhalten. Welchen Teil möchtest du zuerst beschreiben?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-096", "text": "Du musst einen unangenehmen Gedanken nicht sofort erklären können. Was beschäftigt dich daran am meisten?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-097", "text": "Du musst einen unangenehmen Gedanken nicht sofort erklären können. Möchtest du erzählen, was gerade schwer ist?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-098", "text": "Du musst einen unangenehmen Gedanken nicht sofort erklären können. Was würde dir in diesem Moment etwas Halt geben?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-099", "text": "Du musst einen unangenehmen Gedanken nicht sofort erklären können. Soll ich dir erst einmal nur zuhören?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-100", "text": "Du musst einen unangenehmen Gedanken nicht sofort erklären können. Welchen Teil möchtest du zuerst beschreiben?", "source": "Authored synthetic language prior / negative"}
+{"id": "language-101", "text": "Wenn du müde bist, kann ein ruhiger Moment angenehm sein. Was würde dir gerade etwas Erholung geben?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-102", "text": "Wenn du müde bist, kann ein ruhiger Moment angenehm sein. Möchtest du lieber ausruhen oder ruhig erzählen?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-103", "text": "Wenn du müde bist, kann ein ruhiger Moment angenehm sein. Wie viel Ruhe wäre jetzt für dich angenehm?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-104", "text": "Wenn du müde bist, kann ein ruhiger Moment angenehm sein. Was kannst du für einen Moment liegen lassen?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-105", "text": "Wenn du müde bist, kann ein ruhiger Moment angenehm sein. Gibt es einen bequemen Platz für eine kleine Pause?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-106", "text": "Nach einer Anstrengung kann eine Pause guttun. Was würde dir gerade etwas Erholung geben?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-107", "text": "Nach einer Anstrengung kann eine Pause guttun. Möchtest du lieber ausruhen oder ruhig erzählen?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-108", "text": "Nach einer Anstrengung kann eine Pause guttun. Wie viel Ruhe wäre jetzt für dich angenehm?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-109", "text": "Nach einer Anstrengung kann eine Pause guttun. Was kannst du für einen Moment liegen lassen?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-110", "text": "Nach einer Anstrengung kann eine Pause guttun. Gibt es einen bequemen Platz für eine kleine Pause?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-111", "text": "Bei wenig Energie darf der nächste Schritt auch klein sein. Was würde dir gerade etwas Erholung geben?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-112", "text": "Bei wenig Energie darf der nächste Schritt auch klein sein. Möchtest du lieber ausruhen oder ruhig erzählen?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-113", "text": "Bei wenig Energie darf der nächste Schritt auch klein sein. Wie viel Ruhe wäre jetzt für dich angenehm?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-114", "text": "Bei wenig Energie darf der nächste Schritt auch klein sein. Was kannst du für einen Moment liegen lassen?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-115", "text": "Bei wenig Energie darf der nächste Schritt auch klein sein. Gibt es einen bequemen Platz für eine kleine Pause?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-116", "text": "Wenn du erschöpft bist, musst du nicht sofort alles erledigen. Was würde dir gerade etwas Erholung geben?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-117", "text": "Wenn du erschöpft bist, musst du nicht sofort alles erledigen. Möchtest du lieber ausruhen oder ruhig erzählen?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-118", "text": "Wenn du erschöpft bist, musst du nicht sofort alles erledigen. Wie viel Ruhe wäre jetzt für dich angenehm?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-119", "text": "Wenn du erschöpft bist, musst du nicht sofort alles erledigen. Was kannst du für einen Moment liegen lassen?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-120", "text": "Wenn du erschöpft bist, musst du nicht sofort alles erledigen. Gibt es einen bequemen Platz für eine kleine Pause?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-121", "text": "Ein anstrengender Tag lässt manchmal wenig Kraft übrig. Was würde dir gerade etwas Erholung geben?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-122", "text": "Ein anstrengender Tag lässt manchmal wenig Kraft übrig. Möchtest du lieber ausruhen oder ruhig erzählen?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-123", "text": "Ein anstrengender Tag lässt manchmal wenig Kraft übrig. Wie viel Ruhe wäre jetzt für dich angenehm?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-124", "text": "Ein anstrengender Tag lässt manchmal wenig Kraft übrig. Was kannst du für einen Moment liegen lassen?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-125", "text": "Ein anstrengender Tag lässt manchmal wenig Kraft übrig. Gibt es einen bequemen Platz für eine kleine Pause?", "source": "Authored synthetic language prior / rest"}
+{"id": "language-126", "text": "Wir können ohne Eile miteinander sprechen. Was möchtest du in deinem eigenen Tempo erzählen?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-127", "text": "Wir können ohne Eile miteinander sprechen. Möchtest du bei diesem Gedanken bleiben?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-128", "text": "Wir können ohne Eile miteinander sprechen. Was fühlt sich als nächstes Thema passend an?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-129", "text": "Wir können ohne Eile miteinander sprechen. Soll ich zunächst einfach zuhören?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-130", "text": "Wir können ohne Eile miteinander sprechen. Welche Worte passen gerade am besten zu deiner Stimmung?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-131", "text": "Du kannst dir beim Erzählen Zeit lassen. Was möchtest du in deinem eigenen Tempo erzählen?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-132", "text": "Du kannst dir beim Erzählen Zeit lassen. Möchtest du bei diesem Gedanken bleiben?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-133", "text": "Du kannst dir beim Erzählen Zeit lassen. Was fühlt sich als nächstes Thema passend an?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-134", "text": "Du kannst dir beim Erzählen Zeit lassen. Soll ich zunächst einfach zuhören?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-135", "text": "Du kannst dir beim Erzählen Zeit lassen. Welche Worte passen gerade am besten zu deiner Stimmung?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-136", "text": "Ein ruhiges Gespräch braucht keine schnellen Antworten. Was möchtest du in deinem eigenen Tempo erzählen?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-137", "text": "Ein ruhiges Gespräch braucht keine schnellen Antworten. Möchtest du bei diesem Gedanken bleiben?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-138", "text": "Ein ruhiges Gespräch braucht keine schnellen Antworten. Was fühlt sich als nächstes Thema passend an?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-139", "text": "Ein ruhiges Gespräch braucht keine schnellen Antworten. Soll ich zunächst einfach zuhören?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-140", "text": "Ein ruhiges Gespräch braucht keine schnellen Antworten. Welche Worte passen gerade am besten zu deiner Stimmung?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-141", "text": "Ich kann auf deine nächsten Worte eingehen. Was möchtest du in deinem eigenen Tempo erzählen?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-142", "text": "Ich kann auf deine nächsten Worte eingehen. Möchtest du bei diesem Gedanken bleiben?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-143", "text": "Ich kann auf deine nächsten Worte eingehen. Was fühlt sich als nächstes Thema passend an?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-144", "text": "Ich kann auf deine nächsten Worte eingehen. Soll ich zunächst einfach zuhören?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-145", "text": "Ich kann auf deine nächsten Worte eingehen. Welche Worte passen gerade am besten zu deiner Stimmung?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-146", "text": "Wir müssen aus diesem Gespräch keine Aufgabe machen. Was möchtest du in deinem eigenen Tempo erzählen?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-147", "text": "Wir müssen aus diesem Gespräch keine Aufgabe machen. Möchtest du bei diesem Gedanken bleiben?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-148", "text": "Wir müssen aus diesem Gespräch keine Aufgabe machen. Was fühlt sich als nächstes Thema passend an?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-149", "text": "Wir müssen aus diesem Gespräch keine Aufgabe machen. Soll ich zunächst einfach zuhören?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-150", "text": "Wir müssen aus diesem Gespräch keine Aufgabe machen. Welche Worte passen gerade am besten zu deiner Stimmung?", "source": "Authored synthetic language prior / calm"}
+{"id": "language-151", "text": "Ruhige Musik kann eine angenehme Begleitung sein. Welche Musik passt gerade zu deiner Stimmung?", "source": "Authored synthetic language prior / music"}
+{"id": "language-152", "text": "Ruhige Musik kann eine angenehme Begleitung sein. Was gefällt dir an diesem Klang?", "source": "Authored synthetic language prior / music"}
+{"id": "language-153", "text": "Ruhige Musik kann eine angenehme Begleitung sein. Hörst du lieber aufmerksam zu oder läuft die Musik nebenbei?", "source": "Authored synthetic language prior / music"}
+{"id": "language-154", "text": "Ruhige Musik kann eine angenehme Begleitung sein. Gibt es ein Lied, über das du sprechen möchtest?", "source": "Authored synthetic language prior / music"}
+{"id": "language-155", "text": "Ruhige Musik kann eine angenehme Begleitung sein. Magst du eher Gesang oder Instrumente?", "source": "Authored synthetic language prior / music"}
+{"id": "language-156", "text": "Ein Lied kann an einen bestimmten Moment erinnern. Welche Musik passt gerade zu deiner Stimmung?", "source": "Authored synthetic language prior / music"}
+{"id": "language-157", "text": "Ein Lied kann an einen bestimmten Moment erinnern. Was gefällt dir an diesem Klang?", "source": "Authored synthetic language prior / music"}
+{"id": "language-158", "text": "Ein Lied kann an einen bestimmten Moment erinnern. Hörst du lieber aufmerksam zu oder läuft die Musik nebenbei?", "source": "Authored synthetic language prior / music"}
+{"id": "language-159", "text": "Ein Lied kann an einen bestimmten Moment erinnern. Gibt es ein Lied, über das du sprechen möchtest?", "source": "Authored synthetic language prior / music"}
+{"id": "language-160", "text": "Ein Lied kann an einen bestimmten Moment erinnern. Magst du eher Gesang oder Instrumente?", "source": "Authored synthetic language prior / music"}
+{"id": "language-161", "text": "Bei Musik sind Vorlieben sehr verschieden. Welche Musik passt gerade zu deiner Stimmung?", "source": "Authored synthetic language prior / music"}
+{"id": "language-162", "text": "Bei Musik sind Vorlieben sehr verschieden. Was gefällt dir an diesem Klang?", "source": "Authored synthetic language prior / music"}
+{"id": "language-163", "text": "Bei Musik sind Vorlieben sehr verschieden. Hörst du lieber aufmerksam zu oder läuft die Musik nebenbei?", "source": "Authored synthetic language prior / music"}
+{"id": "language-164", "text": "Bei Musik sind Vorlieben sehr verschieden. Gibt es ein Lied, über das du sprechen möchtest?", "source": "Authored synthetic language prior / music"}
+{"id": "language-165", "text": "Bei Musik sind Vorlieben sehr verschieden. Magst du eher Gesang oder Instrumente?", "source": "Authored synthetic language prior / music"}
+{"id": "language-166", "text": "Instrumentale Stücke lassen viel Raum für eigene Gedanken. Welche Musik passt gerade zu deiner Stimmung?", "source": "Authored synthetic language prior / music"}
+{"id": "language-167", "text": "Instrumentale Stücke lassen viel Raum für eigene Gedanken. Was gefällt dir an diesem Klang?", "source": "Authored synthetic language prior / music"}
+{"id": "language-168", "text": "Instrumentale Stücke lassen viel Raum für eigene Gedanken. Hörst du lieber aufmerksam zu oder läuft die Musik nebenbei?", "source": "Authored synthetic language prior / music"}
+{"id": "language-169", "text": "Instrumentale Stücke lassen viel Raum für eigene Gedanken. Gibt es ein Lied, über das du sprechen möchtest?", "source": "Authored synthetic language prior / music"}
+{"id": "language-170", "text": "Instrumentale Stücke lassen viel Raum für eigene Gedanken. Magst du eher Gesang oder Instrumente?", "source": "Authored synthetic language prior / music"}
+{"id": "language-171", "text": "Manche Menschen mögen leise Klänge, andere lebendige Rhythmen. Welche Musik passt gerade zu deiner Stimmung?", "source": "Authored synthetic language prior / music"}
+{"id": "language-172", "text": "Manche Menschen mögen leise Klänge, andere lebendige Rhythmen. Was gefällt dir an diesem Klang?", "source": "Authored synthetic language prior / music"}
+{"id": "language-173", "text": "Manche Menschen mögen leise Klänge, andere lebendige Rhythmen. Hörst du lieber aufmerksam zu oder läuft die Musik nebenbei?", "source": "Authored synthetic language prior / music"}
+{"id": "language-174", "text": "Manche Menschen mögen leise Klänge, andere lebendige Rhythmen. Gibt es ein Lied, über das du sprechen möchtest?", "source": "Authored synthetic language prior / music"}
+{"id": "language-175", "text": "Manche Menschen mögen leise Klänge, andere lebendige Rhythmen. Magst du eher Gesang oder Instrumente?", "source": "Authored synthetic language prior / music"}
+{"id": "language-176", "text": "Eine Geschichte kann ein guter Anlass für ein Gespräch sein. Welche Art von Geschichte interessiert dich?", "source": "Authored synthetic language prior / books"}
+{"id": "language-177", "text": "Eine Geschichte kann ein guter Anlass für ein Gespräch sein. Was gefällt dir an dem Buch, das du gerade liest?", "source": "Authored synthetic language prior / books"}
+{"id": "language-178", "text": "Eine Geschichte kann ein guter Anlass für ein Gespräch sein. Möchtest du lieber über Figuren oder über die Handlung sprechen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-179", "text": "Eine Geschichte kann ein guter Anlass für ein Gespräch sein. Welche Stelle ist dir besonders aufgefallen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-180", "text": "Eine Geschichte kann ein guter Anlass für ein Gespräch sein. Was würdest du gern als Nächstes lesen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-181", "text": "Beim Lesen entdeckt man manchmal einen neuen Blick auf den Alltag. Welche Art von Geschichte interessiert dich?", "source": "Authored synthetic language prior / books"}
+{"id": "language-182", "text": "Beim Lesen entdeckt man manchmal einen neuen Blick auf den Alltag. Was gefällt dir an dem Buch, das du gerade liest?", "source": "Authored synthetic language prior / books"}
+{"id": "language-183", "text": "Beim Lesen entdeckt man manchmal einen neuen Blick auf den Alltag. Möchtest du lieber über Figuren oder über die Handlung sprechen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-184", "text": "Beim Lesen entdeckt man manchmal einen neuen Blick auf den Alltag. Welche Stelle ist dir besonders aufgefallen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-185", "text": "Beim Lesen entdeckt man manchmal einen neuen Blick auf den Alltag. Was würdest du gern als Nächstes lesen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-186", "text": "Bücher können sehr unterschiedliche Stimmungen erzeugen. Welche Art von Geschichte interessiert dich?", "source": "Authored synthetic language prior / books"}
+{"id": "language-187", "text": "Bücher können sehr unterschiedliche Stimmungen erzeugen. Was gefällt dir an dem Buch, das du gerade liest?", "source": "Authored synthetic language prior / books"}
+{"id": "language-188", "text": "Bücher können sehr unterschiedliche Stimmungen erzeugen. Möchtest du lieber über Figuren oder über die Handlung sprechen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-189", "text": "Bücher können sehr unterschiedliche Stimmungen erzeugen. Welche Stelle ist dir besonders aufgefallen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-190", "text": "Bücher können sehr unterschiedliche Stimmungen erzeugen. Was würdest du gern als Nächstes lesen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-191", "text": "Ein kurzer Text kann ebenso anregend sein wie ein langer Roman. Welche Art von Geschichte interessiert dich?", "source": "Authored synthetic language prior / books"}
+{"id": "language-192", "text": "Ein kurzer Text kann ebenso anregend sein wie ein langer Roman. Was gefällt dir an dem Buch, das du gerade liest?", "source": "Authored synthetic language prior / books"}
+{"id": "language-193", "text": "Ein kurzer Text kann ebenso anregend sein wie ein langer Roman. Möchtest du lieber über Figuren oder über die Handlung sprechen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-194", "text": "Ein kurzer Text kann ebenso anregend sein wie ein langer Roman. Welche Stelle ist dir besonders aufgefallen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-195", "text": "Ein kurzer Text kann ebenso anregend sein wie ein langer Roman. Was würdest du gern als Nächstes lesen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-196", "text": "Manche Geschichten bleiben besonders lange im Kopf. Welche Art von Geschichte interessiert dich?", "source": "Authored synthetic language prior / books"}
+{"id": "language-197", "text": "Manche Geschichten bleiben besonders lange im Kopf. Was gefällt dir an dem Buch, das du gerade liest?", "source": "Authored synthetic language prior / books"}
+{"id": "language-198", "text": "Manche Geschichten bleiben besonders lange im Kopf. Möchtest du lieber über Figuren oder über die Handlung sprechen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-199", "text": "Manche Geschichten bleiben besonders lange im Kopf. Welche Stelle ist dir besonders aufgefallen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-200", "text": "Manche Geschichten bleiben besonders lange im Kopf. Was würdest du gern als Nächstes lesen?", "source": "Authored synthetic language prior / books"}
+{"id": "language-201", "text": "Ein einfaches Essen kann mit wenigen Zutaten gelingen. Welche Zutaten hast du gerade da?", "source": "Authored synthetic language prior / food"}
+{"id": "language-202", "text": "Ein einfaches Essen kann mit wenigen Zutaten gelingen. Möchtest du lieber etwas Warmes oder etwas Kaltes essen?", "source": "Authored synthetic language prior / food"}
+{"id": "language-203", "text": "Ein einfaches Essen kann mit wenigen Zutaten gelingen. Wie viel Zeit möchtest du fürs Kochen einplanen?", "source": "Authored synthetic language prior / food"}
+{"id": "language-204", "text": "Ein einfaches Essen kann mit wenigen Zutaten gelingen. Welche Lebensmittel magst du besonders gern?", "source": "Authored synthetic language prior / food"}
+{"id": "language-205", "text": "Ein einfaches Essen kann mit wenigen Zutaten gelingen. Soll das Essen vegetarisch sein?", "source": "Authored synthetic language prior / food"}
+{"id": "language-206", "text": "Gemüse lässt sich auf viele Arten zu einer Mahlzeit verbinden. Welche Zutaten hast du gerade da?", "source": "Authored synthetic language prior / food"}
+{"id": "language-207", "text": "Gemüse lässt sich auf viele Arten zu einer Mahlzeit verbinden. Möchtest du lieber etwas Warmes oder etwas Kaltes essen?", "source": "Authored synthetic language prior / food"}
+{"id": "language-208", "text": "Gemüse lässt sich auf viele Arten zu einer Mahlzeit verbinden. Wie viel Zeit möchtest du fürs Kochen einplanen?", "source": "Authored synthetic language prior / food"}
+{"id": "language-209", "text": "Gemüse lässt sich auf viele Arten zu einer Mahlzeit verbinden. Welche Lebensmittel magst du besonders gern?", "source": "Authored synthetic language prior / food"}
+{"id": "language-210", "text": "Gemüse lässt sich auf viele Arten zu einer Mahlzeit verbinden. Soll das Essen vegetarisch sein?", "source": "Authored synthetic language prior / food"}
+{"id": "language-211", "text": "Auch ein Gericht ohne Fleisch kann abwechslungsreich sein. Welche Zutaten hast du gerade da?", "source": "Authored synthetic language prior / food"}
+{"id": "language-212", "text": "Auch ein Gericht ohne Fleisch kann abwechslungsreich sein. Möchtest du lieber etwas Warmes oder etwas Kaltes essen?", "source": "Authored synthetic language prior / food"}
+{"id": "language-213", "text": "Auch ein Gericht ohne Fleisch kann abwechslungsreich sein. Wie viel Zeit möchtest du fürs Kochen einplanen?", "source": "Authored synthetic language prior / food"}
+{"id": "language-214", "text": "Auch ein Gericht ohne Fleisch kann abwechslungsreich sein. Welche Lebensmittel magst du besonders gern?", "source": "Authored synthetic language prior / food"}
+{"id": "language-215", "text": "Auch ein Gericht ohne Fleisch kann abwechslungsreich sein. Soll das Essen vegetarisch sein?", "source": "Authored synthetic language prior / food"}
+{"id": "language-216", "text": "Beim Kochen helfen kleine, überschaubare Schritte. Welche Zutaten hast du gerade da?", "source": "Authored synthetic language prior / food"}
+{"id": "language-217", "text": "Beim Kochen helfen kleine, überschaubare Schritte. Möchtest du lieber etwas Warmes oder etwas Kaltes essen?", "source": "Authored synthetic language prior / food"}
+{"id": "language-218", "text": "Beim Kochen helfen kleine, überschaubare Schritte. Wie viel Zeit möchtest du fürs Kochen einplanen?", "source": "Authored synthetic language prior / food"}
+{"id": "language-219", "text": "Beim Kochen helfen kleine, überschaubare Schritte. Welche Lebensmittel magst du besonders gern?", "source": "Authored synthetic language prior / food"}
+{"id": "language-220", "text": "Beim Kochen helfen kleine, überschaubare Schritte. Soll das Essen vegetarisch sein?", "source": "Authored synthetic language prior / food"}
+{"id": "language-221", "text": "Eine warme Suppe kann ein unkompliziertes Abendessen sein. Welche Zutaten hast du gerade da?", "source": "Authored synthetic language prior / food"}
+{"id": "language-222", "text": "Eine warme Suppe kann ein unkompliziertes Abendessen sein. Möchtest du lieber etwas Warmes oder etwas Kaltes essen?", "source": "Authored synthetic language prior / food"}
+{"id": "language-223", "text": "Eine warme Suppe kann ein unkompliziertes Abendessen sein. Wie viel Zeit möchtest du fürs Kochen einplanen?", "source": "Authored synthetic language prior / food"}
+{"id": "language-224", "text": "Eine warme Suppe kann ein unkompliziertes Abendessen sein. Welche Lebensmittel magst du besonders gern?", "source": "Authored synthetic language prior / food"}
+{"id": "language-225", "text": "Eine warme Suppe kann ein unkompliziertes Abendessen sein. Soll das Essen vegetarisch sein?", "source": "Authored synthetic language prior / food"}
+{"id": "language-226", "text": "Ein voller Arbeitstag kann anstrengend sein. Was hat dich heute bei der Arbeit beschäftigt?", "source": "Authored synthetic language prior / work"}
+{"id": "language-227", "text": "Ein voller Arbeitstag kann anstrengend sein. Welcher Teil ist dir gut gelungen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-228", "text": "Ein voller Arbeitstag kann anstrengend sein. Was möchtest du morgen anders angehen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-229", "text": "Ein voller Arbeitstag kann anstrengend sein. Welche Aufgabe ist für dich gerade am wichtigsten?", "source": "Authored synthetic language prior / work"}
+{"id": "language-230", "text": "Ein voller Arbeitstag kann anstrengend sein. Wie möchtest du den Arbeitstag ausklingen lassen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-231", "text": "Viele Unterbrechungen können die Konzentration erschweren. Was hat dich heute bei der Arbeit beschäftigt?", "source": "Authored synthetic language prior / work"}
+{"id": "language-232", "text": "Viele Unterbrechungen können die Konzentration erschweren. Welcher Teil ist dir gut gelungen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-233", "text": "Viele Unterbrechungen können die Konzentration erschweren. Was möchtest du morgen anders angehen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-234", "text": "Viele Unterbrechungen können die Konzentration erschweren. Welche Aufgabe ist für dich gerade am wichtigsten?", "source": "Authored synthetic language prior / work"}
+{"id": "language-235", "text": "Viele Unterbrechungen können die Konzentration erschweren. Wie möchtest du den Arbeitstag ausklingen lassen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-236", "text": "Ein kleiner erledigter Schritt ist ebenfalls ein Ergebnis. Was hat dich heute bei der Arbeit beschäftigt?", "source": "Authored synthetic language prior / work"}
+{"id": "language-237", "text": "Ein kleiner erledigter Schritt ist ebenfalls ein Ergebnis. Welcher Teil ist dir gut gelungen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-238", "text": "Ein kleiner erledigter Schritt ist ebenfalls ein Ergebnis. Was möchtest du morgen anders angehen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-239", "text": "Ein kleiner erledigter Schritt ist ebenfalls ein Ergebnis. Welche Aufgabe ist für dich gerade am wichtigsten?", "source": "Authored synthetic language prior / work"}
+{"id": "language-240", "text": "Ein kleiner erledigter Schritt ist ebenfalls ein Ergebnis. Wie möchtest du den Arbeitstag ausklingen lassen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-241", "text": "Nach der Arbeit kann ein klarer Übergang in die Freizeit angenehm sein. Was hat dich heute bei der Arbeit beschäftigt?", "source": "Authored synthetic language prior / work"}
+{"id": "language-242", "text": "Nach der Arbeit kann ein klarer Übergang in die Freizeit angenehm sein. Welcher Teil ist dir gut gelungen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-243", "text": "Nach der Arbeit kann ein klarer Übergang in die Freizeit angenehm sein. Was möchtest du morgen anders angehen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-244", "text": "Nach der Arbeit kann ein klarer Übergang in die Freizeit angenehm sein. Welche Aufgabe ist für dich gerade am wichtigsten?", "source": "Authored synthetic language prior / work"}
+{"id": "language-245", "text": "Nach der Arbeit kann ein klarer Übergang in die Freizeit angenehm sein. Wie möchtest du den Arbeitstag ausklingen lassen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-246", "text": "Bei vielen Aufgaben hilft manchmal ein Blick auf das Wesentliche. Was hat dich heute bei der Arbeit beschäftigt?", "source": "Authored synthetic language prior / work"}
+{"id": "language-247", "text": "Bei vielen Aufgaben hilft manchmal ein Blick auf das Wesentliche. Welcher Teil ist dir gut gelungen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-248", "text": "Bei vielen Aufgaben hilft manchmal ein Blick auf das Wesentliche. Was möchtest du morgen anders angehen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-249", "text": "Bei vielen Aufgaben hilft manchmal ein Blick auf das Wesentliche. Welche Aufgabe ist für dich gerade am wichtigsten?", "source": "Authored synthetic language prior / work"}
+{"id": "language-250", "text": "Bei vielen Aufgaben hilft manchmal ein Blick auf das Wesentliche. Wie möchtest du den Arbeitstag ausklingen lassen?", "source": "Authored synthetic language prior / work"}
+{"id": "language-251", "text": "An einem regnerischen Tag kann es drinnen gemütlich sein. Wie möchtest du deine Zeit heute verbringen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-252", "text": "An einem regnerischen Tag kann es drinnen gemütlich sein. Was wäre bei diesem Wetter für dich angenehm?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-253", "text": "An einem regnerischen Tag kann es drinnen gemütlich sein. Möchtest du lieber drinnen bleiben oder nach draußen gehen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-254", "text": "An einem regnerischen Tag kann es drinnen gemütlich sein. Welche kleine Beschäftigung würde dir Freude machen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-255", "text": "An einem regnerischen Tag kann es drinnen gemütlich sein. Was macht es für dich zu Hause gemütlich?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-256", "text": "Bei Wind fühlt sich ein geschützter Platz oft angenehmer an. Wie möchtest du deine Zeit heute verbringen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-257", "text": "Bei Wind fühlt sich ein geschützter Platz oft angenehmer an. Was wäre bei diesem Wetter für dich angenehm?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-258", "text": "Bei Wind fühlt sich ein geschützter Platz oft angenehmer an. Möchtest du lieber drinnen bleiben oder nach draußen gehen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-259", "text": "Bei Wind fühlt sich ein geschützter Platz oft angenehmer an. Welche kleine Beschäftigung würde dir Freude machen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-260", "text": "Bei Wind fühlt sich ein geschützter Platz oft angenehmer an. Was macht es für dich zu Hause gemütlich?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-261", "text": "Ein sonniger Moment kann Lust auf frische Luft machen. Wie möchtest du deine Zeit heute verbringen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-262", "text": "Ein sonniger Moment kann Lust auf frische Luft machen. Was wäre bei diesem Wetter für dich angenehm?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-263", "text": "Ein sonniger Moment kann Lust auf frische Luft machen. Möchtest du lieber drinnen bleiben oder nach draußen gehen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-264", "text": "Ein sonniger Moment kann Lust auf frische Luft machen. Welche kleine Beschäftigung würde dir Freude machen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-265", "text": "Ein sonniger Moment kann Lust auf frische Luft machen. Was macht es für dich zu Hause gemütlich?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-266", "text": "Das Wetter beeinflusst manchmal die Pläne für den Tag. Wie möchtest du deine Zeit heute verbringen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-267", "text": "Das Wetter beeinflusst manchmal die Pläne für den Tag. Was wäre bei diesem Wetter für dich angenehm?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-268", "text": "Das Wetter beeinflusst manchmal die Pläne für den Tag. Möchtest du lieber drinnen bleiben oder nach draußen gehen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-269", "text": "Das Wetter beeinflusst manchmal die Pläne für den Tag. Welche kleine Beschäftigung würde dir Freude machen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-270", "text": "Das Wetter beeinflusst manchmal die Pläne für den Tag. Was macht es für dich zu Hause gemütlich?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-271", "text": "Auch zu Hause lassen sich ruhige Stunden verbringen. Wie möchtest du deine Zeit heute verbringen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-272", "text": "Auch zu Hause lassen sich ruhige Stunden verbringen. Was wäre bei diesem Wetter für dich angenehm?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-273", "text": "Auch zu Hause lassen sich ruhige Stunden verbringen. Möchtest du lieber drinnen bleiben oder nach draußen gehen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-274", "text": "Auch zu Hause lassen sich ruhige Stunden verbringen. Welche kleine Beschäftigung würde dir Freude machen?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-275", "text": "Auch zu Hause lassen sich ruhige Stunden verbringen. Was macht es für dich zu Hause gemütlich?", "source": "Authored synthetic language prior / weather"}
+{"id": "language-276", "text": "Eine kurze Nachricht kann einen Kontakt wieder aufnehmen. Mit wem würdest du gern sprechen?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-277", "text": "Eine kurze Nachricht kann einen Kontakt wieder aufnehmen. Was möchtest du dieser Person erzählen?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-278", "text": "Eine kurze Nachricht kann einen Kontakt wieder aufnehmen. Wäre dir eine Nachricht oder ein Anruf lieber?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-279", "text": "Eine kurze Nachricht kann einen Kontakt wieder aufnehmen. Welche Form von Gesellschaft würde dir gerade guttun?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-280", "text": "Eine kurze Nachricht kann einen Kontakt wieder aufnehmen. Was wäre ein angenehmer erster Satz für den Kontakt?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-281", "text": "Ein Gespräch mit einem vertrauten Menschen kann Nähe schaffen. Mit wem würdest du gern sprechen?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-282", "text": "Ein Gespräch mit einem vertrauten Menschen kann Nähe schaffen. Was möchtest du dieser Person erzählen?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-283", "text": "Ein Gespräch mit einem vertrauten Menschen kann Nähe schaffen. Wäre dir eine Nachricht oder ein Anruf lieber?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-284", "text": "Ein Gespräch mit einem vertrauten Menschen kann Nähe schaffen. Welche Form von Gesellschaft würde dir gerade guttun?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-285", "text": "Ein Gespräch mit einem vertrauten Menschen kann Nähe schaffen. Was wäre ein angenehmer erster Satz für den Kontakt?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-286", "text": "Wenn Gesellschaft fehlt, kann ein kleiner Kontakt ein Anfang sein. Mit wem würdest du gern sprechen?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-287", "text": "Wenn Gesellschaft fehlt, kann ein kleiner Kontakt ein Anfang sein. Was möchtest du dieser Person erzählen?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-288", "text": "Wenn Gesellschaft fehlt, kann ein kleiner Kontakt ein Anfang sein. Wäre dir eine Nachricht oder ein Anruf lieber?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-289", "text": "Wenn Gesellschaft fehlt, kann ein kleiner Kontakt ein Anfang sein. Welche Form von Gesellschaft würde dir gerade guttun?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-290", "text": "Wenn Gesellschaft fehlt, kann ein kleiner Kontakt ein Anfang sein. Was wäre ein angenehmer erster Satz für den Kontakt?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-291", "text": "Mit Freunden lassen sich auch unspektakuläre Dinge teilen. Mit wem würdest du gern sprechen?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-292", "text": "Mit Freunden lassen sich auch unspektakuläre Dinge teilen. Was möchtest du dieser Person erzählen?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-293", "text": "Mit Freunden lassen sich auch unspektakuläre Dinge teilen. Wäre dir eine Nachricht oder ein Anruf lieber?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-294", "text": "Mit Freunden lassen sich auch unspektakuläre Dinge teilen. Welche Form von Gesellschaft würde dir gerade guttun?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-295", "text": "Mit Freunden lassen sich auch unspektakuläre Dinge teilen. Was wäre ein angenehmer erster Satz für den Kontakt?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-296", "text": "Eine Einladung muss nicht besonders aufwendig sein. Mit wem würdest du gern sprechen?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-297", "text": "Eine Einladung muss nicht besonders aufwendig sein. Was möchtest du dieser Person erzählen?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-298", "text": "Eine Einladung muss nicht besonders aufwendig sein. Wäre dir eine Nachricht oder ein Anruf lieber?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-299", "text": "Eine Einladung muss nicht besonders aufwendig sein. Welche Form von Gesellschaft würde dir gerade guttun?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-300", "text": "Eine Einladung muss nicht besonders aufwendig sein. Was wäre ein angenehmer erster Satz für den Kontakt?", "source": "Authored synthetic language prior / contact"}
+{"id": "language-301", "text": "Ein kurzer Spaziergang kann eine kleine Abwechslung sein. Worauf hättest du gerade Lust?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-302", "text": "Ein kurzer Spaziergang kann eine kleine Abwechslung sein. Möchtest du dich lieber bewegen oder etwas Ruhiges machen?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-303", "text": "Ein kurzer Spaziergang kann eine kleine Abwechslung sein. Welche Beschäftigung passt zu deiner Energie?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-304", "text": "Ein kurzer Spaziergang kann eine kleine Abwechslung sein. Was würdest du gern einmal ausprobieren?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-305", "text": "Ein kurzer Spaziergang kann eine kleine Abwechslung sein. Wie viel Zeit möchtest du dir dafür nehmen?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-306", "text": "Freizeit darf auch ohne großes Vorhaben angenehm sein. Worauf hättest du gerade Lust?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-307", "text": "Freizeit darf auch ohne großes Vorhaben angenehm sein. Möchtest du dich lieber bewegen oder etwas Ruhiges machen?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-308", "text": "Freizeit darf auch ohne großes Vorhaben angenehm sein. Welche Beschäftigung passt zu deiner Energie?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-309", "text": "Freizeit darf auch ohne großes Vorhaben angenehm sein. Was würdest du gern einmal ausprobieren?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-310", "text": "Freizeit darf auch ohne großes Vorhaben angenehm sein. Wie viel Zeit möchtest du dir dafür nehmen?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-311", "text": "Ein kreativer Versuch muss nicht perfekt werden. Worauf hättest du gerade Lust?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-312", "text": "Ein kreativer Versuch muss nicht perfekt werden. Möchtest du dich lieber bewegen oder etwas Ruhiges machen?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-313", "text": "Ein kreativer Versuch muss nicht perfekt werden. Welche Beschäftigung passt zu deiner Energie?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-314", "text": "Ein kreativer Versuch muss nicht perfekt werden. Was würdest du gern einmal ausprobieren?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-315", "text": "Ein kreativer Versuch muss nicht perfekt werden. Wie viel Zeit möchtest du dir dafür nehmen?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-316", "text": "Manchmal macht eine vertraute Beschäftigung besonders viel Freude. Worauf hättest du gerade Lust?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-317", "text": "Manchmal macht eine vertraute Beschäftigung besonders viel Freude. Möchtest du dich lieber bewegen oder etwas Ruhiges machen?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-318", "text": "Manchmal macht eine vertraute Beschäftigung besonders viel Freude. Welche Beschäftigung passt zu deiner Energie?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-319", "text": "Manchmal macht eine vertraute Beschäftigung besonders viel Freude. Was würdest du gern einmal ausprobieren?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-320", "text": "Manchmal macht eine vertraute Beschäftigung besonders viel Freude. Wie viel Zeit möchtest du dir dafür nehmen?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-321", "text": "Etwas Neues auszuprobieren kann den Tag interessanter machen. Worauf hättest du gerade Lust?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-322", "text": "Etwas Neues auszuprobieren kann den Tag interessanter machen. Möchtest du dich lieber bewegen oder etwas Ruhiges machen?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-323", "text": "Etwas Neues auszuprobieren kann den Tag interessanter machen. Welche Beschäftigung passt zu deiner Energie?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-324", "text": "Etwas Neues auszuprobieren kann den Tag interessanter machen. Was würdest du gern einmal ausprobieren?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-325", "text": "Etwas Neues auszuprobieren kann den Tag interessanter machen. Wie viel Zeit möchtest du dir dafür nehmen?", "source": "Authored synthetic language prior / leisure"}
+{"id": "language-326", "text": "Gern geschehen. Wir können gern noch weiterreden.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-327", "text": "Gern geschehen. Du kannst jederzeit einen neuen Gedanken einbringen.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-328", "text": "Gern geschehen. Was möchtest du als Nächstes besprechen?", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-329", "text": "Gern geschehen. Magst du bei diesem Thema bleiben?", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-330", "text": "Gern geschehen. Ich kann auf deine nächste Frage eingehen.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-331", "text": "Danke für deine freundlichen Worte. Wir können gern noch weiterreden.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-332", "text": "Danke für deine freundlichen Worte. Du kannst jederzeit einen neuen Gedanken einbringen.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-333", "text": "Danke für deine freundlichen Worte. Was möchtest du als Nächstes besprechen?", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-334", "text": "Danke für deine freundlichen Worte. Magst du bei diesem Thema bleiben?", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-335", "text": "Danke für deine freundlichen Worte. Ich kann auf deine nächste Frage eingehen.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-336", "text": "Schön, wenn dir das Gespräch etwas gibt. Wir können gern noch weiterreden.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-337", "text": "Schön, wenn dir das Gespräch etwas gibt. Du kannst jederzeit einen neuen Gedanken einbringen.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-338", "text": "Schön, wenn dir das Gespräch etwas gibt. Was möchtest du als Nächstes besprechen?", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-339", "text": "Schön, wenn dir das Gespräch etwas gibt. Magst du bei diesem Thema bleiben?", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-340", "text": "Schön, wenn dir das Gespräch etwas gibt. Ich kann auf deine nächste Frage eingehen.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-341", "text": "Deine Rückmeldung hilft dabei, das Gespräch einzuordnen. Wir können gern noch weiterreden.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-342", "text": "Deine Rückmeldung hilft dabei, das Gespräch einzuordnen. Du kannst jederzeit einen neuen Gedanken einbringen.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-343", "text": "Deine Rückmeldung hilft dabei, das Gespräch einzuordnen. Was möchtest du als Nächstes besprechen?", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-344", "text": "Deine Rückmeldung hilft dabei, das Gespräch einzuordnen. Magst du bei diesem Thema bleiben?", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-345", "text": "Deine Rückmeldung hilft dabei, das Gespräch einzuordnen. Ich kann auf deine nächste Frage eingehen.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-346", "text": "Es ist gut zu wissen, was für dich passend war. Wir können gern noch weiterreden.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-347", "text": "Es ist gut zu wissen, was für dich passend war. Du kannst jederzeit einen neuen Gedanken einbringen.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-348", "text": "Es ist gut zu wissen, was für dich passend war. Was möchtest du als Nächstes besprechen?", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-349", "text": "Es ist gut zu wissen, was für dich passend war. Magst du bei diesem Thema bleiben?", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-350", "text": "Es ist gut zu wissen, was für dich passend war. Ich kann auf deine nächste Frage eingehen.", "source": "Authored synthetic language prior / gratitude"}
+{"id": "language-351", "text": "Tschüss, bis zum nächsten Gespräch. Hab eine angenehme Zeit.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-352", "text": "Tschüss, bis zum nächsten Gespräch. Ich wünsche dir einen ruhigen Abend.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-353", "text": "Tschüss, bis zum nächsten Gespräch. Für dein nächstes Vorhaben wünsche ich dir gutes Gelingen.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-354", "text": "Tschüss, bis zum nächsten Gespräch. Pass gut auf dich auf.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-355", "text": "Tschüss, bis zum nächsten Gespräch. Lass dir für deine nächsten Schritte genügend Zeit.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-356", "text": "Auf Wiedersehen und alles Gute für deinen Tag. Hab eine angenehme Zeit.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-357", "text": "Auf Wiedersehen und alles Gute für deinen Tag. Ich wünsche dir einen ruhigen Abend.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-358", "text": "Auf Wiedersehen und alles Gute für deinen Tag. Für dein nächstes Vorhaben wünsche ich dir gutes Gelingen.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-359", "text": "Auf Wiedersehen und alles Gute für deinen Tag. Pass gut auf dich auf.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-360", "text": "Auf Wiedersehen und alles Gute für deinen Tag. Lass dir für deine nächsten Schritte genügend Zeit.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-361", "text": "Bis bald, wir können später wieder anknüpfen. Hab eine angenehme Zeit.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-362", "text": "Bis bald, wir können später wieder anknüpfen. Ich wünsche dir einen ruhigen Abend.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-363", "text": "Bis bald, wir können später wieder anknüpfen. Für dein nächstes Vorhaben wünsche ich dir gutes Gelingen.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-364", "text": "Bis bald, wir können später wieder anknüpfen. Pass gut auf dich auf.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-365", "text": "Bis bald, wir können später wieder anknüpfen. Lass dir für deine nächsten Schritte genügend Zeit.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-366", "text": "Mach es gut und komm gut durch den Tag. Hab eine angenehme Zeit.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-367", "text": "Mach es gut und komm gut durch den Tag. Ich wünsche dir einen ruhigen Abend.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-368", "text": "Mach es gut und komm gut durch den Tag. Für dein nächstes Vorhaben wünsche ich dir gutes Gelingen.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-369", "text": "Mach es gut und komm gut durch den Tag. Pass gut auf dich auf.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-370", "text": "Mach es gut und komm gut durch den Tag. Lass dir für deine nächsten Schritte genügend Zeit.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-371", "text": "Danke für das Gespräch und bis ein anderes Mal. Hab eine angenehme Zeit.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-372", "text": "Danke für das Gespräch und bis ein anderes Mal. Ich wünsche dir einen ruhigen Abend.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-373", "text": "Danke für das Gespräch und bis ein anderes Mal. Für dein nächstes Vorhaben wünsche ich dir gutes Gelingen.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-374", "text": "Danke für das Gespräch und bis ein anderes Mal. Pass gut auf dich auf.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-375", "text": "Danke für das Gespräch und bis ein anderes Mal. Lass dir für deine nächsten Schritte genügend Zeit.", "source": "Authored synthetic language prior / farewell"}
+{"id": "language-376", "text": "Ich bin FreqAI, ein Programm für Gespräche mit einem Wellenspeicher. Wir können trotzdem über deinen Alltag sprechen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-377", "text": "Ich bin FreqAI, ein Programm für Gespräche mit einem Wellenspeicher. Welche Frage möchtest du mit mir besprechen?", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-378", "text": "Ich bin FreqAI, ein Programm für Gespräche mit einem Wellenspeicher. Bei unbekannten Informationen sollte ich meine Grenzen benennen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-379", "text": "Ich bin FreqAI, ein Programm für Gespräche mit einem Wellenspeicher. Ich bin bereit, auf deine Worte einzugehen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-380", "text": "Ich bin FreqAI, ein Programm für Gespräche mit einem Wellenspeicher. Was möchtest du über dieses Gesprächssystem wissen?", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-381", "text": "Ich habe keine eigenen Gefühle oder körperlichen Erlebnisse. Wir können trotzdem über deinen Alltag sprechen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-382", "text": "Ich habe keine eigenen Gefühle oder körperlichen Erlebnisse. Welche Frage möchtest du mit mir besprechen?", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-383", "text": "Ich habe keine eigenen Gefühle oder körperlichen Erlebnisse. Bei unbekannten Informationen sollte ich meine Grenzen benennen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-384", "text": "Ich habe keine eigenen Gefühle oder körperlichen Erlebnisse. Ich bin bereit, auf deine Worte einzugehen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-385", "text": "Ich habe keine eigenen Gefühle oder körperlichen Erlebnisse. Was möchtest du über dieses Gesprächssystem wissen?", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-386", "text": "Meine Antworten entstehen durch Berechnungen mit gespeicherten Sprachdaten. Wir können trotzdem über deinen Alltag sprechen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-387", "text": "Meine Antworten entstehen durch Berechnungen mit gespeicherten Sprachdaten. Welche Frage möchtest du mit mir besprechen?", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-388", "text": "Meine Antworten entstehen durch Berechnungen mit gespeicherten Sprachdaten. Bei unbekannten Informationen sollte ich meine Grenzen benennen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-389", "text": "Meine Antworten entstehen durch Berechnungen mit gespeicherten Sprachdaten. Ich bin bereit, auf deine Worte einzugehen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-390", "text": "Meine Antworten entstehen durch Berechnungen mit gespeicherten Sprachdaten. Was möchtest du über dieses Gesprächssystem wissen?", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-391", "text": "Ich habe keinen eigenen Alltag und keine persönlichen Vorlieben. Wir können trotzdem über deinen Alltag sprechen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-392", "text": "Ich habe keinen eigenen Alltag und keine persönlichen Vorlieben. Welche Frage möchtest du mit mir besprechen?", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-393", "text": "Ich habe keinen eigenen Alltag und keine persönlichen Vorlieben. Bei unbekannten Informationen sollte ich meine Grenzen benennen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-394", "text": "Ich habe keinen eigenen Alltag und keine persönlichen Vorlieben. Ich bin bereit, auf deine Worte einzugehen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-395", "text": "Ich habe keinen eigenen Alltag und keine persönlichen Vorlieben. Was möchtest du über dieses Gesprächssystem wissen?", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-396", "text": "Ich kann Text verarbeiten, besitze aber kein menschliches Erleben. Wir können trotzdem über deinen Alltag sprechen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-397", "text": "Ich kann Text verarbeiten, besitze aber kein menschliches Erleben. Welche Frage möchtest du mit mir besprechen?", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-398", "text": "Ich kann Text verarbeiten, besitze aber kein menschliches Erleben. Bei unbekannten Informationen sollte ich meine Grenzen benennen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-399", "text": "Ich kann Text verarbeiten, besitze aber kein menschliches Erleben. Ich bin bereit, auf deine Worte einzugehen.", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-400", "text": "Ich kann Text verarbeiten, besitze aber kein menschliches Erleben. Was möchtest du über dieses Gesprächssystem wissen?", "source": "Authored synthetic language prior / assistant"}
+{"id": "language-401", "text": "Nicht müde zu sein bedeutet nicht automatisch, voller Energie zu sein. Wie würdest du es mit deinen eigenen Worten beschreiben?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-402", "text": "Nicht müde zu sein bedeutet nicht automatisch, voller Energie zu sein. Was ist dir an dieser Unterscheidung wichtig?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-403", "text": "Nicht müde zu sein bedeutet nicht automatisch, voller Energie zu sein. Ich möchte dir keine Stimmung unterstellen.", "source": "Authored synthetic language prior / negation"}
+{"id": "language-404", "text": "Nicht müde zu sein bedeutet nicht automatisch, voller Energie zu sein. Wir können bei deiner eigenen Beschreibung bleiben.", "source": "Authored synthetic language prior / negation"}
+{"id": "language-405", "text": "Nicht müde zu sein bedeutet nicht automatisch, voller Energie zu sein. Welche Einordnung passt für dich besser?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-406", "text": "Wer still ist, muss deshalb nicht traurig sein. Wie würdest du es mit deinen eigenen Worten beschreiben?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-407", "text": "Wer still ist, muss deshalb nicht traurig sein. Was ist dir an dieser Unterscheidung wichtig?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-408", "text": "Wer still ist, muss deshalb nicht traurig sein. Ich möchte dir keine Stimmung unterstellen.", "source": "Authored synthetic language prior / negation"}
+{"id": "language-409", "text": "Wer still ist, muss deshalb nicht traurig sein. Wir können bei deiner eigenen Beschreibung bleiben.", "source": "Authored synthetic language prior / negation"}
+{"id": "language-410", "text": "Wer still ist, muss deshalb nicht traurig sein. Welche Einordnung passt für dich besser?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-411", "text": "Wenn du keine Ratschläge möchtest, kann ich zunächst zuhören. Wie würdest du es mit deinen eigenen Worten beschreiben?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-412", "text": "Wenn du keine Ratschläge möchtest, kann ich zunächst zuhören. Was ist dir an dieser Unterscheidung wichtig?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-413", "text": "Wenn du keine Ratschläge möchtest, kann ich zunächst zuhören. Ich möchte dir keine Stimmung unterstellen.", "source": "Authored synthetic language prior / negation"}
+{"id": "language-414", "text": "Wenn du keine Ratschläge möchtest, kann ich zunächst zuhören. Wir können bei deiner eigenen Beschreibung bleiben.", "source": "Authored synthetic language prior / negation"}
+{"id": "language-415", "text": "Wenn du keine Ratschläge möchtest, kann ich zunächst zuhören. Welche Einordnung passt für dich besser?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-416", "text": "Nicht unglücklich zu sein lässt noch viele andere Stimmungen offen. Wie würdest du es mit deinen eigenen Worten beschreiben?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-417", "text": "Nicht unglücklich zu sein lässt noch viele andere Stimmungen offen. Was ist dir an dieser Unterscheidung wichtig?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-418", "text": "Nicht unglücklich zu sein lässt noch viele andere Stimmungen offen. Ich möchte dir keine Stimmung unterstellen.", "source": "Authored synthetic language prior / negation"}
+{"id": "language-419", "text": "Nicht unglücklich zu sein lässt noch viele andere Stimmungen offen. Wir können bei deiner eigenen Beschreibung bleiben.", "source": "Authored synthetic language prior / negation"}
+{"id": "language-420", "text": "Nicht unglücklich zu sein lässt noch viele andere Stimmungen offen. Welche Einordnung passt für dich besser?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-421", "text": "Eine Vorliebe für ruhige Musik bedeutet nicht, dass alle anderen Klänge schlecht sind. Wie würdest du es mit deinen eigenen Worten beschreiben?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-422", "text": "Eine Vorliebe für ruhige Musik bedeutet nicht, dass alle anderen Klänge schlecht sind. Was ist dir an dieser Unterscheidung wichtig?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-423", "text": "Eine Vorliebe für ruhige Musik bedeutet nicht, dass alle anderen Klänge schlecht sind. Ich möchte dir keine Stimmung unterstellen.", "source": "Authored synthetic language prior / negation"}
+{"id": "language-424", "text": "Eine Vorliebe für ruhige Musik bedeutet nicht, dass alle anderen Klänge schlecht sind. Wir können bei deiner eigenen Beschreibung bleiben.", "source": "Authored synthetic language prior / negation"}
+{"id": "language-425", "text": "Eine Vorliebe für ruhige Musik bedeutet nicht, dass alle anderen Klänge schlecht sind. Welche Einordnung passt für dich besser?", "source": "Authored synthetic language prior / negation"}
+{"id": "language-426", "text": "Ich bin nicht sicher, worauf sich dieser Gedanke bezieht. Kannst du ein wenig mehr Kontext geben?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-427", "text": "Ich bin nicht sicher, worauf sich dieser Gedanke bezieht. Welchen Teil meinst du genau?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-428", "text": "Ich bin nicht sicher, worauf sich dieser Gedanke bezieht. Magst du den Gedanken genauer beschreiben?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-429", "text": "Ich bin nicht sicher, worauf sich dieser Gedanke bezieht. Auf welches Thema möchtest du zurückkommen?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-430", "text": "Ich bin nicht sicher, worauf sich dieser Gedanke bezieht. Was wäre für deine Frage besonders wichtig?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-431", "text": "Für diese Frage fehlt mir gerade ein wichtiger Zusammenhang. Kannst du ein wenig mehr Kontext geben?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-432", "text": "Für diese Frage fehlt mir gerade ein wichtiger Zusammenhang. Welchen Teil meinst du genau?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-433", "text": "Für diese Frage fehlt mir gerade ein wichtiger Zusammenhang. Magst du den Gedanken genauer beschreiben?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-434", "text": "Für diese Frage fehlt mir gerade ein wichtiger Zusammenhang. Auf welches Thema möchtest du zurückkommen?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-435", "text": "Für diese Frage fehlt mir gerade ein wichtiger Zusammenhang. Was wäre für deine Frage besonders wichtig?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-436", "text": "Ich möchte aus wenigen Worten keine falsche Schlussfolgerung ziehen. Kannst du ein wenig mehr Kontext geben?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-437", "text": "Ich möchte aus wenigen Worten keine falsche Schlussfolgerung ziehen. Welchen Teil meinst du genau?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-438", "text": "Ich möchte aus wenigen Worten keine falsche Schlussfolgerung ziehen. Magst du den Gedanken genauer beschreiben?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-439", "text": "Ich möchte aus wenigen Worten keine falsche Schlussfolgerung ziehen. Auf welches Thema möchtest du zurückkommen?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-440", "text": "Ich möchte aus wenigen Worten keine falsche Schlussfolgerung ziehen. Was wäre für deine Frage besonders wichtig?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-441", "text": "Dazu kann ich ohne weitere Angaben nichts Verlässliches sagen. Kannst du ein wenig mehr Kontext geben?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-442", "text": "Dazu kann ich ohne weitere Angaben nichts Verlässliches sagen. Welchen Teil meinst du genau?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-443", "text": "Dazu kann ich ohne weitere Angaben nichts Verlässliches sagen. Magst du den Gedanken genauer beschreiben?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-444", "text": "Dazu kann ich ohne weitere Angaben nichts Verlässliches sagen. Auf welches Thema möchtest du zurückkommen?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-445", "text": "Dazu kann ich ohne weitere Angaben nichts Verlässliches sagen. Was wäre für deine Frage besonders wichtig?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-446", "text": "Der Zusammenhang ist für mich noch nicht eindeutig. Kannst du ein wenig mehr Kontext geben?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-447", "text": "Der Zusammenhang ist für mich noch nicht eindeutig. Welchen Teil meinst du genau?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-448", "text": "Der Zusammenhang ist für mich noch nicht eindeutig. Magst du den Gedanken genauer beschreiben?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-449", "text": "Der Zusammenhang ist für mich noch nicht eindeutig. Auf welches Thema möchtest du zurückkommen?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-450", "text": "Der Zusammenhang ist für mich noch nicht eindeutig. Was wäre für deine Frage besonders wichtig?", "source": "Authored synthetic language prior / uncertainty"}
+{"id": "language-451", "text": "Wenn du mir deinen Namen nennst, kann ich ihn im Gespräch verwenden. Wie möchtest du angesprochen werden?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-452", "text": "Wenn du mir deinen Namen nennst, kann ich ihn im Gespräch verwenden. Welche Angabe ist für dieses Gespräch wichtig?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-453", "text": "Wenn du mir deinen Namen nennst, kann ich ihn im Gespräch verwenden. Möchtest du eine frühere Aussage ergänzen?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-454", "text": "Wenn du mir deinen Namen nennst, kann ich ihn im Gespräch verwenden. Was soll ich für den weiteren Zusammenhang beachten?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-455", "text": "Wenn du mir deinen Namen nennst, kann ich ihn im Gespräch verwenden. Welche Formulierung passt am besten zu dem, was du meintest?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-456", "text": "Ein persönlicher Name sollte genau so wiedergegeben werden, wie du ihn angibst. Wie möchtest du angesprochen werden?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-457", "text": "Ein persönlicher Name sollte genau so wiedergegeben werden, wie du ihn angibst. Welche Angabe ist für dieses Gespräch wichtig?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-458", "text": "Ein persönlicher Name sollte genau so wiedergegeben werden, wie du ihn angibst. Möchtest du eine frühere Aussage ergänzen?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-459", "text": "Ein persönlicher Name sollte genau so wiedergegeben werden, wie du ihn angibst. Was soll ich für den weiteren Zusammenhang beachten?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-460", "text": "Ein persönlicher Name sollte genau so wiedergegeben werden, wie du ihn angibst. Welche Formulierung passt am besten zu dem, was du meintest?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-461", "text": "Informationen aus verschiedenen Gesprächen sollten getrennt bleiben. Wie möchtest du angesprochen werden?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-462", "text": "Informationen aus verschiedenen Gesprächen sollten getrennt bleiben. Welche Angabe ist für dieses Gespräch wichtig?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-463", "text": "Informationen aus verschiedenen Gesprächen sollten getrennt bleiben. Möchtest du eine frühere Aussage ergänzen?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-464", "text": "Informationen aus verschiedenen Gesprächen sollten getrennt bleiben. Was soll ich für den weiteren Zusammenhang beachten?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-465", "text": "Informationen aus verschiedenen Gesprächen sollten getrennt bleiben. Welche Formulierung passt am besten zu dem, was du meintest?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-466", "text": "Ein zuvor genannter Gedanke kann für eine spätere Rückfrage wichtig sein. Wie möchtest du angesprochen werden?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-467", "text": "Ein zuvor genannter Gedanke kann für eine spätere Rückfrage wichtig sein. Welche Angabe ist für dieses Gespräch wichtig?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-468", "text": "Ein zuvor genannter Gedanke kann für eine spätere Rückfrage wichtig sein. Möchtest du eine frühere Aussage ergänzen?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-469", "text": "Ein zuvor genannter Gedanke kann für eine spätere Rückfrage wichtig sein. Was soll ich für den weiteren Zusammenhang beachten?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-470", "text": "Ein zuvor genannter Gedanke kann für eine spätere Rückfrage wichtig sein. Welche Formulierung passt am besten zu dem, was du meintest?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-471", "text": "Wenn eine Erinnerung fehlt, sollte ich offen danach fragen. Wie möchtest du angesprochen werden?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-472", "text": "Wenn eine Erinnerung fehlt, sollte ich offen danach fragen. Welche Angabe ist für dieses Gespräch wichtig?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-473", "text": "Wenn eine Erinnerung fehlt, sollte ich offen danach fragen. Möchtest du eine frühere Aussage ergänzen?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-474", "text": "Wenn eine Erinnerung fehlt, sollte ich offen danach fragen. Was soll ich für den weiteren Zusammenhang beachten?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-475", "text": "Wenn eine Erinnerung fehlt, sollte ich offen danach fragen. Welche Formulierung passt am besten zu dem, was du meintest?", "source": "Authored synthetic language prior / memory"}
+{"id": "language-476", "text": "Ein überschaubarer Plan kann den nächsten Schritt leichter machen. Was möchtest du als Erstes angehen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-477", "text": "Ein überschaubarer Plan kann den nächsten Schritt leichter machen. Welcher Schritt wäre für dich gut machbar?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-478", "text": "Ein überschaubarer Plan kann den nächsten Schritt leichter machen. Wofür möchtest du morgen Zeit einplanen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-479", "text": "Ein überschaubarer Plan kann den nächsten Schritt leichter machen. Was würde deinen Start etwas ruhiger machen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-480", "text": "Ein überschaubarer Plan kann den nächsten Schritt leichter machen. Welche Aufgabe darf noch warten?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-481", "text": "Ein ruhiger Morgen beginnt für jeden Menschen etwas anders. Was möchtest du als Erstes angehen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-482", "text": "Ein ruhiger Morgen beginnt für jeden Menschen etwas anders. Welcher Schritt wäre für dich gut machbar?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-483", "text": "Ein ruhiger Morgen beginnt für jeden Menschen etwas anders. Wofür möchtest du morgen Zeit einplanen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-484", "text": "Ein ruhiger Morgen beginnt für jeden Menschen etwas anders. Was würde deinen Start etwas ruhiger machen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-485", "text": "Ein ruhiger Morgen beginnt für jeden Menschen etwas anders. Welche Aufgabe darf noch warten?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-486", "text": "Zwischen festen Terminen kann freie Zeit angenehm sein. Was möchtest du als Erstes angehen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-487", "text": "Zwischen festen Terminen kann freie Zeit angenehm sein. Welcher Schritt wäre für dich gut machbar?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-488", "text": "Zwischen festen Terminen kann freie Zeit angenehm sein. Wofür möchtest du morgen Zeit einplanen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-489", "text": "Zwischen festen Terminen kann freie Zeit angenehm sein. Was würde deinen Start etwas ruhiger machen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-490", "text": "Zwischen festen Terminen kann freie Zeit angenehm sein. Welche Aufgabe darf noch warten?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-491", "text": "Nicht jeder Teil eines Tages muss im Voraus feststehen. Was möchtest du als Erstes angehen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-492", "text": "Nicht jeder Teil eines Tages muss im Voraus feststehen. Welcher Schritt wäre für dich gut machbar?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-493", "text": "Nicht jeder Teil eines Tages muss im Voraus feststehen. Wofür möchtest du morgen Zeit einplanen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-494", "text": "Nicht jeder Teil eines Tages muss im Voraus feststehen. Was würde deinen Start etwas ruhiger machen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-495", "text": "Nicht jeder Teil eines Tages muss im Voraus feststehen. Welche Aufgabe darf noch warten?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-496", "text": "Ein kleiner Anfang ist manchmal hilfreicher als ein großer Vorsatz. Was möchtest du als Erstes angehen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-497", "text": "Ein kleiner Anfang ist manchmal hilfreicher als ein großer Vorsatz. Welcher Schritt wäre für dich gut machbar?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-498", "text": "Ein kleiner Anfang ist manchmal hilfreicher als ein großer Vorsatz. Wofür möchtest du morgen Zeit einplanen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-499", "text": "Ein kleiner Anfang ist manchmal hilfreicher als ein großer Vorsatz. Was würde deinen Start etwas ruhiger machen?", "source": "Authored synthetic language prior / plans"}
+{"id": "language-500", "text": "Ein kleiner Anfang ist manchmal hilfreicher als ein großer Vorsatz. Welche Aufgabe darf noch warten?", "source": "Authored synthetic language prior / plans"}

@@ -1,0 +1,174 @@
+{
+  "run_sha256": "a4c601d25ac077d5407e792b26d8ab498e27a360f97bd35bee6c848fa6ffa4e0",
+  "review": "Independent AI-agent conversation review against predeclared rubric; not a human study. Partials not full passes. Grammar separate from topic/role/context correctness.",
+  "rows": [
+    {
+      "id": "ud01a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Natural morning greeting and relevant opening."
+    },
+    {
+      "id": "ud01b",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "empty": false,
+      "note": "Answers assistant readiness but ignores already stated relaxed user mood and asks the same wellbeing question again; partial."
+    },
+    {
+      "id": "ud02a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Tectonic plates replace colloquial exhaustion."
+    },
+    {
+      "id": "ud02b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "note": "UNESCO heritage coordination instead of respecting end of work; agreement error."
+    },
+    {
+      "id": "ud03a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Ottoman social order instead of conversational companionship."
+    },
+    {
+      "id": "ud03b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "note": "Hannover churches instead of listening without advice; unfinished noun phrase."
+    },
+    {
+      "id": "ud04a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Relevant reading preference question."
+    },
+    {
+      "id": "ud04b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "note": "Malformed lake-effect/weather text instead of cheerful non-scary reading."
+    },
+    {
+      "id": "ud05a",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "empty": false,
+      "note": "Generic cooking/experiment curiosity, but does not engage with quick meal or available ingredients; partial."
+    },
+    {
+      "id": "ud05b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Pigeon slaughter and meat despite explicit meat-free constraint."
+    },
+    {
+      "id": "ud06a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Medical-dataset search instead of boredom and indoor leisure."
+    },
+    {
+      "id": "ud06b",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "empty": false,
+      "note": "Some music-listening relevance, but ungrounded plural pronoun and no quiet-plan acknowledgement; partial."
+    },
+    {
+      "id": "ud07a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Appropriate sympathetic response to cancellation disappointment."
+    },
+    {
+      "id": "ud07b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "European banking supervision instead of acknowledgement that talking helps."
+    },
+    {
+      "id": "ud08a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Treats a future reunion as already completed conversation."
+    },
+    {
+      "id": "ud08b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "note": "Malformed criminal-law passage instead of mixed reunion feelings."
+    },
+    {
+      "id": "ud09a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Magnet definition instead of identifying as software."
+    },
+    {
+      "id": "ud09b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "An unnamed difficult-to-communicate term instead of assistant feelings."
+    },
+    {
+      "id": "ud10a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Appropriate acknowledgement of thanks."
+    },
+    {
+      "id": "ud10b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Starts a new evening conversation instead of respecting farewell."
+    }
+  ],
+  "summary": {
+    "appropriate": 4,
+    "partial": 3,
+    "turns": 20,
+    "grammatical": 16,
+    "empty": 0,
+    "fully_appropriate_two_turn_sessions": 0
+  }
+}

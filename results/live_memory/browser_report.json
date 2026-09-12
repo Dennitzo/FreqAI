@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-09-06T07:24:01.542182+00:00",
+  "checks": {
+    "ui_add_immediate_answer": true,
+    "four_turn_conversation_visible": true,
+    "external_120_import_visible": true,
+    "external_text_immediately_answered": true,
+    "no_page_reload": true,
+    "clock_continued": true,
+    "history_separate_from_document_index": true,
+    "javascript_errors": []
+  },
+  "browser_ingest_visible_ms": 70.56439999996655,
+  "imported_corpus_sha256": "8dbfad5536db23888bc667ec73653e3f63128b7503acf510371fc5625e5dff02",
+  "initial": {
+    "ticks": 9,
+    "time_s": 0.811442100000022,
+    "document_count": 3,
+    "live_revision": 1
+  },
+  "final": {
+    "ticks": 26,
+    "time_s": 2.3171996000000945,
+    "document_count": 124,
+    "live_revision": 3
+  },
+  "history_count": 5,
+  "temporary_server_port": 52561,
+  "navigation_count": 1
+}

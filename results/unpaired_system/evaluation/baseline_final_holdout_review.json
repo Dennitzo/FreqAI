@@ -1,0 +1,176 @@
+{
+  "run_sha256": "024062adf27caa645591125d657be255ba967a7b2ea71ce04982bd31cd8ee40a",
+  "opened_after_candidate_final_freeze": true,
+  "candidate_freeze_sha256": "beed5dc47e41b0e900cb2fbbcbbed71719509b05714af62f2a102f0dfc95ffe8",
+  "review": "Independent AI-agent conversation review, not a human study, using predeclared heldout rubrics. The historical model was frozen before these outputs and was not tuned.",
+  "rows": [
+    {
+      "id": "uh01a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Friendly opening question; morning is not specified by the user, but no fabricated activity or shared history is asserted. morgen wrongly lowercase."
+    },
+    {
+      "id": "uh01b",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Acknowledges user success and accurately explains lack of human experience."
+    },
+    {
+      "id": "uh02a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Mistakes report about last night for an upcoming bedtime/farewell."
+    },
+    {
+      "id": "uh02b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "note": "Unsupported masculine drinking reference after explicit water/no-coffee preference; does not coherently track the given beverage."
+    },
+    {
+      "id": "uh03a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Sympathetic response to subdued mood without a diagnosis. Kraft Kosten capitalization is wrong."
+    },
+    {
+      "id": "uh03b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Says goodbye instead of respecting privacy while continuing a light conversation."
+    },
+    {
+      "id": "uh04a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Relevant reading preferences question."
+    },
+    {
+      "id": "uh04b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Unrelated Eritrean judiciary instead of travel story without violence."
+    },
+    {
+      "id": "uh05a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Unrelated climate statistics instead of simple warm meal."
+    },
+    {
+      "id": "uh05b",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "empty": false,
+      "note": "Generic cooking curiosity; misses rice, vegetables and no-spice constraint; partial only."
+    },
+    {
+      "id": "uh06a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Unrelated repeated dataset advice instead of drizzle and indoor rest."
+    },
+    {
+      "id": "uh06b",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "empty": false,
+      "note": "Acknowledges a quiet moment but asks about a view rather than a quiet idea or preference; partial only."
+    },
+    {
+      "id": "uh07a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "note": "Unrelated palaces/legal text, unfinished sentence."
+    },
+    {
+      "id": "uh07b",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "empty": false,
+      "note": "Acknowledges with Nat?rlich but effectively closes instead of staying for the requested conversation; partial only."
+    },
+    {
+      "id": "uh08a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Relevant reunion question without claiming personal acquaintance."
+    },
+    {
+      "id": "uh08b",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Acknowledges mixed feelings and allows user to share at own pace."
+    },
+    {
+      "id": "uh09a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Unrelated Republic of Congo finance instead of assistant lived experience."
+    },
+    {
+      "id": "uh09b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "note": "Unrelated military-law explanation and truncated sentence."
+    },
+    {
+      "id": "uh10a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Natural thanks acknowledgement with permission, not a demand, to continue."
+    },
+    {
+      "id": "uh10b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "note": "Asks about next reading instead of respecting farewell."
+    }
+  ],
+  "summary": {
+    "appropriate": 7,
+    "partial": 3,
+    "turns": 20,
+    "grammatical": 17,
+    "empty": 0,
+    "fully_appropriate_two_turn_sessions": 2
+  }
+}

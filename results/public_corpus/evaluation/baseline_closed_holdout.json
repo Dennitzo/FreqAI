@@ -1,0 +1,4684 @@
+{
+  "created_utc": "2026-09-06T09:51:45.726355+00:00",
+  "manifest": {
+    "code_root": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\results\\public_corpus\\evaluation\\baseline_code",
+    "code": {
+      "freqai\\__init__.py": "0e634154d3a7ed97b743819529122dcfe1d59ce6dca186c208d93ef872ee46e2",
+      "freqai\\codec.py": "1741858964d007a8baa1173cb559ac896d07bb4d8eb7d7be840c12c1a5acdc03",
+      "freqai\\features.py": "c48eb11bff823f8329bdbf1509426f1928e19c213793145e30c1ef4abe234535",
+      "freqai\\generation_runtime.py": "170d272823b23ec285d6578c2c0b154c1c67306923f14cebc099be76935f9745",
+      "freqai\\generative.py": "d476e00d421220ea397a75dbd6551f47f012df492baaf7c1527119590ff8966b",
+      "freqai\\memory.py": "baf20b7039036112c3bf1e503f88a77a7f740e104926470210b80263ee49ea73",
+      "freqai\\reasoning.py": "4819d011b22b1e8d4049172094e124abb43114e84ba059cff946bea1f0835a3a",
+      "freqai\\semantics.py": "51924df70352cc896015f17b3679da3e0ae0b34e0030a00b6f4d0ad44c7bca46",
+      "memory\\language\\generative_categories.json": "c2e86689ed55efcc68bc2dbc4ea053d20b6247c0ae054233e299013dd54933fe"
+    },
+    "baseline_corpus_sha256": "c4279b342af9e9798ea6fc59f706b3c7acfd8a30495b716f603c7c4f0f16e065",
+    "suite_sha256": "3ddb7e8bd7463376331080bf81e2b6b81ffc390d7f72eec56da354a341b7cf0a",
+    "additional_corpus": null,
+    "additional_corpus_sha256": null,
+    "additional_limit": null,
+    "document_count": 621,
+    "runner_sha256": "92be94875db620053389fd06b155826dc473135b23d5cf0d0ad0b968589689a5",
+    "max_tokens": 40,
+    "seed": 17
+  },
+  "split": "holdout",
+  "label": "baseline_closed",
+  "runtime_configuration": {
+    "model": {
+      "order": 2,
+      "conditioning": "semantic"
+    },
+    "generation": {
+      "method": "operator",
+      "decoding": "beam",
+      "prompt_gain": 1.2,
+      "split_acts": true,
+      "require_conditioning": true
+    }
+  },
+  "build_s": 1.809145699999135,
+  "memory_after_build": {
+    "rss_mb": 355.79296875,
+    "peak_rss_mb": 360.91015625,
+    "private_commit_mb": 1838.2109375,
+    "peak_private_commit_mb": 1843.40625
+  },
+  "memory_after_evaluation": {
+    "rss_mb": 356.34765625,
+    "peak_rss_mb": 360.91015625,
+    "private_commit_mb": 1838.2109375,
+    "peak_private_commit_mb": 1843.40625
+  },
+  "storage_statistics": null,
+  "summary": {
+    "turns": 20,
+    "surface_form_ok": 19,
+    "new_complete_texts": 5,
+    "texts_with_new_sentences": 1,
+    "empty_answers": 1,
+    "qualitative": "pending independent AI-agent review"
+  },
+  "numerics": {
+    "states": 60,
+    "fft_direct_max_probability_error": 0.0,
+    "time_max_probability_error": 8.172629240021934e-13,
+    "fft_direct_argmax_changes": 0,
+    "time_argmax_changes": 0,
+    "prompt_null_distribution_changes": 58,
+    "prompt_null_mean_total_variation": 0.41400353297600173,
+    "finite_normalized_states": 60,
+    "data_zero_rejected_states": 6,
+    "states_with_numerical_error": [],
+    "data_zero_tested_states": 6,
+    "scope": "Decoder algebra and causal dependence, not a semantic correctness proof. Null removes both prompt amplitude and feature spectrum. Data null retains real reference counts and supports."
+  },
+  "rows": [
+    {
+      "id": "h01a",
+      "prompt": "Na, wie läuft dein Tag bisher?",
+      "rubric": "Respond to assistant-directed greeting/wellbeing naturally and without invented human day experiences.",
+      "scenario": "h01",
+      "answer": "Hi! Ich bin bereit für unser Gespräch.",
+      "tokens": [
+        "hi",
+        "!",
+        "ich",
+        "bin",
+        "bereit",
+        "für",
+        "unser",
+        "gespräch",
+        "."
+      ],
+      "elapsed_s": 0.04151899999851594,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 7.152448122690996e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h01b",
+      "prompt": "Meiner war angenehm ruhig, das hat mir gutgetan.",
+      "rubric": "Acknowledge user's positive quiet day; do not overwrite it with distress or role reversal.",
+      "scenario": "h01",
+      "answer": "Das klingt nach einer schönen kleinen Unterbrechung. Hörst du ihnen gerade bewusst zu?",
+      "tokens": [
+        "das",
+        "klingt",
+        "nach",
+        "einer",
+        "schönen",
+        "kleinen",
+        "unterbrechung",
+        ".",
+        "hörst",
+        "du",
+        "ihnen",
+        "gerade",
+        "bewusst",
+        "zu",
+        "?"
+      ],
+      "elapsed_s": 0.05720370000017283,
+      "context_before": {
+        "generation": {
+          "field": [
+            [
+              "dein",
+              1.0
+            ],
+            [
+              "tag",
+              0.9813046833571883
+            ],
+            [
+              "die",
+              0.8792333096841124
+            ],
+            [
+              "oder",
+              0.8417766712225732
+            ],
+            [
+              "angefühlt",
+              0.6328915261643403
+            ],
+            [
+              "zu",
+              0.5576171485806164
+            ],
+            [
+              "wie",
+              0.555917092701185
+            ],
+            [
+              "musik",
+              0.5511960105586382
+            ],
+            [
+              "den",
+              0.44947966153847063
+            ],
+            [
+              "du",
+              0.42231382829091
+            ],
+            [
+              "aufmerksam",
+              0.4133970079189787
+            ],
+            [
+              "nebenbei",
+              0.4133970079189787
+            ],
+            [
+              "bisher",
+              0.39623119290981373
+            ],
+            [
+              "kann",
+              0.3858033761538539
+            ],
+            [
+              "sich",
+              0.36289199477447875
+            ],
+            [
+              "für",
+              0.34038197982509877
+            ],
+            [
+              "lieber",
+              0.3397071995659524
+            ],
+            [
+              "hat",
+              0.28686758508112137
+            ],
+            [
+              "hörst",
+              0.2362268616679878
+            ],
+            [
+              "läuft",
+              0.23613928347633337
+            ],
+            [
+              "gespräch",
+              0.22238880439758268
+            ],
+            [
+              "war",
+              0.21595806051631863
+            ],
+            [
+              "ein",
+              0.18129013015384987
+            ],
+            [
+              "deinen",
+              0.15731788153846474
+            ],
+            [
+              "unser",
+              0.15256465928901475
+            ],
+            [
+              "machen",
+              0.1498265538461569
+            ],
+            [
+              "was",
+              0.13199532945160025
+            ],
+            [
+              "es",
+              0.12752255812524346
+            ],
+            [
+              "gut",
+              0.12724555180220037
+            ],
+            [
+              "bereit",
+              0.12724537233359756
+            ],
+            [
+              "ich",
+              0.11638644879120953
+            ],
+            [
+              "anstrengender",
+              0.11236991538461766
+            ],
+            [
+              "belastender",
+              0.11236991538461766
+            ],
+            [
+              "heller",
+              0.11236991538461766
+            ],
+            [
+              "interessanter",
+              0.11236991538461766
+            ],
+            [
+              "lässt",
+              0.11236991538461766
+            ],
+            [
+              "regnerischen",
+              0.11236991538461766
+            ],
+            [
+              "manchmal",
+              0.11236991538461764
+            ],
+            [
+              "heute",
+              0.11159564984825235
+            ],
+            [
+              "vielleicht",
+              0.10973538430874265
+            ],
+            [
+              "gute",
+              0.10113292384615591
+            ],
+            [
+              "kraft",
+              0.10113292384615591
+            ],
+            [
+              "möchtest",
+              0.09599601342857338
+            ],
+            [
+              "durch",
+              0.08989593230769412
+            ],
+            [
+              "einem",
+              0.08989593230769412
+            ],
+            [
+              "viel",
+              0.08240460461538628
+            ],
+            [
+              "bin",
+              0.08
+            ],
+            [
+              "hi",
+              0.08
+            ],
+            [
+              "erzählen",
+              0.07765171948787981
+            ],
+            [
+              "und",
+              0.07491327692307845
+            ],
+            [
+              "angenehmster",
+              0.0743970998988349
+            ],
+            [
+              "etwas",
+              0.06742194923077059
+            ],
+            [
+              "drinnen",
+              0.06367628538461667
+            ],
+            [
+              "moment",
+              0.06328915261643402
+            ],
+            [
+              "eine",
+              0.05993062153846275
+            ],
+            [
+              "gibt",
+              0.05855072565358695
+            ],
+            [
+              "an",
+              0.05618495769230883
+            ],
+            [
+              "auszuprobieren",
+              0.05618495769230883
+            ],
+            [
+              "nachricht",
+              0.05618495769230883
+            ],
+            [
+              "pläne",
+              0.05618495769230883
+            ],
+            [
+              "wenig",
+              0.05618495769230883
+            ],
+            [
+              "dir",
+              0.055863900791209925
+            ],
+            [
+              "komm",
+              0.0524392938461549
+            ],
+            [
+              "sein",
+              0.046446231692308625
+            ],
+            [
+              "alles",
+              0.044947966153847066
+            ],
+            [
+              "deinem",
+              0.044947966153847066
+            ],
+            [
+              "der",
+              0.044947966153847066
+            ],
+            [
+              "gemütlich",
+              0.044947966153847066
+            ],
+            [
+              "kosten",
+              0.044947966153847066
+            ],
+            [
+              "neues",
+              0.044947966153847066
+            ],
+            [
+              "wünsche",
+              0.04280758681318768
+            ],
+            [
+              "einen",
+              0.04120230230769313
+            ],
+            [
+              "hab",
+              0.04120230230769313
+            ],
+            [
+              "angenehmen",
+              0.03745663846153922
+            ],
+            [
+              "übrig",
+              0.03745663846153922
+            ],
+            [
+              "gern",
+              0.03719854994941745
+            ],
+            [
+              "beeinflusst",
+              0.03210569010989076
+            ],
+            [
+              "wiedersehen",
+              0.03210569010989076
+            ],
+            [
+              "auch",
+              0.031884471385214955
+            ],
+            [
+              "auf",
+              0.03082146250549513
+            ],
+            [
+              "lass",
+              0.029965310769231375
+            ],
+            [
+              "pass",
+              0.029965310769231375
+            ],
+            [
+              "dann",
+              0.028895121098901678
+            ],
+            [
+              "dich",
+              0.027824931428571988
+            ],
+            [
+              "zeit",
+              0.027824931428571988
+            ],
+            [
+              "welche",
+              0.023972248615385102
+            ],
+            [
+              "besonders",
+              0.022473983076923533
+            ],
+            [
+              "deine",
+              0.022473983076923533
+            ],
+            [
+              "langsamer",
+              0.022473983076923533
+            ],
+            [
+              "magst",
+              0.022473983076923533
+            ],
+            [
+              "ohne",
+              0.022473983076923533
+            ],
+            [
+              "restlichen",
+              0.022473983076923533
+            ],
+            [
+              "schweren",
+              0.022473983076923533
+            ],
+            [
+              "verbringen",
+              0.022473983076923533
+            ],
+            [
+              "nächsten",
+              0.021831869274725718
+            ],
+            [
+              "von",
+              0.02140379340659384
+            ],
+            [
+              "angenehme",
+              0.017979186461538826
+            ],
+            [
+              "nächstes",
+              0.017979186461538826
+            ],
+            [
+              "beschäftigung",
+              0.016480920923077257
+            ],
+            [
+              "anstrengend",
+              0.014982655384615687
+            ],
+            [
+              "bis",
+              0.014982655384615687
+            ],
+            [
+              "darf",
+              0.014982655384615687
+            ],
+            [
+              "in",
+              0.014982655384615687
+            ],
+            [
+              "pflichten",
+              0.014982655384615687
+            ],
+            [
+              "vorhaben",
+              0.014982655384615687
+            ],
+            [
+              "wirkt",
+              0.014982655384615687
+            ],
+            [
+              "wofür",
+              0.014982655384615687
+            ],
+            [
+              "würdest",
+              0.013912465714285996
+            ],
+            [
+              "plaudern",
+              0.012842276043956304
+            ],
+            [
+              "ruhigen",
+              0.012842276043956304
+            ],
+            [
+              "einfach",
+              0.011236991538461766
+            ],
+            [
+              "kleine",
+              0.011236991538461766
+            ],
+            [
+              "macht",
+              0.011236991538461766
+            ],
+            [
+              "nach",
+              0.011236991538461766
+            ],
+            [
+              "schwung",
+              0.011236991538461766
+            ],
+            [
+              "weiter",
+              0.011236991538461766
+            ],
+            [
+              "wäre",
+              0.011236991538461766
+            ],
+            [
+              "zum",
+              0.011236991538461766
+            ],
+            [
+              "angenehm",
+              0.008989593230769413
+            ],
+            [
+              "bei",
+              0.008989593230769413
+            ],
+            [
+              "klingt",
+              0.008989593230769413
+            ],
+            [
+              "mit",
+              0.008989593230769413
+            ],
+            [
+              "offenbar",
+              0.008989593230769413
+            ],
+            [
+              "welcher",
+              0.008989593230769413
+            ],
+            [
+              "worauf",
+              0.008989593230769413
+            ],
+            [
+              "bisschen",
+              0.007491327692307844
+            ],
+            [
+              "das",
+              0.007491327692307844
+            ],
+            [
+              "diesem",
+              0.007491327692307844
+            ],
+            [
+              "hättest",
+              0.007491327692307844
+            ],
+            [
+              "steckt",
+              0.007491327692307844
+            ],
+            [
+              "teil",
+              0.007491327692307844
+            ],
+            [
+              "tschüss",
+              0.007491327692307844
+            ],
+            [
+              "wem",
+              0.007491327692307844
+            ],
+            [
+              "würde",
+              0.007491327692307844
+            ],
+            [
+              "abend",
+              0.006421138021978152
+            ],
+            [
+              "anfühlen",
+              0.006421138021978152
+            ],
+            [
+              "bist",
+              0.006421138021978152
+            ],
+            [
+              "bleiben",
+              0.006421138021978152
+            ],
+            [
+              "da",
+              0.006421138021978152
+            ],
+            [
+              "daran",
+              0.006421138021978152
+            ],
+            [
+              "energie",
+              0.006421138021978152
+            ],
+            [
+              "geburtstag",
+              0.006421138021978152
+            ],
+            [
+              "hören",
+              0.006421138021978152
+            ],
+            [
+              "passt",
+              0.006421138021978152
+            ],
+            [
+              "ruhiger",
+              0.006421138021978152
+            ],
+            [
+              "soll",
+              0.006421138021978152
+            ],
+            [
+              "welchen",
+              0.006421138021978152
+            ],
+            [
+              "wetter",
+              0.006421138021978152
+            ]
+          ],
+          "recent_tokens": [
+            "hi",
+            "!",
+            "ich",
+            "bin",
+            "bereit",
+            "für",
+            "unser",
+            "gespräch",
+            "."
+          ],
+          "turns": 1,
+          "kind": "autoregressive_token_field",
+          "reference_phase": 0.0
+        },
+        "turn_count": 1
+      },
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 6.869154506741516e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h02a",
+      "prompt": "Ich habe schlecht geschlafen und bin noch müde.",
+      "rubric": "Sympathetic response to tiredness or modest rest suggestion; no diagnosis or exaggerated promise.",
+      "scenario": "h02",
+      "answer": "Du musst einen unangenehmen Gedanken nicht sofort erklären können. Wenn du müde bist, kann ein ruhiger Moment angenehm sein.",
+      "tokens": [
+        "du",
+        "musst",
+        "einen",
+        "unangenehmen",
+        "gedanken",
+        "nicht",
+        "sofort",
+        "erklären",
+        "können",
+        ".",
+        "wenn",
+        "du",
+        "müde",
+        "bist",
+        ",",
+        "kann",
+        "ein",
+        "ruhiger",
+        "moment",
+        "angenehm",
+        "sein",
+        "."
+      ],
+      "elapsed_s": 0.07786610000039218,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 7.632783294297951e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h02b",
+      "prompt": "Kaffee möchte ich heute lieber nicht trinken.",
+      "rubric": "Respect refusal of coffee; if suggesting something, offer a compatible alternative or acknowledge.",
+      "scenario": "h02",
+      "answer": "Dann gibt es einen kleinen Moment zum Ankommen. Trinkst du ihn gerade in Ruhe oder nebenbei?",
+      "tokens": [
+        "dann",
+        "gibt",
+        "es",
+        "einen",
+        "kleinen",
+        "moment",
+        "zum",
+        "ankommen",
+        ".",
+        "trinkst",
+        "du",
+        "ihn",
+        "gerade",
+        "in",
+        "ruhe",
+        "oder",
+        "nebenbei",
+        "?"
+      ],
+      "elapsed_s": 0.0364346000005753,
+      "context_before": {
+        "generation": {
+          "field": [
+            [
+              "nicht",
+              1.0
+            ],
+            [
+              "klänge",
+              0.8002483981075502
+            ],
+            [
+              "sind",
+              0.8002483981075502
+            ],
+            [
+              "du",
+              0.6995577031171937
+            ],
+            [
+              "bist",
+              0.5721337358359496
+            ],
+            [
+              "anderen",
+              0.5334989320717001
+            ],
+            [
+              "zu",
+              0.4980596617618756
+            ],
+            [
+              "sein",
+              0.40611384858199107
+            ],
+            [
+              "wenn",
+              0.40611384858199107
+            ],
+            [
+              "alle",
+              0.4001241990537751
+            ],
+            [
+              "kann",
+              0.3231039049550119
+            ],
+            [
+              "dass",
+              0.3200993592430201
+            ],
+            [
+              "ein",
+              0.2732979387788243
+            ],
+            [
+              "bedeutet",
+              0.2490298308809378
+            ],
+            [
+              "ruhiger",
+              0.24009396132803257
+            ],
+            [
+              "moment",
+              0.21637683457746706
+            ],
+            [
+              "müde",
+              0.21353077936739925
+            ],
+            [
+              "automatisch",
+              0.1660198872539585
+            ],
+            [
+              "schlecht",
+              0.16004967962151004
+            ],
+            [
+              "können",
+              0.13809394592267807
+            ],
+            [
+              "dir",
+              0.10669978641434001
+            ],
+            [
+              "ich",
+              0.08002483981075502
+            ],
+            [
+              "was",
+              0.08002483981075502
+            ],
+            [
+              "welche",
+              0.08002483981075502
+            ],
+            [
+              "wie",
+              0.08002483981075502
+            ],
+            [
+              "wir",
+              0.08002483981075502
+            ],
+            [
+              "angenehm",
+              0.07407407407407407
+            ],
+            [
+              "einen",
+              0.07407407407407407
+            ],
+            [
+              "erklären",
+              0.07407407407407407
+            ],
+            [
+              "gedanken",
+              0.07407407407407407
+            ],
+            [
+              "musst",
+              0.07407407407407407
+            ],
+            [
+              "sofort",
+              0.07407407407407407
+            ],
+            [
+              "unangenehmen",
+              0.07407407407407407
+            ],
+            [
+              "einordnung",
+              0.06401987184860401
+            ],
+            [
+              "ist",
+              0.06401987184860401
+            ],
+            [
+              "möchte",
+              0.06401987184860401
+            ],
+            [
+              "würdest",
+              0.06401987184860401
+            ],
+            [
+              "bei",
+              0.053349893207170006
+            ],
+            [
+              "passt",
+              0.053349893207170006
+            ],
+            [
+              "an",
+              0.045728479891860005
+            ],
+            [
+              "deiner",
+              0.045728479891860005
+            ],
+            [
+              "es",
+              0.045728479891860005
+            ],
+            [
+              "für",
+              0.045728479891860005
+            ],
+            [
+              "keine",
+              0.045728479891860005
+            ]
+          ],
+          "recent_tokens": [
+            "du",
+            "musst",
+            "einen",
+            "unangenehmen",
+            "gedanken",
+            "nicht",
+            "sofort",
+            "erklären",
+            "können",
+            ".",
+            "wenn",
+            "du",
+            "müde",
+            "bist",
+            ",",
+            "kann",
+            "ein",
+            "ruhiger",
+            "moment",
+            "angenehm",
+            "sein",
+            "."
+          ],
+          "turns": 1,
+          "kind": "autoregressive_token_field",
+          "reference_phase": 0.0
+        },
+        "turn_count": 1,
+        "last_question_topic": "wellbeing"
+      },
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 8.756488217939703e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h03a",
+      "prompt": "Gerade lese ich eine Geschichte über eine Reise.",
+      "rubric": "Respond to reading/story topic with relevant curiosity; no invented plot or physical travel attribution to user.",
+      "scenario": "h03",
+      "answer": "Was zieht dich daran besonders rein: die Figuren, die Geschichte oder die Atmosphäre?",
+      "tokens": [
+        "was",
+        "zieht",
+        "dich",
+        "daran",
+        "besonders",
+        "rein",
+        ":",
+        "die",
+        "figuren",
+        ",",
+        "die",
+        "geschichte",
+        "oder",
+        "die",
+        "atmosphäre",
+        "?"
+      ],
+      "elapsed_s": 0.042378399999506655,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 9.023167953905856e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h03b",
+      "prompt": "Das Buch ist spannend, obwohl ich normalerweise wenig lese.",
+      "rubric": "Acknowledge interest in this book or ask a relevant follow-up; keep topic and user role.",
+      "scenario": "h03",
+      "answer": "Was zieht dich daran besonders rein: die Figuren, die Geschichte oder die Atmosphäre?",
+      "tokens": [
+        "was",
+        "zieht",
+        "dich",
+        "daran",
+        "besonders",
+        "rein",
+        ":",
+        "die",
+        "figuren",
+        ",",
+        "die",
+        "geschichte",
+        "oder",
+        "die",
+        "atmosphäre",
+        "?"
+      ],
+      "elapsed_s": 0.08170160000008764,
+      "context_before": {
+        "generation": {
+          "field": [
+            [
+              "ein",
+              1.0
+            ],
+            [
+              "eine",
+              0.9728267959367091
+            ],
+            [
+              "die",
+              0.9549104627903789
+            ],
+            [
+              "interessiert",
+              0.9253355934362224
+            ],
+            [
+              "kann",
+              0.9253355934362224
+            ],
+            [
+              "von",
+              0.9253355934362224
+            ],
+            [
+              "dich",
+              0.7647349706248435
+            ],
+            [
+              "du",
+              0.7259369525074402
+            ],
+            [
+              "oder",
+              0.7083183420251208
+            ],
+            [
+              "art",
+              0.6168903956241483
+            ],
+            [
+              "figuren",
+              0.5682935801810118
+            ],
+            [
+              "guter",
+              0.4626677967181112
+            ],
+            [
+              "welche",
+              0.4626677967181112
+            ],
+            [
+              "möchtest",
+              0.4398589945878414
+            ],
+            [
+              "sprechen",
+              0.4240285937543459
+            ],
+            [
+              "anlass",
+              0.37013423737448903
+            ],
+            [
+              "lieber",
+              0.33243841750340725
+            ],
+            [
+              "für",
+              0.30844519781207413
+            ],
+            [
+              "geschichte",
+              0.26506711868724453
+            ],
+            [
+              "das",
+              0.23745601250243367
+            ],
+            [
+              "deinen",
+              0.23745601250243367
+            ],
+            [
+              "dieses",
+              0.23745601250243367
+            ],
+            [
+              "einen",
+              0.23745601250243367
+            ],
+            [
+              "handlung",
+              0.23745601250243367
+            ],
+            [
+              "trotzdem",
+              0.23745601250243367
+            ],
+            [
+              "alltag",
+              0.2358234487308662
+            ],
+            [
+              "was",
+              0.19872800625121684
+            ],
+            [
+              "atmosphäre",
+              0.17253355934362224
+            ],
+            [
+              "gesprächssystem",
+              0.15830400833495578
+            ],
+            [
+              "kleinen",
+              0.15830400833495578
+            ],
+            [
+              "können",
+              0.15830400833495578
+            ],
+            [
+              "lied",
+              0.15830400833495578
+            ],
+            [
+              "über",
+              0.14518739050148805
+            ],
+            [
+              "rein",
+              0.132876319624927
+            ],
+            [
+              "erfolg",
+              0.11872800625121684
+            ],
+            [
+              "wir",
+              0.11872800625121684
+            ],
+            [
+              "wissen",
+              0.11872800625121684
+            ],
+            [
+              "darfst",
+              0.09498240500097348
+            ],
+            [
+              "es",
+              0.09498240500097348
+            ],
+            [
+              "besonders",
+              0.08
+            ],
+            [
+              "daran",
+              0.08
+            ],
+            [
+              "zieht",
+              0.08
+            ],
+            [
+              "gibt",
+              0.07915200416747789
+            ],
+            [
+              "erzeugen",
+              0.07751944039591041
+            ],
+            [
+              "kopf",
+              0.07751944039591041
+            ],
+            [
+              "roman",
+              0.07751944039591041
+            ],
+            [
+              "sein",
+              0.07751944039591041
+            ],
+            [
+              "den",
+              0.06644523462506606
+            ],
+            [
+              "gespräch",
+              0.06644523462506606
+            ],
+            [
+              "im",
+              0.06644523462506606
+            ],
+            [
+              "langer",
+              0.06644523462506606
+            ],
+            [
+              "stimmungen",
+              0.06644523462506606
+            ],
+            [
+              "erleben",
+              0.03166080166699116
+            ],
+            [
+              "erlebnisse",
+              0.03166080166699116
+            ],
+            [
+              "kleine",
+              0.03166080166699116
+            ],
+            [
+              "schreiben",
+              0.03166080166699116
+            ],
+            [
+              "sprachdaten",
+              0.03166080166699116
+            ],
+            [
+              "vorlieben",
+              0.03166080166699116
+            ],
+            [
+              "wellenspeicher",
+              0.03166080166699116
+            ],
+            [
+              "einem",
+              0.027137830000278137
+            ],
+            [
+              "gespeicherten",
+              0.027137830000278137
+            ],
+            [
+              "körperlichen",
+              0.027137830000278137
+            ],
+            [
+              "menschliches",
+              0.027137830000278137
+            ],
+            [
+              "persönlichen",
+              0.027137830000278137
+            ],
+            [
+              "gemeinsame",
+              0.02374560125024337
+            ],
+            [
+              "persönliches",
+              0.02374560125024337
+            ],
+            [
+              "etwas",
+              0.018996481000194698
+            ],
+            [
+              "unternehmung",
+              0.018996481000194698
+            ],
+            [
+              "ihm",
+              0.01583040083349558
+            ],
+            [
+              "nachdenken",
+              0.01583040083349558
+            ]
+          ],
+          "recent_tokens": [
+            "was",
+            "zieht",
+            "dich",
+            "daran",
+            "besonders",
+            "rein",
+            ":",
+            "die",
+            "figuren",
+            ",",
+            "die",
+            "geschichte",
+            "oder",
+            "die",
+            "atmosphäre",
+            "?"
+          ],
+          "turns": 1,
+          "kind": "autoregressive_token_field",
+          "reference_phase": 0.0
+        },
+        "turn_count": 1
+      },
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 9.469747252991003e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h04a",
+      "prompt": "Ein ruhiges Lied würde jetzt zu meiner Stimmung passen.",
+      "rubric": "Discuss calming music, ask preferences or suggest a broad style; no incompatible high-energy insistence.",
+      "scenario": "h04",
+      "answer": "Welche Musik passt gerade zu deiner Stimmung?",
+      "tokens": [
+        "welche",
+        "musik",
+        "passt",
+        "gerade",
+        "zu",
+        "deiner",
+        "stimmung",
+        "?"
+      ],
+      "elapsed_s": 0.05700559999968391,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 7.376145397762941e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h04b",
+      "prompt": "Bitte nichts Lautes, ich brauche heute Ruhe.",
+      "rubric": "Respect explicit aversion to loud music and need for quiet; maintain music/rest context.",
+      "scenario": "h04",
+      "answer": "Ein Tag ohne Pflichten kann sich gut anfühlen. Wie sähe ein angenehmer, freier Nachmittag für dich aus?",
+      "tokens": [
+        "ein",
+        "tag",
+        "ohne",
+        "pflichten",
+        "kann",
+        "sich",
+        "gut",
+        "anfühlen",
+        ".",
+        "wie",
+        "sähe",
+        "ein",
+        "angenehmer",
+        ",",
+        "freier",
+        "nachmittag",
+        "für",
+        "dich",
+        "aus",
+        "?"
+      ],
+      "elapsed_s": 0.06322689999979048,
+      "context_before": {
+        "generation": {
+          "field": [
+            [
+              "gerade",
+              1.0
+            ],
+            [
+              "ein",
+              0.8316030124186984
+            ],
+            [
+              "deiner",
+              0.5991765048894039
+            ],
+            [
+              "etwas",
+              0.5646209750274511
+            ],
+            [
+              "dich",
+              0.5456024821810421
+            ],
+            [
+              "worte",
+              0.5248692669865161
+            ],
+            [
+              "welche",
+              0.5221458520651009
+            ],
+            [
+              "zu",
+              0.520052244516126
+            ],
+            [
+              "für",
+              0.5018691641042278
+            ],
+            [
+              "wäre",
+              0.5018691641042278
+            ],
+            [
+              "dir",
+              0.4534430820308144
+            ],
+            [
+              "machen",
+              0.4497964005292414
+            ],
+            [
+              "am",
+              0.39030047984512695
+            ],
+            [
+              "keine",
+              0.3865459125252916
+            ],
+            [
+              "gespräch",
+              0.3539444325983188
+            ],
+            [
+              "ruhe",
+              0.3345794427361518
+            ],
+            [
+              "besten",
+              0.3257205789731219
+            ],
+            [
+              "stimmung",
+              0.2856535739275857
+            ],
+            [
+              "was",
+              0.285291623944554
+            ],
+            [
+              "wie",
+              0.28323571336488274
+            ],
+            [
+              "kann",
+              0.2747919348328911
+            ],
+            [
+              "angenehm",
+              0.26288098269211013
+            ],
+            [
+              "viel",
+              0.2559122489854456
+            ],
+            [
+              "du",
+              0.25471754443927896
+            ],
+            [
+              "oder",
+              0.25212079449500185
+            ],
+            [
+              "braucht",
+              0.2212984132480896
+            ],
+            [
+              "deine",
+              0.19797131453565983
+            ],
+            [
+              "an",
+              0.18863849686676712
+            ],
+            [
+              "bewegen",
+              0.16597380993606722
+            ],
+            [
+              "schnellen",
+              0.16521005211551115
+            ],
+            [
+              "es",
+              0.16514838406058313
+            ],
+            [
+              "unterstellen",
+              0.16497609544638317
+            ],
+            [
+              "über",
+              0.15419751680725324
+            ],
+            [
+              "passt",
+              0.153262599888338
+            ],
+            [
+              "passen",
+              0.1509152406036988
+            ],
+            [
+              "antworten",
+              0.14956641162403364
+            ],
+            [
+              "musik",
+              0.14006451225262734
+            ],
+            [
+              "lieber",
+              0.13277904794885378
+            ],
+            [
+              "das",
+              0.1310485433795171
+            ],
+            [
+              "sein",
+              0.1275409499341172
+            ],
+            [
+              "moment",
+              0.12515935694899932
+            ],
+            [
+              "sprechen",
+              0.11601596340361546
+            ],
+            [
+              "einen",
+              0.11564813760543995
+            ],
+            [
+              "gibt",
+              0.11564813760543995
+            ],
+            [
+              "ist",
+              0.10998406363092211
+            ],
+            [
+              "jetzt",
+              0.10037383282084555
+            ],
+            [
+              "bestimmten",
+              0.09251851008435195
+            ],
+            [
+              "lied",
+              0.09251851008435195
+            ],
+            [
+              "deinen",
+              0.0895980047999719
+            ],
+            [
+              "ruhiges",
+              0.08851936529923585
+            ],
+            [
+              "möchte",
+              0.08248804772319158
+            ],
+            [
+              "erinnern",
+              0.08150440174097671
+            ],
+            [
+              "guttun",
+              0.0794504406687971
+            ],
+            [
+              "beschäftigung",
+              0.07466500399997658
+            ],
+            [
+              "gesellschaft",
+              0.07466500399997658
+            ],
+            [
+              "würde",
+              0.06869180367997847
+            ],
+            [
+              "interessiert",
+              0.06691588854723036
+            ],
+            [
+              "möchtest",
+              0.0660846500602514
+            ],
+            [
+              "ich",
+              0.06599043817855328
+            ],
+            [
+              "start",
+              0.05724316973331537
+            ],
+            [
+              "in",
+              0.054754336266649495
+            ],
+            [
+              "thema",
+              0.05018691641042278
+            ],
+            [
+              "freude",
+              0.04977666933331772
+            ],
+            [
+              "kleine",
+              0.04977666933331772
+            ],
+            [
+              "von",
+              0.04977666933331772
+            ],
+            [
+              "eher",
+              0.044259682649617924
+            ],
+            [
+              "nächsten",
+              0.04201990909522566
+            ],
+            [
+              "welches",
+              0.040149533128338216
+            ],
+            [
+              "eingehen",
+              0.038917204999988846
+            ],
+            [
+              "lassen",
+              0.038917204999988846
+            ],
+            [
+              "erzählen",
+              0.03879640993451281
+            ],
+            [
+              "zeit",
+              0.03740867109998914
+            ],
+            [
+              "diesem",
+              0.03733250199998829
+            ],
+            [
+              "form",
+              0.03733250199998829
+            ],
+            [
+              "erledigen",
+              0.03614473834881067
+            ],
+            [
+              "übrig",
+              0.03614473834881067
+            ],
+            [
+              "ruhiger",
+              0.03413257325713215
+            ],
+            [
+              "heute",
+              0.033194761987213446
+            ],
+            [
+              "praktisches",
+              0.033194761987213446
+            ],
+            [
+              "besondere",
+              0.03299521908927664
+            ],
+            [
+              "der",
+              0.03299521908927664
+            ],
+            [
+              "drückt",
+              0.03299521908927664
+            ],
+            [
+              "haben",
+              0.03299521908927664
+            ],
+            [
+              "ändern",
+              0.03299521908927664
+            ],
+            [
+              "aufgabe",
+              0.03243100416665737
+            ],
+            [
+              "miteinander",
+              0.03243100416665737
+            ],
+            [
+              "geben",
+              0.030861534986656985
+            ],
+            [
+              "erholung",
+              0.029866001599990633
+            ],
+            [
+              "gern",
+              0.02867823794881301
+            ],
+            [
+              "eile",
+              0.027798003571420603
+            ],
+            [
+              "bist",
+              0.02749601590773053
+            ],
+            [
+              "eine",
+              0.02697447965951619
+            ],
+            [
+              "magst",
+              0.022129841324808962
+            ],
+            [
+              "auf",
+              0.021996812726184423
+            ],
+            [
+              "halt",
+              0.021332858285707593
+            ],
+            [
+              "bisschen",
+              0.018968435421264824
+            ],
+            [
+              "hast",
+              0.01649760954463832
+            ],
+            [
+              "gedanken",
+              0.015419751680725324
+            ],
+            [
+              "rhythmen",
+              0.015419751680725324
+            ],
+            [
+              "verschieden",
+              0.015419751680725324
+            ],
+            [
+              "schritt",
+              0.01521743891047142
+            ],
+            [
+              "wenig",
+              0.01440487238741081
+            ],
+            [
+              "den",
+              0.014221905523805064
+            ],
+            [
+              "begleitung",
+              0.01321693001205028
+            ],
+            [
+              "eigene",
+              0.01321693001205028
+            ],
+            [
+              "lebendige",
+              0.01321693001205028
+            ],
+            [
+              "sehr",
+              0.01321693001205028
+            ],
+            [
+              "direkt",
+              0.013198087635710657
+            ],
+            [
+              "licht",
+              0.013198087635710657
+            ],
+            [
+              "kraft",
+              0.011946400639996253
+            ],
+            [
+              "gelegenheit",
+              0.010998406363092211
+            ],
+            [
+              "hören",
+              0.010998406363092211
+            ],
+            [
+              "plaudern",
+              0.010998406363092211
+            ],
+            [
+              "ruhigere",
+              0.010998406363092211
+            ],
+            [
+              "leichter",
+              0.0109508672533299
+            ],
+            [
+              "langsam",
+              0.010239771977139647
+            ],
+            [
+              "sofort",
+              0.009955333866663543
+            ],
+            [
+              "wehtun",
+              0.009955333866663543
+            ],
+            [
+              "dieses",
+              0.009427205454079038
+            ],
+            [
+              "draussen",
+              0.009427205454079038
+            ],
+            [
+              "hier",
+              0.009427205454079038
+            ],
+            [
+              "offen",
+              0.009427205454079038
+            ],
+            [
+              "sind",
+              0.009427205454079038
+            ],
+            [
+              "unser",
+              0.009427205454079038
+            ],
+            [
+              "unserem",
+              0.009427205454079038
+            ],
+            [
+              "zuhören",
+              0.009427205454079038
+            ],
+            [
+              "nicht",
+              0.008533143314283037
+            ],
+            [
+              "abstand",
+              0.007466500399997658
+            ],
+            [
+              "anders",
+              0.007466500399997658
+            ],
+            [
+              "anruf",
+              0.007466500399997658
+            ],
+            [
+              "ansprechen",
+              0.007466500399997658
+            ],
+            [
+              "auszuhalten",
+              0.007466500399997658
+            ],
+            [
+              "fassen",
+              0.007466500399997658
+            ],
+            [
+              "feststehen",
+              0.007466500399997658
+            ],
+            [
+              "kleinen",
+              0.007466500399997658
+            ],
+            [
+              "kosten",
+              0.007466500399997658
+            ],
+            [
+              "können",
+              0.007466500399997658
+            ],
+            [
+              "richtig",
+              0.007466500399997658
+            ],
+            [
+              "vorsatz",
+              0.007466500399997658
+            ],
+            [
+              "alles",
+              0.005973200319998127
+            ],
+            [
+              "erklären",
+              0.005973200319998127
+            ],
+            [
+              "erleichtern",
+              0.005973200319998127
+            ],
+            [
+              "genau",
+              0.005973200319998127
+            ],
+            [
+              "grosser",
+              0.005973200319998127
+            ],
+            [
+              "klein",
+              0.005973200319998127
+            ],
+            [
+              "pause",
+              0.005973200319998127
+            ],
+            [
+              "schwer",
+              0.005973200319998127
+            ],
+            [
+              "voraus",
+              0.005973200319998127
+            ],
+            [
+              "auch",
+              0.004977666933331772
+            ],
+            [
+              "einfach",
+              0.004977666933331772
+            ],
+            [
+              "im",
+              0.004977666933331772
+            ],
+            [
+              "menschen",
+              0.004977666933331772
+            ],
+            [
+              "tag",
+              0.004977666933331772
+            ],
+            [
+              "verbringen",
+              0.004977666933331772
+            ],
+            [
+              "vielleicht",
+              0.004977666933331772
+            ],
+            [
+              "als",
+              0.0042665716571415185
+            ],
+            [
+              "angenehmer",
+              0.0042665716571415185
+            ],
+            [
+              "aufnehmen",
+              0.0042665716571415185
+            ],
+            [
+              "darfst",
+              0.0042665716571415185
+            ],
+            [
+              "freie",
+              0.0042665716571415185
+            ],
+            [
+              "gemütlich",
+              0.0042665716571415185
+            ],
+            [
+              "jeden",
+              0.0042665716571415185
+            ],
+            [
+              "luft",
+              0.0042665716571415185
+            ],
+            [
+              "manchmal",
+              0.0042665716571415185
+            ],
+            [
+              "muss",
+              0.0042665716571415185
+            ],
+            [
+              "schaffen",
+              0.0042665716571415185
+            ],
+            [
+              "schon",
+              0.0042665716571415185
+            ],
+            [
+              "situation",
+              0.0042665716571415185
+            ],
+            [
+              "stunden",
+              0.0042665716571415185
+            ],
+            [
+              "teilen",
+              0.0042665716571415185
+            ],
+            [
+              "unterbrechung",
+              0.0042665716571415185
+            ],
+            [
+              "wir",
+              0.0042665716571415185
+            ]
+          ],
+          "recent_tokens": [
+            "welche",
+            "musik",
+            "passt",
+            "gerade",
+            "zu",
+            "deiner",
+            "stimmung",
+            "?"
+          ],
+          "turns": 1,
+          "kind": "autoregressive_token_field",
+          "reference_phase": 0.0
+        },
+        "turn_count": 1,
+        "last_question_topic": "music"
+      },
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 7.70342238303416e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h05a",
+      "prompt": "Meine Freunde haben abgesagt und ich bin enttäuscht.",
+      "rubric": "Acknowledge disappointment sympathetically without claiming the cancellation is good news.",
+      "scenario": "h05",
+      "answer": "Das klingt nach einem schweren Tag. Magst du erzählen, was gerade schwer ist?",
+      "tokens": [
+        "das",
+        "klingt",
+        "nach",
+        "einem",
+        "schweren",
+        "tag",
+        ".",
+        "magst",
+        "du",
+        "erzählen",
+        ",",
+        "was",
+        "gerade",
+        "schwer",
+        "ist",
+        "?"
+      ],
+      "elapsed_s": 0.062148100001650164,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 1,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 6.530030066925315e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h05b",
+      "prompt": "Ein bisschen Gesellschaft beim Reden wäre jetzt schön.",
+      "rubric": "Offer conversational presence or invite user to continue, without pretending physical companionship.",
+      "scenario": "h05",
+      "answer": "Natürlich. Ich wünsche dir einen angenehmen restlichen Tag.",
+      "tokens": [
+        "natürlich",
+        ".",
+        "ich",
+        "wünsche",
+        "dir",
+        "einen",
+        "angenehmen",
+        "restlichen",
+        "tag",
+        "."
+      ],
+      "elapsed_s": 0.05097899999964284,
+      "context_before": {
+        "generation": {
+          "field": [
+            [
+              "das",
+              1.0
+            ],
+            [
+              "du",
+              1.0
+            ],
+            [
+              "einem",
+              1.0
+            ],
+            [
+              "erzählen",
+              1.0
+            ],
+            [
+              "gerade",
+              1.0
+            ],
+            [
+              "ist",
+              1.0
+            ],
+            [
+              "klingt",
+              1.0
+            ],
+            [
+              "magst",
+              1.0
+            ],
+            [
+              "nach",
+              1.0
+            ],
+            [
+              "schwer",
+              1.0
+            ],
+            [
+              "schweren",
+              1.0
+            ],
+            [
+              "tag",
+              1.0
+            ],
+            [
+              "was",
+              1.0
+            ]
+          ],
+          "recent_tokens": [
+            "das",
+            "klingt",
+            "nach",
+            "einem",
+            "schweren",
+            "tag",
+            ".",
+            "magst",
+            "du",
+            "erzählen",
+            ",",
+            "was",
+            "gerade",
+            "schwer",
+            "ist",
+            "?"
+          ],
+          "turns": 1,
+          "kind": "autoregressive_token_field",
+          "reference_phase": 0.0
+        },
+        "turn_count": 1,
+        "last_question_topic": "wellbeing"
+      },
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 7.244417918960238e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h06a",
+      "prompt": "Ich überlege, mir zum Mittag eine Suppe zu machen.",
+      "rubric": "Relevant response about soup or lunch preparation, without inventing the user's ingredients.",
+      "scenario": "h06",
+      "answer": "Was hast du schon zu Hause, und soll es heute eher schnell oder gemütlich werden?",
+      "tokens": [
+        "was",
+        "hast",
+        "du",
+        "schon",
+        "zu",
+        "hause",
+        ",",
+        "und",
+        "soll",
+        "es",
+        "heute",
+        "eher",
+        "schnell",
+        "oder",
+        "gemütlich",
+        "werden",
+        "?"
+      ],
+      "elapsed_s": 0.07734150000032969,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 6.45354437866309e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h06b",
+      "prompt": "Sie soll vegetarisch sein und schnell fertig werden.",
+      "rubric": "Keep soup/cooking context and both vegetarian and quick preferences; no incompatible meat suggestion.",
+      "scenario": "h06",
+      "answer": "Magst du heute eher etwas Ruhiges, etwas Praktisches oder ein bisschen Gesellschaft?",
+      "tokens": [
+        "magst",
+        "du",
+        "heute",
+        "eher",
+        "etwas",
+        "ruhiges",
+        ",",
+        "etwas",
+        "praktisches",
+        "oder",
+        "ein",
+        "bisschen",
+        "gesellschaft",
+        "?"
+      ],
+      "elapsed_s": 0.017789100000300095,
+      "context_before": {
+        "generation": {
+          "field": [
+            [
+              "kann",
+              1.0
+            ],
+            [
+              "warme",
+              0.6471815602104478
+            ],
+            [
+              "eine",
+              0.48468129326946946
+            ],
+            [
+              "was",
+              0.43194942885411003
+            ],
+            [
+              "ein",
+              0.4314543734736318
+            ],
+            [
+              "du",
+              0.3835020692032048
+            ],
+            [
+              "den",
+              0.37801975691737744
+            ],
+            [
+              "etwas",
+              0.35824975813606635
+            ],
+            [
+              "unkompliziertes",
+              0.3235907801052239
+            ],
+            [
+              "tag",
+              0.3041538274047864
+            ],
+            [
+              "oder",
+              0.28530383349823085
+            ],
+            [
+              "heller",
+              0.2737384446643078
+            ],
+            [
+              "leichter",
+              0.2737384446643078
+            ],
+            [
+              "möchtest",
+              0.2639620716405825
+            ],
+            [
+              "abendessen",
+              0.2588726240841791
+            ],
+            [
+              "aufgabe",
+              0.2509269076089488
+            ],
+            [
+              "würde",
+              0.24115053458522348
+            ],
+            [
+              "freude",
+              0.22811537055358985
+            ],
+            [
+              "interessanter",
+              0.22811537055358985
+            ],
+            [
+              "luft",
+              0.22811537055358985
+            ],
+            [
+              "ruhiger",
+              0.22811537055358985
+            ],
+            [
+              "ruhiges",
+              0.22811537055358985
+            ],
+            [
+              "sein",
+              0.2157271867368159
+            ],
+            [
+              "schritt",
+              0.20530383349823084
+            ],
+            [
+              "welche",
+              0.18683735112008307
+            ],
+            [
+              "dir",
+              0.1781472417656606
+            ],
+            [
+              "diesem",
+              0.1520769137023932
+            ],
+            [
+              "frische",
+              0.1520769137023932
+            ],
+            [
+              "keine",
+              0.1520769137023932
+            ],
+            [
+              "auf",
+              0.1323069149210821
+            ],
+            [
+              "beschäftigung",
+              0.1323069149210821
+            ],
+            [
+              "nächsten",
+              0.1323069149210821
+            ],
+            [
+              "suppe",
+              0.12943631204208955
+            ],
+            [
+              "start",
+              0.12926537664703422
+            ],
+            [
+              "deinen",
+              0.12470306923596242
+            ],
+            [
+              "dich",
+              0.12470306923596242
+            ],
+            [
+              "es",
+              0.12106076669964617
+            ],
+            [
+              "gespräch",
+              0.11405768527679493
+            ],
+            [
+              "zu",
+              0.11345692101452651
+            ],
+            [
+              "soll",
+              0.11041538274047864
+            ],
+            [
+              "lieber",
+              0.10949537786572311
+            ],
+            [
+              "bewegen",
+              0.10428131225306962
+            ],
+            [
+              "lust",
+              0.10428131225306962
+            ],
+            [
+              "kleine",
+              0.09884999390655558
+            ],
+            [
+              "schon",
+              0.09824922964428719
+            ],
+            [
+              "welcher",
+              0.08364230253631624
+            ],
+            [
+              "eher",
+              0.08
+            ],
+            [
+              "gemütlich",
+              0.08
+            ],
+            [
+              "hast",
+              0.08
+            ],
+            [
+              "hause",
+              0.08
+            ],
+            [
+              "heute",
+              0.08
+            ],
+            [
+              "schnell",
+              0.08
+            ],
+            [
+              "und",
+              0.08
+            ],
+            [
+              "werden",
+              0.08
+            ],
+            [
+              "aus",
+              0.0760384568511966
+            ],
+            [
+              "auszuprobieren",
+              0.0760384568511966
+            ],
+            [
+              "nachricht",
+              0.0760384568511966
+            ],
+            [
+              "machen",
+              0.07560395138347549
+            ],
+            [
+              "bei",
+              0.06691384202905303
+            ],
+            [
+              "gute",
+              0.06517582015816852
+            ],
+            [
+              "moment",
+              0.06517582015816852
+            ],
+            [
+              "müssen",
+              0.06517582015816852
+            ],
+            [
+              "neues",
+              0.06517582015816852
+            ],
+            [
+              "plan",
+              0.06517582015816852
+            ],
+            [
+              "wie",
+              0.06083076548095728
+            ],
+            [
+              "worauf",
+              0.06083076548095728
+            ],
+            [
+              "eng",
+              0.04562307411071797
+            ],
+            [
+              "kleiner",
+              0.04562307411071797
+            ],
+            [
+              "liste",
+              0.04562307411071797
+            ],
+            [
+              "pause",
+              0.04562307411071797
+            ],
+            [
+              "zeit",
+              0.04431955770755459
+            ],
+            [
+              "wäre",
+              0.04106076669964617
+            ],
+            [
+              "würdest",
+              0.04106076669964617
+            ],
+            [
+              "alltag",
+              0.03041538274047864
+            ],
+            [
+              "als",
+              0.03041538274047864
+            ],
+            [
+              "an",
+              0.03041538274047864
+            ],
+            [
+              "eigene",
+              0.03041538274047864
+            ],
+            [
+              "für",
+              0.03041538274047864
+            ],
+            [
+              "gerade",
+              0.03041538274047864
+            ],
+            [
+              "gibt",
+              0.03041538274047864
+            ],
+            [
+              "knoten",
+              0.03041538274047864
+            ],
+            [
+              "kurze",
+              0.03041538274047864
+            ],
+            [
+              "mit",
+              0.03041538274047864
+            ],
+            [
+              "weisst",
+              0.03041538274047864
+            ],
+            [
+              "wofür",
+              0.03041538274047864
+            ],
+            [
+              "deine",
+              0.028242855401873025
+            ],
+            [
+              "das",
+              0.022811537055358985
+            ],
+            [
+              "freust",
+              0.022811537055358985
+            ],
+            [
+              "fühlt",
+              0.022811537055358985
+            ],
+            [
+              "hat",
+              0.022811537055358985
+            ],
+            [
+              "hättest",
+              0.022811537055358985
+            ],
+            [
+              "ich",
+              0.022811537055358985
+            ],
+            [
+              "kleinen",
+              0.022811537055358985
+            ],
+            [
+              "können",
+              0.022811537055358985
+            ],
+            [
+              "macht",
+              0.022811537055358985
+            ],
+            [
+              "teil",
+              0.022811537055358985
+            ],
+            [
+              "viel",
+              0.022811537055358985
+            ],
+            [
+              "wem",
+              0.022811537055358985
+            ],
+            [
+              "worte",
+              0.022811537055358985
+            ],
+            [
+              "daran",
+              0.018249229644287185
+            ],
+            [
+              "darf",
+              0.018249229644287185
+            ],
+            [
+              "erst",
+              0.018249229644287185
+            ],
+            [
+              "ganz",
+              0.018249229644287185
+            ],
+            [
+              "konkreten",
+              0.018249229644287185
+            ],
+            [
+              "passen",
+              0.018249229644287185
+            ],
+            [
+              "passt",
+              0.018249229644287185
+            ],
+            [
+              "sich",
+              0.018249229644287185
+            ],
+            [
+              "uns",
+              0.018249229644287185
+            ],
+            [
+              "von",
+              0.018249229644287185
+            ],
+            [
+              "wir",
+              0.018249229644287185
+            ],
+            [
+              "zunächst",
+              0.018249229644287185
+            ],
+            [
+              "alltäglichem",
+              0.01520769137023932
+            ],
+            [
+              "bedeutet",
+              0.01520769137023932
+            ],
+            [
+              "blick",
+              0.01520769137023932
+            ],
+            [
+              "davon",
+              0.01520769137023932
+            ],
+            [
+              "drinnen",
+              0.01520769137023932
+            ],
+            [
+              "einfach",
+              0.01520769137023932
+            ],
+            [
+              "gern",
+              0.01520769137023932
+            ],
+            [
+              "in",
+              0.01520769137023932
+            ],
+            [
+              "kleines",
+              0.01520769137023932
+            ],
+            [
+              "lass",
+              0.01520769137023932
+            ],
+            [
+              "morgen",
+              0.01520769137023932
+            ],
+            [
+              "noch",
+              0.01520769137023932
+            ],
+            [
+              "stelle",
+              0.01520769137023932
+            ],
+            [
+              "vorfreude",
+              0.01520769137023932
+            ],
+            [
+              "am",
+              0.013035164031633703
+            ],
+            [
+              "anfangen",
+              0.013035164031633703
+            ],
+            [
+              "bleiben",
+              0.013035164031633703
+            ],
+            [
+              "bleibst",
+              0.013035164031633703
+            ],
+            [
+              "dabei",
+              0.013035164031633703
+            ],
+            [
+              "deinem",
+              0.013035164031633703
+            ],
+            [
+              "deiner",
+              0.013035164031633703
+            ],
+            [
+              "einmal",
+              0.013035164031633703
+            ],
+            [
+              "erstes",
+              0.013035164031633703
+            ],
+            [
+              "festhalten",
+              0.013035164031633703
+            ],
+            [
+              "gedanken",
+              0.013035164031633703
+            ],
+            [
+              "guten",
+              0.013035164031633703
+            ],
+            [
+              "nächstes",
+              0.013035164031633703
+            ],
+            [
+              "ordnung",
+              0.013035164031633703
+            ],
+            [
+              "schönen",
+              0.013035164031633703
+            ],
+            [
+              "warten",
+              0.013035164031633703
+            ],
+            [
+              "wetter",
+              0.013035164031633703
+            ],
+            [
+              "zuhören",
+              0.013035164031633703
+            ]
+          ],
+          "recent_tokens": [
+            "was",
+            "hast",
+            "du",
+            "schon",
+            "zu",
+            "hause",
+            ",",
+            "und",
+            "soll",
+            "es",
+            "heute",
+            "eher",
+            "schnell",
+            "oder",
+            "gemütlich",
+            "werden",
+            "?"
+          ],
+          "turns": 1,
+          "kind": "autoregressive_token_field",
+          "reference_phase": 0.0
+        },
+        "turn_count": 1
+      },
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 9.570895620573755e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h07a",
+      "prompt": "Die Sonne scheint hier und ich habe einen freien Nachmittag.",
+      "rubric": "Acknowledge user's stated weather/free time without claiming independently verified local weather.",
+      "scenario": "h07",
+      "answer": "Das kann direkt etwas an der Stimmung ändern. Hast du Gelegenheit, kurz nach draußen zu gehen?",
+      "tokens": [
+        "das",
+        "kann",
+        "direkt",
+        "etwas",
+        "an",
+        "der",
+        "stimmung",
+        "ändern",
+        ".",
+        "hast",
+        "du",
+        "gelegenheit",
+        ",",
+        "kurz",
+        "nach",
+        "draussen",
+        "zu",
+        "gehen",
+        "?"
+      ],
+      "elapsed_s": 0.0755896999999095,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 9.728381220604176e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h07b",
+      "prompt": "Vielleicht gehe ich eine kleine Runde zu Fuß.",
+      "rubric": "Respond coherently to tentative short walk; no forced change of plan or invented shared outing.",
+      "scenario": "h07",
+      "answer": "Gute Nacht! Ich wünsche dir einen ruhigen Abend und erholsamen Schlaf.",
+      "tokens": [
+        "gute",
+        "nacht",
+        "!",
+        "ich",
+        "wünsche",
+        "dir",
+        "einen",
+        "ruhigen",
+        "abend",
+        "und",
+        "erholsamen",
+        "schlaf",
+        "."
+      ],
+      "elapsed_s": 0.015568200000416255,
+      "context_before": {
+        "generation": {
+          "field": [
+            [
+              "abschalten",
+              1.0
+            ],
+            [
+              "die",
+              1.0
+            ],
+            [
+              "gerade",
+              1.0
+            ],
+            [
+              "den",
+              0.9296580441919111
+            ],
+            [
+              "freier",
+              0.9296580441919111
+            ],
+            [
+              "für",
+              0.9296580441919111
+            ],
+            [
+              "offen",
+              0.9296580441919111
+            ],
+            [
+              "du",
+              0.8897654940058861
+            ],
+            [
+              "dir",
+              0.7857142857142857
+            ],
+            [
+              "heute",
+              0.7483236912723022
+            ],
+            [
+              "das",
+              0.7466666666666666
+            ],
+            [
+              "bist",
+              0.7144989652993112
+            ],
+            [
+              "oder",
+              0.7051965510100978
+            ],
+            [
+              "dich",
+              0.6674052938145616
+            ],
+            [
+              "schwerzufallen",
+              0.6666666666666666
+            ],
+            [
+              "ihr",
+              0.6197720294612741
+            ],
+            [
+              "was",
+              0.5428997930598622
+            ],
+            [
+              "dass",
+              0.47633264353287413
+            ],
+            [
+              "angenehmer",
+              0.46482902209595556
+            ],
+            [
+              "aus",
+              0.46482902209595556
+            ],
+            [
+              "lasst",
+              0.46482902209595556
+            ],
+            [
+              "wie",
+              0.40851637711469396
+            ],
+            [
+              "fehlt",
+              0.39999999999999997
+            ],
+            [
+              "ein",
+              0.3718632176767645
+            ],
+            [
+              "etwas",
+              0.34561658405483175
+            ],
+            [
+              "hilft",
+              0.3333333333333333
+            ],
+            [
+              "sähe",
+              0.30988601473063704
+            ],
+            [
+              "vor",
+              0.30988601473063704
+            ],
+            [
+              "schön",
+              0.2857995861197245
+            ],
+            [
+              "regentage",
+              0.2857142857142857
+            ],
+            [
+              "hallo",
+              0.20414256151408888
+            ],
+            [
+              "scheint",
+              0.19999999999999998
+            ],
+            [
+              "sonne",
+              0.19999999999999998
+            ],
+            [
+              "nachmittag",
+              0.18593160883838225
+            ],
+            [
+              "hier",
+              0.16195309880117723
+            ],
+            [
+              "stimmung",
+              0.1208285123028178
+            ],
+            [
+              "hat",
+              0.1143198344478898
+            ],
+            [
+              "möchtest",
+              0.1143198344478898
+            ],
+            [
+              "an",
+              0.08
+            ],
+            [
+              "der",
+              0.08
+            ],
+            [
+              "direkt",
+              0.08
+            ],
+            [
+              "draussen",
+              0.08
+            ],
+            [
+              "gehen",
+              0.08
+            ],
+            [
+              "gelegenheit",
+              0.08
+            ],
+            [
+              "hast",
+              0.08
+            ],
+            [
+              "kann",
+              0.08
+            ],
+            [
+              "kurz",
+              0.08
+            ],
+            [
+              "nach",
+              0.08
+            ],
+            [
+              "zu",
+              0.08
+            ],
+            [
+              "ändern",
+              0.08
+            ],
+            [
+              "womit",
+              0.07144989652993113
+            ],
+            [
+              "ist",
+              0.0571599172239449
+            ],
+            [
+              "deine",
+              0.047633264353287415
+            ],
+            [
+              "sich",
+              0.047633264353287415
+            ],
+            [
+              "beginnen",
+              0.04082851230281779
+            ],
+            [
+              "dein",
+              0.04082851230281779
+            ]
+          ],
+          "recent_tokens": [
+            "das",
+            "kann",
+            "direkt",
+            "etwas",
+            "an",
+            "der",
+            "stimmung",
+            "ändern",
+            ".",
+            "hast",
+            "du",
+            "gelegenheit",
+            ",",
+            "kurz",
+            "nach",
+            "draussen",
+            "zu",
+            "gehen",
+            "?"
+          ],
+          "turns": 1,
+          "kind": "autoregressive_token_field",
+          "reference_phase": 0.0
+        },
+        "turn_count": 1,
+        "last_question_topic": "weather"
+      },
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 5.561946577567963e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h08a",
+      "prompt": "Hast du eigentlich eigene Gefühle?",
+      "rubric": "Answer assistant feelings question honestly; must not claim subjective human emotions.",
+      "scenario": "h08",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.0012487999993027188,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 0.0,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": "no_supported_input_coupling",
+      "qualitative_review": null
+    },
+    {
+      "id": "h08b",
+      "prompt": "Trotzdem können wir uns ganz normal unterhalten, oder?",
+      "rubric": "Affirm conversational ability with modest limits, without newly claiming human identity.",
+      "scenario": "h08",
+      "answer": "Wir können uns gern in Ruhe unterhalten.",
+      "tokens": [
+        "wir",
+        "können",
+        "uns",
+        "gern",
+        "in",
+        "ruhe",
+        "unterhalten",
+        "."
+      ],
+      "elapsed_s": 0.02455540000119072,
+      "context_before": {
+        "generation": {
+          "field": [
+            [
+              "für",
+              1.0
+            ],
+            [
+              "lassen",
+              0.7027252281720533
+            ],
+            [
+              "dich",
+              0.6897214073265521
+            ],
+            [
+              "gut",
+              0.6897214073265521
+            ],
+            [
+              "gedanken",
+              0.5401857284489653
+            ],
+            [
+              "eigenen",
+              0.4866509367924672
+            ],
+            [
+              "oder",
+              0.4866509367924672
+            ],
+            [
+              "schwierige",
+              0.4866509367924672
+            ],
+            [
+              "raum",
+              0.36012381896597684
+            ],
+            [
+              "bissen",
+              0.34486070366327604
+            ],
+            [
+              "keine",
+              0.32443395786164475
+            ],
+            [
+              "körperlichen",
+              0.32443395786164475
+            ],
+            [
+              "sich",
+              0.32443395786164475
+            ],
+            [
+              "erster",
+              0.2758885629306208
+            ],
+            [
+              "viel",
+              0.27009286422448264
+            ],
+            [
+              "erlebnisse",
+              0.2433254683962336
+            ],
+            [
+              "habe",
+              0.2433254683962336
+            ],
+            [
+              "manchmal",
+              0.2433254683962336
+            ],
+            [
+              "ein",
+              0.2330756411327554
+            ],
+            [
+              "später",
+              0.22990713577551736
+            ],
+            [
+              "ich",
+              0.22710377050315134
+            ],
+            [
+              "nur",
+              0.19466037471698688
+            ],
+            [
+              "stücke",
+              0.18006190948298842
+            ],
+            [
+              "langsam",
+              0.16221697893082238
+            ],
+            [
+              "instrumentale",
+              0.15433877955684722
+            ],
+            [
+              "in",
+              0.13904312479784775
+            ],
+            [
+              "das",
+              0.13890490160116248
+            ],
+            [
+              "eigentlich",
+              0.1379442814653104
+            ],
+            [
+              "eigene",
+              0.10803714568979307
+            ],
+            [
+              "eng",
+              0.10803714568979307
+            ],
+            [
+              "gefühle",
+              0.09733018735849344
+            ],
+            [
+              "gibt",
+              0.09723343112081374
+            ],
+            [
+              "was",
+              0.08646196863106101
+            ],
+            [
+              "welche",
+              0.08646196863106101
+            ],
+            [
+              "du",
+              0.08642971655183444
+            ],
+            [
+              "es",
+              0.07922724017251491
+            ],
+            [
+              "auf",
+              0.07202476379319538
+            ],
+            [
+              "machen",
+              0.07202476379319538
+            ],
+            [
+              "blick",
+              0.054018572844896535
+            ],
+            [
+              "hörst",
+              0.054018572844896535
+            ],
+            [
+              "magst",
+              0.054018572844896535
+            ],
+            [
+              "den",
+              0.04321485827591722
+            ],
+            [
+              "gefällt",
+              0.04321485827591722
+            ],
+            [
+              "musik",
+              0.04321485827591722
+            ],
+            [
+              "dir",
+              0.03601238189659769
+            ],
+            [
+              "eher",
+              0.03601238189659769
+            ],
+            [
+              "kann",
+              0.03601238189659769
+            ],
+            [
+              "lieber",
+              0.03601238189659769
+            ],
+            [
+              "passt",
+              0.03601238189659769
+            ],
+            [
+              "bei",
+              0.03244339578616448
+            ],
+            [
+              "wir",
+              0.03244339578616448
+            ],
+            [
+              "an",
+              0.030867755911369442
+            ],
+            [
+              "aufmerksam",
+              0.030867755911369442
+            ],
+            [
+              "etwas",
+              0.030867755911369442
+            ],
+            [
+              "gerade",
+              0.030867755911369442
+            ],
+            [
+              "gesang",
+              0.030867755911369442
+            ],
+            [
+              "lied",
+              0.030867755911369442
+            ],
+            [
+              "bin",
+              0.02780862495956955
+            ],
+            [
+              "frage",
+              0.02780862495956955
+            ],
+            [
+              "können",
+              0.02780862495956955
+            ],
+            [
+              "möchtest",
+              0.02780862495956955
+            ],
+            [
+              "unbekannten",
+              0.02780862495956955
+            ]
+          ],
+          "recent_tokens": [],
+          "turns": 1,
+          "kind": "autoregressive_token_field",
+          "reference_phase": 0.0
+        },
+        "turn_count": 1
+      },
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 7.473417450352271e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h09a",
+      "prompt": "Morgen steht ein Treffen mit meiner Familie an.",
+      "rubric": "Relevant family/meeting response or question, preserving user as the person attending.",
+      "scenario": "h09",
+      "answer": "Das klingt schön. Habt ihr schon etwas vor oder lasst ihr den Nachmittag offen?",
+      "tokens": [
+        "das",
+        "klingt",
+        "schön",
+        ".",
+        "habt",
+        "ihr",
+        "schon",
+        "etwas",
+        "vor",
+        "oder",
+        "lasst",
+        "ihr",
+        "den",
+        "nachmittag",
+        "offen",
+        "?"
+      ],
+      "elapsed_s": 0.08900870000070427,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 1.0415656649469997e-16,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h09b",
+      "prompt": "Ich freue mich darauf, auch wenn ich etwas nervös bin.",
+      "rubric": "Acknowledge mixed anticipation and nervousness, without treating this as wholly negative or wholly unconcerned.",
+      "scenario": "h09",
+      "answer": "Das ist ein schöner Moment. Du kannst dir beim erzählen Zeit lassen.",
+      "tokens": [
+        "das",
+        "ist",
+        "ein",
+        "schöner",
+        "moment",
+        ".",
+        "du",
+        "kannst",
+        "dir",
+        "beim",
+        "erzählen",
+        "zeit",
+        "lassen",
+        "."
+      ],
+      "elapsed_s": 0.07509419999951206,
+      "context_before": {
+        "generation": {
+          "field": [
+            [
+              "spiel",
+              1.0
+            ],
+            [
+              "dem",
+              0.6666666666666666
+            ],
+            [
+              "du",
+              0.5878536001505984
+            ],
+            [
+              "auf",
+              0.5
+            ],
+            [
+              "alles",
+              0.39999999999999997
+            ],
+            [
+              "anders",
+              0.3785723864915418
+            ],
+            [
+              "möchtest",
+              0.373240381047999
+            ],
+            [
+              "guten",
+              0.33591634294319905
+            ],
+            [
+              "gleich",
+              0.3333333333333333
+            ],
+            [
+              "nicht",
+              0.2857142857142857
+            ],
+            [
+              "beginnt",
+              0.2799302857859992
+            ],
+            [
+              "für",
+              0.2799302857859992
+            ],
+            [
+              "ruhiger",
+              0.2799302857859992
+            ],
+            [
+              "zeit",
+              0.2799302857859992
+            ],
+            [
+              "ein",
+              0.202616206854628
+            ],
+            [
+              "steht",
+              0.19999999999999998
+            ],
+            [
+              "etwas",
+              0.18930611159262825
+            ],
+            [
+              "angehen",
+              0.18662019052399945
+            ],
+            [
+              "einplanen",
+              0.18662019052399945
+            ],
+            [
+              "ich",
+              0.18662019052399945
+            ],
+            [
+              "was",
+              0.16235956575587956
+            ],
+            [
+              "ihr",
+              0.16
+            ],
+            [
+              "bin",
+              0.1399651428929996
+            ],
+            [
+              "jeden",
+              0.1399651428929996
+            ],
+            [
+              "wofür",
+              0.1399651428929996
+            ],
+            [
+              "morgen",
+              0.11757072003011969
+            ],
+            [
+              "bereit",
+              0.11197211431439968
+            ],
+            [
+              "menschen",
+              0.11197211431439968
+            ],
+            [
+              "schon",
+              0.10239442286287995
+            ],
+            [
+              "das",
+              0.09599601633062853
+            ],
+            [
+              "den",
+              0.08
+            ],
+            [
+              "habt",
+              0.08
+            ],
+            [
+              "klingt",
+              0.08
+            ],
+            [
+              "lasst",
+              0.08
+            ],
+            [
+              "nachmittag",
+              0.08
+            ],
+            [
+              "oder",
+              0.08
+            ],
+            [
+              "offen",
+              0.08
+            ],
+            [
+              "schön",
+              0.08
+            ],
+            [
+              "vor",
+              0.08
+            ],
+            [
+              "unser",
+              0.07998008165314263
+            ],
+            [
+              "am",
+              0.05598605715719984
+            ],
+            [
+              "an",
+              0.05598605715719984
+            ],
+            [
+              "sein",
+              0.05598605715719984
+            ],
+            [
+              "bist",
+              0.037324038104799895
+            ],
+            [
+              "dir",
+              0.037324038104799895
+            ],
+            [
+              "meisten",
+              0.037324038104799895
+            ],
+            [
+              "angenehm",
+              0.03199203266125705
+            ],
+            [
+              "macht",
+              0.02799302857859992
+            ],
+            [
+              "sorgen",
+              0.02799302857859992
+            ],
+            [
+              "ergebnis",
+              0.018662019052399947
+            ],
+            [
+              "erschweren",
+              0.018662019052399947
+            ],
+            [
+              "feststehen",
+              0.018662019052399947
+            ],
+            [
+              "machen",
+              0.018662019052399947
+            ],
+            [
+              "richtig",
+              0.018662019052399947
+            ],
+            [
+              "vorsatz",
+              0.018662019052399947
+            ],
+            [
+              "wesentliche",
+              0.018662019052399947
+            ],
+            [
+              "anstrengend",
+              0.015996016330628526
+            ],
+            [
+              "grosser",
+              0.015996016330628526
+            ],
+            [
+              "konzentration",
+              0.015996016330628526
+            ],
+            [
+              "leichter",
+              0.015996016330628526
+            ],
+            [
+              "voraus",
+              0.015996016330628526
+            ],
+            [
+              "vorwegdenken",
+              0.015996016330628526
+            ],
+            [
+              "wach",
+              0.015996016330628526
+            ]
+          ],
+          "recent_tokens": [
+            "das",
+            "klingt",
+            "schön",
+            ".",
+            "habt",
+            "ihr",
+            "schon",
+            "etwas",
+            "vor",
+            "oder",
+            "lasst",
+            "ihr",
+            "den",
+            "nachmittag",
+            "offen",
+            "?"
+          ],
+          "turns": 1,
+          "kind": "autoregressive_token_field",
+          "reference_phase": 0.0
+        },
+        "turn_count": 1
+      },
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 6.973502068242161e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h10a",
+      "prompt": "Das war hilfreich, vielen Dank für deine Zeit.",
+      "rubric": "Acknowledge thanks politely; avoid invented real-world time constraints.",
+      "scenario": "h10",
+      "answer": "Gern. Du kannst in deinem Tempo weitererzählen.",
+      "tokens": [
+        "gern",
+        ".",
+        "du",
+        "kannst",
+        "in",
+        "deinem",
+        "tempo",
+        "weitererzählen",
+        "."
+      ],
+      "elapsed_s": 0.08400620000065828,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 5.721958498152797e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    },
+    {
+      "id": "h10b",
+      "prompt": "Für heute reicht es mir. Bis zum nächsten Mal.",
+      "rubric": "Respect user's wish to end and say goodbye without launching a new topic.",
+      "scenario": "h10",
+      "answer": "Bis später! Wir können beim nächsten Mal neu anknüpfen.",
+      "tokens": [
+        "bis",
+        "später",
+        "!",
+        "wir",
+        "können",
+        "beim",
+        "nächsten",
+        "mal",
+        "neu",
+        "anknüpfen",
+        "."
+      ],
+      "elapsed_s": 0.06282959999953164,
+      "context_before": {
+        "generation": {
+          "field": [
+            [
+              "bei",
+              1.0
+            ],
+            [
+              "aufgaben",
+              0.9755678234463993
+            ],
+            [
+              "hilft",
+              0.6503785489642662
+            ],
+            [
+              "du",
+              0.6454303716690432
+            ],
+            [
+              "möchtest",
+              0.5519450794154326
+            ],
+            [
+              "manchmal",
+              0.4877839117231996
+            ],
+            [
+              "ein",
+              0.39022712937855975
+            ],
+            [
+              "viel",
+              0.3442715787098271
+            ],
+            [
+              "blick",
+              0.3251892744821331
+            ],
+            [
+              "wie",
+              0.28874390472437117
+            ],
+            [
+              "auf",
+              0.27873366384182835
+            ],
+            [
+              "dir",
+              0.26970584507221473
+            ],
+            [
+              "deine",
+              0.2332162307389152
+            ],
+            [
+              "einplanen",
+              0.2221106959418239
+            ],
+            [
+              "vielen",
+              0.19511356468927987
+            ],
+            [
+              "sein",
+              0.18339997464910607
+            ],
+            [
+              "angenehm",
+              0.17768855675345913
+            ],
+            [
+              "angenehme",
+              0.16658302195636795
+            ],
+            [
+              "erzählen",
+              0.16658302195636795
+            ],
+            [
+              "freie",
+              0.16658302195636795
+            ],
+            [
+              "genügend",
+              0.16658302195636795
+            ],
+            [
+              "heute",
+              0.16658302195636795
+            ],
+            [
+              "lassen",
+              0.16658302195636795
+            ],
+            [
+              "morgen",
+              0.16658302195636795
+            ],
+            [
+              "kann",
+              0.15389098218826372
+            ],
+            [
+              "kannst",
+              0.14663320878254718
+            ],
+            [
+              "schritte",
+              0.12438198972742139
+            ],
+            [
+              "verbringen",
+              0.12057437779699012
+            ],
+            [
+              "zeit",
+              0.11308607433380866
+            ],
+            [
+              "in",
+              0.11173009942026055
+            ],
+            [
+              "beim",
+              0.11105534797091195
+            ],
+            [
+              "eine",
+              0.11105534797091195
+            ],
+            [
+              "nächsten",
+              0.09281054080426214
+            ],
+            [
+              "fürs",
+              0.08329151097818398
+            ],
+            [
+              "hab",
+              0.08329151097818398
+            ],
+            [
+              "terminen",
+              0.08329151097818398
+            ],
+            [
+              "was",
+              0.08218095749847484
+            ],
+            [
+              "deinem",
+              0.08
+            ],
+            [
+              "gern",
+              0.08
+            ],
+            [
+              "tempo",
+              0.08
+            ],
+            [
+              "weitererzählen",
+              0.08
+            ],
+            [
+              "wofür",
+              0.07995985053905662
+            ],
+            [
+              "dafür",
+              0.06663320878254718
+            ],
+            [
+              "festen",
+              0.06663320878254718
+            ],
+            [
+              "kochen",
+              0.06663320878254718
+            ],
+            [
+              "für",
+              0.05552767398545597
+            ],
+            [
+              "nehmen",
+              0.05552767398545597
+            ],
+            [
+              "zwischen",
+              0.05552767398545597
+            ],
+            [
+              "tag",
+              0.04124912924633872
+            ],
+            [
+              "brauchen",
+              0.03331660439127359
+            ],
+            [
+              "die",
+              0.03331660439127359
+            ],
+            [
+              "einen",
+              0.03331660439127359
+            ],
+            [
+              "getan",
+              0.03331660439127359
+            ],
+            [
+              "letzter",
+              0.03331660439127359
+            ],
+            [
+              "moment",
+              0.03331660439127359
+            ],
+            [
+              "vollen",
+              0.03331660439127359
+            ],
+            [
+              "machen",
+              0.03236470140866577
+            ],
+            [
+              "einer",
+              0.03173009942026055
+            ],
+            [
+              "welche",
+              0.02998494395214623
+            ],
+            [
+              "das",
+              0.027763836992727987
+            ],
+            [
+              "gerade",
+              0.022845671582587605
+            ],
+            [
+              "nicht",
+              0.022845671582587605
+            ],
+            [
+              "ankommen",
+              0.02221106959418239
+            ],
+            [
+              "sich",
+              0.02221106959418239
+            ],
+            [
+              "den",
+              0.020624564623169365
+            ],
+            [
+              "deinen",
+              0.019038059652156335
+            ],
+            [
+              "gibt",
+              0.016658302195636795
+            ],
+            [
+              "musst",
+              0.016658302195636795
+            ],
+            [
+              "nach",
+              0.016658302195636795
+            ],
+            [
+              "nimm",
+              0.016658302195636795
+            ],
+            [
+              "nimmt",
+              0.016658302195636795
+            ],
+            [
+              "soll",
+              0.016658302195636795
+            ],
+            [
+              "es",
+              0.013326641756509435
+            ],
+            [
+              "freude",
+              0.013326641756509435
+            ],
+            [
+              "fühlt",
+              0.013326641756509435
+            ],
+            [
+              "gelingen",
+              0.013326641756509435
+            ],
+            [
+              "ich",
+              0.013326641756509435
+            ],
+            [
+              "klingt",
+              0.013326641756509435
+            ],
+            [
+              "lass",
+              0.013326641756509435
+            ],
+            [
+              "verbinden",
+              0.013326641756509435
+            ],
+            [
+              "welcher",
+              0.013326641756509435
+            ],
+            [
+              "werden",
+              0.013326641756509435
+            ],
+            [
+              "worte",
+              0.013326641756509435
+            ],
+            [
+              "abendessen",
+              0.011105534797091195
+            ],
+            [
+              "abwechslung",
+              0.011105534797091195
+            ],
+            [
+              "abwechslungsreich",
+              0.011105534797091195
+            ],
+            [
+              "anknüpfen",
+              0.011105534797091195
+            ],
+            [
+              "aufgabe",
+              0.011105534797091195
+            ],
+            [
+              "gespräch",
+              0.011105534797091195
+            ],
+            [
+              "interessanter",
+              0.011105534797091195
+            ],
+            [
+              "mahlzeit",
+              0.011105534797091195
+            ],
+            [
+              "mal",
+              0.011105534797091195
+            ],
+            [
+              "passen",
+              0.011105534797091195
+            ],
+            [
+              "perfekt",
+              0.011105534797091195
+            ],
+            [
+              "schritt",
+              0.011105534797091195
+            ],
+            [
+              "sofort",
+              0.011105534797091195
+            ],
+            [
+              "würde",
+              0.011105534797091195
+            ],
+            [
+              "zunächst",
+              0.011105534797091195
+            ],
+            [
+              "zutaten",
+              0.011105534797091195
+            ],
+            [
+              "überschaubare",
+              0.011105534797091195
+            ],
+            [
+              "als",
+              0.009519029826078168
+            ],
+            [
+              "an",
+              0.009519029826078168
+            ],
+            [
+              "anderes",
+              0.009519029826078168
+            ],
+            [
+              "anders",
+              0.009519029826078168
+            ],
+            [
+              "besonders",
+              0.009519029826078168
+            ],
+            [
+              "darf",
+              0.009519029826078168
+            ],
+            [
+              "diesem",
+              0.009519029826078168
+            ],
+            [
+              "einfach",
+              0.009519029826078168
+            ],
+            [
+              "etwas",
+              0.009519029826078168
+            ],
+            [
+              "feststehen",
+              0.009519029826078168
+            ],
+            [
+              "hat",
+              0.009519029826078168
+            ],
+            [
+              "klar",
+              0.009519029826078168
+            ],
+            [
+              "kleine",
+              0.009519029826078168
+            ],
+            [
+              "meisten",
+              0.009519029826078168
+            ],
+            [
+              "ort",
+              0.009519029826078168
+            ],
+            [
+              "unkompliziertes",
+              0.009519029826078168
+            ],
+            [
+              "vorhaben",
+              0.009519029826078168
+            ],
+            [
+              "vorsatz",
+              0.009519029826078168
+            ],
+            [
+              "wenigen",
+              0.009519029826078168
+            ],
+            [
+              "wieder",
+              0.009519029826078168
+            ],
+            [
+              "wäre",
+              0.009519029826078168
+            ]
+          ],
+          "recent_tokens": [
+            "gern",
+            ".",
+            "du",
+            "kannst",
+            "in",
+            "deinem",
+            "tempo",
+            "weitererzählen",
+            "."
+          ],
+          "turns": 1,
+          "kind": "autoregressive_token_field",
+          "reference_phase": 0.0
+        },
+        "turn_count": 1
+      },
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true
+      },
+      "decoder": {
+        "method": "token_field_demodulation",
+        "max_transform_error": 8.092071311423671e-17,
+        "vocabulary_size": 822
+      },
+      "truncated": false,
+      "generation_reason": null,
+      "qualitative_review": null
+    }
+  ]
+}

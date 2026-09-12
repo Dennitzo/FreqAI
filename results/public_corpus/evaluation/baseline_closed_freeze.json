@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-09-06T09:51:41.850791+00:00",
+  "manifest": {
+    "code_root": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\results\\public_corpus\\evaluation\\baseline_code",
+    "code": {
+      "freqai\\__init__.py": "0e634154d3a7ed97b743819529122dcfe1d59ce6dca186c208d93ef872ee46e2",
+      "freqai\\codec.py": "1741858964d007a8baa1173cb559ac896d07bb4d8eb7d7be840c12c1a5acdc03",
+      "freqai\\features.py": "c48eb11bff823f8329bdbf1509426f1928e19c213793145e30c1ef4abe234535",
+      "freqai\\generation_runtime.py": "170d272823b23ec285d6578c2c0b154c1c67306923f14cebc099be76935f9745",
+      "freqai\\generative.py": "d476e00d421220ea397a75dbd6551f47f012df492baaf7c1527119590ff8966b",
+      "freqai\\memory.py": "baf20b7039036112c3bf1e503f88a77a7f740e104926470210b80263ee49ea73",
+      "freqai\\reasoning.py": "4819d011b22b1e8d4049172094e124abb43114e84ba059cff946bea1f0835a3a",
+      "freqai\\semantics.py": "51924df70352cc896015f17b3679da3e0ae0b34e0030a00b6f4d0ad44c7bca46",
+      "memory\\language\\generative_categories.json": "c2e86689ed55efcc68bc2dbc4ea053d20b6247c0ae054233e299013dd54933fe"
+    },
+    "baseline_corpus_sha256": "c4279b342af9e9798ea6fc59f706b3c7acfd8a30495b716f603c7c4f0f16e065",
+    "suite_sha256": "3ddb7e8bd7463376331080bf81e2b6b81ffc390d7f72eec56da354a341b7cf0a",
+    "additional_corpus": null,
+    "additional_corpus_sha256": null,
+    "additional_limit": null,
+    "document_count": 621,
+    "runner_sha256": "92be94875db620053389fd06b155826dc473135b23d5cf0d0ad0b968589689a5",
+    "max_tokens": 40,
+    "seed": 17
+  },
+  "holdout_seen_by_implementer": false
+}

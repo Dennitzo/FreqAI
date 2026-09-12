@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-09-06T07:26:09.550735+00:00",
+  "url": "http://127.0.0.1:8765/",
+  "memory": {
+    "path": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\memory.sqlite3",
+    "revision": 2,
+    "document_count": 120,
+    "archive_document_count": 48,
+    "history_count": 4,
+    "relation_count": 0,
+    "canonical_format": "sqlite_text",
+    "wave_storage": "derived_in_memory",
+    "configuration": {
+      "dimensions": 4096,
+      "feature_mode": "morphology",
+      "min_coverage": 0.6,
+      "min_score": 0.18,
+      "retrieval_policy": "coverage"
+    },
+    "live_revision": 2,
+    "persistent": true
+  },
+  "all_active_documents_are_dialogue_pairs": true,
+  "no_writes": true,
+  "ticks_advanced": 9,
+  "simulation_time_advanced_seconds": 0.9126879999994344,
+  "wave_changed": true,
+  "javascript_errors": []
+}

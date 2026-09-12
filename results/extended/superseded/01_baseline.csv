@@ -1,0 +1,61 @@
+iteration,id,split,group,prompt,expected_id,predicted_id,correct,abstained,wrong_answer,score,query_ms
+01_legacy_development,ext-001-known,development,known_lexical,Wann erhält die Drehbank Linde frisches Schmieröl?,ext-001,ext-001,True,False,False,0.790028080151562,10.917
+01_legacy_development,ext-002-known,development,known_lexical,Wo liegt das Ersatzfutter der Fräse Ulme?,ext-002,ext-002,True,False,False,0.7834110519666164,10.1148
+01_legacy_development,ext-003-known,development,known_lexical,Wer bewahrt die Freigabekarte für den Laserschneider Birke auf?,ext-003,ext-003,True,False,False,0.828131068953097,10.035
+01_legacy_development,ext-004-known,development,known_lexical,Wann startet die Absaugung Eiche?,ext-004,ext-004,True,False,False,0.635766914037418,10.2251
+01_legacy_development,ext-011-known,development,known_lexical,Womit kontrolliert Wareneingang Hafen jede Kiste?,ext-011,ext-011,True,False,False,0.7251758756857826,9.9524
+01_legacy_development,ext-012-known,development,known_lexical,Wann beginnt die Lieferfahrt nach Moosgrund?,ext-012,ext-012,True,False,False,0.681780973196034,10.5069
+01_legacy_development,ext-013-known,development,known_lexical,Wie reisen zerbrechliche Muster im Transportkoffer Nebel?,ext-013,ext-013,True,False,False,0.791694236792504,12.1798
+01_legacy_development,ext-014-known,development,known_lexical,Wann werden leere Mehrwegbehälter aus Lager Düne abgeholt?,ext-014,ext-014,True,False,False,0.8320105285390083,11.2574
+01_legacy_development,ext-021-known,development,known_lexical,Wo verwahrt die Bibliothek Morgenrot historische Lagepläne?,ext-021,ext-021,True,False,False,0.8512099896604494,10.6499
+01_legacy_development,ext-022-known,development,known_lexical,Wie müssen ausgeliehene Mikrofilme vor der Rückgabe zurückgespult werden?,ext-022,ext-022,True,False,False,0.8060381041498624,10.2912
+01_legacy_development,ext-023-known,development,known_lexical,Wann trifft sich der Lesekreis Seitenwind?,ext-023,ext-023,True,False,False,0.6576382591989755,10.079
+01_legacy_development,ext-024-known,development,known_lexical,Was stellt das Magazin für Bücher mit losen Seiten bereit?,ext-024,ext-024,True,False,False,0.8525230086780086,10.4596
+01_legacy_development,ext-031-known,development,known_lexical,Woher erhält das Hochbeet im Versuchsgarten Salbei Wasser?,ext-031,ext-031,True,False,False,0.7286984993250248,10.9705
+01_legacy_development,ext-032-known,development,known_lexical,Wo steckt der Schlüssel zum Gewächshaus Klee während der Öffnungszeit?,ext-032,ext-032,True,False,False,0.8703078836464201,10.6842
+01_legacy_development,ext-033-known,development,known_lexical,Wann verteilt die Kompostgruppe fertigen Kompost?,ext-033,ext-033,True,False,False,0.7348555736640807,11.2965
+01_legacy_development,ext-034-known,development,known_lexical,Wohin legt das Gartenteam Saatguttüten mit unleserlichem Datum?,ext-034,ext-034,True,False,False,0.8314797266442506,10.962
+01_legacy_development,ext-041-known,development,known_lexical,Wohin schreibt Projekt Mosaik Diagnosemeldungen?,ext-041,ext-041,True,False,False,0.6928336086246649,11.5148
+01_legacy_development,ext-042-known,development,known_lexical,Welche Datenbank verwendet der Testlauf Prisma für jeden Durchgang?,ext-042,ext-042,True,False,False,0.8692337984431129,11.4878
+01_legacy_development,ext-043-known,development,known_lexical,Was prüft Dienst Kompass beim Start?,ext-043,ext-043,True,False,False,0.7668187424588757,11.2526
+01_legacy_development,ext-044-known,development,known_lexical,Wo sind Tastaturkürzel für das Dashboard Faden dokumentiert?,ext-044,ext-044,True,False,False,0.8898827798851814,12.1273
+01_legacy_development,ext-051-known,development,known_lexical,Wann beginnt das Planungstreffen Nordlicht?,ext-051,ext-051,True,False,False,0.6545355686695123,11.8386
+01_legacy_development,ext-052-known,development,known_lexical,Wer hält beim Review Abendrot offene Fragen fest?,ext-052,ext-052,True,False,False,0.834836067831596,12.2144
+01_legacy_development,ext-053-known,development,known_lexical,Wo liegt das Konferenzmikrofon im Raum Opal?,ext-053,ext-053,True,False,False,0.7486185923321573,12.719
+01_legacy_development,ext-054-known,development,known_lexical,Wann wechselt die Moderation des Ideentags Funkel?,ext-054,ext-054,True,False,False,0.727760639477498,12.0555
+01_legacy_development,ext-061-known,development,known_lexical,Wo werden Referenzgewichte im Messlabor Drossel aufbewahrt?,ext-061,ext-061,True,False,False,0.8196078341584998,12.3692
+01_legacy_development,ext-062-known,development,known_lexical,Was nimmt die Kamera Rubin bei jeder Messserie zuerst auf?,ext-062,ext-062,True,False,False,0.9146589961361666,11.9838
+01_legacy_development,ext-063-known,development,known_lexical,Was überträgt Sensor Aster zusammen mit jedem Messwert?,ext-063,ext-063,True,False,False,0.8643210135929988,12.0324
+01_legacy_development,ext-064-known,development,known_lexical,Wann wird das Probenkarussell Iris bewegt?,ext-064,ext-064,True,False,False,0.7148220349442764,12.7299
+01_legacy_development,ext-071-known,development,known_lexical,Wann öffnet die Ausstellung Papiermond?,ext-071,ext-071,True,False,False,0.6441818161793784,12.4373
+01_legacy_development,ext-072-known,development,known_lexical,Wo werden Sitzkissen für das Erzählfestival Nebelfaden ausgegeben?,ext-072,ext-072,True,False,False,0.9096784301060327,12.9411
+01_legacy_development,ext-073-known,development,known_lexical,Wo hängt der Aufbauplan der Bühne Kiesstrand?,ext-073,ext-073,True,False,False,0.751284938116244,12.1147
+01_legacy_development,ext-074-known,development,known_lexical,Wo sammelt das Team beim Lichterabend Silberfunke leere Becher?,ext-074,ext-074,True,False,False,0.8823293809535713,12.6524
+01_legacy_development,ext-081-known,development,known_lexical,Was protokolliert das Wanddisplay im Modellhaus Sonnenhof?,ext-081,ext-081,True,False,False,0.8207886276011197,12.1889
+01_legacy_development,ext-082-known,development,known_lexical,Wie wird die Verschattung des Testraums Wolke bedient?,ext-082,ext-082,True,False,False,0.8176029529620902,12.292
+01_legacy_development,ext-083-known,development,known_lexical,Welchen Plan enthält der Technikraum Brise?,ext-083,ext-083,True,False,False,0.6608284181700868,11.6217
+01_legacy_development,ext-084-known,development,known_lexical,Womit zeigt die Lüftungsdemo Windspiel den Luftstrom?,ext-084,ext-084,True,False,False,0.7328036952050658,12.1776
+01_legacy_development,ext-091-known,development,known_lexical,Wo stehen beschriftete Vorratsgläser in der Gemeinschaftsküche Minze?,ext-091,ext-091,True,False,False,0.8513709652334006,12.4709
+01_legacy_development,ext-092-known,development,known_lexical,Womit beginnt der Kochkurs Safran?,ext-092,ext-092,True,False,False,0.5309058808973459,12.0873
+01_legacy_development,ext-093-known,development,known_lexical,Was stellt das Küchenteam für die Frühstücksrunde Hafer bereit?,ext-093,ext-093,True,False,False,0.7873851449504833,12.0254
+01_legacy_development,ext-094-known,development,known_lexical,Wonach ordnet die Rezeptkartei Zimt Gerichte?,ext-094,ext-094,True,False,False,0.676988419601755,12.1591
+01_legacy_development,ext-101-known,development,known_lexical,Was besitzt das Leihfahrrad Falke für leichte Gepäckstücke?,ext-101,ext-101,True,False,False,0.8440674570871098,12.1074
+01_legacy_development,ext-102-known,development,known_lexical,Wo hängen die Ausleihbedingungen am Mobilitätspunkt Lerche?,ext-102,ext-102,True,False,False,0.8224690035342093,11.7507
+01_legacy_development,ext-103-known,development,known_lexical,Wo beginnt die Shuttlefahrt zum Werkhof?,ext-103,ext-103,True,False,False,0.6535670791681237,11.8689
+01_legacy_development,ext-104-known,development,known_lexical,Worauf plant die Fahrradgruppe Pedalstern ihre Touren?,ext-104,ext-104,True,False,False,0.7700208327871757,12.2214
+01_legacy_development,ext-111-known,development,known_lexical,Wie liegen Stoffreste im Nähatelier Fadenblau?,ext-111,ext-111,True,False,False,0.728746503485971,11.592
+01_legacy_development,ext-112-known,development,known_lexical,Womit beginnt der Zeichenkurs Graphit jede Stunde?,ext-112,ext-112,True,False,False,0.7730731184088604,11.7203
+01_legacy_development,ext-113-known,development,known_lexical,Wogegen leiht die Lernwerkstatt Kreide Materialkisten aus?,ext-113,ext-113,True,False,False,0.6828060276738532,12.4652
+01_legacy_development,ext-114-known,development,known_lexical,Worauf trocknen frisch geklebte Teile beim Modellbauprojekt Turmspitze?,ext-114,ext-114,True,False,False,0.8751163846529789,13.0353
+01_legacy_development,dev-unknown-1,development,entity_confusion_unknown,Wann erhält die Drehbank Wacholder frisches Schmieröl?,,ext-001,False,False,True,0.6417259030062052,11.7532
+01_legacy_development,dev-unknown-2,development,entity_confusion_unknown,Wann beginnt die Lieferfahrt nach Fliederbach?,,ext-012,False,False,True,0.45598210575793685,11.5636
+01_legacy_development,dev-unknown-3,development,entity_confusion_unknown,Wo verwahrt die Bibliothek Regenbogen historische Lagepläne?,,ext-021,False,False,True,0.6855174836967877,12.1004
+01_legacy_development,dev-unknown-4,development,entity_confusion_unknown,Wo steckt der Schlüssel zum Gewächshaus Distel?,,ext-032,False,False,True,0.5583651691071025,11.6222
+01_legacy_development,dev-unknown-5,development,entity_confusion_unknown,Wohin schreibt Projekt Seidenschnur Diagnosemeldungen?,,ext-041,False,False,True,0.4640682528912789,11.2495
+01_legacy_development,dev-unknown-6,development,entity_confusion_unknown,Wann beginnt das Planungstreffen Sternenweide?,,ext-051,False,False,True,0.444773191284614,11.5423
+01_legacy_development,dev-unknown-7,development,entity_confusion_unknown,Was überträgt Sensor Brombeere zusammen mit jedem Messwert?,,ext-063,False,False,True,0.7233719170412947,11.8256
+01_legacy_development,dev-unknown-8,development,entity_confusion_unknown,Wann öffnet die Ausstellung Glaswolke?,,ext-071,False,False,True,0.432482746182467,11.1248
+01_legacy_development,dev-unknown-9,development,entity_confusion_unknown,Was protokolliert das Wanddisplay im Modellhaus Mondhafen?,,ext-081,False,False,True,0.6287137907184388,11.633
+01_legacy_development,dev-unknown-10,development,entity_confusion_unknown,Wonach ordnet die Rezeptkartei Vanille Gerichte?,,ext-094,False,False,True,0.5211784570825853,11.7334
+01_legacy_development,dev-unknown-11,development,entity_confusion_unknown,Was besitzt das Leihfahrrad Adler für leichte Gepäckstücke?,,ext-101,False,False,True,0.6952075692534276,11.5005
+01_legacy_development,dev-unknown-12,development,entity_confusion_unknown,Womit beginnt der Zeichenkurs Rötel jede Stunde?,,ext-112,False,False,True,0.6319522338583765,11.6005

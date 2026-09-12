@@ -1,0 +1,29 @@
+{
+  "query": "\"dewiki\" \"dump\" \"pages-articles\"",
+  "results": [
+    {
+      "title": "Wikipedia offline nutzen: Wie lade ich vollständige Dumps, halte sie ...",
+      "url": "https://www.pcffm.de/wikipedia-offline-nutzen-wie-lade-ich-vollstaendige-dumps-halte-sie-aktuell-und-durchsuche-sie-lokal/",
+      "snippet": "vor 5 Tagen ... Offizielle Dump-Quelle: https://dumps.wikimedia.org/ (Dump ... sha256sum -c dewiki-*.sha256 und anschließend bzip2 -t dewiki-*.bz2 ...",
+      "source": "google cse",
+      "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTnuv90oL01F5egqVGqtxp0HDOcu9YMZhk17Iw_ksTzoX_ik05E_swiR0w&s=0"
+    },
+    {
+      "title": "Wiki Taxi – Wikipedia auch offline nutzen - Servervoice",
+      "url": "https://www.servervoice.de/wiki-taxi-wikipedia-auch-offline-nutzen/",
+      "snippet": "04.12.2025 ... Wikipedia-dump. Für euch wird wahrscheinlich die deutsche ... http://dumps.wikimedia.org/dewiki/latest/dewiki-latest-pages-articles.xml.bz2",
+      "source": "google cse",
+      "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_uTQ9la-9gX3dMFfCnT_IPX1mbgD-gHMKnPR96nPUc1kfFFjulIeYEP4"
+    },
+    {
+      "title": "Wikipedia - Marian Aldenhövel",
+      "url": "https://www.marian-aldenhoevel.de/wikipedia/",
+      "snippet": "Der Datenbestand ist ein Dump vom 7.4.2017, die aktuelle deutsche Wikipedia kann andere ... Die Datei heißt dewiki-latest-pages-articles.xml.bz2 und beim ...",
+      "source": "google cse",
+      "thumbnailUrl": ""
+    }
+  ],
+  "provider": "searxng",
+  "isFallback": false,
+  "retrievedAt": "2026-09-06T10:36:22.8908927+00:00"
+}

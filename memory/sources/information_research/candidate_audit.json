@@ -1,0 +1,228 @@
+{
+  "candidate": "memory/imports/information_wikipedia_20000.jsonl",
+  "candidate_sha256": "8473462b187b219f7270db292e0fdc95ee82245ad047efb21e69b4eb16c77497",
+  "verified_original_articles_and_spans": 20000,
+  "all_prompts_empty": true,
+  "unique_article_ids": 20000,
+  "unique_title_and_prose": 20000,
+  "source_shard_counts": {
+    "train-00000-of-00020.parquet": 5067,
+    "train-00007-of-00020.parquet": 4673,
+    "train-00013-of-00020.parquet": 5085,
+    "train-00019-of-00020.parquet": 5175
+  },
+  "text_characters": {
+    "min": 128,
+    "max": 1221,
+    "mean": 338.38285
+  },
+  "source_field_max_characters": 383,
+  "reproduced_with_reversed_source_shard_order": true,
+  "reproduced_sha256": "8473462b187b219f7270db292e0fdc95ee82245ad047efb21e69b4eb16c77497",
+  "sample_seed": 20260906,
+  "sample": [
+    {
+      "id": "wikipedia-de-20231101-9142273-lead",
+      "title": "Dernberg",
+      "text": "Dernberg\n\nDer Dernberg ist ein ehemaliger Hausberg in der Gemeinde Nappersdorf-Kammersdorf im Bezirk Hollabrunn in Niederösterreich. Heute beherbergt er Trockenrasen von nationaler Bedeutung."
+    },
+    {
+      "id": "wikipedia-de-20231101-8893288-lead",
+      "title": "Pygidialdrüse",
+      "text": "Pygidialdrüse\n\nPygidialdrüsen sind bei Insekten am Hinterleib vorkommende paarige Drüsen unterschiedlicher Funktion. Sie treten bei einigen Käfern (beispielsweise bei Laufkäfern, Schwimmkäfern und Aaskäfern) und bei Hautflüglern auf. Sie finden sich am Pygidium, auch als Analschild oder Telson bezeichnet. Pygidialdrüsen werden oft von den nahe dem After mündenden Afterdrüsen unterschieden."
+    },
+    {
+      "id": "wikipedia-de-20231101-10429774-lead",
+      "title": "Rudolf Meyer (Filmproduzent)",
+      "text": "Rudolf Meyer (Filmproduzent)\n\nRudolf „Rudi“ Meyer (* 27. Dezember 1901 in Suhl, Deutsches Reich; † 16. September 1969 in Amsterdam, Niederlande) war ein deutsch-niederländischer Filmkaufmann und Filmproduzent."
+    },
+    {
+      "id": "wikipedia-de-20231101-10908748-lead",
+      "title": "Baworiw",
+      "text": "Baworiw\n\nBaworiw (; ) ist ein Dorf im Zentrum der ukrainischen Oblast Ternopil mit etwa 680 Einwohnern (2001).\n\nDas erstmals 1522 schriftlich erwähnte Dorf, andere Quellen nennen das Jahr 1411 bzw. 1439, gehört administrativ zur Landgemeinde Welyki Haji () im Südosten des Rajon Ternopil."
+    },
+    {
+      "id": "wikipedia-de-20231101-227906-lead",
+      "title": "Verfassungsgerichtshof des Saarlandes",
+      "text": "Verfassungsgerichtshof des Saarlandes\n\nDer Verfassungsgerichtshof des Saarlandes (auch Saarländer Verfassungsgerichtshof) ist das Verfassungsgericht des Saarlandes. Das Gericht hat zugleich den Sonderstatus eines Verfassungsorgans (siehe: Verfassung des Saarlandes). Laut der Verfassung vom 15. Dezember 1947 ist der Verfassungsgerichtshof des Saarlandes neben dem Landtag und der Landesregierung das dritte Organ des Volkswillens (Art. 97 SVerf). Die näheren Regelungen über den Verfassungsgerichtshof trifft das Gesetz über den Verfassungsgerichtshof."
+    },
+    {
+      "id": "wikipedia-de-20231101-85280-lead",
+      "title": "Guanako",
+      "text": "Guanako\n\nDas Guanako (Lama guanicoe), auch Huanako genannt, ist eine wildlebende Art innerhalb der Familie der Kamele (Camelidae). Es lebt vor allem im westlichen und südlichen Südamerika und ist die Stammform des domestizierten Lamas."
+    },
+    {
+      "id": "wikipedia-de-20231101-10920103-lead",
+      "title": "Sonett 18",
+      "text": "Sonett 18\n\nSonett 18 ist eines der bekanntesten der 154 Sonette des englischen Dichters William Shakespeare, erstmals veröffentlicht 1609. In dem Gedicht vergleicht das lyrische Ich die angebetete Person mit einem Sommertag und feiert ihre Unvergänglichkeit in den Versen des Dichters. Das Sonett ist in viele Sprachen übersetzt und vertont worden, unter anderem über 150 Mal ins Deutsche."
+    },
+    {
+      "id": "wikipedia-de-20231101-10589954-lead",
+      "title": "Quilly (Ardennes)",
+      "text": "Quilly (Ardennes)\n\nQuilly ist eine französische Gemeinde mit Einwohnern (Stand: ) im Département Ardennes in der Region Grand Est (bis 2015 Champagne-Ardenne). Sie gehört zum Arrondissement Vouziers und zum 1997 gegründeten Kommunalverband L’Argonne Ardennaise. Die Bewohner werden Quillerons genannt."
+    },
+    {
+      "id": "wikipedia-de-20231101-5246771-lead",
+      "title": "Georg Kleine",
+      "text": "Georg Kleine\n\nGeorg Kleine (* 13. Dezember 1881 in Kassel; † 15. Juli 1944 in Kiel) war ein deutscher Marineoffizier, zuletzt Konteradmiral im Zweiten Weltkrieg."
+    },
+    {
+      "id": "wikipedia-de-20231101-10967361-lead",
+      "title": "Joseph Georg Wolf",
+      "text": "Joseph Georg Wolf\n\nJoseph Georg Wolf (* 6. Juli 1930 in Düsseldorf; † 31. Mai 2017) war ein deutscher Rechtswissenschaftler und Hochschullehrer an der Albert-Ludwigs-Universität Freiburg."
+    },
+    {
+      "id": "wikipedia-de-20231101-10928196-lead",
+      "title": "HMS Affray (P421)",
+      "text": "HMS Affray (P421)\n\nHMS Affray (Schiffskennung: P421), ein U-Boot der britischen Amphion-Klasse, war das letzte U-Boot der Royal Navy, das auf See verloren ging. Das Boot sank am 16. April 1951 im Ärmelkanal, wobei 75 Menschen ihr Leben verloren. Die Affray wurde in der Endphase des Zweiten Weltkriegs gebaut. Sie war eines von 16 U-Booten ihrer Klasse, die ursprünglich für den Einsatz im Pazifik gegen Japan ausgelegt waren. Alle Schiffe ihrer Klasse erhielten Namen, die mit dem Buchstaben A begannen. Sie war das einzige Schiff der Royal Navy, das nach einem besonders lauten und ungeordneten Kampf benannt wurde (Affray = (Massen-)Schlägerei)."
+    },
+    {
+      "id": "wikipedia-de-20231101-22356-lead",
+      "title": "Plácido Domingo",
+      "text": "Plácido Domingo\n\nJosé Plácido Domingo Embil, KBE (* 21. Januar 1941 in Madrid) ist ein spanischer Opernsänger der Stimmlagen Tenor und Bariton, Dirigent und Intendant. Er gehörte neben José Carreras und Luciano Pavarotti zu den Drei Tenören."
+    },
+    {
+      "id": "wikipedia-de-20231101-117130-lead",
+      "title": "Freie Arbeiter*innen-Union",
+      "text": "Freie Arbeiter*innen-Union\n\nDie Freie Arbeiter*innen-Union (FAU), ursprünglich Freie Arbeiterinnen- und Arbeiter-Union, ist eine anarchosyndikalistische Gewerkschaftsföderation, bestehend aus lokalen Einzel- und Branchengewerkschaften. Sie wurde 1977 gegründet. Die Gewerkschaften der FAU stehen Beschäftigten aller Branchen offen. Sie ist Mitglied in der Internationalen Konföderation der Arbeit (IKA)."
+    },
+    {
+      "id": "wikipedia-de-20231101-4915933-lead",
+      "title": "Titularbistum Arneae",
+      "text": "Titularbistum Arneae\n\nArneae (ital.: Arnee) ist ein Titularbistum der römisch-katholischen Kirche.\n\nEs geht zurück auf ein untergegangenes Bistum der antiken Stadt Arneai in der kleinasiatischen Landschaft Lykien im Südwesten der heutigen Türkei, das der Kirchenprovinz Myra angehörte."
+    },
+    {
+      "id": "wikipedia-de-20231101-5263548-lead",
+      "title": "Luther Johnson (Gitarrist, 1939)",
+      "text": "Luther Johnson (Gitarrist, 1939)\n\nLuther Johnson (* 11. April 1939 in Itta Bena, Mississippi; † 25. Dezember 2022) war ein US-amerikanischer Bluessänger und -gitarrist, der unter dem Bühnennamen Luther „Guitar Junior“ Johnson auftrat, um sich von zwei anderen Gitarristen gleichen Namens zu unterscheiden."
+    },
+    {
+      "id": "wikipedia-de-20231101-8869999-lead",
+      "title": "Luyego",
+      "text": "Luyego\n\nLuyego ist ein nordspanischer Ort und eine Gemeinde (municipio) mit Einwohnern (Stand ) in der Provinz León in der Autonomen Gemeinschaft Kastilien-León."
+    },
+    {
+      "id": "wikipedia-de-20231101-4656159-lead",
+      "title": "Vera Schneidenbach",
+      "text": "Vera Schneidenbach\n\nVera Schneidenbach (* 1941 in Rostock-Warnemünde) ist eine deutsche Sängerin.\n\nBiografie \nSchneidenbach wuchs an der mecklenburgischen Ostseeküste auf. Zunächst wurde sie technische Zeichnerin in einer Rostocker Werft und anschließend nahm sie in Dresden ein Ingenieurstudium in der Sparte Flugzeugbau auf. Entdeckt durch Talentevater Heinz Quermann, wurde sie schließlich in das Ensemble des DDR-Fernsehens aufgenommen. Dort hatte sie bis zum Ende der DDR rund 100 Rundfunk- und Fernsehauftritte."
+    },
+    {
+      "id": "wikipedia-de-20231101-284204-lead",
+      "title": "Fischbach (bei Kaiserslautern)",
+      "text": "Fischbach (bei Kaiserslautern)\n\nFischbach ist eine Ortsgemeinde im Landkreis Kaiserslautern in Rheinland-Pfalz. Sie gehört seit dem 1. Juli 2014 der Verbandsgemeinde Enkenbach-Alsenborn an, innerhalb derer sie gemessen an der Einwohnerzahl die zweitkleinste Ortsgemeinde darstellt."
+    },
+    {
+      "id": "wikipedia-de-20231101-276762-lead",
+      "title": "Haaren (Aachen)",
+      "text": "Haaren (Aachen)\n\nDie frühere Gemeinde Haaren liegt vier Kilometer nordöstlich der Aachener Stadtmitte und gehört seit dem 1. Januar 1972 als Stadtbezirk zur Stadt Aachen."
+    },
+    {
+      "id": "wikipedia-de-20231101-115583-lead",
+      "title": "Dan Aykroyd",
+      "text": "Dan Aykroyd\n\nDaniel Edward Aykroyd, CM, OOnt (* 1. Juli 1952 in Ottawa) ist ein kanadischer Schauspieler und Drehbuchautor. International bekannt wurde er in den 1980er Jahren durch Komödien wie Blues Brothers, Die Glücksritter und Ghostbusters – Die Geisterjäger."
+    },
+    {
+      "id": "wikipedia-de-20231101-5045967-lead",
+      "title": "Deblín",
+      "text": "Deblín\n\nDeblín (deutsch Deblin, 1940–45 Döbleins) ist eine Minderstadt in Tschechien. Sie liegt sieben Kilometer südwestlich von Tišnov und gehört zum Okres Brno-venkov."
+    },
+    {
+      "id": "wikipedia-de-20231101-5116118-lead",
+      "title": "Wappen von Queensland",
+      "text": "Wappen von Queensland\n\nDas Wappen von Queensland, einem Bundesstaates Australiens, ist geteilt und unten gespalten.\n\nIm oberen goldenem Feld ein nach links sehender silberner Stierkopf mit roten Kopfriemen und ein silberner Schafskopf zu seiner linken Seite. Unten vorn in Schwarz eine gebundene goldene Getreidegarbe und unten hinten ein aufgebogener grüner Berg auf dem ein Spaten und eine Spitzhacke liegt und in Rot eine goldene Säule auf einem Quarzberg aufragt."
+    },
+    {
+      "id": "wikipedia-de-20231101-10276950-lead",
+      "title": "Mia Niederkirchner",
+      "text": "Mia Niederkirchner\n\nMia Niederkirchner (* 19. August 1911; † 2. Januar 1982) war eine deutsche SED-Funktionärin.\n\nLeben \nMia Niederkirchner war Tochter des RGI-Funktionärs Michael Niederkirchner. 1933 war Mia Niederkirchner gemeinsam mit Charlotte Müller im Widerstand gegen den Nationalsozialismus engagiert. Nach einem Studium an der Kommunistischen Universität der nationalen Minderheiten des Westens in Moskau wurde sie 1937 Referentin im Exekutiv-Komitee der KJI, ab 1938 arbeitete sie bei der deutschen Sektion der Komintern bzw. im Volkskommissariat für Außenhandel."
+    },
+    {
+      "id": "wikipedia-de-20231101-9159356-lead",
+      "title": "21. San-marinesisches Kabinett",
+      "text": "21. San-marinesisches Kabinett\n\nDas 21. Kabinett setzte sich aus Partito Democratico Cristiano Sammarinese (PDCS) und Partito Comunista Sammarinese (PCS) zusammen und regierte San Marino vom 26. Juli 1986 bis zum 6. Juli 1988."
+    },
+    {
+      "id": "wikipedia-de-20231101-4735196-lead",
+      "title": "Otto Hiltbrunner",
+      "text": "Otto Hiltbrunner\n\nOtto Hiltbrunner (* 29. Dezember 1913 in Burgdorf; † 19. Januar 2017 in Lörrach) war ein Schweizer Klassischer Philologe (Latinist)."
+    },
+    {
+      "id": "wikipedia-de-20231101-179659-lead",
+      "title": "Schweinebandwurm",
+      "text": "Schweinebandwurm\n\nDer Schweinebandwurm (Taenia solium), auch Schweinefinnenbandwurm genannt, ist ein parasitisch lebender Wurm im Darm vom Menschen. Als Zwischenwirt dienen Schweine. Experimentell lassen sich auch andere Säugetiere infizieren. Auch der Mensch kann als Fehlzwischenwirt dienen."
+    },
+    {
+      "id": "wikipedia-de-20231101-9042075-lead",
+      "title": "Unterklien",
+      "text": "Unterklien\n\nUnterklien (auch Unter-Klien) bildet zusammen mit Oberklien den Stadtteil Klien in Hohenems.\n\nNamensherkunft \nDer ursprüngliche Name dieses Teils von Hohenems lautete „Bagolte“ und auch „Unterberg“. Der Name „Klien“ soll von einem Familiennamen abstammen. 1397 kaufte Hans Klen aus Bagolte ein Grundstück beim Schmalzmahd und der bisherige Name Bagolte wurde durch Klen / Klin / Klien abgelöst. Im Urbar von 1611 wurde bereits der Name Klien neben Bagolte genannt. „Bagolten“ und „Schmalzmähder“ sind noch heute Namen von Flurstücken in Unterklien."
+    },
+    {
+      "id": "wikipedia-de-20231101-10386994-lead",
+      "title": "Am Grubenkopf",
+      "text": "Am Grubenkopf\n\nDas Naturschutzgebiet Am Grubenkopf liegt im Landkreis Bad Kreuznach in Rheinland-Pfalz.\n\nLage \nDas drei Hektar große Gebiet, das im Jahr 1985 unter Naturschutz gestellt wurde, erstreckt sich südlich der Kernstadt Bad Kreuznach. Westlich fließt die Nahe und verläuft die Bundesstraße 48, östlich verläuft die Bundesstraße 428."
+    },
+    {
+      "id": "wikipedia-de-20231101-178905-lead",
+      "title": "Exsultet",
+      "text": "Exsultet\n\nDas Exsultet (lat. „es jauchze“, Konjunktiv Präsens von exsultāre), auch Praeconium paschale, ist das in der römisch-katholischen und evangelisch-lutherischen Liturgie gesungene Osterlob der Lichtfeier am Beginn der Osternacht. In ihm wird Christus als das Licht der Welt gepriesen und seine Auferstehung in Verbindung zu dem im Alten Testament offenbarten göttlichen Heilsplan gestellt."
+    },
+    {
+      "id": "wikipedia-de-20231101-10547321-lead",
+      "title": "Linda Richards",
+      "text": "Linda Richards\n\nMalinda Ann Judson „Linda“ Richards (* 27. Juli 1841 in West Potsdam, New York, USA; † 16. April 1930 in Boston, Massachusetts, USA) war eine US-amerikanische Krankenschwester und die erste diplomierte Krankenschwester der Vereinigten Staaten."
+    },
+    {
+      "id": "wikipedia-de-20231101-5277607-lead",
+      "title": "Mecklenburgische XIX",
+      "text": "Mecklenburgische XIX\n\nDie Lokomotiven der Gattung XIX der Großherzoglich Mecklenburgischen Friedrich-Franz-Eisenbahn wurden auf der Schmalspurstrecke Bad Doberan–Heiligendamm eingesetzt. Die dreifach gekuppelten Maschinen erhielten ab 1910 die Gattungsbezeichnung T 7. 1911 wurden sie an die Neubukower Rübenbahn abgegeben."
+    },
+    {
+      "id": "wikipedia-de-20231101-125641-lead",
+      "title": "Samy Molcho",
+      "text": "Samy Molcho\n\nSamy Molcho (* 24. Mai 1936 in Tel Aviv) ist ein österreichisch-israelischer Pantomime und Autor. Er hat das Kommunikationsmittel Körpersprache in mehreren Büchern beschrieben und arbeitet auch als Regisseur, insbesondere für Musicals."
+    },
+    {
+      "id": "wikipedia-de-20231101-10701950-lead",
+      "title": "Fotografie Forum Frankfurt",
+      "text": "Fotografie Forum Frankfurt\n\nDas Fotografie Forum Frankfurt (FFF) ist ein Zentrum für Fotografie. Es fördert seit 1984 durch Ausstellungen, Workshops, Symposien und Vorträge das Medium Fotografie als universelle visuelle Ausdrucksweise. Träger des Forums ist der Förderkreis Fotografie Forum Frankfurt e.V. Seit 2014 hat das Forum seinen Sitz in der Braubachstraße in Frankfurt am Main, nachdem es die Anfangsjahre im Leinwandhaus residiert hatte."
+    },
+    {
+      "id": "wikipedia-de-20231101-10553245-lead",
+      "title": "Morocco Tennis Tour Marrakesch 2008",
+      "text": "Morocco Tennis Tour Marrakesch 2008\n\nDie Morocco Tennis Tour Marrakech 2008 war ein Tennisturnier, das vom 12. bis 17. Mai 2008 in Marrakesch stattfand. Es war Teil der ATP Challenger Series 2008 und wurde im Freien auf Sand ausgetragen."
+    },
+    {
+      "id": "wikipedia-de-20231101-10374265-lead",
+      "title": "Bat Out of Hell (Musical)",
+      "text": "Bat Out of Hell (Musical)\n\nBat Out of Hell ist ein Musical von Jim Steinman, basierend auf von Steinman komponierten Songs aus den gleichnamigen Alben Bat Out of Hell, Bat Out of Hell II und Bat Out of Hell III von Meat Loaf aus dem Jahr 2017."
+    },
+    {
+      "id": "wikipedia-de-20231101-4836737-lead",
+      "title": "Landt Verlag",
+      "text": "Landt Verlag\n\nDer Landt Verlag ist ein Verlag in Berlin, in dem vor allem Werke zur Geschichte des 19. und 20. Jahrhunderts erscheinen. Er wurde 2005 von Andreas Krause Landt gegründet. Seit Dezember 2010 ist der Landt Verlag ein Imprint der Manuscriptum Verlagsbuchhandlung Thomas Hoof KG; Thomas Hoof hatte 1988 das Einzelhandelsunternehmen Manufactum gegründet."
+    },
+    {
+      "id": "wikipedia-de-20231101-9021329-lead",
+      "title": "Guangzhou Museum of Art",
+      "text": "Guangzhou Museum of Art\n\nDas Kunstmuseum Guangzhou (; offizielle englische Bezeichnung: Guangzhou Museum of Art; allgemeine Abkürzung: GMA) liegt im Zentrum von Guangzhou Stadt, China, in der Luhu Road Nr. 13. Dort wurde es 1995 als Nachfolgeinstitution des früheren \"Guangzhou Art Museum\" errichtet und kann somit 2015 insgesamt auf eine 60-jährige Geschichte zurückblicken."
+    },
+    {
+      "id": "wikipedia-de-20231101-5149210-lead",
+      "title": "Willi Gohl",
+      "text": "Willi Gohl\n\nWilli Gohl (* 23. Dezember 1925 in Gossau ZH; † 16. Februar 2010 in Küsnacht ZH) war ein Schweizer Dirigent, Chorleiter und Komponist."
+    },
+    {
+      "id": "wikipedia-de-20231101-4816961-lead",
+      "title": "IE Tab",
+      "text": "IE Tab\n\nIE Tab ist eine Erweiterung (Add-ons) für die Browser Mozilla Firefox, Flock, SeaMonkey und Google Chrome.\n\nDas ursprüngliche Add-on wurde vor Veröffentlichung von Firefox 3.6 wöchentlich bis zu 160.000 Mal (Stand: Oktober 2009) heruntergeladen und hatte in Spitzenzeiten im Durchschnitt täglich über 3,5 Millionen (Stand: Februar 2010) Nutzer weltweit."
+    },
+    {
+      "id": "wikipedia-de-20231101-10788624-lead",
+      "title": "Francesco Curia",
+      "text": "Francesco Curia\n\nFrancesco Curia (nach 1550 – zwischen Juni und 20. September 1608 in Neapel) war ein italienischer Maler des Manierismus, der zur neapolitanischen Schule gehörte."
+    }
+  ],
+  "elapsed_seconds": 67.51950339999894,
+  "sqlite_changed": false,
+  "evaluation_files_read": []
+}

@@ -1,0 +1,19 @@
+{
+  "verified_utc": "2026-09-06T08:09:36.196072+00:00",
+  "archive_files_checked": 42,
+  "archive_all_hashes_match": true,
+  "round1_manifest_sha256": "0fff489d1b527d1d70c93aec2ef5debc74493c4f3cf2236b7a2e17b53d1ff971",
+  "round2_freeze_sha256": "3e299a25fe835f73ac3bd278d80a02f911fa13cab7bc43c61c42f48ba55d9de8",
+  "current_implementation_matches_freeze": true,
+  "new_unique_prompts_across_rounds": 209,
+  "decoder_provenance": {
+    "checked": 214,
+    "passed": 214,
+    "failures": []
+  },
+  "time_invariance": {
+    "checked": 856,
+    "passed": 856,
+    "failures": []
+  }
+}

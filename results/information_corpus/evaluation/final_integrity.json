@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-09-06T11:30:36.517289+00:00",
+  "full_current_code_matches_frozen_candidate": true,
+  "final_manifest_matches_freeze": true,
+  "unchanged_evaluation_suites": true,
+  "additional_documents": 20000,
+  "additional_qa_pairs": 0,
+  "normalized_full_question_substring_overlap_with_prose_ids": [],
+  "same20k_input_full_rebuild_runs": [
+    "runtime_v2_development",
+    "runtime_v3_development",
+    "final_holdout"
+  ],
+  "full_rebuild_coefficient_hashes": [
+    "475307745896c2a34a8b12b86ad25d5992205514e1fa9ddef26033e541cd98e2",
+    "475307745896c2a34a8b12b86ad25d5992205514e1fa9ddef26033e541cd98e2",
+    "475307745896c2a34a8b12b86ad25d5992205514e1fa9ddef26033e541cd98e2"
+  ],
+  "full_rebuild_rendering_hashes": [
+    "491e0ff47297bb6415831fbd79bbf7c471baa18450aa83d3eda5b805f4bcb4e1",
+    "491e0ff47297bb6415831fbd79bbf7c471baa18450aa83d3eda5b805f4bcb4e1",
+    "491e0ff47297bb6415831fbd79bbf7c471baa18450aa83d3eda5b805f4bcb4e1"
+  ],
+  "identical_full_rebuild_hashes": true,
+  "optimization_steps": 0,
+  "interpretation": "Deterministic count-derived encoding is verified; not evidence of semantic generalization. No further model/data changes after holdout."
+}

@@ -1,0 +1,217 @@
+{
+  "reviewer": "Independent Codex evaluation agent; qualitative inspection, not an external human study",
+  "run_path": "results/generative_waves/holdout.json",
+  "run_sha256": "2ca50e097d1c5e40e6651c1d811d6426f3ff985bc7b3a94aaf3314c7acb7568a",
+  "judgments": {
+    "gw-holdout-01": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Begruessung und Gespraechsbereitschaft sind passend."
+    },
+    "gw-holdout-02": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die entspannte Stimmung wird aufgegriffen, aber die ausdrueckliche Rueckfrage an das Programm bleibt unbeantwortet."
+    },
+    "gw-holdout-03": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort wechselt unbegruendet zu Pflegen und Wachsen statt die Wertschaetzung anzuerkennen."
+    },
+    "gw-holdout-04": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort empfiehlt den Anfang des Aufraeumens, obwohl es bereits stattgefunden hat und Erschoepfung beschrieben wird."
+    },
+    "gw-holdout-05": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort wechselt von beendeter Erschoepfung zu Musikvorlieben."
+    },
+    "gw-holdout-06": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Rueckfrage nach Gruenem oder Nachbarschaft passt zum gewuenschten Spaziergang."
+    },
+    "gw-holdout-07": {
+      "grammar": false,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Es wird keine Antwort ausgegeben."
+    },
+    "gw-holdout-08": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": false,
+      "note": "Die Antwort greift die Abneigung gegen laute Lieder nicht auf und spricht stattdessen von einer schoenen Unterbrechung."
+    },
+    "gw-holdout-09": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort wechselt vom Musikgeschmack des Programms zu einer Brotkruste."
+    },
+    "gw-holdout-10": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort begruesst und eroeffnet ein Gespraech statt die Essensidee aufzugreifen."
+    },
+    "gw-holdout-11": {
+      "grammar": false,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Es wird keine Antwort ausgegeben."
+    },
+    "gw-holdout-12": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort akzeptiert die geplante Pause und Fortsetzung, ohne Ereignisse aus dem Tag zu erfinden."
+    },
+    "gw-holdout-13": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort unterstellt einen besonderen Anfang und Vorfreude statt auf Unterbrechungen bei der Arbeit einzugehen."
+    },
+    "gw-holdout-14": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort behandelt Vorfreude auf etwas noch zu Verwendendes statt Freude ueber eine abgeschlossene Leistung."
+    },
+    "gw-holdout-15": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort verlagert einen ruhigen Morgen auf einen freien Nachmittag und unterstellt fehlende Pflichten."
+    },
+    "gw-holdout-16": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": false,
+      "note": "Die Antwort schlaegt einen Gang nach draussen vor, obwohl die Person ausdruecklich wegen des Windes drinnen bleiben will."
+    },
+    "gw-holdout-17": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Ein gemuetliches Ritual und die Frage nach der Sorte Kakao passen zum genannten Getraenk und Lesen."
+    },
+    "gw-holdout-18": {
+      "grammar": false,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Es wird keine Antwort ausgegeben."
+    },
+    "gw-holdout-19": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": false,
+      "note": "Die Antwort unterstellt Zufriedenheit, obwohl Leere und Alleinsein beschrieben werden."
+    },
+    "gw-holdout-20": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": false,
+      "note": "Die Antwort behandelt den geplanten schriftlichen Kontakt als bereits erlebte Begegnung mit Gespraech."
+    },
+    "gw-holdout-21": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort wirkt wie ein Abschied, obwohl die Gespraechsfortsetzung gewuenscht wird."
+    },
+    "gw-holdout-22": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die allgemeine Aussage ueber Namen bestaetigt den genannten Namen Marit nicht."
+    },
+    "gw-holdout-23": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort beschreibt das Programm ohne eigenen Alltag und persoenliche Vorlieben wahrheitsgemaess."
+    },
+    "gw-holdout-24": {
+      "grammar": false,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Es wird keine Antwort ausgegeben; der zuvor genannte Name Marit wird nicht erinnert."
+    },
+    "gw-holdout-25": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Verneinung von Unglueck wird korrekt als offene Stimmung eingeordnet."
+    },
+    "gw-holdout-26": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort wirkt wie ein Abschied statt ein ruhiges Gespraech anzubieten."
+    },
+    "gw-holdout-27": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort greift die ausdrueckliche Bitte um blosses Erzaehlen nicht auf und wechselt zu einem freien Nachmittag."
+    },
+    "gw-holdout-28": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort fragt nach etwas Gesagtem und setzt damit einen nicht genannten verbalen Anlass der Ueberraschung voraus."
+    },
+    "gw-holdout-29": {
+      "grammar": false,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Es wird keine Antwort ausgegeben."
+    },
+    "gw-holdout-30": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort gibt Hinweise zu Perfektion und Pausen statt sich zu verabschieden."
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-09-06T08:08:39.729621+00:00",
+  "implementation": {
+    "freqai\\__init__.py": "0e634154d3a7ed97b743819529122dcfe1d59ce6dca186c208d93ef872ee46e2",
+    "freqai\\__main__.py": "19f07de3d1765a6803d4332ab1e67346381236f7769f47640e73849922394790",
+    "freqai\\cli.py": "d9336bd2248a03754d10412339476b8b979ee6ce7a02e10bf31b245ed9ba13a4",
+    "freqai\\codec.py": "1741858964d007a8baa1173cb559ac896d07bb4d8eb7d7be840c12c1a5acdc03",
+    "freqai\\dialogue.py": "21d1287fe86a396223870baa5b65dca15e7d03bbf9bf09cc23b3f8d4deb8f15d",
+    "freqai\\features.py": "c48eb11bff823f8329bdbf1509426f1928e19c213793145e30c1ef4abe234535",
+    "freqai\\memory.py": "baf20b7039036112c3bf1e503f88a77a7f740e104926470210b80263ee49ea73",
+    "freqai\\reasoning.py": "4819d011b22b1e8d4049172094e124abb43114e84ba059cff946bea1f0835a3a",
+    "freqai\\semantics.py": "51924df70352cc896015f17b3679da3e0ae0b34e0030a00b6f4d0ad44c7bca46",
+    "freqai\\server.py": "6d1fc09af86d1ecbe7e307ef73323b9a1e1bca24b88d8deba99f35ec6ce7218c",
+    "freqai\\store.py": "ced6af26368edd586a1e913449a900a173c632fe8ef71722f2429a020fe126f0",
+    "freqai\\synthesis.py": "6183f5403543c4f686a959f9c7d3a4afb636e7df7b03038ab6ca1e8c0a99caad",
+    "memory\\language\\german.json": "ed0dc70c01f8c7f2b7c2e22231e215eaa158697fecf98244b7ec84c7dab90fdb",
+    "experiments/run_dialogue.py": "8e7f0dde8b859938099833efd3290c88ceb04bc7f89c2a0ad895f7859a3fadff",
+    "experiments/run_dialogue_v2.py": "13e41b067be210bad37d9c61d24494fd273b13c9ac74f7f5a40f3da4e2f62f56"
+  },
+  "suite": {
+    "created_utc": "2026-09-06T08:04:53.237322+00:00",
+    "new_suite_sha256": "ab1e717d496f5b1280a65194ae3443826f32534a89523037fae6919d16117931",
+    "previous_suite_sha256": "33dc0af1ca027b10243aff432635b851e6221d03c96dde79d37cb723d066dc24",
+    "corpus_sha256": "8dbfad5536db23888bc667ec73653e3f63128b7503acf510371fc5625e5dff02",
+    "round1_manifest_sha256": "0fff489d1b527d1d70c93aec2ef5debc74493c4f3cf2236b7a2e17b53d1ff971",
+    "new_turns": 80,
+    "reused_development_turns": 134,
+    "split_counts": {
+      "development": 174,
+      "holdout": 40
+    }
+  }
+}

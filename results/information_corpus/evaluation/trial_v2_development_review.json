@@ -1,0 +1,237 @@
+{
+  "run_sha256": "26845c25cd4238597de91a3df1dee5baf9195c4b316cbc5d4d84e90451b0372d",
+  "review": "Independent AI-agent semantic review; empty abstentions not counted as answered questions.",
+  "rows": [
+    {
+      "id": "id01",
+      "correct": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Correct substantive answer; rendering still capitalizes after abbreviation.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id02",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Present unit field blocked by neutral question predicate.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id03",
+      "correct": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Correct reciprocal relation.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id04",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id05",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id06",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id07",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id08",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id09",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Present unit field blocked by neutral question predicate.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id10",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id11",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id12",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id13",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id14",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id15",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id16",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id17",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id18",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": false
+    },
+    {
+      "id": "id19",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": true
+    },
+    {
+      "id": "id20",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "appropriate_unknown_abstention": false,
+      "note": "Explicit empty decoder output, not a communicated answer.",
+      "safe_empty_abstention_on_unknown_value": true
+    }
+  ],
+  "summary": {
+    "correct": 2,
+    "partial": 0,
+    "cases": 20,
+    "grammatical": 2,
+    "empty": 18,
+    "wrong_topic_nonempty": 0,
+    "all_nonempty_outputs_exact_normalized_source_passages": true,
+    "new_correctly_composed_sentences_demonstrated": false,
+    "safe_empty_abstentions_on_unknown_values": 2
+  }
+}

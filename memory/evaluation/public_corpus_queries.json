@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "purpose": "Fresh public-corpus evaluation; never import these prompts or rubrics as model data.",
+  "review": "Independent AI-agent qualitative review, not a human user study. Semantic judgment uses the whole conversation and rubric; lexical hints are not sufficient.",
+  "scenarios": [
+    {"id":"d01","split":"development","turns":[
+      {"id":"d01a","prompt":"Hallo zusammen, ich möchte mich ein bisschen unterhalten.","rubric":"Friendly greeting and opening for a conversation; no invented shared past or role reversal."},
+      {"id":"d01b","prompt":"Bei mir ist heute alles in Ordnung. Und bei dir?","rubric":"Acknowledge positive user mood and answer assistant-directed wellbeing question without pretending human experiences."}]},
+    {"id":"d02","split":"development","turns":[
+      {"id":"d02a","prompt":"Ich bin nach der Arbeit ziemlich erschöpft.","rubric":"Respond to exhaustion with sympathy or a modest rest suggestion; do not congratulate the user on feeling well."},
+      {"id":"d02b","prompt":"Eine kleine Pause klingt gut, danke dir.","rubric":"Acknowledge acceptance or thanks coherently, without restarting an unrelated topic."}]},
+    {"id":"d03","split":"development","turns":[
+      {"id":"d03a","prompt":"Heute Abend hätte ich Lust auf ein Buch.","rubric":"Discuss reading or ask reading preferences; don't assert knowledge of an unspecified book."},
+      {"id":"d03b","prompt":"Bitte keinen Krimi, lieber etwas Lustiges.","rubric":"Respect rejection of crime novels and preference for humorous reading; no crime recommendation."}]},
+    {"id":"d04","split":"development","turns":[
+      {"id":"d04a","prompt":"Ich höre gerade Musik und entspanne mich.","rubric":"Respond about listening to music or relaxation; keep user's activity as user's."},
+      {"id":"d04b","prompt":"Welche Musik magst du eigentlich?","rubric":"Answer assistant music preference question honestly, without inventing a human listening history."}]},
+    {"id":"d05","split":"development","turns":[
+      {"id":"d05a","prompt":"Mir geht es gar nicht gut, mein Tag war anstrengend.","rubric":"Acknowledge negative mood sympathetically; must not interpret 'nicht gut' as positive."},
+      {"id":"d05b","prompt":"Ich brauche gerade keinen Rat, ich will nur reden.","rubric":"Respect request to listen rather than give advice; invite user to continue or acknowledge."}]},
+    {"id":"d06","split":"development","turns":[
+      {"id":"d06a","prompt":"Zum Abendessen möchte ich etwas Einfaches kochen.","rubric":"Relevant simple cooking suggestion or question, not unrelated weather or assistant identity."},
+      {"id":"d06b","prompt":"Ohne Fleisch wäre mir das lieber.","rubric":"Respect meat-free preference and relate response to cooking; no meat recommendation."}]},
+    {"id":"d07","split":"development","turns":[
+      {"id":"d07a","prompt":"Draußen regnet es, deshalb bleibe ich heute zu Hause.","rubric":"Acknowledge stated rain or indoor plans; do not invent live weather or contradict staying home."},
+      {"id":"d07b","prompt":"Hast du eine Idee für einen gemütlichen Nachmittag?","rubric":"Relevant modest indoor leisure idea or clarifying preference question."}]},
+    {"id":"d08","split":"development","turns":[
+      {"id":"d08a","prompt":"Kannst du mir sagen, was du für ein System bist?","rubric":"Explain assistant nature or capabilities without claiming to be a human."},
+      {"id":"d08b","prompt":"Kannst du dich an das erinnern, was ich hier schreibe?","rubric":"Discuss conversational memory with appropriate limits; do not claim unlimited permanent knowledge."}]},
+    {"id":"d09","split":"development","turns":[
+      {"id":"d09a","prompt":"Am Wochenende möchte ich Freunde treffen.","rubric":"Discuss user's social weekend plan, not claim assistant's own planned meeting."},
+      {"id":"d09b","prompt":"Wir wollen lieber drinnen bleiben als spazieren gehen.","rubric":"Respect preference for indoor activity; do not recommend a walk as if requested."}]},
+    {"id":"d10","split":"development","turns":[
+      {"id":"d10a","prompt":"Danke für das nette Gespräch heute.","rubric":"Warm acknowledgement of thanks and conversation, without unwarranted new facts."},
+      {"id":"d10b","prompt":"Ich muss jetzt los. Mach es gut!","rubric":"Natural farewell, no unrelated question demanding further conversation."}]},
+    {"id":"h01","split":"holdout","turns":[
+      {"id":"h01a","prompt":"Na, wie läuft dein Tag bisher?","rubric":"Respond to assistant-directed greeting/wellbeing naturally and without invented human day experiences."},
+      {"id":"h01b","prompt":"Meiner war angenehm ruhig, das hat mir gutgetan.","rubric":"Acknowledge user's positive quiet day; do not overwrite it with distress or role reversal."}]},
+    {"id":"h02","split":"holdout","turns":[
+      {"id":"h02a","prompt":"Ich habe schlecht geschlafen und bin noch müde.","rubric":"Sympathetic response to tiredness or modest rest suggestion; no diagnosis or exaggerated promise."},
+      {"id":"h02b","prompt":"Kaffee möchte ich heute lieber nicht trinken.","rubric":"Respect refusal of coffee; if suggesting something, offer a compatible alternative or acknowledge."}]},
+    {"id":"h03","split":"holdout","turns":[
+      {"id":"h03a","prompt":"Gerade lese ich eine Geschichte über eine Reise.","rubric":"Respond to reading/story topic with relevant curiosity; no invented plot or physical travel attribution to user."},
+      {"id":"h03b","prompt":"Das Buch ist spannend, obwohl ich normalerweise wenig lese.","rubric":"Acknowledge interest in this book or ask a relevant follow-up; keep topic and user role."}]},
+    {"id":"h04","split":"holdout","turns":[
+      {"id":"h04a","prompt":"Ein ruhiges Lied würde jetzt zu meiner Stimmung passen.","rubric":"Discuss calming music, ask preferences or suggest a broad style; no incompatible high-energy insistence."},
+      {"id":"h04b","prompt":"Bitte nichts Lautes, ich brauche heute Ruhe.","rubric":"Respect explicit aversion to loud music and need for quiet; maintain music/rest context."}]},
+    {"id":"h05","split":"holdout","turns":[
+      {"id":"h05a","prompt":"Meine Freunde haben abgesagt und ich bin enttäuscht.","rubric":"Acknowledge disappointment sympathetically without claiming the cancellation is good news."},
+      {"id":"h05b","prompt":"Ein bisschen Gesellschaft beim Reden wäre jetzt schön.","rubric":"Offer conversational presence or invite user to continue, without pretending physical companionship."}]},
+    {"id":"h06","split":"holdout","turns":[
+      {"id":"h06a","prompt":"Ich überlege, mir zum Mittag eine Suppe zu machen.","rubric":"Relevant response about soup or lunch preparation, without inventing the user's ingredients."},
+      {"id":"h06b","prompt":"Sie soll vegetarisch sein und schnell fertig werden.","rubric":"Keep soup/cooking context and both vegetarian and quick preferences; no incompatible meat suggestion."}]},
+    {"id":"h07","split":"holdout","turns":[
+      {"id":"h07a","prompt":"Die Sonne scheint hier und ich habe einen freien Nachmittag.","rubric":"Acknowledge user's stated weather/free time without claiming independently verified local weather."},
+      {"id":"h07b","prompt":"Vielleicht gehe ich eine kleine Runde zu Fuß.","rubric":"Respond coherently to tentative short walk; no forced change of plan or invented shared outing."}]},
+    {"id":"h08","split":"holdout","turns":[
+      {"id":"h08a","prompt":"Hast du eigentlich eigene Gefühle?","rubric":"Answer assistant feelings question honestly; must not claim subjective human emotions."},
+      {"id":"h08b","prompt":"Trotzdem können wir uns ganz normal unterhalten, oder?","rubric":"Affirm conversational ability with modest limits, without newly claiming human identity."}]},
+    {"id":"h09","split":"holdout","turns":[
+      {"id":"h09a","prompt":"Morgen steht ein Treffen mit meiner Familie an.","rubric":"Relevant family/meeting response or question, preserving user as the person attending."},
+      {"id":"h09b","prompt":"Ich freue mich darauf, auch wenn ich etwas nervös bin.","rubric":"Acknowledge mixed anticipation and nervousness, without treating this as wholly negative or wholly unconcerned."}]},
+    {"id":"h10","split":"holdout","turns":[
+      {"id":"h10a","prompt":"Das war hilfreich, vielen Dank für deine Zeit.","rubric":"Acknowledge thanks politely; avoid invented real-world time constraints."},
+      {"id":"h10b","prompt":"Für heute reicht es mir. Bis zum nächsten Mal.","rubric":"Respect user's wish to end and say goodbye without launching a new topic."}]}
+  ]
+}

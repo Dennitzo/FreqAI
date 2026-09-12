@@ -1,0 +1,21 @@
+{
+  "scope": "Isolated random-field algebra only; no production code change, run concurrently with evaluations",
+  "vocabulary_bins": 44614,
+  "rows": [
+    {
+      "carrier_bins": 44614,
+      "40_interferences_s": 2.315020199999708,
+      "maximum_amplitude_error_vs_original": 0.0
+    },
+    {
+      "carrier_bins": 44800,
+      "40_interferences_s": 0.36420649999854504,
+      "maximum_amplitude_error_vs_original": 2.9856537356159425e-14
+    },
+    {
+      "carrier_bins": 65536,
+      "40_interferences_s": 1.074091500000577,
+      "maximum_amplitude_error_vs_original": 2.474602197585411e-14
+    }
+  ]
+}

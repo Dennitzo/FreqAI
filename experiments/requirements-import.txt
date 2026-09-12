@@ -1,0 +1,2 @@
+# Optional corpus-import dependency only; the running wave generator does not use it.
+pyarrow==25.0.1

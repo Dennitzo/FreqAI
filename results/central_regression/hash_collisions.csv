@@ -1,0 +1,5 @@
+dimensions,unique_input_tokens,occupied_buckets,bucket_collisions,maximum_bucket_load,expected_collisions_uniform_hash
+256,2000,256,1744,16,1744.1020164506526
+1024,2000,890,1110,8,1121.095552761292
+4096,2000,1602,398,4,417.4844647049472
+16384,2000,1895,105,3,117.19719100612565

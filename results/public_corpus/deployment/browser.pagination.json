@@ -1,0 +1,37 @@
+{
+  "stage": "pagination",
+  "url": "http://127.0.0.1:8765",
+  "session_id": "36e2de21-3fce-464f-a9bc-041354b7a0bd",
+  "new_empty_audit_session": true,
+  "document_count": 12000,
+  "live_revision": 5,
+  "maximum_rendered_document_rows": 50,
+  "first_page": "1–50 von 12.000 Texten · Seite 1",
+  "second_page": "51–100 von 12.000 Texten · Seite 2",
+  "last_page": "11.951–12.000 von 12.000 Texten · Seite 240",
+  "first_and_second_disjoint": true,
+  "previous_page_identical": true,
+  "reload_resets_page_zero_preserves_session": true,
+  "source": "https://huggingface.co/datasets/OpenAssistant/oasst2 | Apache-2.0 | revision=179dd21fc55192153d94adb0e0ce8f69e222bf75 | message=0ef4e9f1-5a8b-44bd-a250-03dc8684ebc0\noasst2-de-0ef4e9f1-5a8b-44bd-a250-03dc8684ebc0",
+  "time_before": 803.7309636999998,
+  "time_after": 804.7317946000003,
+  "clock_advances": true,
+  "document_requests": [
+    "http://127.0.0.1:8765/api/documents?offset=0&limit=50",
+    "http://127.0.0.1:8765/api/documents?offset=50&limit=50&revision=5",
+    "http://127.0.0.1:8765/api/documents?offset=0&limit=50&revision=5",
+    "http://127.0.0.1:8765/api/documents?offset=650&limit=50&revision=5",
+    "http://127.0.0.1:8765/api/documents?offset=11950&limit=50&revision=5",
+    "http://127.0.0.1:8765/api/documents?offset=0&limit=50",
+    "http://127.0.0.1:8765/api/documents?offset=0&limit=50"
+  ],
+  "source_data_mutations": 0,
+  "server_process": {
+    "commandLine": "\"C:\\Users\\AMD\\AppData\\Local\\Programs\\Python\\Python311\\python.exe\" -m freqai serve --memory \"C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\memory.sqlite3\" --port 8765 ",
+    "url": "http://127.0.0.1:8765",
+    "pid": 34084,
+    "executable": "C:\\Users\\AMD\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "launchedPid": 34076
+  },
+  "javascript_errors": []
+}

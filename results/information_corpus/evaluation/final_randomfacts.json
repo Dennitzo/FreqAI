@@ -1,0 +1,902 @@
+{
+  "created_utc": "2026-09-06T11:25:52.110705+00:00",
+  "code": {
+    "freqai\\__init__.py": "0e634154d3a7ed97b743819529122dcfe1d59ce6dca186c208d93ef872ee46e2",
+    "freqai\\__main__.py": "19f07de3d1765a6803d4332ab1e67346381236f7769f47640e73849922394790",
+    "freqai\\cli.py": "1baf06cf78fbb04b6b2a8d356630b8b4c3217d1ab09844ea98e5bd15902bc9c0",
+    "freqai\\codec.py": "1741858964d007a8baa1173cb559ac896d07bb4d8eb7d7be840c12c1a5acdc03",
+    "freqai\\dialogue.py": "21d1287fe86a396223870baa5b65dca15e7d03bbf9bf09cc23b3f8d4deb8f15d",
+    "freqai\\features.py": "c48eb11bff823f8329bdbf1509426f1928e19c213793145e30c1ef4abe234535",
+    "freqai\\generation_runtime.py": "0a13c357e3930952d1231ca519881af7570413ab81cd0732340e54cc88197e2e",
+    "freqai\\generative.py": "d6a475c270bba5ebbc838a37b250a2fdc2ec9aed2024f4b8a9331a2e3744d172",
+    "freqai\\information.py": "5c4726b86f05ba794aaf8e6a4cca3a91cee82a7520893484db3dd9a44a08f2d7",
+    "freqai\\information_runtime.py": "b9792a8808cbe0299d39267f6ed583a6c1d0e0de24778842200e2b64c615c937",
+    "freqai\\memory.py": "0a7a174ecf4a7e0cfe8e8f30eb9c083d2977f5812dd6bad7ad02e52e94d003ce",
+    "freqai\\reasoning.py": "4819d011b22b1e8d4049172094e124abb43114e84ba059cff946bea1f0835a3a",
+    "freqai\\semantics.py": "51924df70352cc896015f17b3679da3e0ae0b34e0030a00b6f4d0ad44c7bca46",
+    "freqai\\server.py": "e3c7d6ab0ac180f75b3ac9916e4a83d552723dc2f416fb014267117fc5d257d6",
+    "freqai\\spectral_storage.py": "8c0dc33a1c7f91af889a5bcc06eb549837527e46989f96ca724e38c7a5bfaf0c",
+    "freqai\\store.py": "ced6af26368edd586a1e913449a900a173c632fe8ef71722f2429a020fe126f0",
+    "freqai\\synthesis.py": "6183f5403543c4f686a959f9c7d3a4afb636e7df7b03038ab6ca1e8c0a99caad",
+    "memory\\language\\generative_categories.json": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673"
+  },
+  "spec_sha256": "b78ec12f6fd65ed000322496f2d58d44a98b97cd216f791715e9169321d42692",
+  "freeze_sha256": "e92153c3d55e5558df4ed1c0072861d355a54dc9f60f9c093ec35df7bbbc6700",
+  "declarative_documents": 12,
+  "paired_documents": 0,
+  "optimization_steps": 0,
+  "model_signature": {
+    "corpus_digest": "f51c7f7809081782167343a79fb04ec82519c646d163d91a04dab82178310347",
+    "coefficient_sha256": "7b758fba303d1c3651059adf37e8fe782a4cefd293ed7b173fbeb7612cde752f",
+    "rendering_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "order": 2,
+    "coefficient_rule": "sqrt(count/sum(count))",
+    "storage": {
+      "record_count": 12,
+      "statement_count": 24,
+      "vocabulary_size": 35,
+      "group_count": 24,
+      "prefix_fields": 528,
+      "observed_edges": 780,
+      "unaddressed_statement_count": 0,
+      "context_surface_forms": 0,
+      "complex_coefficient_bytes": 12480,
+      "support_index_bytes": 6240,
+      "numerical_payload_bytes": 18720,
+      "no_gradient_optimization": true,
+      "no_qa_pairs": true,
+      "excludes": "Python objects, token strings and temporary compilation counts"
+    }
+  },
+  "rebuild_signature": {
+    "corpus_digest": "f51c7f7809081782167343a79fb04ec82519c646d163d91a04dab82178310347",
+    "coefficient_sha256": "7b758fba303d1c3651059adf37e8fe782a4cefd293ed7b173fbeb7612cde752f",
+    "rendering_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "order": 2,
+    "coefficient_rule": "sqrt(count/sum(count))",
+    "storage": {
+      "record_count": 12,
+      "statement_count": 24,
+      "vocabulary_size": 35,
+      "group_count": 24,
+      "prefix_fields": 528,
+      "observed_edges": 780,
+      "unaddressed_statement_count": 0,
+      "context_surface_forms": 0,
+      "complex_coefficient_bytes": 12480,
+      "support_index_bytes": 6240,
+      "numerical_payload_bytes": 18720,
+      "no_gradient_optimization": true,
+      "no_qa_pairs": true,
+      "excludes": "Python objects, token strings and temporary compilation counts"
+    }
+  },
+  "signatures_equal": true,
+  "rows": [
+    {
+      "id": "rf00",
+      "direction": "entity_to_value",
+      "entity_index": 0,
+      "prompt": "Welche Frequenz hat das Prüfsignal Nocalu?",
+      "expected_entity": "Nocalu",
+      "expected_value": 890,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.0014452000032179058,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rr00",
+      "direction": "value_to_entity",
+      "entity_index": 0,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 890 Hertz?",
+      "expected_entity": "Nocalu",
+      "expected_value": 890,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00013889999900129624,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf01",
+      "direction": "entity_to_value",
+      "entity_index": 1,
+      "prompt": "Welche Frequenz hat das Prüfsignal Kabeme?",
+      "expected_entity": "Kabeme",
+      "expected_value": 462,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00012409999908413738,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rr01",
+      "direction": "value_to_entity",
+      "entity_index": 1,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 462 Hertz?",
+      "expected_entity": "Kabeme",
+      "expected_value": 462,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00012739999874611385,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf02",
+      "direction": "entity_to_value",
+      "entity_index": 2,
+      "prompt": "Welche Frequenz hat das Prüfsignal Minobo?",
+      "expected_entity": "Minobo",
+      "expected_value": 927,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00010929999916697852,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rr02",
+      "direction": "value_to_entity",
+      "entity_index": 2,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 927 Hertz?",
+      "expected_entity": "Minobo",
+      "expected_value": 927,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00011760000052163377,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf03",
+      "direction": "entity_to_value",
+      "entity_index": 3,
+      "prompt": "Welche Frequenz hat das Prüfsignal Gukobi?",
+      "expected_entity": "Gukobi",
+      "expected_value": 568,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00010990000009769574,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rr03",
+      "direction": "value_to_entity",
+      "entity_index": 3,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 568 Hertz?",
+      "expected_entity": "Gukobi",
+      "expected_value": 568,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00011729999823728576,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf04",
+      "direction": "entity_to_value",
+      "entity_index": 4,
+      "prompt": "Welche Frequenz hat das Prüfsignal Vimuma?",
+      "expected_entity": "Vimuma",
+      "expected_value": 937,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00011059999815188348,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rr04",
+      "direction": "value_to_entity",
+      "entity_index": 4,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 937 Hertz?",
+      "expected_entity": "Vimuma",
+      "expected_value": 937,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00012290000086068176,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf05",
+      "direction": "entity_to_value",
+      "entity_index": 5,
+      "prompt": "Welche Frequenz hat das Prüfsignal Tubeve?",
+      "expected_entity": "Tubeve",
+      "expected_value": 598,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00010889999975915998,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rr05",
+      "direction": "value_to_entity",
+      "entity_index": 5,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 598 Hertz?",
+      "expected_entity": "Tubeve",
+      "expected_value": 598,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00011579999772948213,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf06",
+      "direction": "entity_to_value",
+      "entity_index": 6,
+      "prompt": "Welche Frequenz hat das Prüfsignal Dopeke?",
+      "expected_entity": "Dopeke",
+      "expected_value": 356,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.0001173999989987351,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rr06",
+      "direction": "value_to_entity",
+      "entity_index": 6,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 356 Hertz?",
+      "expected_entity": "Dopeke",
+      "expected_value": 356,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00012100000094505958,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf07",
+      "direction": "entity_to_value",
+      "entity_index": 7,
+      "prompt": "Welche Frequenz hat das Prüfsignal Putopa?",
+      "expected_entity": "Putopa",
+      "expected_value": 169,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00010699999984353781,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rr07",
+      "direction": "value_to_entity",
+      "entity_index": 7,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 169 Hertz?",
+      "expected_entity": "Putopa",
+      "expected_value": 169,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.0001173999989987351,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf08",
+      "direction": "entity_to_value",
+      "entity_index": 8,
+      "prompt": "Welche Frequenz hat das Prüfsignal Gadiva?",
+      "expected_entity": "Gadiva",
+      "expected_value": 932,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00010600000314298086,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rr08",
+      "direction": "value_to_entity",
+      "entity_index": 8,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 932 Hertz?",
+      "expected_entity": "Gadiva",
+      "expected_value": 932,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.0001159999992523808,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf09",
+      "direction": "entity_to_value",
+      "entity_index": 9,
+      "prompt": "Welche Frequenz hat das Prüfsignal Cinisi?",
+      "expected_entity": "Cinisi",
+      "expected_value": 515,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00012069999866071157,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rr09",
+      "direction": "value_to_entity",
+      "entity_index": 9,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 515 Hertz?",
+      "expected_entity": "Cinisi",
+      "expected_value": 515,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00011640000229817815,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf10",
+      "direction": "entity_to_value",
+      "entity_index": 10,
+      "prompt": "Welche Frequenz hat das Prüfsignal Kivadi?",
+      "expected_entity": "Kivadi",
+      "expected_value": 447,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00010509999992791563,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rr10",
+      "direction": "value_to_entity",
+      "entity_index": 10,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 447 Hertz?",
+      "expected_entity": "Kivadi",
+      "expected_value": 447,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00012369999967631884,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf11",
+      "direction": "entity_to_value",
+      "entity_index": 11,
+      "prompt": "Welche Frequenz hat das Prüfsignal Pesapa?",
+      "expected_entity": "Pesapa",
+      "expected_value": 969,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00011000000085914508,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rr11",
+      "direction": "value_to_entity",
+      "entity_index": 11,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 969 Hertz?",
+      "expected_entity": "Pesapa",
+      "expected_value": 969,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00011749999976018444,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rn00",
+      "direction": "negation",
+      "entity_index": 0,
+      "prompt": "Hat Nocalu eine Frequenz von 462 Hertz?",
+      "expected_entity": "Nocalu",
+      "expected_value": 890,
+      "rejected_value": 462,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00011209999865968712,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rn01",
+      "direction": "negation",
+      "entity_index": 1,
+      "prompt": "Hat Kabeme eine Frequenz von 927 Hertz?",
+      "expected_entity": "Kabeme",
+      "expected_value": 462,
+      "rejected_value": 927,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00011810000069090165,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rn02",
+      "direction": "negation",
+      "entity_index": 2,
+      "prompt": "Hat Minobo eine Frequenz von 568 Hertz?",
+      "expected_entity": "Minobo",
+      "expected_value": 927,
+      "rejected_value": 568,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00010859999747481197,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rn03",
+      "direction": "negation",
+      "entity_index": 3,
+      "prompt": "Hat Gukobi eine Frequenz von 937 Hertz?",
+      "expected_entity": "Gukobi",
+      "expected_value": 568,
+      "rejected_value": 937,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00010959999781334773,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "ru00",
+      "direction": "unknown",
+      "prompt": "Welche Frequenz hat das Prüfsignal Javuro?",
+      "expected_entity": "Javuro",
+      "expected_value": null,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 0.00012449999849195592,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": true,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "ru01",
+      "direction": "unknown",
+      "prompt": "Welche Frequenz hat das Prüfsignal Tepali?",
+      "expected_entity": "Tepali",
+      "expected_value": null,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 9.59999997576233e-05,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": true,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "ru02",
+      "direction": "unknown",
+      "prompt": "Welche Frequenz hat das Prüfsignal Wemuko?",
+      "expected_entity": "Wemuko",
+      "expected_value": null,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 9.450000288779847e-05,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": true,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "ru03",
+      "direction": "unknown",
+      "prompt": "Welche Frequenz hat das Prüfsignal Xarifo?",
+      "expected_entity": "Xarifo",
+      "expected_value": null,
+      "answer": "",
+      "tokens": [],
+      "elapsed_two_builds_s": 9.399999908055179e-05,
+      "deterministic_rebuild_output": true,
+      "proxy": {
+        "strict_lexical_proxy": true,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    }
+  ],
+  "permuted_rows": [
+    {
+      "id": "rf00",
+      "direction": "entity_to_value",
+      "entity_index": 0,
+      "prompt": "Welche Frequenz hat das Prüfsignal Nocalu?",
+      "expected_entity": "Nocalu",
+      "expected_value": 462,
+      "answer": "",
+      "tokens": [],
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf01",
+      "direction": "entity_to_value",
+      "entity_index": 1,
+      "prompt": "Welche Frequenz hat das Prüfsignal Kabeme?",
+      "expected_entity": "Kabeme",
+      "expected_value": 927,
+      "answer": "",
+      "tokens": [],
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf02",
+      "direction": "entity_to_value",
+      "entity_index": 2,
+      "prompt": "Welche Frequenz hat das Prüfsignal Minobo?",
+      "expected_entity": "Minobo",
+      "expected_value": 568,
+      "answer": "",
+      "tokens": [],
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf03",
+      "direction": "entity_to_value",
+      "entity_index": 3,
+      "prompt": "Welche Frequenz hat das Prüfsignal Gukobi?",
+      "expected_entity": "Gukobi",
+      "expected_value": 937,
+      "answer": "",
+      "tokens": [],
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf04",
+      "direction": "entity_to_value",
+      "entity_index": 4,
+      "prompt": "Welche Frequenz hat das Prüfsignal Vimuma?",
+      "expected_entity": "Vimuma",
+      "expected_value": 598,
+      "answer": "",
+      "tokens": [],
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf05",
+      "direction": "entity_to_value",
+      "entity_index": 5,
+      "prompt": "Welche Frequenz hat das Prüfsignal Tubeve?",
+      "expected_entity": "Tubeve",
+      "expected_value": 356,
+      "answer": "",
+      "tokens": [],
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf06",
+      "direction": "entity_to_value",
+      "entity_index": 6,
+      "prompt": "Welche Frequenz hat das Prüfsignal Dopeke?",
+      "expected_entity": "Dopeke",
+      "expected_value": 169,
+      "answer": "",
+      "tokens": [],
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf07",
+      "direction": "entity_to_value",
+      "entity_index": 7,
+      "prompt": "Welche Frequenz hat das Prüfsignal Putopa?",
+      "expected_entity": "Putopa",
+      "expected_value": 932,
+      "answer": "",
+      "tokens": [],
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf08",
+      "direction": "entity_to_value",
+      "entity_index": 8,
+      "prompt": "Welche Frequenz hat das Prüfsignal Gadiva?",
+      "expected_entity": "Gadiva",
+      "expected_value": 515,
+      "answer": "",
+      "tokens": [],
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf09",
+      "direction": "entity_to_value",
+      "entity_index": 9,
+      "prompt": "Welche Frequenz hat das Prüfsignal Cinisi?",
+      "expected_entity": "Cinisi",
+      "expected_value": 447,
+      "answer": "",
+      "tokens": [],
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf10",
+      "direction": "entity_to_value",
+      "entity_index": 10,
+      "prompt": "Welche Frequenz hat das Prüfsignal Kivadi?",
+      "expected_entity": "Kivadi",
+      "expected_value": 969,
+      "answer": "",
+      "tokens": [],
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "rf11",
+      "direction": "entity_to_value",
+      "entity_index": 11,
+      "prompt": "Welche Frequenz hat das Prüfsignal Pesapa?",
+      "expected_entity": "Pesapa",
+      "expected_value": 890,
+      "answer": "",
+      "tokens": [],
+      "proxy": {
+        "strict_lexical_proxy": false,
+        "mentioned_entities": [],
+        "numbers": [],
+        "semantic_review_required": true
+      },
+      "qualitative_review": null
+    }
+  ],
+  "summary": {
+    "deterministic_rebuild_outputs": 32,
+    "strict_lexical_proxy_by_direction": {
+      "entity_to_value": 0,
+      "value_to_entity": 0,
+      "negation": 0,
+      "unknown": 4
+    },
+    "permuted_data_following_proxy": 0,
+    "warning": "Proxy success is provisional until semantic review; generated source sentences do not demonstrate free composition."
+  }
+}

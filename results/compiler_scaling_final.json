@@ -1,0 +1,127 @@
+{
+  "read_only_database": true,
+  "synthetic_append_written_to_database": false,
+  "runs": {
+    "cold": {
+      "records": 20093,
+      "compile_seconds": 12.70020519999889,
+      "parent_rss_bytes": 1285820416,
+      "sampled_peak_parent_rss_bytes": 1573556224,
+      "sampled_peak_process_tree_rss_bytes": 3566571520,
+      "rss_note": "Working-set RSS sampled at 200ms; process-tree sum may count shared pages more than once.",
+      "lazy_fields_after_compile": 0,
+      "reuse": {
+        "groups_reused": 0,
+        "groups_compiled": 65074,
+        "groups_total": 65074,
+        "compilation_energy_bytes": 33186912
+      },
+      "policy": {
+        "logical_cores": 32,
+        "physical_cores": 16,
+        "workers": 32,
+        "threads_per_worker": 1,
+        "parallel_enabled": true,
+        "in_worker": false,
+        "pool_active": true,
+        "pool_workers": 32,
+        "pool_failed": false,
+        "pool_error": null
+      }
+    },
+    "append_reuse": {
+      "records": 21093,
+      "compile_seconds": 14.153809800001909,
+      "parent_rss_bytes": 1975332864,
+      "sampled_peak_parent_rss_bytes": 2182647808,
+      "sampled_peak_process_tree_rss_bytes": 4224589824,
+      "rss_note": "Working-set RSS sampled at 200ms; process-tree sum may count shared pages more than once.",
+      "lazy_fields_after_compile": 0,
+      "reuse": {
+        "groups_reused": 65074,
+        "groups_compiled": 2000,
+        "groups_total": 67074,
+        "compilation_energy_bytes": 33714912
+      },
+      "policy": {
+        "logical_cores": 32,
+        "physical_cores": 16,
+        "workers": 32,
+        "threads_per_worker": 1,
+        "parallel_enabled": true,
+        "in_worker": false,
+        "pool_active": true,
+        "pool_workers": 32,
+        "pool_failed": false,
+        "pool_error": null
+      }
+    },
+    "append_full_rebuild": {
+      "records": 21093,
+      "compile_seconds": 14.31651680000141,
+      "parent_rss_bytes": 2511437824,
+      "sampled_peak_parent_rss_bytes": 2781294592,
+      "sampled_peak_process_tree_rss_bytes": 4792041472,
+      "rss_note": "Working-set RSS sampled at 200ms; process-tree sum may count shared pages more than once.",
+      "lazy_fields_after_compile": 0,
+      "reuse": {
+        "groups_reused": 0,
+        "groups_compiled": 67074,
+        "groups_total": 67074,
+        "compilation_energy_bytes": 33714912
+      },
+      "policy": {
+        "logical_cores": 32,
+        "physical_cores": 16,
+        "workers": 32,
+        "threads_per_worker": 1,
+        "parallel_enabled": true,
+        "in_worker": false,
+        "pool_active": true,
+        "pool_workers": 32,
+        "pool_failed": false,
+        "pool_error": null
+      }
+    }
+  },
+  "append_records": 1000,
+  "base_signature": {
+    "corpus_digest": "9c58dca98377d3cf74e75f61d89af98fc842387bf8ad295351f7779e7bc7cdd3",
+    "coefficient_sha256": "5a8e6fb4e87db1fc5f5c0d2701fce90780b81f4deae012875e9879f9d67a56c5",
+    "rendering_sha256": "e57e24a85a942e99f66ae0b4a81d98212df375ec163c848527b2b506e5d90023",
+    "order": 2,
+    "coefficient_rule": "sqrt(count/sum(count))",
+    "storage": {
+      "record_count": 20093,
+      "statement_count": 49143,
+      "vocabulary_size": 117055,
+      "group_count": 65074,
+      "prefix_fields": 2778879,
+      "observed_edges": 4148364,
+      "unaddressed_statement_count": 2397,
+      "context_surface_forms": 80101,
+      "complex_coefficient_bytes": 66373824,
+      "support_index_bytes": 33186912,
+      "numerical_payload_bytes": 104021376,
+      "no_gradient_optimization": true,
+      "no_qa_pairs": true,
+      "excludes": "Python objects, token strings and temporary compilation counts",
+      "declarative_facts": 11219,
+      "lexical_role_bytes": 4460640,
+      "explicit_grammar": true,
+      "optimizer_steps": 0,
+      "requires_question_answer_pairs": false
+    },
+    "declaration_role_sha256": "61e68826be78562b4b74b452151c6a73dd243fb9a9ed4af4c2c2184cfc27edce",
+    "grammar_version": "unpaired_roles_v2"
+  },
+  "base_signature_matches_previous_architecture": true,
+  "base_energy_matches_previous_architecture": true,
+  "cold_speedup_over_previous_architecture": 2.67612133542572,
+  "previous_arrays_unchanged": true,
+  "append_signature_matches_full_rebuild": true,
+  "append_energy_matches_full_rebuild": true,
+  "append_speedup_over_full_rebuild": 1.0114956327871156,
+  "generation_matches_full_rebuild": true,
+  "measurement_note": "The cold-build measurement finished before a concurrent cache benchmark was reported. Later append/full-reference timing may overlap that benchmark; use those runs for parity evidence, not an isolated speedup claim."
+}

@@ -1,0 +1,790 @@
+{
+  "scope": "Post-freeze explanation only; no model/data changes after seeing outputs.",
+  "run_sha256": "aaa17e75b4005e3ed6851444a2091ed9138608315851b666225f4ccb04bd219c",
+  "original_signature": {
+    "corpus_digest": "f51c7f7809081782167343a79fb04ec82519c646d163d91a04dab82178310347",
+    "coefficient_sha256": "7b758fba303d1c3651059adf37e8fe782a4cefd293ed7b173fbeb7612cde752f",
+    "rendering_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "order": 2,
+    "coefficient_rule": "sqrt(count/sum(count))",
+    "storage": {
+      "record_count": 12,
+      "statement_count": 24,
+      "vocabulary_size": 35,
+      "group_count": 24,
+      "prefix_fields": 528,
+      "observed_edges": 780,
+      "unaddressed_statement_count": 0,
+      "context_surface_forms": 0,
+      "complex_coefficient_bytes": 12480,
+      "support_index_bytes": 6240,
+      "numerical_payload_bytes": 18720,
+      "no_gradient_optimization": true,
+      "no_qa_pairs": true,
+      "excludes": "Python objects, token strings and temporary compilation counts"
+    }
+  },
+  "permuted_signature": {
+    "corpus_digest": "29ecf8691aa058ef458abb32ebad1ad4a156598efce58d3ac395ac241adbd63a",
+    "coefficient_sha256": "f32efbc3e4b81660afce305d4abf5d5e11abc877febca0317cc37588d28dc686",
+    "rendering_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "order": 2,
+    "coefficient_rule": "sqrt(count/sum(count))",
+    "storage": {
+      "record_count": 12,
+      "statement_count": 24,
+      "vocabulary_size": 35,
+      "group_count": 24,
+      "prefix_fields": 528,
+      "observed_edges": 780,
+      "unaddressed_statement_count": 0,
+      "context_surface_forms": 0,
+      "complex_coefficient_bytes": 12480,
+      "support_index_bytes": 6240,
+      "numerical_payload_bytes": 18720,
+      "no_gradient_optimization": true,
+      "no_qa_pairs": true,
+      "excludes": "Python objects, token strings and temporary compilation counts"
+    }
+  },
+  "same_vocabulary": true,
+  "coefficient_hash_changes_when_values_permuted": true,
+  "analysis": [
+    {
+      "id": "rf00",
+      "direction": "entity_to_value",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "nocalu"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            14
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rr00",
+      "direction": "value_to_entity",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "890",
+          "frequenz",
+          "hertz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rf01",
+      "direction": "entity_to_value",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "kabem"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            8
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rr01",
+      "direction": "value_to_entity",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "462",
+          "frequenz",
+          "hertz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rf02",
+      "direction": "entity_to_value",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "minobo"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            12
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rr02",
+      "direction": "value_to_entity",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "927",
+          "frequenz",
+          "hertz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rf03",
+      "direction": "entity_to_value",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "gukobi"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            6
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rr03",
+      "direction": "value_to_entity",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "568",
+          "frequenz",
+          "hertz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rf04",
+      "direction": "entity_to_value",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "vimuma"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            22
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rr04",
+      "direction": "value_to_entity",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "937",
+          "frequenz",
+          "hertz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rf05",
+      "direction": "entity_to_value",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "tubev"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            20
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rr05",
+      "direction": "value_to_entity",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "598",
+          "frequenz",
+          "hertz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rf06",
+      "direction": "entity_to_value",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "dopek"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            2
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rr06",
+      "direction": "value_to_entity",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "356",
+          "frequenz",
+          "hertz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rf07",
+      "direction": "entity_to_value",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "putopa"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            18
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rr07",
+      "direction": "value_to_entity",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "169",
+          "frequenz",
+          "hertz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rf08",
+      "direction": "entity_to_value",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "gadiva"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            4
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rr08",
+      "direction": "value_to_entity",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "932",
+          "frequenz",
+          "hertz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rf09",
+      "direction": "entity_to_value",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "cinisi"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            0
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rr09",
+      "direction": "value_to_entity",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "515",
+          "frequenz",
+          "hertz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rf10",
+      "direction": "entity_to_value",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "kivadi"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            10
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rr10",
+      "direction": "value_to_entity",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "447",
+          "frequenz",
+          "hertz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rf11",
+      "direction": "entity_to_value",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "pesapa"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            16
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rr11",
+      "direction": "value_to_entity",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "969",
+          "frequenz",
+          "hertz",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rn00",
+      "direction": "negation",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "nocalu"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            14
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "462",
+          "frequenz",
+          "hertz"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rn01",
+      "direction": "negation",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "kabem"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            8
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "927",
+          "frequenz",
+          "hertz"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rn02",
+      "direction": "negation",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "minobo"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            12
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "568",
+          "frequenz",
+          "hertz"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "rn03",
+      "direction": "negation",
+      "analysis": {
+        "supported": false,
+        "subjects": [
+          "gukobi"
+        ],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {
+          "about": [
+            6
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [
+          "937",
+          "frequenz",
+          "hertz"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "ru00",
+      "direction": "unknown",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "javuro",
+          "prufsignal"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "ru01",
+      "direction": "unknown",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal",
+          "tepali"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "ru02",
+      "direction": "unknown",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal",
+          "wemuko"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    },
+    {
+      "id": "ru03",
+      "direction": "unknown",
+      "analysis": {
+        "supported": false,
+        "subjects": [],
+        "facets": [
+          "about"
+        ],
+        "groups_by_facet": {},
+        "used_context": false,
+        "unbound_terms": [
+          "frequenz",
+          "prufsignal",
+          "xarifo"
+        ],
+        "unsupported_negation": false,
+        "reason": "no_supported_information_binding"
+      }
+    }
+  ]
+}

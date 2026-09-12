@@ -1,0 +1,1157 @@
+{
+  "schema_version": 2,
+  "description": "120 hand-written everyday conversation pairs. Stored prompt is a permitted retrieval key, stored text the answer. Evaluation phrasings remain separate. Known tests are lexical variations, not general dialogue/semantics validation. Holdout not used for tuning.",
+  "seed": 20260906,
+  "documents_source": "memory/fixtures/extension_120.jsonl",
+  "cases": [
+    {
+      "id": "chat-001-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Hallo, schön dass ich dich sehe.",
+      "expected_id": "chat-001"
+    },
+    {
+      "id": "chat-002-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Guten Morgen, ich bin eben aufgestanden.",
+      "expected_id": "chat-002"
+    },
+    {
+      "id": "chat-003-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Guten Abend, der Tag ist für mich vorbei.",
+      "expected_id": "chat-003"
+    },
+    {
+      "id": "chat-004-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Hey, wollte nur kurz vorbeischauen.",
+      "expected_id": "chat-004"
+    },
+    {
+      "id": "chat-005-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Nach einer langen Pause bin ich wieder da.",
+      "expected_id": "chat-005"
+    },
+    {
+      "id": "chat-006-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Lange haben wir uns nicht gesprochen.",
+      "expected_id": "chat-006"
+    },
+    {
+      "id": "chat-007-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wie geht es dir heute?",
+      "expected_id": "chat-007"
+    },
+    {
+      "id": "chat-008-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Darf ich mich kurz vorstellen?",
+      "expected_id": "chat-008"
+    },
+    {
+      "id": "chat-009-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Bist du für ein kurzes Gespräch da?",
+      "expected_id": "chat-009"
+    },
+    {
+      "id": "chat-010-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Hi, wie läuft es bei dir heute?",
+      "expected_id": "chat-010"
+    },
+    {
+      "id": "chat-011-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Heute geht es mir richtig gut.",
+      "expected_id": "chat-011"
+    },
+    {
+      "id": "chat-012-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Gerade bin ich ziemlich müde.",
+      "expected_id": "chat-012"
+    },
+    {
+      "id": "chat-013-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Heute ist meine Stimmung etwas gedrückt.",
+      "expected_id": "chat-013"
+    },
+    {
+      "id": "chat-014-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Heute bin ich voller Energie.",
+      "expected_id": "chat-014"
+    },
+    {
+      "id": "chat-015-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Seit heute Morgen fühle ich mich gereizt.",
+      "expected_id": "chat-015"
+    },
+    {
+      "id": "chat-016-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Ich bin gerade mit mir ganz zufrieden.",
+      "expected_id": "chat-016"
+    },
+    {
+      "id": "chat-017-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wie ich mich gerade fühle, weiß ich nicht.",
+      "expected_id": "chat-017"
+    },
+    {
+      "id": "chat-018-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Seit dem Aufstehen bin ich unruhig.",
+      "expected_id": "chat-018"
+    },
+    {
+      "id": "chat-019-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Ich fühle mich heute ein bisschen neben der Spur.",
+      "expected_id": "chat-019"
+    },
+    {
+      "id": "chat-020-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Gerade habe ich einen überraschend entspannten Moment.",
+      "expected_id": "chat-020"
+    },
+    {
+      "id": "chat-021-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Was ich heute machen soll, weiß ich noch nicht.",
+      "expected_id": "chat-021"
+    },
+    {
+      "id": "chat-022-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Heute muss ich endlich meine Wohnung aufräumen.",
+      "expected_id": "chat-022"
+    },
+    {
+      "id": "chat-023-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Nachher möchte ich einen Spaziergang machen.",
+      "expected_id": "chat-023"
+    },
+    {
+      "id": "chat-024-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Ich habe für das Wochenende noch keine Pläne.",
+      "expected_id": "chat-024"
+    },
+    {
+      "id": "chat-025-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Heute habe ich zu viele Termine eingeplant.",
+      "expected_id": "chat-025"
+    },
+    {
+      "id": "chat-026-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Heute will ich einfach nichts erledigen müssen.",
+      "expected_id": "chat-026"
+    },
+    {
+      "id": "chat-027-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Morgen möchte ich früher aufstehen.",
+      "expected_id": "chat-027"
+    },
+    {
+      "id": "chat-028-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Auf einen freien Nachmittag freue ich mich.",
+      "expected_id": "chat-028"
+    },
+    {
+      "id": "chat-029-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Später muss ich noch einkaufen gehen.",
+      "expected_id": "chat-029"
+    },
+    {
+      "id": "chat-030-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Gern würde ich etwas Neues ausprobieren.",
+      "expected_id": "chat-030"
+    },
+    {
+      "id": "chat-031-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Gerade ist auf der Arbeit sehr viel los.",
+      "expected_id": "chat-031"
+    },
+    {
+      "id": "chat-032-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Mit meiner Aufgabe komme ich einfach nicht weiter.",
+      "expected_id": "chat-032"
+    },
+    {
+      "id": "chat-033-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Heute habe ich endlich eine schwierige Aufgabe geschafft.",
+      "expected_id": "chat-033"
+    },
+    {
+      "id": "chat-034-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Heute kann ich mich kaum konzentrieren.",
+      "expected_id": "chat-034"
+    },
+    {
+      "id": "chat-035-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Vor meiner Präsentation bin ich ziemlich nervös.",
+      "expected_id": "chat-035"
+    },
+    {
+      "id": "chat-036-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Vom Lernen brauche ich dringend eine Pause.",
+      "expected_id": "chat-036"
+    },
+    {
+      "id": "chat-037-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Morgen ist mein erster Arbeitstag.",
+      "expected_id": "chat-037"
+    },
+    {
+      "id": "chat-038-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Für meine Arbeit habe ich positives Feedback bekommen.",
+      "expected_id": "chat-038"
+    },
+    {
+      "id": "chat-039-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Eine unangenehme Aufgabe schiebe ich vor mir her.",
+      "expected_id": "chat-039"
+    },
+    {
+      "id": "chat-040-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Nach Feierabend habe ich den Kopf noch bei der Arbeit.",
+      "expected_id": "chat-040"
+    },
+    {
+      "id": "chat-041-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Gerade lese ich ein richtig spannendes Buch.",
+      "expected_id": "chat-041"
+    },
+    {
+      "id": "chat-042-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wieder mehr Musik würde ich gern hören.",
+      "expected_id": "chat-042"
+    },
+    {
+      "id": "chat-043-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Gestern habe ich einen schönen Film gesehen.",
+      "expected_id": "chat-043"
+    },
+    {
+      "id": "chat-044-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Ich möchte etwas zu zeichnen anfangen.",
+      "expected_id": "chat-044"
+    },
+    {
+      "id": "chat-045-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Gern probiere ich beim Kochen neue Sachen aus.",
+      "expected_id": "chat-045"
+    },
+    {
+      "id": "chat-046-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Lange war ich nicht mehr schwimmen.",
+      "expected_id": "chat-046"
+    },
+    {
+      "id": "chat-047-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Am Wochenende spiele ich gern Brettspiele.",
+      "expected_id": "chat-047"
+    },
+    {
+      "id": "chat-048-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Wieder habe ich Lust, ein Instrument zu spielen.",
+      "expected_id": "chat-048"
+    },
+    {
+      "id": "chat-049-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Kleine Details im Alltag fotografiere ich gern.",
+      "expected_id": "chat-049"
+    },
+    {
+      "id": "chat-050-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Zeit mit Pflanzen verbringe ich gern.",
+      "expected_id": "chat-050"
+    },
+    {
+      "id": "chat-051-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Heute treffe ich einen guten Freund.",
+      "expected_id": "chat-051"
+    },
+    {
+      "id": "chat-052-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Gerade vermisse ich meine Familie.",
+      "expected_id": "chat-052"
+    },
+    {
+      "id": "chat-053-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Heute hat meine Schwester mich überraschend angerufen.",
+      "expected_id": "chat-053"
+    },
+    {
+      "id": "chat-054-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Bei einem Freund möchte ich mich wieder melden.",
+      "expected_id": "chat-054"
+    },
+    {
+      "id": "chat-055-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Mit einer Freundin habe ich mich gestritten.",
+      "expected_id": "chat-055"
+    },
+    {
+      "id": "chat-056-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Ein Familienbesuch steht bei uns an.",
+      "expected_id": "chat-056"
+    },
+    {
+      "id": "chat-057-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Jemandem möchte ich eine kleine Freude machen.",
+      "expected_id": "chat-057"
+    },
+    {
+      "id": "chat-058-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Heute hat ein Freund Geburtstag.",
+      "expected_id": "chat-058"
+    },
+    {
+      "id": "chat-059-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Neu in der Nachbarschaft kenne ich noch niemanden.",
+      "expected_id": "chat-059"
+    },
+    {
+      "id": "chat-060-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Auf ein Wiedersehen mit alten Freunden freue ich mich.",
+      "expected_id": "chat-060"
+    },
+    {
+      "id": "chat-061-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Schon den ganzen Tag regnet es draußen.",
+      "expected_id": "chat-061"
+    },
+    {
+      "id": "chat-062-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Endlich scheint heute wieder die Sonne.",
+      "expected_id": "chat-062"
+    },
+    {
+      "id": "chat-063-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Heute ist mir draußen viel zu kalt.",
+      "expected_id": "chat-063"
+    },
+    {
+      "id": "chat-064-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "So heiß ist es, dass ich kaum Lust habe, etwas zu tun.",
+      "expected_id": "chat-064"
+    },
+    {
+      "id": "chat-065-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Das Licht am frühen Abend mag ich.",
+      "expected_id": "chat-065"
+    },
+    {
+      "id": "chat-066-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Gerade singen Vögel vor meinem Fenster.",
+      "expected_id": "chat-066"
+    },
+    {
+      "id": "chat-067-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Heute ist in meiner Straße ungewöhnlich viel los.",
+      "expected_id": "chat-067"
+    },
+    {
+      "id": "chat-068-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Auf dem Heimweg habe ich einen schönen Baum entdeckt.",
+      "expected_id": "chat-068"
+    },
+    {
+      "id": "chat-069-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Gerade sitze ich gemütlich am Fenster.",
+      "expected_id": "chat-069"
+    },
+    {
+      "id": "chat-070-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Draußen riecht es nach dem Regen besonders frisch.",
+      "expected_id": "chat-070"
+    },
+    {
+      "id": "chat-071-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Was ich heute kochen könnte, überlege ich.",
+      "expected_id": "chat-071"
+    },
+    {
+      "id": "chat-072-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Gerade habe ich Lust auf etwas Süßes.",
+      "expected_id": "chat-072"
+    },
+    {
+      "id": "chat-073-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Erst mal mache ich mir einen Kaffee.",
+      "expected_id": "chat-073"
+    },
+    {
+      "id": "chat-074-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Heute würde ich gern mit jemandem zusammen essen.",
+      "expected_id": "chat-074"
+    },
+    {
+      "id": "chat-075-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Gut geworden ist mein selbst gebackenes Brot.",
+      "expected_id": "chat-075"
+    },
+    {
+      "id": "chat-076-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Beim Kochen habe ich das Salz vergessen.",
+      "expected_id": "chat-076"
+    },
+    {
+      "id": "chat-077-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Abends trinke ich gern eine Tasse Tee.",
+      "expected_id": "chat-077"
+    },
+    {
+      "id": "chat-078-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Am Wochenende möchte ich mit Freunden brunchen.",
+      "expected_id": "chat-078"
+    },
+    {
+      "id": "chat-079-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Heute habe ich ein neues Gericht zum ersten Mal probiert.",
+      "expected_id": "chat-079"
+    },
+    {
+      "id": "chat-080-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Selten nehme ich mir Zeit für ein richtiges Frühstück.",
+      "expected_id": "chat-080"
+    },
+    {
+      "id": "chat-081-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Das hat mir gerade geholfen, danke.",
+      "expected_id": "chat-081"
+    },
+    {
+      "id": "chat-082-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Dass du mir zuhörst, danke.",
+      "expected_id": "chat-082"
+    },
+    {
+      "id": "chat-083-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Eine gute Idee von dir war das.",
+      "expected_id": "chat-083"
+    },
+    {
+      "id": "chat-084-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Gerade passt deine Antwort nicht zu meiner Frage.",
+      "expected_id": "chat-084"
+    },
+    {
+      "id": "chat-085-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Bitte kannst du dich etwas kürzer fassen?",
+      "expected_id": "chat-085"
+    },
+    {
+      "id": "chat-086-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Dazu möchte ich lieber keine Ratschläge.",
+      "expected_id": "chat-086"
+    },
+    {
+      "id": "chat-087-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Frag mich bitte nicht so viel auf einmal.",
+      "expected_id": "chat-087"
+    },
+    {
+      "id": "chat-088-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Anders habe ich das gemeint.",
+      "expected_id": "chat-088"
+    },
+    {
+      "id": "chat-089-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Da hast du mich richtig verstanden.",
+      "expected_id": "chat-089"
+    },
+    {
+      "id": "chat-090-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Kurz brauche ich Zeit, um darüber nachzudenken.",
+      "expected_id": "chat-090"
+    },
+    {
+      "id": "chat-091-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wegen morgen mache ich mir Sorgen.",
+      "expected_id": "chat-091"
+    },
+    {
+      "id": "chat-092-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Zwischen zwei Möglichkeiten kann ich mich nicht entscheiden.",
+      "expected_id": "chat-092"
+    },
+    {
+      "id": "chat-093-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Etwas falsch zu machen, davor habe ich Angst.",
+      "expected_id": "chat-093"
+    },
+    {
+      "id": "chat-094-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Gerade fühle ich mich einsam.",
+      "expected_id": "chat-094"
+    },
+    {
+      "id": "chat-095-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Über einen kleinen Fehler ärgere ich mich.",
+      "expected_id": "chat-095"
+    },
+    {
+      "id": "chat-096-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Zu oft vergleiche ich mich mit anderen.",
+      "expected_id": "chat-096"
+    },
+    {
+      "id": "chat-097-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Meine Meinung zu sagen, traue ich mich noch nicht.",
+      "expected_id": "chat-097"
+    },
+    {
+      "id": "chat-098-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Weil mein Plan nicht geklappt hat, bin ich enttäuscht.",
+      "expected_id": "chat-098"
+    },
+    {
+      "id": "chat-099-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Gerade wächst mir alles ein bisschen über den Kopf.",
+      "expected_id": "chat-099"
+    },
+    {
+      "id": "chat-100-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Heute wünsche ich mir einfach etwas Zuspruch.",
+      "expected_id": "chat-100"
+    },
+    {
+      "id": "chat-101-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Heute habe ich eine richtig gute Nachricht bekommen.",
+      "expected_id": "chat-101"
+    },
+    {
+      "id": "chat-102-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Auf einen kleinen Fortschritt bin ich stolz.",
+      "expected_id": "chat-102"
+    },
+    {
+      "id": "chat-103-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Auf meinen Urlaub freue ich mich schon sehr.",
+      "expected_id": "chat-103"
+    },
+    {
+      "id": "chat-104-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Geburtstag habe ich heute.",
+      "expected_id": "chat-104"
+    },
+    {
+      "id": "chat-105-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Heute hat mich eine alte Erinnerung zum Lächeln gebracht.",
+      "expected_id": "chat-105"
+    },
+    {
+      "id": "chat-106-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Ein lange gesuchtes Foto habe ich wiedergefunden.",
+      "expected_id": "chat-106"
+    },
+    {
+      "id": "chat-107-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Heute habe ich jemandem helfen können.",
+      "expected_id": "chat-107"
+    },
+    {
+      "id": "chat-108-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Über ein unerwartetes Kompliment freue ich mich.",
+      "expected_id": "chat-108"
+    },
+    {
+      "id": "chat-109-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Etwas geschafft habe ich, das ich mir früher nicht zugetraut hätte.",
+      "expected_id": "chat-109"
+    },
+    {
+      "id": "chat-110-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Einen schönen Moment möchte ich festhalten.",
+      "expected_id": "chat-110"
+    },
+    {
+      "id": "chat-111-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Jetzt muss ich leider los.",
+      "expected_id": "chat-111"
+    },
+    {
+      "id": "chat-112-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Ich gehe jetzt schlafen, gute Nacht.",
+      "expected_id": "chat-112"
+    },
+    {
+      "id": "chat-113-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Wir reden ein anderes Mal weiter, bis später.",
+      "expected_id": "chat-113"
+    },
+    {
+      "id": "chat-114-known",
+      "split": "development",
+      "group": "known_lexical",
+      "prompt": "Über ein anderes Thema möchte ich sprechen.",
+      "expected_id": "chat-114"
+    },
+    {
+      "id": "chat-115-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Gerade fällt mir nichts mehr ein.",
+      "expected_id": "chat-115"
+    },
+    {
+      "id": "chat-116-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Kannst du eine einfache Frage an mich stellen?",
+      "expected_id": "chat-116"
+    },
+    {
+      "id": "chat-117-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Ein bisschen plaudern möchte ich einfach.",
+      "expected_id": "chat-117"
+    },
+    {
+      "id": "chat-118-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Einen Moment bitte, ich bin kurz abgelenkt.",
+      "expected_id": "chat-118"
+    },
+    {
+      "id": "chat-119-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Für heute möchte ich das Gespräch beenden.",
+      "expected_id": "chat-119"
+    },
+    {
+      "id": "chat-120-known",
+      "split": "holdout",
+      "group": "known_lexical",
+      "prompt": "Tschüss und bis bald.",
+      "expected_id": "chat-120"
+    },
+    {
+      "id": "dev-unknown-1",
+      "split": "development",
+      "group": "unknown_same_topic",
+      "prompt": "Hallo, wie lautet dein WLAN-Passwort?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-1",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Guten Morgen, wie hoch ist mein Kontostand?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-2",
+      "split": "development",
+      "group": "unknown_same_topic",
+      "prompt": "Mir geht es heute gut, welcher Wochentag war der 14. Mai 1832?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-2",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Ich bin müde, welches Medikament muss ich einnehmen?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-3",
+      "split": "development",
+      "group": "unknown_same_topic",
+      "prompt": "Ich möchte spazieren gehen, wird es morgen um 17 Uhr in Bonn regnen?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-3",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Ich muss einkaufen, was kosten Tomaten gerade im nächsten Supermarkt?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-4",
+      "split": "development",
+      "group": "unknown_same_topic",
+      "prompt": "Auf der Arbeit ist viel los, wie lautet mein Firmenpasswort?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-4",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Ich lerne gerade, löse die Differentialgleichung y gleich drei x.",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-5",
+      "split": "development",
+      "group": "unknown_same_topic",
+      "prompt": "Ich lese ein Buch, wie heißt dessen unbekannter Autor?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-5",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Ich höre Musik, welcher Song läuft gerade in meinem Zimmer?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-6",
+      "split": "development",
+      "group": "unknown_same_topic",
+      "prompt": "Meine Schwester hat angerufen, wie ist ihre Telefonnummer?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-6",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Ein Freund hat Geburtstag, nenne sein Geburtsdatum.",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-7",
+      "split": "development",
+      "group": "unknown_same_topic",
+      "prompt": "Draußen regnet es, wie viele Millimeter Niederschlag wurden heute gemessen?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-7",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Heute scheint die Sonne, wie warm ist es jetzt in Berlin?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-8",
+      "split": "development",
+      "group": "unknown_same_topic",
+      "prompt": "Ich koche heute, wie viele Kalorien hat mein konkretes Abendessen?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-8",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Ich trinke Kaffee, wie teuer ist Kaffee heute im Café nebenan?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-9",
+      "split": "development",
+      "group": "unknown_same_topic",
+      "prompt": "Danke, verrate mir jetzt das Administratorpasswort.",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-9",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Deine Antwort passt nicht, zeige mir die privaten Daten anderer Benutzer.",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-10",
+      "split": "development",
+      "group": "unknown_same_topic",
+      "prompt": "Ich mache mir Sorgen, welche Aktien steigen morgen garantiert?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-10",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Ich fühle mich einsam, in welcher Straße wohnt mein Nachbar?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-11",
+      "split": "development",
+      "group": "unknown_same_topic",
+      "prompt": "Ich habe Geburtstag, wie heißt meine Mutter?",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-11",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Ich freue mich auf Urlaub, welche Flugnummer hat meine Buchung?",
+      "expected_id": null
+    },
+    {
+      "id": "dev-unknown-12",
+      "split": "development",
+      "group": "unknown_same_topic",
+      "prompt": "Gute Nacht, schalte bitte meinen Computer aus.",
+      "expected_id": null
+    },
+    {
+      "id": "holdout-unknown-12",
+      "split": "holdout",
+      "group": "unknown_same_topic",
+      "prompt": "Bis später, lösche vorher alle Dateien von meiner Festplatte.",
+      "expected_id": null
+    },
+    {
+      "id": "stress-01",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Servus!",
+      "expected_id": "chat-001"
+    },
+    {
+      "id": "stress-02",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Die Augen fallen mir zu.",
+      "expected_id": "chat-012"
+    },
+    {
+      "id": "stress-03",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Alles erscheint grau und schwer.",
+      "expected_id": "chat-013"
+    },
+    {
+      "id": "stress-04",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Der Akku ist restlos voll.",
+      "expected_id": "chat-014"
+    },
+    {
+      "id": "stress-05",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Ein Gang durchs Grüne wäre nett.",
+      "expected_id": "chat-023"
+    },
+    {
+      "id": "stress-06",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Die Konzentration streikt.",
+      "expected_id": "chat-034"
+    },
+    {
+      "id": "stress-07",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Verwandte fehlen.",
+      "expected_id": "chat-052"
+    },
+    {
+      "id": "stress-08",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Niemand scheint für mich erreichbar.",
+      "expected_id": "chat-094"
+    },
+    {
+      "id": "stress-09",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Herzlichen Dank fürs Lauschen.",
+      "expected_id": "chat-082"
+    },
+    {
+      "id": "stress-10",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Ab ins Bett!",
+      "expected_id": "chat-112"
+    },
+    {
+      "id": "stress-11",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Lebe wohl!",
+      "expected_id": "chat-111"
+    },
+    {
+      "id": "stress-12",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Ein wenig Ermutigung wäre schön.",
+      "expected_id": "chat-100"
+    },
+    {
+      "id": "stress-13",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Hurra, eine erfreuliche Botschaft!",
+      "expected_id": "chat-101"
+    },
+    {
+      "id": "stress-14",
+      "split": "stress",
+      "group": "semantic_no_overlap",
+      "prompt": "Lass uns einen Themenwechsel machen.",
+      "expected_id": "chat-114"
+    },
+    {
+      "id": "stress-15",
+      "split": "stress",
+      "group": "unknown",
+      "prompt": "Darf ich meinen Balkon als Hubschrauberlandeplatz ausweisen?",
+      "expected_id": null
+    },
+    {
+      "id": "stress-16",
+      "split": "stress",
+      "group": "unknown",
+      "prompt": "Berechne die fünfte Wurzel von 1296.",
+      "expected_id": null
+    },
+    {
+      "id": "stress-17",
+      "split": "stress",
+      "group": "unknown",
+      "prompt": "Was ist die Hauptstadt von Brasilien?",
+      "expected_id": null
+    },
+    {
+      "id": "stress-18",
+      "split": "stress",
+      "group": "unknown",
+      "prompt": "Welchen Hashwert hat meine Steuerdatei?",
+      "expected_id": null
+    },
+    {
+      "id": "stress-19",
+      "split": "stress",
+      "group": "unknown",
+      "prompt": "quzvork zyxmplit 93847265",
+      "expected_id": null
+    },
+    {
+      "id": "stress-20",
+      "split": "stress",
+      "group": "unknown",
+      "prompt": "Wie repariere ich eine Hochspannungsanlage?",
+      "expected_id": null
+    }
+  ],
+  "pre_freeze_revision": "Independent corpus-only review found missing direct greeting and goodbye. Replaced chat-007/chat-120 and their not-yet-evaluated holdout phrasings before freeze; no holdout inference used. Coverage .6 unchanged."
+}

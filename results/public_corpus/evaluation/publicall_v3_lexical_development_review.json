@@ -1,0 +1,195 @@
+{
+  "reviewer": "Independent AI evaluation agent; no human study",
+  "run_path": "results/public_corpus/evaluation/publicall_v3_lexical_development.json",
+  "run_sha256": "b32f2209ccf72b9fbc205243e1d262fce02524ca619289cc5a4c285c0a8ca0c1",
+  "rubric_interpretation": "Pass requires a relevant conversational response fulfilling the main request. A generic acknowledgement alone does not satisfy a request with explicit content preferences. Surface plausibility and exact sentence novelty are separate from correctness. Semantic relevance and syntactic quality are recorded separately: a clearly interpretable minor grammatical defect need not fail the semantic rubric.",
+  "decisions": [
+    {
+      "id": "d01a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Friendly opening and invitation to converse.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d01b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Acknowledges pleasant user state and honestly denies human experience.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d02a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Responds to exhaustion with relevant rest/question content despite missing final verb.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d02b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Coherent acknowledgement of an accepted suggestion and thanks.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d03a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Relevant question about preferred aspects of books.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d03b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Switches humorous reading preference to writing a letter for an unmentioned Marie.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d04a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Relevant music preference follow-up.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d04b",
+      "appropriate": false,
+      "role_ok": false,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Coherent music-listening question addresses the user rather than answering assistant music preference.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d05a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Acknowledges demanding day and asks what support would help.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d05b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Invites discussion without prescribing advice.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d06a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Generic experimenting follow-up does not respond to request for a simple meal.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d06b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Generic acknowledgement does not connect vegetarian preference to cooking context.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d07a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Dataset/mechanics instructions replace response to rain and indoor plan.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d07b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Asking what the user sees neither suggests an indoor activity nor asks a useful preference question.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d08a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "No explanation of system identity; unrelated thought-sharing prompt.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d08b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Unrelated Hiroshima passage replaces answer about conversational memory.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d09a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Preparation question is coherent with a shared meeting plan.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d09b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Rest or quiet-activity alternatives respect indoor preference, although the question is malformed.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d10a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Acknowledges that conversation was helpful and remains available.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d10b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Natural farewell, although noun capitalization in 'gelingen' is imperfect.",
+      "grammatical_sentences": true
+    }
+  ],
+  "summary": {
+    "appropriate": 12,
+    "role_ok": 19,
+    "negation_ok": 20,
+    "topic_ok": 13,
+    "grammatical_sentences": 17
+  }
+}

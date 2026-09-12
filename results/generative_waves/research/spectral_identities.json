@@ -1,0 +1,14 @@
+{
+  "scope": "Independent numerical identities; no semantic-quality claim",
+  "seed": 20260906,
+  "trials": 1000,
+  "input_channels": 32,
+  "output_tokens": 64,
+  "max_direct_vs_spectral_error": 1.1102230246251565e-15,
+  "max_imaginary_residue": 1.8041124150158794e-16,
+  "max_additive_update_error": 1.332339907734402e-15,
+  "minimum_changed_prompt_output_l2": 0.4808012593916851,
+  "maximum_changed_prompt_output_l2": 1.599424608519215,
+  "opposite_fields_have_identical_intensity": true,
+  "raw_byte_superposition": "Ril geht es fos6"
+}

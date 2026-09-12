@@ -1,0 +1,259 @@
+{
+  "development_information_routes": 20,
+  "development_cases": 20,
+  "known_chat_information_routes": 0,
+  "known_chat_cases": 40,
+  "rows": [
+    {
+      "id": "id01",
+      "information": true
+    },
+    {
+      "id": "id02",
+      "information": true
+    },
+    {
+      "id": "id03",
+      "information": true
+    },
+    {
+      "id": "id04",
+      "information": true
+    },
+    {
+      "id": "id05",
+      "information": true
+    },
+    {
+      "id": "id06",
+      "information": true
+    },
+    {
+      "id": "id07",
+      "information": true
+    },
+    {
+      "id": "id08",
+      "information": true
+    },
+    {
+      "id": "id09",
+      "information": true
+    },
+    {
+      "id": "id10",
+      "information": true
+    },
+    {
+      "id": "id11",
+      "information": true
+    },
+    {
+      "id": "id12",
+      "information": true
+    },
+    {
+      "id": "id13",
+      "information": true
+    },
+    {
+      "id": "id14",
+      "information": true
+    },
+    {
+      "id": "id15",
+      "information": true
+    },
+    {
+      "id": "id16",
+      "information": true
+    },
+    {
+      "id": "id17",
+      "information": true
+    },
+    {
+      "id": "id18",
+      "information": true
+    },
+    {
+      "id": "id19",
+      "information": true
+    },
+    {
+      "id": "id20",
+      "information": true
+    }
+  ],
+  "chat_rows": [
+    {
+      "id": "d01a",
+      "information": false
+    },
+    {
+      "id": "d01b",
+      "information": false
+    },
+    {
+      "id": "d02a",
+      "information": false
+    },
+    {
+      "id": "d02b",
+      "information": false
+    },
+    {
+      "id": "d03a",
+      "information": false
+    },
+    {
+      "id": "d03b",
+      "information": false
+    },
+    {
+      "id": "d04a",
+      "information": false
+    },
+    {
+      "id": "d04b",
+      "information": false
+    },
+    {
+      "id": "d05a",
+      "information": false
+    },
+    {
+      "id": "d05b",
+      "information": false
+    },
+    {
+      "id": "d06a",
+      "information": false
+    },
+    {
+      "id": "d06b",
+      "information": false
+    },
+    {
+      "id": "d07a",
+      "information": false
+    },
+    {
+      "id": "d07b",
+      "information": false
+    },
+    {
+      "id": "d08a",
+      "information": false
+    },
+    {
+      "id": "d08b",
+      "information": false
+    },
+    {
+      "id": "d09a",
+      "information": false
+    },
+    {
+      "id": "d09b",
+      "information": false
+    },
+    {
+      "id": "d10a",
+      "information": false
+    },
+    {
+      "id": "d10b",
+      "information": false
+    },
+    {
+      "id": "h01a",
+      "information": false
+    },
+    {
+      "id": "h01b",
+      "information": false
+    },
+    {
+      "id": "h02a",
+      "information": false
+    },
+    {
+      "id": "h02b",
+      "information": false
+    },
+    {
+      "id": "h03a",
+      "information": false
+    },
+    {
+      "id": "h03b",
+      "information": false
+    },
+    {
+      "id": "h04a",
+      "information": false
+    },
+    {
+      "id": "h04b",
+      "information": false
+    },
+    {
+      "id": "h05a",
+      "information": false
+    },
+    {
+      "id": "h05b",
+      "information": false
+    },
+    {
+      "id": "h06a",
+      "information": false
+    },
+    {
+      "id": "h06b",
+      "information": false
+    },
+    {
+      "id": "h07a",
+      "information": false
+    },
+    {
+      "id": "h07b",
+      "information": false
+    },
+    {
+      "id": "h08a",
+      "information": false
+    },
+    {
+      "id": "h08b",
+      "information": false
+    },
+    {
+      "id": "h09a",
+      "information": false
+    },
+    {
+      "id": "h09b",
+      "information": false
+    },
+    {
+      "id": "h10a",
+      "information": false
+    },
+    {
+      "id": "h10b",
+      "information": false
+    }
+  ],
+  "conversation_core_files_unchanged": {
+    "freqai/generative.py": true,
+    "freqai/semantics.py": true,
+    "freqai/features.py": true,
+    "freqai/generation_runtime.py": true,
+    "freqai/spectral_storage.py": true,
+    "memory/language/generative_categories.json": true
+  },
+  "reuse_scope": "Root authorized reuse of v2 exact40 chat outputs if chat routes and conversation core hashes unchanged. Metadata route flags are not a new quality benchmark."
+}

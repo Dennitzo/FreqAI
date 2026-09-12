@@ -1,0 +1,1745 @@
+{
+  "created_utc": "2026-09-06T10:54:34.857870+00:00",
+  "manifest": {
+    "code_root": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\results\\information_corpus\\evaluation\\trial_v1_code",
+    "code": {
+      "freqai\\__init__.py": "0e634154d3a7ed97b743819529122dcfe1d59ce6dca186c208d93ef872ee46e2",
+      "freqai\\__main__.py": "19f07de3d1765a6803d4332ab1e67346381236f7769f47640e73849922394790",
+      "freqai\\cli.py": "1baf06cf78fbb04b6b2a8d356630b8b4c3217d1ab09844ea98e5bd15902bc9c0",
+      "freqai\\codec.py": "1741858964d007a8baa1173cb559ac896d07bb4d8eb7d7be840c12c1a5acdc03",
+      "freqai\\dialogue.py": "21d1287fe86a396223870baa5b65dca15e7d03bbf9bf09cc23b3f8d4deb8f15d",
+      "freqai\\features.py": "c48eb11bff823f8329bdbf1509426f1928e19c213793145e30c1ef4abe234535",
+      "freqai\\generation_runtime.py": "ee3c40165c6bb479ab2fda122599c83ca2b16d33c1db8db482f20e7d27767aa9",
+      "freqai\\generative.py": "d6a475c270bba5ebbc838a37b250a2fdc2ec9aed2024f4b8a9331a2e3744d172",
+      "freqai\\information.py": "d11797477a21dcacd01640fe749ee643baea77df669d2a7e3a48fec2b213c29c",
+      "freqai\\information_runtime.py": "49cf012f34ca9c7aeca226f3b28ef81b18f982cf81bcfe0466cdd53e7d30a456",
+      "freqai\\memory.py": "0a7a174ecf4a7e0cfe8e8f30eb9c083d2977f5812dd6bad7ad02e52e94d003ce",
+      "freqai\\reasoning.py": "4819d011b22b1e8d4049172094e124abb43114e84ba059cff946bea1f0835a3a",
+      "freqai\\semantics.py": "51924df70352cc896015f17b3679da3e0ae0b34e0030a00b6f4d0ad44c7bca46",
+      "freqai\\server.py": "e3c7d6ab0ac180f75b3ac9916e4a83d552723dc2f416fb014267117fc5d257d6",
+      "freqai\\spectral_storage.py": "8c0dc33a1c7f91af889a5bcc06eb549837527e46989f96ca724e38c7a5bfaf0c",
+      "freqai\\store.py": "ced6af26368edd586a1e913449a900a173c632fe8ef71722f2429a020fe126f0",
+      "freqai\\synthesis.py": "6183f5403543c4f686a959f9c7d3a4afb636e7df7b03038ab6ca1e8c0a99caad",
+      "memory\\language\\generative_categories.json": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673"
+    },
+    "baseline_corpus_sha256": "0d8ea03f0943f4bce3479164f362a2ece2f78caad68a143c3ce156441ff82d64",
+    "protocol_sha256": "a5c475a1ba7296caf769f169863cf7a5b9be526e99648676d3605ad4f34d00ee",
+    "additional_corpus": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\results\\information_corpus\\evaluation\\corpora\\wikipedia_v1.jsonl",
+    "additional_corpus_sha256": "8473462b187b219f7270db292e0fdc95ee82245ad047efb21e69b4eb16c77497",
+    "additional_limit": null,
+    "engine": "information",
+    "information_only": true,
+    "document_count": 20000,
+    "runner_sha256": "d3b914b7ba6a40f73d5555c8632eef3b8fef79af7faf0a2b90ec1c535e832cf8",
+    "max_tokens": 64,
+    "seed": 17,
+    "time_s": 13.125
+  },
+  "label": "trial_v1",
+  "split": "development",
+  "build_s": 106.25369510000019,
+  "build_stages": {
+    "information_s": 106.25369510000019
+  },
+  "information_signature": {
+    "corpus_digest": "59e24c98ffca9826e6b07c1c50286f789ff29d904ae92d2f7dd694e95c1f5fe3",
+    "coefficient_sha256": "85094d4e6d922bf57ca1fc862fc35ffce522ec8f3685687f95dc58a8c73444e4",
+    "order": 2,
+    "coefficient_rule": "sqrt(count/sum(count))",
+    "storage": {
+      "record_count": 20000,
+      "statement_count": 54839,
+      "vocabulary_size": 122557,
+      "group_count": 71554,
+      "prefix_fields": 2974503,
+      "observed_edges": 4435079,
+      "unaddressed_statement_count": 1292,
+      "complex_coefficient_bytes": 70961264,
+      "support_index_bytes": 35480632,
+      "numerical_payload_bytes": 106441896,
+      "no_gradient_optimization": true,
+      "no_qa_pairs": true,
+      "excludes": "Python objects, token strings and temporary compilation counts"
+    }
+  },
+  "memory_after_build": {
+    "rss_mb": 2965.66796875,
+    "peak_rss_mb": 3175.890625,
+    "private_commit_mb": 4463.125,
+    "peak_private_commit_mb": 4664.734375
+  },
+  "memory_after_evaluation": {
+    "rss_mb": 2971.859375,
+    "peak_rss_mb": 3175.890625,
+    "private_commit_mb": 4467.41015625,
+    "peak_private_commit_mb": 4664.734375
+  },
+  "observed_prompt_overlap_with_existing_qa": [],
+  "summary": {
+    "information_cases": 20,
+    "known_chat_regression_cases": 0,
+    "empty_answers": 10,
+    "surface_form_ok": 10,
+    "new_complete_texts": 10,
+    "exact_source_passages": 10,
+    "median_generation_s": 0.005334299999958603,
+    "semantic_correctness": "pending independent AI-agent review; automatic form/overlap metrics are not quality"
+  },
+  "rows": [
+    {
+      "id": "id01",
+      "prompt": "Was ist eine Frequenz?",
+      "kind": "definition",
+      "status": "explicit user development example, not unseen",
+      "rubric": "Number of repetitions or oscillations per unit time; no unrelated definition.",
+      "concepts": [
+        [
+          "Frequenz"
+        ],
+        [
+          "Schwingungen",
+          "Wiederholungen",
+          "periodisch"
+        ],
+        [
+          "Zeit",
+          "Sekunde"
+        ]
+      ],
+      "answer": "Die Frequenz (von; auch Schwingungszahl genannt) ist in Physik und Technik ein Maß dafür, wie schnell bei einem periodischen Vorgang die Wiederholungen aufeinander Folgen, z.",
+      "tokens": [
+        "die",
+        "frequenz",
+        "(",
+        "von",
+        ";",
+        "auch",
+        "schwingungszahl",
+        "genannt",
+        ")",
+        "ist",
+        "in",
+        "physik",
+        "und",
+        "technik",
+        "ein",
+        "mass",
+        "dafür",
+        ",",
+        "wie",
+        "schnell",
+        "bei",
+        "einem",
+        "periodischen",
+        "vorgang",
+        "die",
+        "wiederholungen",
+        "aufeinander",
+        "folgen",
+        ",",
+        "z",
+        "."
+      ],
+      "elapsed_s": 0.04966430000058608,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 1,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": true,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 4,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-2142-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=2142 | Hertz (Einheit) | https://de.wikipedia.org/wiki/Hertz%20%28Einheit%29",
+            "title": "Hertz (Einheit)",
+            "text": "Hertz (Einheit)\n\nDas Hertz (Einheitenzeichen: Hz) ist die SI-Einheit der Frequenz. Sie gibt die Anzahl sich wiederholender Vorgänge pro Sekunde in einem periodischen Signal an. Die Einheit wurde 1930 nach dem deutschen Physiker Heinrich Hertz benannt."
+          },
+          {
+            "id": "wikipedia-de-20231101-23172-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=23172 | Diskrete Fourier-Transformation | https://de.wikipedia.org/wiki/Diskrete%20Fourier-Transformation",
+            "title": "Diskrete Fourier-Transformation",
+            "text": "Diskrete Fourier-Transformation\n\nDie Diskrete Fourier-Transformation (DFT) ist eine Transformation aus dem Bereich der Fourier-Analysis.\nSie bildet ein zeitdiskretes endliches Signal, das periodisch fortgesetzt wird, auf ein diskretes, periodisches Frequenzspektrum ab, das auch als Bildbereich bezeichnet wird. Die DFT besitzt in der digitalen Signalverarbeitung zur Signalanalyse große Bedeutung. Hier werden optimierte Varianten in Form der schnellen Fourier-Transformation (, FFT) und ihrer Inversen angewandt."
+          },
+          {
+            "id": "wikipedia-de-20231101-33418-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=33418 | Resonanz | https://de.wikipedia.org/wiki/Resonanz",
+            "title": "Resonanz",
+            "text": "Resonanz\n\nResonanz (von „widerhallen“) ist in Physik und Technik das verstärkte Mitschwingen eines schwingfähigen Systems, wenn es einer zeitlich veränderlichen Einwirkung unterliegt. Dabei kann das System um ein Vielfaches stärker ausschlagen als beim konstanten Einwirken der Anregung mit ihrer maximalen Stärke. Bei periodischer Anregung muss die Anregungsfrequenz oder ein ganzzahliges Vielfaches davon in der Nähe einer Resonanzfrequenz des Systems liegen. Das Phänomen kann bei allen schwingfähigen physikalischen und technischen Systemen auftreten und kommt auch im Alltag häufig vor. Resonanzen werden in der Technik oft ausgenutzt, um eine bestimmte Frequenz herauszufiltern oder zu verstärken. Wo eine Verstärkung nicht gewünscht ist, müssen unerwünschte Resonanzen jedoch vermieden werden."
+          },
+          {
+            "id": "wikipedia-de-20231101-223309-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=223309 | Erzwungene Schwingung | https://de.wikipedia.org/wiki/Erzwungene%20Schwingung",
+            "title": "Erzwungene Schwingung",
+            "text": "Erzwungene Schwingung\n\nDie erzwungene Schwingung ist die Bewegung, die ein schwingungsfähiges System (Oszillator) während einer zeitabhängigen äußeren Anregung ausführt. Ist die Anregung periodisch, geht die erzwungene Schwingung nach einem Einschwingvorgang allmählich in die stationäre erzwungene Schwingung über. Bei der stationären erzwungenen Schwingung vollführt der Oszillator eine periodische Schwingung, deren Frequenz, unabhängig von seiner Eigenfrequenz, nur durch die äußere Anregung gegeben ist. Dabei schwingt der Oszillator mit einer zeitlich konstanten Amplitude, die besonders große Werte hat, wenn der Oszillator nur schwach gedämpft ist und die Anregungsfrequenz in der Nähe seiner Eigenfrequenz liegt (siehe Resonanz)."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": true,
+          "subjects": [
+            "frequenz"
+          ],
+          "facets": [
+            "definition"
+          ],
+          "groups_by_facet": {
+            "definition": [
+              23285,
+              23286
+            ]
+          },
+          "used_context": false,
+          "reason": ""
+        },
+        "reason": "",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id02",
+      "prompt": "Mit welcher Einheit gibt man die Frequenz an?",
+      "kind": "unit",
+      "rubric": "Hertz, Hz, equivalently inverse second; must associate unit with frequency.",
+      "concepts": [
+        [
+          "Frequenz"
+        ],
+        [
+          "Hertz",
+          "Hz"
+        ]
+      ],
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.00020869999934802763,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 7,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-2142-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=2142 | Hertz (Einheit) | https://de.wikipedia.org/wiki/Hertz%20%28Einheit%29",
+            "title": "Hertz (Einheit)",
+            "text": "Hertz (Einheit)\n\nDas Hertz (Einheitenzeichen: Hz) ist die SI-Einheit der Frequenz. Sie gibt die Anzahl sich wiederholender Vorgänge pro Sekunde in einem periodischen Signal an. Die Einheit wurde 1930 nach dem deutschen Physiker Heinrich Hertz benannt."
+          },
+          {
+            "id": "wikipedia-de-20231101-14568-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=14568 | Wärmerauschen | https://de.wikipedia.org/wiki/W%C3%A4rmerauschen",
+            "title": "Wärmerauschen",
+            "text": "Wärmerauschen\n\nWärmerauschen, thermisches Rauschen, Widerstandsrauschen, Nyquist-Rauschen, Johnson-Rauschen oder Johnson-Nyquist-Rauschen genannt, ist ein weitgehend weißes Rauschen, das aus der thermischen Bewegung der Ladungsträger in elektrischen Schaltungen hervorgeht. Das Frequenzspektrum des Widerstandsrauschens wurde von John Bertrand Johnson experimentell erforscht und gleichzeitig von Harry Theodor Nyquist theoretisch begründet."
+          },
+          {
+            "id": "wikipedia-de-20231101-31525-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=31525 | Ultrakurzwelle | https://de.wikipedia.org/wiki/Ultrakurzwelle",
+            "title": "Ultrakurzwelle",
+            "text": "Ultrakurzwelle\n\nAls Ultrakurzwellen (UKW) bezeichnet man elektromagnetische Wellen in einem Frequenzbereich von 30 MHz bis 300 MHz, entsprechend Wellenlängen zwischen zehn Metern und einem Meter. Sie liegen somit zwischen den Kurzwellen (die länger sind als Ultrakurzwellen) und den Dezimeterwellen (die kürzer sind)."
+          },
+          {
+            "id": "wikipedia-de-20231101-233711-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=233711 | Niederfrequenz | https://de.wikipedia.org/wiki/Niederfrequenz",
+            "title": "Niederfrequenz",
+            "text": "Niederfrequenz\n\nNiederfrequenz (NF) (engl. audio frequency, AF, und low frequency) ist eine technische Bezeichnung für periodische Vorgänge (wie z. B. Schwingungen oder Wellen) mit einer Frequenz zwischen 3 Hz und 30 kHz. Für bestimmte Schwingungsarten ist Niederfrequenz enger oder weiter definiert."
+          },
+          {
+            "id": "wikipedia-de-20231101-258086-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=258086 | Audio Frequency Shift Keying | https://de.wikipedia.org/wiki/Audio%20Frequency%20Shift%20Keying",
+            "title": "Audio Frequency Shift Keying",
+            "text": "Audio Frequency Shift Keying\n\nAudio Frequency Shift Keying (AFSK) ist eine digitale Modulationsart, welche auf der Frequenzumtastung (FSK) basiert und als Besonderheit als modulierendes Signal Frequenzen im Niederfrequenzbereich (NF, 16 Hz bis 20 kHz) verwendet. Im Deutschen wird das Verfahren auch Niederfrequenzumtastung bzw. Niederfrequenz-Frequenzumtastung genannt."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": false,
+          "subjects": [
+            "einheit",
+            "frequenz"
+          ],
+          "facets": [
+            "unit"
+          ],
+          "groups_by_facet": {
+            "unit": []
+          },
+          "used_context": false,
+          "reason": "no_supported_information_binding"
+        },
+        "reason": "no_supported_information_binding",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id03",
+      "prompt": "Wie hängen Periodendauer und Frequenz zusammen?",
+      "kind": "relation",
+      "rubric": "Reciprocal relation f=1/T or equivalent; doubling one halves the other.",
+      "concepts": [
+        [
+          "Periodendauer",
+          "Schwingungsdauer"
+        ],
+        [
+          "Frequenz"
+        ],
+        [
+          "Kehrwert",
+          "reziprok",
+          "1/T",
+          "1 / T"
+        ]
+      ],
+      "answer": "Die Frequenz ist der Kehrwert der Periodendauer.",
+      "tokens": [
+        "die",
+        "frequenz",
+        "ist",
+        "der",
+        "kehrwert",
+        "der",
+        "periodendauer",
+        "."
+      ],
+      "elapsed_s": 0.01169070000105421,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": true,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-1706-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=1706 | Frequenz | https://de.wikipedia.org/wiki/Frequenz",
+            "title": "Frequenz",
+            "text": "Frequenz\n\nDie Frequenz (von ; auch Schwingungszahl genannt) ist in Physik und Technik ein Maß dafür, wie schnell bei einem periodischen Vorgang die Wiederholungen aufeinander folgen, z. B. bei einer fortdauernden Schwingung. Die Frequenz ist der Kehrwert der Periodendauer."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": true,
+          "subjects": [
+            "frequenz"
+          ],
+          "facets": [
+            "relation"
+          ],
+          "groups_by_facet": {
+            "relation": [
+              23288
+            ]
+          },
+          "used_context": false,
+          "reason": ""
+        },
+        "reason": "",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id04",
+      "prompt": "Bedeutet eine größere Amplitude automatisch eine höhere Frequenz?",
+      "kind": "negation",
+      "rubric": "No; amplitude describes displacement/strength while frequency describes repetitions per time.",
+      "concepts": [
+        [
+          "Amplitude"
+        ],
+        [
+          "Frequenz"
+        ],
+        [
+          "Auslenkung",
+          "Schwingung"
+        ]
+      ],
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.00016450000111944973,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 5,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-61878-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=61878 | Stehende Welle | https://de.wikipedia.org/wiki/Stehende%20Welle",
+            "title": "Stehende Welle",
+            "text": "Stehende Welle\n\nEine stehende Welle, auch Stehwelle, ist eine Welle, bei der die Orte maximaler Auslenkung und die Orte ohne jede Auslenkung stillstehen. Eine stehende Welle erscheint daher eher wie eine Schwingung, kann aber ebenso als Überlagerung zweier gegenläufig fortschreitender Wellen gleicher Frequenz und gleicher Amplitude aufgefasst werden. Die gegenläufigen Wellen können aus zwei verschiedenen Erregern stammen oder durch Reflexion einer fortschreitenden Welle an einem Hindernis entstehen."
+          },
+          {
+            "id": "wikipedia-de-20231101-77685-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=77685 | Resonanzfrequenz | https://de.wikipedia.org/wiki/Resonanzfrequenz",
+            "title": "Resonanzfrequenz",
+            "text": "Resonanzfrequenz\n\nDie Resonanzfrequenz ist die Frequenz, bei der die Amplitude einer erzwungenen Schwingung maximal wird (siehe Amplitudenresonanz). Hat ein System mehrere Eigenfrequenzen, so hat es mehrere Resonanzfrequenzen, d. h. (lokale) Maxima der erzwungenen Amplitude."
+          },
+          {
+            "id": "wikipedia-de-20231101-200644-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=200644 | Resonanzkatastrophe | https://de.wikipedia.org/wiki/Resonanzkatastrophe",
+            "title": "Resonanzkatastrophe",
+            "text": "Resonanzkatastrophe\n\nDie Resonanzkatastrophe bezeichnet in der Mechanik und Konstruktion die Zerstörung eines Bauwerks oder einer technischen Einrichtung durch übermäßige Schwingungsamplituden im Resonanzfall. Bei einer periodisch wiederkehrenden Anregung, deren Frequenz mit einer Resonanzfrequenz übereinstimmt, wird immer mehr Energie auf das System übertragen und dort gespeichert (konstruktive Interferenz). Die Schwingungsenergie wird durch stets vorhandene Dämpfungseffekte teilweise aus dem System abgeführt. Falls der Energieeintrag die Verlustleistung überschreitet, wird die Schwingungsamplitude immer größer, bis die Belastungsgrenze überschritten ist."
+          },
+          {
+            "id": "wikipedia-de-20231101-223309-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=223309 | Erzwungene Schwingung | https://de.wikipedia.org/wiki/Erzwungene%20Schwingung",
+            "title": "Erzwungene Schwingung",
+            "text": "Erzwungene Schwingung\n\nDie erzwungene Schwingung ist die Bewegung, die ein schwingungsfähiges System (Oszillator) während einer zeitabhängigen äußeren Anregung ausführt. Ist die Anregung periodisch, geht die erzwungene Schwingung nach einem Einschwingvorgang allmählich in die stationäre erzwungene Schwingung über. Bei der stationären erzwungenen Schwingung vollführt der Oszillator eine periodische Schwingung, deren Frequenz, unabhängig von seiner Eigenfrequenz, nur durch die äußere Anregung gegeben ist. Dabei schwingt der Oszillator mit einer zeitlich konstanten Amplitude, die besonders große Werte hat, wenn der Oszillator nur schwach gedämpft ist und die Anregungsfrequenz in der Nähe seiner Eigenfrequenz liegt (siehe Resonanz)."
+          },
+          {
+            "id": "wikipedia-de-20231101-10946278-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=10946278 | Physikalische Akustik | https://de.wikipedia.org/wiki/Physikalische%20Akustik",
+            "title": "Physikalische Akustik",
+            "text": "Physikalische Akustik\n\nPhysikalische Akustik behandelt die physikalischen Grundlagen der Akustik, die auf Schwingungen beruhen.\n\nDie physikalische Akustik handelt von den longitudinalen Wellen, den Schallwellen, die vom Ohr wahrgenommen werden. Das Ohr als Schallempfänger reagiert auf Schallwellen mit Frequenzen zwischen 20 Hz und 20 000 Hz, Schallwellen höherer Frequenz rechnet man dem Ultraschall zu. Schallwellen stellen eine sich ausbreitende Folge von Luftverdichtungen und -verdünnungen dar. Die einzelnen Luftteilchen schwingen dabei nur jeweils innerhalb kleiner Bereiche. Eine Schallwelle transportiert keine Materie. Bei Schallschwingungen unterscheidet man zwischen Ton, Klang, Geräusch und Knall, wobei sich ein reiner Ton mit einer Sinuskurve darstellen lässt. Beim Knall hat die Schwingung eine große, schnell abklingende Amplitude."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": false,
+          "subjects": [
+            "amplitud",
+            "frequenz"
+          ],
+          "facets": [
+            "definition"
+          ],
+          "groups_by_facet": {
+            "definition": []
+          },
+          "used_context": false,
+          "reason": "no_supported_information_binding"
+        },
+        "reason": "no_supported_information_binding",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id05",
+      "prompt": "Kann sich Schall im leeren Vakuum ausbreiten?",
+      "kind": "negation",
+      "rubric": "No, sound needs a material medium; do not confuse electromagnetic waves.",
+      "concepts": [
+        [
+          "Schall"
+        ],
+        [
+          "Vakuum",
+          "Medium",
+          "Materie"
+        ]
+      ],
+      "answer": "Schall (von althochdeutsch: scal) bezeichnet allgemein mechanische Schwingungen in einem elastischen Medium (Gas, Flüssigkeit, Festkörper).",
+      "tokens": [
+        "schall",
+        "(",
+        "von",
+        "althochdeutsch",
+        ":",
+        "scal",
+        ")",
+        "bezeichnet",
+        "allgemein",
+        "mechanische",
+        "schwingungen",
+        "in",
+        "einem",
+        "elastischen",
+        "medium",
+        "(",
+        "gas",
+        ",",
+        "flüssigkeit",
+        ",",
+        "festkörper",
+        ")",
+        "."
+      ],
+      "elapsed_s": 0.0650759999989532,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 1,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": true,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 6,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-5682-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=5682 | Welle | https://de.wikipedia.org/wiki/Welle",
+            "title": "Welle",
+            "text": "Welle\n\nEine Welle ist eine sich räumlich ausbreitende periodische (Schwingung) oder einmalige (Störung) Veränderung des Gleichgewichtszustands eines Systems bezüglich mindestens einer orts- und zeitabhängigen physikalischen Größe.\nUnterschieden werden mechanische Wellen, die stets an ein Medium gebunden sind, und Wellen, die sich auch im Vakuum ausbreiten können (beispielsweise elektromagnetische Wellen, Materiewellen oder Gravitationswellen). In Medien wird die Ausbreitung einer örtlichen Störung durch die Kopplung benachbarter Oszillatoren (schwingfähige physikalische Größen) vermittelt. Eine Welle transportiert Energie, jedoch keine Materie, d. h. die benachbarten Oszillatoren transportieren die Störung durch den Raum, ohne sich selbst im zeitlichen Mittel fortzubewegen. Direkt wahrnehmbare Wellen sind zum Beispiel Schallwellen, Wasserwellen und Licht."
+          },
+          {
+            "id": "wikipedia-de-20231101-9344-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=9344 | Schall | https://de.wikipedia.org/wiki/Schall",
+            "title": "Schall",
+            "text": "Schall\n\nSchall (von Althochdeutsch: scal) bezeichnet allgemein mechanische Schwingungen in einem elastischen Medium (Gas, Flüssigkeit, Festkörper). Diese Schwingungen rufen Druck- und Dichteschwankungen hervor, die sich in dem Medium ausbreiten und so die Schallwellen bilden."
+          },
+          {
+            "id": "wikipedia-de-20231101-13919-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=13919 | Interferenz (Physik) | https://de.wikipedia.org/wiki/Interferenz%20%28Physik%29",
+            "title": "Interferenz (Physik)",
+            "text": "Interferenz (Physik)\n\nInterferenz (lat. ‚zwischen‘ und über altfrz. ‚sich gegenseitig schlagen‘) beschreibt die Änderung der Amplitude bei der Überlagerung von zwei oder mehr Wellen nach dem Superpositionsprinzip – also die vorzeichenrichtige Addition ihrer Auslenkungen (nicht der Intensitäten) während ihrer Durchdringung. Interferenz tritt bei allen Arten von Wellen auf, also bei Schall-, Licht-, Materiewellen usw."
+          },
+          {
+            "id": "wikipedia-de-20231101-17540-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=17540 | Datenträger | https://de.wikipedia.org/wiki/Datentr%C3%A4ger",
+            "title": "Datenträger",
+            "text": "Datenträger\n\nDer Datenträger ( oder data storage) ist ein transportables Medium zur Speicherung von Daten oder Informationen.\n\nAllgemeines \nDer Begriff des Datenträgers entstand erst im Zeitalter der Informationstechnologie, deren Aufgabe auch darin bestand, digitale Daten zu erfassen, zu speichern und wiederzugeben. Es gab jedoch bereits zuvor (analoge) Datenträger wie die Schallplatte oder das Tonband, doch wurden sie früher nicht Datenträger genannt, weil es diesen Begriff noch nicht gab. In der Retrospektive werden sie aus heutiger Sicht allgemein als Datenträger bezeichnet, zumal sie alle Begriffsmerkmale erfüllen."
+          },
+          {
+            "id": "wikipedia-de-20231101-360825-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=360825 | Nahfeld und Fernfeld (Akustik) | https://de.wikipedia.org/wiki/Nahfeld%20und%20Fernfeld%20%28Akustik%29",
+            "title": "Nahfeld und Fernfeld (Akustik)",
+            "text": "Nahfeld und Fernfeld (Akustik)\n\nBei der Ausbreitung einer Schallwelle werden mit dem Nahfeld und dem Fernfeld zwei Entfernungsbereiche von der Schallquelle mit sehr unterschiedlichen physikalischen Eigenschaften unterschieden.:\n Das Nahfeld bezeichnet den unmittelbaren Bereich um die Schallquelle, der von einem ungleichmäßigen Wechsel zwischen Orten mit konstruktiver und destruktiver Interferenz gekennzeichnet ist.\n Im Gegensatz dazu bezeichnet das Fernfeld einen Bereich, der weit von der Schallquelle entfernt ist. Interferenzeffekte spielen hier nur eine untergeordnete Rolle für die Struktur des Schallfeldes. Insbesondere sind in fluiden Medien im Fernfeld Druck und Schnelle in Phase, so dass im Fluid eine reellwertige Wellenimpedanz definiert werden kann.\nZur Unterscheidung zwischen Nah- und Fernfeld wird allein der von der Schallquelle erzeugte Direktschall betrachtet, d. h. die Abstrahleigenschaften der Quelle und die Eigenschaften des Ausbreitungsmediums. Reflexionen an Gegenständen im Raum, wie z. B. das von den Wänden erzeugte Diffusfeld oder stehende Wellen, gehen nicht in die Betrachtung ein."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": true,
+          "subjects": [
+            "schall"
+          ],
+          "facets": [
+            "about"
+          ],
+          "groups_by_facet": {
+            "about": [
+              57061,
+              57062
+            ]
+          },
+          "used_context": false,
+          "reason": ""
+        },
+        "reason": "",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id06",
+      "prompt": "Braucht Licht zur Ausbreitung Luft?",
+      "kind": "negation",
+      "rubric": "No, electromagnetic light propagates in vacuum; air is unnecessary.",
+      "concepts": [
+        [
+          "Licht",
+          "elektromagnetisch"
+        ],
+        [
+          "Vakuum"
+        ]
+      ],
+      "answer": "Licht ist eine Form der elektromagnetischen Strahlung.",
+      "tokens": [
+        "licht",
+        "ist",
+        "eine",
+        "form",
+        "der",
+        "elektromagnetischen",
+        "strahlung",
+        "."
+      ],
+      "elapsed_s": 0.011049599997932091,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 1,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": true,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-2941-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=2941 | Lichtjahr | https://de.wikipedia.org/wiki/Lichtjahr",
+            "title": "Lichtjahr",
+            "text": "Lichtjahr\n\nDas Lichtjahr ist ein Längenmaß, das in der Astronomie zur Angabe großer Entfernungen üblich ist. Es ist definiert als die Strecke, die das Licht im Vakuum während eines julianischen Jahres (365,25 Tage) zurücklegt. Das sind 9,46 Billionen Kilometer (). Da die Bezeichnung das Wort „Jahr“ enthält, wird das Lichtjahr manchmal fälschlicherweise als Zeiteinheit interpretiert."
+          },
+          {
+            "id": "wikipedia-de-20231101-5682-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=5682 | Welle | https://de.wikipedia.org/wiki/Welle",
+            "title": "Welle",
+            "text": "Welle\n\nEine Welle ist eine sich räumlich ausbreitende periodische (Schwingung) oder einmalige (Störung) Veränderung des Gleichgewichtszustands eines Systems bezüglich mindestens einer orts- und zeitabhängigen physikalischen Größe.\nUnterschieden werden mechanische Wellen, die stets an ein Medium gebunden sind, und Wellen, die sich auch im Vakuum ausbreiten können (beispielsweise elektromagnetische Wellen, Materiewellen oder Gravitationswellen). In Medien wird die Ausbreitung einer örtlichen Störung durch die Kopplung benachbarter Oszillatoren (schwingfähige physikalische Größen) vermittelt. Eine Welle transportiert Energie, jedoch keine Materie, d. h. die benachbarten Oszillatoren transportieren die Störung durch den Raum, ohne sich selbst im zeitlichen Mittel fortzubewegen. Direkt wahrnehmbare Wellen sind zum Beispiel Schallwellen, Wasserwellen und Licht."
+          },
+          {
+            "id": "wikipedia-de-20231101-383010-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=383010 | Rockoon | https://de.wikipedia.org/wiki/Rockoon",
+            "title": "Rockoon",
+            "text": "Rockoon\n\nEin Rockoon ( aus Rocket und Balloon) besteht aus einer von einem gasgefüllten Ballon in die Hochatmosphäre getragenen Rakete, die mit Feststoffantrieb oder Hybridantrieb ausgerüstet sein kann. Diese wird, wenn der Ballon nach ca. einer Stunde seine Maximalhöhe erreicht hat, gezündet und durchdringt beim Start den Trägerballon. Da die Rakete sich nicht durch die dichten Luftschichten bewegen muss, kann sie bei Einsatz auf einem Rockoon eine größere Höhe erreichen als bei einem Start vom Boden. Der geringere Luftwiderstand ermöglicht Bauformen der Rakete, die Material und Masse einsparen, zum Beispiel geringere Länge und größeren Durchmesser. In 36 km Höhe beträgt der Luftdruck nur rund 1 % des Luftdrucks am Boden. Deshalb kann die Querschnittsfläche der Expansionsdüse bis zu 100-mal größer sein (10-facher Durchmesser der Austrittsöffnung) als in 0 m Höhe, was einen höheren Wirkungsgrad des Triebwerks ermöglicht und nahe an den Vakuumschub herankommt. Zudem werden die aerodynamischen Lasten auf die Rakete deutlich reduziert. Motivation für heutige Rockoon-Entwicklungen ist die Senkung der Startkosten."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": true,
+          "subjects": [
+            "licht"
+          ],
+          "facets": [
+            "about"
+          ],
+          "groups_by_facet": {
+            "about": [
+              40567
+            ]
+          },
+          "used_context": false,
+          "reason": ""
+        },
+        "reason": "",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id07",
+      "prompt": "Was versteht man unter Gravitation?",
+      "kind": "definition",
+      "rubric": "Attractive interaction associated with masses; not magnetism or friction.",
+      "concepts": [
+        [
+          "Gravitation",
+          "Schwerkraft"
+        ],
+        [
+          "Masse",
+          "Massen"
+        ],
+        [
+          "Anziehung",
+          "anziehen",
+          "anziehende"
+        ]
+      ],
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.00011399999857530929,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 0,
+        "candidates": [],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": false,
+          "subjects": [],
+          "facets": [
+            "definition"
+          ],
+          "groups_by_facet": {},
+          "used_context": false,
+          "reason": "no_supported_information_binding"
+        },
+        "reason": "no_supported_information_binding",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id08",
+      "prompt": "Welche SI-Einheit hat die Masse?",
+      "kind": "unit",
+      "rubric": "Kilogram, kg; not Newton or weight force.",
+      "concepts": [
+        [
+          "Masse"
+        ],
+        [
+          "Kilogramm",
+          "kg"
+        ]
+      ],
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.0001368000012007542,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 4,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-91823-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=91823 | Reiserad | https://de.wikipedia.org/wiki/Reiserad",
+            "title": "Reiserad",
+            "text": "Reiserad\n\nDas Reiserad (französisch Randonneur, englisch touring bicycle) ist ein speziell für die Bedürfnisse von Radreisenden konzipiertes Fahrrad, das auch mit 50 bis 75  kg Gepäck noch sicher gefahren und gebremst werden kann. Die zulässige Gesamtmasse beträgt 150  kg oder mehr. Bei traditionellen Reiserädern beträgt die Eigenmasse 16 bis 19 kg, modernere Modelle sind jedoch auch leichter. Mit dem Trend zum Bikepacking ab 2015 werden für kürzere Reisen auch modifizierte Gravelbikes und Cyclocrossräder eingesetzt."
+          },
+          {
+            "id": "wikipedia-de-20231101-349090-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=349090 | Chassigny (Meteorit) | https://de.wikipedia.org/wiki/Chassigny%20%28Meteorit%29",
+            "title": "Chassigny (Meteorit)",
+            "text": "Chassigny (Meteorit)\n\nChassigny ist der erste als Marsmeteorit identifizierte Meteorit.\n\nEr fiel am 3. Oktober 1815 in der Ortschaft Chassigny (Département Haute-Marne) im Nordosten von Frankreich auf die Erde, aber erst in den 1980er Jahren wurde festgestellt, dass es sich bei dem geborgenen Material des Meteoriten um ein Stück Marsgestein handelt. Von der geschätzten ursprünglichen Masse des Meteoriten von 4 kg konnten nur 570 Gramm geborgen und der Wissenschaft erhalten werden."
+          },
+          {
+            "id": "wikipedia-de-20231101-8943514-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=8943514 | Satz von Ulam | https://de.wikipedia.org/wiki/Satz%20von%20Ulam",
+            "title": "Satz von Ulam",
+            "text": "Satz von Ulam\n\nDer Satz von Ulam ist ein mathematischer Lehrsatz auf dem Teilgebiet der Maßtheorie, der auf den Mathematiker Stanisław Marcin Ulam zurückgeht. Der Satz behandelt spezielle Eigenschaften von Borelmaßen auf polnischen Räumen."
+          },
+          {
+            "id": "wikipedia-de-20231101-10641893-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=10641893 | Klaus Kirsten | https://de.wikipedia.org/wiki/Klaus%20Kirsten",
+            "title": "Klaus Kirsten",
+            "text": "Klaus Kirsten\n\nKlaus Kirsten (* 1929; † 1999) war ein Architekt in Berlin und Partner im Architekturbüro Kirsten & Nather.\n\nLeben \nVon 1948 bis 1955, unterbrochen von Studienaufenthalten in Italien und zwei Semestern in Stuttgart, studierte der Sohn eines Professors der Zahnmedizin bei Hans Scharoun, Willy Kremer und Herta Hammerbacher Architektur an der TU Berlin. Mit dem Architekten Heinz Nather, der zeitgleich in Berlin studiert hatte, leitete er von 1957 bis zu seinem Tod 1999 das Architekturbüro Kirsten & Nather in Berlin, das zu den herausragenden Büros im Berlin der 1950er und 1960er Jahre zählte. Jeder ihrer Bauten, egal ob es sich um ein Fabrikgebäude oder ein Wohnhaus handelt, zeichnet sich durch einen gleichermaßen eigenwilligen wie souveränen Umgang mit Formen und Materialien aus. Geprägt von der avantgardistischen Baukunst in Italien und den Vereinigten Staaten, errichtete das Büro vor allem in den 1950er und 1960er Jahren unkonventionelle, offene Bauwerke in freien Formen, meist im privaten Auftrag."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": false,
+          "subjects": [],
+          "facets": [
+            "unit"
+          ],
+          "groups_by_facet": {},
+          "used_context": false,
+          "reason": "no_supported_information_binding"
+        },
+        "reason": "no_supported_information_binding",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id09",
+      "prompt": "In welcher Einheit misst man elektrische Spannung?",
+      "kind": "unit",
+      "rubric": "Volt, V, associated with electrical potential difference.",
+      "concepts": [
+        [
+          "Spannung"
+        ],
+        [
+          "Volt"
+        ]
+      ],
+      "answer": "Sie wird im internationalen Einheitensystem in der Einheit Volt (Einheitenzeichen: v) angegeben.",
+      "tokens": [
+        "sie",
+        "wird",
+        "im",
+        "internationalen",
+        "einheitensystem",
+        "in",
+        "der",
+        "einheit",
+        "volt",
+        "(",
+        "einheitenzeichen",
+        ":",
+        "v",
+        ")",
+        "angegeben",
+        "."
+      ],
+      "elapsed_s": 0.021139799999218667,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": true,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-11629-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=11629 | Elektrische Spannung | https://de.wikipedia.org/wiki/Elektrische%20Spannung",
+            "title": "Elektrische Spannung",
+            "text": "Elektrische Spannung\n\nDie elektrische Spannung (oft auch vereinfacht nur als Spannung bezeichnet) ist eine grundlegende physikalische Größe der Elektrotechnik und Elektrodynamik. Ihr Formelzeichen ist das (von lateinisch urgere: drängen, drücken). Sie wird im internationalen Einheitensystem in der Einheit Volt (Einheitenzeichen: V) angegeben. Zur Kennzeichnung einer Zeitabhängigkeit verwendet man den Kleinbuchstaben für den Augenblickswert der Spannung. Im Angelsächsischen wird das Formelzeichen verwendet."
+          },
+          {
+            "id": "wikipedia-de-20231101-67034-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=67034 | Spannungsmessgerät | https://de.wikipedia.org/wiki/Spannungsmessger%C3%A4t",
+            "title": "Spannungsmessgerät",
+            "text": "Spannungsmessgerät\n\nEin Spannungsmessgerät (auch als Spannungsmesser oder umgangssprachlich als Voltmeter bezeichnet) dient zur Messung elektrischer Spannungen."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": true,
+          "subjects": [
+            "einheit",
+            "elektrisch spannung"
+          ],
+          "facets": [
+            "unit"
+          ],
+          "groups_by_facet": {
+            "unit": [
+              19399
+            ]
+          },
+          "used_context": false,
+          "reason": ""
+        },
+        "reason": "",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id10",
+      "prompt": "Wofür steht die Einheit Ampere?",
+      "kind": "unit_reverse",
+      "rubric": "Electric current/current strength; do not answer voltage.",
+      "concepts": [
+        [
+          "Ampere"
+        ],
+        [
+          "Stromstärke",
+          "elektrischen Strom"
+        ]
+      ],
+      "answer": "Die Einheit ist in der Bundesrepublik Deutschland seit 1.",
+      "tokens": [
+        "die",
+        "einheit",
+        "ist",
+        "in",
+        "der",
+        "bundesrepublik",
+        "deutschland",
+        "seit",
+        "1",
+        "."
+      ],
+      "elapsed_s": 0.010459900000569178,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": true,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 0,
+        "candidates": [],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": true,
+          "subjects": [
+            "einheit"
+          ],
+          "facets": [
+            "unit"
+          ],
+          "groups_by_facet": {
+            "unit": [
+              18882
+            ]
+          },
+          "used_context": false,
+          "reason": ""
+        },
+        "reason": "",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id11",
+      "prompt": "Was wird in Ohm gemessen?",
+      "kind": "unit_reverse",
+      "rubric": "Electrical resistance, not current or voltage.",
+      "concepts": [
+        [
+          "Ohm"
+        ],
+        [
+          "Widerstand"
+        ]
+      ],
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.00014910000027157366,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-172463-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=172463 | Analogmultimeter | https://de.wikipedia.org/wiki/Analogmultimeter",
+            "title": "Analogmultimeter",
+            "text": "Analogmultimeter\n\nEin Analogmultimeter, auch Analog-Vielfach-Messgerät, ist ein Multimeter mit einem Zeigermessgerät. Multimeter dienen zum Messen verschiedener elektrischer Messgrößen wie elektrische Stromstärke, elektrische Spannung und ohmscher Widerstand. Weitere Messgrößen sind teilweise die elektrische Kapazität oder die Induktivität eines Bauteils. Viele Multimeter bieten außerdem eine Funktion zum Testen von Transistoren oder Dioden. Mit Hilfe eines externen Sensors können manche Geräte die Temperatur messen. Pro Messgröße gibt es üblicherweise mehrere Messbereiche. Analogmultimeter können häufig passiv messen, während Digitalmultimeter immer eine Energieversorgung (z. B. Batterie) benötigen."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": false,
+          "subjects": [
+            "gemess",
+            "ohm"
+          ],
+          "facets": [
+            "unit"
+          ],
+          "groups_by_facet": {
+            "unit": []
+          },
+          "used_context": false,
+          "reason": "no_supported_information_binding"
+        },
+        "reason": "no_supported_information_binding",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id12",
+      "prompt": "Welche Größe misst man in Watt?",
+      "kind": "unit_reverse",
+      "rubric": "Power, energy transferred per time; not energy itself.",
+      "concepts": [
+        [
+          "Watt"
+        ],
+        [
+          "Leistung"
+        ]
+      ],
+      "answer": "Der große Wacholder-Blütenspanner (Eupithecia intricata) (Synonym: Eupithecia helveticaria) ist ein Schmetterling (Nachtfalter) aus der Familie der Spanner (Geometridae).",
+      "tokens": [
+        "der",
+        "grosse",
+        "wacholder-blütenspanner",
+        "(",
+        "eupithecia",
+        "intricata",
+        ")",
+        "(",
+        "synonym",
+        ":",
+        "eupithecia",
+        "helveticaria",
+        ")",
+        "ist",
+        "ein",
+        "schmetterling",
+        "(",
+        "nachtfalter",
+        ")",
+        "aus",
+        "der",
+        "familie",
+        "der",
+        "spanner",
+        "(",
+        "geometridae",
+        ")",
+        "."
+      ],
+      "elapsed_s": 0.044790500000090105,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 1,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": true,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-217775-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=217775 | Lichtausbeute | https://de.wikipedia.org/wiki/Lichtausbeute",
+            "title": "Lichtausbeute",
+            "text": "Lichtausbeute\n\nDie Lichtausbeute einer Lampe ist der Quotient aus dem von der Lampe abgegebenen Lichtstrom und der von ihr aufgenommenen Leistung . Ihre SI-Einheit ist Lumen durch Watt (lm/W)."
+          },
+          {
+            "id": "wikipedia-de-20231101-8893779-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=8893779 | Soldano SLO-100 | https://de.wikipedia.org/wiki/Soldano%20SLO-100",
+            "title": "Soldano SLO-100",
+            "text": "Soldano SLO-100\n\nDer Soldano SLO-100 ist ein US-amerikanischer Gitarrenverstärker des Elektrotechnikunternehmens Soldano Custom Amplification und gilt als eines der berühmtesten E-Gitarren-Verstärker der Welt. Der Modellname SLO ist eine Abkürzung für Super Lead Overdrive. 100 ist die Leistung des Verstärkers in Watt."
+          },
+          {
+            "id": "wikipedia-de-20231101-10383398-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=10383398 | Kernkraftwerk Remerschen | https://de.wikipedia.org/wiki/Kernkraftwerk%20Remerschen",
+            "title": "Kernkraftwerk Remerschen",
+            "text": "Kernkraftwerk Remerschen\n\nDas Kernkraftwerk Remerschen mit einer Leistung von 1300 Megawatt mit Druckwasserreaktor wurde 1973 geplant und sollte 1981 in Betrieb gehen, wurde aber schlussendlich nicht realisiert. Es wäre das erste Kernkraftwerk in Luxemburg gewesen. Es stand bereits in der Planungsphase in Konkurrenz zum realisierten Kernkraftwerk Cattenom (Bau durch Électricité de France, EdF, in der Gemeinde Cattenom, Frankreich)."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": true,
+          "subjects": [
+            "gross"
+          ],
+          "facets": [
+            "about"
+          ],
+          "groups_by_facet": {
+            "about": [
+              27141
+            ]
+          },
+          "used_context": false,
+          "reason": ""
+        },
+        "reason": "",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id13",
+      "prompt": "Welche Einheit verwendet das SI für Energie?",
+      "kind": "unit",
+      "rubric": "Joule, J. Correctly associated with energy.",
+      "concepts": [
+        [
+          "Energie"
+        ],
+        [
+          "Joule"
+        ]
+      ],
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.00018709999858401716,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-124474-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=124474 | Schallenergie | https://de.wikipedia.org/wiki/Schallenergie",
+            "title": "Schallenergie",
+            "text": "Schallenergie\n\nDie Schallenergie W ist die in einem Schallfeld oder einem Schallereignis enthaltene Energie. Maßeinheit der Schallenergie ist das Joule J. Die zugehörige logarithmische Größe ist der Schallenergiepegel."
+          },
+          {
+            "id": "wikipedia-de-20231101-160116-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=160116 | Strahlungsenergie | https://de.wikipedia.org/wiki/Strahlungsenergie",
+            "title": "Strahlungsenergie",
+            "text": "Strahlungsenergie\n\nDie Strahlungsenergie ist eine physikalische Größe der Radiometrie. Sie ist die Energie, die von elektromagnetischen Wellen transportiert wird, beispielsweise von Licht, oder die Energie elektromagnetischer Wellen, die in einem gegebenen Raumbereich und zu einem definierten Zeitpunkt enthalten ist. Die SI-Einheit der Strahlungsenergie ist das Joule."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": false,
+          "subjects": [
+            "einheit",
+            "verwendet"
+          ],
+          "facets": [
+            "unit"
+          ],
+          "groups_by_facet": {
+            "unit": []
+          },
+          "used_context": false,
+          "reason": "no_supported_information_binding"
+        },
+        "reason": "no_supported_information_binding",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id14",
+      "prompt": "Wie berechnet sich die Dichte aus Masse und Volumen?",
+      "kind": "relation",
+      "rubric": "Density equals mass divided by volume, not reversed.",
+      "concepts": [
+        [
+          "Dichte"
+        ],
+        [
+          "Masse"
+        ],
+        [
+          "Volumen"
+        ]
+      ],
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.00011509999967529438,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 0,
+        "candidates": [],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": false,
+          "subjects": [],
+          "facets": [
+            "formula"
+          ],
+          "groups_by_facet": {},
+          "used_context": false,
+          "reason": "no_supported_information_binding"
+        },
+        "reason": "no_supported_information_binding",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id15",
+      "prompt": "Verdunstet Wasser erst, wenn es kocht?",
+      "kind": "negation",
+      "rubric": "No, evaporation occurs below boiling temperature at liquid surface.",
+      "concepts": [
+        [
+          "Verdunstung",
+          "verdunstet"
+        ],
+        [
+          "Siedetemperatur",
+          "Siedepunkt",
+          "Oberfläche"
+        ]
+      ],
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.00015979999807314016,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-271344-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=271344 | Pfütze | https://de.wikipedia.org/wiki/Pf%C3%BCtze",
+            "title": "Pfütze",
+            "text": "Pfütze\n\nEine Pfütze, auch Lache (österr. Lacke, niederdeutsch auch teilweise Lusche, pfälzisch u. a. Latsche, schweizerdeutsch Glungge oder Gunte), ist eine Ansammlung von Flüssigkeiten – meist Wasser – an der Erdoberfläche, die sich z. B. nach einem Regen bildet und einige Tage später versickert oder verdunstet ist. Pfützen bilden die kleinste Form der Stillgewässer."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": false,
+          "subjects": [
+            "erst",
+            "wass"
+          ],
+          "facets": [
+            "relation"
+          ],
+          "groups_by_facet": {
+            "relation": []
+          },
+          "used_context": false,
+          "reason": "no_supported_information_binding"
+        },
+        "reason": "no_supported_information_binding",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id16",
+      "prompt": "Ist eine wässrige Lösung mit einem pH-Wert unter sieben sauer oder basisch?",
+      "kind": "classification",
+      "rubric": "Acidic under conventional room-temperature aqueous conditions; not basic.",
+      "concepts": [
+        [
+          "pH"
+        ],
+        [
+          "sauer",
+          "saure"
+        ],
+        [
+          "7",
+          "sieben"
+        ]
+      ],
+      "answer": "Die Lösungen werden anschließend aufgrund ihrer Vollständigkeit bewertet und so der Sieger ermittelt.",
+      "tokens": [
+        "die",
+        "lösungen",
+        "werden",
+        "anschliessend",
+        "aufgrund",
+        "ihrer",
+        "vollständigkeit",
+        "bewertet",
+        "und",
+        "so",
+        "der",
+        "sieger",
+        "ermittelt",
+        "."
+      ],
+      "elapsed_s": 0.02384170000004815,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": true,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-25797-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=25797 | Antoine Laurent de Lavoisier | https://de.wikipedia.org/wiki/Antoine%20Laurent%20de%20Lavoisier",
+            "title": "Antoine Laurent de Lavoisier",
+            "text": "Antoine Laurent de Lavoisier\n\nAntoine Laurent de Lavoisier [] (* 26. August 1743 in Paris; † 8. Mai 1794 ebenda) war ein französischer Chemiker und Naturwissenschaftler, Rechtsanwalt, Hauptzollpächter, Ökonom und Leiter der französischen Pulververwaltung. Er führte quantitative Messmethoden in die Chemie ein, erkannte die Rolle des Sauerstoffs bei der Verbrennung sowie beim Oxidationsprozess bei der Atmung und widerlegte damit die damals vorherrschende Phlogistontheorie. Lavoisier schuf viele Grundlagen der modernen Chemie. Er gilt als deren Begründer und als Vater der ersten chemischen Revolution."
+          },
+          {
+            "id": "wikipedia-de-20231101-10652776-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=10652776 | Ulf Brunnbauer | https://de.wikipedia.org/wiki/Ulf%20Brunnbauer",
+            "title": "Ulf Brunnbauer",
+            "text": "Ulf Brunnbauer\n\nUlf Brunnbauer (geboren 22. September 1970 in Kirchdorf an der Krems) ist ein österreichischer Historiker.\n\nLeben \nUlf Brunnbauer besuchte das Bundesgymnasium Ramsauerstraße in Linz und studierte ab 1989 Geschichte, Russische Philologie, Soziologie und Volkswirtschaftslehre an der Universität Graz und legte 1995 seine Magisterarbeit zum Thema „Die Liga der Zeit. Probleme der wissenschaftlichen Arbeitsorganisation in der Sowjetunion, 1923–1925“ vor. 1996 war er Wahlbeobachter der OSZE in Albanien. 1998 leistete er für ein Jahr Zivildienst bei der Caritas Graz als Flüchtlingsrechtsberater. 1999 wurde er in Graz mit einer Dissertation zur bulgarischen Geschichte promoviert. Ab 2003 war er wissenschaftlicher Assistent an der FU Berlin und habilitierte dort 2006."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": true,
+          "subjects": [
+            "losung"
+          ],
+          "facets": [
+            "about"
+          ],
+          "groups_by_facet": {
+            "about": [
+              41242,
+              41243
+            ]
+          },
+          "used_context": false,
+          "reason": ""
+        },
+        "reason": "",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id17",
+      "prompt": "Was machen Pflanzen bei der Fotosynthese?",
+      "kind": "definition",
+      "rubric": "Use light energy to convert carbon dioxide and water into energy-rich organic matter/sugars, usually releasing oxygen; not only breathing oxygen.",
+      "concepts": [
+        [
+          "Fotosynthese",
+          "Photosynthese"
+        ],
+        [
+          "Licht"
+        ],
+        [
+          "Kohlenstoffdioxid",
+          "Kohlendioxid"
+        ],
+        [
+          "Zucker",
+          "Glucose",
+          "Glukose",
+          "organische"
+        ]
+      ],
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.00017939999816007912,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 0,
+        "candidates": [],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": false,
+          "subjects": [],
+          "facets": [
+            "about"
+          ],
+          "groups_by_facet": {},
+          "used_context": false,
+          "reason": "no_supported_information_binding"
+        },
+        "reason": "no_supported_information_binding",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id18",
+      "prompt": "Welche Aufgabe haben Mitochondrien in einer Zelle?",
+      "kind": "function",
+      "rubric": "Cellular energy provision/ATP synthesis through respiration; not storing all genetic information.",
+      "concepts": [
+        [
+          "Mitochondrien"
+        ],
+        [
+          "ATP",
+          "Energie",
+          "Zellatmung"
+        ]
+      ],
+      "answer": "Aufgabe ist es, einen Bauernhof in der Nähe einer kleinen Ortschaft wieder aufzubauen und zu unterhalten.",
+      "tokens": [
+        "aufgabe",
+        "ist",
+        "es",
+        ",",
+        "einen",
+        "bauernhof",
+        "in",
+        "der",
+        "nähe",
+        "einer",
+        "kleinen",
+        "ortschaft",
+        "wieder",
+        "aufzubauen",
+        "und",
+        "zu",
+        "unterhalten",
+        "."
+      ],
+      "elapsed_s": 0.04228040000089095,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": true,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 0,
+        "candidates": [],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": true,
+          "subjects": [
+            "aufgab"
+          ],
+          "facets": [
+            "about"
+          ],
+          "groups_by_facet": {
+            "about": [
+              7471,
+              7472
+            ]
+          },
+          "used_context": false,
+          "reason": ""
+        },
+        "reason": "",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id19",
+      "prompt": "Wie warm ist es genau jetzt in meinem Zimmer?",
+      "kind": "unknown_value",
+      "rubric": "State insufficient measurement/location data or ask for measurement; do not invent a current temperature.",
+      "concepts": [],
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.00015920000078040175,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "unprovided personal/current measurement",
+        "candidates": [],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": false,
+          "subjects": [],
+          "facets": [
+            "about"
+          ],
+          "groups_by_facet": {},
+          "used_context": false,
+          "reason": "no_supported_information_binding"
+        },
+        "reason": "no_supported_information_binding",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id20",
+      "prompt": "Wie viele Herzschläge pro Minute habe ich in diesem Augenblick?",
+      "kind": "unknown_value",
+      "rubric": "Cannot know user's actual pulse without a measurement. Typical ranges alone do not answer the personal value; no invented exact number.",
+      "concepts": [],
+      "answer": "Dies ist aber technisch falsch, weil nicht alle Waffen dieser Serie nach diesem Prinzip funktionieren.",
+      "tokens": [
+        "dies",
+        "ist",
+        "aber",
+        "technisch",
+        "falsch",
+        ",",
+        "weil",
+        "nicht",
+        "alle",
+        "waffen",
+        "dieser",
+        "serie",
+        "nach",
+        "diesem",
+        "prinzip",
+        "funktionieren",
+        "."
+      ],
+      "elapsed_s": 0.07545130000289646,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": true,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "unprovided personal/current measurement",
+        "candidates": [],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": {
+          "supported": true,
+          "subjects": [
+            "dies"
+          ],
+          "facets": [
+            "about"
+          ],
+          "groups_by_facet": {
+            "about": [
+              16903,
+              16904,
+              16905,
+              16906,
+              16907,
+              16908,
+              16909,
+              16910,
+              16911,
+              16912,
+              16913,
+              16914,
+              16915,
+              16916,
+              16917,
+              16918,
+              16919,
+              16920,
+              16921,
+              16922,
+              16923,
+              16924,
+              16925,
+              16926,
+              16927,
+              16928,
+              16929,
+              16930,
+              16931,
+              16932,
+              16933,
+              16934,
+              16935,
+              16936,
+              16937,
+              16938,
+              16939,
+              16940,
+              16941,
+              16942,
+              16943,
+              16944
+            ]
+          },
+          "used_context": false,
+          "reason": ""
+        },
+        "reason": "",
+        "generation_reason": null,
+        "decoder": null,
+        "ended": true,
+        "truncated": null
+      },
+      "qualitative_review": null
+    }
+  ],
+  "known_chat_rows": []
+}

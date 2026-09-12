@@ -1,0 +1,2386 @@
+{
+  "production_core_changed": false,
+  "prototype": "experiments/prototype_padded_operator.py",
+  "core_sha256": "dbbfc442a15ba01487c5431aa56111c8e99a33765e23fd93db6330d622de6dce",
+  "mechanism": "Zero-amplitude padding of token modes before runtime FFT; imported spectra, dictionaries and stable symbol frequencies unchanged.",
+  "unchanged_reference": "method=direct retains the original V-dimensional computation; feature channel unchanged.",
+  "fft_backends": [
+    {
+      "bins": 44614,
+      "fft_median_seconds": {
+        "numpy": 0.006517400000120688,
+        "scipy": 0.003357550000146148
+      },
+      "numpy_to_scipy_speedup": 1.9411177792845966,
+      "maximum_fft_error": 7.567863892571919e-13
+    },
+    {
+      "bins": 44615,
+      "fft_median_seconds": {
+        "numpy": 0.0065080499998657615,
+        "scipy": 0.003752350000468141
+      },
+      "numpy_to_scipy_speedup": 1.7343931133966237,
+      "maximum_fft_error": 7.031142602530156e-13
+    },
+    {
+      "bins": 44800,
+      "fft_median_seconds": {
+        "numpy": 0.0011864500002047862,
+        "scipy": 0.0008460499993816484
+      },
+      "numpy_to_scipy_speedup": 1.4023402884840441,
+      "maximum_fft_error": 4.3290658060549894e-13
+    }
+  ],
+  "small_complex_checks": {
+    "checked_states": 144,
+    "zero_memory_refusals": 2,
+    "maximum_original_error": 0.0,
+    "maximum_direct_error": 0.0,
+    "rows": [
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "compact",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 0,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 1,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "original",
+        "field_variant": 2,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 0,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 1,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "rote"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "im",
+          "garten"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 0,
+        "relative_phase": 0.0,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 123.456,
+        "relative_phase": 0.8,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      },
+      {
+        "storage": "dense",
+        "intervention": "global_complex_phase",
+        "field_variant": 2,
+        "prefix": [
+          "unbekannt"
+        ],
+        "time_s": 1000000000.0,
+        "relative_phase": 3.141592653589793,
+        "vocabulary_bins": 14,
+        "carrier_bins": 14,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "same_top_token": true
+      }
+    ]
+  },
+  "full_corpus": {
+    "source_documents": 12000,
+    "sources": [
+      {
+        "path": "memory/imports/public_dialogue_oasst2_de.jsonl",
+        "sha256": "3b43b8fa2d5383091bb4e5af3ea4cec0c07c71635fc2223c98b6da0dc87f01d2",
+        "records": 533
+      },
+      {
+        "path": "memory/imports/public_knowledge_germanquad_de.jsonl",
+        "sha256": "d267143ea047f0b2d8c84ac061a26a9a7fcf1a233ba3e81e35b855ea3a5d4e40",
+        "records": 10846
+      }
+    ],
+    "vocabulary_bins": 44614,
+    "feature_bins": 10845,
+    "build_seconds": 85.54102930000045,
+    "numerical": [
+      {
+        "source_id": "chat-001",
+        "prefix": [],
+        "time_s": 0,
+        "phase": 0.0,
+        "baseline_seconds": 0.08571430000120017,
+        "candidate_seconds": 0.017963300000701565,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "carrier_bins": 44800
+      },
+      {
+        "source_id": "chat-001",
+        "prefix": [],
+        "time_s": 86400.125,
+        "phase": 3.141592653589793,
+        "baseline_seconds": 0.08667910000076517,
+        "candidate_seconds": 0.020156200000201352,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "carrier_bins": 44800
+      },
+      {
+        "source_id": "chat-001",
+        "prefix": [
+          "hallo",
+          "!",
+          "schön"
+        ],
+        "time_s": 0,
+        "phase": 0.0,
+        "baseline_seconds": 0.09210989999883168,
+        "candidate_seconds": 0.016385499999159947,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "carrier_bins": 44800
+      },
+      {
+        "source_id": "chat-001",
+        "prefix": [
+          "hallo",
+          "!",
+          "schön"
+        ],
+        "time_s": 86400.125,
+        "phase": 3.141592653589793,
+        "baseline_seconds": 0.08632419999958074,
+        "candidate_seconds": 0.01991470000029949,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "carrier_bins": 44800
+      },
+      {
+        "source_id": "chat-002",
+        "prefix": [],
+        "time_s": 0,
+        "phase": 0.0,
+        "baseline_seconds": 0.08534220000001369,
+        "candidate_seconds": 0.018258099999002297,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "carrier_bins": 44800
+      },
+      {
+        "source_id": "chat-002",
+        "prefix": [],
+        "time_s": 86400.125,
+        "phase": 3.141592653589793,
+        "baseline_seconds": 0.08764479999990726,
+        "candidate_seconds": 0.018725899999481044,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "carrier_bins": 44800
+      },
+      {
+        "source_id": "chat-002",
+        "prefix": [
+          "guten",
+          "morgen",
+          "!"
+        ],
+        "time_s": 0,
+        "phase": 0.0,
+        "baseline_seconds": 0.09417250000115018,
+        "candidate_seconds": 0.02388710000013816,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "carrier_bins": 44800
+      },
+      {
+        "source_id": "chat-002",
+        "prefix": [
+          "guten",
+          "morgen",
+          "!"
+        ],
+        "time_s": 86400.125,
+        "phase": 3.141592653589793,
+        "baseline_seconds": 0.0909243999994942,
+        "candidate_seconds": 0.019236800000726362,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "carrier_bins": 44800
+      },
+      {
+        "source_id": "chat-003",
+        "prefix": [],
+        "time_s": 0,
+        "phase": 0.0,
+        "baseline_seconds": 0.09043510000083188,
+        "candidate_seconds": 0.017059199999494012,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "carrier_bins": 44800
+      },
+      {
+        "source_id": "chat-003",
+        "prefix": [],
+        "time_s": 86400.125,
+        "phase": 3.141592653589793,
+        "baseline_seconds": 0.09218650000002526,
+        "candidate_seconds": 0.019785099999353406,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "carrier_bins": 44800
+      },
+      {
+        "source_id": "chat-003",
+        "prefix": [
+          "guten",
+          "abend",
+          "!"
+        ],
+        "time_s": 0,
+        "phase": 0.0,
+        "baseline_seconds": 0.08596770000076503,
+        "candidate_seconds": 0.016884300001038355,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "carrier_bins": 44800
+      },
+      {
+        "source_id": "chat-003",
+        "prefix": [
+          "guten",
+          "abend",
+          "!"
+        ],
+        "time_s": 86400.125,
+        "phase": 3.141592653589793,
+        "baseline_seconds": 0.08663870000054885,
+        "candidate_seconds": 0.01846320000004198,
+        "original_max_error": 0.0,
+        "direct_max_error": 0.0,
+        "carrier_bins": 44800
+      }
+    ],
+    "generations": [
+      {
+        "source_id": "chat-001",
+        "seconds": {
+          "baseline": 4.18613329999971,
+          "padded": 0.9358106999989104
+        },
+        "speedup": 4.473269326803577,
+        "tokens_equal": true,
+        "output": "Hallo! Schön, dass du hier bist.",
+        "token_count": 9
+      },
+      {
+        "source_id": "chat-002",
+        "seconds": {
+          "baseline": 6.520829599998251,
+          "padded": 1.442320699999982
+        },
+        "speedup": 4.5210677486625075,
+        "tokens_equal": true,
+        "output": "Guten morgen! Bist du schon richtig wach oder brauchst du noch einen ruhigen Moment?",
+        "token_count": 16
+      },
+      {
+        "source_id": "chat-003",
+        "seconds": {
+          "baseline": 5.80690979999963,
+          "padded": 1.3316957999995793
+        },
+        "speedup": 4.360537744431922,
+        "tokens_equal": true,
+        "output": "Guten Abend! Möchtest du von deinem Tag erzählen oder einfach ein bisschen plaudern?",
+        "token_count": 15
+      }
+    ],
+    "median_single_step_speedup": 4.686456235996284,
+    "median_generation_speedup": 4.473269326803577,
+    "maximum_original_error": 0.0,
+    "maximum_direct_error": 0.0,
+    "all_complete_outputs_equal": true
+  },
+  "core_unchanged_during_benchmark": true,
+  "recommendation": "Operator-only zero-mode padding meets the >2x scope gate. Consider integration only after the existing quality evaluation is complete and require unchanged output-token regressions."
+}

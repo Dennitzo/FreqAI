@@ -1,0 +1,7 @@
+{
+  "command": ".venv/Scripts/python.exe -m pytest -q",
+  "passed": 321,
+  "failed": 0,
+  "seconds": 14.58,
+  "includes": "raw record validation regression"
+}

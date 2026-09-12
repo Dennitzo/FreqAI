@@ -1,0 +1,4276 @@
+{
+  "status": "incomplete; never a final evaluation result",
+  "manifest": {
+    "code_root": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\results\\information_corpus\\evaluation\\runtime_v3_code",
+    "code": {
+      "freqai\\__init__.py": "0e634154d3a7ed97b743819529122dcfe1d59ce6dca186c208d93ef872ee46e2",
+      "freqai\\__main__.py": "19f07de3d1765a6803d4332ab1e67346381236f7769f47640e73849922394790",
+      "freqai\\cli.py": "1baf06cf78fbb04b6b2a8d356630b8b4c3217d1ab09844ea98e5bd15902bc9c0",
+      "freqai\\codec.py": "1741858964d007a8baa1173cb559ac896d07bb4d8eb7d7be840c12c1a5acdc03",
+      "freqai\\dialogue.py": "21d1287fe86a396223870baa5b65dca15e7d03bbf9bf09cc23b3f8d4deb8f15d",
+      "freqai\\features.py": "c48eb11bff823f8329bdbf1509426f1928e19c213793145e30c1ef4abe234535",
+      "freqai\\generation_runtime.py": "0a13c357e3930952d1231ca519881af7570413ab81cd0732340e54cc88197e2e",
+      "freqai\\generative.py": "d6a475c270bba5ebbc838a37b250a2fdc2ec9aed2024f4b8a9331a2e3744d172",
+      "freqai\\information.py": "5c4726b86f05ba794aaf8e6a4cca3a91cee82a7520893484db3dd9a44a08f2d7",
+      "freqai\\information_runtime.py": "b9792a8808cbe0299d39267f6ed583a6c1d0e0de24778842200e2b64c615c937",
+      "freqai\\memory.py": "0a7a174ecf4a7e0cfe8e8f30eb9c083d2977f5812dd6bad7ad02e52e94d003ce",
+      "freqai\\reasoning.py": "4819d011b22b1e8d4049172094e124abb43114e84ba059cff946bea1f0835a3a",
+      "freqai\\semantics.py": "51924df70352cc896015f17b3679da3e0ae0b34e0030a00b6f4d0ad44c7bca46",
+      "freqai\\server.py": "e3c7d6ab0ac180f75b3ac9916e4a83d552723dc2f416fb014267117fc5d257d6",
+      "freqai\\spectral_storage.py": "8c0dc33a1c7f91af889a5bcc06eb549837527e46989f96ca724e38c7a5bfaf0c",
+      "freqai\\store.py": "ced6af26368edd586a1e913449a900a173c632fe8ef71722f2429a020fe126f0",
+      "freqai\\synthesis.py": "6183f5403543c4f686a959f9c7d3a4afb636e7df7b03038ab6ca1e8c0a99caad",
+      "memory\\language\\generative_categories.json": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673"
+    },
+    "baseline_corpus_sha256": "0d8ea03f0943f4bce3479164f362a2ece2f78caad68a143c3ce156441ff82d64",
+    "protocol_sha256": "a5c475a1ba7296caf769f169863cf7a5b9be526e99648676d3605ad4f34d00ee",
+    "additional_corpus": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\results\\information_corpus\\evaluation\\corpora\\wikipedia_v3.jsonl",
+    "additional_corpus_sha256": "2f5b876d904346ca4b9082e05ff5e4bc5e8a729f2a479c777f47e1332a0a5674",
+    "additional_limit": null,
+    "engine": "runtime",
+    "information_only": false,
+    "chat_regression": false,
+    "document_count": 32000,
+    "runner_sha256": "1b3033b374fe7a1a5d76d2b9aebe6092eb264cf3f7106d4978b4d427652f7bde",
+    "max_tokens": 64,
+    "seed": 17,
+    "time_s": 13.125
+  },
+  "rows": [
+    {
+      "id": "id01",
+      "prompt": "Was ist eine Frequenz?",
+      "kind": "definition",
+      "status": "explicit user development example, not unseen",
+      "rubric": "Number of repetitions or oscillations per unit time; no unrelated definition.",
+      "concepts": [
+        [
+          "Frequenz"
+        ],
+        [
+          "Schwingungen",
+          "Wiederholungen",
+          "periodisch"
+        ],
+        [
+          "Zeit",
+          "Sekunde"
+        ]
+      ],
+      "split": "development",
+      "answer": "Die Frequenz (auch Schwingungszahl genannt) ist in Physik und Technik ein Maß dafür, wie schnell bei einem periodischen Vorgang die Wiederholungen aufeinander folgen, z. B. bei einer fortdauernden Schwingung.",
+      "tokens": [
+        "die",
+        "frequenz",
+        "(",
+        "auch",
+        "schwingungszahl",
+        "genannt",
+        ")",
+        "ist",
+        "in",
+        "physik",
+        "und",
+        "technik",
+        "ein",
+        "mass",
+        "dafür",
+        ",",
+        "wie",
+        "schnell",
+        "bei",
+        "einem",
+        "periodischen",
+        "vorgang",
+        "die",
+        "wiederholungen",
+        "aufeinander",
+        "folgen",
+        ",",
+        "z",
+        ".",
+        "b",
+        ".",
+        "bei",
+        "einer",
+        "fortdauernden",
+        "schwingung",
+        "."
+      ],
+      "elapsed_s": 0.16295610000088345,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 1,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": true,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-2142-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=2142 | Hertz (Einheit) | https://de.wikipedia.org/wiki/Hertz%20%28Einheit%29",
+            "title": "Hertz (Einheit)",
+            "text": "Hertz (Einheit)\n\nDas Hertz (Einheitenzeichen: Hz) ist die SI-Einheit der Frequenz. Sie gibt die Anzahl sich wiederholender Vorgänge pro Sekunde in einem periodischen Signal an. Die Einheit wurde 1930 nach dem deutschen Physiker Heinrich Hertz benannt."
+          },
+          {
+            "id": "wikipedia-de-20231101-33418-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=33418 | Resonanz | https://de.wikipedia.org/wiki/Resonanz",
+            "title": "Resonanz",
+            "text": "Resonanz\n\nResonanz (von „widerhallen“) ist in Physik und Technik das verstärkte Mitschwingen eines schwingfähigen Systems, wenn es einer zeitlich veränderlichen Einwirkung unterliegt. Dabei kann das System um ein Vielfaches stärker ausschlagen als beim konstanten Einwirken der Anregung mit ihrer maximalen Stärke. Bei periodischer Anregung muss die Anregungsfrequenz oder ein ganzzahliges Vielfaches davon in der Nähe einer Resonanzfrequenz des Systems liegen. Das Phänomen kann bei allen schwingfähigen physikalischen und technischen Systemen auftreten und kommt auch im Alltag häufig vor. Resonanzen werden in der Technik oft ausgenutzt, um eine bestimmte Frequenz herauszufiltern oder zu verstärken. Wo eine Verstärkung nicht gewünscht ist, müssen unerwünschte Resonanzen jedoch vermieden werden."
+          },
+          {
+            "id": "wikipedia-de-20231101-223309-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=223309 | Erzwungene Schwingung | https://de.wikipedia.org/wiki/Erzwungene%20Schwingung",
+            "title": "Erzwungene Schwingung",
+            "text": "Erzwungene Schwingung\n\nDie erzwungene Schwingung ist die Bewegung, die ein schwingungsfähiges System (Oszillator) während einer zeitabhängigen äußeren Anregung ausführt. Ist die Anregung periodisch, geht die erzwungene Schwingung nach einem Einschwingvorgang allmählich in die stationäre erzwungene Schwingung über. Bei der stationären erzwungenen Schwingung vollführt der Oszillator eine periodische Schwingung, deren Frequenz, unabhängig von seiner Eigenfrequenz, nur durch die äußere Anregung gegeben ist. Dabei schwingt der Oszillator mit einer zeitlich konstanten Amplitude, die besonders große Werte hat, wenn der Oszillator nur schwach gedämpft ist und die Anregungsfrequenz in der Nähe seiner Eigenfrequenz liegt (siehe Resonanz)."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [],
+              "active_token_indices": [
+                24722
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "<BOS>",
+                    "<BOS>"
+                  ]
+                },
+                {
+                  "group": 21545,
+                  "prefix": [
+                    "<BOS>",
+                    "<BOS>"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 1.9999999999999991,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 0,
+              "facet": "definition",
+              "selected_token": "die",
+              "selected_bin": 24722,
+              "selected_frequency_hz": 0.5657247245438375,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "die"
+              ],
+              "active_token_indices": [
+                36055
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "<BOS>",
+                    "die"
+                  ]
+                },
+                {
+                  "group": 21545,
+                  "prefix": [
+                    "<BOS>",
+                    "die"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 1.9999999999999991,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 1,
+              "facet": "definition",
+              "selected_token": "frequenz",
+              "selected_bin": 36055,
+              "selected_frequency_hz": 27.9596919148966,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "die",
+                "frequenz"
+              ],
+              "active_token_indices": [
+                7,
+                50764
+              ],
+              "carrier_size": 2,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "die",
+                    "frequenz"
+                  ]
+                },
+                {
+                  "group": 21545,
+                  "prefix": [
+                    "die",
+                    "frequenz"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.9999999999999996,
+              "fft_roundtrip_max_error": 1.3877787807814457e-16,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 2,
+              "facet": "definition",
+              "selected_token": "(",
+              "selected_bin": 7,
+              "selected_frequency_hz": 5.777273793887537,
+              "probability": 0.5
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "frequenz",
+                "("
+              ],
+              "active_token_indices": [
+                9375
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "frequenz",
+                    "("
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 3,
+              "facet": "definition",
+              "selected_token": "auch",
+              "selected_bin": 9375,
+              "selected_frequency_hz": 4.06611981015447,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "(",
+                "auch"
+              ],
+              "active_token_indices": [
+                89559
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "(",
+                    "auch"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 4,
+              "facet": "definition",
+              "selected_token": "schwingungszahl",
+              "selected_bin": 89559,
+              "selected_frequency_hz": 21.840344842415185,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "auch",
+                "schwingungszahl"
+              ],
+              "active_token_indices": [
+                39002
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "auch",
+                    "schwingungszahl"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 5,
+              "facet": "definition",
+              "selected_token": "genannt",
+              "selected_bin": 39002,
+              "selected_frequency_hz": 14.680890277936776,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "schwingungszahl",
+                "genannt"
+              ],
+              "active_token_indices": [
+                8
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "schwingungszahl",
+                    "genannt"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 6,
+              "facet": "definition",
+              "selected_token": ")",
+              "selected_bin": 8,
+              "selected_frequency_hz": 19.955129577083643,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "genannt",
+                ")"
+              ],
+              "active_token_indices": [
+                50764
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "genannt",
+                    ")"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 7,
+              "facet": "definition",
+              "selected_token": "ist",
+              "selected_bin": 50764,
+              "selected_frequency_hz": 20.00519510593812,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ")",
+                "ist"
+              ],
+              "active_token_indices": [
+                49296
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    ")",
+                    "ist"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 8,
+              "facet": "definition",
+              "selected_token": "in",
+              "selected_bin": 49296,
+              "selected_frequency_hz": 14.494195491368037,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "ist",
+                "in"
+              ],
+              "active_token_indices": [
+                77933
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "ist",
+                    "in"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 9,
+              "facet": "definition",
+              "selected_token": "physik",
+              "selected_bin": 77933,
+              "selected_frequency_hz": 4.7900106064620145,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "in",
+                "physik"
+              ],
+              "active_token_indices": [
+                103353
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "in",
+                    "physik"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 10,
+              "facet": "definition",
+              "selected_token": "und",
+              "selected_bin": 103353,
+              "selected_frequency_hz": 2.845686734304827,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "physik",
+                "und"
+              ],
+              "active_token_indices": [
+                98860
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "physik",
+                    "und"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 11,
+              "facet": "definition",
+              "selected_token": "technik",
+              "selected_bin": 98860,
+              "selected_frequency_hz": 2.0722544125506546,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "und",
+                "technik"
+              ],
+              "active_token_indices": [
+                27895
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "und",
+                    "technik"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 12,
+              "facet": "definition",
+              "selected_token": "ein",
+              "selected_bin": 27895,
+              "selected_frequency_hz": 10.637472766213703,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "technik",
+                "ein"
+              ],
+              "active_token_indices": [
+                65007
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "technik",
+                    "ein"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 13,
+              "facet": "definition",
+              "selected_token": "mass",
+              "selected_bin": 65007,
+              "selected_frequency_hz": 17.81727142427499,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "ein",
+                "mass"
+              ],
+              "active_token_indices": [
+                22975
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "ein",
+                    "mass"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 14,
+              "facet": "definition",
+              "selected_token": "dafür",
+              "selected_bin": 22975,
+              "selected_frequency_hz": 2.8688624834045973,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "mass",
+                "dafür"
+              ],
+              "active_token_indices": [
+                11
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "mass",
+                    "dafür"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 15,
+              "facet": "definition",
+              "selected_token": ",",
+              "selected_bin": 11,
+              "selected_frequency_hz": 5.754014851511337,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "dafür",
+                ","
+              ],
+              "active_token_indices": [
+                110949
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "dafür",
+                    ","
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 16,
+              "facet": "definition",
+              "selected_token": "wie",
+              "selected_bin": 110949,
+              "selected_frequency_hz": 5.174224058624727,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ",",
+                "wie"
+              ],
+              "active_token_indices": [
+                88688
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    ",",
+                    "wie"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 17,
+              "facet": "definition",
+              "selected_token": "schnell",
+              "selected_bin": 88688,
+              "selected_frequency_hz": 0.26321848674702,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "wie",
+                "schnell"
+              ],
+              "active_token_indices": [
+                13140
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "wie",
+                    "schnell"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 18,
+              "facet": "definition",
+              "selected_token": "bei",
+              "selected_bin": 13140,
+              "selected_frequency_hz": 27.13731855854181,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "schnell",
+                "bei"
+              ],
+              "active_token_indices": [
+                27956
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "schnell",
+                    "bei"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 19,
+              "facet": "definition",
+              "selected_token": "einem",
+              "selected_bin": 27956,
+              "selected_frequency_hz": 10.307100110919967,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "bei",
+                "einem"
+              ],
+              "active_token_indices": [
+                77136
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "bei",
+                    "einem"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 20,
+              "facet": "definition",
+              "selected_token": "periodischen",
+              "selected_bin": 77136,
+              "selected_frequency_hz": 4.754682906735915,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "einem",
+                "periodischen"
+              ],
+              "active_token_indices": [
+                107968
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "einem",
+                    "periodischen"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 21,
+              "facet": "definition",
+              "selected_token": "vorgang",
+              "selected_bin": 107968,
+              "selected_frequency_hz": 14.098478065672504,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "periodischen",
+                "vorgang"
+              ],
+              "active_token_indices": [
+                24722
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "periodischen",
+                    "vorgang"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 22,
+              "facet": "definition",
+              "selected_token": "die",
+              "selected_bin": 24722,
+              "selected_frequency_hz": 0.5657247245438375,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "vorgang",
+                "die"
+              ],
+              "active_token_indices": [
+                111011
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "vorgang",
+                    "die"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 23,
+              "facet": "definition",
+              "selected_token": "wiederholungen",
+              "selected_bin": 111011,
+              "selected_frequency_hz": 20.79836491671077,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "die",
+                "wiederholungen"
+              ],
+              "active_token_indices": [
+                9457
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "die",
+                    "wiederholungen"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 24,
+              "facet": "definition",
+              "selected_token": "aufeinander",
+              "selected_bin": 9457,
+              "selected_frequency_hz": 20.680757396863225,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "wiederholungen",
+                "aufeinander"
+              ],
+              "active_token_indices": [
+                34970
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "wiederholungen",
+                    "aufeinander"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 25,
+              "facet": "definition",
+              "selected_token": "folgen",
+              "selected_bin": 34970,
+              "selected_frequency_hz": 3.215672818903421,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "aufeinander",
+                "folgen"
+              ],
+              "active_token_indices": [
+                11
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "aufeinander",
+                    "folgen"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 26,
+              "facet": "definition",
+              "selected_token": ",",
+              "selected_bin": 11,
+              "selected_frequency_hz": 5.754014851511337,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "folgen",
+                ","
+              ],
+              "active_token_indices": [
+                113029
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "folgen",
+                    ","
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 27,
+              "facet": "definition",
+              "selected_token": "z",
+              "selected_bin": 113029,
+              "selected_frequency_hz": 5.858080594215365,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ",",
+                "z"
+              ],
+              "active_token_indices": [
+                13
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    ",",
+                    "z"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 28,
+              "facet": "definition",
+              "selected_token": ".",
+              "selected_bin": 13,
+              "selected_frequency_hz": 15.641089826498797,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "z",
+                "."
+              ],
+              "active_token_indices": [
+                11078
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "z",
+                    "."
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 29,
+              "facet": "definition",
+              "selected_token": "b",
+              "selected_bin": 11078,
+              "selected_frequency_hz": 13.88277803669175,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ".",
+                "b"
+              ],
+              "active_token_indices": [
+                13
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    ".",
+                    "b"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 30,
+              "facet": "definition",
+              "selected_token": ".",
+              "selected_bin": 13,
+              "selected_frequency_hz": 15.641089826498797,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "b",
+                "."
+              ],
+              "active_token_indices": [
+                13140
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "b",
+                    "."
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 31,
+              "facet": "definition",
+              "selected_token": "bei",
+              "selected_bin": 13140,
+              "selected_frequency_hz": 27.13731855854181,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ".",
+                "bei"
+              ],
+              "active_token_indices": [
+                27958
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    ".",
+                    "bei"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 32,
+              "facet": "definition",
+              "selected_token": "einer",
+              "selected_bin": 27958,
+              "selected_frequency_hz": 9.23906209177623,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "bei",
+                "einer"
+              ],
+              "active_token_indices": [
+                35317
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "bei",
+                    "einer"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 33,
+              "facet": "definition",
+              "selected_token": "fortdauernden",
+              "selected_bin": 35317,
+              "selected_frequency_hz": 5.7154080668549785,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "einer",
+                "fortdauernden"
+              ],
+              "active_token_indices": [
+                89545
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "einer",
+                    "fortdauernden"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 34,
+              "facet": "definition",
+              "selected_token": "schwingung",
+              "selected_bin": 89545,
+              "selected_frequency_hz": 17.984467617644388,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "fortdauernden",
+                "schwingung"
+              ],
+              "active_token_indices": [
+                13
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "fortdauernden",
+                    "schwingung"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 35,
+              "facet": "definition",
+              "selected_token": ".",
+              "selected_bin": 13,
+              "selected_frequency_hz": 15.641089826498797,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "schwingung",
+                "."
+              ],
+              "active_token_indices": [
+                3221
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "schwingung",
+                    "."
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 36,
+              "facet": "definition",
+              "selected_token": "<EOS>",
+              "selected_bin": 3221,
+              "selected_frequency_hz": 19.241093151490176,
+              "probability": 1.0
+            }
+          ],
+          "vocabulary_size": 116649,
+          "output_sha256": "7d83ca517d8d39199b58d10b2901c7ff962e64c1afbd752a142021e472dcc845",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id02",
+      "prompt": "Mit welcher Einheit gibt man die Frequenz an?",
+      "kind": "unit",
+      "rubric": "Hertz, Hz, equivalently inverse second; must associate unit with frequency.",
+      "concepts": [
+        [
+          "Frequenz"
+        ],
+        [
+          "Hertz",
+          "Hz"
+        ]
+      ],
+      "split": "development",
+      "answer": "Das Hertz (Einheitenzeichen: Hz) ist die SI-Einheit der Frequenz.",
+      "tokens": [
+        "das",
+        "hertz",
+        "(",
+        "einheitenzeichen",
+        ":",
+        "hz",
+        ")",
+        "ist",
+        "die",
+        "si-einheit",
+        "der",
+        "frequenz",
+        "."
+      ],
+      "elapsed_s": 0.15454889999818988,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 1,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": true,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 21,
+        "candidates": [
+          {
+            "id": "oasst2-de-ce50dbdb-9df5-48df-8a05-ff2222af859f",
+            "source": "https://huggingface.co/datasets/OpenAssistant/oasst2 | Apache-2.0 | revision=179dd21fc55192153d94adb0e0ce8f69e222bf75 | message=ce50dbdb-9df5-48df-8a05-ff2222af859f",
+            "title": null,
+            "text": "Ein Prozessor besteht aus mehreren Prozessorkernen, die zusammenarbeiten, um Befehle auszuführen. Jeder Kern kann eigenständig Befehle ausführen und arbeitet parallel zu den anderen Kernen. Die Aufgaben werden verteilt und somit können mehrere Aufgaben gleichzeitig bearbeitet werden. Das Arbeiten eines Prozessorkerns ist sehr komplex und kann auf verschiedene Weise beschrieben werden. Grundsätzlich wird der Prozessor mit einer bestimmten Taktfrequenz ausgeführt, die in Hertz (Hz) gemessen wird. Der Takt gibt an, wie viele Befehle pro Sekunde ausgeführt werden können. Jeder Taktzyklus kann eine oder mehrere Operationen ausführen. Der Prozessor empfängt Befehle aus dem Arbeitsspeicher und führt diese aus. Der Prozessor verfügt über eine sogenannte \"Pipelining\"-Funktion, die es ermöglicht, mehrere Befehle gleichzeitig auszuführen. Der Prozessor teilt dabei die Befehle in Einzelschritte (zB Laden der Befehle, Ausführen der Befehle etc.) und führt diese Schritte parallel aus. Die Prozessorkerne können auch auf verschiedene Weise verbunden werden, um eine optimale Leistung zu erzielen. Man spricht hier von \"Hyper-Threading\", \"Multi-Threading\" oder \"Multi-Core-Technologie\". Das ist eine grobe Zusammenfassung der Funktionsweise eines Prozessorkerns. Es gibt jedoch viele technische Details, die berücksichtigt werden müssen, um die genauen Arbeitsmethoden eines Prozessors zu beschreiben."
+          },
+          {
+            "id": "germanquad-train-47875",
+            "source": "https://huggingface.co/datasets/deepset/germanquad | CC-BY-4.0 annotations; Wikipedia contributors CC-BY-SA | train=47875 | article_title=Vogelzug | https://de.wikipedia.org/wiki/Vogelzug",
+            "title": null,
+            "text": "Laut einer Untersuchung aus Oldenburg beeinträchtigt Elektrosmog im Frequenzbereich von zwei Kilohertz bis fünf Megahertz den Magnetkompass der Zugvögel."
+          },
+          {
+            "id": "germanquad-train-47878",
+            "source": "https://huggingface.co/datasets/deepset/germanquad | CC-BY-4.0 annotations; Wikipedia contributors CC-BY-SA | train=47878 | article_title=Vogelzug | https://de.wikipedia.org/wiki/Vogelzug",
+            "title": null,
+            "text": "Laut einer Untersuchung aus Oldenburg beeinträchtigt Elektrosmog im Frequenzbereich von zwei Kilohertz bis fünf Megahertz den Magnetkompass der Zugvögel."
+          },
+          {
+            "id": "germanquad-train-57807",
+            "source": "https://huggingface.co/datasets/deepset/germanquad | CC-BY-4.0 annotations; Wikipedia contributors CC-BY-SA | train=57807 | article_title=High_Definition_Television | https://de.wikipedia.org/wiki/High_Definition_Television",
+            "title": null,
+            "text": "Die typischerweise verwendeten Bildfrequenzen betragen bei der Vollbilddarstellung 23,976 Hz, 24 Hz, 25 Hz, 29,97 Hz und 30 Hz, und bei der Halbbilddarstellung 50 Hz, 59,94 Hz und 60 Hz."
+          },
+          {
+            "id": "germanquad-train-59595",
+            "source": "https://huggingface.co/datasets/deepset/germanquad | CC-BY-4.0 annotations; Wikipedia contributors CC-BY-SA | train=59595 | article_title=Vögel | https://de.wikipedia.org/wiki/V%C3%B6gel",
+            "title": null,
+            "text": "Der untere wahrnehmbare Frequenzbereich ist ähnlich wie bei den Säugetieren, hohe Töne ab etwa 6.000 Hertz werden von den meisten Vögeln dagegen nicht wahrgenommen."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [],
+              "active_token_indices": [
+                23328
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "<BOS>",
+                    "<BOS>"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 0,
+              "facet": "unit",
+              "selected_token": "das",
+              "selected_bin": 23328,
+              "selected_frequency_hz": 18.80809502022526,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "das"
+              ],
+              "active_token_indices": [
+                46121
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "<BOS>",
+                    "das"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 1,
+              "facet": "unit",
+              "selected_token": "hertz",
+              "selected_bin": 46121,
+              "selected_frequency_hz": 24.189272176559186,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "das",
+                "hertz"
+              ],
+              "active_token_indices": [
+                7
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "das",
+                    "hertz"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 2,
+              "facet": "unit",
+              "selected_token": "(",
+              "selected_bin": 7,
+              "selected_frequency_hz": 5.777273793887537,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "hertz",
+                "("
+              ],
+              "active_token_indices": [
+                28178
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "hertz",
+                    "("
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 3,
+              "facet": "unit",
+              "selected_token": "einheitenzeichen",
+              "selected_bin": 28178,
+              "selected_frequency_hz": 21.863939465165167,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "(",
+                "einheitenzeichen"
+              ],
+              "active_token_indices": [
+                3218
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "(",
+                    "einheitenzeichen"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 4,
+              "facet": "unit",
+              "selected_token": ":",
+              "selected_bin": 3218,
+              "selected_frequency_hz": 20.420992716557127,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "einheitenzeichen",
+                ":"
+              ],
+              "active_token_indices": [
+                48337
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "einheitenzeichen",
+                    ":"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 5,
+              "facet": "unit",
+              "selected_token": "hz",
+              "selected_bin": 48337,
+              "selected_frequency_hz": 17.23681595225769,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ":",
+                "hz"
+              ],
+              "active_token_indices": [
+                8
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    ":",
+                    "hz"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 6,
+              "facet": "unit",
+              "selected_token": ")",
+              "selected_bin": 8,
+              "selected_frequency_hz": 19.955129577083643,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "hz",
+                ")"
+              ],
+              "active_token_indices": [
+                50764
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "hz",
+                    ")"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 7,
+              "facet": "unit",
+              "selected_token": "ist",
+              "selected_bin": 50764,
+              "selected_frequency_hz": 20.00519510593812,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ")",
+                "ist"
+              ],
+              "active_token_indices": [
+                24722
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    ")",
+                    "ist"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 8,
+              "facet": "unit",
+              "selected_token": "die",
+              "selected_bin": 24722,
+              "selected_frequency_hz": 0.5657247245438375,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "ist",
+                "die"
+              ],
+              "active_token_indices": [
+                91301
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "ist",
+                    "die"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 9,
+              "facet": "unit",
+              "selected_token": "si-einheit",
+              "selected_bin": 91301,
+              "selected_frequency_hz": 14.774895299187845,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "die",
+                "si-einheit"
+              ],
+              "active_token_indices": [
+                24120
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "die",
+                    "si-einheit"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 10,
+              "facet": "unit",
+              "selected_token": "der",
+              "selected_bin": 24120,
+              "selected_frequency_hz": 20.991874856787803,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "si-einheit",
+                "der"
+              ],
+              "active_token_indices": [
+                36055
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "si-einheit",
+                    "der"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 11,
+              "facet": "unit",
+              "selected_token": "frequenz",
+              "selected_bin": 36055,
+              "selected_frequency_hz": 27.9596919148966,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "der",
+                "frequenz"
+              ],
+              "active_token_indices": [
+                13
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "der",
+                    "frequenz"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 12,
+              "facet": "unit",
+              "selected_token": ".",
+              "selected_bin": 13,
+              "selected_frequency_hz": 15.641089826498797,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "frequenz",
+                "."
+              ],
+              "active_token_indices": [
+                3221
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "frequenz",
+                    "."
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 13,
+              "facet": "unit",
+              "selected_token": "<EOS>",
+              "selected_bin": 3221,
+              "selected_frequency_hz": 19.241093151490176,
+              "probability": 1.0
+            }
+          ],
+          "vocabulary_size": 116649,
+          "output_sha256": "5f7f80ad42e4d6ba774f3887374828d49fee20e93abe1bb76eda52cefe961b0c",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id03",
+      "prompt": "Wie hängen Periodendauer und Frequenz zusammen?",
+      "kind": "relation",
+      "rubric": "Reciprocal relation f=1/T or equivalent; doubling one halves the other.",
+      "concepts": [
+        [
+          "Periodendauer",
+          "Schwingungsdauer"
+        ],
+        [
+          "Frequenz"
+        ],
+        [
+          "Kehrwert",
+          "reziprok",
+          "1/T",
+          "1 / T"
+        ]
+      ],
+      "split": "development",
+      "answer": "Die Frequenz ist der Kehrwert der Periodendauer.",
+      "tokens": [
+        "die",
+        "frequenz",
+        "ist",
+        "der",
+        "kehrwert",
+        "der",
+        "periodendauer",
+        "."
+      ],
+      "elapsed_s": 0.10972919999767328,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": true,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-1706-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=1706 | Frequenz | https://de.wikipedia.org/wiki/Frequenz",
+            "title": "Frequenz",
+            "text": "Frequenz\n\nDie Frequenz (auch Schwingungszahl genannt) ist in Physik und Technik ein Maß dafür, wie schnell bei einem periodischen Vorgang die Wiederholungen aufeinander folgen, z. B. bei einer fortdauernden Schwingung. Die Frequenz ist der Kehrwert der Periodendauer."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [],
+              "active_token_indices": [
+                24722
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21547,
+                  "prefix": [
+                    "<BOS>",
+                    "<BOS>"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 0,
+              "facet": "relation",
+              "selected_token": "die",
+              "selected_bin": 24722,
+              "selected_frequency_hz": 0.5657247245438375,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "die"
+              ],
+              "active_token_indices": [
+                36055
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21547,
+                  "prefix": [
+                    "<BOS>",
+                    "die"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 1,
+              "facet": "relation",
+              "selected_token": "frequenz",
+              "selected_bin": 36055,
+              "selected_frequency_hz": 27.9596919148966,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "die",
+                "frequenz"
+              ],
+              "active_token_indices": [
+                50764
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21547,
+                  "prefix": [
+                    "die",
+                    "frequenz"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 2,
+              "facet": "relation",
+              "selected_token": "ist",
+              "selected_bin": 50764,
+              "selected_frequency_hz": 20.00519510593812,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "frequenz",
+                "ist"
+              ],
+              "active_token_indices": [
+                24120
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21547,
+                  "prefix": [
+                    "frequenz",
+                    "ist"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 3,
+              "facet": "relation",
+              "selected_token": "der",
+              "selected_bin": 24120,
+              "selected_frequency_hz": 20.991874856787803,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "ist",
+                "der"
+              ],
+              "active_token_indices": [
+                53870
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21547,
+                  "prefix": [
+                    "ist",
+                    "der"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 4,
+              "facet": "relation",
+              "selected_token": "kehrwert",
+              "selected_bin": 53870,
+              "selected_frequency_hz": 2.72624997874409,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "der",
+                "kehrwert"
+              ],
+              "active_token_indices": [
+                24120
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21547,
+                  "prefix": [
+                    "der",
+                    "kehrwert"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 5,
+              "facet": "relation",
+              "selected_token": "der",
+              "selected_bin": 24120,
+              "selected_frequency_hz": 20.991874856787803,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "kehrwert",
+                "der"
+              ],
+              "active_token_indices": [
+                77130
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21547,
+                  "prefix": [
+                    "kehrwert",
+                    "der"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 6,
+              "facet": "relation",
+              "selected_token": "periodendauer",
+              "selected_bin": 77130,
+              "selected_frequency_hz": 9.353418178987669,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "der",
+                "periodendauer"
+              ],
+              "active_token_indices": [
+                13
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21547,
+                  "prefix": [
+                    "der",
+                    "periodendauer"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 7,
+              "facet": "relation",
+              "selected_token": ".",
+              "selected_bin": 13,
+              "selected_frequency_hz": 15.641089826498797,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "periodendauer",
+                "."
+              ],
+              "active_token_indices": [
+                3221
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21547,
+                  "prefix": [
+                    "periodendauer",
+                    "."
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 8,
+              "facet": "relation",
+              "selected_token": "<EOS>",
+              "selected_bin": 3221,
+              "selected_frequency_hz": 19.241093151490176,
+              "probability": 1.0
+            }
+          ],
+          "vocabulary_size": 116649,
+          "output_sha256": "85ad0e3a1651fa21947ec10a8f84c4c82790406db518e989d7ab7fae9456d438",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id04",
+      "prompt": "Bedeutet eine größere Amplitude automatisch eine höhere Frequenz?",
+      "kind": "negation",
+      "rubric": "No; amplitude describes displacement/strength while frequency describes repetitions per time.",
+      "concepts": [
+        [
+          "Amplitude"
+        ],
+        [
+          "Frequenz"
+        ],
+        [
+          "Auslenkung",
+          "Schwingung"
+        ]
+      ],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.10681699999986449,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 5,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-61878-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=61878 | Stehende Welle | https://de.wikipedia.org/wiki/Stehende%20Welle",
+            "title": "Stehende Welle",
+            "text": "Stehende Welle\n\nEine stehende Welle, auch Stehwelle, ist eine Welle, bei der die Orte maximaler Auslenkung und die Orte ohne jede Auslenkung stillstehen. Eine stehende Welle erscheint daher eher wie eine Schwingung, kann aber ebenso als Überlagerung zweier gegenläufig fortschreitender Wellen gleicher Frequenz und gleicher Amplitude aufgefasst werden. Die gegenläufigen Wellen können aus zwei verschiedenen Erregern stammen oder durch Reflexion einer fortschreitenden Welle an einem Hindernis entstehen."
+          },
+          {
+            "id": "wikipedia-de-20231101-77685-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=77685 | Resonanzfrequenz | https://de.wikipedia.org/wiki/Resonanzfrequenz",
+            "title": "Resonanzfrequenz",
+            "text": "Resonanzfrequenz\n\nDie Resonanzfrequenz ist die Frequenz, bei der die Amplitude einer erzwungenen Schwingung maximal wird (siehe Amplitudenresonanz). Hat ein System mehrere Eigenfrequenzen, so hat es mehrere Resonanzfrequenzen, d. h. (lokale) Maxima der erzwungenen Amplitude."
+          },
+          {
+            "id": "wikipedia-de-20231101-200644-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=200644 | Resonanzkatastrophe | https://de.wikipedia.org/wiki/Resonanzkatastrophe",
+            "title": "Resonanzkatastrophe",
+            "text": "Resonanzkatastrophe\n\nDie Resonanzkatastrophe bezeichnet in der Mechanik und Konstruktion die Zerstörung eines Bauwerks oder einer technischen Einrichtung durch übermäßige Schwingungsamplituden im Resonanzfall. Bei einer periodisch wiederkehrenden Anregung, deren Frequenz mit einer Resonanzfrequenz übereinstimmt, wird immer mehr Energie auf das System übertragen und dort gespeichert (konstruktive Interferenz). Die Schwingungsenergie wird durch stets vorhandene Dämpfungseffekte teilweise aus dem System abgeführt. Falls der Energieeintrag die Verlustleistung überschreitet, wird die Schwingungsamplitude immer größer, bis die Belastungsgrenze überschritten ist."
+          },
+          {
+            "id": "wikipedia-de-20231101-223309-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=223309 | Erzwungene Schwingung | https://de.wikipedia.org/wiki/Erzwungene%20Schwingung",
+            "title": "Erzwungene Schwingung",
+            "text": "Erzwungene Schwingung\n\nDie erzwungene Schwingung ist die Bewegung, die ein schwingungsfähiges System (Oszillator) während einer zeitabhängigen äußeren Anregung ausführt. Ist die Anregung periodisch, geht die erzwungene Schwingung nach einem Einschwingvorgang allmählich in die stationäre erzwungene Schwingung über. Bei der stationären erzwungenen Schwingung vollführt der Oszillator eine periodische Schwingung, deren Frequenz, unabhängig von seiner Eigenfrequenz, nur durch die äußere Anregung gegeben ist. Dabei schwingt der Oszillator mit einer zeitlich konstanten Amplitude, die besonders große Werte hat, wenn der Oszillator nur schwach gedämpft ist und die Anregungsfrequenz in der Nähe seiner Eigenfrequenz liegt (siehe Resonanz)."
+          },
+          {
+            "id": "wikipedia-de-20231101-10946278-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=10946278 | Physikalische Akustik | https://de.wikipedia.org/wiki/Physikalische%20Akustik",
+            "title": "Physikalische Akustik",
+            "text": "Physikalische Akustik\n\nPhysikalische Akustik behandelt die physikalischen Grundlagen der Akustik, die auf Schwingungen beruhen.\n\nDie physikalische Akustik handelt von den longitudinalen Wellen, den Schallwellen, die vom Ohr wahrgenommen werden. Das Ohr als Schallempfänger reagiert auf Schallwellen mit Frequenzen zwischen 20 Hz und 20 000 Hz, Schallwellen höherer Frequenz rechnet man dem Ultraschall zu. Schallwellen stellen eine sich ausbreitende Folge von Luftverdichtungen und -verdünnungen dar. Die einzelnen Luftteilchen schwingen dabei nur jeweils innerhalb kleiner Bereiche. Eine Schallwelle transportiert keine Materie. Bei Schallschwingungen unterscheidet man zwischen Ton, Klang, Geräusch und Knall, wobei sich ein reiner Ton mit einer Sinuskurve darstellen lässt. Beim Knall hat die Schwingung eine große, schnell abklingende Amplitude."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id05",
+      "prompt": "Kann sich Schall im leeren Vakuum ausbreiten?",
+      "kind": "negation",
+      "rubric": "No, sound needs a material medium; do not confuse electromagnetic waves.",
+      "concepts": [
+        [
+          "Schall"
+        ],
+        [
+          "Vakuum",
+          "Medium",
+          "Materie"
+        ]
+      ],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.11038060000282712,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 4,
+        "candidates": [
+          {
+            "id": "oasst2-de-1bcf70bc-e387-4725-a40f-3ef974991870",
+            "source": "https://huggingface.co/datasets/OpenAssistant/oasst2 | Apache-2.0 | revision=179dd21fc55192153d94adb0e0ce8f69e222bf75 | message=1bcf70bc-e387-4725-a40f-3ef974991870",
+            "title": null,
+            "text": "Die Frage, ob ein fallender Baum ein Geräusch macht, wenn niemand in der Nähe ist, um es zu hören, ist seit langem eine Diskussion in der Philosophie und Wissenschaft. Es gibt jedoch eine wissenschaftliche Erklärung dafür, was passiert, wenn ein Baum fällt. Ein Baum, der auf den Boden fällt, erzeugt eine Schallwelle, die durch die Luft und den Boden ausbreitet. Diese Schallwelle ist eine Form von Energie, die von einem Ereignis erzeugt wird und sich durch das Medium bewegt. Wenn das menschliche Ohr in der Nähe ist, kann es diese Schallwelle aufnehmen und das Gehirn interpretiert es als Geräusch. Wenn niemand in der Nähe ist, um das Geräusch aufzunehmen, bleibt die Schallwelle jedoch trotzdem existent. Allerdings ist es wichtig zu beachten, dass die Definition von \"Geräusch\" subjektiv ist und von unserer Wahrnehmung abhängt. Wenn niemand da ist, um das Geräusch zu hören, gibt es auch niemanden, der es als solches wahrnimmt. Es gibt auch andere Tiere, die empfindlicher auf Schallwellen reagieren und in der Lage sind, die Schallwelle des fallenden Baums zu hören, selbst wenn Menschen es nicht können."
+          },
+          {
+            "id": "wikipedia-de-20231101-9344-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=9344 | Schall | https://de.wikipedia.org/wiki/Schall",
+            "title": "Schall",
+            "text": "Schall\n\nSchall (von Althochdeutsch: scal) bezeichnet allgemein mechanische Schwingungen in einem elastischen Medium (Gas, Flüssigkeit, Festkörper). Diese Schwingungen rufen Druck- und Dichteschwankungen hervor, die sich in dem Medium ausbreiten und so die Schallwellen bilden."
+          },
+          {
+            "id": "wikipedia-de-20231101-13919-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=13919 | Interferenz (Physik) | https://de.wikipedia.org/wiki/Interferenz%20%28Physik%29",
+            "title": "Interferenz (Physik)",
+            "text": "Interferenz (Physik)\n\nInterferenz (lat. ‚zwischen‘ und über altfrz. ‚sich gegenseitig schlagen‘) beschreibt die Änderung der Amplitude bei der Überlagerung von zwei oder mehr Wellen nach dem Superpositionsprinzip – also die vorzeichenrichtige Addition ihrer Auslenkungen (nicht der Intensitäten) während ihrer Durchdringung. Interferenz tritt bei allen Arten von Wellen auf, also bei Schall-, Licht-, Materiewellen usw."
+          },
+          {
+            "id": "wikipedia-de-20231101-10946278-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=10946278 | Physikalische Akustik | https://de.wikipedia.org/wiki/Physikalische%20Akustik",
+            "title": "Physikalische Akustik",
+            "text": "Physikalische Akustik\n\nPhysikalische Akustik behandelt die physikalischen Grundlagen der Akustik, die auf Schwingungen beruhen.\n\nDie physikalische Akustik handelt von den longitudinalen Wellen, den Schallwellen, die vom Ohr wahrgenommen werden. Das Ohr als Schallempfänger reagiert auf Schallwellen mit Frequenzen zwischen 20 Hz und 20 000 Hz, Schallwellen höherer Frequenz rechnet man dem Ultraschall zu. Schallwellen stellen eine sich ausbreitende Folge von Luftverdichtungen und -verdünnungen dar. Die einzelnen Luftteilchen schwingen dabei nur jeweils innerhalb kleiner Bereiche. Eine Schallwelle transportiert keine Materie. Bei Schallschwingungen unterscheidet man zwischen Ton, Klang, Geräusch und Knall, wobei sich ein reiner Ton mit einer Sinuskurve darstellen lässt. Beim Knall hat die Schwingung eine große, schnell abklingende Amplitude."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id06",
+      "prompt": "Braucht Licht zur Ausbreitung Luft?",
+      "kind": "negation",
+      "rubric": "No, electromagnetic light propagates in vacuum; air is unnecessary.",
+      "concepts": [
+        [
+          "Licht",
+          "elektromagnetisch"
+        ],
+        [
+          "Vakuum"
+        ]
+      ],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.11758760000157054,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "id": "oasst2-de-be210298-4e59-4234-9be5-f6ff13eef2b7",
+            "source": "https://huggingface.co/datasets/OpenAssistant/oasst2 | Apache-2.0 | revision=179dd21fc55192153d94adb0e0ce8f69e222bf75 | message=be210298-4e59-4234-9be5-f6ff13eef2b7",
+            "title": null,
+            "text": "Sous vide ist eine Garmethode, bei der Lebensmittel in vakuumversiegelten Beuteln bei relativ niedrigen Temperaturen in einem Wasserbad gekocht werden. Durch das Vakuumieren wird das Lebensmittel luftdicht verschlossen und die Zutaten im Beutel bleiben saftiger und aromatischer, als bei anderen Garmethoden. Sous vide ermöglicht es auch, dass die Lebensmittel auf den Punkt genau und kontrolliert gegart werden."
+          },
+          {
+            "id": "wikipedia-de-20231101-383010-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=383010 | Rockoon | https://de.wikipedia.org/wiki/Rockoon",
+            "title": "Rockoon",
+            "text": "Rockoon\n\nEin Rockoon ( aus Rocket und Balloon) besteht aus einer von einem gasgefüllten Ballon in die Hochatmosphäre getragenen Rakete, die mit Feststoffantrieb oder Hybridantrieb ausgerüstet sein kann. Diese wird, wenn der Ballon nach ca. einer Stunde seine Maximalhöhe erreicht hat, gezündet und durchdringt beim Start den Trägerballon. Da die Rakete sich nicht durch die dichten Luftschichten bewegen muss, kann sie bei Einsatz auf einem Rockoon eine größere Höhe erreichen als bei einem Start vom Boden. Der geringere Luftwiderstand ermöglicht Bauformen der Rakete, die Material und Masse einsparen, zum Beispiel geringere Länge und größeren Durchmesser. In 36 km Höhe beträgt der Luftdruck nur rund 1 % des Luftdrucks am Boden. Deshalb kann die Querschnittsfläche der Expansionsdüse bis zu 100-mal größer sein (10-facher Durchmesser der Austrittsöffnung) als in 0 m Höhe, was einen höheren Wirkungsgrad des Triebwerks ermöglicht und nahe an den Vakuumschub herankommt. Zudem werden die aerodynamischen Lasten auf die Rakete deutlich reduziert. Motivation für heutige Rockoon-Entwicklungen ist die Senkung der Startkosten."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id07",
+      "prompt": "Was versteht man unter Gravitation?",
+      "kind": "definition",
+      "rubric": "Attractive interaction associated with masses; not magnetism or friction.",
+      "concepts": [
+        [
+          "Gravitation",
+          "Schwerkraft"
+        ],
+        [
+          "Masse",
+          "Massen"
+        ],
+        [
+          "Anziehung",
+          "anziehen",
+          "anziehende"
+        ]
+      ],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.11107330000231741,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 0,
+        "candidates": [],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id08",
+      "prompt": "Welche SI-Einheit hat die Masse?",
+      "kind": "unit",
+      "rubric": "Kilogram, kg; not Newton or weight force.",
+      "concepts": [
+        [
+          "Masse"
+        ],
+        [
+          "Kilogramm",
+          "kg"
+        ]
+      ],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.11452859999917564,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 12,
+        "candidates": [
+          {
+            "id": "oasst2-de-2b9979fa-d06c-4ecd-99f0-8a7092fd702e",
+            "source": "https://huggingface.co/datasets/OpenAssistant/oasst2 | Apache-2.0 | revision=179dd21fc55192153d94adb0e0ce8f69e222bf75 | message=2b9979fa-d06c-4ecd-99f0-8a7092fd702e",
+            "title": null,
+            "text": "Da es sich hierbei um sehr viel \"Muskelmasse\" handelt, die du aufbauen möchtest, müssten sehr viele Spezialfaktoren bestehend sein. Unter idealen Umsänden kann man pro Monat zu beginn etwa ein Kilogramm Muskeln aufbauen. Die mögliche zunahme an Muskelmasse nimmt allerdings kontinuierlich ab. Nach vier Jahren kommt der Massegewinn praktisch zu einem Stillstand."
+          },
+          {
+            "id": "oasst2-de-55e36acb-d882-4f53-a3af-bd00bb602d22",
+            "source": "https://huggingface.co/datasets/OpenAssistant/oasst2 | Apache-2.0 | revision=179dd21fc55192153d94adb0e0ce8f69e222bf75 | message=55e36acb-d882-4f53-a3af-bd00bb602d22",
+            "title": null,
+            "text": "Tiefdruckgebiete deuten auf schlechteres Wetter hin. Tiefdruckgebiete entstehen vereinfacht gesagt, wenn warme Luftschichten aufsteigen und sich in der Atmosphäre verteilen. Dann nimmt der Druck in Bodennähe ab. Die aufsteigenden Luftmassen kühlen ab und nehmen auf ihrem Weg nach oben Wasser auf. So entstehen Wolken, die wiederum die Sonneneinstrahlung auf die Erde reduzieren. Dadurch wird es unter dem Einfluss eines Tiefdruckgebietes kälter und es regnet häufig."
+          },
+          {
+            "id": "oasst2-de-75ec3a9d-fe54-4b19-9998-c0c70a9f6a48",
+            "source": "https://huggingface.co/datasets/OpenAssistant/oasst2 | Apache-2.0 | revision=179dd21fc55192153d94adb0e0ce8f69e222bf75 | message=75ec3a9d-fe54-4b19-9998-c0c70a9f6a48",
+            "title": null,
+            "text": "Unter Laborbedingungen in Vakuum gemessen haben 1 kg Federn und 1 kg Stahl die gleiche Masse und sind somit gleich schwer. Wenn man das gleiche Experiment aber unter nicht Vakuumbedingungen stattfinden lässt, kann es zBsp zu Lufteinschlüssen und Auftriebseffekten kommen, die dazu führen könnten, dass eine Waage nicht das gleiche Gewicht anzeigt."
+          },
+          {
+            "id": "oasst2-de-fa77303f-1fd6-4a02-92af-ecb16812516e",
+            "source": "https://huggingface.co/datasets/OpenAssistant/oasst2 | Apache-2.0 | revision=179dd21fc55192153d94adb0e0ce8f69e222bf75 | message=fa77303f-1fd6-4a02-92af-ecb16812516e",
+            "title": null,
+            "text": "Ich bin mir nicht sicher, ob ich Ihre Frage richtig verstehe, aber wenn Sie fragen, wie lange es unter idealen Bedingungen dauern würde, um 25 kg Muskelmasse aufzubauen, hängt die Antwort von verschiedenen Faktoren ab, wie beispielsweise Ihrem aktuellen körperlichen Zustand, der spezifischen Trainingsmethode, Ihrer Ernährung, Ihrem Alter und Ihrem Geschlecht. In der Regel kann in einem Jahr mit diszipliniertem und zielgerichtetem Training eine Muskelaufbau von etwa 5-7 kg für Männer und 2-4 kg für Frauen erwartet werden. Da jedoch jeder Mensch unterschiedlich ist und individuell auf körperliche Aktivitäten und Ernährung reagiert, ist es schwierig, eine genaue zeitliche Schätzung für Ihren spezifischen Fall zu geben. Ideale Bedingungen für den Muskelaufbau könnten eine ausgewogene Ernährung, gezieltes Krafttraining, ausreichend Erholung, ein positiver Trainingsplan und die Vermeidung von Stressfaktoren umfassen. Es ist jedoch wichtig, sich an eine individuelle Fitnessroutine anzupassen, die für Ihre Bedürfnisse und Ziele geeignet ist, und dabei von einem Fachmann beraten zu lassen."
+          },
+          {
+            "id": "oasst2-de-fde88b20-5801-47cf-9a86-802520e1c9e1",
+            "source": "https://huggingface.co/datasets/OpenAssistant/oasst2 | Apache-2.0 | revision=179dd21fc55192153d94adb0e0ce8f69e222bf75 | message=fde88b20-5801-47cf-9a86-802520e1c9e1",
+            "title": null,
+            "text": "Ein Kilogramm Federn und ein Kilogramm Stahl wiegen gleich viel, da ein Kilogramm die Einheit der Masse ist und unabhängig von der Art des Materials bleibt. Es ist jedoch wichtig zu beachten, dass das Gewicht oder die Masse von Objekten unterschiedliche Auswirkungen auf ihre Bewegung haben kann. Aufgrund von Unterschieden in der Dichte und im Volumen von Federn und Stahl kann es vorkommen, dass Objekte unterschiedlich groß sind, auch wenn sie das gleiche Gewicht haben. Wenn Sie beispielsweise ein Kilogramm Stahl und ein Kilogramm Federn in eine Kiste packen, wird die Kiste mit den Federn wahrscheinlich mehr Platz einnehmen als die Kiste mit dem Stahl, da die Federn größer und leichter sind."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id09",
+      "prompt": "In welcher Einheit misst man elektrische Spannung?",
+      "kind": "unit",
+      "rubric": "Volt, V, associated with electrical potential difference.",
+      "concepts": [
+        [
+          "Spannung"
+        ],
+        [
+          "Volt"
+        ]
+      ],
+      "split": "development",
+      "answer": "Sie wird im internationalen Einheitensystem in der Einheit Volt (Einheitenzeichen: V) angegeben.",
+      "tokens": [
+        "sie",
+        "wird",
+        "im",
+        "internationalen",
+        "einheitensystem",
+        "in",
+        "der",
+        "einheit",
+        "volt",
+        "(",
+        "einheitenzeichen",
+        ":",
+        "v",
+        ")",
+        "angegeben",
+        "."
+      ],
+      "elapsed_s": 0.13392190000013215,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": true,
+        "errors": [],
+        "new_complete_text": true,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": true,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 9,
+        "candidates": [
+          {
+            "id": "oasst2-de-773c4a48-f83b-4426-a54d-e2e413b942c9",
+            "source": "https://huggingface.co/datasets/OpenAssistant/oasst2 | Apache-2.0 | revision=179dd21fc55192153d94adb0e0ce8f69e222bf75 | message=773c4a48-f83b-4426-a54d-e2e413b942c9",
+            "title": null,
+            "text": "Es ist für einen Menschen nicht gefährlich die Kontakte von USB-Ladekabeln anzufassen, da die Spannung, die über ein USB-Kabel übertragen wird nur 5 Volt beträgt und kaum wahrnehmbar ist. Ein so entstehender Kurzschluss könnte aber womöglich die Elektronik beschädigen, oder Verschmutzungen können auf die Kontakte geraten und so die Langlebigkeit des Kabels beeinträchtigen."
+          },
+          {
+            "id": "germanquad-train-46494",
+            "source": "https://huggingface.co/datasets/deepset/germanquad | CC-BY-4.0 annotations; Wikipedia contributors CC-BY-SA | train=46494 | article_title=Bahnstrom | https://de.wikipedia.org/wiki/Bahnstrom",
+            "title": null,
+            "text": "Die Betriebsspannung ist dabei meist 25 Kilovolt, in den USA (Lake Powell Railroad) und Südafrika (Erzbahn Sishen–Saldanha Bay) gibt es Bahnen mit 50 Kilovolt."
+          },
+          {
+            "id": "germanquad-train-51553",
+            "source": "https://huggingface.co/datasets/deepset/germanquad | CC-BY-4.0 annotations; Wikipedia contributors CC-BY-SA | train=51553 | article_title=Xbox_360 | https://de.wikipedia.org/wiki/Xbox_360",
+            "title": null,
+            "text": "Das Netzteil liefert die Spannungen +12 Volt und +5 Volt, letztere mit einer geringen Stromstärke von einem Ampère."
+          },
+          {
+            "id": "germanquad-train-60420",
+            "source": "https://huggingface.co/datasets/deepset/germanquad | CC-BY-4.0 annotations; Wikipedia contributors CC-BY-SA | train=60420 | article_title=Bahnstrom | https://de.wikipedia.org/wiki/Bahnstrom",
+            "title": null,
+            "text": "Ein Unterwerk transformiert die Energie aus dem Hochspannungsnetz in das Oberleitungsnetz. Es werden Wechselspannungs-Unterwerke eingesetzt, die Spannungen zwischen drei und 50 Kilovolt bzw. Frequenzen von 16,7 (DB, SBB und ÖBB), 25, 50 oder 60 Hertz erzeugen."
+          },
+          {
+            "id": "germanquad-train-60423",
+            "source": "https://huggingface.co/datasets/deepset/germanquad | CC-BY-4.0 annotations; Wikipedia contributors CC-BY-SA | train=60423 | article_title=Bahnstrom | https://de.wikipedia.org/wiki/Bahnstrom",
+            "title": null,
+            "text": "Ein Unterwerk transformiert die Energie aus dem Hochspannungsnetz in das Oberleitungsnetz. Es werden Wechselspannungs-Unterwerke eingesetzt, die Spannungen zwischen drei und 50 Kilovolt bzw. Frequenzen von 16,7 (DB, SBB und ÖBB), 25, 50 oder 60 Hertz erzeugen."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [],
+              "active_token_indices": [
+                91422
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "<BOS>",
+                    "<BOS>"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 0,
+              "facet": "unit",
+              "selected_token": "sie",
+              "selected_bin": 91422,
+              "selected_frequency_hz": 4.418078096067304,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "sie"
+              ],
+              "active_token_indices": [
+                111522
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "<BOS>",
+                    "sie"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 1,
+              "facet": "unit",
+              "selected_token": "wird",
+              "selected_bin": 111522,
+              "selected_frequency_hz": 27.37169266511354,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "sie",
+                "wird"
+              ],
+              "active_token_indices": [
+                49129
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "sie",
+                    "wird"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 2,
+              "facet": "unit",
+              "selected_token": "im",
+              "selected_bin": 49129,
+              "selected_frequency_hz": 14.913510743977549,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "wird",
+                "im"
+              ],
+              "active_token_indices": [
+                50217
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "wird",
+                    "im"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 3,
+              "facet": "unit",
+              "selected_token": "internationalen",
+              "selected_bin": 50217,
+              "selected_frequency_hz": 23.986018877291464,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "im",
+                "internationalen"
+              ],
+              "active_token_indices": [
+                28176
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "im",
+                    "internationalen"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 4,
+              "facet": "unit",
+              "selected_token": "einheitensystem",
+              "selected_bin": 28176,
+              "selected_frequency_hz": 18.27625492660976,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "internationalen",
+                "einheitensystem"
+              ],
+              "active_token_indices": [
+                49296
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "internationalen",
+                    "einheitensystem"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 5,
+              "facet": "unit",
+              "selected_token": "in",
+              "selected_bin": 49296,
+              "selected_frequency_hz": 14.494195491368037,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "einheitensystem",
+                "in"
+              ],
+              "active_token_indices": [
+                24120
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "einheitensystem",
+                    "in"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 6,
+              "facet": "unit",
+              "selected_token": "der",
+              "selected_bin": 24120,
+              "selected_frequency_hz": 20.991874856787803,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "in",
+                "der"
+              ],
+              "active_token_indices": [
+                28174
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "in",
+                    "der"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 7,
+              "facet": "unit",
+              "selected_token": "einheit",
+              "selected_bin": 28174,
+              "selected_frequency_hz": 19.398786595529373,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "der",
+                "einheit"
+              ],
+              "active_token_indices": [
+                107812
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "der",
+                    "einheit"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 8,
+              "facet": "unit",
+              "selected_token": "volt",
+              "selected_bin": 107812,
+              "selected_frequency_hz": 21.10190539019625,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "einheit",
+                "volt"
+              ],
+              "active_token_indices": [
+                7
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "einheit",
+                    "volt"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 9,
+              "facet": "unit",
+              "selected_token": "(",
+              "selected_bin": 7,
+              "selected_frequency_hz": 5.777273793887537,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "volt",
+                "("
+              ],
+              "active_token_indices": [
+                28178
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "volt",
+                    "("
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 10,
+              "facet": "unit",
+              "selected_token": "einheitenzeichen",
+              "selected_bin": 28178,
+              "selected_frequency_hz": 21.863939465165167,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "(",
+                "einheitenzeichen"
+              ],
+              "active_token_indices": [
+                3218
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "(",
+                    "einheitenzeichen"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 11,
+              "facet": "unit",
+              "selected_token": ":",
+              "selected_bin": 3218,
+              "selected_frequency_hz": 20.420992716557127,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "einheitenzeichen",
+                ":"
+              ],
+              "active_token_indices": [
+                104596
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "einheitenzeichen",
+                    ":"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 12,
+              "facet": "unit",
+              "selected_token": "v",
+              "selected_bin": 104596,
+              "selected_frequency_hz": 18.607633518014634,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ":",
+                "v"
+              ],
+              "active_token_indices": [
+                8
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    ":",
+                    "v"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 13,
+              "facet": "unit",
+              "selected_token": ")",
+              "selected_bin": 8,
+              "selected_frequency_hz": 19.955129577083643,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "v",
+                ")"
+              ],
+              "active_token_indices": [
+                6907
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "v",
+                    ")"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 14,
+              "facet": "unit",
+              "selected_token": "angegeben",
+              "selected_bin": 6907,
+              "selected_frequency_hz": 17.360940063384124,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ")",
+                "angegeben"
+              ],
+              "active_token_indices": [
+                13
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    ")",
+                    "angegeben"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 15,
+              "facet": "unit",
+              "selected_token": ".",
+              "selected_bin": 13,
+              "selected_frequency_hz": 15.641089826498797,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "angegeben",
+                "."
+              ],
+              "active_token_indices": [
+                3221
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 17900,
+                  "prefix": [
+                    "angegeben",
+                    "."
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 13.125,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 16,
+              "facet": "unit",
+              "selected_token": "<EOS>",
+              "selected_bin": 3221,
+              "selected_frequency_hz": 19.241093151490176,
+              "probability": 1.0
+            }
+          ],
+          "vocabulary_size": 116649,
+          "output_sha256": "f731c66d7264f4cf84577d26a87563a081d889930b859f90e906ad75c1bc0152",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id10",
+      "prompt": "Wofür steht die Einheit Ampere?",
+      "kind": "unit_reverse",
+      "rubric": "Electric current/current strength; do not answer voltage.",
+      "concepts": [
+        [
+          "Ampere"
+        ],
+        [
+          "Stromstärke",
+          "elektrischen Strom"
+        ]
+      ],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.10989660000268486,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 0,
+        "candidates": [],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id11",
+      "prompt": "Was wird in Ohm gemessen?",
+      "kind": "unit_reverse",
+      "rubric": "Electrical resistance, not current or voltage.",
+      "concepts": [
+        [
+          "Ohm"
+        ],
+        [
+          "Widerstand"
+        ]
+      ],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.11161989999891375,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "id": "germanquad-train-51997",
+            "source": "https://huggingface.co/datasets/deepset/germanquad | CC-BY-4.0 annotations; Wikipedia contributors CC-BY-SA | train=51997 | article_title=Energie | https://de.wikipedia.org/wiki/Energie",
+            "title": null,
+            "text": "In der Praxis kommen dissipative Verluste hinzu, angefangen von der Absorption in der Atmosphäre, über die Materialeigenschaften der kristallinen Zellen bis zum ohmschen Widerstand der Fotovoltaikanlagen, sodass bis heute nur Wirkungsgrade von weniger als 20 % erreicht werden können."
+          },
+          {
+            "id": "germanquad-train-53524",
+            "source": "https://huggingface.co/datasets/deepset/germanquad | CC-BY-4.0 annotations; Wikipedia contributors CC-BY-SA | train=53524 | article_title=Kondensator__Elektrotechnik_ | https://de.wikipedia.org/wiki/Kondensator__Elektrotechnik_",
+            "title": null,
+            "text": "Aus diesem Grunde werden in der Regel in Reihe geschaltete Kondensatoren symmetriert, das heißt, jedem Kondensator wird ein definierter hochohmiger Widerstand (jedoch deutlich geringer als ) parallel geschaltet, damit eine definierte Spannungsaufteilung entsteht."
+          },
+          {
+            "id": "wikipedia-de-20231101-172463-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=172463 | Analogmultimeter | https://de.wikipedia.org/wiki/Analogmultimeter",
+            "title": "Analogmultimeter",
+            "text": "Analogmultimeter\n\nEin Analogmultimeter, auch Analog-Vielfach-Messgerät, ist ein Multimeter mit einem Zeigermessgerät. Multimeter dienen zum Messen verschiedener elektrischer Messgrößen wie elektrische Stromstärke, elektrische Spannung und ohmscher Widerstand. Weitere Messgrößen sind teilweise die elektrische Kapazität oder die Induktivität eines Bauteils. Viele Multimeter bieten außerdem eine Funktion zum Testen von Transistoren oder Dioden. Mit Hilfe eines externen Sensors können manche Geräte die Temperatur messen. Pro Messgröße gibt es üblicherweise mehrere Messbereiche. Analogmultimeter können häufig passiv messen, während Digitalmultimeter immer eine Energieversorgung (z. B. Batterie) benötigen."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id12",
+      "prompt": "Welche Größe misst man in Watt?",
+      "kind": "unit_reverse",
+      "rubric": "Power, energy transferred per time; not energy itself.",
+      "concepts": [
+        [
+          "Watt"
+        ],
+        [
+          "Leistung"
+        ]
+      ],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.10871779999797582,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 5,
+        "candidates": [
+          {
+            "id": "germanquad-train-56571",
+            "source": "https://huggingface.co/datasets/deepset/germanquad | CC-BY-4.0 annotations; Wikipedia contributors CC-BY-SA | train=56571 | article_title=Gehirn | https://de.wikipedia.org/wiki/Gehirn",
+            "title": null,
+            "text": "Während das Gehirn etwa 1013 analoge Rechenoperationen pro Sekunde schafft und dabei etwa 15 bis 20 Watt Leistung benötigt, schafft der Supercomputer BlueGene/L von IBM bis zu 3,6·1014 Gleitkommaoperationen pro Sekunde mit doppelter Genauigkeit, wozu jedoch etwa 1,2 Megawatt benötigt werden."
+          },
+          {
+            "id": "germanquad-train-69820",
+            "source": "https://huggingface.co/datasets/deepset/germanquad | CC-BY-4.0 annotations; Wikipedia contributors CC-BY-SA | train=69820 | article_title=Universal_Serial_Bus | https://de.wikipedia.org/wiki/Universal_Serial_Bus",
+            "title": null,
+            "text": "Um die bei der Stromversorgung auftretenden Probleme zu lösen, wurden mit höheren Versionen der USB-Spezifikation erweiterte Möglichkeiten der Spannungsversorgung geschaffen, siehe folgende Tabelle. Dabei stieg die maximale Leistung auf bis zu 100 Watt, ausreichend beispielsweise für das Laden eines Notebooks."
+          },
+          {
+            "id": "wikipedia-de-20231101-217775-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=217775 | Lichtausbeute | https://de.wikipedia.org/wiki/Lichtausbeute",
+            "title": "Lichtausbeute",
+            "text": "Lichtausbeute\n\nDie Lichtausbeute einer Lampe ist der Quotient aus dem von der Lampe abgegebenen Lichtstrom und der von ihr aufgenommenen Leistung . Ihre SI-Einheit ist Lumen durch Watt (lm/W)."
+          },
+          {
+            "id": "wikipedia-de-20231101-8893779-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=8893779 | Soldano SLO-100 | https://de.wikipedia.org/wiki/Soldano%20SLO-100",
+            "title": "Soldano SLO-100",
+            "text": "Soldano SLO-100\n\nDer Soldano SLO-100 ist ein US-amerikanischer Gitarrenverstärker des Elektrotechnikunternehmens Soldano Custom Amplification und gilt als eines der berühmtesten E-Gitarren-Verstärker der Welt. Der Modellname SLO ist eine Abkürzung für Super Lead Overdrive. 100 ist die Leistung des Verstärkers in Watt."
+          },
+          {
+            "id": "wikipedia-de-20231101-10383398-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=10383398 | Kernkraftwerk Remerschen | https://de.wikipedia.org/wiki/Kernkraftwerk%20Remerschen",
+            "title": "Kernkraftwerk Remerschen",
+            "text": "Kernkraftwerk Remerschen\n\nDas Kernkraftwerk Remerschen mit einer Leistung von 1300 Megawatt mit Druckwasserreaktor wurde 1973 geplant und sollte 1981 in Betrieb gehen, wurde aber schlussendlich nicht realisiert. Es wäre das erste Kernkraftwerk in Luxemburg gewesen. Es stand bereits in der Planungsphase in Konkurrenz zum realisierten Kernkraftwerk Cattenom (Bau durch Électricité de France, EdF, in der Gemeinde Cattenom, Frankreich)."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id13",
+      "prompt": "Welche Einheit verwendet das SI für Energie?",
+      "kind": "unit",
+      "rubric": "Joule, J. Correctly associated with energy.",
+      "concepts": [
+        [
+          "Energie"
+        ],
+        [
+          "Joule"
+        ]
+      ],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.11308339999959571,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "id": "germanquad-train-61876",
+            "source": "https://huggingface.co/datasets/deepset/germanquad | CC-BY-4.0 annotations; Wikipedia contributors CC-BY-SA | train=61876 | article_title=Energie | https://de.wikipedia.org/wiki/Energie",
+            "title": null,
+            "text": "Energie ist eine fundamentale physikalische Größe, die in allen Teilgebieten der Physik sowie in der Technik, Chemie, Biologie und der Wirtschaft eine zentrale Rolle spielt. Ihre SI-Einheit ist das Joule."
+          },
+          {
+            "id": "wikipedia-de-20231101-124474-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=124474 | Schallenergie | https://de.wikipedia.org/wiki/Schallenergie",
+            "title": "Schallenergie",
+            "text": "Schallenergie\n\nDie Schallenergie W ist die in einem Schallfeld oder einem Schallereignis enthaltene Energie. Maßeinheit der Schallenergie ist das Joule J. Die zugehörige logarithmische Größe ist der Schallenergiepegel."
+          },
+          {
+            "id": "wikipedia-de-20231101-160116-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=160116 | Strahlungsenergie | https://de.wikipedia.org/wiki/Strahlungsenergie",
+            "title": "Strahlungsenergie",
+            "text": "Strahlungsenergie\n\nDie Strahlungsenergie ist eine physikalische Größe der Radiometrie. Sie ist die Energie, die von elektromagnetischen Wellen transportiert wird, beispielsweise von Licht, oder die Energie elektromagnetischer Wellen, die in einem gegebenen Raumbereich und zu einem definierten Zeitpunkt enthalten ist. Die SI-Einheit der Strahlungsenergie ist das Joule."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id14",
+      "prompt": "Wie berechnet sich die Dichte aus Masse und Volumen?",
+      "kind": "relation",
+      "rubric": "Density equals mass divided by volume, not reversed.",
+      "concepts": [
+        [
+          "Dichte"
+        ],
+        [
+          "Masse"
+        ],
+        [
+          "Volumen"
+        ]
+      ],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.10832229999869014,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "id": "oasst2-de-fde88b20-5801-47cf-9a86-802520e1c9e1",
+            "source": "https://huggingface.co/datasets/OpenAssistant/oasst2 | Apache-2.0 | revision=179dd21fc55192153d94adb0e0ce8f69e222bf75 | message=fde88b20-5801-47cf-9a86-802520e1c9e1",
+            "title": null,
+            "text": "Ein Kilogramm Federn und ein Kilogramm Stahl wiegen gleich viel, da ein Kilogramm die Einheit der Masse ist und unabhängig von der Art des Materials bleibt. Es ist jedoch wichtig zu beachten, dass das Gewicht oder die Masse von Objekten unterschiedliche Auswirkungen auf ihre Bewegung haben kann. Aufgrund von Unterschieden in der Dichte und im Volumen von Federn und Stahl kann es vorkommen, dass Objekte unterschiedlich groß sind, auch wenn sie das gleiche Gewicht haben. Wenn Sie beispielsweise ein Kilogramm Stahl und ein Kilogramm Federn in eine Kiste packen, wird die Kiste mit den Federn wahrscheinlich mehr Platz einnehmen als die Kiste mit dem Stahl, da die Federn größer und leichter sind."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id15",
+      "prompt": "Verdunstet Wasser erst, wenn es kocht?",
+      "kind": "negation",
+      "rubric": "No, evaporation occurs below boiling temperature at liquid surface.",
+      "concepts": [
+        [
+          "Verdunstung",
+          "verdunstet"
+        ],
+        [
+          "Siedetemperatur",
+          "Siedepunkt",
+          "Oberfläche"
+        ]
+      ],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.11211849999745027,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-271344-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=271344 | Pfütze | https://de.wikipedia.org/wiki/Pf%C3%BCtze",
+            "title": "Pfütze",
+            "text": "Pfütze\n\nEine Pfütze, auch Lache (österr. Lacke, niederdeutsch auch teilweise Lusche, pfälzisch u. a. Latsche, schweizerdeutsch Glungge oder Gunte), ist eine Ansammlung von Flüssigkeiten – meist Wasser – an der Erdoberfläche, die sich z. B. nach einem Regen bildet und einige Tage später versickert oder verdunstet ist. Pfützen bilden die kleinste Form der Stillgewässer."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id16",
+      "prompt": "Ist eine wässrige Lösung mit einem pH-Wert unter sieben sauer oder basisch?",
+      "kind": "classification",
+      "rubric": "Acidic under conventional room-temperature aqueous conditions; not basic.",
+      "concepts": [
+        [
+          "pH"
+        ],
+        [
+          "sauer",
+          "saure"
+        ],
+        [
+          "7",
+          "sieben"
+        ]
+      ],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.1303684999984398,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "id": "wikipedia-de-20231101-25797-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=25797 | Antoine Laurent de Lavoisier | https://de.wikipedia.org/wiki/Antoine%20Laurent%20de%20Lavoisier",
+            "title": "Antoine Laurent de Lavoisier",
+            "text": "Antoine Laurent de Lavoisier\n\nAntoine Laurent de Lavoisier [] (* 26. August 1743 in Paris; † 8. Mai 1794 ebenda) war ein französischer Chemiker und Naturwissenschaftler, Rechtsanwalt, Hauptzollpächter, Ökonom und Leiter der französischen Pulververwaltung. Er führte quantitative Messmethoden in die Chemie ein, erkannte die Rolle des Sauerstoffs bei der Verbrennung sowie beim Oxidationsprozess bei der Atmung und widerlegte damit die damals vorherrschende Phlogistontheorie. Lavoisier schuf viele Grundlagen der modernen Chemie. Er gilt als deren Begründer und als Vater der ersten chemischen Revolution."
+          },
+          {
+            "id": "wikipedia-de-20231101-349334-lead",
+            "source": "Wikimedia Wikipedia 20231101.de | article_id=349334 | Linde-Verfahren | https://de.wikipedia.org/wiki/Linde-Verfahren",
+            "title": "Linde-Verfahren",
+            "text": "Linde-Verfahren\n\nDas Linde-Verfahren ist eine 1895 von Carl von Linde entwickelte technische Methode zur Gastrennung, welche die Verflüssigung von Gasgemischen wie Luft und einzelnen atmosphärischen Gasen wie Sauerstoff, Stickstoff und Argon (Edelgase) in großen Mengen ermöglicht und in diesem Sinne der Kälteerzeugung im Temperaturbereich von 77 bis 100 Kelvin (K) dient."
+          }
+        ],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id17",
+      "prompt": "Was machen Pflanzen bei der Fotosynthese?",
+      "kind": "definition",
+      "rubric": "Use light energy to convert carbon dioxide and water into energy-rich organic matter/sugars, usually releasing oxygen; not only breathing oxygen.",
+      "concepts": [
+        [
+          "Fotosynthese",
+          "Photosynthese"
+        ],
+        [
+          "Licht"
+        ],
+        [
+          "Kohlenstoffdioxid",
+          "Kohlendioxid"
+        ],
+        [
+          "Zucker",
+          "Glucose",
+          "Glukose",
+          "organische"
+        ]
+      ],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.12019590000272729,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 0,
+        "candidates": [],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id18",
+      "prompt": "Welche Aufgabe haben Mitochondrien in einer Zelle?",
+      "kind": "function",
+      "rubric": "Cellular energy provision/ATP synthesis through respiration; not storing all genetic information.",
+      "concepts": [
+        [
+          "Mitochondrien"
+        ],
+        [
+          "ATP",
+          "Energie",
+          "Zellatmung"
+        ]
+      ],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.122070999997959,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "same-document concept co-occurrence, manually verify entailment",
+        "candidate_count": 0,
+        "candidates": [],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id19",
+      "prompt": "Wie warm ist es genau jetzt in meinem Zimmer?",
+      "kind": "unknown_value",
+      "rubric": "State insufficient measurement/location data or ask for measurement; do not invent a current temperature.",
+      "concepts": [],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.12081080000280053,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "unprovided personal/current measurement",
+        "candidates": [],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    },
+    {
+      "id": "id20",
+      "prompt": "Wie viele Herzschläge pro Minute habe ich in diesem Augenblick?",
+      "kind": "unknown_value",
+      "rubric": "Cannot know user's actual pulse without a measurement. Typical ranges alone do not answer the personal value; no invented exact number.",
+      "concepts": [],
+      "split": "development",
+      "answer": "",
+      "tokens": [],
+      "elapsed_s": 0.1090939999994589,
+      "context_before": null,
+      "automatic": {
+        "surface_form_ok": false,
+        "errors": [
+          "empty"
+        ],
+        "new_complete_text": false,
+        "new_sentences": 0,
+        "not_a_semantic_quality_judgment": true,
+        "exact_normalized_source_passage": false,
+        "new_word_types": [],
+        "novelty_is_not_correctness": true
+      },
+      "evidence": {
+        "kind": "unprovided personal/current measurement",
+        "candidates": [],
+        "verified_support": null
+      },
+      "diagnostics": {
+        "analysis": null,
+        "reason": null,
+        "generation_reason": "no_supported_information_binding",
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [],
+          "vocabulary_size": 116649,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "ended": true,
+        "truncated": false
+      },
+      "qualitative_review": null
+    }
+  ],
+  "known_chat_rows": []
+}

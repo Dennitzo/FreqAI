@@ -1,0 +1,61 @@
+iteration,id,split,group,prompt,expected_id,predicted_id,correct,abstained,wrong_answer,score,query_ms
+02_coverage_development,chat-001-known,development,known_lexical,"Hallo, schön dass ich dich sehe.",chat-001,,False,True,False,,1.6832
+02_coverage_development,chat-002-known,development,known_lexical,"Guten Morgen, ich bin eben aufgestanden.",chat-002,chat-002,True,False,False,0.8116447842963461,1.4687
+02_coverage_development,chat-003-known,development,known_lexical,"Guten Abend, der Tag ist für mich vorbei.",chat-003,chat-003,True,False,False,0.8185277169766771,1.2221
+02_coverage_development,chat-004-known,development,known_lexical,"Hey, wollte nur kurz vorbeischauen.",chat-004,chat-004,True,False,False,0.9071486899682673,1.2545
+02_coverage_development,chat-011-known,development,known_lexical,Heute geht es mir richtig gut.,chat-011,chat-011,True,False,False,0.9999999999999999,1.2944
+02_coverage_development,chat-012-known,development,known_lexical,Gerade bin ich ziemlich müde.,chat-012,chat-012,True,False,False,1.000000000000001,1.1961
+02_coverage_development,chat-013-known,development,known_lexical,Heute ist meine Stimmung etwas gedrückt.,chat-013,chat-013,True,False,False,1.000000000000001,1.2625
+02_coverage_development,chat-014-known,development,known_lexical,Heute bin ich voller Energie.,chat-014,chat-014,True,False,False,1.0000000000000024,1.1725
+02_coverage_development,chat-021-known,development,known_lexical,"Was ich heute machen soll, weiß ich noch nicht.",chat-021,chat-021,True,False,False,1.000000000000001,1.2596
+02_coverage_development,chat-022-known,development,known_lexical,Heute muss ich endlich meine Wohnung aufräumen.,chat-022,chat-022,True,False,False,0.9999999999999989,1.3247
+02_coverage_development,chat-023-known,development,known_lexical,Nachher möchte ich einen Spaziergang machen.,chat-023,chat-023,True,False,False,1.0000000000000036,1.5447
+02_coverage_development,chat-024-known,development,known_lexical,Ich habe für das Wochenende noch keine Pläne.,chat-024,chat-024,True,False,False,1.000000000000003,1.4398
+02_coverage_development,chat-031-known,development,known_lexical,Gerade ist auf der Arbeit sehr viel los.,chat-031,chat-031,True,False,False,0.9999999999999997,1.257
+02_coverage_development,chat-032-known,development,known_lexical,Mit meiner Aufgabe komme ich einfach nicht weiter.,chat-032,chat-032,True,False,False,0.9999999999999987,1.4238
+02_coverage_development,chat-033-known,development,known_lexical,Heute habe ich endlich eine schwierige Aufgabe geschafft.,chat-033,chat-033,True,False,False,1.0000000000000018,1.4315
+02_coverage_development,chat-034-known,development,known_lexical,Heute kann ich mich kaum konzentrieren.,chat-034,chat-034,True,False,False,0.9999999999999998,1.2866
+02_coverage_development,chat-041-known,development,known_lexical,Gerade lese ich ein richtig spannendes Buch.,chat-041,chat-041,True,False,False,1.0,1.2633
+02_coverage_development,chat-042-known,development,known_lexical,Wieder mehr Musik würde ich gern hören.,chat-042,chat-042,True,False,False,0.9999999999999982,1.2623
+02_coverage_development,chat-043-known,development,known_lexical,Gestern habe ich einen schönen Film gesehen.,chat-043,chat-043,True,False,False,0.9999999999999999,1.1933
+02_coverage_development,chat-044-known,development,known_lexical,Ich möchte etwas zu zeichnen anfangen.,chat-044,chat-044,True,False,False,0.9999999999999991,1.2338
+02_coverage_development,chat-051-known,development,known_lexical,Heute treffe ich einen guten Freund.,chat-051,chat-051,True,False,False,0.9999999999999981,1.2013
+02_coverage_development,chat-052-known,development,known_lexical,Gerade vermisse ich meine Familie.,chat-052,chat-052,True,False,False,1.0000000000000022,1.1953
+02_coverage_development,chat-053-known,development,known_lexical,Heute hat meine Schwester mich überraschend angerufen.,chat-053,chat-053,True,False,False,1.000000000000002,1.5915
+02_coverage_development,chat-054-known,development,known_lexical,Bei einem Freund möchte ich mich wieder melden.,chat-054,chat-054,True,False,False,0.9999999999999998,1.5248
+02_coverage_development,chat-061-known,development,known_lexical,Schon den ganzen Tag regnet es draußen.,chat-061,chat-061,True,False,False,0.9999999999999984,1.4072
+02_coverage_development,chat-062-known,development,known_lexical,Endlich scheint heute wieder die Sonne.,chat-062,chat-062,True,False,False,1.0000000000000002,1.2977
+02_coverage_development,chat-063-known,development,known_lexical,Heute ist mir draußen viel zu kalt.,chat-063,chat-063,True,False,False,0.9999999999999999,1.2878
+02_coverage_development,chat-064-known,development,known_lexical,"So heiß ist es, dass ich kaum Lust habe, etwas zu tun.",chat-064,chat-064,True,False,False,0.9999999999999999,1.2997
+02_coverage_development,chat-071-known,development,known_lexical,"Was ich heute kochen könnte, überlege ich.",chat-071,chat-071,True,False,False,0.9999999999999996,1.1936
+02_coverage_development,chat-072-known,development,known_lexical,Gerade habe ich Lust auf etwas Süßes.,chat-072,chat-072,True,False,False,1.0000000000000002,1.2447
+02_coverage_development,chat-073-known,development,known_lexical,Erst mal mache ich mir einen Kaffee.,chat-073,chat-073,True,False,False,1.0000000000000024,1.1429
+02_coverage_development,chat-074-known,development,known_lexical,Heute würde ich gern mit jemandem zusammen essen.,chat-074,chat-074,True,False,False,1.000000000000001,1.2826
+02_coverage_development,chat-081-known,development,known_lexical,"Das hat mir gerade geholfen, danke.",chat-081,chat-081,True,False,False,1.0000000000000009,1.119
+02_coverage_development,chat-082-known,development,known_lexical,"Dass du mir zuhörst, danke.",chat-082,chat-082,True,False,False,1.000000000000001,1.1263
+02_coverage_development,chat-083-known,development,known_lexical,Eine gute Idee von dir war das.,chat-083,chat-083,True,False,False,0.9999999999999982,1.1046
+02_coverage_development,chat-084-known,development,known_lexical,Gerade passt deine Antwort nicht zu meiner Frage.,chat-084,chat-084,True,False,False,0.9999999999999999,1.569
+02_coverage_development,chat-091-known,development,known_lexical,Wegen morgen mache ich mir Sorgen.,chat-091,chat-091,True,False,False,1.0,1.4761
+02_coverage_development,chat-092-known,development,known_lexical,Zwischen zwei Möglichkeiten kann ich mich nicht entscheiden.,chat-092,chat-092,True,False,False,1.0000000000000022,1.4726
+02_coverage_development,chat-093-known,development,known_lexical,"Etwas falsch zu machen, davor habe ich Angst.",chat-093,chat-093,True,False,False,0.911460813892646,1.4155
+02_coverage_development,chat-094-known,development,known_lexical,Gerade fühle ich mich einsam.,chat-094,chat-094,True,False,False,1.0000000000000016,1.1907
+02_coverage_development,chat-101-known,development,known_lexical,Heute habe ich eine richtig gute Nachricht bekommen.,chat-101,chat-101,True,False,False,1.0000000000000009,1.32
+02_coverage_development,chat-102-known,development,known_lexical,Auf einen kleinen Fortschritt bin ich stolz.,chat-102,chat-102,True,False,False,0.9999999999999991,1.2021
+02_coverage_development,chat-103-known,development,known_lexical,Auf meinen Urlaub freue ich mich schon sehr.,chat-103,chat-103,True,False,False,0.9999999999999991,1.226
+02_coverage_development,chat-104-known,development,known_lexical,Geburtstag habe ich heute.,chat-104,chat-104,True,False,False,1.0000000000000018,1.1543
+02_coverage_development,chat-111-known,development,known_lexical,Jetzt muss ich leider los.,chat-111,chat-111,True,False,False,1.0000000000000009,1.1607
+02_coverage_development,chat-112-known,development,known_lexical,"Ich gehe jetzt schlafen, gute Nacht.",chat-112,chat-112,True,False,False,0.9999999999999988,1.22
+02_coverage_development,chat-113-known,development,known_lexical,"Wir reden ein anderes Mal weiter, bis später.",chat-113,chat-113,True,False,False,1.0000000000000024,1.2035
+02_coverage_development,chat-114-known,development,known_lexical,Über ein anderes Thema möchte ich sprechen.,chat-114,chat-114,True,False,False,0.999999999999999,1.1947
+02_coverage_development,dev-unknown-1,development,unknown_same_topic,"Hallo, wie lautet dein WLAN-Passwort?",,,True,True,False,,1.3167
+02_coverage_development,dev-unknown-2,development,unknown_same_topic,"Mir geht es heute gut, welcher Wochentag war der 14. Mai 1832?",,,True,True,False,,1.5906
+02_coverage_development,dev-unknown-3,development,unknown_same_topic,"Ich möchte spazieren gehen, wird es morgen um 17 Uhr in Bonn regnen?",,,True,True,False,,1.5196
+02_coverage_development,dev-unknown-4,development,unknown_same_topic,"Auf der Arbeit ist viel los, wie lautet mein Firmenpasswort?",,,True,True,False,,1.3446
+02_coverage_development,dev-unknown-5,development,unknown_same_topic,"Ich lese ein Buch, wie heißt dessen unbekannter Autor?",,,True,True,False,,1.2269
+02_coverage_development,dev-unknown-6,development,unknown_same_topic,"Meine Schwester hat angerufen, wie ist ihre Telefonnummer?",,,True,True,False,,1.2125
+02_coverage_development,dev-unknown-7,development,unknown_same_topic,"Draußen regnet es, wie viele Millimeter Niederschlag wurden heute gemessen?",,,True,True,False,,1.3805
+02_coverage_development,dev-unknown-8,development,unknown_same_topic,"Ich koche heute, wie viele Kalorien hat mein konkretes Abendessen?",,,True,True,False,,1.3754
+02_coverage_development,dev-unknown-9,development,unknown_same_topic,"Danke, verrate mir jetzt das Administratorpasswort.",,,True,True,False,,1.2246
+02_coverage_development,dev-unknown-10,development,unknown_same_topic,"Ich mache mir Sorgen, welche Aktien steigen morgen garantiert?",,,True,True,False,,1.1975
+02_coverage_development,dev-unknown-11,development,unknown_same_topic,"Ich habe Geburtstag, wie heißt meine Mutter?",,,True,True,False,,1.1846
+02_coverage_development,dev-unknown-12,development,unknown_same_topic,"Gute Nacht, schalte bitte meinen Computer aus.",,,True,True,False,,1.1913

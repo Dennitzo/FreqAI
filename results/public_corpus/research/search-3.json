@@ -1,0 +1,64 @@
+{
+  "query": "German instruction dataset conversations licensed public German assistant dataset",
+  "results": [
+    {
+      "title": "TexBiG - Data - Webis Group",
+      "url": "https://webis.de/data/texbig.html",
+      "snippet": "Synopsis. TexBiG (from the German Text-Bild-Gefüge, meaning Text-Image-Structure) is a document layout analysis dataset for historical documents in the late ...",
+      "source": "google cse",
+      "thumbnailUrl": ""
+    },
+    {
+      "title": "Colloquium for Computational Linguistics and Linguistics in Stuttgart",
+      "url": "https://www.ims.uni-stuttgart.de/en/research/colloquium/",
+      "snippet": "Language-independent and language-specific factors in pronoun resolution across types of languages and language users: Evidence from German, French, Spanish and ...",
+      "source": "google cse",
+      "thumbnailUrl": ""
+    },
+    {
+      "title": "Overview | Munich Open Source",
+      "url": "https://opensource.muenchen.de/software/",
+      "snippet": "11.03.2025 ... A complete overview of all open source software used, improved and/or published by the City of Munich. Feel free to use the filter function with ...",
+      "source": "google cse",
+      "thumbnailUrl": ""
+    },
+    {
+      "title": "Einträge mit Organisationseinheit \"20 Fachbereich Informatik ...",
+      "url": "https://tubiblio.ulb.tu-darmstadt.de/view/divisions/fb20=5Fuw.html",
+      "snippet": "Lexical Substitution Dataset for German. Konferenzveröffentlichung, Bibliographie. Cholakov, Kostadin ; Eckle-Kohler, Judith ; Gurevych, Iryna (2014)",
+      "source": "google cse",
+      "thumbnailUrl": ""
+    },
+    {
+      "title": "Methoden und Ansätze für die zielgerichtete Gestaltung der ...",
+      "url": "https://epub.uni-regensburg.de/77144/2/Konadl_Dissertation.pdf",
+      "snippet": "The following excerpt from the training data set gives an insight into the data (cf. ... data on conversations from various daily life situations. Prompt ...",
+      "source": "google cse",
+      "thumbnailUrl": ""
+    },
+    {
+      "title": "Publikationen // Universität Oldenburg",
+      "url": "https://uol.de/aai/publikationen",
+      "snippet": "Sonntag, \"Building A German Clinical Named Entity Recognition System without In-domain Training Data\" in Proc. Association for Computational Linguistics.",
+      "source": "google cse",
+      "thumbnailUrl": ""
+    },
+    {
+      "title": "Stefanie Urchs - Dr. rer. nat. (PhD) | Data Scientist | NLP, AI, ML",
+      "url": "https://de.linkedin.com/in/stefanieurchs/en",
+      "snippet": "... training data for large language models (LLM) or other NLP applications. I use a language-agnostic approach, which I test on English and German data.",
+      "source": "google cse",
+      "thumbnailUrl": ""
+    },
+    {
+      "title": "text | Michael Reisch",
+      "url": "https://michaelreisch.com/text/",
+      "snippet": "Text Martin Hochleitner: \"Sculpture Tastes Photography Iconography and Visual Effect in the Photographs of Michael Reisch\", 2006. english / german. english.",
+      "source": "google cse",
+      "thumbnailUrl": ""
+    }
+  ],
+  "provider": "searxng",
+  "isFallback": false,
+  "retrievedAt": "2026-09-06T09:14:00.7108252+00:00"
+}

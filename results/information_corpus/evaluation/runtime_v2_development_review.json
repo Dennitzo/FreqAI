@@ -1,0 +1,439 @@
+{
+  "run_sha256": "020c1dc9f149cb4a1109024324213422f0ada9e384519be474da01785e9b7d8e",
+  "review": "Independent AI-agent semantics and grammar; known chat cases are exact output regression only.",
+  "rows": [
+    {
+      "id": "id01",
+      "correct": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": true,
+      "note": "Correct explicit information answer with preserved notation."
+    },
+    {
+      "id": "id02",
+      "correct": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": true,
+      "note": "Correct explicit information answer with preserved notation."
+    },
+    {
+      "id": "id03",
+      "correct": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": true,
+      "note": "Correct explicit information answer with preserved notation."
+    },
+    {
+      "id": "id04",
+      "correct": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": false,
+      "note": "General question form missed by router; unchanged irrelevant old decoder answer. Apple manager and ambient light sensor do not address amplitude versus frequency."
+    },
+    {
+      "id": "id05",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": false,
+      "note": "General question form missed by router; unchanged irrelevant old decoder answer. Ancient vacuum philosophy does not state sound needs a medium; broken repeated sentence."
+    },
+    {
+      "id": "id06",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": false,
+      "note": "General question form missed by router; unchanged irrelevant old decoder answer. Baptist movement and invasive snake mixture, not light propagation."
+    },
+    {
+      "id": "id07",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": false,
+      "note": "General question form missed by router; unchanged irrelevant old decoder answer. Malformed Enlightenment/Edward Routh mixture, no gravity definition."
+    },
+    {
+      "id": "id08",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": false,
+      "note": "General question form missed by router; unchanged irrelevant old decoder answer. Loops solar distance and truncates; no kilogram unit."
+    },
+    {
+      "id": "id09",
+      "correct": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": true,
+      "note": "Correct explicit information answer with preserved notation."
+    },
+    {
+      "id": "id10",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": true,
+      "note": "Information decoder returns empty; no supported binding."
+    },
+    {
+      "id": "id11",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": false,
+      "note": "General question form missed by router; unchanged irrelevant old decoder answer. Weather temperature dates rather than resistance; malformed mixed sentence."
+    },
+    {
+      "id": "id12",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": false,
+      "note": "General question form missed by router; unchanged irrelevant old decoder answer. Human-development/light index mixture rather than power; initial sentence fragment."
+    },
+    {
+      "id": "id13",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": true,
+      "note": "Information decoder returns empty; no supported binding."
+    },
+    {
+      "id": "id14",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": true,
+      "note": "Information decoder returns empty; no supported binding."
+    },
+    {
+      "id": "id15",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": false,
+      "note": "General question form missed by router; unchanged irrelevant old decoder answer. Unrelated Pacific seabed description with grammatical disagreement."
+    },
+    {
+      "id": "id16",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": false,
+      "note": "General question form missed by router; unchanged irrelevant old decoder answer. Unrelated von Neumann anecdote, repeated and truncated."
+    },
+    {
+      "id": "id17",
+      "correct": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "generic_nonanswer": true,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": false,
+      "note": "General question form missed by router; unchanged irrelevant old decoder answer. Conversational plant-preference question, no photosynthesis information."
+    },
+    {
+      "id": "id18",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": true,
+      "note": "Information decoder returns empty; no supported binding."
+    },
+    {
+      "id": "id19",
+      "correct": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": false,
+      "note": "General question form missed by router; unchanged irrelevant old decoder answer. Ventilation advice does not acknowledge absence of current room measurement."
+    },
+    {
+      "id": "id20",
+      "correct": false,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "information_route": false,
+      "note": "General question form missed by router; unchanged irrelevant old decoder answer. Unrelated video-upscaling offer rather than acknowledging unavailable personal pulse."
+    }
+  ],
+  "chat_comparisons": [
+    {
+      "id": "d01a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d01b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d02a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d02b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d03a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d03b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d04a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d04b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d05a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d05b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d06a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d06b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d07a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d07b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d08a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d08b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d09a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d09b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d10a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "d10b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h01a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h01b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h02a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h02b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h03a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h03b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h04a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h04b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h05a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h05b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h06a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h06b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h07a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h07b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h08a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h08b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h09a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h09b",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h10a",
+      "answer_equal": true,
+      "tokens_equal": true
+    },
+    {
+      "id": "h10b",
+      "answer_equal": true,
+      "tokens_equal": true
+    }
+  ],
+  "summary": {
+    "correct": 4,
+    "cases": 20,
+    "grammatical": 8,
+    "empty": 4,
+    "wrong_or_irrelevant_nonempty": 12,
+    "generic_nonanswers": 1,
+    "information_routes": 8,
+    "identical_chat_answers": 40,
+    "identical_chat_token_sequences": 40
+  }
+}

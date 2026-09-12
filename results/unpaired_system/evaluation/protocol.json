@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-09-06T11:45:06.040152+00:00",
+  "development_sha256": "f1ab9b582b95c8223fab9b78b29f670ebe81fc85956537859d67c9077be03e8d",
+  "sealed_holdout_sha256": "83512a3cf7936f91f85f4c153172ca89618d31aca18b69b0b92befad6153ae8e",
+  "known_knowledge_regression_sha256": "5eab9f90dc6b7acb0f00993fe79d32c36cd5697cba2426fba39c9e668a38e9ac",
+  "baseline_freeze_sha256": "226ce9d39fab6192314628dc4b63bb0581d99b7f843064ba4e952c140e0e66fb",
+  "conversation_turns": {
+    "development": 20,
+    "holdout": 20
+  },
+  "no_prompt_overlap_with_historical_documents": true,
+  "review": "Independent AI-agent review, no human study. Grammar/role/context/negation/actual conversational adequacy scored separately. Related dictionary definition is not automatically a suitable reply.",
+  "holdout_rule": "No candidate outputs before code/data freeze. No quality tuning after fresh holdout.",
+  "candidate_data_rule": "No QA fields or inherited paired IDs; no previous authored language-prior documents. Exact raw-text overlap with old paired answers is separately reported because independently sourced Wikipedia may share factual prose.",
+  "coefficient_rule": "Observed counts and normalization,0 optimizer updates. Any manually declared conversational language rules are disclosed; no weight-free intelligence claim.",
+  "knowledge_regression": "All40 old information questions are now known; their old holdout label is historical only."
+}

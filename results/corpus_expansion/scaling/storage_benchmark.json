@@ -1,0 +1,82 @@
+{
+  "synthetic_only": true,
+  "interpretation": "Storage and numerical scalability; not a conversational-quality evaluation.",
+  "processes": "Each size runs in a separate fresh Python process.",
+  "results": [
+    {
+      "record_count": 1000,
+      "conditioning": "semantic",
+      "order": 2,
+      "compilation_seconds": 0.8157931000005192,
+      "generation_seconds": 0.0412493000003451,
+      "single_step_median_seconds": 0.0014102499999353313,
+      "generated_tokens": 8,
+      "generated_text": "Objektsg besucht Ortsg. Dort warten Freunde.",
+      "operator_direct_max_error": 0.0,
+      "peak_process_working_set_bytes": 86310912,
+      "storage": {
+        "storage": "compact",
+        "vocabulary_size": 2006,
+        "field_count": 29292,
+        "complex_coefficient_bytes": 753840,
+        "support_index_bytes": 376920,
+        "reference_probability_bytes": 88120,
+        "association_bytes": 224172,
+        "numerical_payload_bytes": 1443052,
+        "equivalent_dense_coefficient_bytes": 940156032,
+        "equivalent_dense_association_bytes": 32192288,
+        "excludes": "Python objects, count tables, token strings, temporary compilation and generation arrays"
+      }
+    },
+    {
+      "record_count": 5000,
+      "conditioning": "semantic",
+      "order": 2,
+      "compilation_seconds": 4.746501400000852,
+      "generation_seconds": 0.5449168999984977,
+      "single_step_median_seconds": 0.01784265000060259,
+      "generated_tokens": 8,
+      "generated_text": "Objektcre besucht Ortcre. Dort warten Freunde.",
+      "operator_direct_max_error": 0.0,
+      "peak_process_working_set_bytes": 212475904,
+      "storage": {
+        "storage": "compact",
+        "vocabulary_size": 10006,
+        "field_count": 146520,
+        "complex_coefficient_bytes": 3770400,
+        "support_index_bytes": 1885200,
+        "reference_probability_bytes": 440120,
+        "association_bytes": 1120172,
+        "numerical_payload_bytes": 7215892,
+        "equivalent_dense_coefficient_bytes": 23457265920,
+        "equivalent_dense_association_bytes": 800960288,
+        "excludes": "Python objects, count tables, token strings, temporary compilation and generation arrays"
+      }
+    },
+    {
+      "record_count": 10000,
+      "conditioning": "semantic",
+      "order": 2,
+      "compilation_seconds": 8.713496599999417,
+      "generation_seconds": 0.8958922000001621,
+      "single_step_median_seconds": 0.03163070000027801,
+      "generated_tokens": 8,
+      "generated_text": "Objektgji besucht Ortgji. Dort warten Freunde.",
+      "operator_direct_max_error": 0.0,
+      "peak_process_working_set_bytes": 371777536,
+      "storage": {
+        "storage": "compact",
+        "vocabulary_size": 20006,
+        "field_count": 293052,
+        "complex_coefficient_bytes": 7541040,
+        "support_index_bytes": 3770520,
+        "reference_probability_bytes": 880120,
+        "association_bytes": 2240172,
+        "numerical_payload_bytes": 14431852,
+        "equivalent_dense_coefficient_bytes": 93804772992,
+        "equivalent_dense_association_bytes": 3201920288,
+        "excludes": "Python objects, count tables, token strings, temporary compilation and generation arrays"
+      }
+    }
+  ]
+}

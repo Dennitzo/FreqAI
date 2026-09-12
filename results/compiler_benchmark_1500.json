@@ -1,0 +1,162 @@
+{
+  "active_records": 20093,
+  "measured_records": 1500,
+  "read_only_database": true,
+  "requested_workers": 32,
+  "runs": [
+    {
+      "mode": "serial",
+      "compile_seconds": 9.253506499997457,
+      "policy": {
+        "logical_cores": 32,
+        "physical_cores": 16,
+        "workers": 1,
+        "threads_per_worker": 32,
+        "parallel_enabled": false,
+        "in_worker": false,
+        "pool_active": false,
+        "pool_workers": 0,
+        "pool_failed": false,
+        "pool_error": null
+      },
+      "signature": {
+        "corpus_digest": "724cb6562cd2245c17c802abdbc079c1bcb82ce906ffa0615fcf08e4b40f64d8",
+        "coefficient_sha256": "4d02e0003b44ab7a83f4745eae55e401da739bc97d838187acaa8780588a5130",
+        "rendering_sha256": "ad2280b227e9ce63de83e3d4c8003ada0fd6c0e5840ce4ac65c79c353325c04b",
+        "order": 2,
+        "coefficient_rule": "sqrt(count/sum(count))",
+        "storage": {
+          "record_count": 1500,
+          "statement_count": 4305,
+          "vocabulary_size": 20708,
+          "group_count": 5392,
+          "prefix_fields": 266187,
+          "observed_edges": 401448,
+          "unaddressed_statement_count": 186,
+          "context_surface_forms": 5185,
+          "complex_coefficient_bytes": 6423168,
+          "support_index_bytes": 3211584,
+          "numerical_payload_bytes": 10099104,
+          "no_gradient_optimization": true,
+          "no_qa_pairs": true,
+          "excludes": "Python objects, token strings and temporary compilation counts",
+          "declarative_facts": 1061,
+          "lexical_role_bytes": 464352,
+          "explicit_grammar": true,
+          "optimizer_steps": 0,
+          "requires_question_answer_pairs": false
+        },
+        "declaration_role_sha256": "9a55ad88c034b44699ee3166e66b31cff3f80adf852ea925b7ed1d7188e5938d",
+        "grammar_version": "unpaired_roles_v2"
+      },
+      "answers": {
+        "Was ist eine Frequenz?": {
+          "text": "Die Frequenz ist der Kehrwert der Periodendauer.",
+          "tokens": [
+            "die",
+            "frequenz",
+            "ist",
+            "der",
+            "kehrwert",
+            "der",
+            "periodendauer",
+            "."
+          ],
+          "ended": true,
+          "reason": ""
+        },
+        "Wie heißt du?": {
+          "text": "",
+          "tokens": [],
+          "ended": true,
+          "reason": "no_supported_information_binding"
+        },
+        "Hallo": {
+          "text": "",
+          "tokens": [],
+          "ended": true,
+          "reason": "no_supported_information_binding"
+        }
+      },
+      "signature_matches_serial": true
+    },
+    {
+      "mode": "parallel",
+      "compile_seconds": 7.077611299999262,
+      "policy": {
+        "logical_cores": 32,
+        "physical_cores": 16,
+        "workers": 32,
+        "threads_per_worker": 1,
+        "parallel_enabled": true,
+        "in_worker": false,
+        "pool_active": true,
+        "pool_workers": 32,
+        "pool_failed": false,
+        "pool_error": null
+      },
+      "signature": {
+        "corpus_digest": "724cb6562cd2245c17c802abdbc079c1bcb82ce906ffa0615fcf08e4b40f64d8",
+        "coefficient_sha256": "4d02e0003b44ab7a83f4745eae55e401da739bc97d838187acaa8780588a5130",
+        "rendering_sha256": "ad2280b227e9ce63de83e3d4c8003ada0fd6c0e5840ce4ac65c79c353325c04b",
+        "order": 2,
+        "coefficient_rule": "sqrt(count/sum(count))",
+        "storage": {
+          "record_count": 1500,
+          "statement_count": 4305,
+          "vocabulary_size": 20708,
+          "group_count": 5392,
+          "prefix_fields": 266187,
+          "observed_edges": 401448,
+          "unaddressed_statement_count": 186,
+          "context_surface_forms": 5185,
+          "complex_coefficient_bytes": 6423168,
+          "support_index_bytes": 3211584,
+          "numerical_payload_bytes": 10099104,
+          "no_gradient_optimization": true,
+          "no_qa_pairs": true,
+          "excludes": "Python objects, token strings and temporary compilation counts",
+          "declarative_facts": 1061,
+          "lexical_role_bytes": 464352,
+          "explicit_grammar": true,
+          "optimizer_steps": 0,
+          "requires_question_answer_pairs": false
+        },
+        "declaration_role_sha256": "9a55ad88c034b44699ee3166e66b31cff3f80adf852ea925b7ed1d7188e5938d",
+        "grammar_version": "unpaired_roles_v2"
+      },
+      "answers": {
+        "Was ist eine Frequenz?": {
+          "text": "Die Frequenz ist der Kehrwert der Periodendauer.",
+          "tokens": [
+            "die",
+            "frequenz",
+            "ist",
+            "der",
+            "kehrwert",
+            "der",
+            "periodendauer",
+            "."
+          ],
+          "ended": true,
+          "reason": ""
+        },
+        "Wie heißt du?": {
+          "text": "",
+          "tokens": [],
+          "ended": true,
+          "reason": "no_supported_information_binding"
+        },
+        "Hallo": {
+          "text": "",
+          "tokens": [],
+          "ended": true,
+          "reason": "no_supported_information_binding"
+        }
+      },
+      "signature_matches_serial": true
+    }
+  ],
+  "matches_saved_pre_refactor_signature": true,
+  "speedup": 1.3074335545946725
+}

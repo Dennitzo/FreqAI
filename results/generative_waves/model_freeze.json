@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-09-06T08:59:56.402345+00:00",
+  "manifest": {
+    "configuration": {
+      "max_tokens": 40,
+      "seed": 17
+    },
+    "runtime_model_configuration": {
+      "order": 2,
+      "conditioning": "semantic"
+    },
+    "runtime_generation_configuration": {
+      "method": "operator",
+      "decoding": "beam",
+      "prompt_gain": 1.2,
+      "split_acts": true,
+      "require_conditioning": true
+    },
+    "files": {
+      "freqai/generative.py": "d476e00d421220ea397a75dbd6551f47f012df492baaf7c1527119590ff8966b",
+      "freqai/generation_runtime.py": "170d272823b23ec285d6578c2c0b154c1c67306923f14cebc099be76935f9745",
+      "freqai/semantics.py": "51924df70352cc896015f17b3679da3e0ae0b34e0030a00b6f4d0ad44c7bca46",
+      "freqai/features.py": "c48eb11bff823f8329bdbf1509426f1928e19c213793145e30c1ef4abe234535",
+      "freqai/memory.py": "baf20b7039036112c3bf1e503f88a77a7f740e104926470210b80263ee49ea73",
+      "freqai/codec.py": "1741858964d007a8baa1173cb559ac896d07bb4d8eb7d7be840c12c1a5acdc03",
+      "memory/language/generative_categories.json": "c2e86689ed55efcc68bc2dbc4ea053d20b6247c0ae054233e299013dd54933fe"
+    },
+    "paired_corpus_sha256": "8dbfad5536db23888bc667ec73653e3f63128b7503acf510371fc5625e5dff02",
+    "unpaired_corpus_sha256": "9827b7339f85fdae01f996b3b39a0cfc025c2a4b7d3400722f5985cbdc2377ef",
+    "evaluation_sha256": "1a777778257634de8c5eb21b52c379b86e1632236c8860c109a9c62487c6dc6a",
+    "runner_sha256": "bd39ed813abdbb5fb2d80ea908253e4ed5d984c327b45f9b2b68baa8ea690636"
+  },
+  "holdout_seen_by_implementer": false
+}

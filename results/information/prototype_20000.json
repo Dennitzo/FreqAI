@@ -1,0 +1,305 @@
+{
+  "created_utc": "2026-09-06T11:01:57.869819+00:00",
+  "corpus_path": "memory\\imports\\information_wikipedia_20000_v3.jsonl",
+  "corpus_sha256": "2f5b876d904346ca4b9082e05ff5e4bc5e8a729f2a479c777f47e1332a0a5674",
+  "requested_records": 20000,
+  "core_sha256": "71561faf0baa87dfe01a138ab11c7eb14c57db5919530be05327aa285b518dfa",
+  "build_seconds": 140.56478719999723,
+  "storage": {
+    "record_count": 20000,
+    "statement_count": 48960,
+    "vocabulary_size": 116649,
+    "group_count": 65259,
+    "prefix_fields": 2775878,
+    "observed_edges": 4142455,
+    "unaddressed_statement_count": 1105,
+    "complex_coefficient_bytes": 66279280,
+    "support_index_bytes": 33139640,
+    "numerical_payload_bytes": 99418920,
+    "no_gradient_optimization": true,
+    "no_qa_pairs": true,
+    "excludes": "Python objects, token strings and temporary compilation counts"
+  },
+  "probes": [
+    {
+      "prompt": "Was ist eine Frequenz?",
+      "answer": "Die Frequenz (auch Schwingungszahl genannt) ist in Physik und Technik ein Maß dafür, wie schnell bei einem periodischen Vorgang die Wiederholungen aufeinander Folgen, z. B. Bei einer fortdauernden Schwingung.",
+      "tokens": [
+        "die",
+        "frequenz",
+        "(",
+        "auch",
+        "schwingungszahl",
+        "genannt",
+        ")",
+        "ist",
+        "in",
+        "physik",
+        "und",
+        "technik",
+        "ein",
+        "mass",
+        "dafür",
+        ",",
+        "wie",
+        "schnell",
+        "bei",
+        "einem",
+        "periodischen",
+        "vorgang",
+        "die",
+        "wiederholungen",
+        "aufeinander",
+        "folgen",
+        ",",
+        "z",
+        ".",
+        "b",
+        ".",
+        "bei",
+        "einer",
+        "fortdauernden",
+        "schwingung",
+        "."
+      ],
+      "ended": true,
+      "reason": "",
+      "seconds": 0.06047180000314256,
+      "analysis": {
+        "supported": true,
+        "subjects": [
+          "frequenz"
+        ],
+        "facets": [
+          "definition"
+        ],
+        "groups_by_facet": {
+          "definition": [
+            21245,
+            21246
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [],
+        "unsupported_negation": false,
+        "reason": ""
+      },
+      "numerics": [
+        {
+          "prefix": [],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.9062987649665314,
+          "active_tokens": 1,
+          "carrier_size": 1
+        },
+        {
+          "prefix": [
+            "die",
+            "frequenz",
+            "("
+          ],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.9920900491669605,
+          "active_tokens": 1,
+          "carrier_size": 1
+        },
+        {
+          "prefix": [
+            "die",
+            "frequenz",
+            "(",
+            "auch",
+            "schwingungszahl",
+            "genannt",
+            ")",
+            "ist"
+          ],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.9920900491669604,
+          "active_tokens": 1,
+          "carrier_size": 1
+        }
+      ]
+    },
+    {
+      "prompt": "In welcher Einheit wird die Frequenz gemessen?",
+      "answer": "Das Hertz (Einheitenzeichen: Hz) ist die SI-Einheit der Frequenz.",
+      "tokens": [
+        "das",
+        "hertz",
+        "(",
+        "einheitenzeichen",
+        ":",
+        "hz",
+        ")",
+        "ist",
+        "die",
+        "si-einheit",
+        "der",
+        "frequenz",
+        "."
+      ],
+      "ended": true,
+      "reason": "",
+      "seconds": 0.013971699998364784,
+      "analysis": {
+        "supported": true,
+        "subjects": [
+          "frequenz"
+        ],
+        "facets": [
+          "unit"
+        ],
+        "groups_by_facet": {
+          "unit": [
+            21249
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [],
+        "unsupported_negation": false,
+        "reason": ""
+      },
+      "numerics": [
+        {
+          "prefix": [],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.9354340255010648,
+          "active_tokens": 1,
+          "carrier_size": 1
+        },
+        {
+          "prefix": [
+            "das",
+            "hertz",
+            "("
+          ],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.9354340255010646,
+          "active_tokens": 1,
+          "carrier_size": 1
+        },
+        {
+          "prefix": [
+            "das",
+            "hertz",
+            "(",
+            "einheitenzeichen",
+            ":",
+            "hz",
+            ")",
+            "ist"
+          ],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.9354340255010648,
+          "active_tokens": 1,
+          "carrier_size": 1
+        }
+      ]
+    },
+    {
+      "prompt": "Wie hängen Frequenz und Periodendauer zusammen?",
+      "answer": "Die Frequenz ist der Kehrwert der Periodendauer.",
+      "tokens": [
+        "die",
+        "frequenz",
+        "ist",
+        "der",
+        "kehrwert",
+        "der",
+        "periodendauer",
+        "."
+      ],
+      "ended": true,
+      "reason": "",
+      "seconds": 0.010364599998865742,
+      "analysis": {
+        "supported": true,
+        "subjects": [
+          "frequenz",
+          "periodendau"
+        ],
+        "facets": [
+          "relation"
+        ],
+        "groups_by_facet": {
+          "relation": [
+            21248
+          ]
+        },
+        "used_context": false,
+        "unbound_terms": [],
+        "unsupported_negation": false,
+        "reason": ""
+      },
+      "numerics": [
+        {
+          "prefix": [],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.9130434782609131,
+          "active_tokens": 1,
+          "carrier_size": 1
+        },
+        {
+          "prefix": [
+            "die",
+            "frequenz",
+            "ist"
+          ],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.8260869565218261,
+          "active_tokens": 1,
+          "carrier_size": 1
+        },
+        {
+          "prefix": [
+            "die",
+            "frequenz",
+            "ist",
+            "der",
+            "kehrwert",
+            "der",
+            "periodendauer",
+            "."
+          ],
+          "operator_direct_max_error": 0.0,
+          "time_max_error": 0.0,
+          "prefix_null_total_variation": 0.9130434782609131,
+          "active_tokens": 1,
+          "carrier_size": 1
+        }
+      ]
+    }
+  ],
+  "scope": "Numerical/scaling probes authored in this script; no evaluation/holdout data is read.",
+  "peak_process_working_set_bytes": 2906955776,
+  "signature": {
+    "corpus_digest": "705f16374fb55b3c4431d705f741ce1987e2cc4ceaedac4fdd49a6d12d27040f",
+    "coefficient_sha256": "95bb7a25e17ce3bc739aae044316f6bd9c77126c5948ab2204611a52318ec844",
+    "order": 2,
+    "coefficient_rule": "sqrt(count/sum(count))",
+    "storage": {
+      "record_count": 20000,
+      "statement_count": 48960,
+      "vocabulary_size": 116649,
+      "group_count": 65259,
+      "prefix_fields": 2775878,
+      "observed_edges": 4142455,
+      "unaddressed_statement_count": 1105,
+      "complex_coefficient_bytes": 66279280,
+      "support_index_bytes": 33139640,
+      "numerical_payload_bytes": 99418920,
+      "no_gradient_optimization": true,
+      "no_qa_pairs": true,
+      "excludes": "Python objects, token strings and temporary compilation counts"
+    }
+  }
+}

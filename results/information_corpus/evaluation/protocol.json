@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-06T10:44:47.514229+00:00",
+  "development_sha256": "3eba3197693106f4425d73c277284a5bf69c8582b774ca1a07535c655af55ee1",
+  "sealed_holdout_sha256": "ff690c9b8d4349c1c525583b52fd99b2b61a0257a70daae9ad5964810731db7c",
+  "known_chat_regression_sha256": "3ddb7e8bd7463376331080bf81e2b6b81ffc390d7f72eec56da354a341b7cf0a",
+  "baseline_freeze_sha256": "b3cb68ab37d2f45994a21872b412191dde9e956af73f76e1ca3cd49083303ab5",
+  "review": "Independent AI-agent semantic review, not a human study. No rubric-based automatic pass count.",
+  "gate": "No holdout generation before explicit candidate freeze. No quality tuning after holdout.",
+  "explicit_user_example_is_development": true,
+  "optimization_steps": 0,
+  "prior_40_chat_cases": "Previously observed cases, regression only, no new holdout claim.",
+  "coefficient_claim": "New information decoder: observed counts and normalization, no tuned source/mix weights or gradient updates. Existing chat coefficients are outside this claim.",
+  "new_text_warning": "New word sequences or sentences are not evidence of correct facts or understanding."
+}

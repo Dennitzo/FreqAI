@@ -1,0 +1,7 @@
+{
+  "command": ".venv\\Scripts\\python.exe -m pytest -q",
+  "passed": 342,
+  "failed": 0,
+  "elapsed_seconds": 13.4,
+  "scope": "Full test suite after final V2 core changes and before V2 holdout freeze; subsequent edits were documentation or external browser check scripts."
+}

@@ -1,0 +1,284 @@
+{
+  "run_sha256": "aaa17e75b4005e3ed6851444a2091ed9138608315851b666225f4ccb04bd219c",
+  "review": "Independent AI-agent review after immutable code/data freeze. No model or corpus changes made in response.",
+  "rows": [
+    {
+      "id": "rf00",
+      "direction": "entity_to_value",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rr00",
+      "direction": "value_to_entity",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rf01",
+      "direction": "entity_to_value",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rr01",
+      "direction": "value_to_entity",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rf02",
+      "direction": "entity_to_value",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rr02",
+      "direction": "value_to_entity",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rf03",
+      "direction": "entity_to_value",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rr03",
+      "direction": "value_to_entity",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rf04",
+      "direction": "entity_to_value",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rr04",
+      "direction": "value_to_entity",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rf05",
+      "direction": "entity_to_value",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rr05",
+      "direction": "value_to_entity",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rf06",
+      "direction": "entity_to_value",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rr06",
+      "direction": "value_to_entity",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rf07",
+      "direction": "entity_to_value",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rr07",
+      "direction": "value_to_entity",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rf08",
+      "direction": "entity_to_value",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rr08",
+      "direction": "value_to_entity",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rf09",
+      "direction": "entity_to_value",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rr09",
+      "direction": "value_to_entity",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rf10",
+      "direction": "entity_to_value",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rr10",
+      "direction": "value_to_entity",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rf11",
+      "direction": "entity_to_value",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rr11",
+      "direction": "value_to_entity",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rn00",
+      "direction": "negation",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rn01",
+      "direction": "negation",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rn02",
+      "direction": "negation",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "rn03",
+      "direction": "negation",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": false,
+      "note": "Empty output. Required fact is in a declarative input statement but the requested argument binding is unsupported."
+    },
+    {
+      "id": "ru00",
+      "direction": "unknown",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": true,
+      "note": "No fact exists for this entity; empty refusal avoids fabrication but is not an explanatory sentence."
+    },
+    {
+      "id": "ru01",
+      "direction": "unknown",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": true,
+      "note": "No fact exists for this entity; empty refusal avoids fabrication but is not an explanatory sentence."
+    },
+    {
+      "id": "ru02",
+      "direction": "unknown",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": true,
+      "note": "No fact exists for this entity; empty refusal avoids fabrication but is not an explanatory sentence."
+    },
+    {
+      "id": "ru03",
+      "direction": "unknown",
+      "correct_substantive_answer": false,
+      "safe_empty_abstention": true,
+      "unknown_safely_refused": true,
+      "note": "No fact exists for this entity; empty refusal avoids fabrication but is not an explanatory sentence."
+    }
+  ],
+  "summary": {
+    "declarative_records": 12,
+    "qa_pairs": 0,
+    "optimization_steps": 0,
+    "entity_to_value_correct": 0,
+    "entity_to_value_cases": 12,
+    "value_to_entity_correct": 0,
+    "value_to_entity_cases": 12,
+    "negation_correct": 0,
+    "negation_cases": 4,
+    "unknown_safely_refused": 4,
+    "unknown_cases": 4,
+    "permuted_correct": 0,
+    "permuted_cases": 12,
+    "all44_outputs_empty": true,
+    "same_input_rebuild_hash_equal": true,
+    "same_input_rebuild_outputs_equal": 32,
+    "permuted_values_change_coefficient_hash": true,
+    "vocabulary_unchanged_under_permutation": true,
+    "direction_coupled_factual_generation_demonstrated": false,
+    "limitation": "Question-to-field grammar rejects frequency and test-signal arguments in this independent declarative formulation. Deterministic encoding and changed coefficients do not by themselves establish useful factual decoding."
+  }
+}

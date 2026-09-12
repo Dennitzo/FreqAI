@@ -1,0 +1,106 @@
+{
+  "rows": [
+    {
+      "id": "id01",
+      "prompt": "Was ist eine Frequenz?",
+      "routes_to_information": true
+    },
+    {
+      "id": "id02",
+      "prompt": "Mit welcher Einheit gibt man die Frequenz an?",
+      "routes_to_information": true
+    },
+    {
+      "id": "id03",
+      "prompt": "Wie hängen Periodendauer und Frequenz zusammen?",
+      "routes_to_information": true
+    },
+    {
+      "id": "id04",
+      "prompt": "Bedeutet eine größere Amplitude automatisch eine höhere Frequenz?",
+      "routes_to_information": false
+    },
+    {
+      "id": "id05",
+      "prompt": "Kann sich Schall im leeren Vakuum ausbreiten?",
+      "routes_to_information": false
+    },
+    {
+      "id": "id06",
+      "prompt": "Braucht Licht zur Ausbreitung Luft?",
+      "routes_to_information": false
+    },
+    {
+      "id": "id07",
+      "prompt": "Was versteht man unter Gravitation?",
+      "routes_to_information": false
+    },
+    {
+      "id": "id08",
+      "prompt": "Welche SI-Einheit hat die Masse?",
+      "routes_to_information": false
+    },
+    {
+      "id": "id09",
+      "prompt": "In welcher Einheit misst man elektrische Spannung?",
+      "routes_to_information": true
+    },
+    {
+      "id": "id10",
+      "prompt": "Wofür steht die Einheit Ampere?",
+      "routes_to_information": true
+    },
+    {
+      "id": "id11",
+      "prompt": "Was wird in Ohm gemessen?",
+      "routes_to_information": false
+    },
+    {
+      "id": "id12",
+      "prompt": "Welche Größe misst man in Watt?",
+      "routes_to_information": false
+    },
+    {
+      "id": "id13",
+      "prompt": "Welche Einheit verwendet das SI für Energie?",
+      "routes_to_information": true
+    },
+    {
+      "id": "id14",
+      "prompt": "Wie berechnet sich die Dichte aus Masse und Volumen?",
+      "routes_to_information": true
+    },
+    {
+      "id": "id15",
+      "prompt": "Verdunstet Wasser erst, wenn es kocht?",
+      "routes_to_information": false
+    },
+    {
+      "id": "id16",
+      "prompt": "Ist eine wässrige Lösung mit einem pH-Wert unter sieben sauer oder basisch?",
+      "routes_to_information": false
+    },
+    {
+      "id": "id17",
+      "prompt": "Was machen Pflanzen bei der Fotosynthese?",
+      "routes_to_information": false
+    },
+    {
+      "id": "id18",
+      "prompt": "Welche Aufgabe haben Mitochondrien in einer Zelle?",
+      "routes_to_information": true
+    },
+    {
+      "id": "id19",
+      "prompt": "Wie warm ist es genau jetzt in meinem Zimmer?",
+      "routes_to_information": false
+    },
+    {
+      "id": "id20",
+      "prompt": "Wie viele Herzschläge pro Minute habe ich in diesem Augenblick?",
+      "routes_to_information": false
+    }
+  ],
+  "information_routes": 8,
+  "cases": 20
+}

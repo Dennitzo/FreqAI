@@ -1,0 +1,47 @@
+{
+  "backup": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\backups\\before-public-corpus-deployment-20260906-115145.sqlite3",
+  "tables": {
+    "query_history": {
+      "original_rows": 56,
+      "current_rows": 63,
+      "all_original_rows_unchanged": true,
+      "original_sha256": "1b0b13529acff0a628535c3582b6eb4553324ffaccb3e635ebacc0aa77df0e36"
+    },
+    "conversations": {
+      "original_rows": 10,
+      "current_rows": 12,
+      "all_original_rows_unchanged": true,
+      "original_sha256": "5489fbed93cfdbcaf36809fc356061de142b94ef17a4f4b055f769530fcf1bf6"
+    },
+    "configuration": {
+      "original_rows": 5,
+      "current_rows": 5,
+      "all_original_rows_unchanged": true,
+      "original_sha256": "807ccf62dcecee5ae195895d7be87e3c217c566472c24698160468c16717a96c"
+    },
+    "relations": {
+      "original_rows": 0,
+      "current_rows": 0,
+      "all_original_rows_unchanged": true,
+      "original_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    }
+  },
+  "integrity_check": "ok",
+  "statistics": {
+    "path": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\memory.sqlite3",
+    "revision": 5,
+    "document_count": 12000,
+    "archive_document_count": 48,
+    "history_count": 63,
+    "relation_count": 0,
+    "canonical_format": "sqlite_text",
+    "wave_storage": "derived_in_memory",
+    "configuration": {
+      "dimensions": 4096,
+      "feature_mode": "morphology",
+      "min_coverage": 0.6,
+      "min_score": 0.18,
+      "retrieval_policy": "coverage"
+    }
+  }
+}

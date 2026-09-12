@@ -1,0 +1,168 @@
+{
+  "prompt": "Nach dem langen Tag bin ich ziemlich erschöpft.",
+  "new_sentence": "Wenn du erschöpft bist, kann ein ruhiger Moment angenehm sein.",
+  "complete_answer": "Wenn du erschöpft bist, kann ein ruhiger Moment angenehm sein. Was kannst du für einen Moment liegen lassen?",
+  "configuration": {
+    "order": 2,
+    "conditioning": "semantic",
+    "method": "operator",
+    "decoding": "beam",
+    "prompt_gain": 1.2,
+    "split_acts": true,
+    "require_conditioning": true,
+    "seed": 17,
+    "max_tokens": 40
+  },
+  "reproduced_archived_run": "results\\generative_waves\\development_order2_20260906T085619113266Z.json",
+  "archived_run_sha256": "f163bee9a913cab80dcbe344da6a0f74e504c535d8f2d88c777810e36dcfbe6a",
+  "not_an_existing_corpus_sentence": true,
+  "corpus_sentences_checked": 418,
+  "tokens_checked": 12,
+  "token_trace": [
+    {
+      "token": "wenn",
+      "prefix": [],
+      "mode": 760,
+      "frequency_hz": 20.214476921803662,
+      "selected_probability": 0.46753469378323465,
+      "trace_probability_error": 0.0,
+      "fft_direct_distribution_max_error": 0.0
+    },
+    {
+      "token": "du",
+      "prefix": [
+        "wenn"
+      ],
+      "mode": 184,
+      "frequency_hz": 21.207272743529934,
+      "selected_probability": 1.0,
+      "trace_probability_error": 0.0,
+      "fft_direct_distribution_max_error": 0.0
+    },
+    {
+      "token": "erschöpft",
+      "prefix": [
+        "wenn",
+        "du"
+      ],
+      "mode": 238,
+      "frequency_hz": 6.032592008736818,
+      "selected_probability": 0.5824110692607884,
+      "trace_probability_error": 0.0,
+      "fft_direct_distribution_max_error": 0.0
+    },
+    {
+      "token": "bist",
+      "prefix": [
+        "du",
+        "erschöpft"
+      ],
+      "mode": 133,
+      "frequency_hz": 7.476405427064581,
+      "selected_probability": 1.0,
+      "trace_probability_error": 0.0,
+      "fft_direct_distribution_max_error": 0.0
+    },
+    {
+      "token": ",",
+      "prefix": [
+        "erschöpft",
+        "bist"
+      ],
+      "mode": 1,
+      "frequency_hz": 5.754014851511337,
+      "selected_probability": 1.0,
+      "trace_probability_error": 0.0,
+      "fft_direct_distribution_max_error": 0.0
+    },
+    {
+      "token": "kann",
+      "prefix": [
+        "bist",
+        ","
+      ],
+      "mode": 404,
+      "frequency_hz": 14.729968201310141,
+      "selected_probability": 0.8031743768466542,
+      "trace_probability_error": 0.0,
+      "fft_direct_distribution_max_error": 0.0
+    },
+    {
+      "token": "ein",
+      "prefix": [
+        ",",
+        "kann"
+      ],
+      "mode": 197,
+      "frequency_hz": 10.637472766213703,
+      "selected_probability": 1.0,
+      "trace_probability_error": 0.0,
+      "fft_direct_distribution_max_error": 0.0
+    },
+    {
+      "token": "ruhiger",
+      "prefix": [
+        "kann",
+        "ein"
+      ],
+      "mode": 585,
+      "frequency_hz": 23.266651468814306,
+      "selected_probability": 1.0,
+      "trace_probability_error": 0.0,
+      "fft_direct_distribution_max_error": 0.0
+    },
+    {
+      "token": "moment",
+      "prefix": [
+        "ein",
+        "ruhiger"
+      ],
+      "mode": 497,
+      "frequency_hz": 24.264302558545015,
+      "selected_probability": 1.0,
+      "trace_probability_error": 0.0,
+      "fft_direct_distribution_max_error": 0.0
+    },
+    {
+      "token": "angenehm",
+      "prefix": [
+        "ruhiger",
+        "moment"
+      ],
+      "mode": 39,
+      "frequency_hz": 14.3796732841616,
+      "selected_probability": 1.0,
+      "trace_probability_error": 0.0,
+      "fft_direct_distribution_max_error": 0.0
+    },
+    {
+      "token": "sein",
+      "prefix": [
+        "moment",
+        "angenehm"
+      ],
+      "mode": 621,
+      "frequency_hz": 8.73530149695549,
+      "selected_probability": 0.7680389541386425,
+      "trace_probability_error": 0.0,
+      "fft_direct_distribution_max_error": 0.0
+    },
+    {
+      "token": ".",
+      "prefix": [
+        "angenehm",
+        "sein"
+      ],
+      "mode": 2,
+      "frequency_hz": 15.641089826498797,
+      "selected_probability": 1.0,
+      "trace_probability_error": 0.0,
+      "fft_direct_distribution_max_error": 0.0
+    }
+  ],
+  "max_trace_probability_error": 0.0,
+  "max_fft_direct_error": 0.0,
+  "meaning_review": "Grammatical and relevant conditional suggestion after reported exhaustion. This is one bounded example, not evidence of general linguistic competence.",
+  "probabilities_quantized_to_decimals": 12,
+  "direct_reference_scope": "Same compiled transition amplitudes and grammar supports; interference is evaluated by point products instead of spectral convolution."
+}

@@ -1,0 +1,11 @@
+{
+  "reason": "Independent corpus-only review found missing direct greeting and goodbye. Replaced chat-007/chat-120 and their not-yet-evaluated holdout phrasings before freeze; no holdout inference used. Coverage .6 unchanged.",
+  "documents": [
+    "chat-007",
+    "chat-120"
+  ],
+  "coverage_before": 0.6,
+  "coverage_after": 0.6,
+  "holdout_inference_before_revision": false,
+  "review_scope": "Corpus-only manual content and basic greeting check, no holdout file"
+}

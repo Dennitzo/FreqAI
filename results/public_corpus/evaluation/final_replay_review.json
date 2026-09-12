@@ -1,0 +1,117 @@
+{
+  "reviewer": "Independent AI evaluation agent; no human study",
+  "run_path": "results/public_corpus/evaluation/final_replay.json",
+  "scope": "Twenty known original imported questions: in-sample capacity only. Correct means a relevant answer supported by the stored historical source, without a false added assertion. It does not mean independently verified as current.",
+  "decisions": [
+    {
+      "id": "germanquad-train-47788",
+      "factually_correct_against_source": true,
+      "reason": "Identifies Greeks correctly and reproduces the source; thousands separator spacing is awkward."
+    },
+    {
+      "id": "germanquad-train-52954",
+      "factually_correct_against_source": false,
+      "reason": "Mixes river names and the smaller airport; omits the requested largest airport."
+    },
+    {
+      "id": "germanquad-train-65182",
+      "factually_correct_against_source": false,
+      "reason": "Describes the institution and location instead of why it cooperates with researchers."
+    },
+    {
+      "id": "germanquad-train-57510",
+      "factually_correct_against_source": true,
+      "reason": "Correct source-supported position of the UNICEF logo."
+    },
+    {
+      "id": "germanquad-train-57877",
+      "factually_correct_against_source": false,
+      "reason": "Conversational listening question replaces the factual objective of AC radio programming."
+    },
+    {
+      "id": "germanquad-train-70054",
+      "factually_correct_against_source": false,
+      "contains_correct_fragment": true,
+      "reason": "Contains the historical amount but then incorrectly joins it to ranking a football club; the whole answer is false."
+    },
+    {
+      "id": "germanquad-train-49306",
+      "factually_correct_against_source": true,
+      "reason": "Gives a supported, coherent description of the cathedral's mosaic-covered walls. It need not exhaust every detail of the longer reference."
+    },
+    {
+      "id": "germanquad-train-46948",
+      "factually_correct_against_source": false,
+      "reason": "Describes a naval battle without identifying France's ruler."
+    },
+    {
+      "id": "germanquad-train-59003",
+      "factually_correct_against_source": false,
+      "reason": "Negative-mood smalltalk does not answer the question about decision-making mood."
+    },
+    {
+      "id": "germanquad-train-67340",
+      "factually_correct_against_source": true,
+      "reason": "Correctly states Senate confirmation of the FBI director's appointment, as in the source."
+    },
+    {
+      "id": "germanquad-train-70366",
+      "factually_correct_against_source": false,
+      "reason": "Sentence fragment omits the requested UTC time standard."
+    },
+    {
+      "id": "germanquad-train-59157",
+      "factually_correct_against_source": true,
+      "reason": "Correctly reproduces the source's Gulf and subtropical-zone explanation."
+    },
+    {
+      "id": "germanquad-train-69819",
+      "factually_correct_against_source": true,
+      "reason": "Reproduces the stored source terminology; scored as a historical source answer, not clinical guidance."
+    },
+    {
+      "id": "germanquad-train-59964",
+      "factually_correct_against_source": false,
+      "reason": "Mentions other sports and 'the same reasons' without supplying the requested reasons."
+    },
+    {
+      "id": "germanquad-train-47334",
+      "factually_correct_against_source": true,
+      "reason": "Correct source-supported Beacon Hill location."
+    },
+    {
+      "id": "germanquad-train-69174",
+      "factually_correct_against_source": false,
+      "reason": "Mixes animal-development and regional-history fragments instead of naming theaters."
+    },
+    {
+      "id": "germanquad-train-65807",
+      "factually_correct_against_source": false,
+      "reason": "Unrelated airport opening replaces Comic-Con's starting year."
+    },
+    {
+      "id": "germanquad-train-67294",
+      "factually_correct_against_source": false,
+      "contains_correct_fragment": true,
+      "reason": "Frankfurt is a relevant example, but the output falsely attributes the Senckenberg foundations to the women's association. The original full context attributes that association to a soup kitchen."
+    },
+    {
+      "id": "germanquad-train-65921",
+      "factually_correct_against_source": true,
+      "reason": "Correct source-supported smoothing and rolling after drying."
+    },
+    {
+      "id": "germanquad-train-59644",
+      "factually_correct_against_source": false,
+      "contains_correct_fragment": true,
+      "reason": "Contains 10 percent but replaces the measured population share with an incoherent subject about a change in urban areas."
+    }
+  ],
+  "run_sha256": "99d050bcdc05b26e35b6938165853a6fa731206f70f42a1dd4f36f3d240af9b5",
+  "summary": {
+    "correct": 8,
+    "questions": 20,
+    "known_import_records": 20,
+    "incorrect_despite_a_correct_fragment": 3
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_id": "649949a43756a91498f821c0",
+  "id": "FreedomIntelligence/alpaca-gpt4-deutsch",
+  "author": "FreedomIntelligence",
+  "sha": "d708b3249a6434ef0329be854f007e5a133d4cfa",
+  "lastModified": "2023-08-06T08:08:37.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "license:apache-2.0",
+    "size_categories:10K<n<100K",
+    "format:json",
+    "modality:text",
+    "library:datasets",
+    "library:pandas",
+    "library:mlcroissant",
+    "library:polars",
+    "region:us"
+  ],
+  "description": "The dataset is used in the research related to MultilingualSIFT. \n",
+  "downloads": 167,
+  "likes": 9,
+  "cardData": {
+    "license": "apache-2.0"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "alpaca-gpt4-deutsch.json"
+    }
+  ],
+  "createdAt": "2023-06-26T08:17:40.000Z",
+  "usedStorage": 499951282
+}

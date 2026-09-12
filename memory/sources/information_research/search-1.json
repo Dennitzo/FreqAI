@@ -1,0 +1,7 @@
+{
+  "query": "\"wikimedia/wikipedia\" \"20231101.de\"",
+  "results": [],
+  "provider": "searxng",
+  "isFallback": false,
+  "retrievedAt": "2026-09-06T10:36:22.4383766+00:00"
+}

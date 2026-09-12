@@ -1,0 +1,36 @@
+{
+  "_id": "649e4f4c53777d895072cd81",
+  "id": "FreedomIntelligence/evol-instruct-deutsch",
+  "author": "FreedomIntelligence",
+  "sha": "83bb19029ce76b073b9d9ab77e65a41d2bb93e9b",
+  "lastModified": "2023-08-06T08:12:07.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "size_categories:10K<n<100K",
+    "format:json",
+    "modality:text",
+    "library:datasets",
+    "library:pandas",
+    "library:mlcroissant",
+    "library:polars",
+    "region:us"
+  ],
+  "description": "The dataset is used in the research related to MultilingualSIFT. \n",
+  "downloads": 111,
+  "likes": 13,
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "evol-instruct-deutsch.json"
+    }
+  ],
+  "createdAt": "2023-06-30T03:43:08.000Z",
+  "usedStorage": 2497861931
+}

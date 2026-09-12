@@ -1,0 +1,3033 @@
+{
+  "stage": "final",
+  "url": "http://127.0.0.1:8765",
+  "session_id": "a2106535-2fbb-48e6-9cc2-9a6025d31822",
+  "new_empty_audit_session": true,
+  "session_origin": "Fresh isolated browser session from initial audit; read-only continuation reused only that session",
+  "document_count": 12000,
+  "live_revision": 5,
+  "maximum_rendered_document_rows": 50,
+  "first_page": "1–50 von 12.000 Texten · Seite 1",
+  "second_page": "51–100 von 12.000 Texten · Seite 2",
+  "last_page": "11.951–12.000 von 12.000 Texten · Seite 240",
+  "first_and_second_disjoint": true,
+  "previous_page_identical": true,
+  "reload_resets_page_zero_preserves_session": true,
+  "audit_conversation_survives_reload": true,
+  "source": "https://huggingface.co/datasets/OpenAssistant/oasst2 | Apache-2.0 | revision=179dd21fc55192153d94adb0e0ce8f69e222bf75 | message=0ef4e9f1-5a8b-44bd-a250-03dc8684ebc0\noasst2-de-0ef4e9f1-5a8b-44bd-a250-03dc8684ebc0",
+  "document_requests": [
+    "http://127.0.0.1:8765/api/documents?offset=0&limit=50",
+    "http://127.0.0.1:8765/api/documents?offset=50&limit=50&revision=5",
+    "http://127.0.0.1:8765/api/documents?offset=0&limit=50&revision=5",
+    "http://127.0.0.1:8765/api/documents?offset=650&limit=50&revision=5",
+    "http://127.0.0.1:8765/api/documents?offset=11950&limit=50&revision=5",
+    "http://127.0.0.1:8765/api/documents?offset=0&limit=50"
+  ],
+  "source_data_mutations": 0,
+  "chat_posts_initial_run": 3,
+  "chat_posts_read_only_continuation": 0,
+  "answers": [
+    {
+      "prompt": "Hallo",
+      "answer": "Hallo! Schön, dass du hier bist.",
+      "seconds": null,
+      "timing_note": "Initial browser run did not persist per-request elapsed timing before the unversioned frame assertion failed. No additional chat requests were made.",
+      "created_at": "2026-09-06T10:12:41.331Z",
+      "session_id": "a2106535-2fbb-48e6-9cc2-9a6025d31822",
+      "live_revision": 5,
+      "conversation_revision": 1,
+      "decoder": {
+        "method": "token_field_demodulation",
+        "steps": [
+          {
+            "prefix": [],
+            "field_sources": [
+              [
+                "<BOS>",
+                "<BOS>"
+              ],
+              [
+                "<BOS>"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 8,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:greeting:user::",
+                "prefix": [
+                  "<BOS>",
+                  "<BOS>"
+                ],
+                "weight": 7.999999999999984
+              },
+              {
+                "feature": "word:hallo",
+                "prefix": [
+                  "<BOS>",
+                  "<BOS>"
+                ],
+                "weight": 0.33333333333333287
+              }
+            ],
+            "feature_field_norm": 8.006941432976209,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 7.57391076790106e-18,
+            "phase_time_s": 62.034070699999575,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 0,
+            "selected_token": "hallo",
+            "selected_bin": 17491,
+            "selected_frequency_hz": 5.673970847283659,
+            "selection": "beam",
+            "probability": 0.32277913392829366,
+            "top_modes": [
+              {
+                "token": "guten",
+                "probability": 0.36781941939099855
+              },
+              {
+                "token": "hallo",
+                "probability": 0.32277913392829366
+              },
+              {
+                "token": "hi",
+                "probability": 0.1546711576863006
+              },
+              {
+                "token": "hey",
+                "probability": 0.15462663346253885
+              },
+              {
+                "token": "als",
+                "probability": 4.567095361805816e-05
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "hallo"
+            ],
+            "field_sources": [
+              [
+                "<BOS>",
+                "hallo"
+              ],
+              [
+                "hallo"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 3,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:greeting:user::",
+                "prefix": [
+                  "<BOS>",
+                  "hallo"
+                ],
+                "weight": 7.999999999999984
+              },
+              {
+                "feature": "word:hallo",
+                "prefix": [
+                  "<BOS>",
+                  "hallo"
+                ],
+                "weight": 0.33333333333333287
+              }
+            ],
+            "feature_field_norm": 8.006941432976209,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 6.112294921304874e-18,
+            "phase_time_s": 62.034070699999575,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 1,
+            "selected_token": "!",
+            "selected_bin": 0,
+            "selected_frequency_hz": 18.979061673674654,
+            "selection": "beam",
+            "probability": 0.4550965418012735,
+            "top_modes": [
+              {
+                "token": ",",
+                "probability": 0.5445565889855898
+              },
+              {
+                "token": "!",
+                "probability": 0.4550965418012735
+              },
+              {
+                "token": "heikki",
+                "probability": 0.0003468692131367026
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "hallo",
+              "!"
+            ],
+            "field_sources": [
+              [
+                "hallo",
+                "!"
+              ],
+              [
+                "!"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 2,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:greeting:user::",
+                "prefix": [
+                  "hallo",
+                  "!"
+                ],
+                "weight": 7.999999999999984
+              },
+              {
+                "feature": "word:hallo",
+                "prefix": [
+                  "hallo",
+                  "!"
+                ],
+                "weight": 0.33333333333333287
+              }
+            ],
+            "feature_field_norm": 8.006941432976209,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 1.5993360207877826e-17,
+            "phase_time_s": 62.034070699999575,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 2,
+            "selected_token": "schön",
+            "selected_bin": 33686,
+            "selected_frequency_hz": 26.097724518680348,
+            "selection": "beam",
+            "probability": 0.9999842655684992,
+            "top_modes": [
+              {
+                "token": "schön",
+                "probability": 0.9999842655684992
+              },
+              {
+                "token": "als",
+                "probability": 1.573443150084179e-05
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "!",
+              "schön"
+            ],
+            "field_sources": [
+              [
+                "!",
+                "schön"
+              ],
+              [
+                "schön"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:greeting:user::",
+                "prefix": [
+                  "!",
+                  "schön"
+                ],
+                "weight": 7.999999999999984
+              },
+              {
+                "feature": "word:hallo",
+                "prefix": [
+                  "!",
+                  "schön"
+                ],
+                "weight": 0.33333333333333287
+              }
+            ],
+            "feature_field_norm": 8.006941432976209,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 7.208110037058612e-18,
+            "phase_time_s": 62.034070699999575,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 3,
+            "selected_token": ",",
+            "selected_bin": 11,
+            "selected_frequency_hz": 5.754014851511337,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": ",",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "schön",
+              ","
+            ],
+            "field_sources": [
+              [
+                "schön",
+                ","
+              ],
+              [
+                ","
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 2,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:greeting:user::",
+                "prefix": [
+                  "schön",
+                  ","
+                ],
+                "weight": 7.999999999999984
+              },
+              {
+                "feature": "word:hallo",
+                "prefix": [
+                  "schön",
+                  ","
+                ],
+                "weight": 0.33333333333333287
+              }
+            ],
+            "feature_field_norm": 8.006941432976209,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 9.615229102427716e-18,
+            "phase_time_s": 62.034070699999575,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 4,
+            "selected_token": "dass",
+            "selected_bin": 9002,
+            "selected_frequency_hz": 23.08847215758789,
+            "selection": "beam",
+            "probability": 0.9290150524613304,
+            "top_modes": [
+              {
+                "token": "dass",
+                "probability": 0.9290150524613304
+              },
+              {
+                "token": "von",
+                "probability": 0.07098494753866952
+              }
+            ]
+          },
+          {
+            "prefix": [
+              ",",
+              "dass"
+            ],
+            "field_sources": [
+              [
+                ",",
+                "dass"
+              ],
+              [
+                "dass"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 2,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:greeting:user::",
+                "prefix": [
+                  ",",
+                  "dass"
+                ],
+                "weight": 7.999999999999984
+              },
+              {
+                "feature": "word:hallo",
+                "prefix": [
+                  ",",
+                  "dass"
+                ],
+                "weight": 0.33333333333333287
+              }
+            ],
+            "feature_field_norm": 8.006941432976209,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 1.0842021724855044e-17,
+            "phase_time_s": 62.034070699999575,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 5,
+            "selected_token": "du",
+            "selected_bin": 10088,
+            "selected_frequency_hz": 21.207272743529934,
+            "selection": "beam",
+            "probability": 0.9999880016370303,
+            "top_modes": [
+              {
+                "token": "du",
+                "probability": 0.9999880016370303
+              },
+              {
+                "token": "man",
+                "probability": 1.1998362969635587e-05
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "dass",
+              "du"
+            ],
+            "field_sources": [
+              [
+                "dass",
+                "du"
+              ],
+              [
+                "du"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 3,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:greeting:user::",
+                "prefix": [
+                  "dass",
+                  "du"
+                ],
+                "weight": 7.999999999999984
+              },
+              {
+                "feature": "word:hallo",
+                "prefix": [
+                  "dass",
+                  "du"
+                ],
+                "weight": 0.33333333333333287
+              }
+            ],
+            "feature_field_norm": 8.006941432976209,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 8.673617379884035e-18,
+            "phase_time_s": 62.034070699999575,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 6,
+            "selected_token": "hier",
+            "selected_bin": 18350,
+            "selected_frequency_hz": 15.09322908886457,
+            "selection": "beam",
+            "probability": 0.5497001405785903,
+            "top_modes": [
+              {
+                "token": "hier",
+                "probability": 0.5497001405785903
+              },
+              {
+                "token": "da",
+                "probability": 0.2652205749394263
+              },
+              {
+                "token": "vorbeischaust",
+                "probability": 0.18507928448198338
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "du",
+              "hier"
+            ],
+            "field_sources": [
+              [
+                "du",
+                "hier"
+              ],
+              [
+                "hier"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:greeting:user::",
+                "prefix": [
+                  "du",
+                  "hier"
+                ],
+                "weight": 7.999999999999984
+              }
+            ],
+            "feature_field_norm": 8.006941432976209,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 8.131516293641283e-18,
+            "phase_time_s": 62.034070699999575,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 7,
+            "selected_token": "bist",
+            "selected_bin": 6999,
+            "selected_frequency_hz": 7.476405427064581,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "bist",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "hier",
+              "bist"
+            ],
+            "field_sources": [
+              [
+                "hier",
+                "bist"
+              ],
+              [
+                "bist"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:greeting:user::",
+                "prefix": [
+                  "hier",
+                  "bist"
+                ],
+                "weight": 7.999999999999984
+              }
+            ],
+            "feature_field_norm": 8.006941432976209,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 6.992893892674703e-18,
+            "phase_time_s": 62.034070699999575,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 8,
+            "selected_token": ".",
+            "selected_bin": 13,
+            "selected_frequency_hz": 15.641089826498797,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": ".",
+                "probability": 1.0
+              }
+            ]
+          }
+        ],
+        "vocabulary_size": 44614,
+        "max_transform_error": 1.5993360207877826e-17,
+        "output_sha256": "d326b063bb5e1c89616caa6f92b879a457e42f66c77d92e397c4013b94155aca",
+        "quality_note": "Tokenfolge aus dem Ergebnisfeld; numerische Korrektheit garantiert keine sinnvolle Antwort."
+      },
+      "abstained": false
+    },
+    {
+      "prompt": "Mir geht es gut, wie geht es dir denn?",
+      "answer": "Es ist schön, wenn dir etwas gut gelingt. Ich kann Text verarbeiten, besitze aber kein menschliches Erleben.",
+      "seconds": null,
+      "timing_note": "Initial browser run did not persist per-request elapsed timing before the unversioned frame assertion failed. No additional chat requests were made.",
+      "created_at": "2026-09-06T10:12:43.378Z",
+      "session_id": "a2106535-2fbb-48e6-9cc2-9a6025d31822",
+      "live_revision": 5,
+      "conversation_revision": 2,
+      "decoder": {
+        "method": "token_field_demodulation",
+        "steps": [
+          {
+            "prefix": [],
+            "field_sources": [
+              [
+                "<BOS>",
+                "<BOS>"
+              ],
+              [
+                "<BOS>"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 24,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:mood_statement:user:positive:wellbeing",
+                "prefix": [
+                  "<BOS>",
+                  "<BOS>"
+                ],
+                "weight": 7.999999999999984
+              },
+              {
+                "feature": "word:gut",
+                "prefix": [
+                  "<BOS>",
+                  "<BOS>"
+                ],
+                "weight": 0.20412414523193134
+              }
+            ],
+            "feature_field_norm": 8.00260374294933,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 1.0408340855860843e-17,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 0,
+            "selected_token": "es",
+            "selected_bin": 12443,
+            "selected_frequency_hz": 15.658395243231753,
+            "selection": "beam",
+            "probability": 0.3212884830340995,
+            "top_modes": [
+              {
+                "token": "das",
+                "probability": 0.37544605498672995
+              },
+              {
+                "token": "es",
+                "probability": 0.3212884830340995
+              },
+              {
+                "token": "wenn",
+                "probability": 0.06736825437879779
+              },
+              {
+                "token": "ein",
+                "probability": 0.06586944702475307
+              },
+              {
+                "token": "so",
+                "probability": 0.05171091672458925
+              }
+            ],
+            "input_band": 0
+          },
+          {
+            "prefix": [
+              "es"
+            ],
+            "field_sources": [
+              [
+                "<BOS>",
+                "es"
+              ],
+              [
+                "es"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 3,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:mood_statement:user:positive:wellbeing",
+                "prefix": [
+                  "<BOS>",
+                  "es"
+                ],
+                "weight": 7.999999999999984
+              },
+              {
+                "feature": "word:gut",
+                "prefix": [
+                  "<BOS>",
+                  "es"
+                ],
+                "weight": 0.20412414523193134
+              }
+            ],
+            "feature_field_norm": 8.00260374294933,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 1.2327526502681117e-17,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 1,
+            "selected_token": "ist",
+            "selected_bin": 20213,
+            "selected_frequency_hz": 20.00519510593812,
+            "selection": "beam",
+            "probability": 0.9999742689841071,
+            "top_modes": [
+              {
+                "token": "ist",
+                "probability": 0.9999742689841071
+              },
+              {
+                "token": "scheint",
+                "probability": 1.4447615395965222e-05
+              },
+              {
+                "token": "sieht",
+                "probability": 1.1283400496917123e-05
+              }
+            ],
+            "input_band": 0
+          },
+          {
+            "prefix": [
+              "es",
+              "ist"
+            ],
+            "field_sources": [
+              [
+                "es",
+                "ist"
+              ],
+              [
+                "ist"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 5,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:mood_statement:user:positive:wellbeing",
+                "prefix": [
+                  "es",
+                  "ist"
+                ],
+                "weight": 7.999999999999984
+              },
+              {
+                "feature": "word:gut",
+                "prefix": [
+                  "es",
+                  "ist"
+                ],
+                "weight": 0.20412414523193134
+              }
+            ],
+            "feature_field_norm": 8.00260374294933,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 9.889445383256551e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 2,
+            "selected_token": "schön",
+            "selected_bin": 33686,
+            "selected_frequency_hz": 26.097724518680348,
+            "selection": "beam",
+            "probability": 0.9998730568917796,
+            "top_modes": [
+              {
+                "token": "schön",
+                "probability": 0.9998730568917796
+              },
+              {
+                "token": "auch",
+                "probability": 5.5189845605678615e-05
+              },
+              {
+                "token": "wichtig",
+                "probability": 4.011815957605889e-05
+              },
+              {
+                "token": "also",
+                "probability": 1.6577959044988655e-05
+              },
+              {
+                "token": "immer",
+                "probability": 1.505714399365215e-05
+              }
+            ],
+            "input_band": 0
+          },
+          {
+            "prefix": [
+              "ist",
+              "schön"
+            ],
+            "field_sources": [
+              [
+                "ist",
+                "schön"
+              ],
+              [
+                "schön"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:mood_statement:user:positive:wellbeing",
+                "prefix": [
+                  "ist",
+                  "schön"
+                ],
+                "weight": 7.999999999999984
+              }
+            ],
+            "feature_field_norm": 8.00260374294933,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 5.6172241464932884e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 3,
+            "selected_token": ",",
+            "selected_bin": 11,
+            "selected_frequency_hz": 5.754014851511337,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": ",",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 0
+          },
+          {
+            "prefix": [
+              "schön",
+              ","
+            ],
+            "field_sources": [
+              [
+                "schön",
+                ","
+              ],
+              [
+                ","
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:mood_statement:user:positive:wellbeing",
+                "prefix": [
+                  "schön",
+                  ","
+                ],
+                "weight": 7.999999999999984
+              }
+            ],
+            "feature_field_norm": 8.00260374294933,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 8.819811412362178e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 4,
+            "selected_token": "wenn",
+            "selected_bin": 42084,
+            "selected_frequency_hz": 20.214476921803662,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "wenn",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 0
+          },
+          {
+            "prefix": [
+              ",",
+              "wenn"
+            ],
+            "field_sources": [
+              [
+                ",",
+                "wenn"
+              ],
+              [
+                "wenn"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 2,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:mood_statement:user:positive:wellbeing",
+                "prefix": [
+                  ",",
+                  "wenn"
+                ],
+                "weight": 7.999999999999984
+              },
+              {
+                "feature": "word:gut",
+                "prefix": [
+                  ",",
+                  "wenn"
+                ],
+                "weight": 0.20412414523193134
+              }
+            ],
+            "feature_field_norm": 8.00260374294933,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 9.556367307475341e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 5,
+            "selected_token": "dir",
+            "selected_bin": 9653,
+            "selected_frequency_hz": 8.321979093386172,
+            "selection": "beam",
+            "probability": 0.9997789215051007,
+            "top_modes": [
+              {
+                "token": "dir",
+                "probability": 0.9997789215051007
+              },
+              {
+                "token": "man",
+                "probability": 0.00022107849489928715
+              }
+            ],
+            "input_band": 0
+          },
+          {
+            "prefix": [
+              "wenn",
+              "dir"
+            ],
+            "field_sources": [
+              [
+                "wenn",
+                "dir"
+              ],
+              [
+                "dir"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:mood_statement:user:positive:wellbeing",
+                "prefix": [
+                  "wenn",
+                  "dir"
+                ],
+                "weight": 7.999999999999984
+              }
+            ],
+            "feature_field_norm": 8.00260374294933,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 8.228515941976643e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 6,
+            "selected_token": "etwas",
+            "selected_bin": 12549,
+            "selected_frequency_hz": 23.90780890182276,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "etwas",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 0
+          },
+          {
+            "prefix": [
+              "dir",
+              "etwas"
+            ],
+            "field_sources": [
+              [
+                "dir",
+                "etwas"
+              ],
+              [
+                "etwas"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:mood_statement:user:positive:wellbeing",
+                "prefix": [
+                  "dir",
+                  "etwas"
+                ],
+                "weight": 7.999999999999984
+              }
+            ],
+            "feature_field_norm": 8.00260374294933,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 7.385319077612974e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 7,
+            "selected_token": "gut",
+            "selected_bin": 17274,
+            "selected_frequency_hz": 24.02857693713499,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "gut",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 0
+          },
+          {
+            "prefix": [
+              "etwas",
+              "gut"
+            ],
+            "field_sources": [
+              [
+                "etwas",
+                "gut"
+              ],
+              [
+                "gut"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:mood_statement:user:positive:wellbeing",
+                "prefix": [
+                  "etwas",
+                  "gut"
+                ],
+                "weight": 7.999999999999984
+              }
+            ],
+            "feature_field_norm": 8.00260374294933,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 8.727659132509945e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 8,
+            "selected_token": "gelingt",
+            "selected_bin": 15455,
+            "selected_frequency_hz": 25.933960892295364,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "gelingt",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 0
+          },
+          {
+            "prefix": [
+              "gut",
+              "gelingt"
+            ],
+            "field_sources": [
+              [
+                "gut",
+                "gelingt"
+              ],
+              [
+                "gelingt"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:mood_statement:user:positive:wellbeing",
+                "prefix": [
+                  "gut",
+                  "gelingt"
+                ],
+                "weight": 7.999999999999984
+              }
+            ],
+            "feature_field_norm": 8.00260374294933,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 6.187556141667073e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 9,
+            "selected_token": ".",
+            "selected_bin": 13,
+            "selected_frequency_hz": 15.641089826498797,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": ".",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 0
+          },
+          {
+            "prefix": [],
+            "field_sources": [
+              [
+                "<BOS>",
+                "<BOS>"
+              ],
+              [
+                "<BOS>"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 7,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:wellbeing_question:assistant::wellbeing",
+                "prefix": [
+                  "<BOS>",
+                  "<BOS>"
+                ],
+                "weight": 7.999999999999999
+              },
+              {
+                "feature": "word:denn",
+                "prefix": [
+                  "<BOS>",
+                  "<BOS>"
+                ],
+                "weight": 0.49999999999999906
+              }
+            ],
+            "feature_field_norm": 8.015609770940697,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 8.727659132509945e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 10,
+            "selected_token": "ich",
+            "selected_bin": 19231,
+            "selected_frequency_hz": 29.790291721838216,
+            "selection": "beam",
+            "probability": 0.804129008758506,
+            "top_modes": [
+              {
+                "token": "ich",
+                "probability": 0.804129008758506
+              },
+              {
+                "token": "meine",
+                "probability": 0.07220101708938584
+              },
+              {
+                "token": "mir",
+                "probability": 0.06716611695800681
+              },
+              {
+                "token": "hi",
+                "probability": 0.05580260554354854
+              },
+              {
+                "token": "als",
+                "probability": 0.00038343646239287705
+              }
+            ],
+            "input_band": 1
+          },
+          {
+            "prefix": [
+              "ich"
+            ],
+            "field_sources": [
+              [
+                "<BOS>",
+                "ich"
+              ],
+              [
+                "ich"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 4,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:wellbeing_question:assistant::wellbeing",
+                "prefix": [
+                  "<BOS>",
+                  "ich"
+                ],
+                "weight": 7.999999999999999
+              },
+              {
+                "feature": "word:denn",
+                "prefix": [
+                  "<BOS>",
+                  "ich"
+                ],
+                "weight": 0.49999999999999906
+              }
+            ],
+            "feature_field_norm": 8.015609770940697,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 7.165788999112001e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 11,
+            "selected_token": "kann",
+            "selected_bin": 20915,
+            "selected_frequency_hz": 14.729968201310141,
+            "selection": "beam",
+            "probability": 0.28347364861527147,
+            "top_modes": [
+              {
+                "token": "habe",
+                "probability": 0.3710538488041283
+              },
+              {
+                "token": "bin",
+                "probability": 0.34437570721838584
+              },
+              {
+                "token": "kann",
+                "probability": 0.28347364861527147
+              },
+              {
+                "token": "würde",
+                "probability": 0.0010967953622142547
+              }
+            ],
+            "input_band": 1
+          },
+          {
+            "prefix": [
+              "ich",
+              "kann"
+            ],
+            "field_sources": [
+              [
+                "ich",
+                "kann"
+              ],
+              [
+                "kann"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:wellbeing_question:assistant::wellbeing",
+                "prefix": [
+                  "ich",
+                  "kann"
+                ],
+                "weight": 7.999999999999999
+              }
+            ],
+            "feature_field_norm": 8.015609770940697,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 6.952433221959954e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 12,
+            "selected_token": "text",
+            "selected_bin": 37398,
+            "selected_frequency_hz": 3.515808506139957,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "text",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 1
+          },
+          {
+            "prefix": [
+              "kann",
+              "text"
+            ],
+            "field_sources": [
+              [
+                "kann",
+                "text"
+              ],
+              [
+                "text"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:wellbeing_question:assistant::wellbeing",
+                "prefix": [
+                  "kann",
+                  "text"
+                ],
+                "weight": 7.999999999999999
+              }
+            ],
+            "feature_field_norm": 8.015609770940697,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 7.007167689862071e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 13,
+            "selected_token": "verarbeiten",
+            "selected_bin": 39675,
+            "selected_frequency_hz": 2.322637849093435,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "verarbeiten",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 1
+          },
+          {
+            "prefix": [
+              "text",
+              "verarbeiten"
+            ],
+            "field_sources": [
+              [
+                "text",
+                "verarbeiten"
+              ],
+              [
+                "verarbeiten"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:wellbeing_question:assistant::wellbeing",
+                "prefix": [
+                  "text",
+                  "verarbeiten"
+                ],
+                "weight": 7.999999999999999
+              }
+            ],
+            "feature_field_norm": 8.015609770940697,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 5.553824967135427e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 14,
+            "selected_token": ",",
+            "selected_bin": 11,
+            "selected_frequency_hz": 5.754014851511337,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": ",",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 1
+          },
+          {
+            "prefix": [
+              "verarbeiten",
+              ","
+            ],
+            "field_sources": [
+              [
+                "verarbeiten",
+                ","
+              ],
+              [
+                ","
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:wellbeing_question:assistant::wellbeing",
+                "prefix": [
+                  "verarbeiten",
+                  ","
+                ],
+                "weight": 7.999999999999999
+              }
+            ],
+            "feature_field_norm": 8.015609770940697,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 6.627171921913427e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 15,
+            "selected_token": "besitze",
+            "selected_bin": 6358,
+            "selected_frequency_hz": 4.527548922433837,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "besitze",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 1
+          },
+          {
+            "prefix": [
+              ",",
+              "besitze"
+            ],
+            "field_sources": [
+              [
+                ",",
+                "besitze"
+              ],
+              [
+                "besitze"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:wellbeing_question:assistant::wellbeing",
+                "prefix": [
+                  ",",
+                  "besitze"
+                ],
+                "weight": 7.999999999999999
+              }
+            ],
+            "feature_field_norm": 8.015609770940697,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 7.961322465290408e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 16,
+            "selected_token": "aber",
+            "selected_bin": 1548,
+            "selected_frequency_hz": 3.909272961237488,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "aber",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 1
+          },
+          {
+            "prefix": [
+              "besitze",
+              "aber"
+            ],
+            "field_sources": [
+              [
+                "besitze",
+                "aber"
+              ],
+              [
+                "aber"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:wellbeing_question:assistant::wellbeing",
+                "prefix": [
+                  "besitze",
+                  "aber"
+                ],
+                "weight": 7.999999999999999
+              }
+            ],
+            "feature_field_norm": 8.015609770940697,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 8.101827235254807e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 17,
+            "selected_token": "kein",
+            "selected_bin": 21162,
+            "selected_frequency_hz": 23.14167172206353,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "kein",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 1
+          },
+          {
+            "prefix": [
+              "aber",
+              "kein"
+            ],
+            "field_sources": [
+              [
+                "aber",
+                "kein"
+              ],
+              [
+                "kein"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:wellbeing_question:assistant::wellbeing",
+                "prefix": [
+                  "aber",
+                  "kein"
+                ],
+                "weight": 7.999999999999999
+              }
+            ],
+            "feature_field_norm": 8.015609770940697,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 7.818293051731877e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 18,
+            "selected_token": "menschliches",
+            "selected_bin": 25469,
+            "selected_frequency_hz": 29.96766359456281,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "menschliches",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 1
+          },
+          {
+            "prefix": [
+              "kein",
+              "menschliches"
+            ],
+            "field_sources": [
+              [
+                "kein",
+                "menschliches"
+              ],
+              [
+                "menschliches"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:wellbeing_question:assistant::wellbeing",
+                "prefix": [
+                  "kein",
+                  "menschliches"
+                ],
+                "weight": 7.999999999999999
+              }
+            ],
+            "feature_field_norm": 8.015609770940697,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 7.159070357233612e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 19,
+            "selected_token": "erleben",
+            "selected_bin": 12116,
+            "selected_frequency_hz": 2.9499782688863756,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "erleben",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 1
+          },
+          {
+            "prefix": [
+              "menschliches",
+              "erleben"
+            ],
+            "field_sources": [
+              [
+                "menschliches",
+                "erleben"
+              ],
+              [
+                "erleben"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:wellbeing_question:assistant::wellbeing",
+                "prefix": [
+                  "menschliches",
+                  "erleben"
+                ],
+                "weight": 7.999999999999999
+              }
+            ],
+            "feature_field_norm": 8.015609770940697,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 6.314488766312915e-18,
+            "phase_time_s": 149.09492950000094,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 20,
+            "selected_token": ".",
+            "selected_bin": 13,
+            "selected_frequency_hz": 15.641089826498797,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": ".",
+                "probability": 1.0
+              }
+            ],
+            "input_band": 1
+          }
+        ],
+        "vocabulary_size": 44614,
+        "max_transform_error": 1.2327526502681117e-17,
+        "output_sha256": "4728be105ce7f5336b7ce20736e20b0ae9dd232275045ef7ed98938c2f880b5e",
+        "quality_note": "Tokenfolge aus dem Ergebnisfeld; numerische Korrektheit garantiert keine sinnvolle Antwort."
+      },
+      "abstained": false
+    },
+    {
+      "prompt": "Danke.",
+      "answer": "Es ist gut zu wissen, was für dich passend war. Ich kann auf deine nächste Frage eingehen.",
+      "seconds": null,
+      "timing_note": "Initial browser run did not persist per-request elapsed timing before the unversioned frame assertion failed. No additional chat requests were made.",
+      "created_at": "2026-09-06T10:12:45.646Z",
+      "session_id": "a2106535-2fbb-48e6-9cc2-9a6025d31822",
+      "live_revision": 5,
+      "conversation_revision": 3,
+      "decoder": {
+        "method": "token_field_demodulation",
+        "steps": [
+          {
+            "prefix": [],
+            "field_sources": [
+              [
+                "<BOS>",
+                "<BOS>"
+              ],
+              [
+                "<BOS>"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 13,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "<BOS>",
+                  "<BOS>"
+                ],
+                "weight": 7.9999999999999964
+              },
+              {
+                "feature": "word:dank",
+                "prefix": [
+                  "<BOS>",
+                  "<BOS>"
+                ],
+                "weight": 0.31622776601683755
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 8.04650413802737e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 0,
+            "selected_token": "es",
+            "selected_bin": 12443,
+            "selected_frequency_hz": 15.658395243231753,
+            "selection": "beam",
+            "probability": 0.2180982492707943,
+            "top_modes": [
+              {
+                "token": "gern",
+                "probability": 0.3292702077675551
+              },
+              {
+                "token": "es",
+                "probability": 0.2180982492707943
+              },
+              {
+                "token": "deine",
+                "probability": 0.16467372098423763
+              },
+              {
+                "token": "schön",
+                "probability": 0.14657402289620272
+              },
+              {
+                "token": "danke",
+                "probability": 0.1411690622901686
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "es"
+            ],
+            "field_sources": [
+              [
+                "<BOS>",
+                "es"
+              ],
+              [
+                "es"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "<BOS>",
+                  "es"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 8.04650413802737e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 1,
+            "selected_token": "ist",
+            "selected_bin": 20213,
+            "selected_frequency_hz": 20.00519510593812,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "ist",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "es",
+              "ist"
+            ],
+            "field_sources": [
+              [
+                "es",
+                "ist"
+              ],
+              [
+                "ist"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "es",
+                  "ist"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 8.697977720075077e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 2,
+            "selected_token": "gut",
+            "selected_bin": 17274,
+            "selected_frequency_hz": 24.02857693713499,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "gut",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "ist",
+              "gut"
+            ],
+            "field_sources": [
+              [
+                "ist",
+                "gut"
+              ],
+              [
+                "gut"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "ist",
+                  "gut"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 8.239936510889834e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 3,
+            "selected_token": "zu",
+            "selected_bin": 43535,
+            "selected_frequency_hz": 8.869346465993166,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "zu",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "gut",
+              "zu"
+            ],
+            "field_sources": [
+              [
+                "gut",
+                "zu"
+              ],
+              [
+                "zu"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "gut",
+                  "zu"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 7.112895110951044e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 4,
+            "selected_token": "wissen",
+            "selected_bin": 42604,
+            "selected_frequency_hz": 25.089886056082957,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "wissen",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "zu",
+              "wissen"
+            ],
+            "field_sources": [
+              [
+                "zu",
+                "wissen"
+              ],
+              [
+                "wissen"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "zu",
+                  "wissen"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 6.887884435673084e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 5,
+            "selected_token": ",",
+            "selected_bin": 11,
+            "selected_frequency_hz": 5.754014851511337,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": ",",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "wissen",
+              ","
+            ],
+            "field_sources": [
+              [
+                "wissen",
+                ","
+              ],
+              [
+                ","
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "wissen",
+                  ","
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 8.80543056188839e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 6,
+            "selected_token": "was",
+            "selected_bin": 41627,
+            "selected_frequency_hz": 25.096530480923853,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "was",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              ",",
+              "was"
+            ],
+            "field_sources": [
+              [
+                ",",
+                "was"
+              ],
+              [
+                "was"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  ",",
+                  "was"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 1.7395955440150154e-17,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 7,
+            "selected_token": "für",
+            "selected_bin": 14723,
+            "selected_frequency_hz": 11.205361836530269,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "für",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "was",
+              "für"
+            ],
+            "field_sources": [
+              [
+                "was",
+                "für"
+              ],
+              [
+                "für"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "was",
+                  "für"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 9.813077866773595e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 8,
+            "selected_token": "dich",
+            "selected_bin": 9509,
+            "selected_frequency_hz": 19.380906199228082,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "dich",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "für",
+              "dich"
+            ],
+            "field_sources": [
+              [
+                "für",
+                "dich"
+              ],
+              [
+                "dich"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "für",
+                  "dich"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 6.605630197227462e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 9,
+            "selected_token": "passend",
+            "selected_bin": 29192,
+            "selected_frequency_hz": 15.238552184918007,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "passend",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "dich",
+              "passend"
+            ],
+            "field_sources": [
+              [
+                "dich",
+                "passend"
+              ],
+              [
+                "passend"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "dich",
+                  "passend"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 7.996680103938913e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 10,
+            "selected_token": "war",
+            "selected_bin": 41580,
+            "selected_frequency_hz": 15.077943653326589,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "war",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "passend",
+              "war"
+            ],
+            "field_sources": [
+              [
+                "passend",
+                "war"
+              ],
+              [
+                "war"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "passend",
+                  "war"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 6.08023826287761e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 11,
+            "selected_token": ".",
+            "selected_bin": 13,
+            "selected_frequency_hz": 15.641089826498797,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": ".",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "war",
+              "."
+            ],
+            "field_sources": [
+              [
+                "war",
+                "."
+              ],
+              [
+                "."
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 5,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "war",
+                  "."
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 7.59328637072468e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 12,
+            "selected_token": "ich",
+            "selected_bin": 19231,
+            "selected_frequency_hz": 29.790291721838216,
+            "selection": "beam",
+            "probability": 0.2116868268604758,
+            "top_modes": [
+              {
+                "token": "du",
+                "probability": 0.2502506686062039
+              },
+              {
+                "token": "ich",
+                "probability": 0.2116868268604758
+              },
+              {
+                "token": "was",
+                "probability": 0.1853115821550796
+              },
+              {
+                "token": "magst",
+                "probability": 0.18135029205761719
+              },
+              {
+                "token": "wir",
+                "probability": 0.17140063032062355
+              }
+            ]
+          },
+          {
+            "prefix": [
+              ".",
+              "ich"
+            ],
+            "field_sources": [
+              [
+                ".",
+                "ich"
+              ],
+              [
+                "ich"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  ".",
+                  "ich"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 9.055522398700297e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 13,
+            "selected_token": "kann",
+            "selected_bin": 20915,
+            "selected_frequency_hz": 14.729968201310141,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "kann",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "ich",
+              "kann"
+            ],
+            "field_sources": [
+              [
+                "ich",
+                "kann"
+              ],
+              [
+                "kann"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "ich",
+                  "kann"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 7.29031490235391e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 14,
+            "selected_token": "auf",
+            "selected_bin": 4084,
+            "selected_frequency_hz": 1.08469702649422,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "auf",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "kann",
+              "auf"
+            ],
+            "field_sources": [
+              [
+                "kann",
+                "auf"
+              ],
+              [
+                "auf"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "kann",
+                  "auf"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 9.784286378217221e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 15,
+            "selected_token": "deine",
+            "selected_bin": 9173,
+            "selected_frequency_hz": 1.5120646993312663,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "deine",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "auf",
+              "deine"
+            ],
+            "field_sources": [
+              [
+                "auf",
+                "deine"
+              ],
+              [
+                "deine"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "auf",
+                  "deine"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 7.152448122690996e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 16,
+            "selected_token": "nächste",
+            "selected_bin": 28116,
+            "selected_frequency_hz": 23.395915817647726,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "nächste",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "deine",
+              "nächste"
+            ],
+            "field_sources": [
+              [
+                "deine",
+                "nächste"
+              ],
+              [
+                "nächste"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "deine",
+                  "nächste"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 6.7881793252855124e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 17,
+            "selected_token": "frage",
+            "selected_bin": 14173,
+            "selected_frequency_hz": 27.92034766627648,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "frage",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "nächste",
+              "frage"
+            ],
+            "field_sources": [
+              [
+                "nächste",
+                "frage"
+              ],
+              [
+                "frage"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "nächste",
+                  "frage"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 7.05981306231723e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 18,
+            "selected_token": "eingehen",
+            "selected_bin": 10702,
+            "selected_frequency_hz": 0.7155313443585594,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": "eingehen",
+                "probability": 1.0
+              }
+            ]
+          },
+          {
+            "prefix": [
+              "frage",
+              "eingehen"
+            ],
+            "field_sources": [
+              [
+                "frage",
+                "eingehen"
+              ],
+              [
+                "eingehen"
+              ]
+            ],
+            "field_weights": [
+              0.92,
+              0.08
+            ],
+            "decoder": "operator",
+            "support_size": 1,
+            "carrier_bins": 44800,
+            "conditioned_field_sources": [
+              {
+                "feature": "semantic:thanks:user::",
+                "prefix": [
+                  "frage",
+                  "eingehen"
+                ],
+                "weight": 7.9999999999999964
+              }
+            ],
+            "feature_field_norm": 8.006247560499236,
+            "feature_decoder": "inverse_dft_mode_amplitude",
+            "runtime_source": "imported_complex_transition_spectra",
+            "fft_roundtrip_max_error": 5.918592033119377e-18,
+            "phase_time_s": 151.13375339999948,
+            "prompt_gain": 1.2,
+            "grammar_mask": true,
+            "support_source": "corpus_ngram_edges",
+            "phase_error": 0.0,
+            "step": 19,
+            "selected_token": ".",
+            "selected_bin": 13,
+            "selected_frequency_hz": 15.641089826498797,
+            "selection": "beam",
+            "probability": 1.0,
+            "top_modes": [
+              {
+                "token": ".",
+                "probability": 1.0
+              }
+            ]
+          }
+        ],
+        "vocabulary_size": 44614,
+        "max_transform_error": 1.7395955440150154e-17,
+        "output_sha256": "29cdefe389c7f04806c49c5e0478b4f3bcbc0bc0407b7bef618cdf80c56afaf0",
+        "quality_note": "Tokenfolge aus dem Ergebnisfeld; numerische Korrektheit garantiert keine sinnvolle Antwort."
+      },
+      "abstained": false
+    }
+  ],
+  "javascript_errors": [],
+  "server_process": {
+    "url": "http://127.0.0.1:8765",
+    "pid": 29008,
+    "executable": "C:\\Users\\AMD\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "commandLine": "\"C:\\Users\\AMD\\AppData\\Local\\Programs\\Python\\Python311\\python.exe\" -m freqai serve --memory \"C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\memory.sqlite3\" --port 8765 ",
+    "launchedPid": 34520
+  },
+  "decoder_carrier_bins": 44800,
+  "context_wave": {
+    "conversation_revision": 3,
+    "time_before": 353.5850768,
+    "time_after": 354.0081297000015,
+    "energy_before": 2.9401033225898305,
+    "energy_after": 2.9401033225898305,
+    "mode_count": 44614,
+    "carrier_size": 44800,
+    "motion_verified": true,
+    "energy_stable": true
+  },
+  "harness_correction": "First browser attempt compared unversioned UI frames immediately after a new answer and failed its energy assertion. The completed check explicitly waits for conversation_revision=3 and compares two frames at that same revision. No application code was changed.",
+  "answer_review": {
+    "method": "Qualitative AI-agent review of these three audit prompts only; no general quality claim",
+    "greeting": "Appropriate greeting",
+    "compound_wellbeing": "Partially appropriate: assistant self-description fits the reciprocal question, but the success-related first sentence does not precisely acknowledge simply feeling well",
+    "thanks": "Plausible but generic acknowledgement"
+  }
+}

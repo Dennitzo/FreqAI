@@ -1,0 +1,15 @@
+{
+  "status": "development in progress; holdout has not been generated",
+  "historical_artifacts": {
+    "baseline_freeze.json": "226ce9d39fab6192314628dc4b63bb0581d99b7f843064ba4e952c140e0e66fb",
+    "baseline_documents.jsonl": "a56fca5757a3967ba5ec31f015d7ce8fc60045c11c9654b0420e9010a19a1a8c",
+    "protocol.json": "e4eaa109d8ad9917a9e713d415ce3f9954f3cc808ead281e28bb4bd56946e1b3",
+    "baseline_development.json": "a4c601d25ac077d5407e792b26d8ab498e27a360f97bd35bee6c848fa6ffa4e0",
+    "baseline_development_review.json": "cd093bcfe912dcccdf0eaced92127f57c40e030680de0a664ac0fdeda14c7624"
+  },
+  "new_source_artifacts": {
+    "results\\unpaired_system\\evaluation\\corpora\\conversation_facts_v1.jsonl": "688706468d39cc203f83cd8c2f0e4b9b8f7b65261a4469d6bcfcff3c274cea5e",
+    "results\\unpaired_system\\evaluation\\corpora\\wikipedia_v3.jsonl": "2f5b876d904346ca4b9082e05ff5e4bc5e8a729f2a479c777f47e1332a0a5674"
+  },
+  "baseline_note": "32k historical mixed system is frozen before migration, used only as evaluation baseline. Candidate uses replacement 20,045 information records."
+}

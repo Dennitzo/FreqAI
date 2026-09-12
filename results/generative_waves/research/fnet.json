@@ -1,0 +1,38 @@
+{
+  "request": {
+    "query": "\"FNet\" \"Fourier\"",
+    "maximumResults": 8,
+    "language": "de-DE"
+  },
+  "http_status": 200,
+  "retrieved_utc": "2026-09-06T08:23:45.057833+00:00",
+  "response": {
+    "query": "\"FNet\" \"Fourier\"",
+    "results": [
+      {
+        "title": "Neue Ansätze und Topologien für Modulare Multilevelsysteme im ...",
+        "url": "https://athene-forschung.unibw.de/doc/138451/138451.pdf",
+        "snippet": "Fnet = Frolling +Faero +Fgradient +Facceleration. (6). Facceleration = (mveh + ... According to [42], [45], the fourier series expansion of the signal ...",
+        "source": "google cse",
+        "thumbnailUrl": ""
+      },
+      {
+        "title": "Firmenregister München - Firmen mit F",
+        "url": "https://muenchen.frag-christel.de/F/firmen.php",
+        "snippet": "fnet.de AG. Telekommunikationsberatung in München. FNF Medien GmbH. München. FNL ... FOURIER SYSTEMS GmbH. Telekommunikation in München. Fourkiotis ...",
+        "source": "google cse",
+        "thumbnailUrl": ""
+      },
+      {
+        "title": ",/&r.\"u #r*",
+        "url": "https://heinzjonas.beim-alten-bgs.de/eschwegeseite/eschwbuch.pdf",
+        "snippet": "Anführer war der Fourier des Eschweger. Regiments ,,von Wurmb\". Jakob ... fnet. + --ft i|.iä:t-\\ ä ths.hnft'|ill..obcrl.uLftlN.lbohh'|..h^lab,oh ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRx5J8NZ_WUI_Xnvnoxi-q3Tsky0cKy1WBqkC3btWOVUr6jyJp7alLDi2g"
+      }
+    ],
+    "provider": "searxng",
+    "isFallback": false,
+    "retrievedAt": "2026-09-06T08:23:45.0566874+00:00"
+  }
+}

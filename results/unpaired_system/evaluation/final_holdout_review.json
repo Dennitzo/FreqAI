@@ -1,0 +1,196 @@
+{
+  "run_sha256": "a26fe1d118144472d4e016861acd6cb7271a6935736c3068ca2524a8e39f6cf0",
+  "review": "Independent AI-agent review, not a human study. Predeclared heldout rubrics are unchanged. No candidate quality tuning follows this review. Same criteria for greeting time, short acceptance, bare echoes and partial capability replies as baseline/development.",
+  "rows": [
+    {
+      "id": "uh01a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Natural greeting and conversational opening; evening was not specified, as morning was unspecified in the baseline greeting."
+    },
+    {
+      "id": "uh01b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty reply to positive user state and assistant-directed follow-up."
+    },
+    {
+      "id": "uh02a",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Bare repetition of not being awake; no sympathetic response about short sleep; partial."
+    },
+    {
+      "id": "uh02b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty reply, no acknowledgement of water and explicit coffee refusal."
+    },
+    {
+      "id": "uh03a",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Bare repetition of subdued state without offering conversation; partial."
+    },
+    {
+      "id": "uh03b",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Concise acceptance of privacy/light-topic constraint, with no personal probing."
+    },
+    {
+      "id": "uh04a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty reply to reading preference."
+    },
+    {
+      "id": "uh04b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty reply to travel story without violence."
+    },
+    {
+      "id": "uh05a",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": false,
+      "empty": false,
+      "note": "Only restates wish for a warm meal; internal Zum capitalization incorrect; partial."
+    },
+    {
+      "id": "uh05b",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": false,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Retains no-spice preference but loses rice and vegetables; awkward nonstandard nicht placement; partial."
+    },
+    {
+      "id": "uh06a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty reply to indoor plan and drizzle."
+    },
+    {
+      "id": "uh06b",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": false,
+      "empty": false,
+      "note": "Restates possible audiobook listening but offers no other idea or relevant preference question; awkward trailing Vielleicht capitalization; partial."
+    },
+    {
+      "id": "uh07a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty reply to disappointment about canceled visit."
+    },
+    {
+      "id": "uh07b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty reply to wish for a conversation without organizing."
+    },
+    {
+      "id": "uh08a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty reply to reunion with an old friend."
+    },
+    {
+      "id": "uh08b",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Repeats curiosity only, loses simultaneous nervousness and reunion context; partial."
+    },
+    {
+      "id": "uh09a",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty reply to question about assistant lived experience."
+    },
+    {
+      "id": "uh09b",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "States text-processing/definition capability but does not affirm responsiveness to the user conversation; relevant bounded capability, partial."
+    },
+    {
+      "id": "uh10a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Natural concise acknowledgement of thanks."
+    },
+    {
+      "id": "uh10b",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Bare repetition of being done; no natural farewell, although no demand to continue; partial."
+    }
+  ],
+  "summary": {
+    "appropriate": 3,
+    "partial": 8,
+    "turns": 20,
+    "grammatical_nonempty": 10,
+    "orthography_ok_nonempty": 9,
+    "nonempty": 11,
+    "empty": 9,
+    "fully_appropriate_two_turn_sessions": 0
+  }
+}

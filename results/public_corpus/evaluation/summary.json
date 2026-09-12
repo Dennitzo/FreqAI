@@ -1,0 +1,512 @@
+{
+  "created_utc": "2026-09-06T10:15:22.239676+00:00",
+  "development": [
+    {
+      "label": "baseline",
+      "run_sha256": "8369c52c804e5596048130e36e729c60d2946db47bc3bd88757b0f0894c4c153",
+      "summary": {
+        "turns": 20,
+        "surface_form_ok": 20,
+        "new_complete_texts": 7,
+        "texts_with_new_sentences": 1,
+        "empty_answers": 0,
+        "qualitative": "pending independent AI-agent review"
+      },
+      "review": {
+        "appropriate": 11,
+        "role_ok": 19,
+        "negation_ok": 19,
+        "topic_ok": 12,
+        "grammatical_sentences": 20
+      },
+      "numerics": {
+        "states": 60,
+        "fft_direct_max_probability_error": 0.0,
+        "time_max_probability_error": 0.0,
+        "fft_direct_argmax_changes": 0,
+        "time_argmax_changes": 0,
+        "prompt_null_distribution_changes": 57,
+        "prompt_null_mean_total_variation": 0.44625509627970583,
+        "finite_normalized_states": 60,
+        "data_zero_rejected_states": 6,
+        "states_with_numerical_error": [],
+        "data_zero_tested_states": 6,
+        "scope": "Decoder algebra and causal dependence, not a semantic correctness proof. Null removes both prompt amplitude and feature spectrum. Data null retains real reference counts and supports."
+      },
+      "build_s": 1.8270093999999517,
+      "median_answer_s": 0.056588149999697634,
+      "memory": {
+        "rss_mb": 356.34765625,
+        "peak_rss_mb": 361.02734375,
+        "private_commit_mb": 1838.35546875,
+        "peak_private_commit_mb": 1843.5703125
+      }
+    },
+    {
+      "label": "compact_existing",
+      "run_sha256": "f8927d788f99c2c6f768bcd4847afe654af559a32439083b469539142ae587cb",
+      "summary": {
+        "turns": 20,
+        "surface_form_ok": 20,
+        "new_complete_texts": 7,
+        "texts_with_new_sentences": 1,
+        "empty_answers": 0,
+        "qualitative": "pending independent AI-agent review"
+      },
+      "review": {
+        "appropriate": 11,
+        "role_ok": 19,
+        "negation_ok": 19,
+        "topic_ok": 12,
+        "grammatical_sentences": 20
+      },
+      "numerics": {
+        "states": 60,
+        "fft_direct_max_probability_error": 0.0,
+        "time_max_probability_error": 0.0,
+        "fft_direct_argmax_changes": 0,
+        "time_argmax_changes": 0,
+        "prompt_null_distribution_changes": 57,
+        "prompt_null_mean_total_variation": 0.44625509627970583,
+        "finite_normalized_states": 60,
+        "data_zero_rejected_states": 6,
+        "states_with_numerical_error": [],
+        "data_zero_tested_states": 6,
+        "scope": "Decoder algebra and causal dependence, not a semantic correctness proof. Null removes both prompt amplitude and feature spectrum. Data null retains real reference counts and supports."
+      },
+      "build_s": 0.5714523999995436,
+      "median_answer_s": 0.06223359999967215,
+      "memory": {
+        "rss_mb": 73.67578125,
+        "peak_rss_mb": 73.67578125,
+        "private_commit_mb": 1536.58984375,
+        "peak_private_commit_mb": 1536.58984375
+      }
+    },
+    {
+      "label": "public500",
+      "run_sha256": "e682a4037f8a8893a2bec69f0109502ba41dd33b79c93d42e02fe00ccfa60c65",
+      "summary": {
+        "turns": 20,
+        "surface_form_ok": 19,
+        "new_complete_texts": 10,
+        "texts_with_new_sentences": 8,
+        "empty_answers": 0,
+        "qualitative": "pending independent AI-agent review"
+      },
+      "review": {
+        "appropriate": 9,
+        "role_ok": 19,
+        "negation_ok": 20,
+        "topic_ok": 9,
+        "grammatical_sentences": 17
+      },
+      "numerics": {
+        "states": 60,
+        "fft_direct_max_probability_error": 0.0,
+        "time_max_probability_error": 0.0,
+        "fft_direct_argmax_changes": 0,
+        "time_argmax_changes": 0,
+        "prompt_null_distribution_changes": 58,
+        "prompt_null_mean_total_variation": 0.456957975897586,
+        "finite_normalized_states": 60,
+        "data_zero_rejected_states": 6,
+        "states_with_numerical_error": [],
+        "data_zero_tested_states": 6,
+        "scope": "Decoder algebra and causal dependence, not a semantic correctness proof. Null removes both prompt amplitude and feature spectrum. Data null retains real reference counts and supports."
+      },
+      "build_s": 31.65201429999979,
+      "median_answer_s": 1.8945795500012537,
+      "memory": {
+        "rss_mb": 694.50390625,
+        "peak_rss_mb": 709.72265625,
+        "private_commit_mb": 2163.14453125,
+        "peak_private_commit_mb": 2179.171875
+      }
+    },
+    {
+      "label": "public2000",
+      "run_sha256": "2389b254376c8f89ad2f746525eee4d7f25a9b8eede874eed5b0b0a6b1dd4fab",
+      "summary": {
+        "turns": 20,
+        "surface_form_ok": 18,
+        "new_complete_texts": 10,
+        "texts_with_new_sentences": 7,
+        "empty_answers": 0,
+        "qualitative": "pending independent AI-agent review"
+      },
+      "review": {
+        "appropriate": 8,
+        "role_ok": 16,
+        "negation_ok": 20,
+        "topic_ok": 8,
+        "grammatical_sentences": 15
+      },
+      "numerics": {
+        "states": 60,
+        "fft_direct_max_probability_error": 0.0,
+        "time_max_probability_error": 0.0,
+        "fft_direct_argmax_changes": 0,
+        "time_argmax_changes": 0,
+        "prompt_null_distribution_changes": 57,
+        "prompt_null_mean_total_variation": 0.46810884087111404,
+        "finite_normalized_states": 60,
+        "data_zero_rejected_states": 6,
+        "states_with_numerical_error": [],
+        "data_zero_tested_states": 6,
+        "scope": "Decoder algebra and causal dependence, not a semantic correctness proof. Null removes both prompt amplitude and feature spectrum. Data null retains real reference counts and supports."
+      },
+      "build_s": 60.90375840000161,
+      "median_answer_s": 3.4401961999992636,
+      "memory": {
+        "rss_mb": 1265.4609375,
+        "peak_rss_mb": 1302.109375,
+        "private_commit_mb": 2739.9921875,
+        "peak_private_commit_mb": 2776.76953125
+      }
+    },
+    {
+      "label": "publicall_v2",
+      "run_sha256": "f80e352d23c4f5f5a8521eef33f33c381b27b05cc3ce18749a45d50057108eff",
+      "summary": {
+        "turns": 20,
+        "surface_form_ok": 20,
+        "new_complete_texts": 12,
+        "texts_with_new_sentences": 10,
+        "empty_answers": 0,
+        "qualitative": "pending independent AI-agent review"
+      },
+      "review": {
+        "appropriate": 7,
+        "role_ok": 19,
+        "negation_ok": 20,
+        "topic_ok": 7,
+        "grammatical_sentences": 16
+      },
+      "numerics": {
+        "states": 60,
+        "fft_direct_max_probability_error": 0.0,
+        "time_max_probability_error": 0.0,
+        "fft_direct_argmax_changes": 0,
+        "time_argmax_changes": 0,
+        "prompt_null_distribution_changes": 59,
+        "prompt_null_mean_total_variation": 0.4485402026498683,
+        "finite_normalized_states": 60,
+        "data_zero_rejected_states": 6,
+        "states_with_numerical_error": [],
+        "data_zero_tested_states": 6,
+        "scope": "Decoder algebra and causal dependence, not a semantic correctness proof. Null removes both prompt amplitude and feature spectrum. Data null retains real reference counts and supports."
+      },
+      "build_s": 107.59836109999924,
+      "median_answer_s": 8.639398049999727,
+      "memory": {
+        "rss_mb": 2956.69140625,
+        "peak_rss_mb": 3168.59765625,
+        "private_commit_mb": 4449.8125,
+        "peak_private_commit_mb": 4658.44140625
+      }
+    },
+    {
+      "label": "publicall_v3_weighted",
+      "run_sha256": "f0be090a1aa46169c9c36f11edd27d5924bd2bdc1d479824901108c5ff864d60",
+      "summary": {
+        "turns": 20,
+        "surface_form_ok": 20,
+        "new_complete_texts": 8,
+        "texts_with_new_sentences": 4,
+        "empty_answers": 0,
+        "qualitative": "pending independent AI-agent review"
+      },
+      "review": {
+        "appropriate": 12,
+        "role_ok": 19,
+        "negation_ok": 20,
+        "topic_ok": 13,
+        "grammatical_sentences": 17
+      },
+      "numerics": {
+        "states": 60,
+        "fft_direct_max_probability_error": 0.0,
+        "time_max_probability_error": 0.0,
+        "fft_direct_argmax_changes": 0,
+        "time_argmax_changes": 0,
+        "prompt_null_distribution_changes": 59,
+        "prompt_null_mean_total_variation": 0.4333938427904941,
+        "finite_normalized_states": 60,
+        "data_zero_rejected_states": 6,
+        "states_with_numerical_error": [],
+        "data_zero_tested_states": 6,
+        "scope": "Decoder algebra and causal dependence, not a semantic correctness proof. Null removes both prompt amplitude and feature spectrum. Data null retains real reference counts and supports."
+      },
+      "build_s": 88.18034909999915,
+      "median_answer_s": 7.921581349999542,
+      "memory": {
+        "rss_mb": 2932.4296875,
+        "peak_rss_mb": 3158.70703125,
+        "private_commit_mb": 4422.78515625,
+        "peak_private_commit_mb": 4648.234375
+      }
+    },
+    {
+      "label": "publicall_v3_lexical",
+      "run_sha256": "b32f2209ccf72b9fbc205243e1d262fce02524ca619289cc5a4c285c0a8ca0c1",
+      "summary": {
+        "turns": 20,
+        "surface_form_ok": 20,
+        "new_complete_texts": 8,
+        "texts_with_new_sentences": 3,
+        "empty_answers": 0,
+        "qualitative": "pending independent AI-agent review"
+      },
+      "review": {
+        "appropriate": 12,
+        "role_ok": 19,
+        "negation_ok": 20,
+        "topic_ok": 13,
+        "grammatical_sentences": 17
+      },
+      "numerics": {
+        "states": 60,
+        "fft_direct_max_probability_error": 0.0,
+        "time_max_probability_error": 0.0,
+        "fft_direct_argmax_changes": 0,
+        "time_argmax_changes": 0,
+        "prompt_null_distribution_changes": 59,
+        "prompt_null_mean_total_variation": 0.44713178143401866,
+        "finite_normalized_states": 60,
+        "data_zero_rejected_states": 6,
+        "states_with_numerical_error": [],
+        "data_zero_tested_states": 6,
+        "scope": "Decoder algebra and causal dependence, not a semantic correctness proof. Null removes both prompt amplitude and feature spectrum. Data null retains real reference counts and supports."
+      },
+      "build_s": 105.33026040000004,
+      "median_answer_s": 7.106786100000136,
+      "memory": {
+        "rss_mb": 2923.171875,
+        "peak_rss_mb": 3153.87109375,
+        "private_commit_mb": 4414.4609375,
+        "peak_private_commit_mb": 4643.1640625
+      }
+    }
+  ],
+  "holdouts": [
+    {
+      "run": "baseline_closed_holdout.json",
+      "sha256": "d7f049af90b7cdcf03985b40f8afc37667b0d7598d4844fb403544871276d3c3",
+      "review": {
+        "appropriate": 13,
+        "role_ok": 20,
+        "negation_ok": 19,
+        "topic_ok": 13,
+        "grammatical_sentences": 19
+      },
+      "build_s": 1.809145699999135,
+      "median_answer_s": 0.0596759000009115,
+      "memory": {
+        "rss_mb": 356.34765625,
+        "peak_rss_mb": 360.91015625,
+        "private_commit_mb": 1838.2109375,
+        "peak_private_commit_mb": 1843.40625
+      },
+      "numerics": {
+        "states": 60,
+        "fft_direct_max_probability_error": 0.0,
+        "time_max_probability_error": 8.172629240021934e-13,
+        "fft_direct_argmax_changes": 0,
+        "time_argmax_changes": 0,
+        "prompt_null_distribution_changes": 58,
+        "prompt_null_mean_total_variation": 0.41400353297600173,
+        "finite_normalized_states": 60,
+        "data_zero_rejected_states": 6,
+        "states_with_numerical_error": [],
+        "data_zero_tested_states": 6,
+        "scope": "Decoder algebra and causal dependence, not a semantic correctness proof. Null removes both prompt amplitude and feature spectrum. Data null retains real reference counts and supports."
+      }
+    },
+    {
+      "run": "final_holdout.json",
+      "sha256": "53fb19be87de297eec5907c0762fc7ac720663d2dea39adeae6a0955b413747e",
+      "review": {
+        "appropriate": 12,
+        "partial": 1,
+        "role_ok": 20,
+        "negation_ok": 19,
+        "topic_ok": 12,
+        "grammatical_sentences": 19
+      },
+      "build_s": 120.41467200000079,
+      "median_answer_s": 9.579410899999857,
+      "memory": {
+        "rss_mb": 2923.796875,
+        "peak_rss_mb": 3153.19921875,
+        "private_commit_mb": 4416.08984375,
+        "peak_private_commit_mb": 4642.87109375
+      },
+      "numerics": {
+        "states": 60,
+        "fft_direct_max_probability_error": 0.0,
+        "time_max_probability_error": 0.0,
+        "fft_direct_argmax_changes": 0,
+        "time_argmax_changes": 0,
+        "prompt_null_distribution_changes": 59,
+        "prompt_null_mean_total_variation": 0.5215063620997433,
+        "finite_normalized_states": 60,
+        "data_zero_rejected_states": 6,
+        "states_with_numerical_error": [],
+        "data_zero_tested_states": 6,
+        "scope": "Decoder algebra and causal dependence, not a semantic correctness proof. Null removes both prompt amplitude and feature spectrum. Data null retains real reference counts and supports."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "run": "baseline_facts.json",
+      "sha256": "54fb6bfa6a1a9a2451f94615b4f8e3f469b9d2b8999ec58bd3e4603fe62b9bea",
+      "summary": {
+        "questions": 30,
+        "exact_answers": 0,
+        "contains_answer_string": 0,
+        "mean_token_f1": 0.007714285714285714,
+        "answer_string_in_corpus": 0,
+        "answer_string_same_article_in_corpus": 0,
+        "factual_correctness": "pending independent AI-agent qualitative review"
+      },
+      "review": {
+        "correct": 0,
+        "questions": 30,
+        "empty_answers": 20
+      },
+      "build_s": 2.026512399999774,
+      "median_answer_s": 0.004901799999061041,
+      "memory": {
+        "rss_mb": 356.08984375,
+        "peak_rss_mb": 360.78515625,
+        "private_commit_mb": 1838.00390625,
+        "peak_private_commit_mb": 1843.171875
+      }
+    },
+    {
+      "run": "final_facts.json",
+      "sha256": "06541335f9c032e101b78162abd6e50d87f63069c81717253f5251b92b1d2728",
+      "summary": {
+        "questions": 30,
+        "exact_answers": 0,
+        "contains_answer_string": 0,
+        "mean_token_f1": 0.05320622537843137,
+        "answer_string_in_corpus": 8,
+        "answer_string_same_article_in_corpus": 4,
+        "factual_correctness": "pending independent AI-agent qualitative review"
+      },
+      "review": {
+        "correct": 0,
+        "questions": 30,
+        "empty_answers": 1,
+        "reference_string_in_corpus": 8,
+        "reference_string_same_article_in_corpus": 4,
+        "correct_among_same_article_string_cases": 0
+      },
+      "build_s": 122.16932309999902,
+      "median_answer_s": 11.034657850000258,
+      "memory": {
+        "rss_mb": 2914.59765625,
+        "peak_rss_mb": 3146.5703125,
+        "private_commit_mb": 4405.97265625,
+        "peak_private_commit_mb": 4636.32421875
+      }
+    },
+    {
+      "run": "baseline_replay.json",
+      "sha256": "59d25131977c3f6ded72d75b1085ce099725a2e21bd6d1dfe149a052eb9bbba5",
+      "summary": {
+        "questions": 20,
+        "known_import_records": 0,
+        "exact_reference_texts": 0,
+        "contains_answer_string": 0,
+        "mean_token_f1": 0.0060408163265306125,
+        "factual_correctness": "pending independent AI-agent qualitative review"
+      },
+      "review": {
+        "correct": 0,
+        "questions": 20,
+        "known_import_records": 0
+      },
+      "build_s": 1.8086937999996735,
+      "median_answer_s": 0.011517949999870325,
+      "memory": {
+        "rss_mb": 355.4921875,
+        "peak_rss_mb": 359.953125,
+        "private_commit_mb": 1837.3671875,
+        "peak_private_commit_mb": 1842.58984375
+      }
+    },
+    {
+      "run": "final_replay.json",
+      "sha256": "99d050bcdc05b26e35b6938165853a6fa731206f70f42a1dd4f36f3d240af9b5",
+      "summary": {
+        "questions": 20,
+        "known_import_records": 20,
+        "exact_reference_texts": 7,
+        "contains_answer_string": 9,
+        "mean_token_f1": 0.22095674864637718,
+        "factual_correctness": "pending independent AI-agent qualitative review"
+      },
+      "review": {
+        "correct": 8,
+        "questions": 20,
+        "known_import_records": 20,
+        "incorrect_despite_a_correct_fragment": 3
+      },
+      "build_s": 124.4544975000008,
+      "median_answer_s": 12.490011950000735,
+      "memory": {
+        "rss_mb": 2912.12109375,
+        "peak_rss_mb": 3146.83984375,
+        "private_commit_mb": 4404.8984375,
+        "peak_private_commit_mb": 4636.78515625
+      }
+    }
+  ],
+  "performance_regression": {
+    "cases": 90,
+    "exact_visible_outputs": 90,
+    "token_sequence_matches": 90,
+    "stored_raw_token_references": 60,
+    "reconstructed_token_references": 30,
+    "raw_reference_roundtrip_checked": 60,
+    "raw_reference_roundtrip_failures": [],
+    "alphabet_roundtrip_checked": 44613,
+    "alphabet_roundtrip_failure_count": 0,
+    "alphabet_roundtrip_failure_examples": [],
+    "context_inputs_matching": 40,
+    "context_inputs_checked": 40,
+    "median_elapsed_s": 1.7471254499996576,
+    "median_reference_elapsed_s": 9.697183949999271,
+    "by_kind": {
+      "development": {
+        "cases": 20,
+        "equal_outputs": 20,
+        "median_elapsed_s": 1.3703872500000216,
+        "median_reference_elapsed_s": 7.106786100000136
+      },
+      "holdout": {
+        "cases": 20,
+        "equal_outputs": 20,
+        "median_elapsed_s": 1.5028682000001936,
+        "median_reference_elapsed_s": 9.579410899999857
+      },
+      "facts": {
+        "cases": 30,
+        "equal_outputs": 30,
+        "median_elapsed_s": 1.9240759999993315,
+        "median_reference_elapsed_s": 11.034657850000258
+      },
+      "replay": {
+        "cases": 20,
+        "equal_outputs": 20,
+        "median_elapsed_s": 2.021711599999435,
+        "median_reference_elapsed_s": 12.490011950000735
+      }
+    },
+    "passed": true
+  }
+}

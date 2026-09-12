@@ -1,0 +1,393 @@
+{
+  "policy": {
+    "logical_cores": 32,
+    "physical_cores": 16,
+    "workers": 32,
+    "threads_per_worker": 1,
+    "parallel_enabled": true,
+    "in_worker": false,
+    "pool_active": false,
+    "pool_workers": 0,
+    "pool_failed": false,
+    "pool_error": null
+  },
+  "parent_pid": 17008,
+  "worker_probes": [
+    {
+      "pid": 35192,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 678130656
+    },
+    {
+      "pid": 27988,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 17415432
+    },
+    {
+      "pid": 24052,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 969214093
+    },
+    {
+      "pid": 27048,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 605095603
+    },
+    {
+      "pid": 15616,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 964417965
+    },
+    {
+      "pid": 28752,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 889118201
+    },
+    {
+      "pid": 31196,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 765058806
+    },
+    {
+      "pid": 34020,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 830780936
+    },
+    {
+      "pid": 31672,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 773701682
+    },
+    {
+      "pid": 28180,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 471239375
+    },
+    {
+      "pid": 3912,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 770587905
+    },
+    {
+      "pid": 30444,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 970499225
+    },
+    {
+      "pid": 34732,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 481599887
+    },
+    {
+      "pid": 13616,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 635480371
+    },
+    {
+      "pid": 30564,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 79626262
+    },
+    {
+      "pid": 36260,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 930645867
+    },
+    {
+      "pid": 21672,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 573603765
+    },
+    {
+      "pid": 31808,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 754517688
+    },
+    {
+      "pid": 3012,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 912545371
+    },
+    {
+      "pid": 32412,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 916056156
+    },
+    {
+      "pid": 34504,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 40990
+    },
+    {
+      "pid": 11900,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 678945917
+    },
+    {
+      "pid": 35152,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 608497679
+    },
+    {
+      "pid": 12244,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 730492675
+    },
+    {
+      "pid": 30728,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 701867601
+    },
+    {
+      "pid": 32176,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 451546969
+    },
+    {
+      "pid": 34360,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 118144799
+    },
+    {
+      "pid": 8872,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 120791388
+    },
+    {
+      "pid": 29224,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 129444694
+    },
+    {
+      "pid": 35044,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 326322468
+    },
+    {
+      "pid": 31804,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 646932764
+    },
+    {
+      "pid": 14456,
+      "cpu_seconds": 0.109375,
+      "nested_worker_count": 1,
+      "fft_workers": 1,
+      "blas_threads": [
+        1,
+        1
+      ],
+      "checksum": 930645867
+    }
+  ],
+  "observed_worker_count": 32,
+  "records": 4096,
+  "dimensions": 512,
+  "shape": [
+    4096,
+    512
+  ],
+  "serial_seconds": 2.9826687000022503,
+  "parallel_seconds": 0.24421529999744962,
+  "speedup": 12.213275335465873,
+  "bitexact": true,
+  "maxdiff": 0.0,
+  "final_policy": {
+    "logical_cores": 32,
+    "physical_cores": 16,
+    "workers": 32,
+    "threads_per_worker": 1,
+    "parallel_enabled": true,
+    "in_worker": false,
+    "pool_active": true,
+    "pool_workers": 32,
+    "pool_failed": false,
+    "pool_error": null
+  }
+}

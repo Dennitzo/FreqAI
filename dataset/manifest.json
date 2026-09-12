@@ -1,0 +1,140 @@
+{
+ "schema_version": 1,
+ "created_utc": "2026-09-11T15:32:07Z",
+ "license_note": "Wikipedia leads are CC-BY-SA-3.0/GFDL; authored texts are project-owned.",
+ "record_contract": "declarative information text plus source, no question or answer field",
+ "sources": {
+  "dataset": "wikimedia/wikipedia",
+  "configuration": "20231101.de",
+  "revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+  "shards": {
+   "train-00000-of-00020.parquet": {
+    "rows": 142266,
+    "row_groups": 143,
+    "bytes": 781271996,
+    "sha256": "8778fa2f0907e4eb65917b27092a911a400f9f2ee2eea4271423b706c29249a6"
+   },
+   "train-00007-of-00020.parquet": {
+    "rows": 142266,
+    "row_groups": 143,
+    "bytes": 258122020,
+    "sha256": "e35fec0fe1ca3614b2a44c53db7251e94863cb3c72a20b7cce73ede0bd4fae96"
+   },
+   "train-00013-of-00020.parquet": {
+    "rows": 142265,
+    "row_groups": 143,
+    "bytes": 228591696,
+    "sha256": "69d92a94ba4b28a9ea38311a33070b7f9cebf31f0bea51ba13e4e2ef9867409f"
+   },
+   "train-00019-of-00020.parquet": {
+    "rows": 142265,
+    "row_groups": 143,
+    "bytes": 228498582,
+    "sha256": "380fdb4baf70df935d3fec62761d36c8bff2f000a2cc7b720ebde743a8352e18"
+   }
+  }
+ },
+ "sampling_seed": "freqai-information-v1",
+ "stats": {
+  "source_articles_scanned": 569062,
+  "eligible_articles": 361698,
+  "eligible_priority_articles": 57,
+  "rejections": {
+   "dependent_opening": 2255,
+   "empty_exported_field": 40972,
+   "language_heuristic": 30,
+   "list_or_disambiguation_title": 24196,
+   "opening_embedded_linebreak": 76177,
+   "opening_not_complete_prose": 57344,
+   "opening_too_long": 912,
+   "opening_too_short": 1,
+   "too_few_words": 5477
+  }
+ },
+ "nested_superset_of_previous_step": true,
+ "productive_corpus_reference": {
+  "available": true,
+  "file": "information_wikipedia_20000_v3.jsonl",
+  "records": 20000
+ },
+ "steps": [
+  {
+   "records": 20093,
+   "file": "dataset/corpus/combined_step1_20000.jsonl.gz",
+   "sha256": "b4d7cc0c00265da6a97cd45e0a4bbda643e842393bfd3a5235560e3a66a7505c",
+   "utf8_bytes": 6366917,
+   "wikipedia_leads": 20000,
+   "authored_records": 93,
+   "reproduces_productive_corpus": true
+  },
+  {
+   "records": 60093,
+   "file": "dataset/corpus/combined_step2_60000.jsonl.gz",
+   "sha256": "2e281f1d184e7142cd1065f0079766a86ab6bab651b78e4926f7cf815c4bef73",
+   "utf8_bytes": 19106114,
+   "wikipedia_leads": 60000,
+   "authored_records": 93,
+   "reproduces_productive_corpus": null
+  },
+  {
+   "records": 100093,
+   "file": "dataset/corpus/combined_step3_100000.jsonl.gz",
+   "sha256": "9dafe4a0c2ebcb749b1abee94ee42837fd4ae67cbf1bd96754ad06018c4a13b1",
+   "utf8_bytes": 31833843,
+   "wikipedia_leads": 100000,
+   "authored_records": 93,
+   "reproduces_productive_corpus": null
+  }
+ ],
+ "leakage_guard": {
+  "evaluation_files": [
+   {
+    "file": "dialogue_generalization.json",
+    "sha256": "33dc0af1ca027b10243aff432635b851e6221d03c96dde79d37cb723d066dc24"
+   },
+   {
+    "file": "dialogue_generalization_v2.json",
+    "sha256": "ab1e717d496f5b1280a65194ae3443826f32534a89523037fae6919d16117931"
+   },
+   {
+    "file": "extension_queries.json",
+    "sha256": "18afbba84286b5b97ad4df527062ffbd503761f255427bfe9d3bb782028cde43"
+   },
+   {
+    "file": "generative_waves.json",
+    "sha256": "1a777778257634de8c5eb21b52c379b86e1632236c8860c109a9c62487c6dc6a"
+   },
+   {
+    "file": "information_development.json",
+    "sha256": "3eba3197693106f4425d73c277284a5bf69c8582b774ca1a07535c655af55ee1"
+   },
+   {
+    "file": "information_holdout.json",
+    "sha256": "ff690c9b8d4349c1c525583b52fd99b2b61a0257a70daae9ad5964810731db7c"
+   },
+   {
+    "file": "information_randomfacts.json",
+    "sha256": "b78ec12f6fd65ed000322496f2d58d44a98b97cd216f791715e9169321d42692"
+   },
+   {
+    "file": "public_corpus_queries.json",
+    "sha256": "3ddb7e8bd7463376331080bf81e2b6b81ffc390d7f72eec56da354a341b7cf0a"
+   },
+   {
+    "file": "unpaired_chat_development.json",
+    "sha256": "f1ab9b582b95c8223fab9b78b29f670ebe81fc85956537859d67c9077be03e8d"
+   },
+   {
+    "file": "unpaired_chat_holdout.json",
+    "sha256": "83512a3cf7936f91f85f4c153172ca89618d31aca18b69b0b92befad6153ae8e"
+   },
+   {
+    "file": "unpaired_knowledge_regression.json",
+    "sha256": "5eab9f90dc6b7acb0f00993fe79d32c36cd5697cba2426fba39c9e668a38e9ac"
+   }
+  ],
+  "forbidden_texts": 1949,
+  "corpus_collisions": []
+ },
+ "build_seconds": 87.0
+}

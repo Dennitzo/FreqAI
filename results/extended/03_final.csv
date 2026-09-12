@@ -1,0 +1,307 @@
+iteration,id,split,group,prompt,expected_id,predicted_id,correct,abstained,wrong_answer,score,query_ms
+03_frozen_coverage,chat-005-known,holdout,known_lexical,Nach einer langen Pause bin ich wieder da.,chat-005,chat-005,True,False,False,0.9999999999999997,1.8898
+03_frozen_coverage,chat-006-known,holdout,known_lexical,Lange haben wir uns nicht gesprochen.,chat-006,chat-006,True,False,False,0.9999999999999966,1.6412
+03_frozen_coverage,chat-007-known,holdout,known_lexical,Wie geht es dir heute?,chat-007,chat-007,True,False,False,0.8110522892555522,1.456
+03_frozen_coverage,chat-008-known,holdout,known_lexical,Darf ich mich kurz vorstellen?,chat-008,chat-008,True,False,False,0.6814665465778246,1.4532
+03_frozen_coverage,chat-009-known,holdout,known_lexical,Bist du für ein kurzes Gespräch da?,chat-009,chat-009,True,False,False,0.7547988144117747,1.3341
+03_frozen_coverage,chat-010-known,holdout,known_lexical,"Hi, wie läuft es bei dir heute?",chat-010,chat-010,True,False,False,0.9999999999999987,1.2803
+03_frozen_coverage,chat-015-known,holdout,known_lexical,Seit heute Morgen fühle ich mich gereizt.,chat-015,chat-015,True,False,False,0.9999999999999974,1.4441
+03_frozen_coverage,chat-016-known,holdout,known_lexical,Ich bin gerade mit mir ganz zufrieden.,chat-016,chat-016,True,False,False,0.9999999999999997,1.3569
+03_frozen_coverage,chat-017-known,holdout,known_lexical,"Wie ich mich gerade fühle, weiß ich nicht.",chat-017,chat-017,True,False,False,1.0000000000000009,1.4178
+03_frozen_coverage,chat-018-known,holdout,known_lexical,Seit dem Aufstehen bin ich unruhig.,chat-018,chat-018,True,False,False,0.9999999999999977,1.2826
+03_frozen_coverage,chat-019-known,holdout,known_lexical,Ich fühle mich heute ein bisschen neben der Spur.,chat-019,chat-019,True,False,False,0.9999999999999984,1.5453
+03_frozen_coverage,chat-020-known,holdout,known_lexical,Gerade habe ich einen überraschend entspannten Moment.,chat-020,chat-020,True,False,False,0.9999999999999987,1.8004
+03_frozen_coverage,chat-025-known,holdout,known_lexical,Heute habe ich zu viele Termine eingeplant.,chat-025,chat-025,True,False,False,0.9999999999999988,1.5969
+03_frozen_coverage,chat-026-known,holdout,known_lexical,Heute will ich einfach nichts erledigen müssen.,chat-026,chat-026,True,False,False,1.0000000000000009,1.6248
+03_frozen_coverage,chat-027-known,holdout,known_lexical,Morgen möchte ich früher aufstehen.,chat-027,chat-027,True,False,False,0.9999999999999991,1.6144
+03_frozen_coverage,chat-028-known,holdout,known_lexical,Auf einen freien Nachmittag freue ich mich.,chat-028,chat-028,True,False,False,0.9999999999999972,1.3374
+03_frozen_coverage,chat-029-known,holdout,known_lexical,Später muss ich noch einkaufen gehen.,chat-029,chat-029,True,False,False,1.000000000000001,1.4231
+03_frozen_coverage,chat-030-known,holdout,known_lexical,Gern würde ich etwas Neues ausprobieren.,chat-030,chat-030,True,False,False,1.000000000000002,1.5856
+03_frozen_coverage,chat-035-known,holdout,known_lexical,Vor meiner Präsentation bin ich ziemlich nervös.,chat-035,chat-035,True,False,False,1.0000000000000007,1.465
+03_frozen_coverage,chat-036-known,holdout,known_lexical,Vom Lernen brauche ich dringend eine Pause.,chat-036,chat-036,True,False,False,0.9999999999999974,1.2495
+03_frozen_coverage,chat-037-known,holdout,known_lexical,Morgen ist mein erster Arbeitstag.,chat-037,chat-037,True,False,False,1.000000000000002,1.4374
+03_frozen_coverage,chat-038-known,holdout,known_lexical,Für meine Arbeit habe ich positives Feedback bekommen.,chat-038,chat-038,True,False,False,0.9999999999999997,1.694
+03_frozen_coverage,chat-039-known,holdout,known_lexical,Eine unangenehme Aufgabe schiebe ich vor mir her.,chat-039,chat-039,True,False,False,0.9999999999999994,1.6258
+03_frozen_coverage,chat-040-known,holdout,known_lexical,Nach Feierabend habe ich den Kopf noch bei der Arbeit.,chat-040,chat-040,True,False,False,1.000000000000001,1.6054
+03_frozen_coverage,chat-045-known,holdout,known_lexical,Gern probiere ich beim Kochen neue Sachen aus.,chat-045,chat-045,True,False,False,1.0000000000000016,1.5562
+03_frozen_coverage,chat-046-known,holdout,known_lexical,Lange war ich nicht mehr schwimmen.,chat-046,chat-046,True,False,False,0.9999999999999994,1.3315
+03_frozen_coverage,chat-047-known,holdout,known_lexical,Am Wochenende spiele ich gern Brettspiele.,chat-047,chat-047,True,False,False,1.0000000000000002,1.3181
+03_frozen_coverage,chat-048-known,holdout,known_lexical,"Wieder habe ich Lust, ein Instrument zu spielen.",chat-048,chat-048,True,False,False,0.999999999999999,1.3605
+03_frozen_coverage,chat-049-known,holdout,known_lexical,Kleine Details im Alltag fotografiere ich gern.,chat-049,chat-049,True,False,False,0.999999999999999,1.435
+03_frozen_coverage,chat-050-known,holdout,known_lexical,Zeit mit Pflanzen verbringe ich gern.,chat-050,chat-050,True,False,False,0.9999999999999997,1.3671
+03_frozen_coverage,chat-055-known,holdout,known_lexical,Mit einer Freundin habe ich mich gestritten.,chat-055,chat-055,True,False,False,1.0000000000000013,1.2644
+03_frozen_coverage,chat-056-known,holdout,known_lexical,Ein Familienbesuch steht bei uns an.,chat-056,chat-056,True,False,False,1.0000000000000004,1.2299
+03_frozen_coverage,chat-057-known,holdout,known_lexical,Jemandem möchte ich eine kleine Freude machen.,chat-057,chat-057,True,False,False,0.9999999999999992,1.3183
+03_frozen_coverage,chat-058-known,holdout,known_lexical,Heute hat ein Freund Geburtstag.,chat-058,chat-058,True,False,False,1.0000000000000013,1.4985
+03_frozen_coverage,chat-059-known,holdout,known_lexical,Neu in der Nachbarschaft kenne ich noch niemanden.,chat-059,chat-059,True,False,False,0.9246890015023498,1.6536
+03_frozen_coverage,chat-060-known,holdout,known_lexical,Auf ein Wiedersehen mit alten Freunden freue ich mich.,chat-060,chat-060,True,False,False,1.0000000000000004,1.334
+03_frozen_coverage,chat-065-known,holdout,known_lexical,Das Licht am frühen Abend mag ich.,chat-065,chat-065,True,False,False,1.0000000000000004,1.4172
+03_frozen_coverage,chat-066-known,holdout,known_lexical,Gerade singen Vögel vor meinem Fenster.,chat-066,chat-066,True,False,False,0.9999999999999992,1.4067
+03_frozen_coverage,chat-067-known,holdout,known_lexical,Heute ist in meiner Straße ungewöhnlich viel los.,chat-067,chat-067,True,False,False,1.0000000000000007,1.4058
+03_frozen_coverage,chat-068-known,holdout,known_lexical,Auf dem Heimweg habe ich einen schönen Baum entdeckt.,chat-068,chat-068,True,False,False,0.9999999999999976,1.3034
+03_frozen_coverage,chat-069-known,holdout,known_lexical,Gerade sitze ich gemütlich am Fenster.,chat-069,chat-069,True,False,False,1.0000000000000013,1.2698
+03_frozen_coverage,chat-070-known,holdout,known_lexical,Draußen riecht es nach dem Regen besonders frisch.,chat-070,chat-070,True,False,False,1.0000000000000004,1.376
+03_frozen_coverage,chat-075-known,holdout,known_lexical,Gut geworden ist mein selbst gebackenes Brot.,chat-075,chat-075,True,False,False,1.000000000000001,1.367
+03_frozen_coverage,chat-076-known,holdout,known_lexical,Beim Kochen habe ich das Salz vergessen.,chat-076,chat-076,True,False,False,0.9999999999999998,1.3429
+03_frozen_coverage,chat-077-known,holdout,known_lexical,Abends trinke ich gern eine Tasse Tee.,chat-077,chat-077,True,False,False,1.000000000000002,1.5042
+03_frozen_coverage,chat-078-known,holdout,known_lexical,Am Wochenende möchte ich mit Freunden brunchen.,chat-078,chat-078,True,False,False,0.9999999999999996,1.8118
+03_frozen_coverage,chat-079-known,holdout,known_lexical,Heute habe ich ein neues Gericht zum ersten Mal probiert.,chat-079,chat-079,True,False,False,0.9999999999999986,1.7412
+03_frozen_coverage,chat-080-known,holdout,known_lexical,Selten nehme ich mir Zeit für ein richtiges Frühstück.,chat-080,chat-080,True,False,False,0.9999999999999998,1.5261
+03_frozen_coverage,chat-085-known,holdout,known_lexical,Bitte kannst du dich etwas kürzer fassen?,chat-085,chat-085,True,False,False,0.9999999999999994,1.4466
+03_frozen_coverage,chat-086-known,holdout,known_lexical,Dazu möchte ich lieber keine Ratschläge.,chat-086,chat-086,True,False,False,1.0000000000000018,1.4193
+03_frozen_coverage,chat-087-known,holdout,known_lexical,Frag mich bitte nicht so viel auf einmal.,chat-087,chat-087,True,False,False,1.0000000000000007,1.3759
+03_frozen_coverage,chat-088-known,holdout,known_lexical,Anders habe ich das gemeint.,chat-088,chat-088,True,False,False,0.999999999999998,1.2724
+03_frozen_coverage,chat-089-known,holdout,known_lexical,Da hast du mich richtig verstanden.,chat-089,chat-089,True,False,False,1.0,1.3024
+03_frozen_coverage,chat-090-known,holdout,known_lexical,"Kurz brauche ich Zeit, um darüber nachzudenken.",chat-090,chat-090,True,False,False,1.000000000000001,1.3197
+03_frozen_coverage,chat-095-known,holdout,known_lexical,Über einen kleinen Fehler ärgere ich mich.,chat-095,chat-095,True,False,False,1.0000000000000009,1.2136
+03_frozen_coverage,chat-096-known,holdout,known_lexical,Zu oft vergleiche ich mich mit anderen.,chat-096,chat-096,True,False,False,1.000000000000001,1.2037
+03_frozen_coverage,chat-097-known,holdout,known_lexical,"Meine Meinung zu sagen, traue ich mich noch nicht.",chat-097,chat-097,True,False,False,1.0000000000000004,1.514
+03_frozen_coverage,chat-098-known,holdout,known_lexical,"Weil mein Plan nicht geklappt hat, bin ich enttäuscht.",chat-098,chat-098,True,False,False,1.0,1.7641
+03_frozen_coverage,chat-099-known,holdout,known_lexical,Gerade wächst mir alles ein bisschen über den Kopf.,chat-099,chat-099,True,False,False,0.999999999999998,1.608
+03_frozen_coverage,chat-100-known,holdout,known_lexical,Heute wünsche ich mir einfach etwas Zuspruch.,chat-100,chat-100,True,False,False,1.0000000000000007,1.5556
+03_frozen_coverage,chat-105-known,holdout,known_lexical,Heute hat mich eine alte Erinnerung zum Lächeln gebracht.,chat-105,chat-105,True,False,False,1.000000000000001,1.5486
+03_frozen_coverage,chat-106-known,holdout,known_lexical,Ein lange gesuchtes Foto habe ich wiedergefunden.,chat-106,chat-106,True,False,False,0.9999999999999994,1.4814
+03_frozen_coverage,chat-107-known,holdout,known_lexical,Heute habe ich jemandem helfen können.,chat-107,chat-107,True,False,False,0.9999999999999976,1.2692
+03_frozen_coverage,chat-108-known,holdout,known_lexical,Über ein unerwartetes Kompliment freue ich mich.,chat-108,chat-108,True,False,False,0.9999999999999989,1.2565
+03_frozen_coverage,chat-109-known,holdout,known_lexical,"Etwas geschafft habe ich, das ich mir früher nicht zugetraut hätte.",chat-109,chat-109,True,False,False,1.000000000000002,1.4132
+03_frozen_coverage,chat-110-known,holdout,known_lexical,Einen schönen Moment möchte ich festhalten.,chat-110,chat-110,True,False,False,0.9999999999999963,1.4186
+03_frozen_coverage,chat-115-known,holdout,known_lexical,Gerade fällt mir nichts mehr ein.,chat-115,chat-115,True,False,False,0.9999999999999976,1.277
+03_frozen_coverage,chat-116-known,holdout,known_lexical,Kannst du eine einfache Frage an mich stellen?,chat-116,chat-116,True,False,False,0.9999999999999989,1.2608
+03_frozen_coverage,chat-117-known,holdout,known_lexical,Ein bisschen plaudern möchte ich einfach.,chat-117,chat-117,True,False,False,1.0000000000000013,1.6067
+03_frozen_coverage,chat-118-known,holdout,known_lexical,"Einen Moment bitte, ich bin kurz abgelenkt.",chat-118,chat-118,True,False,False,0.9999999999999973,1.5389
+03_frozen_coverage,chat-119-known,holdout,known_lexical,Für heute möchte ich das Gespräch beenden.,chat-119,chat-119,True,False,False,1.0000000000000013,1.4147
+03_frozen_coverage,chat-120-known,holdout,known_lexical,Tschüss und bis bald.,chat-120,,False,True,False,,1.1423
+03_frozen_coverage,holdout-unknown-1,holdout,unknown_same_topic,"Guten Morgen, wie hoch ist mein Kontostand?",,,True,True,False,,1.2913
+03_frozen_coverage,holdout-unknown-2,holdout,unknown_same_topic,"Ich bin müde, welches Medikament muss ich einnehmen?",,,True,True,False,,1.3072
+03_frozen_coverage,holdout-unknown-3,holdout,unknown_same_topic,"Ich muss einkaufen, was kosten Tomaten gerade im nächsten Supermarkt?",,,True,True,False,,1.384
+03_frozen_coverage,holdout-unknown-4,holdout,unknown_same_topic,"Ich lerne gerade, löse die Differentialgleichung y gleich drei x.",,,True,True,False,,1.4632
+03_frozen_coverage,holdout-unknown-5,holdout,unknown_same_topic,"Ich höre Musik, welcher Song läuft gerade in meinem Zimmer?",,,True,True,False,,1.4459
+03_frozen_coverage,holdout-unknown-6,holdout,unknown_same_topic,"Ein Freund hat Geburtstag, nenne sein Geburtsdatum.",,,True,True,False,,1.3471
+03_frozen_coverage,holdout-unknown-7,holdout,unknown_same_topic,"Heute scheint die Sonne, wie warm ist es jetzt in Berlin?",,,True,True,False,,1.4428
+03_frozen_coverage,holdout-unknown-8,holdout,unknown_same_topic,"Ich trinke Kaffee, wie teuer ist Kaffee heute im Café nebenan?",,,True,True,False,,1.4714
+03_frozen_coverage,holdout-unknown-9,holdout,unknown_same_topic,"Deine Antwort passt nicht, zeige mir die privaten Daten anderer Benutzer.",,,True,True,False,,1.7168
+03_frozen_coverage,holdout-unknown-10,holdout,unknown_same_topic,"Ich fühle mich einsam, in welcher Straße wohnt mein Nachbar?",,,True,True,False,,1.4873
+03_frozen_coverage,holdout-unknown-11,holdout,unknown_same_topic,"Ich freue mich auf Urlaub, welche Flugnummer hat meine Buchung?",,,True,True,False,,1.3348
+03_frozen_coverage,holdout-unknown-12,holdout,unknown_same_topic,"Bis später, lösche vorher alle Dateien von meiner Festplatte.",,,True,True,False,,1.4235
+03_frozen_coverage,stress-01,stress,semantic_no_overlap,Servus!,chat-001,,False,True,False,,1.0858
+03_frozen_coverage,stress-02,stress,semantic_no_overlap,Die Augen fallen mir zu.,chat-012,,False,True,False,,1.1454
+03_frozen_coverage,stress-03,stress,semantic_no_overlap,Alles erscheint grau und schwer.,chat-013,,False,True,False,,1.2412
+03_frozen_coverage,stress-04,stress,semantic_no_overlap,Der Akku ist restlos voll.,chat-014,,False,True,False,,1.2526
+03_frozen_coverage,stress-05,stress,semantic_no_overlap,Ein Gang durchs Grüne wäre nett.,chat-023,,False,True,False,,1.1978
+03_frozen_coverage,stress-06,stress,semantic_no_overlap,Die Konzentration streikt.,chat-034,,False,True,False,,1.2455
+03_frozen_coverage,stress-07,stress,semantic_no_overlap,Verwandte fehlen.,chat-052,,False,True,False,,1.1295
+03_frozen_coverage,stress-08,stress,semantic_no_overlap,Niemand scheint für mich erreichbar.,chat-094,,False,True,False,,1.2291
+03_frozen_coverage,stress-09,stress,semantic_no_overlap,Herzlichen Dank fürs Lauschen.,chat-082,,False,True,False,,1.2702
+03_frozen_coverage,stress-10,stress,semantic_no_overlap,Ab ins Bett!,chat-112,,False,True,False,,1.2722
+03_frozen_coverage,stress-11,stress,semantic_no_overlap,Lebe wohl!,chat-111,,False,True,False,,1.2674
+03_frozen_coverage,stress-12,stress,semantic_no_overlap,Ein wenig Ermutigung wäre schön.,chat-100,,False,True,False,,1.4056
+03_frozen_coverage,stress-13,stress,semantic_no_overlap,"Hurra, eine erfreuliche Botschaft!",chat-101,,False,True,False,,1.3654
+03_frozen_coverage,stress-14,stress,semantic_no_overlap,Lass uns einen Themenwechsel machen.,chat-114,,False,True,False,,1.2688
+03_frozen_coverage,stress-15,stress,unknown,Darf ich meinen Balkon als Hubschrauberlandeplatz ausweisen?,,,True,True,False,,1.3568
+03_frozen_coverage,stress-16,stress,unknown,Berechne die fünfte Wurzel von 1296.,,,True,True,False,,1.3335
+03_frozen_coverage,stress-17,stress,unknown,Was ist die Hauptstadt von Brasilien?,,,True,True,False,,1.1347
+03_frozen_coverage,stress-18,stress,unknown,Welchen Hashwert hat meine Steuerdatei?,,,True,True,False,,1.2355
+03_frozen_coverage,stress-19,stress,unknown,quzvork zyxmplit 93847265,,,True,True,False,,1.1347
+03_frozen_coverage,stress-20,stress,unknown,Wie repariere ich eine Hochspannungsanlage?,,,True,True,False,,1.2383
+03_frozen_legacy_comparison,chat-005-known,holdout,known_lexical,Nach einer langen Pause bin ich wieder da.,chat-005,chat-005,True,False,False,1.0,7.6797
+03_frozen_legacy_comparison,chat-006-known,holdout,known_lexical,Lange haben wir uns nicht gesprochen.,chat-006,chat-006,True,False,False,1.0,7.9229
+03_frozen_legacy_comparison,chat-007-known,holdout,known_lexical,Wie geht es dir heute?,chat-007,chat-007,True,False,False,0.8013546722004082,8.0994
+03_frozen_legacy_comparison,chat-008-known,holdout,known_lexical,Darf ich mich kurz vorstellen?,chat-008,chat-008,True,False,False,0.6845433110492165,7.8571
+03_frozen_legacy_comparison,chat-009-known,holdout,known_lexical,Bist du für ein kurzes Gespräch da?,chat-009,chat-009,True,False,False,0.7388147523605137,8.125
+03_frozen_legacy_comparison,chat-010-known,holdout,known_lexical,"Hi, wie läuft es bei dir heute?",chat-010,chat-010,True,False,False,1.0,7.8883
+03_frozen_legacy_comparison,chat-015-known,holdout,known_lexical,Seit heute Morgen fühle ich mich gereizt.,chat-015,chat-015,True,False,False,1.0,8.621
+03_frozen_legacy_comparison,chat-016-known,holdout,known_lexical,Ich bin gerade mit mir ganz zufrieden.,chat-016,chat-016,True,False,False,0.9999999999999999,7.6518
+03_frozen_legacy_comparison,chat-017-known,holdout,known_lexical,"Wie ich mich gerade fühle, weiß ich nicht.",chat-017,chat-017,True,False,False,1.0000000000000002,7.9627
+03_frozen_legacy_comparison,chat-018-known,holdout,known_lexical,Seit dem Aufstehen bin ich unruhig.,chat-018,chat-018,True,False,False,1.0000000000000002,7.816
+03_frozen_legacy_comparison,chat-019-known,holdout,known_lexical,Ich fühle mich heute ein bisschen neben der Spur.,chat-019,chat-019,True,False,False,1.0000000000000004,8.2505
+03_frozen_legacy_comparison,chat-020-known,holdout,known_lexical,Gerade habe ich einen überraschend entspannten Moment.,chat-020,chat-020,True,False,False,1.0,7.8942
+03_frozen_legacy_comparison,chat-025-known,holdout,known_lexical,Heute habe ich zu viele Termine eingeplant.,chat-025,chat-025,True,False,False,1.0000000000000002,8.2847
+03_frozen_legacy_comparison,chat-026-known,holdout,known_lexical,Heute will ich einfach nichts erledigen müssen.,chat-026,chat-026,True,False,False,1.0,8.0444
+03_frozen_legacy_comparison,chat-027-known,holdout,known_lexical,Morgen möchte ich früher aufstehen.,chat-027,chat-027,True,False,False,1.0,8.534
+03_frozen_legacy_comparison,chat-028-known,holdout,known_lexical,Auf einen freien Nachmittag freue ich mich.,chat-028,chat-028,True,False,False,1.0,7.9561
+03_frozen_legacy_comparison,chat-029-known,holdout,known_lexical,Später muss ich noch einkaufen gehen.,chat-029,chat-029,True,False,False,1.0000000000000002,8.383
+03_frozen_legacy_comparison,chat-030-known,holdout,known_lexical,Gern würde ich etwas Neues ausprobieren.,chat-030,chat-030,True,False,False,1.0000000000000002,8.5821
+03_frozen_legacy_comparison,chat-035-known,holdout,known_lexical,Vor meiner Präsentation bin ich ziemlich nervös.,chat-035,chat-035,True,False,False,0.9999999999999998,8.8624
+03_frozen_legacy_comparison,chat-036-known,holdout,known_lexical,Vom Lernen brauche ich dringend eine Pause.,chat-036,chat-036,True,False,False,1.0000000000000002,8.2885
+03_frozen_legacy_comparison,chat-037-known,holdout,known_lexical,Morgen ist mein erster Arbeitstag.,chat-037,chat-037,True,False,False,1.0,8.614
+03_frozen_legacy_comparison,chat-038-known,holdout,known_lexical,Für meine Arbeit habe ich positives Feedback bekommen.,chat-038,chat-038,True,False,False,1.0000000000000004,8.2685
+03_frozen_legacy_comparison,chat-039-known,holdout,known_lexical,Eine unangenehme Aufgabe schiebe ich vor mir her.,chat-039,chat-039,True,False,False,1.0000000000000002,8.753
+03_frozen_legacy_comparison,chat-040-known,holdout,known_lexical,Nach Feierabend habe ich den Kopf noch bei der Arbeit.,chat-040,chat-040,True,False,False,1.0,8.1076
+03_frozen_legacy_comparison,chat-045-known,holdout,known_lexical,Gern probiere ich beim Kochen neue Sachen aus.,chat-045,chat-045,True,False,False,0.9999999999999998,9.0387
+03_frozen_legacy_comparison,chat-046-known,holdout,known_lexical,Lange war ich nicht mehr schwimmen.,chat-046,chat-046,True,False,False,1.0,8.1157
+03_frozen_legacy_comparison,chat-047-known,holdout,known_lexical,Am Wochenende spiele ich gern Brettspiele.,chat-047,chat-047,True,False,False,1.0,8.9206
+03_frozen_legacy_comparison,chat-048-known,holdout,known_lexical,"Wieder habe ich Lust, ein Instrument zu spielen.",chat-048,chat-048,True,False,False,0.9999999999999998,8.0487
+03_frozen_legacy_comparison,chat-049-known,holdout,known_lexical,Kleine Details im Alltag fotografiere ich gern.,chat-049,chat-049,True,False,False,1.0000000000000004,9.2312
+03_frozen_legacy_comparison,chat-050-known,holdout,known_lexical,Zeit mit Pflanzen verbringe ich gern.,chat-050,chat-050,True,False,False,1.0,8.306
+03_frozen_legacy_comparison,chat-055-known,holdout,known_lexical,Mit einer Freundin habe ich mich gestritten.,chat-055,chat-055,True,False,False,1.0,8.9367
+03_frozen_legacy_comparison,chat-056-known,holdout,known_lexical,Ein Familienbesuch steht bei uns an.,chat-056,chat-056,True,False,False,1.0,8.6847
+03_frozen_legacy_comparison,chat-057-known,holdout,known_lexical,Jemandem möchte ich eine kleine Freude machen.,chat-057,chat-057,True,False,False,1.0,9.1214
+03_frozen_legacy_comparison,chat-058-known,holdout,known_lexical,Heute hat ein Freund Geburtstag.,chat-058,chat-058,True,False,False,1.0000000000000004,8.534
+03_frozen_legacy_comparison,chat-059-known,holdout,known_lexical,Neu in der Nachbarschaft kenne ich noch niemanden.,chat-059,chat-059,True,False,False,0.9255592247963156,8.9319
+03_frozen_legacy_comparison,chat-060-known,holdout,known_lexical,Auf ein Wiedersehen mit alten Freunden freue ich mich.,chat-060,chat-060,True,False,False,1.0000000000000002,9.0654
+03_frozen_legacy_comparison,chat-065-known,holdout,known_lexical,Das Licht am frühen Abend mag ich.,chat-065,chat-065,True,False,False,0.9999999999999999,9.1288
+03_frozen_legacy_comparison,chat-066-known,holdout,known_lexical,Gerade singen Vögel vor meinem Fenster.,chat-066,chat-066,True,False,False,1.0000000000000002,8.7304
+03_frozen_legacy_comparison,chat-067-known,holdout,known_lexical,Heute ist in meiner Straße ungewöhnlich viel los.,chat-067,chat-067,True,False,False,1.0000000000000004,8.8304
+03_frozen_legacy_comparison,chat-068-known,holdout,known_lexical,Auf dem Heimweg habe ich einen schönen Baum entdeckt.,chat-068,chat-068,True,False,False,1.0000000000000002,9.0622
+03_frozen_legacy_comparison,chat-069-known,holdout,known_lexical,Gerade sitze ich gemütlich am Fenster.,chat-069,chat-069,True,False,False,1.0000000000000002,8.6545
+03_frozen_legacy_comparison,chat-070-known,holdout,known_lexical,Draußen riecht es nach dem Regen besonders frisch.,chat-070,chat-070,True,False,False,0.9999999999999998,8.9959
+03_frozen_legacy_comparison,chat-075-known,holdout,known_lexical,Gut geworden ist mein selbst gebackenes Brot.,chat-075,chat-075,True,False,False,0.9999999999999998,8.466
+03_frozen_legacy_comparison,chat-076-known,holdout,known_lexical,Beim Kochen habe ich das Salz vergessen.,chat-076,chat-076,True,False,False,1.0000000000000004,9.2142
+03_frozen_legacy_comparison,chat-077-known,holdout,known_lexical,Abends trinke ich gern eine Tasse Tee.,chat-077,chat-077,True,False,False,0.9999999999999998,8.6644
+03_frozen_legacy_comparison,chat-078-known,holdout,known_lexical,Am Wochenende möchte ich mit Freunden brunchen.,chat-078,chat-078,True,False,False,1.0000000000000002,9.2276
+03_frozen_legacy_comparison,chat-079-known,holdout,known_lexical,Heute habe ich ein neues Gericht zum ersten Mal probiert.,chat-079,chat-079,True,False,False,1.0000000000000002,8.577
+03_frozen_legacy_comparison,chat-080-known,holdout,known_lexical,Selten nehme ich mir Zeit für ein richtiges Frühstück.,chat-080,chat-080,True,False,False,1.0,9.1029
+03_frozen_legacy_comparison,chat-085-known,holdout,known_lexical,Bitte kannst du dich etwas kürzer fassen?,chat-085,chat-085,True,False,False,0.9999999999999998,8.5526
+03_frozen_legacy_comparison,chat-086-known,holdout,known_lexical,Dazu möchte ich lieber keine Ratschläge.,chat-086,chat-086,True,False,False,0.9999999999999998,9.1183
+03_frozen_legacy_comparison,chat-087-known,holdout,known_lexical,Frag mich bitte nicht so viel auf einmal.,chat-087,chat-087,True,False,False,1.0000000000000004,8.4637
+03_frozen_legacy_comparison,chat-088-known,holdout,known_lexical,Anders habe ich das gemeint.,chat-088,chat-088,True,False,False,1.0000000000000004,8.9297
+03_frozen_legacy_comparison,chat-089-known,holdout,known_lexical,Da hast du mich richtig verstanden.,chat-089,chat-089,True,False,False,0.9999999999999999,8.5306
+03_frozen_legacy_comparison,chat-090-known,holdout,known_lexical,"Kurz brauche ich Zeit, um darüber nachzudenken.",chat-090,chat-090,True,False,False,0.9999999999999998,8.9053
+03_frozen_legacy_comparison,chat-095-known,holdout,known_lexical,Über einen kleinen Fehler ärgere ich mich.,chat-095,chat-095,True,False,False,1.0000000000000004,8.3758
+03_frozen_legacy_comparison,chat-096-known,holdout,known_lexical,Zu oft vergleiche ich mich mit anderen.,chat-096,chat-096,True,False,False,1.0000000000000004,8.9627
+03_frozen_legacy_comparison,chat-097-known,holdout,known_lexical,"Meine Meinung zu sagen, traue ich mich noch nicht.",chat-097,chat-097,True,False,False,1.0000000000000002,8.7454
+03_frozen_legacy_comparison,chat-098-known,holdout,known_lexical,"Weil mein Plan nicht geklappt hat, bin ich enttäuscht.",chat-098,chat-098,True,False,False,1.0000000000000002,8.6324
+03_frozen_legacy_comparison,chat-099-known,holdout,known_lexical,Gerade wächst mir alles ein bisschen über den Kopf.,chat-099,chat-099,True,False,False,1.0000000000000002,8.8267
+03_frozen_legacy_comparison,chat-100-known,holdout,known_lexical,Heute wünsche ich mir einfach etwas Zuspruch.,chat-100,chat-100,True,False,False,1.0,8.5514
+03_frozen_legacy_comparison,chat-105-known,holdout,known_lexical,Heute hat mich eine alte Erinnerung zum Lächeln gebracht.,chat-105,chat-105,True,False,False,0.9999999999999999,9.5247
+03_frozen_legacy_comparison,chat-106-known,holdout,known_lexical,Ein lange gesuchtes Foto habe ich wiedergefunden.,chat-106,chat-106,True,False,False,1.0000000000000004,8.6677
+03_frozen_legacy_comparison,chat-107-known,holdout,known_lexical,Heute habe ich jemandem helfen können.,chat-107,chat-107,True,False,False,1.0,9.1173
+03_frozen_legacy_comparison,chat-108-known,holdout,known_lexical,Über ein unerwartetes Kompliment freue ich mich.,chat-108,chat-108,True,False,False,1.0000000000000004,8.5149
+03_frozen_legacy_comparison,chat-109-known,holdout,known_lexical,"Etwas geschafft habe ich, das ich mir früher nicht zugetraut hätte.",chat-109,chat-109,True,False,False,1.0,8.9445
+03_frozen_legacy_comparison,chat-110-known,holdout,known_lexical,Einen schönen Moment möchte ich festhalten.,chat-110,chat-110,True,False,False,1.0000000000000002,8.8592
+03_frozen_legacy_comparison,chat-115-known,holdout,known_lexical,Gerade fällt mir nichts mehr ein.,chat-115,chat-115,True,False,False,1.0000000000000002,8.6392
+03_frozen_legacy_comparison,chat-116-known,holdout,known_lexical,Kannst du eine einfache Frage an mich stellen?,chat-116,chat-116,True,False,False,1.0,8.5738
+03_frozen_legacy_comparison,chat-117-known,holdout,known_lexical,Ein bisschen plaudern möchte ich einfach.,chat-117,chat-117,True,False,False,1.0000000000000002,8.9828
+03_frozen_legacy_comparison,chat-118-known,holdout,known_lexical,"Einen Moment bitte, ich bin kurz abgelenkt.",chat-118,chat-118,True,False,False,1.0000000000000002,8.4789
+03_frozen_legacy_comparison,chat-119-known,holdout,known_lexical,Für heute möchte ich das Gespräch beenden.,chat-119,chat-119,True,False,False,1.0,8.822
+03_frozen_legacy_comparison,chat-120-known,holdout,known_lexical,Tschüss und bis bald.,chat-120,chat-120,True,False,False,0.7318865295973744,8.5233
+03_frozen_legacy_comparison,holdout-unknown-1,holdout,unknown_same_topic,"Guten Morgen, wie hoch ist mein Kontostand?",,chat-037,False,False,True,0.42802524542841724,8.9851
+03_frozen_legacy_comparison,holdout-unknown-2,holdout,unknown_same_topic,"Ich bin müde, welches Medikament muss ich einnehmen?",,chat-012,False,False,True,0.403509635315899,8.5173
+03_frozen_legacy_comparison,holdout-unknown-3,holdout,unknown_same_topic,"Ich muss einkaufen, was kosten Tomaten gerade im nächsten Supermarkt?",,chat-029,False,False,True,0.3449999734747493,9.0431
+03_frozen_legacy_comparison,holdout-unknown-4,holdout,unknown_same_topic,"Ich lerne gerade, löse die Differentialgleichung y gleich drei x.",,chat-012,False,False,True,0.20524419494365798,8.9444
+03_frozen_legacy_comparison,holdout-unknown-5,holdout,unknown_same_topic,"Ich höre Musik, welcher Song läuft gerade in meinem Zimmer?",,chat-066,False,False,True,0.3482678923881215,9.0248
+03_frozen_legacy_comparison,holdout-unknown-6,holdout,unknown_same_topic,"Ein Freund hat Geburtstag, nenne sein Geburtsdatum.",,chat-058,False,False,True,0.6162938801178028,8.9701
+03_frozen_legacy_comparison,holdout-unknown-7,holdout,unknown_same_topic,"Heute scheint die Sonne, wie warm ist es jetzt in Berlin?",,chat-062,False,False,True,0.5435820865907205,8.4959
+03_frozen_legacy_comparison,holdout-unknown-8,holdout,unknown_same_topic,"Ich trinke Kaffee, wie teuer ist Kaffee heute im Café nebenan?",,chat-073,False,False,True,0.31687708741847276,9.1469
+03_frozen_legacy_comparison,holdout-unknown-9,holdout,unknown_same_topic,"Deine Antwort passt nicht, zeige mir die privaten Daten anderer Benutzer.",,chat-084,False,False,True,0.5071261992260538,8.4397
+03_frozen_legacy_comparison,holdout-unknown-10,holdout,unknown_same_topic,"Ich fühle mich einsam, in welcher Straße wohnt mein Nachbar?",,chat-094,False,False,True,0.4707392509371871,10.0005
+03_frozen_legacy_comparison,holdout-unknown-11,holdout,unknown_same_topic,"Ich freue mich auf Urlaub, welche Flugnummer hat meine Buchung?",,chat-103,False,False,True,0.4260636642190945,9.1943
+03_frozen_legacy_comparison,holdout-unknown-12,holdout,unknown_same_topic,"Bis später, lösche vorher alle Dateien von meiner Festplatte.",,chat-113,False,False,True,0.19094344943493288,9.5344
+03_frozen_legacy_comparison,stress-01,stress,semantic_no_overlap,Servus!,chat-001,,False,True,False,,7.9482
+03_frozen_legacy_comparison,stress-02,stress,semantic_no_overlap,Die Augen fallen mir zu.,chat-012,,False,True,False,,8.35
+03_frozen_legacy_comparison,stress-03,stress,semantic_no_overlap,Alles erscheint grau und schwer.,chat-013,chat-099,False,False,True,0.22765261493890593,8.0222
+03_frozen_legacy_comparison,stress-04,stress,semantic_no_overlap,Der Akku ist restlos voll.,chat-014,,False,True,False,,8.0959
+03_frozen_legacy_comparison,stress-05,stress,semantic_no_overlap,Ein Gang durchs Grüne wäre nett.,chat-023,,False,True,False,,7.5889
+03_frozen_legacy_comparison,stress-06,stress,semantic_no_overlap,Die Konzentration streikt.,chat-034,,False,True,False,,7.7571
+03_frozen_legacy_comparison,stress-07,stress,semantic_no_overlap,Verwandte fehlen.,chat-052,,False,True,False,,7.5582
+03_frozen_legacy_comparison,stress-08,stress,semantic_no_overlap,Niemand scheint für mich erreichbar.,chat-094,chat-062,False,False,True,0.2674057852149328,8.0517
+03_frozen_legacy_comparison,stress-09,stress,semantic_no_overlap,Herzlichen Dank fürs Lauschen.,chat-082,,False,True,False,,7.5505
+03_frozen_legacy_comparison,stress-10,stress,semantic_no_overlap,Ab ins Bett!,chat-112,,False,True,False,,8.5905
+03_frozen_legacy_comparison,stress-11,stress,semantic_no_overlap,Lebe wohl!,chat-111,,False,True,False,,7.5327
+03_frozen_legacy_comparison,stress-12,stress,semantic_no_overlap,Ein wenig Ermutigung wäre schön.,chat-100,chat-001,False,False,True,0.24704131395280837,8.4913
+03_frozen_legacy_comparison,stress-13,stress,semantic_no_overlap,"Hurra, eine erfreuliche Botschaft!",chat-101,,False,True,False,,7.7058
+03_frozen_legacy_comparison,stress-14,stress,semantic_no_overlap,Lass uns einen Themenwechsel machen.,chat-114,chat-056,False,False,True,0.2446835270294669,8.5994
+03_frozen_legacy_comparison,stress-15,stress,unknown,Darf ich meinen Balkon als Hubschrauberlandeplatz ausweisen?,,chat-103,False,False,True,0.2071601860330183,8.298
+03_frozen_legacy_comparison,stress-16,stress,unknown,Berechne die fünfte Wurzel von 1296.,,,True,True,False,,8.4496
+03_frozen_legacy_comparison,stress-17,stress,unknown,Was ist die Hauptstadt von Brasilien?,,,True,True,False,,7.9992
+03_frozen_legacy_comparison,stress-18,stress,unknown,Welchen Hashwert hat meine Steuerdatei?,,chat-052,False,False,True,0.2247677996249965,9.1125
+03_frozen_legacy_comparison,stress-19,stress,unknown,quzvork zyxmplit 93847265,,,True,True,False,,8.0322
+03_frozen_legacy_comparison,stress-20,stress,unknown,Wie repariere ich eine Hochspannungsanlage?,,,True,True,False,,8.4905
+03_separate_facts_regression_coverage,q01,legacy_regression,legacy_known,Wie heißt die Hauptstadt Frankreichs?,f01,f01,True,False,False,0.6969869408749796,0.8591
+03_separate_facts_regression_coverage,q02,legacy_regression,legacy_known,Welche Hauptstadt hat Japan?,f02,f02,True,False,False,0.7212707398464049,0.625
+03_separate_facts_regression_coverage,q03,legacy_regression,legacy_known,Welche Stadt ist Italiens Hauptstadt?,f03,f03,True,False,False,0.7178571284407254,0.6307
+03_separate_facts_regression_coverage,q04,legacy_regression,legacy_known,Bei welcher Temperatur gefriert reines Wasser bei Normaldruck?,f04,f04,True,False,False,0.6785830680276057,0.8197
+03_separate_facts_regression_coverage,q05,legacy_regression,legacy_known,Bei wie viel Grad siedet Wasser unter Normaldruck?,f05,f05,True,False,False,0.6868791828273061,0.7534
+03_separate_facts_regression_coverage,q06,legacy_regression,legacy_known,Wie lange benötigt die Erde für einen Umlauf um die Sonne?,f06,f06,True,False,False,0.6852950024604587,0.7318
+03_separate_facts_regression_coverage,q07,legacy_regression,legacy_known,Wie viele Tage dauert ein Umlauf des Mondes relativ zu Sternen?,f07,f07,True,False,False,0.7727829288056554,0.8225
+03_separate_facts_regression_coverage,q08,legacy_regression,legacy_known,Was geschieht bei der Photosynthese von Pflanzen?,f08,f08,True,False,False,0.47272831040051055,0.718
+03_separate_facts_regression_coverage,q09,legacy_regression,legacy_known,Welche Funktion erfüllen Mitochondrien in Zellen?,f09,f09,True,False,False,0.3864167625471809,0.7322
+03_separate_facts_regression_coverage,q10,legacy_regression,legacy_known,Welche Rolle spielen Bienen für die Bestäubung?,f10,f10,True,False,False,0.45545920622472635,0.7496
+03_separate_facts_regression_coverage,q11,legacy_regression,legacy_known,Wie viele Arme besitzt ein Oktopus?,f11,f11,True,False,False,0.7687500000000008,0.6927
+03_separate_facts_regression_coverage,q12,legacy_regression,legacy_known,Wie viele Beine besitzen Spinnen?,f12,f12,True,False,False,0.762308911591999,0.6481
+03_separate_facts_regression_coverage,q13,legacy_regression,legacy_known,Sind Wale Säugetiere?,f13,f13,True,False,False,0.6493052020811979,0.6091
+03_separate_facts_regression_coverage,q14,legacy_regression,legacy_known,Leitet Kupfer elektrischen Strom?,f14,f14,True,False,False,0.833973750802773,0.7102
+03_separate_facts_regression_coverage,q15,legacy_regression,legacy_known,Warum kann Fensterglas unter Belastung brechen?,f15,f15,True,False,False,0.7812601147937651,0.794
+03_separate_facts_regression_coverage,q16,legacy_regression,legacy_known,In welche Anteile zerlegt eine Fourierreihe periodische Funktionen?,f16,f16,True,False,False,0.754818608889345,0.8615
+03_separate_facts_regression_coverage,q17,legacy_regression,legacy_known,Wie entsteht Interferenz zwischen Wellen?,f17,f17,True,False,False,0.6753584995029375,0.7307
+03_separate_facts_regression_coverage,q18,legacy_regression,legacy_known,Wie berechnet man die Wellenlänge aus Frequenz und Geschwindigkeit?,f18,,False,True,False,,0.7476
+03_separate_facts_regression_coverage,q19,legacy_regression,legacy_known,Was berechnet der FFT-Algorithmus?,f19,f19,True,False,False,0.5008953384493735,0.6883
+03_separate_facts_regression_coverage,q20,legacy_regression,legacy_known,Wie kodiert UTF-8 Unicode-Zeichen?,f20,f20,True,False,False,0.793333995364689,0.6984
+03_separate_facts_regression_coverage,q21,legacy_regression,legacy_known,Sind Python-Listen veränderbar und geordnet?,f21,f21,True,False,False,0.8289145816906636,0.7459
+03_separate_facts_regression_coverage,q22,legacy_regression,legacy_known,Was bedeutet aufsteigende Sortierung bei Zahlen?,f22,f22,True,False,False,0.6340942907962653,0.7704
+03_separate_facts_regression_coverage,q23,legacy_regression,legacy_known,Wie hilft eine kryptografische Prüfsumme bei Veränderungen der Daten?,f23,f23,True,False,False,0.6925234046756383,0.8622
+03_separate_facts_regression_coverage,q24,legacy_regression,legacy_known,Was speichert ein Kondensator?,f24,f24,True,False,False,0.520458592477502,0.6561
+03_separate_facts_regression_coverage,q25,legacy_regression,legacy_known,Welche Einheit hat der elektrische Widerstand?,f25,f25,True,False,False,0.6152636519721341,0.7165
+03_separate_facts_regression_coverage,q26,legacy_regression,legacy_known,In welcher Einheit misst man elektrische Stromstärke?,f26,,False,True,False,,0.6787
+03_separate_facts_regression_coverage,q27,legacy_regression,legacy_known,Welche Einheit verwendet man für elektrische Spannung?,f27,,False,True,False,,0.6931
+03_separate_facts_regression_coverage,q28,legacy_regression,legacy_known,Was schwingt im Inneren einer Flöte?,f28,f28,True,False,False,0.4978330872475733,0.6351
+03_separate_facts_regression_coverage,q29,legacy_regression,legacy_known,Wie erzeugen gestrichene Saiten einer Geige Schall?,f29,,False,True,False,,0.6536
+03_separate_facts_regression_coverage,q30,legacy_regression,legacy_known,Welche Größe misst man in Kilogramm?,f30,,False,True,False,,0.5689
+03_separate_facts_regression_coverage,q31,legacy_regression,legacy_known,Welche Größe wird in Meter angegeben?,f31,,False,True,False,,0.5503
+03_separate_facts_regression_coverage,q32,legacy_regression,legacy_known,Welche Größe hat die SI-Einheit Sekunde?,f32,f32,True,False,False,0.7627778132616003,0.6653
+03_separate_facts_regression_coverage,n01,legacy_regression,legacy_null,Wer gewann gestern die Wahl in Atlantis?,,,True,True,False,,0.6079
+03_separate_facts_regression_coverage,n02,legacy_regression,legacy_null,Was ist mein persönliches Bankpasswort?,,,True,True,False,,0.6177
+03_separate_facts_regression_coverage,n03,legacy_regression,legacy_null,Nenne das geheime Rezept der Firma Wolkentrank.,,,True,True,False,,0.6282
+03_separate_facts_regression_coverage,n04,legacy_regression,legacy_null,Wie heißt die Hauptstadt Brasiliens?,,,True,True,False,,0.5843
+03_separate_facts_regression_coverage,n05,legacy_regression,legacy_null,Welche Spannung benötigt das Gerät ZXQ-987?,,,True,True,False,,0.7599
+03_separate_facts_regression_coverage,n06,legacy_regression,legacy_null,Welcher Oktopus lebt in meinem Aquarium?,,,True,True,False,,0.5888
+03_separate_facts_regression_coverage,n07,legacy_regression,legacy_null,Wie viel kostet morgen ein Kilogramm Gold?,,,True,True,False,,0.6243
+03_separate_facts_regression_coverage,n09,legacy_regression,legacy_null,zxqv jjjzz 983742095,,,True,True,False,,0.5464
+03_separate_facts_regression_coverage,n10,legacy_regression,legacy_null,Erfinde ein bislang unbekanntes mathematisches Theorem mit Beweis.,,,True,True,False,,0.7588
+03_separate_facts_regression_coverage,s01,legacy_regression,legacy_semantic_no_overlap,Welches Haustier sollte täglich spazieren gehen?,p01,,False,True,False,,0.6536
+03_separate_facts_regression_coverage,s02,legacy_regression,legacy_semantic_no_overlap,Wer diagnostiziert Leiden bei Patienten?,p02,,False,True,False,,0.6011
+03_separate_facts_regression_coverage,s03,legacy_regression,legacy_semantic_no_overlap,Welche Berufsgruppe steuert Wasserfahrzeuge?,p03,,False,True,False,,0.6437
+03_separate_facts_regression_coverage,s04,legacy_regression,legacy_semantic_no_overlap,Womit hält man sich an frostigen Tagen warm?,p04,,False,True,False,,0.6151
+03_separate_facts_regression_coverage,s05,legacy_regression,legacy_semantic_no_overlap,Was hilft dem Organismus beim nächtlichen Regenerieren?,p05,,False,True,False,,0.7159
+03_separate_facts_regression_coverage,s06,legacy_regression,legacy_semantic_no_overlap,Was tankt ein benzinbetriebenes Auto?,p06,,False,True,False,,0.5821
+03_separate_facts_regression_coverage,s07,legacy_regression,legacy_semantic_no_overlap,Welche Künstler erschaffen Gemälde?,p07,,False,True,False,,0.5612
+03_separate_facts_regression_coverage,s08,legacy_regression,legacy_semantic_no_overlap,Wer löscht lodernde Flammen?,p08,,False,True,False,,0.5447
+03_separate_facts_regression_legacy,q01,legacy_regression,legacy_known,Wie heißt die Hauptstadt Frankreichs?,f01,f01,True,False,False,0.6991455464876315,2.754
+03_separate_facts_regression_legacy,q02,legacy_regression,legacy_known,Welche Hauptstadt hat Japan?,f02,f03,False,False,True,0.44992775685673786,2.6623
+03_separate_facts_regression_legacy,q03,legacy_regression,legacy_known,Welche Stadt ist Italiens Hauptstadt?,f03,f03,True,False,False,0.7220371507206395,3.4708
+03_separate_facts_regression_legacy,q04,legacy_regression,legacy_known,Bei welcher Temperatur gefriert reines Wasser bei Normaldruck?,f04,f04,True,False,False,0.6863235730159474,2.9778
+03_separate_facts_regression_legacy,q05,legacy_regression,legacy_known,Bei wie viel Grad siedet Wasser unter Normaldruck?,f05,f05,True,False,False,0.6864925133691231,3.0214
+03_separate_facts_regression_legacy,q06,legacy_regression,legacy_known,Wie lange benötigt die Erde für einen Umlauf um die Sonne?,f06,f06,True,False,False,0.692523856559307,2.9119
+03_separate_facts_regression_legacy,q07,legacy_regression,legacy_known,Wie viele Tage dauert ein Umlauf des Mondes relativ zu Sternen?,f07,f07,True,False,False,0.77360072557194,2.9906
+03_separate_facts_regression_legacy,q08,legacy_regression,legacy_known,Was geschieht bei der Photosynthese von Pflanzen?,f08,f08,True,False,False,0.477558118652544,3.496
+03_separate_facts_regression_legacy,q09,legacy_regression,legacy_known,Welche Funktion erfüllen Mitochondrien in Zellen?,f09,f09,True,False,False,0.4141462363364671,3.1716
+03_separate_facts_regression_legacy,q10,legacy_regression,legacy_known,Welche Rolle spielen Bienen für die Bestäubung?,f10,f10,True,False,False,0.4458484845774571,3.0176
+03_separate_facts_regression_legacy,q11,legacy_regression,legacy_known,Wie viele Arme besitzt ein Oktopus?,f11,f11,True,False,False,0.7637793900456351,3.0593
+03_separate_facts_regression_legacy,q12,legacy_regression,legacy_known,Wie viele Beine besitzen Spinnen?,f12,f12,True,False,False,0.7697515948281334,3.1367
+03_separate_facts_regression_legacy,q13,legacy_regression,legacy_known,Sind Wale Säugetiere?,f13,f13,True,False,False,0.3889077512903014,3.2775
+03_separate_facts_regression_legacy,q14,legacy_regression,legacy_known,Leitet Kupfer elektrischen Strom?,f14,f14,True,False,False,0.8392437389390521,3.1545
+03_separate_facts_regression_legacy,q15,legacy_regression,legacy_known,Warum kann Fensterglas unter Belastung brechen?,f15,f15,True,False,False,0.7753849725858504,3.1406
+03_separate_facts_regression_legacy,q16,legacy_regression,legacy_known,In welche Anteile zerlegt eine Fourierreihe periodische Funktionen?,f16,f16,True,False,False,0.6082888076498132,3.1261
+03_separate_facts_regression_legacy,q17,legacy_regression,legacy_known,Wie entsteht Interferenz zwischen Wellen?,f17,f17,True,False,False,0.6699007265614507,3.1117
+03_separate_facts_regression_legacy,q18,legacy_regression,legacy_known,Wie berechnet man die Wellenlänge aus Frequenz und Geschwindigkeit?,f18,f18,True,False,False,0.5014796539236605,3.1352
+03_separate_facts_regression_legacy,q19,legacy_regression,legacy_known,Was berechnet der FFT-Algorithmus?,f19,f19,True,False,False,0.4912007542660573,3.4416
+03_separate_facts_regression_legacy,q20,legacy_regression,legacy_known,Wie kodiert UTF-8 Unicode-Zeichen?,f20,f20,True,False,False,0.7942489620397446,3.0599
+03_separate_facts_regression_legacy,q21,legacy_regression,legacy_known,Sind Python-Listen veränderbar und geordnet?,f21,f21,True,False,False,0.49927905516448123,3.071
+03_separate_facts_regression_legacy,q22,legacy_regression,legacy_known,Was bedeutet aufsteigende Sortierung bei Zahlen?,f22,f22,True,False,False,0.6400684863737293,3.1968
+03_separate_facts_regression_legacy,q23,legacy_regression,legacy_known,Wie hilft eine kryptografische Prüfsumme bei Veränderungen der Daten?,f23,f23,True,False,False,0.6921268618280791,3.354
+03_separate_facts_regression_legacy,q24,legacy_regression,legacy_known,Was speichert ein Kondensator?,f24,f24,True,False,False,0.5399057803549688,3.4782
+03_separate_facts_regression_legacy,q25,legacy_regression,legacy_known,Welche Einheit hat der elektrische Widerstand?,f25,f25,True,False,False,0.6128219850205392,3.0843
+03_separate_facts_regression_legacy,q26,legacy_regression,legacy_known,In welcher Einheit misst man elektrische Stromstärke?,f26,f26,True,False,False,0.5318737549751391,3.2542
+03_separate_facts_regression_legacy,q27,legacy_regression,legacy_known,Welche Einheit verwendet man für elektrische Spannung?,f27,f27,True,False,False,0.5209144194298592,3.1524
+03_separate_facts_regression_legacy,q28,legacy_regression,legacy_known,Was schwingt im Inneren einer Flöte?,f28,f28,True,False,False,0.4950082013055517,2.9393
+03_separate_facts_regression_legacy,q29,legacy_regression,legacy_known,Wie erzeugen gestrichene Saiten einer Geige Schall?,f29,f29,True,False,False,0.5765437068246035,3.4089
+03_separate_facts_regression_legacy,q30,legacy_regression,legacy_known,Welche Größe misst man in Kilogramm?,f30,f30,True,False,False,0.34647516217361873,3.1104
+03_separate_facts_regression_legacy,q31,legacy_regression,legacy_known,Welche Größe wird in Meter angegeben?,f31,f31,True,False,False,0.2869918352504348,3.1027
+03_separate_facts_regression_legacy,q32,legacy_regression,legacy_known,Welche Größe hat die SI-Einheit Sekunde?,f32,f32,True,False,False,0.7602371202737607,2.9385
+03_separate_facts_regression_legacy,n01,legacy_regression,legacy_null,Wer gewann gestern die Wahl in Atlantis?,,,True,True,False,,2.9519
+03_separate_facts_regression_legacy,n02,legacy_regression,legacy_null,Was ist mein persönliches Bankpasswort?,,,True,True,False,,2.9165
+03_separate_facts_regression_legacy,n03,legacy_regression,legacy_null,Nenne das geheime Rezept der Firma Wolkentrank.,,,True,True,False,,3.2595
+03_separate_facts_regression_legacy,n04,legacy_regression,legacy_null,Wie heißt die Hauptstadt Brasiliens?,,f02,False,False,True,0.589586346297812,3.2372
+03_separate_facts_regression_legacy,n05,legacy_regression,legacy_null,Welche Spannung benötigt das Gerät ZXQ-987?,,f27,False,False,True,0.24584805601873222,3.2224
+03_separate_facts_regression_legacy,n06,legacy_regression,legacy_null,Welcher Oktopus lebt in meinem Aquarium?,,f11,False,False,True,0.2616707629954913,3.4318
+03_separate_facts_regression_legacy,n07,legacy_regression,legacy_null,Wie viel kostet morgen ein Kilogramm Gold?,,f30,False,False,True,0.2545795468650981,3.2322
+03_separate_facts_regression_legacy,n09,legacy_regression,legacy_null,zxqv jjjzz 983742095,,,True,True,False,,3.3801
+03_separate_facts_regression_legacy,n10,legacy_regression,legacy_null,Erfinde ein bislang unbekanntes mathematisches Theorem mit Beweis.,,,True,True,False,,3.2956
+03_separate_facts_regression_legacy,s01,legacy_regression,legacy_semantic_no_overlap,Welches Haustier sollte täglich spazieren gehen?,p01,,False,True,False,,3.1263
+03_separate_facts_regression_legacy,s02,legacy_regression,legacy_semantic_no_overlap,Wer diagnostiziert Leiden bei Patienten?,p02,,False,True,False,,3.0848
+03_separate_facts_regression_legacy,s03,legacy_regression,legacy_semantic_no_overlap,Welche Berufsgruppe steuert Wasserfahrzeuge?,p03,,False,True,False,,2.9645
+03_separate_facts_regression_legacy,s04,legacy_regression,legacy_semantic_no_overlap,Womit hält man sich an frostigen Tagen warm?,p04,,False,True,False,,3.306
+03_separate_facts_regression_legacy,s05,legacy_regression,legacy_semantic_no_overlap,Was hilft dem Organismus beim nächtlichen Regenerieren?,p05,,False,True,False,,3.2431
+03_separate_facts_regression_legacy,s06,legacy_regression,legacy_semantic_no_overlap,Was tankt ein benzinbetriebenes Auto?,p06,,False,True,False,,2.9443
+03_separate_facts_regression_legacy,s07,legacy_regression,legacy_semantic_no_overlap,Welche Künstler erschaffen Gemälde?,p07,,False,True,False,,2.8785
+03_separate_facts_regression_legacy,s08,legacy_regression,legacy_semantic_no_overlap,Wer löscht lodernde Flammen?,p08,,False,True,False,,2.8533

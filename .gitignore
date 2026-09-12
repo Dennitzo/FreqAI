@@ -1,0 +1,88 @@
+# Python environments, bytecode and packaging output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/build/
+/dist/
+
+# Test, analysis and notebook caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+/htmlcov/
+.ipynb_checkpoints/
+
+# Local runtime, compiler, CUDA and tool caches
+/runtime/
+/unsloth-tmp/
+/.unsloth_sandbox_remap.json
+.cache/
+.cupy/
+.cupy_cache/
+.compiler-cache/
+/matplotlib/fontlist-*.json
+*.log
+*.tmp
+*.temp
+
+# Live databases, transaction sidecars and local backups
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+/memory/backups/
+
+# Generated arrays, serialized models and training checkpoints
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.gguf
+*.ggml
+pytorch_model*.bin
+checkpoints/
+checkpoint-*/
+/training-runs/
+wandb/
+events.out.tfevents.*
+
+# Downloaded raw corpus shards and archives (keep provenance and import scripts)
+/memory/sources/**/*.parquet
+/memory/sources/**/*.arrow
+/memory/sources/**/*.feather
+/memory/sources/**/*.gz
+/memory/sources/**/*.zip
+/memory/sources/**/*.xz
+/memory/sources/**/*.zst
+/results/public_corpus/evaluation/germanquad_test-*.parquet
+
+# Keep dataset/manifest.json and dataset/corpus/*.jsonl.gz versionable:
+# these are the pinned, curated corpora checked by tests/test_central_dataset.py.
+# Also keep memory fixtures, evaluations, information texts and results reports.
+# Git ignore rules match paths, not file sizes; do not blanket-ignore JSON/JSONL.
+
+# Local secrets and operating-system files
+.env
+.env.*
+!.env.example
+!.env.sample
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo

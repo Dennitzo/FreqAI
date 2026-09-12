@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-09-06T07:48:34.990817+00:00",
+  "url": "http://127.0.0.1:51184",
+  "isolated_temporary_database": true,
+  "production_database_modified": false,
+  "reported_three_turn_dialogue_passed": true,
+  "reload_restored_history_and_context": true,
+  "tabs_have_independent_sessions": true,
+  "new_conversation_resets_context": true,
+  "live_addition_answered_without_restart": true,
+  "ticks_advanced": 24,
+  "document_count": 121,
+  "history_count": 8,
+  "javascript_errors": [],
+  "replies": [
+    {
+      "prompt": "Hallo",
+      "answer": "Hallo! Schön, dass du da bist. Wie geht es dir heute?",
+      "abstained": false,
+      "method": "semantic_wave_dialogue",
+      "generated": false,
+      "session_id": "9b50bfc2-2171-4c08-858e-83c49f8d3132",
+      "conversation_revision": 1
+    },
+    {
+      "prompt": "Mir geht es gut, wie geht es dir denn?",
+      "answer": "Das klingt schön. Ich bin bereit für unser Gespräch.",
+      "abstained": false,
+      "method": "semantic_wave_dialogue",
+      "generated": true,
+      "session_id": "9b50bfc2-2171-4c08-858e-83c49f8d3132",
+      "conversation_revision": 2
+    },
+    {
+      "prompt": "gut und dir?",
+      "answer": "Das klingt schön. Ich bin bereit für unser Gespräch.",
+      "abstained": false,
+      "method": "semantic_wave_dialogue",
+      "generated": true,
+      "session_id": "9b50bfc2-2171-4c08-858e-83c49f8d3132",
+      "conversation_revision": 3
+    },
+    {
+      "prompt": "Ich heiße Elena.",
+      "answer": "Schön, dich kennenzulernen, Elena.",
+      "abstained": false,
+      "method": "semantic_wave_dialogue",
+      "generated": true,
+      "session_id": "9b50bfc2-2171-4c08-858e-83c49f8d3132",
+      "conversation_revision": 4
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir gesagt, dass du Elena heißt.",
+      "abstained": false,
+      "method": "semantic_wave_dialogue",
+      "generated": true,
+      "session_id": "9b50bfc2-2171-4c08-858e-83c49f8d3132",
+      "conversation_revision": 5
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir deinen Namen in diesem Gespräch noch nicht genannt. Wie heißt du?",
+      "abstained": true,
+      "method": "semantic_wave_dialogue",
+      "generated": true,
+      "session_id": "ae9424f3-a3e8-4a22-bf79-6a06ae33cc66",
+      "conversation_revision": 1
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir deinen Namen in diesem Gespräch noch nicht genannt. Wie heißt du?",
+      "abstained": true,
+      "method": "semantic_wave_dialogue",
+      "generated": true,
+      "session_id": "a365e19b-80fa-4ff7-8a74-f53687dd5f58",
+      "conversation_revision": 1
+    },
+    {
+      "prompt": "Wann trifft sich der Gartenclub Silberlinde?",
+      "answer": "Der Gartenclub Silberlinde trifft sich jeden Donnerstag.",
+      "abstained": false,
+      "method": "semantic_wave_dialogue",
+      "generated": false,
+      "session_id": "a365e19b-80fa-4ff7-8a74-f53687dd5f58",
+      "conversation_revision": 2
+    }
+  ]
+}

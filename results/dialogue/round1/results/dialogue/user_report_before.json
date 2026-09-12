@@ -1,0 +1,57 @@
+[
+  {
+    "prompt": "Hallo",
+    "result": {
+      "answer": "Hallo! Schön, dass du da bist. Wie geht es dir heute?",
+      "abstained": false,
+      "matches": [
+        {
+          "id": "chat-001",
+          "text": "Hallo! Schön, dass du da bist. Wie geht es dir heute?",
+          "source": "Alltagsgespräch / Begrüßung",
+          "score": 0.48843565162162844,
+          "interference": 0.9768713032432569,
+          "matched_prompt": "Hallo, schön dich zu sehen.",
+          "query_coverage": 1.0
+        }
+      ],
+      "method": "coherent_fourier_interference_then_inverse_standing_wave",
+      "feature_mode": "morphology",
+      "retrieval_policy": "coverage",
+      "time_s": 1002.4529643000005,
+      "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung.",
+      "revision": 2,
+      "live_revision": 2
+    }
+  },
+  {
+    "prompt": "Mir geht es gut, wie geht es dir denn?",
+    "result": {
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "abstained": true,
+      "matches": [],
+      "method": "coherent_fourier_interference_then_inverse_standing_wave",
+      "feature_mode": "morphology",
+      "retrieval_policy": "coverage",
+      "time_s": 1002.4826991999998,
+      "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung.",
+      "revision": 2,
+      "live_revision": 2
+    }
+  },
+  {
+    "prompt": "gut und dir?",
+    "result": {
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "abstained": true,
+      "matches": [],
+      "method": "coherent_fourier_interference_then_inverse_standing_wave",
+      "feature_mode": "morphology",
+      "retrieval_policy": "coverage",
+      "time_s": 1002.5159866000004,
+      "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung.",
+      "revision": 2,
+      "live_revision": 2
+    }
+  }
+]

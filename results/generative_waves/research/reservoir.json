@@ -1,0 +1,73 @@
+{
+  "request": {
+    "query": "\"Echo State\" \"Jaeger\" 2001",
+    "maximumResults": 8,
+    "language": "de-DE"
+  },
+  "http_status": 200,
+  "retrieved_utc": "2026-09-06T08:23:45.456016+00:00",
+  "response": {
+    "query": "\"Echo State\" \"Jaeger\" 2001",
+    "results": [
+      {
+        "title": "The \"echo state\" approach to analysing and training recurrent neural ...",
+        "url": "https://publica.fraunhofer.de/entities/publication/7d4a7eec-a22c-4df0-903d-93f9cd5aca02",
+        "snippet": "The \"echo state\" approach to analysing and training recurrent neural networks. Abstract. Der Report führt ein konstruktives ... Jaeger, H. Publisher.",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_IzJM0xyQ7lJ8hmc6FiU6NW2YHLg7m-_89XDHLfYsWYWNMupSVJu7Ehc"
+      },
+      {
+        "title": "Short term memory in echo state networks - Fraunhofer-Publica",
+        "url": "https://publica.fraunhofer.de/entities/publication/9dfaead1-4dc0-4e3c-b89b-596f50f671c1",
+        "snippet": "... capacities of echo state networks can be exploited for dynamic Pattern recognition and stochastic sequence modeling tasks. Show more. Author(s). Jaeger, H.",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_IzJM0xyQ7lJ8hmc6FiU6NW2YHLg7m-_89XDHLfYsWYWNMupSVJu7Ehc"
+      },
+      {
+        "title": "Untersuchung nichtlinearer Zusammenhänge zwischen ...",
+        "url": "https://juser.fz-juelich.de/record/917297/files/masterarbeit_matthias_ri%C3%9Fe.pdf",
+        "snippet": "18.10.2022 ... Echo State-Eigenschaft auch bei größerem Spektralradius gegeben sein [3]. ... [18] Herbert Jaeger. „The “Echo State” Approach to Analysing ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS2LVv9iedKXdcWxmUBOIk1IBhuXoaqp7y1I1M9zoPnIgNop2mK365Dads"
+      },
+      {
+        "title": "Publications – https://www.ais-lab.eu",
+        "url": "https://ais-lab.eu/publications/",
+        "snippet": "Multiobjective optimization of echo state networks for multiple motor pattern learning. ... Jaeger & R. Jung (Eds.), Encyclopedia of Computational Neuroscience ( ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcROlf8itH93kj3pXn5Lle3eKiituE6F17D4-s1nXu3697ms7DIB19eGoA"
+      },
+      {
+        "title": "2020 - electronic library - Blättern nach Dokumentenart",
+        "url": "https://elib.dlr.de/view/type/article/2020.html",
+        "snippet": "Pinheiro, Muriel und Amao-Oliva, Joel und Scheiber, Rolf und Jaeger, Marc ... echo state networks. Chaos, 30 (12), Seite 123142. American Institute of ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSOWMBROJWMBehnH3LNYMQDhuBSssy9WJYLC5pgmx72hfeE8VEjGYIA5A"
+      },
+      {
+        "title": "Verarbeitung von Sequenzen mit Neuronalen Netzen",
+        "url": "https://edoc.ub.uni-muenchen.de/34106/1/illium_steffen.pdf",
+        "snippet": "02.08.2024 ... voneinander von Jaeger als Echo State Network und Maass, Natschläger und ... Report 148.34 (2001), S. 13. [113] H. Jaeger. „Tutorial on ...",
+        "source": "google cse",
+        "thumbnailUrl": ""
+      },
+      {
+        "title": "syntaktische und referenzielle sprachverstehensprozesse",
+        "url": "https://freidok.uni-freiburg.de/files/8325/62YeWfNuVps3wi02/PRINT_Diss_Weldle_2011.pdf",
+        "snippet": "... 2001; S. L. Frank & Haselager, 2006; S. L. Frank et al., 2009). Während ... Echo State Networks (ESNs, H. Jaeger, 2003) und Liquid State. Machines (LSMs ...",
+        "source": "google cse",
+        "thumbnailUrl": ""
+      },
+      {
+        "title": "Publication List - Uni Ulm",
+        "url": "https://spike.informatik.uni-ulm.de/publications/index.static.html",
+        "snippet": "... Echo State Networks. Proceedings of the 6th International Workshop on Audio ... Wismuller, Herbert Jaeger, Helge Ritter, D. R. Dersch, Günther Palm ...",
+        "source": "google cse",
+        "thumbnailUrl": ""
+      }
+    ],
+    "provider": "searxng",
+    "isFallback": false,
+    "retrievedAt": "2026-09-06T08:23:45.4545518+00:00"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-06T07:43:51.246157+00:00",
+  "suite_sha256": "33dc0af1ca027b10243aff432635b851e6221d03c96dde79d37cb723d066dc24",
+  "corpus_sha256": "8dbfad5536db23888bc667ec73653e3f63128b7503acf510371fc5625e5dff02",
+  "turns": 134,
+  "unique_prompts": 129,
+  "new_unique_prompts": 129,
+  "scenarios": 26,
+  "split_counts": {
+    "development": 51,
+    "holdout": 50,
+    "stress": 33
+  }
+}

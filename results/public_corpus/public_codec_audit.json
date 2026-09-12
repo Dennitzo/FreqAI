@@ -1,0 +1,13 @@
+{
+  "corpus_sha256": "832754653cdd1dcd0c2c0cb7043d3edae71f8e28558b5ed7a145362c0b73d9fa",
+  "records": 11379,
+  "wave_packet_roundtrips": 45516,
+  "checked_times_s": [
+    0.0,
+    86400.125
+  ],
+  "text_and_metadata_modes": 5845988,
+  "all_exact": true,
+  "seconds": 6.391325399999914,
+  "scope": "Reversible storage of every imported byte, not generated-answer quality."
+}

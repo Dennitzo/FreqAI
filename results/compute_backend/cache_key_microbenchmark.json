@@ -1,0 +1,7 @@
+{
+  "sample_fields": 200000,
+  "old_restore_keys_s": 0.33504290000200854,
+  "new_restore_keys_s": 0.1407173999978113,
+  "keys_identical": true,
+  "speedup_hotspot_only": 2.380962837625054
+}

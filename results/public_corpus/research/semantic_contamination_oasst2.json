@@ -1,0 +1,142 @@
+{
+  "records": 533,
+  "semantic_label_counts": {
+    "semantic:topic_statement:user::conversation": 4,
+    "semantic:greeting:user::": 12,
+    "semantic:thanks:user::": 2,
+    "topic:leisure": 8,
+    "semantic:topic_statement:user::leisure": 8,
+    "semantic:mood_statement:assistant:negative:wellbeing": 2,
+    "semantic:capability_question:assistant::capabilities": 5,
+    "semantic:wellbeing_question:assistant::wellbeing": 5,
+    "semantic:identity_question:assistant::identity": 1,
+    "topic:weather": 6,
+    "topic:music": 3,
+    "topic:work": 5,
+    "semantic:topic_statement:user::work": 5,
+    "topic:books": 4,
+    "semantic:topic_statement:user::books": 3,
+    "semantic:mood_statement:user:positive:wellbeing": 1,
+    "semantic:topic_statement:user::music": 2,
+    "semantic:mood_statement:user:negative:wellbeing": 1,
+    "topic:movies": 1,
+    "semantic:topic_statement:user::movies": 1,
+    "topic:food": 2,
+    "semantic:topic_statement:user::food": 2
+  },
+  "target_hits": {
+    "semantic:thanks:user::": [
+      {
+        "id": "oasst2-de-0b264c79-186c-42d7-9656-c3efaa9a5fef",
+        "prompt": "Ich habe im Internet Wassergläser gefunden, die aus alten Cola Flaschen gemacht wurden. Kannst du mir erklären, wie ich sicher so eine Flasche zuschneiden und schleifen kann? Bitte bedenke, dass ich nur einfache Werkzeuge zur Verfügung habe, danke.",
+        "answer": "Das bearbeiten von Glas ist nicht ungefährlich, da es splittern kann und eventuell schädlicher Glasstaub entsteht. Als Werkzeug würde ich dir einen Dremel mit geeigneten Aufsätzen empfehlen. Zur Sicherheit würde ich dir unbedingt eine Schutzbrille und eine Staubschutzmaske empfehlen. Zusätzlich solltest du nach professionelle Anleitungen im Internet recherchieren.",
+        "features": [
+          "word:internet",
+          "word:wasserglas",
+          "word:gefund",
+          "word:alten",
+          "word:cola",
+          "word:flasch",
+          "word:gemacht",
+          "word:wurd",
+          "word:kannst",
+          "word:erklar",
+          "word:sich",
+          "word:zuschneid",
+          "word:schleif",
+          "word:bitt",
+          "word:bedenk",
+          "word:einfach",
+          "word:werkzeug",
+          "word:verfugung",
+          "word:dank",
+          "semantic:thanks:user::"
+        ],
+        "acts": [
+          {
+            "kind": "question",
+            "text": "wie ich sicher so eine Flasche zuschneiden und schleifen kann?",
+            "target": "user",
+            "value": "wie ich sicher so eine flasche zuschneiden und schleifen kann",
+            "topic": ""
+          },
+          {
+            "kind": "thanks",
+            "text": "danke",
+            "target": "user",
+            "value": "",
+            "topic": ""
+          }
+        ]
+      },
+      {
+        "id": "oasst2-de-b7a66e4d-3d92-4b3c-b3ab-d0de4948a1c2",
+        "prompt": "Ich habe im Internet Wassergläser gefunden, die aus alten Cola Flaschen gemacht wurden. Kannst du mir erklären, wie ich sicher so eine Flasche zuschneiden und schleifen kann? Bitte bedenke, dass ich nur einfache Werkzeuge zur Verfügung habe, danke.",
+        "answer": "Wenn du keine geeigneten Werkzeuge hast, solltest du nicht versuchen aus alten Colaflaschen Wassergläser zu machen, da dies gefährlich sein könnte.",
+        "features": [
+          "word:internet",
+          "word:wasserglas",
+          "word:gefund",
+          "word:alten",
+          "word:cola",
+          "word:flasch",
+          "word:gemacht",
+          "word:wurd",
+          "word:kannst",
+          "word:erklar",
+          "word:sich",
+          "word:zuschneid",
+          "word:schleif",
+          "word:bitt",
+          "word:bedenk",
+          "word:einfach",
+          "word:werkzeug",
+          "word:verfugung",
+          "word:dank",
+          "semantic:thanks:user::"
+        ],
+        "acts": [
+          {
+            "kind": "question",
+            "text": "wie ich sicher so eine Flasche zuschneiden und schleifen kann?",
+            "target": "user",
+            "value": "wie ich sicher so eine flasche zuschneiden und schleifen kann",
+            "topic": ""
+          },
+          {
+            "kind": "thanks",
+            "text": "danke",
+            "target": "user",
+            "value": "",
+            "topic": ""
+          }
+        ]
+      }
+    ],
+    "semantic:mood_statement:user:positive:wellbeing": [
+      {
+        "id": "oasst2-de-9ce4f7b9-d92e-4641-8b62-922e871e1b95",
+        "prompt": "Erkläre das Prinzip der Markovkette für einen Schüler der 10. Klasse verständlich",
+        "answer": "Der Markov-Prozess ist ein mathematisches Modell, das zur Analyse und Vorhersage von zufälligen Prozessen verwendet wird. Es beruht auf dem Konzept des Markov-Kettenprozesses, bei dem die Zustände eines Systems aufgrund seiner vorherigen Zustände vorhergesagt werden können. Beispielsweise wird in der Wirtschaft die Markov-Kette verwendet, um die Kursentwicklung eines Wertpapiers vorherzusagen. Der Markov-Prozess basiert auf dem Prinzip der Wahrscheinlichkeit, dass sich das Ergebnis eines Ereignisses aufgrund seiner vorherigen Zustände vorhersagen lässt.",
+        "features": [
+          "word:erklar",
+          "word:prinzip",
+          "word:markovkett",
+          "word:schul",
+          "word:klass",
+          "word:verstandlich",
+          "semantic:mood_statement:user:positive:wellbeing"
+        ],
+        "acts": [
+          {
+            "kind": "mood_statement",
+            "text": "Klasse verständlich",
+            "target": "user",
+            "value": "positive",
+            "topic": "wellbeing"
+          }
+        ]
+      }
+    ]
+  }
+}

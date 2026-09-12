@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FreqAI · Wellenspeicher</title>
+  <style>
+    :root { color-scheme: dark; --bg: #080f19; --card: #111d2d; --ink: #edf4fc; --muted: #9aadbf; --line: #26374c; --cyan: #69e2ed; --purple: #c59dff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: radial-gradient(ellipse at 15% 0, #14243d, var(--bg) 55%); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 1280px; margin: auto; padding: 32px 28px 60px; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 24px; }
+    .brand { font-size: 30px; font-weight: 750; letter-spacing: -.8px; }
+    .brand span { color: var(--cyan); }
+    .subtitle, .muted { color: var(--muted); }
+    .status { color: var(--cyan); border: 1px solid #2c5e64; border-radius: 100px; padding: 7px 13px; font-size: 12px; white-space: nowrap; }
+    .status.offline { color: #ffb4b4; border-color: #754147; }
+    .card { background: linear-gradient(145deg, #142235, var(--card)); border: 1px solid var(--line); border-radius: 18px; padding: 24px; box-shadow: 0 10px 30px #0002; }
+    .card h1, .card h2 { margin: 0; font-size: 19px; font-weight: 650; }
+    .card p { margin: 7px 0 18px; }
+    .wave-title { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; }
+    .legend { display: flex; gap: 18px; font-size: 12px; color: var(--muted); }
+    .legend span::before { content: ""; display: inline-block; width: 18px; height: 3px; vertical-align: middle; margin-right: 7px; background: var(--cyan); }
+    .legend span:last-child::before { background: var(--purple); }
+    .plot { height: 265px; width: 100%; margin-top: 10px; border: 1px solid #24344a; border-radius: 10px; overflow: hidden; background: #0a1320; }
+    canvas { width: 100%; height: 100%; display: block; }
+    .plot-caption { display: flex; justify-content: space-between; gap: 15px; color: var(--muted); font-size: 12px; margin-top: 8px; }
+    .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 22px; }
+    .metric { padding: 12px 16px; background: #0b1624; border: 1px solid #26374b; border-radius: 10px; }
+    .metric .label { color: var(--muted); font-size: 12px; }
+    .metric .value { font-size: 21px; font-variant-numeric: tabular-nums; margin-top: 4px; }
+    .columns { display: grid; grid-template-columns: 1.35fr 1fr; align-items: start; gap: 22px; margin-top: 22px; }
+    label { display: block; color: #c5d3e2; font-size: 13px; margin: 13px 0 6px; }
+    textarea, input { width: 100%; color: var(--ink); font: inherit; background: #091320; border: 1px solid #3c5069; border-radius: 9px; padding: 12px; outline: none; }
+    textarea { resize: vertical; min-height: 100px; }
+    textarea:focus, input:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px #69e2ed15; }
+    button { color: #06151b; background: var(--cyan); border: 0; border-radius: 8px; padding: 11px 17px; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+    button:hover { filter: brightness(1.1); }
+    button:disabled { opacity: .55; cursor: wait; }
+    button.secondary { background: #293e57; color: var(--ink); border: 1px solid #44607d; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 12px; }
+    .hint { color: var(--muted); font-size: 12px; }
+    #conversation { max-height: 480px; overflow-y: auto; margin: 16px 0; }
+    .chat-message, #answer { white-space: pre-wrap; overflow-wrap: anywhere; margin: 10px 0; padding: 14px 16px; background: #091725; border: 1px solid #2d4b60; border-radius: 10px; }
+    .chat-message.user { margin-left: 40px; background: #193347; }
+    .chat-message.assistant { margin-right: 24px; }
+    .chat-speaker { display: block; font-size: 11px; font-weight: 700; color: var(--cyan); margin-bottom: 5px; }
+    #answer:empty::before { content: "Beginne ein Gespräch. Deine Nachricht und der Kontext regen das Informationsfeld zur Textgenerierung an."; color: var(--muted); }
+    .notice { color: var(--muted); font-size: 12px; margin-top: 18px; }
+    .context-plot { height: 130px; }
+    .token-trace { max-height: 320px; overflow: auto; font-size: 12px; white-space: pre-wrap; overflow-wrap: anywhere; }
+    .feedback { font-size: 12px; color: var(--cyan); min-height: 20px; margin-top: 10px; overflow-wrap: anywhere; }
+    .storage { margin-top: 22px; }
+    .storage p { overflow-wrap: anywhere; }
+    .storage code { color: var(--cyan); }
+    details { margin-top: 12px; }
+    summary { cursor: pointer; color: var(--cyan); }
+    .table-scroll { overflow: auto; max-height: 420px; margin-top: 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    th, td { text-align: left; vertical-align: top; padding: 10px; border-bottom: 1px solid var(--line); }
+    td { overflow-wrap: anywhere; white-space: pre-wrap; }
+    td:first-child { min-width: 150px; color: var(--cyan); }
+    td:last-child { min-width: 250px; }
+    .error { color: #ffb4b4 !important; }
+    footer { color: #8396ac; font-size: 12px; margin-top: 22px; }
+    @media (max-width: 780px) { main { padding: 22px 14px 40px; } .columns { grid-template-columns: 1fr; } .card { padding: 18px; } .metrics { grid-template-columns: repeat(2, 1fr); } header { align-items: flex-start; } .subtitle { font-size: 12px; max-width: 240px; } .status { max-width: 160px; white-space: normal; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div><div class="brand">Freq<span>AI</span></div><div class="subtitle">Spektraler Textgenerator · experimentell</div></div>
+    <div id="connection" class="status" role="status">Verbindung wird aufgebaut</div>
+  </header>
+  <p id="compute-status" class="hint" role="status">Rechenmodus wird ermittelt …</p>
+  <section class="card" aria-labelledby="wave-heading">
+    <div class="wave-title"><h1 id="wave-heading">Der Speicher schwingt weiter.</h1><div class="legend"><span>Auslenkung</span><span>Quadratur</span></div></div>
+    <p class="muted">Hier schwingen die verlustfrei kodierten Speichertexte. Für die Wortgenerierung werden ihre Übergänge mit Prompt und Kontext gekoppelt; die Ausleseschritte stehen bei der Antwort.</p>
+    <div class="plot"><canvas id="wave" aria-label="Fortlaufende Auslenkung und Quadratur des Wellenspeichers" role="img"></canvas></div>
+    <div class="plot-caption"><span>Ortskoordinate der mathematischen Welle →</span><span id="scale">Skala wird berechnet</span></div>
+    <div class="metrics">
+      <div class="metric"><div class="label">Gespeicherte Texte</div><div class="value" id="documents">—</div></div>
+      <div class="metric"><div class="label">Aktive Moden</div><div class="value" id="modes">—</div></div>
+      <div class="metric"><div class="label">Quadraturnorm</div><div class="value" id="energy">—</div></div>
+      <div class="metric"><div class="label">Simulationszeit</div><div class="value" id="time">—</div></div>
+    </div>
+  </section>
+  <div class="columns">
+    <section class="card" aria-labelledby="ask-heading">
+      <h2 id="ask-heading">Text aus der Welleninteraktion</h2>
+      <p class="muted">Erzeugt die Antwort Wort für Wort aus Informationstexten, deiner Nachricht und dem Gesprächskontext. Die sprachliche und sachliche Qualität ist experimentell.</p>
+      <form id="ask-form">
+        <label for="prompt">Deine Nachricht</label>
+        <textarea id="prompt" required maxlength="20000" placeholder="Zum Beispiel: Was ist eine Frequenz?"></textarea>
+        <div class="actions"><button type="submit" id="ask-button">Antwort berechnen</button><button type="button" id="new-conversation" class="secondary">Neues Gespräch</button><span class="hint">Lokal · ohne Gradientenoptimierung</span></div>
+      </form>
+      <div id="ask-feedback" class="feedback" role="status"></div>
+      <div id="conversation" role="log" aria-label="Gesprächsverlauf" aria-live="polite"><div id="answer"></div></div>
+      <div class="hint">Der Kontext bleibt in diesem Tab beim Neuladen erhalten. „Neues Gespräch“ beginnt mit leerem Kontext.</div>
+      <details id="context-details"><summary>Schwingung dieses Gesprächs</summary>
+        <div class="plot context-plot"><canvas id="context-wave" aria-label="Schwingung des gespeicherten Gesprächskontexts" role="img"></canvas></div>
+        <div id="context-summary" class="hint">Die Kontextwelle entsteht mit der ersten generierten Antwort.</div>
+      </details>
+      <details><summary>Details zur letzten Antwort</summary>
+        <div id="answer-method" class="notice"></div>
+        <details id="token-details" hidden><summary>Berechnung der einzelnen Tokens</summary><pre id="token-trace" class="token-trace"></pre></details>
+        <div class="notice">Informationstexte und explizite Grammatikregeln bilden die Grundlage der Wortgenerierung. Der Generator benötigt keine Frage-Antwort-Trainingspaare. Fehlendes Wissen begrenzt die möglichen Aussagen.</div>
+      </details>
+    </section>
+    <section class="card" aria-labelledby="ingest-heading">
+      <h2 id="ingest-heading">Den Speicher erweitern</h2>
+      <p class="muted">Ergänze beschreibende Informationstexte. Sie erweitern das zentrale Datenfeld für neue Antworten ohne Neustart.</p>
+      <form id="ingest-form">
+        <label for="source">Quelle / Bezeichnung</label>
+        <input id="source" maxlength="500" value="Eigene Information" required>
+        <label for="document">Informationstext</label>
+        <textarea id="document" rows="7" maxlength="250000" required placeholder="Die Frequenz beschreibt die Anzahl der Wiederholungen eines periodischen Vorgangs pro Zeiteinheit. Ihre SI-Einheit ist das Hertz."></textarea>
+        <div class="actions"><button type="submit" id="ingest-button" class="secondary">Als Welle speichern</button></div>
+      </form>
+      <div id="ingest-feedback" class="feedback" role="status"></div>
+      <div class="notice">Schreibe einen vollständigen Faktenabsatz, möglichst mit dem Begriff am Anfang. Eine klare Beschreibung von Eigenschaften und Zusammenhängen unterstützt die Wortgenerierung. Ein identischer Eintrag mit derselben Quelle wird nur einmal gespeichert.</div>
+    </section>
+  </div>
+  <section class="card storage" aria-labelledby="storage-heading">
+    <h2 id="storage-heading">Zentraler Textspeicher</h2>
+    <p class="muted">Ablage: <code id="memory-path">wird geladen …</code><br>
+      <span id="memory-summary">Speicherstatus wird geladen …</span>
+    </p>
+    <div class="notice">Gespeicherte Texte sind als Wellen abrufbar. Prompts und Antworten liegen im selben Speicher als Verlauf; sie werden nicht automatisch als neue Fakten übernommen.</div>
+    <details id="memory-details"><summary>Gespeicherte Texte anzeigen</summary>
+      <div class="actions" aria-label="Seiten im Textspeicher">
+        <button type="button" id="memory-previous" class="secondary" disabled>Zurück</button>
+        <span id="memory-page-summary" class="hint" role="status" aria-live="polite">Bis zu 50 Texte pro Seite</span>
+        <button type="button" id="memory-next" class="secondary" disabled>Weiter</button>
+      </div>
+      <div class="table-scroll"><table><thead><tr><th>Quelle / ID</th><th>Informationstext</th></tr></thead><tbody id="memory-rows"></tbody></table></div>
+    </details>
+  </section>
+  <footer>Die Anzeige wird vom laufenden Python-Prozess berechnet. Die Simulationszeit folgt einer monotonen Uhr; es wird kein Euler-Schritt integriert. Alle Angaben verwenden normierte numerische Einheiten.</footer>
+</main>
+<script>
+  'use strict';
+  const byId = id => document.getElementById(id);
+  const canvas = byId('wave');
+  const ctx = canvas.getContext('2d');
+  let currentState = null;
+  let knownRevision = null;
+  let loadedDocumentRevision = null;
+  let documentOffset = 0;
+  let documentNextOffset = null;
+  let documentPreviousOffset = null;
+  let documentRequest = 0;
+  const documentPageSize = 50;
+  const sessionKey = 'freqai.conversation.id';
+  function createSessionId() {
+    if (crypto.randomUUID) return crypto.randomUUID();
+    return Array.from(crypto.getRandomValues(new Uint8Array(24)), value => value.toString(16).padStart(2, '0')).join('');
+  }
+  let sessionId;
+  try { sessionId = sessionStorage.getItem(sessionKey); } catch (_) { /* This tab can still keep its context in RAM. */ }
+  if (!sessionId || !/^[A-Za-z0-9_-]{1,100}$/.test(sessionId)) sessionId = createSessionId();
+  function saveSessionId() {
+    try { sessionStorage.setItem(sessionKey, sessionId); } catch (_) { /* Browser storage can be disabled. */ }
+  }
+  saveSessionId();
+  const number = value => Number(value).toLocaleString('de-DE', {maximumFractionDigits: 3});
+
+  function draw() {
+    if (!currentState) return;
+    const rect = canvas.getBoundingClientRect();
+    const ratio = window.devicePixelRatio || 1;
+    const width = Math.max(1, Math.round(rect.width * ratio));
+    const height = Math.max(1, Math.round(rect.height * ratio));
+    if (canvas.width !== width || canvas.height !== height) { canvas.width = width; canvas.height = height; }
+    ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    const w = rect.width, h = rect.height;
+    ctx.clearRect(0, 0, w, h);
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = '#203044';
+    ctx.beginPath();
+    for (let i = 1; i < 8; i++) { const x = i * w / 8; ctx.moveTo(x, 0); ctx.lineTo(x, h); }
+    for (let i = 1; i < 4; i++) { const y = i * h / 4; ctx.moveTo(0, y); ctx.lineTo(w, y); }
+    ctx.stroke();
+    const displacement = currentState.displacement || [];
+    const quadrature = currentState.quadrature || [];
+    const amplitude = Math.max(1e-12, ...displacement.map(Math.abs), ...quadrature.map(Math.abs));
+    // Show both components at the same scale; each received frame is an actual
+    // backend calculation. No synthetic animation is inserted between samples.
+    function trace(values, color) {
+      if (values.length < 2) return;
+      ctx.beginPath(); ctx.strokeStyle = color; ctx.lineWidth = 1.8;
+      values.forEach((value, index) => {
+        const x = 10 + index * (w - 20) / (values.length - 1);
+        const y = h / 2 - value / amplitude * h * .41;
+        if (index === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+      });
+      ctx.stroke();
+    }
+    trace(quadrature, '#c59dff');
+    trace(displacement, '#69e2ed');
+    byId('scale').textContent = 'Gemeinsame Skala ±' + number(amplitude);
+    drawContext();
+  }
+
+  function drawContext() {
+    const contextCanvas = byId('context-wave');
+    const drawing = contextCanvas.getContext('2d');
+    const rect = contextCanvas.getBoundingClientRect();
+    const ratio = window.devicePixelRatio || 1;
+    contextCanvas.width = Math.max(1, Math.round(rect.width * ratio));
+    contextCanvas.height = Math.max(1, Math.round(rect.height * ratio));
+    drawing.setTransform(ratio, 0, 0, ratio, 0, 0);
+    drawing.clearRect(0, 0, rect.width, rect.height);
+    const wave = currentState && currentState.context_wave;
+    if (!wave) {
+      byId('context-summary').textContent = 'Die Kontextwelle entsteht mit der ersten generierten Antwort.';
+      return;
+    }
+    const amplitude = Math.max(1e-12, ...(wave.displacement || []).map(Math.abs), ...(wave.quadrature || []).map(Math.abs));
+    for (const [values, color] of [[wave.quadrature || [], '#c59dff'], [wave.displacement || [], '#69e2ed']]) {
+      if (values.length < 2) continue;
+      drawing.beginPath(); drawing.strokeStyle = color; drawing.lineWidth = 1.6;
+      values.forEach((value, index) => {
+        const x = 8 + index * (rect.width - 16) / (values.length - 1);
+        const y = rect.height / 2 - value / amplitude * rect.height * .41;
+        if (index === 0) drawing.moveTo(x, y); else drawing.lineTo(x, y);
+      });
+      drawing.stroke();
+    }
+    byId('context-summary').textContent = number(wave.mode_count) + ' Kontextmoden · Norm ' + number(wave.energy) +
+      ' · ' + number(wave.time_s) + ' s · nur dieses Gespräch';
+  }
+  byId('context-details').addEventListener('toggle', drawContext);
+
+  async function request(path, body) {
+    const options = body === undefined ? {cache: 'no-store'} : {
+      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
+    };
+    const response = await fetch(path, options);
+    const result = await response.json();
+    if (!response.ok) {
+      const error = new Error(result.error || 'HTTP ' + response.status);
+      error.status = response.status;
+      throw error;
+    }
+    return result;
+  }
+
+  async function poll() {
+    try {
+      const requestedSession = sessionId;
+      const nextState = await request('/api/state?session_id=' + encodeURIComponent(requestedSession));
+      if (requestedSession !== sessionId) return;
+      currentState = nextState;
+      if (currentState.error || !currentState.running) throw new Error(currentState.error || 'Berechnung ist angehalten.');
+      byId('connection').textContent = '● Berechnung läuft · ' + currentState.target_hz + ' Hz Ziel';
+      byId('connection').classList.remove('offline');
+      const compute = currentState.compute || {};
+      const parallel = currentState.parallel || {};
+      const devices = compute.device_completed_operations || {};
+      const activeDevices = Object.keys(devices).filter(id => devices[id] > 0);
+      const waveBackend = (compute.last_backend_by_operation || {}).wave_snapshot || compute.last_backend;
+      const hardware = waveBackend === 'cuda' ?
+        'CUDA · ' + activeDevices.length + (activeDevices.length === 1 ? ' GPU' : ' GPUs') : 'CPU';
+      byId('compute-status').textContent = hardware + ' · CPU bis zu ' + number(parallel.workers || 1) +
+        ' Prozesse · letztes Wellenbild ' + number(currentState.frame_ms || 0) + ' ms' +
+        (compute.fallback_reason ? ' · CUDA nicht verfügbar, CPU aktiv' : '');
+      byId('compute-status').title = (compute.cuda_devices || []).map(device => device.id + ': ' + device.name).join(', ') +
+        (compute.fallback_reason ? '\n' + compute.fallback_reason : '');
+      const compiler = currentState.compiler || {};
+      if (currentState.compiler_ready && compiler.state === 'ready') {
+        const reuse = compiler.reuse || {};
+        const cacheText = compiler.cache === 'hit' ? 'Compiler aus Cache geladen' :
+          reuse.groups_reused ? number(reuse.groups_reused) + ' Compilergruppen wiederverwendet' : 'Compiler bereit';
+        byId('compute-status').textContent += ' · ' + cacheText;
+      }
+      byId('documents').textContent = number(currentState.document_count);
+      byId('modes').textContent = number(currentState.modal_count + (currentState.key_mode_count || 0));
+      byId('modes').title = number(currentState.modal_count) + ' Textmoden + ' + number(currentState.key_mode_count || 0) + ' Schlüsselmoden';
+      byId('energy').textContent = number(currentState.energy);
+      byId('time').textContent = number(currentState.time_s) + ' s';
+      if (knownRevision !== currentState.live_revision) await refreshMemory();
+      draw();
+    } catch (error) {
+      byId('connection').textContent = 'Berechnung nicht erreichbar';
+      byId('connection').classList.add('offline');
+      byId('connection').title = error.message;
+    } finally { setTimeout(poll, 100); }
+  }
+
+  function feedback(id, message, error = false) {
+    byId(id).textContent = message;
+    byId(id).classList.toggle('error', error);
+  }
+
+  async function refreshDocuments(offset = documentOffset, revision = loadedDocumentRevision) {
+    const requestId = ++documentRequest;
+    byId('memory-previous').disabled = true;
+    byId('memory-next').disabled = true;
+    let result;
+    try {
+      result = await request('/api/documents?offset=' + offset + '&limit=' + documentPageSize +
+        (revision === null ? '' : '&revision=' + revision));
+    } catch (error) {
+      if (requestId !== documentRequest) return;
+      if (error.status === 409) return refreshDocuments(0, null);
+      byId('memory-previous').disabled = documentPreviousOffset === null;
+      byId('memory-next').disabled = documentNextOffset === null;
+      throw error;
+    }
+    if (requestId !== documentRequest) return;
+    if (loadedDocumentRevision !== null && result.live_revision < loadedDocumentRevision) return;
+    const rows = document.createDocumentFragment();
+    for (const document of result.documents) {
+      const row = window.document.createElement('tr');
+      const source = window.document.createElement('td');
+      const text = window.document.createElement('td');
+      source.textContent = (document.source || 'Ohne Quelle') + '\n' + document.id;
+      text.textContent = document.text;
+      row.append(source, text); rows.append(row);
+    }
+    byId('memory-rows').replaceChildren(rows);
+    loadedDocumentRevision = result.live_revision;
+    documentOffset = result.offset;
+    documentNextOffset = result.next_offset;
+    documentPreviousOffset = result.previous_offset;
+    byId('memory-page-summary').textContent = result.documents.length ?
+      number(result.offset + 1) + '–' + number(result.offset + result.documents.length) + ' von ' + number(result.total) +
+        ' Texten · Seite ' + number(Math.floor(result.offset / documentPageSize) + 1) : 'Keine Texte gespeichert';
+    byId('memory-previous').disabled = documentPreviousOffset === null;
+    byId('memory-next').disabled = documentNextOffset === null;
+  }
+
+  async function refreshMemory() {
+    const result = await request('/api/memory');
+    if (knownRevision !== null && result.live_revision < knownRevision) return;
+    byId('memory-path').textContent = result.path || 'Nur Arbeitsspeicher';
+    byId('memory-summary').textContent = number(result.document_count) + ' Texte · aktive Revision ' +
+      result.live_revision + (result.history_count === undefined ? '' : ' · ' + number(result.history_count) + ' Abfragen im Verlauf') +
+      (result.archive_document_count ? ' · ' + number(result.archive_document_count) + ' frühere Texte archiviert' : '');
+    if (knownRevision !== result.live_revision) {
+      documentOffset = 0;
+      loadedDocumentRevision = null;
+      documentNextOffset = null;
+      documentPreviousOffset = null;
+      documentRequest++;
+      byId('memory-rows').replaceChildren();
+      byId('memory-previous').disabled = true;
+      byId('memory-next').disabled = true;
+      byId('memory-page-summary').textContent = 'Bis zu 50 Texte pro Seite';
+    }
+    knownRevision = result.live_revision;
+    if (byId('memory-details').open && loadedDocumentRevision !== knownRevision) await refreshDocuments();
+  }
+
+  byId('memory-details').addEventListener('toggle', async () => {
+    if (!byId('memory-details').open) return;
+    try { await refreshDocuments(); }
+    catch (error) { feedback('ingest-feedback', error.message, true); }
+  });
+  for (const [button, next] of [['memory-previous', false], ['memory-next', true]]) {
+    byId(button).addEventListener('click', async () => {
+      const offset = next ? documentNextOffset : documentPreviousOffset;
+      if (offset === null) return;
+      try { await refreshDocuments(offset); }
+      catch (error) { feedback('ingest-feedback', error.message, true); }
+    });
+  }
+
+  function appendTurn(prompt, answer) {
+    const previous = byId('answer');
+    if (previous && !previous.textContent) previous.remove();
+    else if (previous) previous.removeAttribute('id');
+    for (const [role, speaker, content] of [
+      ['user', 'Du', prompt], ['assistant', 'FreqAI', answer || 'Keine Textausgabe berechnet.']
+    ]) {
+      const bubble = document.createElement('div'); bubble.className = 'chat-message ' + role;
+      const label = document.createElement('span'); label.className = 'chat-speaker'; label.textContent = speaker;
+      const message = document.createElement('span'); message.textContent = content;
+      bubble.append(label, message);
+      if (role === 'assistant') bubble.id = 'answer';
+      byId('conversation').append(bubble);
+    }
+    byId('conversation').scrollTop = byId('conversation').scrollHeight;
+  }
+
+  function clearConversation() {
+    const placeholder = document.createElement('div'); placeholder.id = 'answer';
+    byId('conversation').replaceChildren(placeholder);
+    byId('answer-method').textContent = '';
+    byId('token-trace').textContent = '';
+    byId('token-details').hidden = true;
+  }
+
+  async function restoreConversation() {
+    const requestedSession = sessionId;
+    byId('ask-button').disabled = true;
+    byId('new-conversation').disabled = true;
+    try {
+      const result = await request('/api/conversation?session_id=' + encodeURIComponent(requestedSession));
+      if (sessionId !== requestedSession) return;
+      clearConversation();
+      for (const turn of result.turns) appendTurn(turn.prompt, turn.answer);
+      feedback('ask-feedback', result.truncated ? 'Die letzten Gesprächsbeiträge werden angezeigt. Der Kontext ist gespeichert.' :
+        (result.turns.length ? 'Gespräch und Kontext wiederhergestellt.' : ''));
+    } catch (error) { feedback('ask-feedback', 'Verlauf konnte nicht geladen werden: ' + error.message, true); }
+    finally { byId('ask-button').disabled = false; byId('new-conversation').disabled = false; }
+  }
+
+  byId('new-conversation').addEventListener('click', () => {
+    sessionId = createSessionId(); saveSessionId(); clearConversation();
+    if (currentState) delete currentState.context_wave;
+    drawContext();
+    byId('prompt').value = '';
+    feedback('ask-feedback', 'Neues Gespräch begonnen. Der Kontext ist leer.');
+    byId('prompt').focus();
+  });
+
+  byId('ask-form').addEventListener('submit', async event => {
+    event.preventDefault();
+    const requestedSession = sessionId;
+    byId('ask-button').disabled = true;
+    byId('new-conversation').disabled = true;
+    feedback('ask-feedback', 'Informationen, Nachricht und Kontext werden gekoppelt; Wörter werden nacheinander berechnet …');
+    const started = performance.now();
+    const progress = setInterval(() => {
+      const compilerState = currentState && (currentState.compiler || {}).state;
+      const phase = compilerState === 'loading' ? 'Compilercache wird geladen' :
+        compilerState === 'saving' ? 'Compilercache wird gespeichert' :
+        currentState && currentState.compiler_ready === false ?
+        'Informationsbestand wird vorbereitet (einmal nach Start oder Änderungen)' :
+        'Antwort wird Wort für Wort berechnet';
+      feedback('ask-feedback', phase + ' … ' + number((performance.now() - started) / 1000) + ' s');
+    }, 1000);
+    try {
+      const prompt = byId('prompt').value;
+      const result = await request('/api/ask', {prompt: prompt, session_id: requestedSession});
+      if (sessionId !== requestedSession) return;
+      appendTurn(prompt, result.answer);
+      if (byId('prompt').value === prompt) byId('prompt').value = '';
+      const decoder = result.decoder || {};
+      const steps = decoder.steps || [];
+      byId('answer-method').textContent = 'Wortweise Felddekodierung · ' + steps.length + ' Tokenschritte · ' +
+        number(decoder.vocabulary_size || 0) + ' Vokabelsymbole. ' + (decoder.quality_note || 'Die sprachliche Qualität ist experimentell.');
+      byId('token-details').hidden = false;
+      byId('token-trace').textContent = JSON.stringify(decoder, null, 2);
+      feedback('ask-feedback', result.abstained ? 'Das Feld lieferte keine ausgebbare Tokenfolge.' :
+        'Antwort Wort für Wort aus dem Informationsfeld berechnet.');
+      await refreshMemory();
+    } catch (error) { feedback('ask-feedback', error.message, true); }
+    finally { clearInterval(progress); byId('ask-button').disabled = false; byId('new-conversation').disabled = false; }
+  });
+
+  byId('ingest-form').addEventListener('submit', async event => {
+    event.preventDefault();
+    byId('ingest-button').disabled = true;
+    feedback('ingest-feedback', 'Text wird kodiert …');
+    try {
+      const result = await request('/api/documents', {text: byId('document').value, source: byId('source').value});
+      feedback('ingest-feedback', (result.added.length ? 'Gespeichert und sofort aktiv. ' : 'Bereits gespeichert und aktiv. ') +
+        (result.added.length ? result.added.length + (result.added.length === 1 ? ' neuer Eintrag' : ' neue Einträge') : 'Kein doppelter Eintrag') +
+        ' · Revision ' + result.live_revision + '.');
+      byId('document').value = '';
+      byId('documents').textContent = number(result.document_count);
+      await refreshMemory();
+    } catch (error) { feedback('ingest-feedback', error.message, true); }
+    finally { byId('ingest-button').disabled = false; }
+  });
+  window.addEventListener('resize', draw);
+  restoreConversation();
+  poll();
+</script>
+</body>
+</html>

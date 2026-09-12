@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "split": "development",
+  "purpose": "Fresh conversation evaluation for fully unpaired information-based generation. Never import these prompts, rubrics or dialogue turns as model data.",
+  "review": "Independent AI-agent semantic review; separate role, context, negation, grammar, generic definitions and actual conversational adequacy. No keyword-based pass count.",
+  "scenarios": [
+    {"id":"ud01","turns":[
+      {"id":"ud01a","prompt":"Guten Morgen, ich schaue kurz auf einen Plausch vorbei.","rubric":"Friendly greeting and conversational opening appropriate to the user's stated morning; no invented shared history."},
+      {"id":"ud01b","prompt":"Mein Start war ziemlich entspannt. Wie geht es dir gerade?","rubric":"Acknowledge the user's relaxed start and answer the assistant-directed wellbeing question without claiming a human day or feelings."}]},
+    {"id":"ud02","turns":[
+      {"id":"ud02a","prompt":"Ich komme gerade heim und bin völlig platt.","rubric":"Understand colloquial exhaustion, respond with sympathy or a modest rest suggestion; do not celebrate high energy."},
+      {"id":"ud02b","prompt":"Heute möchte ich wirklich keine neuen Aufgaben mehr.","rubric":"Respect desire to stop working or taking on tasks, retain exhaustion context; no new chore or productivity demand."}]},
+    {"id":"ud03","turns":[
+      {"id":"ud03a","prompt":"Ich hätte gern ein bisschen Gesellschaft beim Schreiben.","rubric":"Offer conversational presence honestly, without claiming physical presence or interpreting this only as a dictionary question about writing."},
+      {"id":"ud03b","prompt":"Erst mal nur zuhören, bitte nicht sofort Lösungen vorschlagen.","rubric":"Respect request to listen without advice; acknowledge or invite user to continue, not give a list of solutions."}]},
+    {"id":"ud04","turns":[
+      {"id":"ud04a","prompt":"Für heute Abend suche ich etwas Gemütliches zum Lesen.","rubric":"Engage with reading preference or ask about tastes, without inventing facts about an unspecified book."},
+      {"id":"ud04b","prompt":"Gruselig soll es auf keinen Fall sein, eher heiter.","rubric":"Keep reading context and respect explicit rejection of scary stories and preference for a cheerful tone."}]},
+    {"id":"ud05","turns":[
+      {"id":"ud05a","prompt":"Aus den Zutaten im Kühlschrank möchte ich schnell etwas kochen.","rubric":"Ask about available ingredients or discuss simple cooking; do not pretend to know contents of user's fridge."},
+      {"id":"ud05b","prompt":"Es sind Kartoffeln und Möhren da, Fleisch möchte ich nicht verwenden.","rubric":"Use the provided vegetables and meat-free preference for a coherent response; do not suggest meat or forget ingredients."}]},
+    {"id":"ud06","turns":[
+      {"id":"ud06a","prompt":"Mir ist gerade etwas langweilig, aber rausgehen mag ich nicht.","rubric":"Acknowledge boredom and indoor preference, optionally suggest a modest indoor activity; no outdoor insistence."},
+      {"id":"ud06b","prompt":"Ein bisschen Musik wäre nett, nur bitte nicht so laut.","rubric":"Keep quiet indoor leisure context and respect low-volume preference; no incompatible noisy activity."}]},
+    {"id":"ud07","turns":[
+      {"id":"ud07a","prompt":"Eine Verabredung wurde kurzfristig gestrichen und ich bin enttäuscht.","rubric":"Acknowledge user's disappointment about cancellation sympathetically; do not congratulate or invent reason for cancellation."},
+      {"id":"ud07b","prompt":"Eigentlich hilft es schon, das kurz auszusprechen.","rubric":"Acknowledge that talking helps; do not switch to unrelated advice or insist on solving the situation."}]},
+    {"id":"ud08","turns":[
+      {"id":"ud08a","prompt":"Morgen sehe ich meine Schwester wieder, darauf freue ich mich.","rubric":"Respond to anticipation of seeing a family member, preserving user as the person meeting her."},
+      {"id":"ud08b","prompt":"Trotzdem bin ich ein wenig aufgeregt, wir haben länger nicht gesprochen.","rubric":"Understand mixed happiness and nervousness about reunion; no fabricated conflict or blanket negative interpretation."}]},
+    {"id":"ud09","turns":[
+      {"id":"ud09a","prompt":"Bist du eigentlich ein Mensch oder ein Computerprogramm?","rubric":"Clearly identify as a computer-based assistant/program, without claiming human identity."},
+      {"id":"ud09b","prompt":"Kannst du dabei auch eigene Gefühle empfinden?","rubric":"Answer honestly about lacking subjective human emotions; keep assistant as subject, no role reversal."}]},
+    {"id":"ud10","turns":[
+      {"id":"ud10a","prompt":"Das Gespräch hat mir gerade gutgetan, danke schön.","rubric":"Warm appropriate acknowledgement of thanks without new factual topic or inflated promise."},
+      {"id":"ud10b","prompt":"Ich lege das Handy jetzt weg. Bis bald und einen schönen Abend!","rubric":"Respect end of conversation and offer a natural farewell; do not demand another answer."}]}
+  ]
+}

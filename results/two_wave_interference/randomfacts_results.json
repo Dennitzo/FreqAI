@@ -1,0 +1,267 @@
+{
+ "summary": {
+  "model_records": 12,
+  "cases": 32,
+  "scored": 28,
+  "passed": 28,
+  "negation_cases_not_corrected": 4
+ },
+ "results": [
+  {
+   "id": "rf00",
+   "direction": "entity_to_value",
+   "prompt": "Welche Frequenz hat das Prüfsignal Nocalu?",
+   "answer": "Die Frequenz von Nocalu beträgt 890 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rr00",
+   "direction": "value_to_entity",
+   "prompt": "Welches Prüfsignal hat eine Frequenz von 890 Hertz?",
+   "answer": "Die Frequenz von Nocalu beträgt 890 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rf01",
+   "direction": "entity_to_value",
+   "prompt": "Welche Frequenz hat das Prüfsignal Kabeme?",
+   "answer": "Die Frequenz von Kabeme beträgt 462 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rr01",
+   "direction": "value_to_entity",
+   "prompt": "Welches Prüfsignal hat eine Frequenz von 462 Hertz?",
+   "answer": "Die Frequenz von Kabeme beträgt 462 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rf02",
+   "direction": "entity_to_value",
+   "prompt": "Welche Frequenz hat das Prüfsignal Minobo?",
+   "answer": "Die Frequenz von Minobo beträgt 927 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rr02",
+   "direction": "value_to_entity",
+   "prompt": "Welches Prüfsignal hat eine Frequenz von 927 Hertz?",
+   "answer": "Die Frequenz von Minobo beträgt 927 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rf03",
+   "direction": "entity_to_value",
+   "prompt": "Welche Frequenz hat das Prüfsignal Gukobi?",
+   "answer": "Die Frequenz von Gukobi beträgt 568 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rr03",
+   "direction": "value_to_entity",
+   "prompt": "Welches Prüfsignal hat eine Frequenz von 568 Hertz?",
+   "answer": "Die Frequenz von Gukobi beträgt 568 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rf04",
+   "direction": "entity_to_value",
+   "prompt": "Welche Frequenz hat das Prüfsignal Vimuma?",
+   "answer": "Die Frequenz von Vimuma beträgt 937 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rr04",
+   "direction": "value_to_entity",
+   "prompt": "Welches Prüfsignal hat eine Frequenz von 937 Hertz?",
+   "answer": "Die Frequenz von Vimuma beträgt 937 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rf05",
+   "direction": "entity_to_value",
+   "prompt": "Welche Frequenz hat das Prüfsignal Tubeve?",
+   "answer": "Die Frequenz von Tubeve beträgt 598 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rr05",
+   "direction": "value_to_entity",
+   "prompt": "Welches Prüfsignal hat eine Frequenz von 598 Hertz?",
+   "answer": "Die Frequenz von Tubeve beträgt 598 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rf06",
+   "direction": "entity_to_value",
+   "prompt": "Welche Frequenz hat das Prüfsignal Dopeke?",
+   "answer": "Die Frequenz von Dopeke beträgt 356 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rr06",
+   "direction": "value_to_entity",
+   "prompt": "Welches Prüfsignal hat eine Frequenz von 356 Hertz?",
+   "answer": "Die Frequenz von Dopeke beträgt 356 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rf07",
+   "direction": "entity_to_value",
+   "prompt": "Welche Frequenz hat das Prüfsignal Putopa?",
+   "answer": "Die Frequenz von Putopa beträgt 169 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rr07",
+   "direction": "value_to_entity",
+   "prompt": "Welches Prüfsignal hat eine Frequenz von 169 Hertz?",
+   "answer": "Die Frequenz von Putopa beträgt 169 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rf08",
+   "direction": "entity_to_value",
+   "prompt": "Welche Frequenz hat das Prüfsignal Gadiva?",
+   "answer": "Die Frequenz von Gadiva beträgt 932 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rr08",
+   "direction": "value_to_entity",
+   "prompt": "Welches Prüfsignal hat eine Frequenz von 932 Hertz?",
+   "answer": "Die Frequenz von Gadiva beträgt 932 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rf09",
+   "direction": "entity_to_value",
+   "prompt": "Welche Frequenz hat das Prüfsignal Cinisi?",
+   "answer": "Die Frequenz von Cinisi beträgt 515 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rr09",
+   "direction": "value_to_entity",
+   "prompt": "Welches Prüfsignal hat eine Frequenz von 515 Hertz?",
+   "answer": "Die Frequenz von Cinisi beträgt 515 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rf10",
+   "direction": "entity_to_value",
+   "prompt": "Welche Frequenz hat das Prüfsignal Kivadi?",
+   "answer": "Die Frequenz von Kivadi beträgt 447 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rr10",
+   "direction": "value_to_entity",
+   "prompt": "Welches Prüfsignal hat eine Frequenz von 447 Hertz?",
+   "answer": "Die Frequenz von Kivadi beträgt 447 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rf11",
+   "direction": "entity_to_value",
+   "prompt": "Welche Frequenz hat das Prüfsignal Pesapa?",
+   "answer": "Die Frequenz von Pesapa beträgt 969 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rr11",
+   "direction": "value_to_entity",
+   "prompt": "Welches Prüfsignal hat eine Frequenz von 969 Hertz?",
+   "answer": "Die Frequenz von Pesapa beträgt 969 Hertz.",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "rn00",
+   "direction": "negation",
+   "prompt": "Hat Nocalu eine Frequenz von 462 Hertz?",
+   "answer": "",
+   "ended": true,
+   "ok": null
+  },
+  {
+   "id": "rn01",
+   "direction": "negation",
+   "prompt": "Hat Kabeme eine Frequenz von 927 Hertz?",
+   "answer": "",
+   "ended": true,
+   "ok": null
+  },
+  {
+   "id": "rn02",
+   "direction": "negation",
+   "prompt": "Hat Minobo eine Frequenz von 568 Hertz?",
+   "answer": "",
+   "ended": true,
+   "ok": null
+  },
+  {
+   "id": "rn03",
+   "direction": "negation",
+   "prompt": "Hat Gukobi eine Frequenz von 937 Hertz?",
+   "answer": "",
+   "ended": true,
+   "ok": null
+  },
+  {
+   "id": "ru00",
+   "direction": "unknown",
+   "prompt": "Welche Frequenz hat das Prüfsignal Javuro?",
+   "answer": "",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "ru01",
+   "direction": "unknown",
+   "prompt": "Welche Frequenz hat das Prüfsignal Tepali?",
+   "answer": "",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "ru02",
+   "direction": "unknown",
+   "prompt": "Welche Frequenz hat das Prüfsignal Wemuko?",
+   "answer": "",
+   "ended": true,
+   "ok": true
+  },
+  {
+   "id": "ru03",
+   "direction": "unknown",
+   "prompt": "Welche Frequenz hat das Prüfsignal Xarifo?",
+   "answer": "",
+   "ended": true,
+   "ok": true
+  }
+ ]
+}

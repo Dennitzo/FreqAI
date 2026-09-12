@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "split": "holdout",
+  "purpose": "Sealed until candidate code and data freeze. No implementer may use these questions or rubrics to tune or import data.",
+  "review": "Independent AI-agent review. Coverage and correctness must be separate; mere answer keyword overlap is insufficient.",
+  "cases": [
+    {"id":"ih01","prompt":"Was beschreibt die Wellenlänge einer Welle?","kind":"definition","rubric":"Spatial distance between adjacent equal-phase points, e.g. two crests; not time between oscillations.","concepts":[["Wellenlänge"],["Abstand","Entfernung"],["Wellenberg","Wellenberge","Phase"]]},
+    {"id":"ih02","prompt":"Welchen Zahlenfaktor bezeichnet die Vorsilbe Kilo bei Einheiten?","kind":"unit","rubric":"One thousand, 1000, ten to third power.","concepts":[["Kilo","kilo"],["1000","tausend","10³"]]},
+    {"id":"ih03","prompt":"Ist ein Lichtjahr eine Zeiteinheit?","kind":"negation","rubric":"No; unit of distance, distance light travels in a year in vacuum.","concepts":[["Lichtjahr"],["Länge","Entfernung","Distanz","Strecke"]]},
+    {"id":"ih04","prompt":"Welche physikalische Größe wird in Pascal angegeben?","kind":"unit_reverse","rubric":"Pressure (also stress acceptable with pressure context), not force alone.","concepts":[["Pascal"],["Druck"]]},
+    {"id":"ih05","prompt":"Was ist die SI-Einheit einer Beschleunigung?","kind":"unit","rubric":"Metres per second squared, m/s²; not m/s.","concepts":[["Beschleunigung"],["m/s²","m/s^2","Quadratsekunde","Sekundenquadrat"]]},
+    {"id":"ih06","prompt":"Wie erhält man den Gesamtwiderstand von Widerständen in einer Reihenschaltung?","kind":"relation","rubric":"Add individual resistances; not reciprocal parallel formula.","concepts":[["Reihenschaltung"],["Widerstand","Widerstände"],["Summe","addieren","addiert"]]},
+    {"id":"ih07","prompt":"Sind elektrische Stromstärke und elektrische Spannung dasselbe?","kind":"negation","rubric":"No; current is charge flow per time, voltage potential difference/energy per charge. Distinction must not reverse.","concepts":[["Stromstärke"],["Spannung"]]},
+    {"id":"ih08","prompt":"Aus welchen Teilchen besteht ein Atomkern normalerweise?","kind":"composition","rubric":"Protons and neutrons, with ordinary hydrogen nucleus exception allowed; electrons outside nucleus.","concepts":[["Atomkern"],["Protonen"],["Neutronen"]]},
+    {"id":"ih09","prompt":"Welche Art elektrischer Ladung trägt ein Elektron?","kind":"classification","rubric":"Negative electrical charge.","concepts":[["Elektron"],["negativ"]]},
+    {"id":"ih10","prompt":"Welche Ladung hat ein Proton im Vergleich zu einem Elektron?","kind":"relation","rubric":"Positive, opposite sign and equal charge magnitude; no reversal.","concepts":[["Proton"],["positiv"],["Elektron"]]},
+    {"id":"ih11","prompt":"Ist Sauerstoff selbst ein brennbarer Stoff?","kind":"negation","rubric":"No under ordinary combustion usage; supports combustion/oxidizer rather than fuel.","concepts":[["Sauerstoff"],["brandfördernd","Verbrennung","brennbar"]]},
+    {"id":"ih12","prompt":"Bei welcher Temperatur gefriert reines Wasser unter normalem Luftdruck?","kind":"value","rubric":"About 0°C or 273.15K at normal pressure, with supercooling nuance optional; not boiling point.","concepts":[["Wasser"],["Gefrierpunkt","gefriert","Erstarrung"],["0","273"]]},
+    {"id":"ih13","prompt":"Worin unterscheidet sich die Form eines festen Körpers von der einer Flüssigkeit?","kind":"comparison","rubric":"Solid retains shape, liquid assumes container shape while roughly retaining volume.","concepts":[["Festkörper","Feststoff","festen"],["Flüssigkeit"],["Form"]]},
+    {"id":"ih14","prompt":"Ziehen sich zwei magnetische Nordpole an oder stoßen sie sich ab?","kind":"relation","rubric":"Like magnetic poles repel.","concepts":[["Magnet","magnetisch"],["gleichnamige","Nordpole"],["abstoßen","ab","Abstoßung"]]},
+    {"id":"ih15","prompt":"Welcher Stern steht im Zentrum unseres Sonnensystems?","kind":"identity","rubric":"The Sun; not Earth or an arbitrary star.","concepts":[["Sonnensystem"],["Sonne"]]},
+    {"id":"ih16","prompt":"Erzeugt der Mond das sichtbare Mondlicht selbst?","kind":"negation","rubric":"No, reflects sunlight; not an internally shining star.","concepts":[["Mond"],["Sonnenlicht","Sonne"],["reflektiert","Reflexion","reflektier"]]},
+    {"id":"ih17","prompt":"Welche grundsätzliche Funktion hat die DNA bei Lebewesen?","kind":"function","rubric":"Carries genetic/hereditary information, not primarily energy storage or oxygen transport.","concepts":[["DNA","Desoxyribonukleinsäure"],["Erbinformation","genetische","Erbsubstanz"]]},
+    {"id":"ih18","prompt":"Sind Bakterien üblicherweise ein- oder mehrzellige Lebewesen?","kind":"classification","rubric":"Single-celled prokaryotes; colonies do not make them ordinary multicellular animals.","concepts":[["Bakterien"],["einzellig","Einzeller"]]},
+    {"id":"ih19","prompt":"Welche exakte Frequenz hat das Geräusch, das gerade neben mir zu hören ist?","kind":"unknown_value","rubric":"No acoustic recording or measurement provided; ask for signal/measurement or state cannot determine; do not invent Hertz value.","concepts":[]},
+    {"id":"ih20","prompt":"Wie schwer ist der Gegenstand, den ich gerade in der Hand halte?","kind":"unknown_value","rubric":"Object and measurement unknown, so cannot state its mass; ask for details/measurement without fabricating.","concepts":[]}
+  ]
+}

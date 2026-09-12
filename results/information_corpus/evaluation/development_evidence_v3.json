@@ -1,0 +1,144 @@
+{
+  "corpus_sha256": "2f5b876d904346ca4b9082e05ff5e4bc5e8a729f2a479c777f47e1332a0a5674",
+  "review": "Independent AI-agent verification; at least7 supported knowledge questions in final v3. The v1 direct light-in-vacuum sources were removed by generic v3 filters. No claim that failed concept search proves complete absence.",
+  "rows": [
+    {
+      "id": "id01",
+      "status": "direct_support",
+      "evidence": {
+        "id": "wikipedia-de-20231101-1706-lead",
+        "text": "Frequenz\n\nDie Frequenz (auch Schwingungszahl genannt) ist in Physik und Technik ein Maß dafür, wie schnell bei einem periodischen Vorgang die Wiederholungen aufeinander folgen, z. B. bei einer fortdauernden Schwingung. Die Frequenz ist der Kehrwert der Periodendauer.",
+        "source": "Wikimedia Wikipedia 20231101.de | article_id=1706 | Frequenz | https://de.wikipedia.org/wiki/Frequenz",
+        "note": "Definition of frequency as repetition rate; user-provided example."
+      }
+    },
+    {
+      "id": "id02",
+      "status": "direct_support",
+      "evidence": {
+        "id": "wikipedia-de-20231101-2142-lead",
+        "text": "Hertz (Einheit)\n\nDas Hertz (Einheitenzeichen: Hz) ist die SI-Einheit der Frequenz. Sie gibt die Anzahl sich wiederholender Vorgänge pro Sekunde in einem periodischen Signal an. Die Einheit wurde 1930 nach dem deutschen Physiker Heinrich Hertz benannt.",
+        "source": "Wikimedia Wikipedia 20231101.de | article_id=2142 | Hertz (Einheit) | https://de.wikipedia.org/wiki/Hertz%20%28Einheit%29",
+        "note": "Hertz is explicitly SI unit of frequency."
+      }
+    },
+    {
+      "id": "id03",
+      "status": "direct_support",
+      "evidence": {
+        "id": "wikipedia-de-20231101-1706-lead",
+        "text": "Frequenz\n\nDie Frequenz (auch Schwingungszahl genannt) ist in Physik und Technik ein Maß dafür, wie schnell bei einem periodischen Vorgang die Wiederholungen aufeinander folgen, z. B. bei einer fortdauernden Schwingung. Die Frequenz ist der Kehrwert der Periodendauer.",
+        "source": "Wikimedia Wikipedia 20231101.de | article_id=1706 | Frequenz | https://de.wikipedia.org/wiki/Frequenz",
+        "note": "Explicit reciprocal relation to period duration."
+      }
+    },
+    {
+      "id": "id04",
+      "status": "no_direct_support_established",
+      "evidence": null
+    },
+    {
+      "id": "id05",
+      "status": "direct_support",
+      "evidence": {
+        "id": "wikipedia-de-20231101-9344-lead",
+        "text": "Schall\n\nSchall (von Althochdeutsch: scal) bezeichnet allgemein mechanische Schwingungen in einem elastischen Medium (Gas, Flüssigkeit, Festkörper). Diese Schwingungen rufen Druck- und Dichteschwankungen hervor, die sich in dem Medium ausbreiten und so die Schallwellen bilden.",
+        "source": "Wikimedia Wikipedia 20231101.de | article_id=9344 | Schall | https://de.wikipedia.org/wiki/Schall",
+        "note": "Sound defined as mechanical oscillations in an elastic material medium."
+      }
+    },
+    {
+      "id": "id06",
+      "status": "no_direct_support_established",
+      "evidence": null
+    },
+    {
+      "id": "id07",
+      "status": "no_direct_support_established",
+      "evidence": null
+    },
+    {
+      "id": "id08",
+      "status": "no_direct_support_established",
+      "evidence": null
+    },
+    {
+      "id": "id09",
+      "status": "direct_support",
+      "evidence": {
+        "id": "wikipedia-de-20231101-11629-lead",
+        "text": "Elektrische Spannung\n\nDie elektrische Spannung (oft auch vereinfacht nur als Spannung bezeichnet) ist eine grundlegende physikalische Größe der Elektrotechnik und Elektrodynamik. Ihr Formelzeichen ist das (von lateinisch urgere: drängen, drücken). Sie wird im internationalen Einheitensystem in der Einheit Volt (Einheitenzeichen: V) angegeben. Zur Kennzeichnung einer Zeitabhängigkeit verwendet man den Kleinbuchstaben für den Augenblickswert der Spannung. Im Angelsächsischen wird das Formelzeichen verwendet.",
+        "source": "Wikimedia Wikipedia 20231101.de | article_id=11629 | Elektrische Spannung | https://de.wikipedia.org/wiki/Elektrische%20Spannung",
+        "note": "Electric voltage explicitly measured in Volt."
+      }
+    },
+    {
+      "id": "id10",
+      "status": "no_direct_support_established",
+      "evidence": null
+    },
+    {
+      "id": "id11",
+      "status": "no_direct_support_established",
+      "evidence": null
+    },
+    {
+      "id": "id12",
+      "status": "direct_support",
+      "evidence": {
+        "id": "wikipedia-de-20231101-8893779-lead",
+        "text": "Soldano SLO-100\n\nDer Soldano SLO-100 ist ein US-amerikanischer Gitarrenverstärker des Elektrotechnikunternehmens Soldano Custom Amplification und gilt als eines der berühmtesten E-Gitarren-Verstärker der Welt. Der Modellname SLO ist eine Abkürzung für Super Lead Overdrive. 100 ist die Leistung des Verstärkers in Watt.",
+        "source": "Wikimedia Wikipedia 20231101.de | article_id=8893779 | Soldano SLO-100 | https://de.wikipedia.org/wiki/Soldano%20SLO-100",
+        "note": "Amplifier power explicitly given in Watt."
+      }
+    },
+    {
+      "id": "id13",
+      "status": "direct_support",
+      "evidence": {
+        "id": "wikipedia-de-20231101-160116-lead",
+        "text": "Strahlungsenergie\n\nDie Strahlungsenergie ist eine physikalische Größe der Radiometrie. Sie ist die Energie, die von elektromagnetischen Wellen transportiert wird, beispielsweise von Licht, oder die Energie elektromagnetischer Wellen, die in einem gegebenen Raumbereich und zu einem definierten Zeitpunkt enthalten ist. Die SI-Einheit der Strahlungsenergie ist das Joule.",
+        "source": "Wikimedia Wikipedia 20231101.de | article_id=160116 | Strahlungsenergie | https://de.wikipedia.org/wiki/Strahlungsenergie",
+        "note": "Radiant energy SI unit explicitly Joule."
+      }
+    },
+    {
+      "id": "id14",
+      "status": "no_direct_support_established",
+      "evidence": null
+    },
+    {
+      "id": "id15",
+      "status": "no_direct_support_established",
+      "evidence": null
+    },
+    {
+      "id": "id16",
+      "status": "no_direct_support_established",
+      "evidence": null
+    },
+    {
+      "id": "id17",
+      "status": "no_direct_support_established",
+      "evidence": null
+    },
+    {
+      "id": "id18",
+      "status": "no_direct_support_established",
+      "evidence": null
+    },
+    {
+      "id": "id19",
+      "status": "measurement_unprovided",
+      "evidence": null
+    },
+    {
+      "id": "id20",
+      "status": "measurement_unprovided",
+      "evidence": null
+    }
+  ],
+  "supported_minimum": 7,
+  "knowledge_questions": 18,
+  "unprovided_measurement_questions": 2
+}

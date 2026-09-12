@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-09-06T12:19:26.867380+00:00",
+  "manifest": {
+    "code": {
+      "freqai\\__init__.py": "0e634154d3a7ed97b743819529122dcfe1d59ce6dca186c208d93ef872ee46e2",
+      "freqai\\__main__.py": "19f07de3d1765a6803d4332ab1e67346381236f7769f47640e73849922394790",
+      "freqai\\cli.py": "ad9d3f7b2bba6494567d406f6048cac4222aebd64862b17934a2063525fee2e1",
+      "freqai\\codec.py": "1741858964d007a8baa1173cb559ac896d07bb4d8eb7d7be840c12c1a5acdc03",
+      "freqai\\features.py": "c48eb11bff823f8329bdbf1509426f1928e19c213793145e30c1ef4abe234535",
+      "freqai\\generation_runtime.py": "77dde8881cda39a91826ff20544cec43b8bb349a5445dde813b9493eab3574a7",
+      "freqai\\information.py": "7f2907816c76a0bdd21a4849a5ff2fee5b53723882ec51b7617c4081dc42c948",
+      "freqai\\information_runtime.py": "ddf1d291bb3c7ede4c0866bd8a353a60ca58f30aa48fbe24b6f6f3b88843b296",
+      "freqai\\memory.py": "9510def5fa5e511d232fc7ed58289b06f51bcc4db3dab9ca63d76ddea526050a",
+      "freqai\\reasoning.py": "4819d011b22b1e8d4049172094e124abb43114e84ba059cff946bea1f0835a3a",
+      "freqai\\server.py": "74a022294287f914dafc802f92be94e20db3a5759596a3000fd519df254a85b0",
+      "freqai\\spectral_ops.py": "a6e8bd4bf1622761a436cead2d2028acac6cb28d09c15e439040c3e182becad0",
+      "freqai\\spectral_storage.py": "8c0dc33a1c7f91af889a5bcc06eb549837527e46989f96ca724e38c7a5bfaf0c",
+      "freqai\\store.py": "59ddfa2bbe3a1a3a9a0d7befe7692b4cfbe10db19e1016156487ed78ae96f4f8",
+      "freqai\\synthesis.py": "6183f5403543c4f686a959f9c7d3a4afb636e7df7b03038ab6ca1e8c0a99caad",
+      "freqai\\unpaired.py": "7b0a4f854e25fe931a66bf2eb287bbb844ba94615288ac84e1cefaf082dd147f",
+      "freqai\\unpaired_runtime.py": "74e9a43a3e272cd1cc523b6d44aa0ddb701f41abc12d302d60fbe58cc031474d",
+      "memory\\language\\generative_categories.json": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673"
+    },
+    "code_root": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\results\\unpaired_system\\evaluation\\trial_v2_code",
+    "corpora": [
+      {
+        "path": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\results\\unpaired_system\\evaluation\\corpora\\wikipedia_v3.jsonl",
+        "sha256": "2f5b876d904346ca4b9082e05ff5e4bc5e8a729f2a479c777f47e1332a0a5674"
+      },
+      {
+        "path": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\results\\unpaired_system\\evaluation\\corpora\\conversation_facts_v1.jsonl",
+        "sha256": "688706468d39cc203f83cd8c2f0e4b9b8f7b65261a4469d6bcfcff3c274cea5e"
+      },
+      {
+        "path": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\results\\unpaired_system\\evaluation\\corpora\\conversation_lexicon_v1.jsonl",
+        "sha256": "092dbbb0bf668bc6e5c404f1bfcc2e03b3f22c75ae2d9cff7c2b421606762f2e"
+      }
+    ],
+    "baseline_corpus_sha256": "a56fca5757a3967ba5ec31f015d7ce8fc60045c11c9654b0420e9010a19a1a8c",
+    "protocol_sha256": "e4eaa109d8ad9917a9e713d415ce3f9954f3cc808ead281e28bb4bd56946e1b3",
+    "runner_sha256": "3f6ec0bb5b33abeb389130e52dfde2791bac5ea1d38ddba9b8f3fa06ad0d0742",
+    "text_index_helper_sha256": "ff2d9024b0dff6ef1c22469f9c9e44141cdc3030b302e3ee34dc2850d8c88adf",
+    "runtime_helper_sha256": "92be94875db620053389fd06b155826dc473135b23d5cf0d0ad0b968589689a5",
+    "document_count": 20093,
+    "data_audit": {
+      "historical_baseline": false,
+      "documents": 20093,
+      "paired_records": 0,
+      "historical_paired_ids_carried_over": 0,
+      "old_authored_response_prior_records": 0,
+      "exact_text_overlap_with_old_pair_answers": [],
+      "overlap_note": "Independent natural prose may share facts with former QA sources; provenance, IDs and input pairing are audited separately."
+    },
+    "max_tokens": 40,
+    "knowledge_max_tokens": 64,
+    "known_knowledge_regression": false,
+    "seed": 17,
+    "time_s": 13.125
+  },
+  "holdout_outputs_seen": false
+}

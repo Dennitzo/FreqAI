@@ -1,0 +1,5 @@
+{
+  "conversation_documents": 12000,
+  "information_documents": 20000,
+  "conversation_equals_baseline_every_record_in_same_order": true
+}

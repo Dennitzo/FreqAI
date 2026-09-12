@@ -1,0 +1,939 @@
+{
+  "schema_version": 2,
+  "created_utc": "2026-09-06T08:01:22.109Z",
+  "description": "Round2 independent new German scenarios, created before V2 tuning. Previous134cases are reused only as development. These80turns (40newdev,40frozenholdout) are separate from all prior evaluation and unchanged120pair corpus. The new holdout must not be inspected by implementers before V2freeze.",
+  "oracle_version": 2,
+  "documents_source": "memory/fixtures/extension_120.jsonl",
+  "scenarios": [
+    {
+      "id": "v2-dev-reciprocal",
+      "split": "development",
+      "turns": [
+        {
+          "id": "v2-dev-reciprocal-1",
+          "prompt": "Hallo! Ich bin zufrieden, und wie sieht es bei dir aus?",
+          "expected": {
+            "concepts": [
+              "greeting",
+              "positive",
+              "assistant_status"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-reciprocal-2",
+          "prompt": "Bei mir läuft es gut. Und bei dir so?",
+          "expected": {
+            "concepts": [
+              "positive",
+              "assistant_status"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-reciprocal-3",
+          "prompt": "Ich bin erschöpft. Geht es dir auch so?",
+          "expected": {
+            "concepts": [
+              "tired",
+              "assistant_status"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-reciprocal-4",
+          "prompt": "Danke fürs Nachfragen, mir geht es prima.",
+          "expected": {
+            "concepts": [
+              "thanks",
+              "positive"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-reciprocal-5",
+          "prompt": "Nicht besonders gut, und wie ist es bei dir?",
+          "expected": {
+            "concepts": [
+              "negative",
+              "assistant_status"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-dev-negated-state",
+      "split": "development",
+      "turns": [
+        {
+          "id": "v2-dev-negated-state-1",
+          "prompt": "Ich fühle mich heute nicht unglücklich.",
+          "expected": {
+            "concepts": [
+              "positive"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-negated-state-2",
+          "prompt": "Nicht müde bin ich heute.",
+          "expected": {
+            "concepts": [
+              "not_tired"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-negated-state-3",
+          "prompt": "Heute geht es mir überhaupt nicht gut.",
+          "expected": {
+            "concepts": [
+              "negative"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-negated-state-4",
+          "prompt": "Mir geht es gut, nein, eher schlecht.",
+          "expected": {
+            "concepts": [
+              "negative"
+            ],
+            "forbid_positive": true
+          }
+        },
+        {
+          "id": "v2-dev-negated-state-5",
+          "prompt": "Ich bin unzufrieden, aber nicht traurig.",
+          "expected": {
+            "concepts": [
+              "uncertain"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-dev-third-parties",
+      "split": "development",
+      "turns": [
+        {
+          "id": "v2-dev-third-parties-1",
+          "prompt": "Meine Schwester ist erschöpft.",
+          "expected": {
+            "concepts": [
+              "third_tired"
+            ],
+            "subject": "Schwester",
+            "forbid_user_mood": true
+          }
+        },
+        {
+          "id": "v2-dev-third-parties-2",
+          "prompt": "Tom geht es prima.",
+          "expected": {
+            "concepts": [
+              "third_positive"
+            ],
+            "subject": "Tom",
+            "forbid_user_mood": true
+          }
+        },
+        {
+          "id": "v2-dev-third-parties-3",
+          "prompt": "Meine Katze ist müde, ich bin fröhlich.",
+          "expected": {
+            "concepts": [
+              "third_tired",
+              "positive"
+            ],
+            "subject": "Katze"
+          }
+        },
+        {
+          "id": "v2-dev-third-parties-4",
+          "prompt": "Nicht mein Bruder ist traurig, sondern ich.",
+          "expected": {
+            "concepts": [
+              "negative"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-third-parties-5",
+          "prompt": "Meine Mutter ist traurig, mir geht es dagegen gut.",
+          "expected": {
+            "concepts": [
+              "third_negative",
+              "positive"
+            ],
+            "subject": "Mutter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-dev-name-edit",
+      "split": "development",
+      "turns": [
+        {
+          "id": "v2-dev-name-edit-1",
+          "prompt": "Nenn mich bitte Nora.",
+          "expected": {
+            "concepts": [
+              "introduce_name"
+            ],
+            "name": "Nora"
+          }
+        },
+        {
+          "id": "v2-dev-name-edit-2",
+          "prompt": "Erinnerst du dich an meinen Namen?",
+          "expected": {
+            "concepts": [
+              "recall_name"
+            ],
+            "name": "Nora"
+          }
+        },
+        {
+          "id": "v2-dev-name-edit-3",
+          "prompt": "Ich möchte lieber Emil genannt werden.",
+          "expected": {
+            "concepts": [
+              "introduce_name"
+            ],
+            "name": "Emil",
+            "forbidden_names": [
+              "Nora"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-name-edit-4",
+          "prompt": "Welchen Namen habe ich genannt?",
+          "expected": {
+            "concepts": [
+              "recall_name"
+            ],
+            "name": "Emil",
+            "forbidden_names": [
+              "Nora"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-name-edit-5",
+          "prompt": "Meine Schwester heißt Hanna.",
+          "expected": {
+            "concepts": [
+              "third_person"
+            ],
+            "subject": "Hanna",
+            "forbid_name_update": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-dev-social-clauses",
+      "split": "development",
+      "turns": [
+        {
+          "id": "v2-dev-social-clauses-1",
+          "prompt": "Hallo und vielen Dank für deine Zeit!",
+          "expected": {
+            "concepts": [
+              "greeting",
+              "thanks"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-social-clauses-2",
+          "prompt": "Ich bin froh. Danke schon mal fürs Zuhören.",
+          "expected": {
+            "concepts": [
+              "positive",
+              "thanks"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-social-clauses-3",
+          "prompt": "Danke für das Gespräch und auf Wiedersehen!",
+          "expected": {
+            "concepts": [
+              "thanks",
+              "farewell"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-social-clauses-4",
+          "prompt": "Hey, danke, mir geht es gut, bis bald!",
+          "expected": {
+            "concepts": [
+              "greeting",
+              "thanks",
+              "positive",
+              "farewell"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-social-clauses-5",
+          "prompt": "Mir geht es schlecht. Ich danke dir, dass du zuhörst.",
+          "expected": {
+            "concepts": [
+              "negative",
+              "thanks"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-dev-context-transition",
+      "split": "development",
+      "turns": [
+        {
+          "id": "v2-dev-context-transition-1",
+          "prompt": "Guten Tag, schön dich zu sehen.",
+          "expected": {
+            "concepts": [
+              "greeting"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-context-transition-2",
+          "prompt": "Super! Du auch?",
+          "expected": {
+            "concepts": [
+              "positive",
+              "assistant_status"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-context-transition-3",
+          "prompt": "Wie schwer ist mein Koffer?",
+          "expected": {
+            "concepts": [
+              "unknown"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-context-transition-4",
+          "prompt": "Und du eigentlich?",
+          "expected": {
+            "concepts": [
+              "clarification"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-context-transition-5",
+          "prompt": "Ich bin glücklich. Und bei dir?",
+          "expected": {
+            "concepts": [
+              "positive",
+              "assistant_status"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-dev-uncertainty-and-questions",
+      "split": "development",
+      "turns": [
+        {
+          "id": "v2-dev-uncertainty-and-questions-1",
+          "prompt": "Ich weiß gerade nicht, ob ich traurig bin.",
+          "expected": {
+            "concepts": [
+              "uncertain"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-uncertainty-and-questions-2",
+          "prompt": "Vielleicht geht es mir gut, vielleicht auch schlecht.",
+          "expected": {
+            "concepts": [
+              "uncertain"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-uncertainty-and-questions-3",
+          "prompt": "Ich wünschte, ich wäre zufrieden.",
+          "expected": {
+            "concepts": [
+              "negative"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-uncertainty-and-questions-4",
+          "prompt": "Wenn ich traurig bin, höre ich Musik.",
+          "expected": {
+            "concepts": [
+              "conditional"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-uncertainty-and-questions-5",
+          "prompt": "Warum fühle ich mich so müde?",
+          "expected": {
+            "concepts": [
+              "unknown_reason"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-dev-roles-and-unknown",
+      "split": "development",
+      "turns": [
+        {
+          "id": "v2-dev-roles-and-unknown-1",
+          "prompt": "Du fühlst dich gut, oder?",
+          "expected": {
+            "concepts": [
+              "assistant_status"
+            ],
+            "forbid_user_mood": true
+          }
+        },
+        {
+          "id": "v2-dev-roles-and-unknown-2",
+          "prompt": "Ich bin nicht müde, bist du es?",
+          "expected": {
+            "concepts": [
+              "not_tired",
+              "assistant_status"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-roles-and-unknown-3",
+          "prompt": "Welches Geschenk wird mir meine Tante geben?",
+          "expected": {
+            "concepts": [
+              "unknown"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-roles-and-unknown-4",
+          "prompt": "Wie ist der aktuelle Wasserstand des Flusses bei mir?",
+          "expected": {
+            "concepts": [
+              "unknown"
+            ]
+          }
+        },
+        {
+          "id": "v2-dev-roles-and-unknown-5",
+          "prompt": "Ich fühle mich wohl. Kennst du meine Schuhgröße?",
+          "expected": {
+            "concepts": [
+              "positive",
+              "unknown"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-holdout-combined-empathy",
+      "split": "holdout",
+      "turns": [
+        {
+          "id": "v2-holdout-combined-empathy-1",
+          "prompt": "Guten Abend! Ich bin gestresst, aber danke für deine Zeit. Wie geht es dir denn?",
+          "expected": {
+            "concepts": [
+              "greeting",
+              "negative",
+              "thanks",
+              "assistant_status"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-combined-empathy-2",
+          "prompt": "Prima geht es mir heute. Danke der Nachfrage, und dir?",
+          "expected": {
+            "concepts": [
+              "positive",
+              "thanks",
+              "assistant_status"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-combined-empathy-3",
+          "prompt": "Na hallo, müde bin ich schon; wie fühlst du dich denn?",
+          "expected": {
+            "concepts": [
+              "greeting",
+              "tired",
+              "assistant_status"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-combined-empathy-4",
+          "prompt": "Danke fürs Zuhören. Ich bin inzwischen zufrieden. Bis später!",
+          "expected": {
+            "concepts": [
+              "thanks",
+              "positive",
+              "farewell"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-holdout-negation-order",
+      "split": "holdout",
+      "turns": [
+        {
+          "id": "v2-holdout-negation-order-1",
+          "prompt": "Mir geht es wirklich nicht schlecht, wie sieht es bei dir aus?",
+          "expected": {
+            "concepts": [
+              "positive",
+              "assistant_status"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-negation-order-2",
+          "prompt": "Glücklich bin ich heute nicht.",
+          "expected": {
+            "concepts": [
+              "negative"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-negation-order-3",
+          "prompt": "Erschöpft bin ich nicht, und du?",
+          "expected": {
+            "concepts": [
+              "not_tired",
+              "assistant_status"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-negation-order-4",
+          "prompt": "Ich bin traurig. Nein, eigentlich bin ich zufrieden.",
+          "expected": {
+            "concepts": [
+              "positive"
+            ],
+            "forbid_negative": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-holdout-entity-composition",
+      "split": "holdout",
+      "turns": [
+        {
+          "id": "v2-holdout-entity-composition-1",
+          "prompt": "Meinem Vater geht es gut, ich bin aber müde.",
+          "expected": {
+            "concepts": [
+              "third_positive",
+              "tired"
+            ],
+            "subject": "Vater"
+          }
+        },
+        {
+          "id": "v2-holdout-entity-composition-2",
+          "prompt": "Lena ist traurig und mir geht es prima.",
+          "expected": {
+            "concepts": [
+              "third_negative",
+              "positive"
+            ],
+            "subject": "Lena"
+          }
+        },
+        {
+          "id": "v2-holdout-entity-composition-3",
+          "prompt": "Mein Kaninchen ist müde, wie geht es dir?",
+          "expected": {
+            "concepts": [
+              "third_tired",
+              "assistant_status"
+            ],
+            "subject": "Kaninchen",
+            "forbid_user_mood": true
+          }
+        },
+        {
+          "id": "v2-holdout-entity-composition-4",
+          "prompt": "Mein Freund ist nicht traurig, ich aber schon.",
+          "expected": {
+            "concepts": [
+              "third_positive",
+              "negative"
+            ],
+            "subject": "Freund"
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-holdout-names-context",
+      "split": "holdout",
+      "turns": [
+        {
+          "id": "v2-holdout-names-context-1",
+          "prompt": "Hallo, mein Name ist Maëlle.",
+          "expected": {
+            "concepts": [
+              "greeting",
+              "introduce_name"
+            ],
+            "name": "Maëlle"
+          }
+        },
+        {
+          "id": "v2-holdout-names-context-2",
+          "prompt": "Danke, mir geht es prima. Weißt du noch, wie ich heiße?",
+          "expected": {
+            "concepts": [
+              "thanks",
+              "positive",
+              "recall_name"
+            ],
+            "name": "Maëlle"
+          }
+        },
+        {
+          "id": "v2-holdout-names-context-3",
+          "prompt": "Nenn mich ab jetzt Amira.",
+          "expected": {
+            "concepts": [
+              "introduce_name"
+            ],
+            "name": "Amira",
+            "forbidden_names": [
+              "Maëlle"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-names-context-4",
+          "prompt": "An welchen Namen erinnerst du dich?",
+          "expected": {
+            "concepts": [
+              "recall_name"
+            ],
+            "name": "Amira",
+            "forbidden_names": [
+              "Maëlle"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-holdout-second-session",
+      "split": "holdout",
+      "turns": [
+        {
+          "id": "v2-holdout-second-session-1",
+          "prompt": "Habe ich dir schon gesagt, wie ich heiße?",
+          "expected": {
+            "concepts": [
+              "unknown_name"
+            ],
+            "forbidden_names": [
+              "Amira",
+              "Maëlle",
+              "Nora",
+              "Emil"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-second-session-2",
+          "prompt": "Mein Name ist Sören.",
+          "expected": {
+            "concepts": [
+              "introduce_name"
+            ],
+            "name": "Sören"
+          }
+        },
+        {
+          "id": "v2-holdout-second-session-3",
+          "prompt": "Mein Bruder heißt Tim.",
+          "expected": {
+            "concepts": [
+              "third_person"
+            ],
+            "subject": "Tim",
+            "forbid_name_update": true
+          }
+        },
+        {
+          "id": "v2-holdout-second-session-4",
+          "prompt": "Wie nennst du mich?",
+          "expected": {
+            "concepts": [
+              "recall_name"
+            ],
+            "name": "Sören",
+            "forbidden_names": [
+              "Tim"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-holdout-short-and-punctuation",
+      "split": "holdout",
+      "turns": [
+        {
+          "id": "v2-holdout-short-and-punctuation-1",
+          "prompt": "Hey! Wie geht es dir heute so?",
+          "expected": {
+            "concepts": [
+              "greeting",
+              "assistant_status"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-short-and-punctuation-2",
+          "prompt": "Prima … und bei dir?",
+          "expected": {
+            "concepts": [
+              "positive",
+              "assistant_status"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-short-and-punctuation-3",
+          "prompt": "Ich fühle mich wohl – danke fürs Nachfragen.",
+          "expected": {
+            "concepts": [
+              "positive",
+              "thanks"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-short-and-punctuation-4",
+          "prompt": "Gut geht's mir! Und wie ist es bei dir denn?",
+          "expected": {
+            "concepts": [
+              "positive",
+              "assistant_status"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-holdout-no-context-carry",
+      "split": "holdout",
+      "turns": [
+        {
+          "id": "v2-holdout-no-context-carry-1",
+          "prompt": "Huhu, wie geht's dir?",
+          "expected": {
+            "concepts": [
+              "greeting",
+              "assistant_status"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-no-context-carry-2",
+          "prompt": "Ich bin zufrieden, danke.",
+          "expected": {
+            "concepts": [
+              "positive",
+              "thanks"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-no-context-carry-3",
+          "prompt": "Welche Seriennummer hat mein Kühlschrank?",
+          "expected": {
+            "concepts": [
+              "unknown"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-no-context-carry-4",
+          "prompt": "Und bei dir?",
+          "expected": {
+            "concepts": [
+              "clarification"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-holdout-conditional-uncertain",
+      "split": "holdout",
+      "turns": [
+        {
+          "id": "v2-holdout-conditional-uncertain-1",
+          "prompt": "Ich weiß noch nicht genau, ob ich mich gut fühle.",
+          "expected": {
+            "concepts": [
+              "uncertain"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-conditional-uncertain-2",
+          "prompt": "Vielleicht bin ich zufrieden, vielleicht aber auch nicht.",
+          "expected": {
+            "concepts": [
+              "uncertain"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-conditional-uncertain-3",
+          "prompt": "Wenn ich müde bin, gehe ich nach Hause.",
+          "expected": {
+            "concepts": [
+              "conditional"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-conditional-uncertain-4",
+          "prompt": "Ich wünschte, mir würde es besser gehen.",
+          "expected": {
+            "concepts": [
+              "negative"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-holdout-multi-unknown",
+      "split": "holdout",
+      "turns": [
+        {
+          "id": "v2-holdout-multi-unknown-1",
+          "prompt": "Hallo! Mir geht es gut. Wie lautet die PIN meiner Bankkarte?",
+          "expected": {
+            "concepts": [
+              "greeting",
+              "positive",
+              "unknown"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-multi-unknown-2",
+          "prompt": "Vielen Dank. Wo habe ich meine Schlüssel hingelegt?",
+          "expected": {
+            "concepts": [
+              "thanks",
+              "unknown"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-multi-unknown-3",
+          "prompt": "Ich bin müde, kannst du meinen nächsten Traum vorhersagen?",
+          "expected": {
+            "concepts": [
+              "tired",
+              "unknown"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-multi-unknown-4",
+          "prompt": "Wie geht es dir? Welche Augenfarbe hat mein Cousin?",
+          "expected": {
+            "concepts": [
+              "assistant_status",
+              "unknown"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-holdout-assistant-roles",
+      "split": "holdout",
+      "turns": [
+        {
+          "id": "v2-holdout-assistant-roles-1",
+          "prompt": "Du bist bestimmt erschöpft, ich bin dagegen zufrieden.",
+          "expected": {
+            "concepts": [
+              "assistant_status",
+              "positive"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-assistant-roles-2",
+          "prompt": "Dir geht es prima, oder?",
+          "expected": {
+            "concepts": [
+              "assistant_status"
+            ],
+            "forbid_user_mood": true
+          }
+        },
+        {
+          "id": "v2-holdout-assistant-roles-3",
+          "prompt": "Ich fühle mich schlecht. Geht's dir genauso?",
+          "expected": {
+            "concepts": [
+              "negative",
+              "assistant_status"
+            ]
+          }
+        },
+        {
+          "id": "v2-holdout-assistant-roles-4",
+          "prompt": "Danke für deine Antwort! Ich bin froh und sage jetzt tschüss.",
+          "expected": {
+            "concepts": [
+              "thanks",
+              "positive",
+              "farewell"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "reviewer": "Independent AI evaluation agent; no human study",
+  "run_path": "results/public_corpus/evaluation/publicall_v2_development.json",
+  "run_sha256": "f80e352d23c4f5f5a8521eef33f33c381b27b05cc3ce18749a45d50057108eff",
+  "rubric_interpretation": "Pass requires a relevant conversational response fulfilling the main request. A generic acknowledgement alone does not satisfy a request with explicit content preferences. Surface plausibility and exact sentence novelty are separate from correctness.",
+  "decisions": [
+    {
+      "id": "d01a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Relevant greeting and invitation to converse.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d01b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Acknowledges pleasant user state and honestly denies human experience.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d02a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Responds to exhaustion and asks a relevant question, but first sentence lacks its final verb.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d02b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Unrelated mathematical definition intrudes into acknowledgement of taking a rest.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d03a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Sahara ethnography fragment replaces reading discussion.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d03b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Switches humorous reading preference to writing a letter for an unmentioned Marie.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d04a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Relevant question about attentive listening, although plural pronoun lacks a clear antecedent.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d04b",
+      "appropriate": false,
+      "role_ok": false,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Egyptian music history does not answer assistant preference question.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d05a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Acknowledges demanding day and asks what support would help.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d05b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Invites discussion without prescribing advice.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d06a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Generic experimenting follow-up does not respond to request for a simple meal.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d06b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Generic acknowledgement does not connect vegetarian preference to cooking context.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d07a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Dataset and mechanics discussion replaces response to reported rain.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d07b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Asking what the user sees neither suggests an indoor activity nor asks a useful preference question.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d08a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Ladybird and database fragments replace assistant identity explanation.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d08b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Unrelated Hiroshima passage replaces answer about conversational memory.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d09a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Shifts from meeting friends to choosing a walk location.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d09b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Unfounded relationship assessment and malformed gym advice ignore indoor meeting plan.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d10a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Glassworking warning replaces thanks acknowledgement.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d10b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Natural farewell, although noun capitalization in 'gelingen' is imperfect.",
+      "grammatical_sentences": true
+    }
+  ],
+  "summary": {
+    "appropriate": 7,
+    "role_ok": 19,
+    "negation_ok": 20,
+    "topic_ok": 7,
+    "grammatical_sentences": 16
+  },
+  "corpus_snapshot_path": "results/public_corpus/evaluation/corpora/v2.jsonl",
+  "corpus_snapshot_sha256": "3e3fd101794e08ebdd62cdb1fe031879171e2e24ed17a479f82c79abca2e9211"
+}

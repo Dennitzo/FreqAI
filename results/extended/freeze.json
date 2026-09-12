@@ -1,0 +1,30 @@
+{
+  "configuration": {
+    "dimensions": 4096,
+    "feature_mode": "morphology",
+    "min_score": 0.18,
+    "retrieval_policy": "coverage",
+    "min_coverage": 0.6
+  },
+  "provenance": {
+    "utc": "2026-09-06T07:23:41.211152+00:00",
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "sha256": {
+      "memory\\fixtures\\extension_120.jsonl": "8dbfad5536db23888bc667ec73653e3f63128b7503acf510371fc5625e5dff02",
+      "memory\\evaluation\\extension_queries.json": "18afbba84286b5b97ad4df527062ffbd503761f255427bfe9d3bb782028cde43",
+      "memory\\fixtures\\demo.jsonl": "916653e5ac5d3c58433353dc86f404b80a0f65275713076162f22708bbe0d1fd",
+      "memory\\fixtures\\benchmark.json": "c0f10efc6076a26b5d42439ccf3b436092e7a9d5dbccd0131354be6b27a24bff",
+      "freqai\\memory.py": "baf20b7039036112c3bf1e503f88a77a7f740e104926470210b80263ee49ea73",
+      "freqai\\features.py": "c48eb11bff823f8329bdbf1509426f1928e19c213793145e30c1ef4abe234535",
+      "freqai\\codec.py": "1741858964d007a8baa1173cb559ac896d07bb4d8eb7d7be840c12c1a5acdc03",
+      "experiments\\run_extended.py": "f93295c1b49b47a3ccbf8058e86b7f4b6fba2e3fd8394db783261c82cc4a6dd3",
+      "results\\extended\\baseline_source\\freqai\\__init__.py": "0e634154d3a7ed97b743819529122dcfe1d59ce6dca186c208d93ef872ee46e2",
+      "results\\extended\\baseline_source\\freqai\\codec.py": "1741858964d007a8baa1173cb559ac896d07bb4d8eb7d7be840c12c1a5acdc03",
+      "results\\extended\\baseline_source\\freqai\\features.py": "469d58045b2232fa974cb8eafe90907d0aef807617ff7bde6c3436aa107e83b3",
+      "results\\extended\\baseline_source\\freqai\\memory.py": "b7817e818911161d4d353a971962751c225d856e79a5b96af89c86065c80d0ee"
+    }
+  },
+  "policy": "Parameters fixed before holdout inference; report every failure."
+}

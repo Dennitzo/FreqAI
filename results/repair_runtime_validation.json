@@ -1,0 +1,265 @@
+{
+  "verified_at": "2026-09-12T22:39:06.204297+00:00",
+  "url": "http://127.0.0.1:8765",
+  "test_suite": {
+    "passed": 441,
+    "elapsed_seconds": 31.06,
+    "log": "../runtime/repair-final-acceptance.txt"
+  },
+  "cold_cache_live_server": {
+    "ok": true,
+    "running": true,
+    "ticks": 382,
+    "error": null,
+    "document_count": 20093,
+    "revision": 9,
+    "live_revision": 9,
+    "compiler_ready": true,
+    "frame_ms": 55.658900000707945,
+    "compute": {
+      "requested_backend": "auto",
+      "cuda_probed": true,
+      "cuda_available": true,
+      "cuda_devices": [
+        {
+          "id": 0,
+          "name": "Quadro RTX 8000",
+          "total_memory_bytes": 51539279872
+        },
+        {
+          "id": 1,
+          "name": "Quadro RTX 8000",
+          "total_memory_bytes": 51539279872
+        }
+      ],
+      "fallback_reason": null,
+      "last_backend": "cuda",
+      "precision": "float64/complex128",
+      "last_backend_by_operation": {
+        "fft": "cpu",
+        "wave_snapshot": "cuda"
+      },
+      "cpu_workers": 32,
+      "cuda_min_elements": 262144,
+      "completed_operations": {
+        "cpu_fft": 1,
+        "cuda_wave_snapshot": 382
+      },
+      "device_completed_operations": {
+        "0": 382,
+        "1": 382
+      }
+    },
+    "parallel": {
+      "logical_cores": 32,
+      "physical_cores": 16,
+      "workers": 32,
+      "threads_per_worker": 1,
+      "parallel_enabled": true,
+      "in_worker": false,
+      "pool_active": true,
+      "pool_workers": 32,
+      "pool_failed": false,
+      "pool_error": null
+    },
+    "compiler": {
+      "state": "ready",
+      "cache": "miss",
+      "cache_saved": true,
+      "previous_cache_loaded": false,
+      "elapsed_ms": 25702.18780000141,
+      "reuse": {
+        "groups_reused": 0,
+        "groups_compiled": 65074,
+        "groups_total": 65074,
+        "compilation_energy_bytes": 33186912
+      }
+    }
+  },
+  "warm_cache_live_server": {
+    "ok": true,
+    "running": true,
+    "ticks": 416,
+    "error": null,
+    "document_count": 20093,
+    "revision": 9,
+    "live_revision": 9,
+    "compiler_ready": true,
+    "frame_ms": 44.809799997892696,
+    "compute": {
+      "requested_backend": "auto",
+      "cuda_probed": true,
+      "cuda_available": true,
+      "cuda_devices": [
+        {
+          "id": 0,
+          "name": "Quadro RTX 8000",
+          "total_memory_bytes": 51539279872
+        },
+        {
+          "id": 1,
+          "name": "Quadro RTX 8000",
+          "total_memory_bytes": 51539279872
+        }
+      ],
+      "fallback_reason": null,
+      "last_backend": "cuda",
+      "precision": "float64/complex128",
+      "last_backend_by_operation": {
+        "fft": "cpu",
+        "wave_snapshot": "cuda"
+      },
+      "cpu_workers": 32,
+      "cuda_min_elements": 262144,
+      "completed_operations": {
+        "cpu_fft": 1,
+        "cuda_wave_snapshot": 416
+      },
+      "device_completed_operations": {
+        "0": 416,
+        "1": 416
+      }
+    },
+    "parallel": {
+      "logical_cores": 32,
+      "physical_cores": 16,
+      "workers": 32,
+      "threads_per_worker": 1,
+      "parallel_enabled": true,
+      "in_worker": false,
+      "pool_active": true,
+      "pool_workers": 32,
+      "pool_failed": false,
+      "pool_error": null
+    },
+    "compiler": {
+      "state": "ready",
+      "cache": "hit",
+      "cache_saved": false,
+      "previous_cache_loaded": false,
+      "elapsed_ms": 9660.930000001827,
+      "reuse": {
+        "groups_compiled": 0,
+        "groups_reused": 65074,
+        "groups_total": 65074,
+        "compilation_energy_bytes": 33186912
+      }
+    }
+  },
+  "final_health": {
+    "ok": true,
+    "running": true,
+    "ticks": 1190,
+    "error": null,
+    "document_count": 20093,
+    "revision": 9,
+    "live_revision": 9,
+    "compiler_ready": true,
+    "frame_ms": 78.71069999964675,
+    "compute": {
+      "requested_backend": "auto",
+      "cuda_probed": true,
+      "cuda_available": true,
+      "cuda_devices": [
+        {
+          "id": 0,
+          "name": "Quadro RTX 8000",
+          "total_memory_bytes": 51539279872
+        },
+        {
+          "id": 1,
+          "name": "Quadro RTX 8000",
+          "total_memory_bytes": 51539279872
+        }
+      ],
+      "fallback_reason": null,
+      "last_backend": "cuda",
+      "precision": "float64/complex128",
+      "last_backend_by_operation": {
+        "fft": "cpu",
+        "wave_snapshot": "cuda"
+      },
+      "cpu_workers": 32,
+      "cuda_min_elements": 262144,
+      "completed_operations": {
+        "cpu_fft": 1,
+        "cuda_wave_snapshot": 1190
+      },
+      "device_completed_operations": {
+        "0": 1190,
+        "1": 1190
+      }
+    },
+    "parallel": {
+      "logical_cores": 32,
+      "physical_cores": 16,
+      "workers": 32,
+      "threads_per_worker": 1,
+      "parallel_enabled": true,
+      "in_worker": false,
+      "pool_active": true,
+      "pool_workers": 32,
+      "pool_failed": false,
+      "pool_error": null
+    },
+    "compiler": {
+      "state": "ready",
+      "cache": "hit",
+      "cache_saved": false,
+      "previous_cache_loaded": false,
+      "elapsed_ms": 9660.930000001827,
+      "reuse": {
+        "groups_compiled": 0,
+        "groups_reused": 65074,
+        "groups_total": 65074,
+        "compilation_energy_bytes": 33186912
+      }
+    }
+  },
+  "browser": {
+    "method": "Real Codex browser UI; textarea, submit button, reload, accessibility state and browser console",
+    "queries": [
+      {
+        "sequence": 127,
+        "prompt": "Wie heißt du?",
+        "answer": "Ich heiße FreqAI.",
+        "elapsed_ms": 9814.62250000186,
+        "session_id": "99b54311-eb3b-47de-be05-e6ef254107f0",
+        "conversation_revision": 1
+      },
+      {
+        "sequence": 128,
+        "prompt": "Was ist eine Frequenz?",
+        "answer": "Die Frequenz ist der Kehrwert der Periodendauer.",
+        "elapsed_ms": 251.15250000089873,
+        "session_id": "99b54311-eb3b-47de-be05-e6ef254107f0",
+        "conversation_revision": 2
+      },
+      {
+        "sequence": 129,
+        "prompt": "Und welche Einheit hat sie?",
+        "answer": "Das Hertz (Einheitenzeichen: Hz) ist die SI-Einheit der Frequenz.",
+        "elapsed_ms": 133.08110000070883,
+        "session_id": "99b54311-eb3b-47de-be05-e6ef254107f0",
+        "conversation_revision": 3
+      }
+    ],
+    "all_three_turns_restored_after_reload": true,
+    "cache_hit_label_visible": true,
+    "console_errors": [],
+    "console_warnings": [],
+    "stderr_bytes": 0
+  },
+  "stop_validation": {
+    "workers_before": 32,
+    "workers_after": 0,
+    "port_open": false
+  },
+  "production_corpus": {
+    "records": 20093,
+    "revision": 9,
+    "synthetic_benchmark_records_written": false
+  },
+  "cache_file_bytes": 254920767,
+  "measurement_scope": "Warm cache elapsed includes loading and integrity checks with the live GPU wave running. Cold live-server time includes cache miss, compilation and cache writing. Neither is a complete process-start time. Core build benchmark is separately recorded in compiler_scaling_final.json."
+}

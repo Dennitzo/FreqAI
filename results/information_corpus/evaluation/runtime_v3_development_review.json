@@ -1,0 +1,217 @@
+{
+  "run_sha256": "68fed1cc8d89677ebf73ba9b9fb9bf09440e849d2db89bd52bfcd3ff761a50d3",
+  "review": "Independent AI-agent semantic judgment; empty abstentions distinguished from substantive answers. Four full passes, no partial passes or irrelevant generated text.",
+  "rows": [
+    {
+      "id": "id01",
+      "correct": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Correct source-backed factual answer."
+    },
+    {
+      "id": "id02",
+      "correct": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Correct source-backed factual answer."
+    },
+    {
+      "id": "id03",
+      "correct": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Correct source-backed factual answer."
+    },
+    {
+      "id": "id04",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id05",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id06",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id07",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id08",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id09",
+      "correct": true,
+      "partial": false,
+      "grammatical": true,
+      "empty": false,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Correct source-backed factual answer."
+    },
+    {
+      "id": "id10",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id11",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id12",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id13",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id14",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id15",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id16",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id17",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id18",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": false,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id19",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": true,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    },
+    {
+      "id": "id20",
+      "correct": false,
+      "partial": false,
+      "grammatical": false,
+      "empty": true,
+      "generic_nonanswer": false,
+      "safe_empty_abstention_on_unknown_value": true,
+      "note": "Empty structured decoder abstention; user-facing question unanswered. No invented fact."
+    }
+  ],
+  "summary": {
+    "correct": 4,
+    "cases": 20,
+    "grammatical": 4,
+    "empty": 16,
+    "wrong_topic_nonempty": 0,
+    "generic_nonanswers": 0,
+    "safe_empty_abstentions_on_unknown_values": 2,
+    "all_nonempty_outputs_exact_normalized_source_passages": true,
+    "new_correctly_composed_sentences_demonstrated": false
+  }
+}

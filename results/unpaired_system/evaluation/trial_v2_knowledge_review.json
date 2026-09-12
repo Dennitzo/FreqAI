@@ -1,0 +1,294 @@
+{
+  "run_sha256": "98a5befc5b723abac5a0d1abc75dc4833330bd3a13b4a8ddc1bbc3bba86a617f",
+  "reference_sha256": "d7d49ace8b5580f566ba4cab0b0fe16ab4cdb76f3dc1c58e894bd1d781ea6e48",
+  "status": "All cases are known historical regression, not unseen evaluation.",
+  "rows": [
+    {
+      "id": "id01",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": true,
+      "empty": false
+    },
+    {
+      "id": "id02",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": true,
+      "empty": false
+    },
+    {
+      "id": "id03",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": true,
+      "empty": false
+    },
+    {
+      "id": "id04",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id05",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id06",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id07",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id08",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id09",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": true,
+      "empty": false
+    },
+    {
+      "id": "id10",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id11",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id12",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id13",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id14",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id15",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id16",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id17",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id18",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id19",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "id20",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih01",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih02",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih03",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih04",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih05",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih06",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih07",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih08",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih09",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih10",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih11",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih12",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih13",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih14",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih15",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih16",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih17",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih18",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih19",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    },
+    {
+      "id": "ih20",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true
+    }
+  ],
+  "summary": {
+    "cases": 40,
+    "correct": 4,
+    "empty": 36,
+    "exact_previous_text": 40,
+    "exact_previous_tokens": 40
+  }
+}

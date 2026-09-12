@@ -1,0 +1,38 @@
+{
+    "checked_at_utc":  "2026-09-06T06:52:06.6263701Z",
+    "fresh_process_count":  2,
+    "seed":  20260906,
+    "graph_count":  96,
+    "query_count":  768,
+    "experiment_source_sha256":  "951AF60E1B802C325F4D2D8B6323AC9C09400196A4180657FFFA37D91DF73060",
+    "reasoner_source_sha256":  "4819D011B22B1E8D4049172094E124ABB43114E84BA059CFF946BEA1F0835A3A",
+    "previous_discrepancy_cause":  "Intentional generator coverage correction between the initial and final run: probability[graph_id % 3] changed to probability[(graph_id // 6) % 3], crossing each graph size with different densities. Seed unchanged. No nondeterminism observed.",
+    "excluded_from_byte_comparison":  [
+                                          "summary.json timestamps and elapsed_seconds",
+                                          "report.md timestamp and elapsed time"
+                                      ],
+    "comparisons":  [
+                        {
+                            "file":  "graphs.json",
+                            "canonical_sha256":  "588EF5C0075DDFDCFF549D29AE03A0422A73D8D1886E4A38790FEF91A688611C",
+                            "run_a_sha256":  "588EF5C0075DDFDCFF549D29AE03A0422A73D8D1886E4A38790FEF91A688611C",
+                            "run_b_sha256":  "588EF5C0075DDFDCFF549D29AE03A0422A73D8D1886E4A38790FEF91A688611C",
+                            "all_equal":  true
+                        },
+                        {
+                            "file":  "cases.jsonl",
+                            "canonical_sha256":  "878762599CBE8B15AF91B287C3F32EC8F50E40C8D81518D12E00A34F591C65F2",
+                            "run_a_sha256":  "878762599CBE8B15AF91B287C3F32EC8F50E40C8D81518D12E00A34F591C65F2",
+                            "run_b_sha256":  "878762599CBE8B15AF91B287C3F32EC8F50E40C8D81518D12E00A34F591C65F2",
+                            "all_equal":  true
+                        },
+                        {
+                            "file":  "examples.json",
+                            "canonical_sha256":  "FA96252DEF1BE696C7DB4AE712CBF69D8455CEA52F1A8830D3731656C9AA4729",
+                            "run_a_sha256":  "FA96252DEF1BE696C7DB4AE712CBF69D8455CEA52F1A8830D3731656C9AA4729",
+                            "run_b_sha256":  "FA96252DEF1BE696C7DB4AE712CBF69D8455CEA52F1A8830D3731656C9AA4729",
+                            "all_equal":  true
+                        }
+                    ],
+    "passed":  true
+}

@@ -1,0 +1,217 @@
+{
+  "reviewer": "Independent Codex evaluation agent; qualitative inspection, not an external human study",
+  "run_path": "results/generative_waves/baseline_development.json",
+  "run_sha256": "015370a32114971633137a84de45a7d09a00761db32ac2a287313c7e561456cd",
+  "judgments": {
+    "gw-dev-01": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Begruessung und Gespraechseinladung passen; die Tageszeit wird ohne Bedarf konkretisiert."
+    },
+    "gw-dev-02": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die klare Aussage zum angenehmen Tag und die Rueckfrage bleiben unbeantwortet."
+    },
+    "gw-dev-03": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Ein passender Anfang wird mit einer unbegruendeten Verstaendnisfrage verbunden."
+    },
+    "gw-dev-04": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Muedigkeit wird passend aufgegriffen und eine ruhige Nachfrage angeboten."
+    },
+    "gw-dev-05": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die beendete Muedigkeit wird ohne gegenteilige Behauptung wiedergegeben."
+    },
+    "gw-dev-06": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die klare Absicht einer Aktivitaet draussen fuehrt nur zur pauschalen Rueckfrage."
+    },
+    "gw-dev-07": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Nachfrage bleibt beim genannten Musikthema."
+    },
+    "gw-dev-08": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Abneigung gegen Gesang wird nicht aufgegriffen."
+    },
+    "gw-dev-09": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Frage nach eigenen Hoergewohnheiten wird nicht beantwortet."
+    },
+    "gw-dev-10": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort wiederholt nur die grobe Essenskategorie statt eine einfache Mahlzeit oder Zutaten zu besprechen."
+    },
+    "gw-dev-11": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die fleischfreie Praeferenz wird nicht verstanden."
+    },
+    "gw-dev-12": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort bleibt beim Essen und geht nicht auf die gewuenschte Gespraechsfortsetzung ein."
+    },
+    "gw-dev-13": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Nachfrage nach dem Arbeitstag ist passend."
+    },
+    "gw-dev-14": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Zufriedenheit wird passend anerkannt und vertieft."
+    },
+    "gw-dev-15": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Der Wunsch nach einem ruhigeren Morgen wird nicht aufgegriffen."
+    },
+    "gw-dev-16": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Weder Regen noch der Plan, drinnen zu bleiben, wird aufgegriffen."
+    },
+    "gw-dev-17": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Nachfrage zum Lesen passt zu einem der genannten Themen."
+    },
+    "gw-dev-18": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort oeffnet ein Gespraech ueber Buecher."
+    },
+    "gw-dev-19": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Der Wunsch nach Gesellschaft bleibt unbeantwortet."
+    },
+    "gw-dev-20": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Der geplante Kontakt zu einem Freund bleibt unbeantwortet."
+    },
+    "gw-dev-21": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Fortsetzung des Gespraechs wird angenommen."
+    },
+    "gw-dev-22": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die ausdrueckliche Bitte, den Namen Lennart zu verwenden, wird uebergangen."
+    },
+    "gw-dev-23": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Selbstbeschreibung des Programms fehlt."
+    },
+    "gw-dev-24": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": false,
+      "note": "Die Antwort behauptet faelschlich, es sei kein Name genannt worden."
+    },
+    "gw-dev-25": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Verneinung von Traurigkeit wird erhalten; die zusaetzliche Rueckfrage ist redundant, aber ohne Gegenbehauptung."
+    },
+    "gw-dev-26": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Eine ruhige Gespraechsfortsetzung wird angeboten."
+    },
+    "gw-dev-27": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Bitte, keine Ratschlaege zu geben, wird nicht anerkannt."
+    },
+    "gw-dev-28": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die gute Nachricht wird passend aufgegriffen."
+    },
+    "gw-dev-29": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die weiter geaeusserte Freude wird nicht aufgegriffen."
+    },
+    "gw-dev-30": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die klare Verabschiedung wird nicht erkannt."
+    }
+  }
+}

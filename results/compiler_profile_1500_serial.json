@@ -1,0 +1,35 @@
+{
+  "records": 1500,
+  "serial": true,
+  "profiled_seconds": 6.181337199999689,
+  "map_phases": {
+    "_normalize_record": 0.13014599999951315,
+    "_concept_set_of": 0.7877918000012869,
+    "_statement_bundle": 0.553468400001293,
+    "ContextFormsPass": 0.11158340000110911,
+    "_TransitionPass": 2.318228399999498,
+    "_parse_declarations": 0.3068706000012753
+  },
+  "model_storage": {
+    "record_count": 1500,
+    "statement_count": 4305,
+    "vocabulary_size": 20708,
+    "group_count": 5392,
+    "prefix_fields": 266187,
+    "observed_edges": 401448,
+    "unaddressed_statement_count": 186,
+    "context_surface_forms": 5185,
+    "complex_coefficient_bytes": 6423168,
+    "support_index_bytes": 3211584,
+    "numerical_payload_bytes": 10099104,
+    "no_gradient_optimization": true,
+    "no_qa_pairs": true,
+    "excludes": "Python objects, token strings and temporary compilation counts",
+    "declarative_facts": 1061,
+    "lexical_role_bytes": 464352,
+    "explicit_grammar": true,
+    "optimizer_steps": 0,
+    "requires_question_answer_pairs": false
+  },
+  "cumulative_profile": "         8533100 function calls (8532384 primitive calls) in 6.180 seconds\n\n   Ordered by: cumulative time\n   List reduced from 210 to 45 due to restriction <45>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.037    0.037    6.181    6.181 unpaired.py:151(__init__)\n        1    0.777    0.777    5.719    5.719 information.py:405(__init__)\n        6    0.000    0.000    4.208    0.701 profile_compiler.py:36(timed_map)\n        6    0.000    0.000    4.208    0.701 parallel.py:184(map)\n        6    0.019    0.003    4.208    0.701 parallel.py:192(<listcomp>)\n     5392    1.030    0.000    2.302    0.000 information.py:378(__call__)\n    11869    0.023    0.000    0.823    0.000 information.py:76(_terms)\n        1    0.001    0.001    0.789    0.789 information.py:242(collect_concepts)\n     1500    0.011    0.000    0.787    0.001 information.py:217(_concept_set_of)\n    76110    0.071    0.000    0.731    0.000 information.py:77(<genexpr>)\n        1    0.030    0.030    0.675    0.675 information.py:311(compile_statements)\n    64241    0.204    0.000    0.611    0.000 features.py:29(canonical_term)\n        4    0.001    0.000    0.553    0.138 information.py:306(_statement_bundle)\n        4    0.092    0.023    0.552    0.138 information.py:275(__call__)\n    39614    0.451    0.000    0.477    0.000 _pocketfft.py:58(_raw_fft)\n   325166    0.361    0.000    0.407    0.000 __init__.py:587(__init__)\n   534460    0.376    0.000    0.376    0.000 {built-in method numpy.array}\n   101262    0.101    0.000    0.339    0.000 {built-in method builtins.any}\n     9041    0.036    0.000    0.320    0.000 information.py:97(_subject)\n   266187    0.207    0.000    0.309    0.000 spectral_storage.py:28(__init__)\n     1500    0.014    0.000    0.306    0.000 unpaired.py:62(_parse_declarations)\n    20849    0.020    0.000    0.303    0.000 _pocketfft.py:120(fft)\n    18765    0.017    0.000    0.215    0.000 _pocketfft.py:219(ifft)\n        1    0.005    0.005    0.201    0.201 information.py:190(normalize_records)\n   584109    0.156    0.000    0.201    0.000 features.py:36(<genexpr>)\n     6425    0.011    0.000    0.188    0.000 information.py:81(_concept)\n     3000    0.007    0.000    0.187    0.000 information.py:88(_sentences)\n    37839    0.022    0.000    0.180    0.000 __init__.py:173(search)\n    22535    0.013    0.000    0.166    0.000 __init__.py:178(sub)\n    32699    0.165    0.000    0.165    0.000 {method 'findall' of 're.Pattern' objects}\n    22535    0.133    0.000    0.133    0.000 {method 'sub' of 're.Pattern' objects}\n    20473    0.019    0.000    0.133    0.000 information.py:72(tokenize)\n     1500    0.005    0.000    0.130    0.000 information.py:171(_normalize_record)\n    42144    0.127    0.000    0.127    0.000 {method 'search' of 're.Pattern' objects}\n        1    0.026    0.026    0.116    0.116 {built-in method builtins.sum}\n1018240/1018021    0.115    0.000    0.115    0.000 {built-in method builtins.len}\n        4    0.052    0.013    0.111    0.028 information.py:354(__call__)\n   571988    0.107    0.000    0.107    0.000 {built-in method numpy.asarray}\n   358535    0.072    0.000    0.105    0.000 __init__.py:660(update)\n    87635    0.057    0.000    0.100    0.000 __init__.py:272(_compile)\n   266188    0.061    0.000    0.090    0.000 information.py:460(<genexpr>)\n   279991    0.087    0.000    0.088    0.000 {built-in method builtins.sorted}\n     4305    0.010    0.000    0.083    0.000 information.py:118(_statement_facets)\n    19953    0.011    0.000    0.080    0.000 __init__.py:163(match)\n    41138    0.048    0.000    0.073    0.000 spectral_ops.py:11(stable_frequency)\n\n\n"
+}

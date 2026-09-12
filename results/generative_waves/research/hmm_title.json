@@ -1,0 +1,16 @@
+{
+  "request": {
+    "query": "\"A Spectral Algorithm\" \"Hidden Markov\"",
+    "maximumResults": 8,
+    "language": "de-DE"
+  },
+  "http_status": 200,
+  "retrieved_utc": "2026-09-06T08:23:44.889588+00:00",
+  "response": {
+    "query": "\"A Spectral Algorithm\" \"Hidden Markov\"",
+    "results": [],
+    "provider": "searxng",
+    "isFallback": false,
+    "retrievedAt": "2026-09-06T08:23:44.8885611+00:00"
+  }
+}

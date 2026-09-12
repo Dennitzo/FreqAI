@@ -1,0 +1,217 @@
+{
+  "reviewer": "Independent Codex evaluation agent; qualitative inspection, not an external human study",
+  "run_path": "results/generative_waves/development_sample_20260906T085613512174Z.json",
+  "run_sha256": "1b3ee0855f9c5a440623bfd0d4c8dfc69f39a6dcaf5560ef4282802531dd2ff9",
+  "judgments": {
+    "gw-dev-01": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die kurze Begruessung und Zustimmung sind ein plausibler Einstieg."
+    },
+    "gw-dev-02": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort bietet nur einen neuen Gespraechseinstieg an und beantwortet die persoenliche Rueckfrage nicht."
+    },
+    "gw-dev-03": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Rueckmeldung wird anerkannt und ein weiterer Gedanke eingeladen."
+    },
+    "gw-dev-04": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Erschoepfung wird aufgegriffen und eine ruhige Anschlussfrage gestellt."
+    },
+    "gw-dev-05": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort wechselt zur Ablehnung von Ratschlaegen statt die beendete Muedigkeit aufzugreifen."
+    },
+    "gw-dev-06": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort erfindet einen Schauer und fragt nach Wetter statt nach einer Aktivitaet draussen."
+    },
+    "gw-dev-07": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Frage nach passender Musik ist thematisch korrekt."
+    },
+    "gw-dev-08": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Ein Schauer und ein Gang nach draussen haben keinen Bezug zur Gesangsabneigung."
+    },
+    "gw-dev-09": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Kruste und erster Bissen haben keinen Bezug zur Frage nach eigenen Hoergewohnheiten."
+    },
+    "gw-dev-10": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort unterstellt ein Problem mit spaetem Essen statt die Kochabsicht aufzugreifen."
+    },
+    "gw-dev-11": {
+      "grammar": false,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Es wird keine Antwort ausgegeben; das ist transparent, erfuellt aber die Gespraechsabsicht nicht."
+    },
+    "gw-dev-12": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort behandelt Experimentieren statt die Gespraechsfortsetzung nach dem Essen."
+    },
+    "gw-dev-13": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort unterstellt Probleme beim Abschalten, die nicht genannt wurden."
+    },
+    "gw-dev-14": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Zufriedenheit wird korrekt aufgegriffen."
+    },
+    "gw-dev-15": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort verlagert den Wunsch fuer morgen auf Perfektion und Pausen heute."
+    },
+    "gw-dev-16": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort unterstellt persoenliche Belastung, obwohl nur Regen und Drinnenbleiben genannt sind."
+    },
+    "gw-dev-17": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Frage nach Figuren, Geschichte und Atmosphaere passt zu einem Buch."
+    },
+    "gw-dev-18": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort eroeffnet ein passendes Gespraech ueber Geschichten."
+    },
+    "gw-dev-19": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die allgemeine Frage nach dem vorherigen Tun greift die fehlende Gesellschaft nicht auf."
+    },
+    "gw-dev-20": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort fragt nach einem Spaziergang statt nach dem geplanten Anruf."
+    },
+    "gw-dev-21": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Gespraechsfortsetzung wird angenommen."
+    },
+    "gw-dev-22": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Bitte um den Namen Lennart wird ignoriert; die Antwort wirkt wie ein Abschied."
+    },
+    "gw-dev-23": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort wechselt zur Brotkruste statt das Programm zu beschreiben."
+    },
+    "gw-dev-24": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort fordert indirekt eine Namensnennung, statt den bereits genannten Namen Lennart zu erinnern."
+    },
+    "gw-dev-25": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Verneinung von Traurigkeit bei stiller Stimmung wird korrekt aufgegriffen."
+    },
+    "gw-dev-26": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort wirkt wie ein Abschied, obwohl gerade ein angenehmes Gespraech fortgesetzt wird."
+    },
+    "gw-dev-27": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Bitte um Zuhoeren ohne Ratschlaege wird passend anerkannt."
+    },
+    "gw-dev-28": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die gute Nachricht wird passend aufgegriffen."
+    },
+    "gw-dev-29": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort nimmt die Freude nicht auf und behandelt stattdessen ein Zoegern beim Sprechen."
+    },
+    "gw-dev-30": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort begruesst statt sich zu verabschieden."
+    }
+  }
+}

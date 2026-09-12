@@ -1,0 +1,21 @@
+{
+  "reproducibility_sha_matches": {
+    "dialogue": true,
+    "knowledge": true,
+    "combined": true,
+    "inactive_followups": true
+  },
+  "all_original_gold_offsets_and_sentence_spans_correct": true,
+  "verified_knowledge_spans": 10846,
+  "active_oasst_root_only": true,
+  "distinct_oasst_prompts": 342,
+  "distinct_oasst_answers": 533,
+  "distinct_knowledge_prompts": 10811,
+  "distinct_knowledge_sentences": 9292,
+  "root_pairs": 533,
+  "knowledge_pairs": 10846,
+  "seconds": 12.976758099999643,
+  "script_sha256": "7839c72b1f5034698f0a966b5b402efaf4d92dcc9fac438e2fdee03b262132e7",
+  "corpus_sha256": "832754653cdd1dcd0c2c0cb7043d3edae71f8e28558b5ed7a145362c0b73d9fa",
+  "evaluation_files_read": []
+}

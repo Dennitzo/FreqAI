@@ -1,0 +1,141 @@
+{
+  "_id": "6403e3b266f4a994f13b9917",
+  "id": "laion/OIG",
+  "author": "laion",
+  "sha": "82188edaa162cea4777d08b5e2bcb6e6ad03d19e",
+  "lastModified": "2023-03-31T00:06:28.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "license:apache-2.0",
+    "size_categories:10M<n<100M",
+    "format:json",
+    "modality:text",
+    "library:datasets",
+    "library:dask",
+    "library:mlcroissant",
+    "region:us"
+  ],
+  "description": "\n\t\n\t\t\n\t\n\t\n\t\tThis is the Open Instruction Generalist Dataset\n\t\n\nThis is our attempt to create a large instruction dataset of medium quality along with a smaller high quality instruciton dataset (OIG-small-chip2).\nThe data is in the form of jsonl objects, with at least a 'text' field. Some datasets may also include a 'metadata' field. The 'text' field contains a string of the form of one or more of:\n\n<human>: instruction\\n<bot>: response\n<human>: instruction\\n<bot>: response .. <human>:… See the full description on the dataset page: https://huggingface.co/datasets/laion/OIG.",
+  "downloads": 13709,
+  "likes": 311,
+  "cardData": {
+    "license": "apache-2.0"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "unified_abstract_infill.jsonl"
+    },
+    {
+      "rfilename": "unified_basic.jsonl"
+    },
+    {
+      "rfilename": "unified_canadian_parliament.jsonl"
+    },
+    {
+      "rfilename": "unified_chip2.jsonl"
+    },
+    {
+      "rfilename": "unified_conv_finqa.jsonl"
+    },
+    {
+      "rfilename": "unified_cuad.jsonl"
+    },
+    {
+      "rfilename": "unified_essays.jsonl"
+    },
+    {
+      "rfilename": "unified_flan.jsonl.gz"
+    },
+    {
+      "rfilename": "unified_grade_school_math_instructions.jsonl"
+    },
+    {
+      "rfilename": "unified_hc3_human.jsonl"
+    },
+    {
+      "rfilename": "unified_image_prompts_instructions.jsonl"
+    },
+    {
+      "rfilename": "unified_joke_explanations.jsonl"
+    },
+    {
+      "rfilename": "unified_mathqa_flanv2_kojma_cot.jsonl"
+    },
+    {
+      "rfilename": "unified_merged_code_xp3.jsonl"
+    },
+    {
+      "rfilename": "unified_multi_news.jsonl"
+    },
+    {
+      "rfilename": "unified_multi_sum.jsonl"
+    },
+    {
+      "rfilename": "unified_ni.jsonl.gz"
+    },
+    {
+      "rfilename": "unified_nq.jsonl"
+    },
+    {
+      "rfilename": "unified_openai_summarize_tldr.jsonl"
+    },
+    {
+      "rfilename": "unified_oscar_en_sample_dialog.jsonl"
+    },
+    {
+      "rfilename": "unified_p3.jsonl.gz"
+    },
+    {
+      "rfilename": "unified_plot_screenplay_books_dialog.jsonl"
+    },
+    {
+      "rfilename": "unified_poetry_2_song.jsonl"
+    },
+    {
+      "rfilename": "unified_poetry_instructions.jsonl"
+    },
+    {
+      "rfilename": "unified_rallio_safety_and_prosocial.jsonl"
+    },
+    {
+      "rfilename": "unified_rallio_soda_upgraded_2048.jsonl"
+    },
+    {
+      "rfilename": "unified_soda_dialog.jsonl"
+    },
+    {
+      "rfilename": "unified_sqlv1.jsonl"
+    },
+    {
+      "rfilename": "unified_sqlv2.jsonl"
+    },
+    {
+      "rfilename": "unified_squad_v2.jsonl"
+    },
+    {
+      "rfilename": "unified_squad_v2_more_neg.jsonl"
+    },
+    {
+      "rfilename": "unified_ul2_plus_oscar_en_sample_dialog.jsonl"
+    },
+    {
+      "rfilename": "unified_unifiedskg_instructions.jsonl"
+    },
+    {
+      "rfilename": "unified_unnatural_instructions.jsonl"
+    },
+    {
+      "rfilename": "unified_xp3_sample.jsonl"
+    }
+  ],
+  "createdAt": "2023-03-05T00:34:58.000Z",
+  "usedStorage": 95033397920
+}

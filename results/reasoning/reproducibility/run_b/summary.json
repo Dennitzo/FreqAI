@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-06T06:51:39.313720+00:00",
+  "seed": 20260906,
+  "graph_count": 96,
+  "query_count": 768,
+  "node_counts": [
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "edge_probabilities": [
+    0.02,
+    0.08,
+    0.25
+  ],
+  "passes": 768,
+  "failures": 0,
+  "positive_cases": 311,
+  "negative_or_unknown_cases": 457,
+  "numerical_failures": 0,
+  "max_integer_error": 4.440892098500626e-15,
+  "max_imaginary_error": 1.6817458584156527e-15,
+  "max_operator_reconstruction_error": 1.57164092248498e-15,
+  "numerical_tolerance": 1e-08,
+  "new_answer_entailed": true,
+  "new_answer_direct_edge_absent": true,
+  "new_answer": "Pudel ist ein Tier.",
+  "passed": true,
+  "elapsed_seconds": 0.26862049999999726,
+  "limits": [
+    "Explicit supplied is_a semantics, reflexivity and transitivity only; no general NLP",
+    "German answer uses a fixed masculine/neuter noun template, without learned grammar",
+    "Dense Fourier operator: O(V^2) storage and work per propagation step",
+    "Boolean projection and visited-state bookkeeping required between wave-space steps",
+    "Fourier basis changes representation; inference power equals ordinary graph reachability",
+    "No closed-world negation: unproved relations remain unknown",
+    "Synthetic graph agreement does not establish open-domain language reasoning"
+  ]
+}

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "freqai-wave-memory"
+version = "0.1.0"
+description = "Experimental training-free standing-wave text memory and interference retrieval"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0,<3", "scipy>=1.13,<2"]
+
+[project.optional-dependencies]
+experiments = ["matplotlib>=3.9,<4", "pytest>=8,<10"]
+
+[project.scripts]
+freqai = "freqai.cli:main"
+
+[tool.setuptools]
+packages = ["freqai"]
+
+[tool.setuptools.package-data]
+freqai = ["dashboard.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

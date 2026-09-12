@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-06T08:04:53.237322+00:00",
+  "new_suite_sha256": "ab1e717d496f5b1280a65194ae3443826f32534a89523037fae6919d16117931",
+  "previous_suite_sha256": "33dc0af1ca027b10243aff432635b851e6221d03c96dde79d37cb723d066dc24",
+  "corpus_sha256": "8dbfad5536db23888bc667ec73653e3f63128b7503acf510371fc5625e5dff02",
+  "round1_manifest_sha256": "0fff489d1b527d1d70c93aec2ef5debc74493c4f3cf2236b7a2e17b53d1ff971",
+  "new_turns": 80,
+  "reused_development_turns": 134,
+  "split_counts": {
+    "development": 174,
+    "holdout": 40
+  }
+}

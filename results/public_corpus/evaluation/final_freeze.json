@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-09-06T09:51:28.140110+00:00",
+  "manifest": {
+    "code_root": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI",
+    "code": {
+      "freqai\\__init__.py": "0e634154d3a7ed97b743819529122dcfe1d59ce6dca186c208d93ef872ee46e2",
+      "freqai\\__main__.py": "19f07de3d1765a6803d4332ab1e67346381236f7769f47640e73849922394790",
+      "freqai\\cli.py": "91bed13f25dfc0a6bc923e488fd313f7240a603a90fb4a36ef325c9b256de17f",
+      "freqai\\codec.py": "1741858964d007a8baa1173cb559ac896d07bb4d8eb7d7be840c12c1a5acdc03",
+      "freqai\\dialogue.py": "21d1287fe86a396223870baa5b65dca15e7d03bbf9bf09cc23b3f8d4deb8f15d",
+      "freqai\\features.py": "c48eb11bff823f8329bdbf1509426f1928e19c213793145e30c1ef4abe234535",
+      "freqai\\generation_runtime.py": "207e907ebeb365fac8c288d2968b7e1710fecfaee205f99147284e5e536b8d6d",
+      "freqai\\generative.py": "dbbfc442a15ba01487c5431aa56111c8e99a33765e23fd93db6330d622de6dce",
+      "freqai\\memory.py": "0a7a174ecf4a7e0cfe8e8f30eb9c083d2977f5812dd6bad7ad02e52e94d003ce",
+      "freqai\\reasoning.py": "4819d011b22b1e8d4049172094e124abb43114e84ba059cff946bea1f0835a3a",
+      "freqai\\semantics.py": "51924df70352cc896015f17b3679da3e0ae0b34e0030a00b6f4d0ad44c7bca46",
+      "freqai\\server.py": "13486f03d1f556d0921f9a6bd1596701fd16c2f1c2838a895a3595b0442887ef",
+      "freqai\\spectral_storage.py": "8c0dc33a1c7f91af889a5bcc06eb549837527e46989f96ca724e38c7a5bfaf0c",
+      "freqai\\store.py": "ced6af26368edd586a1e913449a900a173c632fe8ef71722f2429a020fe126f0",
+      "freqai\\synthesis.py": "6183f5403543c4f686a959f9c7d3a4afb636e7df7b03038ab6ca1e8c0a99caad",
+      "memory\\language\\generative_categories.json": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673"
+    },
+    "baseline_corpus_sha256": "c4279b342af9e9798ea6fc59f706b3c7acfd8a30495b716f603c7c4f0f16e065",
+    "suite_sha256": "3ddb7e8bd7463376331080bf81e2b6b81ffc390d7f72eec56da354a341b7cf0a",
+    "additional_corpus": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\imports\\public_dialogue_expansion.jsonl",
+    "additional_corpus_sha256": "832754653cdd1dcd0c2c0cb7043d3edae71f8e28558b5ed7a145362c0b73d9fa",
+    "additional_limit": null,
+    "document_count": 12000,
+    "runner_sha256": "92be94875db620053389fd06b155826dc473135b23d5cf0d0ad0b968589689a5",
+    "max_tokens": 40,
+    "seed": 17
+  },
+  "holdout_seen_by_implementer": false
+}

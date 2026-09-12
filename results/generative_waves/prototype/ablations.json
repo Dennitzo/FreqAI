@@ -1,0 +1,427 @@
+[
+  {
+    "prompt": "Hallo",
+    "full": "Das klingt spannend. Darf es eher kreativ, sportlich oder ganz gemütlich sein?",
+    "no_prompt": "Das klingt unangenehm. Ist etwas bestimmtes im kopf oder ist die unruhe eher ohne klaren anlass da?",
+    "no_prefix": "? Einem wieder deinen daran",
+    "prompt_changes_output": true,
+    "no_prefix_statistics": {
+      "token_count": 5,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 1,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Guten Morgen",
+    "full": "Du musst das nicht sofort benennen können. Was bemerkst du gerade eher: unruhe, schwere oder vielleicht einfach leere?",
+    "no_prompt": "Eher etwas kleines zum naschen oder etwas, das du zuletzt für dich geschafft hast?",
+    "no_prefix": "Für du. Nach tag du noch oder du abend ruhe was? Unruhe. Gerade du dir. Es gern du",
+    "prompt_changes_output": true,
+    "no_prefix_statistics": {
+      "token_count": 22,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 2,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Wie geht es dir?",
+    "full": "Das klingt nach einem schönen fund im kopf. Magst du gerade?",
+    "no_prompt": "Das klingt nach einem schönen fund im kopf. Magst du gerade?",
+    "no_prefix": "? Schritt?? Schon,",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 6,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 0,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Mir geht es gut, und dir?",
+    "full": "Dann wäre vielleicht ein ruhiger moment angenehm. War dein tag besonders anstrengend?",
+    "no_prompt": "Das klingt nach freude am experimentieren. Was hast du zuletzt ausprobiert?",
+    "no_prefix": "",
+    "prompt_changes_output": true,
+    "no_prefix_statistics": {
+      "token_count": 0,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 1,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Ich bin traurig",
+    "full": "Das klingt nach einer schönen kleinen unterbrechung. Hörst du ihnen gerade bewusst zu?",
+    "no_prompt": "Das klingt nach einer schönen kleinen unterbrechung. Hörst du ihnen gerade bewusst zu?",
+    "no_prefix": "? Der? Eher das dafür, die..",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 10,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": true,
+      "content_prompt_tokens_known": 0,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Ich bin heute müde",
+    "full": "Und wie war es für dich? Würdest du es wieder essen?",
+    "no_prompt": "Und wie war es für dich? Würdest du es wieder essen?",
+    "no_prefix": "Sofort",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 1,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 0,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Heute war die Arbeit stressig",
+    "full": "Dann darf der tag vielleicht etwas luft schaffen?",
+    "no_prompt": "Dann darf der tag vielleicht etwas luft schaffen?",
+    "no_prefix": ".. Worte dir zehn ist zuletzt tag gemacht das du? Gern das ist. Fest. Schritt du angenehmster. Dir mal anfang dann nächsten was",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 28,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 0,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Ich freue mich auf das Wochenende",
+    "full": "Das ist verständlich. Möchtest du erzählen, was auf deine stimmung drückt?",
+    "no_prompt": "Das ist verständlich. Möchtest du erzählen, was auf deine stimmung drückt?",
+    "no_prefix": "",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 0,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 0,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Was möchtest du essen?",
+    "full": "Das kann direkt etwas an der stimmung ändern. Hast du schon zu hause, und soll es heute eher schnell oder gemütlich werden?",
+    "no_prompt": "Das ist ein besonderer anfang. Worauf freust du dich darauf, oder ist der besuch gerade eher mit anspannung verbunden?",
+    "no_prefix": "Es??, du idee gern gerade zehn dem zu einem du? Pause eher etwas schön zu welcher? Klingt,",
+    "prompt_changes_output": true,
+    "no_prefix_statistics": {
+      "token_count": 23,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 1,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Ich koche heute Nudeln",
+    "full": "Das kann den blick auf das eigene eng machen. Gibt es etwas kleines, das du selbst zubereiten möchtest?",
+    "no_prompt": "Das kann den blick auf das eigene eng machen. Gibt es etwas kleines, das du selbst zubereiten möchtest?",
+    "no_prefix": "? Begonnen, schweren",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 4,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 0,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Erzähl mir etwas über Musik",
+    "full": "Das klingt schmerzhaft. Möchtest du etwas altes auffrischen oder neu anfangen?",
+    "no_prompt": "Das klingt schmerzhaft. Möchtest du etwas altes auffrischen oder neu anfangen?",
+    "no_prefix": "Du ruhe oder du dir kleinen oder dir magst gerade",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 10,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 3,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Hast du einen guten Film gesehen?",
+    "full": "Das klingt unangenehm. Ist etwas bestimmtes im kopf oder ist die unruhe eher ohne klaren anlass da?",
+    "no_prompt": "Dann wirkt der tag vielleicht etwas langsamer sein. Gibt es etwas, auf das du dich beim wiedersehen besonders freust?",
+    "no_prefix": "",
+    "prompt_changes_output": true,
+    "no_prefix_statistics": {
+      "token_count": 0,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 1,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Ich lese gerade ein Buch",
+    "full": "Eine kurze ehrliche nachricht kann ein guter anfang sein. Was würdest du ihm gern sagen?",
+    "no_prompt": "Eine kurze ehrliche nachricht kann ein guter anfang sein. Was würdest du ihm gern sagen?",
+    "no_prefix": "Hängt du",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 2,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 0,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Draußen regnet es",
+    "full": "Dann hilft vielleicht ein ruhiger moment angenehm. War dein tag besonders anstrengend?",
+    "no_prompt": "Dann ist eine unterbrechung vielleicht genau richtig. Was würde dir gerade abstand geben?",
+    "no_prefix": ". Du.. Zusammenstellen nach",
+    "prompt_changes_output": true,
+    "no_prefix_statistics": {
+      "token_count": 6,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 1,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Ich möchte spazieren gehen",
+    "full": "Das klingt nach einer schönen kleinen unterbrechung. Hörst du ihnen gerade bewusst zu?",
+    "no_prompt": "Das klingt nach einer schönen kleinen unterbrechung. Hörst du ihnen gerade bewusst zu?",
+    "no_prefix": "Dir einen einfach eher du wir schritt es fehlt bei",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 10,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 1,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Heute habe ich viel zu tun",
+    "full": "Das klingt nach einer vollen zeit. Was nimmt gerade den meisten raum ein?",
+    "no_prompt": "Guten morgen! Bist du schon richtig wach oder brauchst du noch einen ruhigen moment?",
+    "no_prefix": "Nach klingt schön du tag unterbrechung klingt was was du? Dir für. Dir gerade magst was altes dein das der nächsten das klingt was nach du",
+    "prompt_changes_output": true,
+    "no_prefix_statistics": {
+      "token_count": 28,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 1,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Ich brauche eine Pause",
+    "full": "Alles gute zum geburtstag! Wie möchtest du angesprochen werden?",
+    "no_prompt": "Alles gute zum geburtstag! Wie möchtest du angesprochen werden?",
+    "no_prefix": "! Du? Es",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 4,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 1,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Ich kann nicht einschlafen",
+    "full": "Was ist dir bei der entscheidung am wichtigsten?",
+    "no_prompt": "Was ist dir bei der entscheidung am wichtigsten?",
+    "no_prefix": "Was das nach das etwas. Wäre möchtest",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 8,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 0,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Ich vermisse meine Freunde",
+    "full": "Das passiert. Lässt sich am tisch noch etwas nachwürzen?",
+    "no_prompt": "Das passiert. Lässt sich am tisch noch etwas nachwürzen?",
+    "no_prefix": "? Zieht",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 2,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 0,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Ich habe heute Geburtstag",
+    "full": "Wie schön! Magst du erzählen, wie dein tag bisher?",
+    "no_prompt": "Wie schön! Magst du erzählen, wie dein tag bisher?",
+    "no_prefix": "Worauf möchtest du",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 3,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 1,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Danke für das Gespräch",
+    "full": "Das klingt unangenehm. Ist etwas bestimmtes im kopf oder ist die unruhe eher ohne klaren anlass da?",
+    "no_prompt": "Guten morgen! Bist du schon richtig wach oder brauchst du noch einen ruhigen moment?",
+    "no_prefix": "Kopf was zeit dass für jemanden, du etwas. Das tag? Hast",
+    "prompt_changes_output": true,
+    "no_prefix_statistics": {
+      "token_count": 14,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 2,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Tschüss",
+    "full": "Das ist ein schöner blick auf alltägliche dinge. Welches motiv hat dich zuletzt überrascht?",
+    "no_prompt": "Das ist ein schöner blick auf alltägliche dinge. Welches motiv hat dich zuletzt überrascht?",
+    "no_prefix": "",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 0,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 1,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Was machst du gern?",
+    "full": "Das klingt nach einem entspannten plan. Möchtest du lieber auftanken oder etwas unternehmen?",
+    "no_prompt": "Das klingt nach einem entspannten plan. Möchtest du lieber auftanken oder etwas unternehmen?",
+    "no_prefix": "Etwas hast das?",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 4,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": true,
+      "content_prompt_tokens_known": 0,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Ich möchte etwas Neues lernen",
+    "full": "Das klingt spannend. Darf es eher kreativ, sportlich oder ganz gemütlich sein?",
+    "no_prompt": "Das klingt spannend. Darf es eher kreativ, sportlich oder ganz gemütlich sein?",
+    "no_prefix": "Erste du werden du die aus ja was dich das eher gelegenheit?? Klaren den an was wäre. Du das wie wäre an vorfreude. Gerade du schmerzhaft etwas? Klingt was mag ruhe schön nimmt fehlt?? Klarer",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 42,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 0,
+      "automatic_semantic_correctness": null
+    }
+  },
+  {
+    "prompt": "Was ist ein Quantencomputer?",
+    "full": "Gern. Schön, wenn unser gespräch dir etwas weitergeholfen hat.",
+    "no_prompt": "Gern. Schön, wenn unser gespräch dir etwas weitergeholfen hat.",
+    "no_prefix": "Kleiner?? Moment etwas? Naschen da leere es. Ist anfangen oder gerade einem scheint sehen und",
+    "prompt_changes_output": false,
+    "no_prefix_statistics": {
+      "token_count": 19,
+      "ended": true,
+      "repeated_trigrams": 0,
+      "corpus_trigram_fraction": 0.0,
+      "exact_corpus_response": false,
+      "ends_with_sentence_punctuation": false,
+      "content_prompt_tokens_known": 0,
+      "automatic_semantic_correctness": null
+    }
+  }
+]

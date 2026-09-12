@@ -1,0 +1,729 @@
+{
+  "version": 1,
+  "purpose": "Known40 information questions. Never new holdout performance; never import as model data.",
+  "cases": [
+    {
+      "id": "id01",
+      "prompt": "Was ist eine Frequenz?",
+      "kind": "definition",
+      "status": "previously observed information evaluation; known regression only",
+      "rubric": "Number of repetitions or oscillations per unit time; no unrelated definition.",
+      "concepts": [
+        [
+          "Frequenz"
+        ],
+        [
+          "Schwingungen",
+          "Wiederholungen",
+          "periodisch"
+        ],
+        [
+          "Zeit",
+          "Sekunde"
+        ]
+      ],
+      "historical_split": "development"
+    },
+    {
+      "id": "id02",
+      "prompt": "Mit welcher Einheit gibt man die Frequenz an?",
+      "kind": "unit",
+      "rubric": "Hertz, Hz, equivalently inverse second; must associate unit with frequency.",
+      "concepts": [
+        [
+          "Frequenz"
+        ],
+        [
+          "Hertz",
+          "Hz"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id03",
+      "prompt": "Wie hängen Periodendauer und Frequenz zusammen?",
+      "kind": "relation",
+      "rubric": "Reciprocal relation f=1/T or equivalent; doubling one halves the other.",
+      "concepts": [
+        [
+          "Periodendauer",
+          "Schwingungsdauer"
+        ],
+        [
+          "Frequenz"
+        ],
+        [
+          "Kehrwert",
+          "reziprok",
+          "1/T",
+          "1 / T"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id04",
+      "prompt": "Bedeutet eine größere Amplitude automatisch eine höhere Frequenz?",
+      "kind": "negation",
+      "rubric": "No; amplitude describes displacement/strength while frequency describes repetitions per time.",
+      "concepts": [
+        [
+          "Amplitude"
+        ],
+        [
+          "Frequenz"
+        ],
+        [
+          "Auslenkung",
+          "Schwingung"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id05",
+      "prompt": "Kann sich Schall im leeren Vakuum ausbreiten?",
+      "kind": "negation",
+      "rubric": "No, sound needs a material medium; do not confuse electromagnetic waves.",
+      "concepts": [
+        [
+          "Schall"
+        ],
+        [
+          "Vakuum",
+          "Medium",
+          "Materie"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id06",
+      "prompt": "Braucht Licht zur Ausbreitung Luft?",
+      "kind": "negation",
+      "rubric": "No, electromagnetic light propagates in vacuum; air is unnecessary.",
+      "concepts": [
+        [
+          "Licht",
+          "elektromagnetisch"
+        ],
+        [
+          "Vakuum"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id07",
+      "prompt": "Was versteht man unter Gravitation?",
+      "kind": "definition",
+      "rubric": "Attractive interaction associated with masses; not magnetism or friction.",
+      "concepts": [
+        [
+          "Gravitation",
+          "Schwerkraft"
+        ],
+        [
+          "Masse",
+          "Massen"
+        ],
+        [
+          "Anziehung",
+          "anziehen",
+          "anziehende"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id08",
+      "prompt": "Welche SI-Einheit hat die Masse?",
+      "kind": "unit",
+      "rubric": "Kilogram, kg; not Newton or weight force.",
+      "concepts": [
+        [
+          "Masse"
+        ],
+        [
+          "Kilogramm",
+          "kg"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id09",
+      "prompt": "In welcher Einheit misst man elektrische Spannung?",
+      "kind": "unit",
+      "rubric": "Volt, V, associated with electrical potential difference.",
+      "concepts": [
+        [
+          "Spannung"
+        ],
+        [
+          "Volt"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id10",
+      "prompt": "Wofür steht die Einheit Ampere?",
+      "kind": "unit_reverse",
+      "rubric": "Electric current/current strength; do not answer voltage.",
+      "concepts": [
+        [
+          "Ampere"
+        ],
+        [
+          "Stromstärke",
+          "elektrischen Strom"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id11",
+      "prompt": "Was wird in Ohm gemessen?",
+      "kind": "unit_reverse",
+      "rubric": "Electrical resistance, not current or voltage.",
+      "concepts": [
+        [
+          "Ohm"
+        ],
+        [
+          "Widerstand"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id12",
+      "prompt": "Welche Größe misst man in Watt?",
+      "kind": "unit_reverse",
+      "rubric": "Power, energy transferred per time; not energy itself.",
+      "concepts": [
+        [
+          "Watt"
+        ],
+        [
+          "Leistung"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id13",
+      "prompt": "Welche Einheit verwendet das SI für Energie?",
+      "kind": "unit",
+      "rubric": "Joule, J. Correctly associated with energy.",
+      "concepts": [
+        [
+          "Energie"
+        ],
+        [
+          "Joule"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id14",
+      "prompt": "Wie berechnet sich die Dichte aus Masse und Volumen?",
+      "kind": "relation",
+      "rubric": "Density equals mass divided by volume, not reversed.",
+      "concepts": [
+        [
+          "Dichte"
+        ],
+        [
+          "Masse"
+        ],
+        [
+          "Volumen"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id15",
+      "prompt": "Verdunstet Wasser erst, wenn es kocht?",
+      "kind": "negation",
+      "rubric": "No, evaporation occurs below boiling temperature at liquid surface.",
+      "concepts": [
+        [
+          "Verdunstung",
+          "verdunstet"
+        ],
+        [
+          "Siedetemperatur",
+          "Siedepunkt",
+          "Oberfläche"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id16",
+      "prompt": "Ist eine wässrige Lösung mit einem pH-Wert unter sieben sauer oder basisch?",
+      "kind": "classification",
+      "rubric": "Acidic under conventional room-temperature aqueous conditions; not basic.",
+      "concepts": [
+        [
+          "pH"
+        ],
+        [
+          "sauer",
+          "saure"
+        ],
+        [
+          "7",
+          "sieben"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id17",
+      "prompt": "Was machen Pflanzen bei der Fotosynthese?",
+      "kind": "definition",
+      "rubric": "Use light energy to convert carbon dioxide and water into energy-rich organic matter/sugars, usually releasing oxygen; not only breathing oxygen.",
+      "concepts": [
+        [
+          "Fotosynthese",
+          "Photosynthese"
+        ],
+        [
+          "Licht"
+        ],
+        [
+          "Kohlenstoffdioxid",
+          "Kohlendioxid"
+        ],
+        [
+          "Zucker",
+          "Glucose",
+          "Glukose",
+          "organische"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id18",
+      "prompt": "Welche Aufgabe haben Mitochondrien in einer Zelle?",
+      "kind": "function",
+      "rubric": "Cellular energy provision/ATP synthesis through respiration; not storing all genetic information.",
+      "concepts": [
+        [
+          "Mitochondrien"
+        ],
+        [
+          "ATP",
+          "Energie",
+          "Zellatmung"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id19",
+      "prompt": "Wie warm ist es genau jetzt in meinem Zimmer?",
+      "kind": "unknown_value",
+      "rubric": "State insufficient measurement/location data or ask for measurement; do not invent a current temperature.",
+      "concepts": [],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "id20",
+      "prompt": "Wie viele Herzschläge pro Minute habe ich in diesem Augenblick?",
+      "kind": "unknown_value",
+      "rubric": "Cannot know user's actual pulse without a measurement. Typical ranges alone do not answer the personal value; no invented exact number.",
+      "concepts": [],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "development"
+    },
+    {
+      "id": "ih01",
+      "prompt": "Was beschreibt die Wellenlänge einer Welle?",
+      "kind": "definition",
+      "rubric": "Spatial distance between adjacent equal-phase points, e.g. two crests; not time between oscillations.",
+      "concepts": [
+        [
+          "Wellenlänge"
+        ],
+        [
+          "Abstand",
+          "Entfernung"
+        ],
+        [
+          "Wellenberg",
+          "Wellenberge",
+          "Phase"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih02",
+      "prompt": "Welchen Zahlenfaktor bezeichnet die Vorsilbe Kilo bei Einheiten?",
+      "kind": "unit",
+      "rubric": "One thousand, 1000, ten to third power.",
+      "concepts": [
+        [
+          "Kilo",
+          "kilo"
+        ],
+        [
+          "1000",
+          "tausend",
+          "10³"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih03",
+      "prompt": "Ist ein Lichtjahr eine Zeiteinheit?",
+      "kind": "negation",
+      "rubric": "No; unit of distance, distance light travels in a year in vacuum.",
+      "concepts": [
+        [
+          "Lichtjahr"
+        ],
+        [
+          "Länge",
+          "Entfernung",
+          "Distanz",
+          "Strecke"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih04",
+      "prompt": "Welche physikalische Größe wird in Pascal angegeben?",
+      "kind": "unit_reverse",
+      "rubric": "Pressure (also stress acceptable with pressure context), not force alone.",
+      "concepts": [
+        [
+          "Pascal"
+        ],
+        [
+          "Druck"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih05",
+      "prompt": "Was ist die SI-Einheit einer Beschleunigung?",
+      "kind": "unit",
+      "rubric": "Metres per second squared, m/s²; not m/s.",
+      "concepts": [
+        [
+          "Beschleunigung"
+        ],
+        [
+          "m/s²",
+          "m/s^2",
+          "Quadratsekunde",
+          "Sekundenquadrat"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih06",
+      "prompt": "Wie erhält man den Gesamtwiderstand von Widerständen in einer Reihenschaltung?",
+      "kind": "relation",
+      "rubric": "Add individual resistances; not reciprocal parallel formula.",
+      "concepts": [
+        [
+          "Reihenschaltung"
+        ],
+        [
+          "Widerstand",
+          "Widerstände"
+        ],
+        [
+          "Summe",
+          "addieren",
+          "addiert"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih07",
+      "prompt": "Sind elektrische Stromstärke und elektrische Spannung dasselbe?",
+      "kind": "negation",
+      "rubric": "No; current is charge flow per time, voltage potential difference/energy per charge. Distinction must not reverse.",
+      "concepts": [
+        [
+          "Stromstärke"
+        ],
+        [
+          "Spannung"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih08",
+      "prompt": "Aus welchen Teilchen besteht ein Atomkern normalerweise?",
+      "kind": "composition",
+      "rubric": "Protons and neutrons, with ordinary hydrogen nucleus exception allowed; electrons outside nucleus.",
+      "concepts": [
+        [
+          "Atomkern"
+        ],
+        [
+          "Protonen"
+        ],
+        [
+          "Neutronen"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih09",
+      "prompt": "Welche Art elektrischer Ladung trägt ein Elektron?",
+      "kind": "classification",
+      "rubric": "Negative electrical charge.",
+      "concepts": [
+        [
+          "Elektron"
+        ],
+        [
+          "negativ"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih10",
+      "prompt": "Welche Ladung hat ein Proton im Vergleich zu einem Elektron?",
+      "kind": "relation",
+      "rubric": "Positive, opposite sign and equal charge magnitude; no reversal.",
+      "concepts": [
+        [
+          "Proton"
+        ],
+        [
+          "positiv"
+        ],
+        [
+          "Elektron"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih11",
+      "prompt": "Ist Sauerstoff selbst ein brennbarer Stoff?",
+      "kind": "negation",
+      "rubric": "No under ordinary combustion usage; supports combustion/oxidizer rather than fuel.",
+      "concepts": [
+        [
+          "Sauerstoff"
+        ],
+        [
+          "brandfördernd",
+          "Verbrennung",
+          "brennbar"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih12",
+      "prompt": "Bei welcher Temperatur gefriert reines Wasser unter normalem Luftdruck?",
+      "kind": "value",
+      "rubric": "About 0°C or 273.15K at normal pressure, with supercooling nuance optional; not boiling point.",
+      "concepts": [
+        [
+          "Wasser"
+        ],
+        [
+          "Gefrierpunkt",
+          "gefriert",
+          "Erstarrung"
+        ],
+        [
+          "0",
+          "273"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih13",
+      "prompt": "Worin unterscheidet sich die Form eines festen Körpers von der einer Flüssigkeit?",
+      "kind": "comparison",
+      "rubric": "Solid retains shape, liquid assumes container shape while roughly retaining volume.",
+      "concepts": [
+        [
+          "Festkörper",
+          "Feststoff",
+          "festen"
+        ],
+        [
+          "Flüssigkeit"
+        ],
+        [
+          "Form"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih14",
+      "prompt": "Ziehen sich zwei magnetische Nordpole an oder stoßen sie sich ab?",
+      "kind": "relation",
+      "rubric": "Like magnetic poles repel.",
+      "concepts": [
+        [
+          "Magnet",
+          "magnetisch"
+        ],
+        [
+          "gleichnamige",
+          "Nordpole"
+        ],
+        [
+          "abstoßen",
+          "ab",
+          "Abstoßung"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih15",
+      "prompt": "Welcher Stern steht im Zentrum unseres Sonnensystems?",
+      "kind": "identity",
+      "rubric": "The Sun; not Earth or an arbitrary star.",
+      "concepts": [
+        [
+          "Sonnensystem"
+        ],
+        [
+          "Sonne"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih16",
+      "prompt": "Erzeugt der Mond das sichtbare Mondlicht selbst?",
+      "kind": "negation",
+      "rubric": "No, reflects sunlight; not an internally shining star.",
+      "concepts": [
+        [
+          "Mond"
+        ],
+        [
+          "Sonnenlicht",
+          "Sonne"
+        ],
+        [
+          "reflektiert",
+          "Reflexion",
+          "reflektier"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih17",
+      "prompt": "Welche grundsätzliche Funktion hat die DNA bei Lebewesen?",
+      "kind": "function",
+      "rubric": "Carries genetic/hereditary information, not primarily energy storage or oxygen transport.",
+      "concepts": [
+        [
+          "DNA",
+          "Desoxyribonukleinsäure"
+        ],
+        [
+          "Erbinformation",
+          "genetische",
+          "Erbsubstanz"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih18",
+      "prompt": "Sind Bakterien üblicherweise ein- oder mehrzellige Lebewesen?",
+      "kind": "classification",
+      "rubric": "Single-celled prokaryotes; colonies do not make them ordinary multicellular animals.",
+      "concepts": [
+        [
+          "Bakterien"
+        ],
+        [
+          "einzellig",
+          "Einzeller"
+        ]
+      ],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih19",
+      "prompt": "Welche exakte Frequenz hat das Geräusch, das gerade neben mir zu hören ist?",
+      "kind": "unknown_value",
+      "rubric": "No acoustic recording or measurement provided; ask for signal/measurement or state cannot determine; do not invent Hertz value.",
+      "concepts": [],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    },
+    {
+      "id": "ih20",
+      "prompt": "Wie schwer ist der Gegenstand, den ich gerade in der Hand halte?",
+      "kind": "unknown_value",
+      "rubric": "Object and measurement unknown, so cannot state its mass; ask for details/measurement without fabricating.",
+      "concepts": [],
+      "status": "previously observed information evaluation; known regression only",
+      "historical_split": "holdout"
+    }
+  ]
+}

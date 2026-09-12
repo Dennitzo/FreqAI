@@ -1,0 +1,15 @@
+{
+  "query": "Dolly-15k-de Deutsche Telekom dataset",
+  "results": [
+    {
+      "title": "Video | Dry-Hire und Mietprodukte und Artikel auf dry-hire.com",
+      "url": "https://dry-hire.com/de/kategorie/video",
+      "snippet": "... Dolly mit speziellen Rädern > inklusive abnehmbarer Fußleiste ... Los refinamientos adicionales de la tecnología de imágenes de alta calidad de ...",
+      "source": "google cse",
+      "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSd6cwXo-SNF1gDT6xJYV55dZ0gU_CHBlZI4eFoJqxEs8XuKESXxNPqw0c"
+    }
+  ],
+  "provider": "searxng",
+  "isFallback": false,
+  "retrievedAt": "2026-09-06T09:15:18.6868335+00:00"
+}

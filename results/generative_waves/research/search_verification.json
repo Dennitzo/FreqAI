@@ -1,0 +1,58 @@
+{
+  "queries": 10,
+  "all_http_200": true,
+  "all_provider_searxng": true,
+  "fallback_used": false,
+  "records": [
+    {
+      "file": "fnet.json",
+      "query": "\"FNet\" \"Fourier\"",
+      "result_count": 3
+    },
+    {
+      "file": "hmm_title.json",
+      "query": "\"A Spectral Algorithm\" \"Hidden Markov\"",
+      "result_count": 0
+    },
+    {
+      "file": "holographic.json",
+      "query": "Tony Plate 1995 Holographic reduced representations circular convolution sequences Fourier",
+      "result_count": 7
+    },
+    {
+      "file": "ngram.json",
+      "query": "Claude Shannon 1948 mathematical theory communication approximations English word generation Markov",
+      "result_count": 8
+    },
+    {
+      "file": "ngram_smoothing.json",
+      "query": "\"Kneser\" \"Ney\" language model",
+      "result_count": 8
+    },
+    {
+      "file": "plate_title.json",
+      "query": "\"Holographic Reduced Representations\"",
+      "result_count": 0
+    },
+    {
+      "file": "reservoir.json",
+      "query": "\"Echo State\" \"Jaeger\" 2001",
+      "result_count": 8
+    },
+    {
+      "file": "shannon_title.json",
+      "query": "\"Shannon\" \"A Mathematical Theory of Communication\" pdf",
+      "result_count": 8
+    },
+    {
+      "file": "spectral_automata.json",
+      "query": "Hsu Kakade Zhang spectral algorithm learning hidden Markov models 2009",
+      "result_count": 0
+    },
+    {
+      "file": "wave_rnn.json",
+      "query": "White Lee Sompolinsky 2004 short term memory orthogonal networks oscillators sequence",
+      "result_count": 1
+    }
+  ]
+}

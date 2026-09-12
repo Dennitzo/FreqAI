@@ -1,0 +1,64 @@
+{
+  "timestamp_utc": "20260906T072405Z",
+  "inputs": [
+    {
+      "original": "runtime\\memory.npz",
+      "backup": "memory\\backups\\legacy-20260906T072405Z\\memory.npz",
+      "sha256": "155846a56590c8045384074b6d1cc7c549dcc6b3ebb6da0b35061c61ad326e99",
+      "documents": 8,
+      "archive_result": {
+        "added": 8,
+        "existing": 0
+      }
+    },
+    {
+      "original": "runtime\\demo.npz",
+      "backup": "memory\\backups\\legacy-20260906T072405Z\\demo.npz",
+      "sha256": "155846a56590c8045384074b6d1cc7c549dcc6b3ebb6da0b35061c61ad326e99",
+      "documents": 8,
+      "archive_result": {
+        "added": 0,
+        "existing": 8
+      }
+    },
+    {
+      "original": "memory\\fixtures\\demo.jsonl",
+      "backup": "memory\\backups\\legacy-20260906T072405Z\\demo.jsonl",
+      "sha256": "916653e5ac5d3c58433353dc86f404b80a0f65275713076162f22708bbe0d1fd",
+      "documents": 8,
+      "archive_result": {
+        "added": 0,
+        "existing": 8
+      }
+    },
+    {
+      "original": "memory\\fixtures\\benchmark.json",
+      "backup": "memory\\backups\\legacy-20260906T072405Z\\benchmark.json",
+      "sha256": "c0f10efc6076a26b5d42439ccf3b436092e7a9d5dbccd0131354be6b27a24bff",
+      "documents": 40,
+      "archive_result": {
+        "added": 40,
+        "existing": 0
+      }
+    }
+  ],
+  "store": {
+    "path": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\memory.sqlite3",
+    "revision": 0,
+    "document_count": 0,
+    "archive_document_count": 48,
+    "history_count": 0,
+    "relation_count": 0,
+    "canonical_format": "sqlite_text",
+    "wave_storage": "derived_in_memory",
+    "configuration": {
+      "dimensions": 4096,
+      "feature_mode": "morphology",
+      "min_coverage": 0.6,
+      "min_score": 0.18,
+      "retrieval_policy": "coverage"
+    }
+  },
+  "active_records_replaced": false,
+  "all_legacy_texts_preserved": true
+}

@@ -1,0 +1,1548 @@
+{
+  "session": "unpaired-migration-audit-ef9b904f39a2401d9262bf04998a869c",
+  "conversation": [
+    2,
+    {
+      "information": {
+        "subjects": [
+          "frequenz"
+        ],
+        "facets": [
+          "definition"
+        ],
+        "field": [
+          [
+            "frequenz",
+            0.7661845913210791
+          ],
+          [
+            "bei",
+            0.22720067452093734
+          ],
+          [
+            "die",
+            0.22720067452093734
+          ],
+          [
+            "auch",
+            0.11360033726046867
+          ],
+          [
+            "aufeinander",
+            0.11360033726046867
+          ],
+          [
+            "b",
+            0.11360033726046867
+          ],
+          [
+            "dafür",
+            0.11360033726046867
+          ],
+          [
+            "ein",
+            0.11360033726046867
+          ],
+          [
+            "einem",
+            0.11360033726046867
+          ],
+          [
+            "einer",
+            0.11360033726046867
+          ],
+          [
+            "folgen",
+            0.11360033726046867
+          ],
+          [
+            "fortdauernden",
+            0.11360033726046867
+          ],
+          [
+            "genannt",
+            0.11360033726046867
+          ],
+          [
+            "in",
+            0.11360033726046867
+          ],
+          [
+            "ist",
+            0.11360033726046867
+          ],
+          [
+            "mass",
+            0.11360033726046867
+          ],
+          [
+            "periodischen",
+            0.11360033726046867
+          ],
+          [
+            "physik",
+            0.11360033726046867
+          ],
+          [
+            "schnell",
+            0.11360033726046867
+          ],
+          [
+            "schwingung",
+            0.11360033726046867
+          ],
+          [
+            "schwingungszahl",
+            0.11360033726046867
+          ],
+          [
+            "technik",
+            0.11360033726046867
+          ],
+          [
+            "und",
+            0.11360033726046867
+          ],
+          [
+            "vorgang",
+            0.11360033726046867
+          ],
+          [
+            "wie",
+            0.11360033726046867
+          ],
+          [
+            "wiederholungen",
+            0.11360033726046867
+          ],
+          [
+            "z",
+            0.11360033726046867
+          ]
+        ],
+        "turns": 1,
+        "kind": "unpaired_information_token_field"
+      },
+      "active_wave_decoder": "unpaired",
+      "turn_count": 2,
+      "unpaired": {
+        "subjects": [
+          "frequenz"
+        ],
+        "facets": [
+          "unit"
+        ],
+        "user_facts": {},
+        "field": [
+          [
+            "frequenz",
+            0.5757211530873841
+          ],
+          [
+            "einheit",
+            0.5141570281496626
+          ],
+          [
+            "die",
+            0.2985987842049584
+          ],
+          [
+            "ist",
+            0.24019037240231644
+          ],
+          [
+            "das",
+            0.1817819605996745
+          ],
+          [
+            "der",
+            0.1817819605996745
+          ],
+          [
+            "einheitenzeichen",
+            0.1817819605996745
+          ],
+          [
+            "hertz",
+            0.1817819605996745
+          ],
+          [
+            "hz",
+            0.1817819605996745
+          ],
+          [
+            "bei",
+            0.1168168236052839
+          ],
+          [
+            "auch",
+            0.05840841180264195
+          ],
+          [
+            "aufeinander",
+            0.05840841180264195
+          ],
+          [
+            "b",
+            0.05840841180264195
+          ],
+          [
+            "dafür",
+            0.05840841180264195
+          ],
+          [
+            "ein",
+            0.05840841180264195
+          ],
+          [
+            "einem",
+            0.05840841180264195
+          ],
+          [
+            "einer",
+            0.05840841180264195
+          ],
+          [
+            "folgen",
+            0.05840841180264195
+          ],
+          [
+            "fortdauernden",
+            0.05840841180264195
+          ],
+          [
+            "genannt",
+            0.05840841180264195
+          ],
+          [
+            "in",
+            0.05840841180264195
+          ],
+          [
+            "mass",
+            0.05840841180264195
+          ],
+          [
+            "periodischen",
+            0.05840841180264195
+          ],
+          [
+            "physik",
+            0.05840841180264195
+          ],
+          [
+            "schnell",
+            0.05840841180264195
+          ],
+          [
+            "schwingung",
+            0.05840841180264195
+          ],
+          [
+            "schwingungszahl",
+            0.05840841180264195
+          ],
+          [
+            "technik",
+            0.05840841180264195
+          ],
+          [
+            "und",
+            0.05840841180264195
+          ],
+          [
+            "vorgang",
+            0.05840841180264195
+          ],
+          [
+            "wie",
+            0.05840841180264195
+          ],
+          [
+            "wiederholungen",
+            0.05840841180264195
+          ],
+          [
+            "z",
+            0.05840841180264195
+          ]
+        ],
+        "turns": 2,
+        "kind": "unpaired_information_token_field"
+      }
+    }
+  ],
+  "server": {
+    "url": "http://127.0.0.1:8765",
+    "commandLine": "\"C:\\Users\\AMD\\AppData\\Local\\Programs\\Python\\Python311\\python.exe\" -m freqai serve --memory \"C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\memory.sqlite3\" --port 8765 ",
+    "pid": 3916,
+    "executable": "C:\\Users\\AMD\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "launchedPid": 37024
+  },
+  "statistics": {
+    "path": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\memory.sqlite3",
+    "revision": 7,
+    "document_count": 20000,
+    "archive_document_count": 12048,
+    "history_count": 90,
+    "relation_count": 0,
+    "canonical_format": "sqlite_text",
+    "wave_storage": "derived_in_memory",
+    "knowledge_format": "information_texts",
+    "legacy_schema": false,
+    "configuration": {
+      "dimensions": 4096,
+      "feature_mode": "morphology",
+      "min_coverage": 0.6,
+      "min_score": 0.18,
+      "retrieval_policy": "coverage"
+    }
+  },
+  "state": {
+    "time_s": 10.163630099999864,
+    "displacement": [
+      -0.5876082517000235,
+      -0.05271463010259374,
+      -0.7056289630298689,
+      -0.36312877358001555,
+      -0.10357414724007387,
+      -0.33077464418774055,
+      -0.5257828889547316,
+      -0.16614690684032477,
+      -0.20868525830399293,
+      -0.4381561414490919,
+      -0.15402081897663755,
+      -0.10450891981636098,
+      -0.45043331960524385,
+      -0.1552927094401649,
+      -0.08221254800952535,
+      -0.43588005427961707,
+      -0.36266006870088885,
+      -0.6272887240180303,
+      -0.2886997646517736,
+      -0.21493247329236104,
+      -0.2193165805502631,
+      -0.04786897667845752,
+      -0.2712931175673694,
+      -0.126036353219301,
+      -0.09695936408255942,
+      -0.2837109335857385,
+      -0.17456523849525887,
+      -0.14307613204152167,
+      -0.6100995424326127,
+      -0.12240830889587727,
+      -0.07172992962753262,
+      -0.3664439000275043,
+      -0.09747202159917703,
+      -0.0989861484756964,
+      -0.1577838484985867,
+      0.2440328930492338,
+      -0.14076530680179344,
+      -0.6046561322713639,
+      -0.5723983261472003,
+      -0.44986796763054165,
+      -0.4821101949514911,
+      -0.3207625184494802,
+      -0.17545347416827484,
+      -0.2530162056690781,
+      -0.4683423845702135,
+      -0.47652519596522896,
+      -0.7024342465078965,
+      -0.14834319602341545,
+      -0.5053593249750776,
+      -0.4180785234323555,
+      -0.19521857882732047,
+      -0.1362274486284001,
+      -0.1230115248064052,
+      -0.6814403155412763,
+      -0.33423972580251454,
+      -0.4296907657360384,
+      -0.4529067779718915,
+      -0.15202662423375707,
+      -0.12848342441052324,
+      -0.12373361310634312,
+      -0.40485780857651066,
+      -0.7651009132482228,
+      -0.17071653056684646,
+      -0.14052369559568034,
+      -0.6493546530257401,
+      -0.10631254170701862,
+      -0.6279517686754761,
+      -0.036202168705634113,
+      -0.5518525230644697,
+      -0.18355822009904432,
+      -0.39898228231031185,
+      -0.18372602298104304,
+      -0.15591015194587707,
+      -0.3584124618873059,
+      -0.2637532518179393,
+      -0.15547319054176803,
+      -0.20203030583521958,
+      -0.22093244382341537,
+      -0.09031965670613204,
+      -0.44686066657111273,
+      -0.38491454290724836,
+      -0.29571310885325064,
+      0.2153807852483018,
+      -0.22196270461413212,
+      -0.49659086118450046,
+      -0.141715140206083,
+      -0.4373000137519726,
+      -0.3205755931193547,
+      -0.38048200568924445,
+      -0.32446803269292185,
+      -0.16752042708710513,
+      -0.2436499638886922,
+      -0.6193415989288764,
+      -0.13607742720812308,
+      -0.13167022320402183,
+      -0.15346430893137153,
+      -0.14788550318240298,
+      -0.4462896688531156,
+      -0.12264356008676285,
+      -0.4785017999858239,
+      -0.4233075315215624,
+      -0.12551252382687056,
+      -0.21318637948540997,
+      -0.5717188187948234,
+      -0.18130895928158586,
+      -0.20627757892761042,
+      -0.2311494375000989,
+      -0.48214065916443455,
+      -0.3816831726836508,
+      -0.12557695530362728,
+      -0.4312569998564001,
+      -0.11114685129080837,
+      -0.3812461470620224,
+      -0.09585845968523678,
+      -0.21028664358370835,
+      -0.2164307333515711,
+      -0.18421886235295692,
+      -0.14676712185750784,
+      -0.44209280912861537,
+      -0.38786701313192296,
+      -0.13816787319997068,
+      -0.19874286694357599,
+      -0.3980510683993939,
+      -0.30294947720630233,
+      -0.11066607051347521,
+      -0.33878796977876685,
+      -0.41871948894527283,
+      -0.43243253673947946,
+      -0.2352884293476739,
+      -0.3676548773778375,
+      -0.46590737823060263,
+      -0.3913429257408736,
+      -0.16019353636952685,
+      -0.6083532085623682,
+      -0.3917848789247191,
+      -0.137763999334939,
+      -0.275721812274481,
+      -0.15798616990428688,
+      -0.26998314134451173,
+      -0.14957862282171816,
+      -0.5617023559501574,
+      -0.29069863572510574,
+      -0.28959419887656795,
+      -0.3713775358652428,
+      -0.4920859825768794,
+      -0.1276126949639577,
+      -0.3886427376988897,
+      -0.2912012566799181,
+      -0.17620938107019113,
+      -0.10225113580758827,
+      -0.46096040365428564,
+      -0.4327630560712929,
+      -0.10549215474362346,
+      -0.1445757519928314,
+      -0.2671330699821372,
+      -0.35769397003316084,
+      0.0960238382938384,
+      -0.28957328688941036,
+      -0.7563337561968336,
+      -0.38330643084410315,
+      -0.12469644151770781,
+      -0.5988261012888522,
+      -0.39541243796683156,
+      -0.31028428984774914,
+      -0.45743335279956376,
+      -0.13713334308786063,
+      -0.23236437112895952,
+      -0.3999388406488428,
+      -0.4112298488281639,
+      -0.43856670654289254,
+      -0.1818561697346994,
+      -0.04193470189153364,
+      -0.3761735399009418,
+      -0.34184114898950746,
+      -0.37755102659836726,
+      0.01165011795958909,
+      -0.3976213264335998,
+      -0.18869201198253346,
+      -0.4019437151983819,
+      -0.31425114951477495,
+      -0.4791581990173832,
+      -0.09329054067876816,
+      -0.352549421383474,
+      -0.15648103084088189,
+      -0.1400451447770247,
+      -0.632800592576421,
+      -0.21058409780888188,
+      -0.44372715060710055,
+      -0.2129602824588464,
+      -0.6032798788114718,
+      -0.16299254101574695,
+      -0.033622131139051686,
+      -0.18412823465159814,
+      -0.20448333615003883,
+      -0.37669856977034644,
+      -0.4816847694889244,
+      -0.42616823085094774,
+      -0.3733902484664469,
+      -0.17932539836889302,
+      -0.3685260314627746,
+      -0.1854340583373619,
+      -0.05464393112224192,
+      -0.23880045865463256,
+      -0.25289799541884694,
+      -0.23235996893709254,
+      -0.06757196317762564,
+      -0.4915689947166935,
+      -0.5031089347942421,
+      -0.432398736918851,
+      -0.17499694697084495,
+      -0.4962220508114926,
+      -0.3721989467440955,
+      -0.4165671429416458,
+      -0.43798369008175364,
+      -0.39060877068834926,
+      -0.17608393140588335,
+      -0.31549507374953834,
+      -0.440664334755861,
+      -0.6212300549586303,
+      0.25068260435376166,
+      -0.6187370392461212,
+      -0.18541549487830278,
+      -0.278391005562321,
+      -0.3917713489160738,
+      -0.47161504695308454,
+      -0.09190900277193931,
+      -0.4762506586657143,
+      -0.6748303073328912,
+      -0.5955843196951358,
+      -0.1111652602568463,
+      -0.23054923035279598,
+      -0.17630153667832837,
+      -0.40623578714889796,
+      -0.5078897067308048,
+      -0.5806657192157074,
+      -0.36368179269468304,
+      -0.28870672664466107,
+      -0.22455026720595828,
+      -0.40533545511977837,
+      -0.10424704751073424,
+      -0.21246437664707057,
+      -0.4011024802948882,
+      -0.3778181586849193,
+      -0.09610515839676498,
+      -0.17128663101880454,
+      -0.12111457390386601,
+      -0.3629320763705503,
+      -0.5068600651148665,
+      -0.30012296892926704,
+      -0.4141626326321135,
+      -0.32923628482716816,
+      -0.15924593526147385,
+      -0.4935350365514729,
+      -0.40865378163289556,
+      -0.469868904817772,
+      -0.6739718079360315
+    ],
+    "quadrature": [
+      -0.047180287757572915,
+      0.25537947478720147,
+      -0.06289150563452463,
+      0.04895458574584004,
+      0.10648659201222502,
+      -0.1937746276884876,
+      0.04198884564831007,
+      0.18750171454308395,
+      0.18269112582109823,
+      0.07452919661600924,
+      0.11539594805194994,
+      0.02505261656484363,
+      -0.11316131383044148,
+      0.1080987744387014,
+      -0.04035834251399909,
+      0.25594074257401755,
+      0.03304006166063993,
+      0.19360013306564405,
+      -0.17438859538087362,
+      -0.19312393623673985,
+      -0.1987287371764555,
+      -0.06770079369377997,
+      -0.2643323270283836,
+      0.07506422207349898,
+      -0.003613169963570584,
+      0.19416505557549413,
+      0.12924894455670827,
+      0.07879248706442069,
+      0.0808414158654273,
+      0.07026412543320623,
+      0.071270212972264,
+      0.2520691606298919,
+      -0.029465989727607177,
+      0.05014508042832749,
+      0.058021540306265204,
+      0.24560174281381736,
+      0.03722885748374267,
+      -0.015545759334358485,
+      -0.23686418941122456,
+      -0.06721153021971232,
+      0.04195542647149014,
+      0.10759714171346303,
+      -0.3467363378315198,
+      -0.07338482734103113,
+      0.18297363784012166,
+      -0.08285240443171031,
+      0.04331128143486636,
+      -0.13524025807466974,
+      -0.00458057778664317,
+      0.24603991074437154,
+      -0.19691531512860308,
+      -0.14580018408793077,
+      0.054635101857615886,
+      -0.034452598243243635,
+      0.058871070359144705,
+      0.029383981603068043,
+      0.12715584453986087,
+      0.04835947397963042,
+      -0.07218230537029299,
+      -0.010434373373869436,
+      0.11617115192478397,
+      0.3853080600982518,
+      0.14904436745743097,
+      -0.053906739702856574,
+      -0.040692310909657234,
+      0.1705740444799183,
+      0.1296098826000056,
+      0.3468042680933552,
+      -0.09866882543310812,
+      -0.13121790579363019,
+      0.08169609539346853,
+      -0.06573264399969454,
+      0.0021577183717849113,
+      0.28065219023727106,
+      -0.1686571324060715,
+      -0.2004680005160674,
+      0.12344358449435161,
+      -0.15659220230723758,
+      0.20803720746644777,
+      -0.12879991300281307,
+      -0.08790000250414778,
+      0.4498020116811655,
+      0.11605012561893326,
+      0.011093382773066235,
+      -0.0034440897266248827,
+      0.08304152104222355,
+      -0.06411088624330996,
+      -0.10505957212981681,
+      0.32847049451413757,
+      -0.038089840602423826,
+      0.0015401795805226742,
+      -0.5809975496266441,
+      0.34937814501439163,
+      0.012612293710881045,
+      -0.0793951873583533,
+      0.12092756829398371,
+      0.016227076944647742,
+      -0.23949639676737916,
+      0.07940679084000005,
+      0.08792896797925424,
+      0.25348989678155764,
+      0.06541746019772014,
+      0.20772863005122438,
+      -0.0762859882932827,
+      0.09181614061912119,
+      -0.33299120875486965,
+      -0.12764975748002094,
+      -0.034438557804442965,
+      0.12904840658890931,
+      -0.04266599004650872,
+      -0.1776149977612376,
+      0.12422107007258251,
+      -0.1016169996922336,
+      0.08339763681043219,
+      0.34313198974703457,
+      0.28427866726702095,
+      0.18337712651541996,
+      0.06663643764459251,
+      -0.26180003042142963,
+      0.18317062261647668,
+      -0.014454688968800124,
+      -0.16357432860044152,
+      -0.08905318414785646,
+      -0.39095074637391014,
+      0.21712999760810248,
+      -0.3217982228286964,
+      -0.005182457288795246,
+      -0.09424762196005784,
+      -0.35678475536015963,
+      0.07731655373395886,
+      0.04251774814671078,
+      0.18361484393501804,
+      -0.2428342656389395,
+      -0.04312982355266088,
+      -0.44261130549039346,
+      0.04652081272891451,
+      -0.1648986887297926,
+      0.10679338916228365,
+      -0.060145740342132506,
+      -0.1262155874877285,
+      0.02795472940670594,
+      0.08299465596855618,
+      -0.4368415271756181,
+      0.11716872433940513,
+      0.26800004718226833,
+      -0.024373712081917284,
+      0.3951592640819662,
+      -0.12022331592204367,
+      0.21899597751058208,
+      -0.06913991268465769,
+      -0.04845851822854763,
+      0.018141671607502387,
+      -0.053788588935222384,
+      -0.03523486982081622,
+      -0.21254717840942755,
+      0.012305979335986823,
+      -0.15800846579586786,
+      -0.10936058582960673,
+      0.0604330344941308,
+      0.1090953699946328,
+      -0.1584569062524185,
+      -0.25568760858587286,
+      -0.22124734376585656,
+      0.15362065220938587,
+      -0.02929844876197222,
+      -0.11782864422913157,
+      -0.12020015247624574,
+      -0.051164038798068495,
+      -0.3245223601592267,
+      -0.13213416766522368,
+      -0.06065018616867236,
+      0.4343394610884149,
+      0.028773237998578657,
+      -0.181752967445485,
+      -0.06067254647989584,
+      -0.17135600614758484,
+      0.06747618462295263,
+      0.03186352132839146,
+      0.012695328573194989,
+      0.24712635458734838,
+      0.09473414456289313,
+      0.23626265056961943,
+      -0.08993649557368169,
+      -0.08378983698954379,
+      0.0480003957077873,
+      -0.18665308209936857,
+      0.30996516661868767,
+      0.25572381847406506,
+      0.042082017574311056,
+      0.11656675188153962,
+      -0.1480770903639859,
+      0.2614596937006739,
+      -0.06552486580957241,
+      0.06857682045716067,
+      -0.2988665871250715,
+      0.1480767908060025,
+      0.033414770412530506,
+      0.0031412391355029323,
+      -0.24684271169413574,
+      0.010462320358058011,
+      -0.18827715315442894,
+      0.10111104351894887,
+      -0.24651520227601198,
+      0.19784851911925005,
+      0.0864159712564914,
+      0.006286211968157977,
+      -0.010687858147896023,
+      -0.17586339318867075,
+      0.03716420954667887,
+      0.061117014443761,
+      -0.19824979103797896,
+      -0.01782544472638021,
+      0.102519606888458,
+      -0.19883061329020818,
+      -0.11904748189438923,
+      0.14069016985633298,
+      -0.14933412385371,
+      0.2620429031689402,
+      -0.1555663758172617,
+      -0.11019032426755543,
+      0.08470928674101805,
+      -0.05293916134715408,
+      -0.24892101119429483,
+      -0.16293005405532854,
+      0.15054187694386625,
+      -0.00986135348685889,
+      -0.15122371291404024,
+      -0.1013051753101851,
+      -0.2186882067420684,
+      -0.002228988838442622,
+      0.1271656193334225,
+      -0.13715949644334552,
+      -0.25394955379030903,
+      -0.3338808428904193,
+      0.09186840916668221,
+      0.2205474252664324,
+      0.06948848276642539,
+      -0.12044783252861171,
+      0.04530765786884984,
+      -0.16408616437970294,
+      -0.056297763359176994,
+      0.320852900953603,
+      0.07435778351778832,
+      0.15271130884179152,
+      0.20432408600151933,
+      0.0948499438428441,
+      0.2101545100518678,
+      0.14483208095226643,
+      -0.0740292721143742,
+      -0.026680153732146016,
+      0.02708289034789212,
+      -0.05052074382862615,
+      -0.14882681969419992,
+      0.3927098245541412,
+      -0.11434759720437329,
+      0.02256488160202301
+    ],
+    "energy": 1547293.90366782,
+    "physical_energy": 2572551199.223119,
+    "modal_count": 10062974,
+    "display_points": 256,
+    "text_mode_count": 6352638,
+    "metadata_mode_count": 3710336,
+    "wave_layout": "append_only_addressed_documents",
+    "document_count": 20000,
+    "dimensions": 4096,
+    "key_mode_count": 81920000,
+    "key_energy": 20000.0,
+    "stored_bytes": 10062974,
+    "feature_mode": "morphology",
+    "retrieval_policy": "coverage",
+    "ticks": 16,
+    "target_hz": 10.0,
+    "running": true,
+    "error": null,
+    "sync_error": null,
+    "revision": 7,
+    "live_revision": 7,
+    "persistent": true
+  },
+  "old_information_context_migrated_by_token_names": true,
+  "first_request_seconds": 81.86423020000075,
+  "first_response": {
+    "answer": "Das Hertz (Einheitenzeichen: Hz) ist die SI-Einheit der Frequenz.",
+    "tokens": [
+      "das",
+      "hertz",
+      "(",
+      "einheitenzeichen",
+      ":",
+      "hz",
+      ")",
+      "ist",
+      "die",
+      "si-einheit",
+      "der",
+      "frequenz",
+      "."
+    ],
+    "ended": true,
+    "abstained": false,
+    "truncated": false,
+    "matches": [],
+    "generated": true,
+    "wave_generation": true,
+    "method": "autoregressive_unpaired_spectral_decoder",
+    "time_s": 10.62308960000155,
+    "generation_reason": "",
+    "prompt_encoding": {
+      "supported": true,
+      "subjects": [
+        "frequenz"
+      ],
+      "facets": [
+        "unit"
+      ],
+      "groups_by_facet": {
+        "unit": [
+          21548
+        ]
+      },
+      "used_context": true,
+      "unbound_terms": [],
+      "unsupported_negation": false,
+      "reason": "",
+      "kind": "declarative_transition",
+      "state": {
+        "subjects": [
+          "frequenz"
+        ],
+        "facets": [
+          "unit"
+        ],
+        "user_facts": {}
+      }
+    },
+    "tokenization": {
+      "budget_unit": "spectral_symbols_including_punctuation_utf8_bytes_and_eos",
+      "decoder_steps": 14,
+      "emitted_symbols": 13,
+      "utf8_byte_symbols": 0,
+      "utf8_truncated_bytes": 0,
+      "utf8_complete": true,
+      "rendered_lexical_tokens": 13,
+      "unknown_prompt_words": "lossless_fixed_utf8_byte_modes_scoped_to_session"
+    },
+    "decoder": {
+      "method": "information_roles_and_complex_token_fields",
+      "steps": [
+        {
+          "runtime_source": "imported_complex_information_transition_spectra",
+          "method": "operator",
+          "prefix": [],
+          "active_token_indices": [
+            23328
+          ],
+          "carrier_size": 1,
+          "known_vocabulary_size": 116912,
+          "all_supported_modes_included": true,
+          "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+          "field_addresses": [
+            {
+              "group": 21548,
+              "prefix": [
+                "<BOS>",
+                "<BOS>"
+              ]
+            }
+          ],
+          "feature_field_energy": 1.0,
+          "mixed_data_energy_before_normalization": 1.0,
+          "fft_roundtrip_max_error": 0.0,
+          "time_s": 10.62308960000155,
+          "phase_error": 0.0,
+          "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+          "step": 0,
+          "facet": "unit",
+          "selected_token": "das",
+          "selected_bin": 23328,
+          "selected_frequency_hz": 18.80809502022526,
+          "probability": 1.0
+        },
+        {
+          "runtime_source": "imported_complex_information_transition_spectra",
+          "method": "operator",
+          "prefix": [
+            "das"
+          ],
+          "active_token_indices": [
+            46121
+          ],
+          "carrier_size": 1,
+          "known_vocabulary_size": 116912,
+          "all_supported_modes_included": true,
+          "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+          "field_addresses": [
+            {
+              "group": 21548,
+              "prefix": [
+                "<BOS>",
+                "das"
+              ]
+            }
+          ],
+          "feature_field_energy": 1.0,
+          "mixed_data_energy_before_normalization": 1.0,
+          "fft_roundtrip_max_error": 0.0,
+          "time_s": 10.62308960000155,
+          "phase_error": 0.0,
+          "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+          "step": 1,
+          "facet": "unit",
+          "selected_token": "hertz",
+          "selected_bin": 46121,
+          "selected_frequency_hz": 24.189272176559186,
+          "probability": 1.0
+        },
+        {
+          "runtime_source": "imported_complex_information_transition_spectra",
+          "method": "operator",
+          "prefix": [
+            "das",
+            "hertz"
+          ],
+          "active_token_indices": [
+            7
+          ],
+          "carrier_size": 1,
+          "known_vocabulary_size": 116912,
+          "all_supported_modes_included": true,
+          "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+          "field_addresses": [
+            {
+              "group": 21548,
+              "prefix": [
+                "das",
+                "hertz"
+              ]
+            }
+          ],
+          "feature_field_energy": 1.0,
+          "mixed_data_energy_before_normalization": 1.0,
+          "fft_roundtrip_max_error": 0.0,
+          "time_s": 10.62308960000155,
+          "phase_error": 0.0,
+          "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+          "step": 2,
+          "facet": "unit",
+          "selected_token": "(",
+          "selected_bin": 7,
+          "selected_frequency_hz": 5.777273793887537,
+          "probability": 1.0
+        },
+        {
+          "runtime_source": "imported_complex_information_transition_spectra",
+          "method": "operator",
+          "prefix": [
+            "hertz",
+            "("
+          ],
+          "active_token_indices": [
+            28178
+          ],
+          "carrier_size": 1,
+          "known_vocabulary_size": 116912,
+          "all_supported_modes_included": true,
+          "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+          "field_addresses": [
+            {
+              "group": 21548,
+              "prefix": [
+                "hertz",
+                "("
+              ]
+            }
+          ],
+          "feature_field_energy": 1.0,
+          "mixed_data_energy_before_normalization": 1.0,
+          "fft_roundtrip_max_error": 0.0,
+          "time_s": 10.62308960000155,
+          "phase_error": 0.0,
+          "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+          "step": 3,
+          "facet": "unit",
+          "selected_token": "einheitenzeichen",
+          "selected_bin": 28178,
+          "selected_frequency_hz": 21.863939465165167,
+          "probability": 1.0
+        },
+        {
+          "runtime_source": "imported_complex_information_transition_spectra",
+          "method": "operator",
+          "prefix": [
+            "(",
+            "einheitenzeichen"
+          ],
+          "active_token_indices": [
+            3218
+          ],
+          "carrier_size": 1,
+          "known_vocabulary_size": 116912,
+          "all_supported_modes_included": true,
+          "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+          "field_addresses": [
+            {
+              "group": 21548,
+              "prefix": [
+                "(",
+                "einheitenzeichen"
+              ]
+            }
+          ],
+          "feature_field_energy": 1.0,
+          "mixed_data_energy_before_normalization": 1.0,
+          "fft_roundtrip_max_error": 0.0,
+          "time_s": 10.62308960000155,
+          "phase_error": 0.0,
+          "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+          "step": 4,
+          "facet": "unit",
+          "selected_token": ":",
+          "selected_bin": 3218,
+          "selected_frequency_hz": 20.420992716557127,
+          "probability": 1.0
+        },
+        {
+          "runtime_source": "imported_complex_information_transition_spectra",
+          "method": "operator",
+          "prefix": [
+            "einheitenzeichen",
+            ":"
+          ],
+          "active_token_indices": [
+            48337
+          ],
+          "carrier_size": 1,
+          "known_vocabulary_size": 116912,
+          "all_supported_modes_included": true,
+          "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+          "field_addresses": [
+            {
+              "group": 21548,
+              "prefix": [
+                "einheitenzeichen",
+                ":"
+              ]
+            }
+          ],
+          "feature_field_energy": 1.0,
+          "mixed_data_energy_before_normalization": 1.0,
+          "fft_roundtrip_max_error": 0.0,
+          "time_s": 10.62308960000155,
+          "phase_error": 0.0,
+          "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+          "step": 5,
+          "facet": "unit",
+          "selected_token": "hz",
+          "selected_bin": 48337,
+          "selected_frequency_hz": 17.23681595225769,
+          "probability": 1.0
+        },
+        {
+          "runtime_source": "imported_complex_information_transition_spectra",
+          "method": "operator",
+          "prefix": [
+            ":",
+            "hz"
+          ],
+          "active_token_indices": [
+            8
+          ],
+          "carrier_size": 1,
+          "known_vocabulary_size": 116912,
+          "all_supported_modes_included": true,
+          "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+          "field_addresses": [
+            {
+              "group": 21548,
+              "prefix": [
+                ":",
+                "hz"
+              ]
+            }
+          ],
+          "feature_field_energy": 1.0,
+          "mixed_data_energy_before_normalization": 1.0,
+          "fft_roundtrip_max_error": 0.0,
+          "time_s": 10.62308960000155,
+          "phase_error": 0.0,
+          "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+          "step": 6,
+          "facet": "unit",
+          "selected_token": ")",
+          "selected_bin": 8,
+          "selected_frequency_hz": 19.955129577083643,
+          "probability": 1.0
+        },
+        {
+          "runtime_source": "imported_complex_information_transition_spectra",
+          "method": "operator",
+          "prefix": [
+            "hz",
+            ")"
+          ],
+          "active_token_indices": [
+            50764
+          ],
+          "carrier_size": 1,
+          "known_vocabulary_size": 116912,
+          "all_supported_modes_included": true,
+          "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+          "field_addresses": [
+            {
+              "group": 21548,
+              "prefix": [
+                "hz",
+                ")"
+              ]
+            }
+          ],
+          "feature_field_energy": 1.0,
+          "mixed_data_energy_before_normalization": 1.0,
+          "fft_roundtrip_max_error": 0.0,
+          "time_s": 10.62308960000155,
+          "phase_error": 0.0,
+          "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+          "step": 7,
+          "facet": "unit",
+          "selected_token": "ist",
+          "selected_bin": 50764,
+          "selected_frequency_hz": 20.00519510593812,
+          "probability": 1.0
+        },
+        {
+          "runtime_source": "imported_complex_information_transition_spectra",
+          "method": "operator",
+          "prefix": [
+            ")",
+            "ist"
+          ],
+          "active_token_indices": [
+            24722
+          ],
+          "carrier_size": 1,
+          "known_vocabulary_size": 116912,
+          "all_supported_modes_included": true,
+          "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+          "field_addresses": [
+            {
+              "group": 21548,
+              "prefix": [
+                ")",
+                "ist"
+              ]
+            }
+          ],
+          "feature_field_energy": 1.0,
+          "mixed_data_energy_before_normalization": 1.0,
+          "fft_roundtrip_max_error": 0.0,
+          "time_s": 10.62308960000155,
+          "phase_error": 0.0,
+          "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+          "step": 8,
+          "facet": "unit",
+          "selected_token": "die",
+          "selected_bin": 24722,
+          "selected_frequency_hz": 0.5657247245438375,
+          "probability": 1.0
+        },
+        {
+          "runtime_source": "imported_complex_information_transition_spectra",
+          "method": "operator",
+          "prefix": [
+            "ist",
+            "die"
+          ],
+          "active_token_indices": [
+            91301
+          ],
+          "carrier_size": 1,
+          "known_vocabulary_size": 116912,
+          "all_supported_modes_included": true,
+          "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+          "field_addresses": [
+            {
+              "group": 21548,
+              "prefix": [
+                "ist",
+                "die"
+              ]
+            }
+          ],
+          "feature_field_energy": 1.0,
+          "mixed_data_energy_before_normalization": 1.0,
+          "fft_roundtrip_max_error": 0.0,
+          "time_s": 10.62308960000155,
+          "phase_error": 0.0,
+          "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+          "step": 9,
+          "facet": "unit",
+          "selected_token": "si-einheit",
+          "selected_bin": 91301,
+          "selected_frequency_hz": 14.774895299187845,
+          "probability": 1.0
+        },
+        {
+          "runtime_source": "imported_complex_information_transition_spectra",
+          "method": "operator",
+          "prefix": [
+            "die",
+            "si-einheit"
+          ],
+          "active_token_indices": [
+            24120
+          ],
+          "carrier_size": 1,
+          "known_vocabulary_size": 116912,
+          "all_supported_modes_included": true,
+          "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+          "field_addresses": [
+            {
+              "group": 21548,
+              "prefix": [
+                "die",
+                "si-einheit"
+              ]
+            }
+          ],
+          "feature_field_energy": 1.0,
+          "mixed_data_energy_before_normalization": 1.0,
+          "fft_roundtrip_max_error": 0.0,
+          "time_s": 10.62308960000155,
+          "phase_error": 0.0,
+          "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+          "step": 10,
+          "facet": "unit",
+          "selected_token": "der",
+          "selected_bin": 24120,
+          "selected_frequency_hz": 20.991874856787803,
+          "probability": 1.0
+        },
+        {
+          "runtime_source": "imported_complex_information_transition_spectra",
+          "method": "operator",
+          "prefix": [
+            "si-einheit",
+            "der"
+          ],
+          "active_token_indices": [
+            36055
+          ],
+          "carrier_size": 1,
+          "known_vocabulary_size": 116912,
+          "all_supported_modes_included": true,
+          "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+          "field_addresses": [
+            {
+              "group": 21548,
+              "prefix": [
+                "si-einheit",
+                "der"
+              ]
+            }
+          ],
+          "feature_field_energy": 1.0,
+          "mixed_data_energy_before_normalization": 1.0,
+          "fft_roundtrip_max_error": 0.0,
+          "time_s": 10.62308960000155,
+          "phase_error": 0.0,
+          "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+          "step": 11,
+          "facet": "unit",
+          "selected_token": "frequenz",
+          "selected_bin": 36055,
+          "selected_frequency_hz": 27.9596919148966,
+          "probability": 1.0
+        },
+        {
+          "runtime_source": "imported_complex_information_transition_spectra",
+          "method": "operator",
+          "prefix": [
+            "der",
+            "frequenz"
+          ],
+          "active_token_indices": [
+            13
+          ],
+          "carrier_size": 1,
+          "known_vocabulary_size": 116912,
+          "all_supported_modes_included": true,
+          "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+          "field_addresses": [
+            {
+              "group": 21548,
+              "prefix": [
+                "der",
+                "frequenz"
+              ]
+            }
+          ],
+          "feature_field_energy": 1.0,
+          "mixed_data_energy_before_normalization": 1.0,
+          "fft_roundtrip_max_error": 0.0,
+          "time_s": 10.62308960000155,
+          "phase_error": 0.0,
+          "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+          "step": 12,
+          "facet": "unit",
+          "selected_token": ".",
+          "selected_bin": 13,
+          "selected_frequency_hz": 15.641089826498797,
+          "probability": 1.0
+        },
+        {
+          "runtime_source": "imported_complex_information_transition_spectra",
+          "method": "operator",
+          "prefix": [
+            "frequenz",
+            "."
+          ],
+          "active_token_indices": [
+            3221
+          ],
+          "carrier_size": 1,
+          "known_vocabulary_size": 116912,
+          "all_supported_modes_included": true,
+          "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+          "field_addresses": [
+            {
+              "group": 21548,
+              "prefix": [
+                "frequenz",
+                "."
+              ]
+            }
+          ],
+          "feature_field_energy": 1.0,
+          "mixed_data_energy_before_normalization": 1.0,
+          "fft_roundtrip_max_error": 0.0,
+          "time_s": 10.62308960000155,
+          "phase_error": 0.0,
+          "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+          "step": 13,
+          "facet": "unit",
+          "selected_token": "<EOS>",
+          "selected_bin": 3221,
+          "selected_frequency_hz": 19.241093151490176,
+          "probability": 1.0
+        }
+      ],
+      "vocabulary_size": 116912,
+      "output_sha256": "5f7f80ad42e4d6ba774f3887374828d49fee20e93abe1bb76eda52cefe961b0c",
+      "quality_note": "Informationen und explizite Grammatik; Sprachqualität und Schlussfolgern bleiben begrenzt.",
+      "coefficient_policy": "direct_information_counts_unit_energy"
+    },
+    "configuration": {
+      "order": 2,
+      "method": "operator",
+      "decoding": "beam",
+      "max_tokens": 40,
+      "seed": 17,
+      "optimizer_steps": 0,
+      "requires_question_answer_pairs": false,
+      "paired_documents_used": 0,
+      "single_information_compiler": true
+    },
+    "note": "Alle Eingaben verwenden denselben Informationscompiler; keine Antwortpaare.",
+    "context_wave": {
+      "time_s": 10.62308960000155,
+      "displacement": [
+        0.3408245932137698,
+        -0.07311435576684579,
+        -0.08209816151083409,
+        -0.14208604026554728,
+        0.23600930517164082,
+        -0.06455796000503276,
+        0.13355419560798926,
+        -0.10896604533768628,
+        -0.28335986368286803,
+        0.1597759713797395,
+        -0.12423781588831213,
+        0.10292869151973806,
+        -0.0052493542169445954,
+        0.08006723313681902,
+        -0.1075496468780076,
+        0.03708122055776149,
+        -0.03906501563179437,
+        -0.047981960483816775,
+        0.09782370251621274,
+        0.010460737450067743,
+        0.03207062474062064,
+        -0.05208432900449468,
+        0.048080430074681664,
+        -0.08627946254716047,
+        0.27234182881885427,
+        -0.0713622692706677,
+        -0.032890289968011535,
+        0.11874240442087754,
+        0.009534749419560942,
+        0.02925116099781271,
+        -0.15723171151903823,
+        0.08096624819034624,
+        -0.19725611144617333
+      ],
+      "quadrature": [
+        0.09300052403872335,
+        -0.20258818962946432,
+        0.14820657290555303,
+        0.07719597054606879,
+        0.06116489108249344,
+        0.06903689468432744,
+        0.004047969656896317,
+        -0.21480106416640576,
+        0.10833199650701524,
+        0.10110538226613336,
+        -0.103470710141813,
+        0.10563850082388304,
+        0.012886700880728316,
+        -0.0038787422089149497,
+        -0.04440170575095088,
+        0.1076627834255439,
+        -0.24823890402647025,
+        0.23740864044708307,
+        -0.08624872421233468,
+        -0.020306039922881377,
+        0.0722259361052831,
+        -0.028152023707799543,
+        0.07622705626384108,
+        0.037487700872549705,
+        0.09086859682277654,
+        -0.12599057942472774,
+        0.042794093340005245,
+        0.06614348756374931,
+        -0.05696909486015103,
+        -0.1317428844600676,
+        0.10727989074856371,
+        -0.13255844395871372,
+        0.09615268958191234
+      ],
+      "energy": 1.0,
+      "mode_count": 33,
+      "carrier_size": 33,
+      "active_token_indices": [
+        9375,
+        9457,
+        11078,
+        13140,
+        22975,
+        23328,
+        24120,
+        24722,
+        27895,
+        27956,
+        27958,
+        28174,
+        28178,
+        34970,
+        35317,
+        36055,
+        39002,
+        46121,
+        48337,
+        49296,
+        50764,
+        65007,
+        77136,
+        77933,
+        88688,
+        89545,
+        89559,
+        98860,
+        103353,
+        107968,
+        110949,
+        111011,
+        113029
+      ],
+      "known_vocabulary_size": 116912,
+      "representation": "exact_nonzero_context_modes_before_sentence_specific_support_projection"
+    },
+    "revision": 7,
+    "live_revision": 7,
+    "mode": "wave",
+    "session_id": "unpaired-migration-audit-ef9b904f39a2401d9262bf04998a869c",
+    "conversation_revision": 2
+  }
+}

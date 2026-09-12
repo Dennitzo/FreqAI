@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "split": "development",
+  "purpose": "Independent information evaluation. Never import questions, rubrics or expected concepts into a model.",
+  "review": "Separate evidence coverage, semantic correctness, empty/generic answer, grammar and text novelty. Independent AI-agent review, not a human study. Concept hints are not automatic correctness labels.",
+  "cases": [
+    {"id":"id01","prompt":"Was ist eine Frequenz?","kind":"definition","status":"explicit user development example, not unseen","rubric":"Number of repetitions or oscillations per unit time; no unrelated definition.","concepts":[["Frequenz"],["Schwingungen","Wiederholungen","periodisch"],["Zeit","Sekunde"]]},
+    {"id":"id02","prompt":"Mit welcher Einheit gibt man die Frequenz an?","kind":"unit","rubric":"Hertz, Hz, equivalently inverse second; must associate unit with frequency.","concepts":[["Frequenz"],["Hertz","Hz"]]},
+    {"id":"id03","prompt":"Wie hängen Periodendauer und Frequenz zusammen?","kind":"relation","rubric":"Reciprocal relation f=1/T or equivalent; doubling one halves the other.","concepts":[["Periodendauer","Schwingungsdauer"],["Frequenz"],["Kehrwert","reziprok","1/T","1 / T"]]},
+    {"id":"id04","prompt":"Bedeutet eine größere Amplitude automatisch eine höhere Frequenz?","kind":"negation","rubric":"No; amplitude describes displacement/strength while frequency describes repetitions per time.","concepts":[["Amplitude"],["Frequenz"],["Auslenkung","Schwingung"]]},
+    {"id":"id05","prompt":"Kann sich Schall im leeren Vakuum ausbreiten?","kind":"negation","rubric":"No, sound needs a material medium; do not confuse electromagnetic waves.","concepts":[["Schall"],["Vakuum","Medium","Materie"]]},
+    {"id":"id06","prompt":"Braucht Licht zur Ausbreitung Luft?","kind":"negation","rubric":"No, electromagnetic light propagates in vacuum; air is unnecessary.","concepts":[["Licht","elektromagnetisch"],["Vakuum"]]},
+    {"id":"id07","prompt":"Was versteht man unter Gravitation?","kind":"definition","rubric":"Attractive interaction associated with masses; not magnetism or friction.","concepts":[["Gravitation","Schwerkraft"],["Masse","Massen"],["Anziehung","anziehen","anziehende"]]},
+    {"id":"id08","prompt":"Welche SI-Einheit hat die Masse?","kind":"unit","rubric":"Kilogram, kg; not Newton or weight force.","concepts":[["Masse"],["Kilogramm","kg"]]},
+    {"id":"id09","prompt":"In welcher Einheit misst man elektrische Spannung?","kind":"unit","rubric":"Volt, V, associated with electrical potential difference.","concepts":[["Spannung"],["Volt"]]},
+    {"id":"id10","prompt":"Wofür steht die Einheit Ampere?","kind":"unit_reverse","rubric":"Electric current/current strength; do not answer voltage.","concepts":[["Ampere"],["Stromstärke","elektrischen Strom"]]},
+    {"id":"id11","prompt":"Was wird in Ohm gemessen?","kind":"unit_reverse","rubric":"Electrical resistance, not current or voltage.","concepts":[["Ohm"],["Widerstand"]]},
+    {"id":"id12","prompt":"Welche Größe misst man in Watt?","kind":"unit_reverse","rubric":"Power, energy transferred per time; not energy itself.","concepts":[["Watt"],["Leistung"]]},
+    {"id":"id13","prompt":"Welche Einheit verwendet das SI für Energie?","kind":"unit","rubric":"Joule, J. Correctly associated with energy.","concepts":[["Energie"],["Joule"]]},
+    {"id":"id14","prompt":"Wie berechnet sich die Dichte aus Masse und Volumen?","kind":"relation","rubric":"Density equals mass divided by volume, not reversed.","concepts":[["Dichte"],["Masse"],["Volumen"]]},
+    {"id":"id15","prompt":"Verdunstet Wasser erst, wenn es kocht?","kind":"negation","rubric":"No, evaporation occurs below boiling temperature at liquid surface.","concepts":[["Verdunstung","verdunstet"],["Siedetemperatur","Siedepunkt","Oberfläche"]]},
+    {"id":"id16","prompt":"Ist eine wässrige Lösung mit einem pH-Wert unter sieben sauer oder basisch?","kind":"classification","rubric":"Acidic under conventional room-temperature aqueous conditions; not basic.","concepts":[["pH"],["sauer","saure"],["7","sieben"]]},
+    {"id":"id17","prompt":"Was machen Pflanzen bei der Fotosynthese?","kind":"definition","rubric":"Use light energy to convert carbon dioxide and water into energy-rich organic matter/sugars, usually releasing oxygen; not only breathing oxygen.","concepts":[["Fotosynthese","Photosynthese"],["Licht"],["Kohlenstoffdioxid","Kohlendioxid"],["Zucker","Glucose","Glukose","organische"]]},
+    {"id":"id18","prompt":"Welche Aufgabe haben Mitochondrien in einer Zelle?","kind":"function","rubric":"Cellular energy provision/ATP synthesis through respiration; not storing all genetic information.","concepts":[["Mitochondrien"],["ATP","Energie","Zellatmung"]]},
+    {"id":"id19","prompt":"Wie warm ist es genau jetzt in meinem Zimmer?","kind":"unknown_value","rubric":"State insufficient measurement/location data or ask for measurement; do not invent a current temperature.","concepts":[]},
+    {"id":"id20","prompt":"Wie viele Herzschläge pro Minute habe ich in diesem Augenblick?","kind":"unknown_value","rubric":"Cannot know user's actual pulse without a measurement. Typical ranges alone do not answer the personal value; no invented exact number.","concepts":[]}
+  ]
+}

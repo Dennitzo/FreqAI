@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-09-06T07:56:42.933929+00:00",
+  "implementation": {
+    "freqai\\__init__.py": "0e634154d3a7ed97b743819529122dcfe1d59ce6dca186c208d93ef872ee46e2",
+    "freqai\\__main__.py": "19f07de3d1765a6803d4332ab1e67346381236f7769f47640e73849922394790",
+    "freqai\\cli.py": "d9336bd2248a03754d10412339476b8b979ee6ce7a02e10bf31b245ed9ba13a4",
+    "freqai\\codec.py": "1741858964d007a8baa1173cb559ac896d07bb4d8eb7d7be840c12c1a5acdc03",
+    "freqai\\dialogue.py": "25ebb0ca95f42c932cc0d98b42eb234966f125735fd16fd27ff797f42d83669b",
+    "freqai\\features.py": "c48eb11bff823f8329bdbf1509426f1928e19c213793145e30c1ef4abe234535",
+    "freqai\\memory.py": "baf20b7039036112c3bf1e503f88a77a7f740e104926470210b80263ee49ea73",
+    "freqai\\reasoning.py": "4819d011b22b1e8d4049172094e124abb43114e84ba059cff946bea1f0835a3a",
+    "freqai\\semantics.py": "9d65a524e4a2ba4ecd69e4b5e1f086e8b8476bf1048045636aaf541ec89c6a4d",
+    "freqai\\server.py": "6d1fc09af86d1ecbe7e307ef73323b9a1e1bca24b88d8deba99f35ec6ce7218c",
+    "freqai\\store.py": "ced6af26368edd586a1e913449a900a173c632fe8ef71722f2429a020fe126f0",
+    "freqai\\synthesis.py": "6183f5403543c4f686a959f9c7d3a4afb636e7df7b03038ab6ca1e8c0a99caad",
+    "memory\\language\\german.json": "8a44d37d7d68cf15f3854aa5a05707a02b15553efb2956bc69a3ce682571cf9f"
+  },
+  "scorer_sha256": "8e7f0dde8b859938099833efd3290c88ceb04bc7f89c2a0ad895f7859a3fadff",
+  "suite_sha256": "33dc0af1ca027b10243aff432635b851e6221d03c96dde79d37cb723d066dc24"
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "Continuous backend wave changes visible canvas",
+    "Prompt form returns decoded answer, source, similarity and interference",
+    "390px mobile viewport has no horizontal overflow",
+    "Ingest immediately changes live memory and answer; HTML remains inert text",
+    "HTTP and simulation workers stop cleanly"
+  ],
+  "page_errors": [],
+  "screenshots": [
+    "dashboard-desktop.png",
+    "dashboard-mobile.png"
+  ],
+  "test_corpus_only": true
+}

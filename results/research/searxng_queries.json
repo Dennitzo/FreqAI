@@ -1,0 +1,199 @@
+{
+    "schemaVersion":  1,
+    "retrievedDate":  "2026-09-06",
+    "policy":  "Search only via local SearXNG gateway; direct primary-source reading allowed; no alternate search API fallback",
+    "attempts":  [
+                     {
+                         "query":  "Plate holographic reduced representations Fourier circular convolution associative memory text",
+                         "endpoint":  "http://127.0.0.1:8080/v1/research/web",
+                         "status":  "connection_error",
+                         "error":  "Die Verbindung mit dem Remoteserver kann nicht hergestellt werden.",
+                         "exceptionType":  "System.Net.WebException",
+                         "provider":  null,
+                         "isFallback":  null,
+                         "orderingNote":  "Initial connection failure before successful source queries; exact wall time was not captured"
+                     },
+                     {
+                         "query":  "Plate holographic reduced representations Fourier circular convolution associative memory text",
+                         "endpoint":  "http://127.0.0.1:8080/v1/research/web",
+                         "request":  {
+                                         "maximumResults":  8,
+                                         "language":  "de-DE"
+                                     },
+                         "status":  "success",
+                         "response":  {
+                                          "query":  "Plate holographic reduced representations Fourier circular convolution associative memory text",
+                                          "results":  [
+                                                          {
+                                                              "title":  "Publikationen - Department of Engineering Physics and Computation",
+                                                              "url":  "https://www.epc.ed.tum.de/epc/forschung-und-innovation/publikationen/",
+                                                              "snippet":  "AndrÃ©s Arcones, Daniel; Weiser, Martin; Koutsourelakis, Phaedon-Stelios; Unger, JÃ¶rg F.: Embedded model form uncertainty quantification with measurement noiseÂ ...",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  ""
+                                                          },
+                                                          {
+                                                              "title":  "Institutionen der UniversitÃ¤t Bayreuth FakultÃ¤t fÃ¼r Mathematik, Physik ...",
+                                                              "url":  "https://eref.uni-bayreuth.de/view/divisions/110000.html",
+                                                              "snippet":  "The AI Memory Gap : Users Misremember What They Created With AI or Without. In: Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems. -Â ...",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  ""
+                                                          },
+                                                          {
+                                                              "title":  "Browse by Item type - heiDOK",
+                                                              "url":  "https://archiv.ub.uni-heidelberg.de/volltextserver/view/type/doctoralThesis.html",
+                                                              "snippet":  "... plate, causes and consequences for surrounding lithospheric plates. [Dissertation]. Mantegazzini, Federica (2021) Development and characterisation of highÂ ...",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  ""
+                                                          },
+                                                          {
+                                                              "title":  "EintrÃ¤ge von 1997 - TUbiblio - TU Darmstadt",
+                                                              "url":  "https://tubiblio.ulb.tu-darmstadt.de/view/year/1997.language.html",
+                                                              "snippet":  "Knowledge representation in neural networks. Buch, Bibliographie. KostengÃ¼nstiges Bauen in Massivbauweise: Entwicklungen und Perspektiven. Buch, Bibliographie.",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  ""
+                                                          },
+                                                          {
+                                                              "title":  "Jahrbuch 1994 - mediaTUM",
+                                                              "url":  "https://mediatum.ub.tum.de/doc/1191976/1191976.pdf",
+                                                              "snippet":  "... convolution structures. - In: Math. Ann. 297 (1993) S. 677-692. Page 9. 115. Voit, M.: An uncertainty principle for commutative hypergroups and Gelfand pairsÂ ...",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  ""
+                                                          },
+                                                          {
+                                                              "title":  "Institutionen der UniversitÃ¤t Bayreuth FakultÃ¤t fÃ¼r Mathematik, Physik ...",
+                                                              "url":  "https://www.eref.uni-bayreuth.de/view/divisions/110000.type.html",
+                                                              "snippet":  "Deciphering the commensurately modulated monoclinic phase of Rbâ‚‚ZnClâ‚„ at low temperatures. In: Journal of Solid State Chemistry. Bd. 345 (2025) . - 125226. DOI:Â ...",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  ""
+                                                          },
+                                                          {
+                                                              "title":  "Institutionen der UniversitÃ¤t Bayreuth FakultÃ¤t fÃ¼r Mathematik, Physik ...",
+                                                              "url":  "https://eref.uni-bayreuth.de/view/divisions/110000.person_view_name.html",
+                                                              "snippet":  "Akbar, Fariia Iasmin ; Aslandukova, Alena ; Aslandukov, Andrii ; Yin, Yuqing ; Bykova, Elena ; Bykov, Maxim ; Laniel, Dominique ; Milkin, Pavel ; Fedotenko,Â ...",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  ""
+                                                          },
+                                                          {
+                                                              "title":  "US Vereinigte Staaten von Amerika, Estados Unidos de AmÃ©rica ...",
+                                                              "url":  "http://www.etymologie.info/~e/u_/us-XALLWO.html",
+                                                              "snippet":  "assoc. Associate; associated; Associates; associating; association; association football; association list; associations; associative; associative array; assoilÂ ...",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  ""
+                                                          }
+                                                      ],
+                                          "provider":  "searxng",
+                                          "isFallback":  false,
+                                          "retrievedAt":  "2026-09-06T06:40:02.6243043+00:00"
+                                      }
+                     },
+                     {
+                         "query":  "holographic oscillatory neural networks text associative memory phase encoding",
+                         "endpoint":  "http://127.0.0.1:8080/v1/research/web",
+                         "request":  {
+                                         "maximumResults":  8,
+                                         "language":  "de-DE"
+                                     },
+                         "status":  "success",
+                         "response":  {
+                                          "query":  "holographic oscillatory neural networks text associative memory phase encoding",
+                                          "results":  [
+                                                          {
+                                                              "title":  "Prof. Dr. Marc Erich Latoschik - Human-Computer Interaction",
+                                                              "url":  "http://hci.uni-wuerzburg.de/people/marc-latoschik/",
+                                                              "snippet":  "Often, students struggle to grasp how neural networks learn. Teaching these ... Holographic Augmented Reality Mirror , In 2022 IEEE Conference onÂ ...",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBuZN6b0jSgpmUIUIqTY24eO_Cwaz3z-DcvhbXgF9ygY9u2y6T39fA8iA"
+                                                          },
+                                                          {
+                                                              "title":  "Publikationen 2025 - Department Elektrotechnik-Elektronik ...",
+                                                              "url":  "https://www.eei.tf.fau.de/forschung/publikationen/publikationen-2025/",
+                                                              "snippet":  "Joint User Association and Beamforming Design for ISAC Networks ... Coding for Computation: Efficient Compression of Neural Networks for Reconfigurable Hardware",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSDjF-99b8C2JQFClo4X9BUH6dSB3IxWan73VyYAFU8Rr9njvtclh6Kj5kZ"
+                                                          },
+                                                          {
+                                                              "title":  "Univ.-Prof. Dr. Christos Gatsogiannis - Medizinische FakultÃ¤t MÃ¼nster",
+                                                              "url":  "https://www.medizin.uni-muenster.de/fakultaet/fakultaet/personen-preise/details.html?uid=226\u0026L=0",
+                                                              "snippet":  "... neural networks. To shed light onto the underlying interaction mechanisms ... memory associated with the mating experience. Behavioral andÂ ...",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpxI_9IMLUGA7WhINELUimyOoN3HtzWldXMLDZIK2I_jczpwuUxjRd3V5x"
+                                                          },
+                                                          {
+                                                              "title":  "Reversible Strukturierung von Sillenit-Kristallen",
+                                                              "url":  "https://www.db-thueringen.de/servlets/MCRFileNodeServlet/dbt_derivate_00008467/index.pdf",
+                                                              "snippet":  "and subtraction in a dynamic photorefractive memory by phase-code multiplexing, ... double exposure holographic phase shifting interferometer using aÂ ...",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRNnZzMYD2JrOTmCiM0_xTrZn_6I7lXf4f6zyzBQeXvvovAXFB8nL1IItY"
+                                                          },
+                                                          {
+                                                              "title":  "Materialentwicklung fÃ¼r die additive Fertigung - IAM, KIT",
+                                                              "url":  "https://www.iam.kit.edu/wk/1750.php",
+                                                              "snippet":  "Fused Filament Fabrication (FFF), auch bekannt als Fused Deposition Modeling (FDM), ist eine Methode der generativen Fertigung zur Herstellung von BauteilenÂ ...",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQAEZmULZyMcOyNSPcYA9au0ZV9deoZPkT8wZiaVb6l0Wphg1y3Zp0xEdCz"
+                                                          },
+                                                          {
+                                                              "title":  "DAGA 2023 - 49. Jahrestagung fÃ¼r Akustik",
+                                                              "url":  "https://pub.dega-akustik.de/DAGA_2023/data/bydate.html",
+                                                              "snippet":  "DAGA 2023 - 49. Jahrestagung fÃ¼r Akustik. 06. - 09. MÃ¤rz 2023, Hamburg. ISBN: 978-3-939296-21-8. Start Â· Sitzungen Â· Tagesansicht Â· Index der Autor*innenÂ ...",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTWGzoD36zIGkoxbv1B7ybYK3PbOgI5T7yHvt0iom5UfBnWZVANuu8A38"
+                                                          },
+                                                          {
+                                                              "title":  "Tina Kuka, Autor bei IsoQuant",
+                                                              "url":  "https://www.isoquant-heidelberg.de/author/tina/",
+                                                              "snippet":  "... Neural Networksâ€, Mach. Learn.: Sci. Technol. 3, 04LT02 (2022). https ... network and rare active region effects associated to an extended Griffiths phase.",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQVq5LkjEFZlV-7UkFtccTSEzmo2jgxqOsRdEfwMBOudhNmWw_uL3bImu5a"
+                                                          },
+                                                          {
+                                                              "title":  "Borchers-Plakette - proRWTH",
+                                                              "url":  "https://prorwth.de/de/projekte-und-aktivitaeten/auszeichnungen-und-ehrungen/borchers-plakette/",
+                                                              "snippet":  "Effects of the DRD4 genotype on neural networks associated with executive functions in children and adolescents ... Avalanche dynamics of structural phaseÂ ...",
+                                                              "source":  "google cse",
+                                                              "thumbnailUrl":  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRiSHK2R176_v5z-lti8xxVHd90EgHLj667da_aIutGvDBGnhi6ZWIDUDc"
+                                                          }
+                                                      ],
+                                          "provider":  "searxng",
+                                          "isFallback":  false,
+                                          "retrievedAt":  "2026-09-06T06:40:03.1002466+00:00"
+                                      }
+                     },
+                     {
+                         "query":  "BEAGLE Representing word meaning and order information composite holographic lexicon Jones Mewhort 2007",
+                         "endpoint":  "http://127.0.0.1:8080/v1/research/web",
+                         "request":  {
+                                         "maximumResults":  8,
+                                         "language":  "de-DE"
+                                     },
+                         "status":  "success",
+                         "response":  {
+                                          "query":  "BEAGLE Representing word meaning and order information composite holographic lexicon Jones Mewhort 2007",
+                                          "results":  [
+
+                                                      ],
+                                          "provider":  "searxng",
+                                          "isFallback":  false,
+                                          "retrievedAt":  "2026-09-06T06:40:03.3238406+00:00"
+                                      }
+                     },
+                     {
+                         "query":  "Paek Psaltis 1987 optical associative memory Fourier transform holograms",
+                         "endpoint":  "http://127.0.0.1:8080/v1/research/web",
+                         "request":  {
+                                         "maximumResults":  8,
+                                         "language":  "de-DE"
+                                     },
+                         "status":  "success",
+                         "response":  {
+                                          "query":  "Paek Psaltis 1987 optical associative memory Fourier transform holograms",
+                                          "results":  [
+
+                                                      ],
+                                          "provider":  "searxng",
+                                          "isFallback":  false,
+                                          "retrievedAt":  "2026-09-06T06:40:04.4113883+00:00"
+                                      }
+                     }
+                 ]
+}

@@ -1,0 +1,44 @@
+{
+  "records": 10846,
+  "semantic_label_counts": {
+    "topic:movies": 34,
+    "topic:food": 8,
+    "topic:work": 52,
+    "topic:weather": 24,
+    "topic:books": 24,
+    "topic:leisure": 8,
+    "topic:sleep": 4,
+    "topic:music": 39,
+    "semantic:topic_statement:user::books": 2,
+    "semantic:topic_statement:other::books": 1,
+    "intent:clarification": 1,
+    "semantic:topic_statement:user::work": 1
+  },
+  "target_hits": {
+    "intent:clarification": [
+      {
+        "id": "germanquad-train-65873",
+        "prompt": "Wo wird darüber gestritten ob die Serbokroatischen Sprachen von einer einzigen abstammen oder nicht?",
+        "answer": "Ob es sich um Varietäten einer einzigen Sprache oder um vier eng verwandte eigenständige Sprachen handelt, ist sowohl in der Sprachwissenschaft (vor allem an Lehrstühlen innerhalb der betroffenen Länder) als auch unter manchen Sprechern selbst umstritten.",
+        "features": [
+          "word:darub",
+          "word:gestritt",
+          "word:serbokroatisch",
+          "word:sprach",
+          "word:einzig",
+          "word:abstamm",
+          "intent:clarification"
+        ],
+        "acts": [
+          {
+            "kind": "context_clarification",
+            "text": "Wo wird darüber gestritten ob die Serbokroatischen Sprachen von einer einzigen abstammen oder nicht?",
+            "target": "user",
+            "value": "uncertain",
+            "topic": "wellbeing"
+          }
+        ]
+      }
+    ]
+  }
+}

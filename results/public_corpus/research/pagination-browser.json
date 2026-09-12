@@ -1,0 +1,28 @@
+{
+  "database": "temporary only; productive memory untouched",
+  "initial_documents": 12000,
+  "final_documents": 12001,
+  "maximum_rendered_document_rows": 50,
+  "first_page": "1–50 von 12.000 Texten · Seite 1",
+  "second_page": "51–100 von 12.000 Texten · Seite 2",
+  "first_and_second_disjoint": true,
+  "previous_page_identical": true,
+  "public_source": "https://huggingface.co/datasets/OpenAssistant/oasst2 | Apache-2.0 | revision=179dd21fc55192153d94adb0e0ce8f69e222bf75 | message=0f2c7584-3677-4eec-b2b1-9b0b65f317ab\noasst2-de-0f2c7584-3677-4eec-b2b1-9b0b65f317ab",
+  "live_revision_resets_page_zero": true,
+  "time_advances_during_live_import": true,
+  "mobile_pagination_visible": true,
+  "document_requests": [
+    "http://127.0.0.1:54948/api/documents?offset=0&limit=50",
+    "http://127.0.0.1:54948/api/documents?offset=50&limit=50&revision=1",
+    "http://127.0.0.1:54948/api/documents?offset=0&limit=50&revision=1",
+    "http://127.0.0.1:54948/api/documents?offset=650&limit=50&revision=1",
+    "http://127.0.0.1:54948/api/documents?offset=0&limit=50"
+  ],
+  "javascript_errors": [],
+  "wave_prompt": "Hallo",
+  "wave_answer": "Hallo! Schön, dass du hier bist.",
+  "wave_ask_seconds": 110.01697979999881,
+  "wave_vocabulary": 44616,
+  "server_sha256": "13486f03d1f556d0921f9a6bd1596701fd16c2f1c2838a895a3595b0442887ef",
+  "dashboard_sha256": "0712fafab1bfd7c447b07ff58f4110387715e119d3907595b321ab3092642da1"
+}

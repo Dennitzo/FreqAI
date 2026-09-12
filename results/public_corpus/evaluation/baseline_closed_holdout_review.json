@@ -1,0 +1,195 @@
+{
+  "reviewer": "Independent AI evaluation agent; no human study",
+  "run_path": "results/public_corpus/evaluation/baseline_closed_holdout.json",
+  "rubric_interpretation": "The same development criteria apply unchanged. Semantic relevance and syntax are separate. A clear and modest response can acknowledge a feeling implicitly; unsupported topic changes, ignored requests and contradictions fail.",
+  "decisions": [
+    {
+      "id": "h01a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Natural assistant greeting without claiming a human day."
+    },
+    {
+      "id": "h01b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "grammatical_sentences": true,
+      "reason": "Introduces listening to an unspecified plural object instead of responding to a quiet positive day."
+    },
+    {
+      "id": "h02a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Second sentence responds directly to tiredness with a modest rest suggestion; no diagnosis."
+    },
+    {
+      "id": "h02b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": false,
+      "topic_ok": false,
+      "grammatical_sentences": true,
+      "reason": "Asks how the user is drinking coffee after the user explicitly refuses coffee."
+    },
+    {
+      "id": "h03a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Relevant curiosity about the story without inventing its plot."
+    },
+    {
+      "id": "h03b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "The repeated question remains relevant; the user's previous answer did not specify which story aspect they liked."
+    },
+    {
+      "id": "h04a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Relevant music-preference question without pushing loud or energetic music."
+    },
+    {
+      "id": "h04b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "grammatical_sentences": true,
+      "reason": "Moves to a generic free-afternoon discussion instead of engaging the expressed need for quiet music or rest."
+    },
+    {
+      "id": "h05a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Sympathetic response to disappointment invites the user to talk."
+    },
+    {
+      "id": "h05b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "grammatical_sentences": true,
+      "reason": "Farewell-like response ends the interaction when the user asks for conversational company."
+    },
+    {
+      "id": "h06a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Relevant ingredient and preparation-time question."
+    },
+    {
+      "id": "h06b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "grammatical_sentences": true,
+      "reason": "Switches from vegetarian quick soup to general leisure preferences."
+    },
+    {
+      "id": "h07a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Responds to the user's stated sunny free afternoon with a modest outdoor question."
+    },
+    {
+      "id": "h07b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "grammatical_sentences": true,
+      "reason": "Good-night wish is unrelated to a tentative afternoon walk."
+    },
+    {
+      "id": "h08a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "grammatical_sentences": false,
+      "reason": "No answer to the question about assistant feelings."
+    },
+    {
+      "id": "h08b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Affirms ability to converse without claiming human identity."
+    },
+    {
+      "id": "h09a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Coherent question about the family meeting plan."
+    },
+    {
+      "id": "h09b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Acknowledges the positive aspect and allows patient discussion, an implicit supportive response to nervousness."
+    },
+    {
+      "id": "h10a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Polite response to thanks without invented time constraints."
+    },
+    {
+      "id": "h10b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "grammatical_sentences": true,
+      "reason": "Natural farewell respects the wish to end."
+    }
+  ],
+  "run_sha256": "d7f049af90b7cdcf03985b40f8afc37667b0d7598d4844fb403544871276d3c3",
+  "summary": {
+    "appropriate": 13,
+    "role_ok": 20,
+    "negation_ok": 19,
+    "topic_ok": 13,
+    "grammatical_sentences": 19
+  }
+}

@@ -1,0 +1,77 @@
+{
+ "build_s": 8.095,
+ "model_signature": "{'corpus_digest': '724cb6562cd2245c17c802abdbc079c1bcb82ce906ffa0615fcf08e4b40f64d8', 'coefficient_sha256': '4d02e0003b44ab7a83f4745eae55e401da739bc97d838187acaa8780588a5130', 'rendering_sha256': 'ad2280b227e9ce63de83e3d4c8003ada0fd6c0e5840ce4ac65c79c353325c04b', 'order': 2, 'coefficient_rule': 'sqrt(count/sum(count))', 'storage': {'record_count': 1500, 'statement_count': 4305, 'vocabulary_size': 20708, 'group_count': 5392, 'prefix_fields': 266187, 'observed_edges': 401448, 'unaddressed_statement_count': 186, 'context_surface_forms': 5185, 'complex_coefficient_bytes': 6423168, 'support_index_bytes': 3211584, 'numerical_payload_bytes': 10099104, 'no_gradient_optimization': True, 'no_qa_pairs': True, 'excludes': 'Python objects, token strings and temporary compilation counts', 'declarative_facts': 1061, 'lexical_role_bytes': 464352, 'explicit_grammar': True, 'optimizer_steps': 0, 'requires_question_answer_pairs': False}, 'declaration_role_sha256': '9a55ad88c034b44699ee3166e66b31cff3f80adf852ea925b7ed1d7188e5938d', 'grammar_version': 'unpaired_roles_v2'}",
+ "storage_stats": {
+  "record_count": 1500,
+  "statement_count": 4305,
+  "vocabulary_size": 20708,
+  "group_count": 5392,
+  "prefix_fields": 266187,
+  "observed_edges": 401448,
+  "unaddressed_statement_count": 186,
+  "context_surface_forms": 5185,
+  "complex_coefficient_bytes": 6423168,
+  "support_index_bytes": 3211584,
+  "numerical_payload_bytes": 10099104,
+  "no_gradient_optimization": true,
+  "no_qa_pairs": true,
+  "excludes": "Python objects, token strings and temporary compilation counts",
+  "declarative_facts": 1061,
+  "lexical_role_bytes": 464352,
+  "explicit_grammar": true,
+  "optimizer_steps": 0,
+  "requires_question_answer_pairs": false
+ },
+ "vocabulary_digest": "58902be8a5d9ab19",
+ "facts": 1061,
+ "roles": 2084,
+ "groups": 5392,
+ "spectra_digest": "52ad2cce104fe414",
+ "symbol_energy_digest": "ac6dd5bcb5454356",
+ "answers": {
+  "Was ist eine Frequenz?": {
+   "text": "Die Frequenz ist der Kehrwert der Periodendauer.",
+   "tokens": [
+    "die",
+    "frequenz",
+    "ist",
+    "der",
+    "kehrwert",
+    "der",
+    "periodendauer",
+    "."
+   ],
+   "ended": true,
+   "s": 0.059,
+   "trace_digest": "a1dc1a2f559d7b36"
+  },
+  "Wie heißt du?": {
+   "text": "",
+   "tokens": [],
+   "ended": true,
+   "s": 0.001,
+   "trace_digest": "4f53cda18c2baa0c"
+  },
+  "Mit welcher Einheit gibt man die Frequenz an?": {
+   "text": "Das Hertz (Einheitenzeichen: Hz) ist die SI-Einheit der Frequenz.",
+   "tokens": [
+    "das",
+    "hertz",
+    "(",
+    "einheitenzeichen",
+    ":",
+    "hz",
+    ")",
+    "ist",
+    "die",
+    "si-einheit",
+    "der",
+    "frequenz",
+    "."
+   ],
+   "ended": true,
+   "s": 0.021,
+   "trace_digest": "fa6ea15fda5ae55a"
+  }
+ }
+}

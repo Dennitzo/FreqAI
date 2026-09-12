@@ -1,0 +1,9 @@
+{
+  "command": ".venv/Scripts/python.exe -m pytest -q",
+  "date": "2026-09-06",
+  "passed": 392,
+  "failed": 0,
+  "elapsed_seconds": 14.07,
+  "language_quality_claim": false,
+  "scope": "Complete repository test suite including 50 additional generator and runtime regressions."
+}

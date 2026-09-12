@@ -1,0 +1,7 @@
+[
+  {"subject": "Pudel", "predicate": "is_a", "object": "Hund", "source": "demo:taxonomy:1"},
+  {"subject": "Hund", "predicate": "is_a", "object": "Tier", "source": "demo:taxonomy:2"},
+  {"subject": "Tier", "predicate": "is_a", "object": "Lebewesen", "source": "demo:taxonomy:3"},
+  {"subject": "Apfelbaum", "predicate": "is_a", "object": "Baum", "source": "demo:taxonomy:4"},
+  {"subject": "Baum", "predicate": "is_a", "object": "Lebewesen", "source": "demo:taxonomy:5"}
+]

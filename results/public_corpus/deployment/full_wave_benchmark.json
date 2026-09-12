@@ -1,0 +1,16 @@
+{
+  "documents": 11996,
+  "build_seconds": 10.796164299999873,
+  "snapshot_seconds": [
+    1.231764200001635,
+    1.1122450999991997,
+    0.9496058000004268,
+    0.9222458000003826
+  ],
+  "snapshot_median_seconds": 1.0309254499998133,
+  "modal_count": 6197011,
+  "distinct_transform_lengths": 867,
+  "energy": 837459.9335486351,
+  "legacy_key_arrays_mib": 1499.5,
+  "mode_semantics": "all document and metadata coefficients evaluated before display reduction"
+}

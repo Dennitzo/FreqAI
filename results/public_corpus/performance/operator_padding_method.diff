@@ -1,0 +1,50 @@
+--- original next_distribution
++++ prototype next_distribution
+@@ -82,8 +82,12 @@
+             else:
+                 base_spectrum = 0.04*base_spectrum + 0.96*condition_wave
+             support = common_support
++    carrier_size = next_fast_len(self.size) if method == "operator" else self.size
+     if self.storage == "compact":
+-        base_spectrum = np.fft.fft(base_modes, norm="ortho")
++        base_spectrum = np.fft.fft(base_modes, n=carrier_size, norm="ortho")
++    elif carrier_size != self.size:
++        base_spectrum = np.fft.fft(np.fft.ifft(base_spectrum, norm="ortho"),
++                                   n=carrier_size, norm="ortho")
+     if method in {"operator", "direct"}:
+         output_spectrum = base_spectrum
+     elif method == "hrr":
+@@ -98,7 +102,7 @@
+     else:
+         raise ValueError("method must be operator, direct or hrr")
+     phases = np.exp(2j*np.pi*np.remainder(self.frequencies*time_s, 1.0))
+-    phase_spectrum = np.fft.fft(phases, norm="ortho")
++    phase_spectrum = np.fft.fft(phases, n=carrier_size, norm="ortho")
+     if method == "direct":
+         # Independent pointwise reference, bypassing spectral time and
+         # interaction convolutions. It should have identical probabilities.
+@@ -107,13 +111,13 @@
+         result_spectrum = np.fft.fft(direct_amplitudes, norm="ortho")
+     else:
+         moving_spectrum = spectral_convolution(output_spectrum, phase_spectrum)
+-        prompt_spectrum = np.fft.fft(np.asarray(prompt_field), norm="ortho")
++        prompt_spectrum = np.fft.fft(np.asarray(prompt_field), n=carrier_size, norm="ortho")
+         interaction = prompt_gain*spectral_convolution(moving_spectrum, prompt_spectrum)*np.exp(1j*phase_error)
+         result_spectrum = moving_spectrum + interaction
+     # The actual token amplitudes are obtained from the resulting complex
+     # field. There is no earlier planned token or complete answer string.
+     amplitudes = np.fft.ifft(result_spectrum, norm="ortho")
+-    scores = np.abs(amplitudes)**2
++    scores = np.abs(amplitudes[:self.size])**2
+     scores[~support] = 0  # explicit local grammar constraint and roundoff guard
+     if not np.isfinite(scores).all() or scores.sum() <= 1e-24:
+         raise ValueError("The resulting field has no finite supported token energy")
+@@ -124,7 +128,7 @@
+     probabilities /= probabilities.sum()
+     trace = {"prefix": list(prefix_tokens[-self.order:]),
+              "field_sources": [list(key) for key in keys], "field_weights": weights,
+-             "decoder": method, "support_size": int(support.sum()),
++             "decoder": method, "support_size": int(support.sum()), "carrier_bins": carrier_size,
+              "conditioned_field_sources": conditional_sources,
+              "feature_field_norm": float(np.linalg.norm(feature_spectrum)),
+              "feature_decoder": "inverse_dft_mode_amplitude",

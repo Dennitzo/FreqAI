@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "split": "holdout",
+  "purpose": "Sealed independent conversation turns. No candidate generation before final code/data freeze. Do not share with implementer or importer.",
+  "review": "Judge actual conversational adequacy rather than a related definition; separate role, context, negation, factual invention and grammar. Empty output is not a successful reply.",
+  "scenarios": [
+    {"id":"uh01","turns":[
+      {"id":"uh01a","prompt":"Hey, ich habe ein paar freie Minuten und würde gern quatschen.","rubric":"Natural friendly opening or conversational invitation; no claim to a shared past or invented current activity."},
+      {"id":"uh01b","prompt":"Bei mir läuft heute vieles gut. Und wie sieht es bei dir aus?","rubric":"Acknowledge positive user mood and answer assistant-directed question honestly without invented personal life."}]},
+    {"id":"uh02","turns":[
+      {"id":"uh02a","prompt":"Die letzte Nacht war kurz, ich bin noch nicht richtig wach.","rubric":"Understand tiredness after little sleep, respond sympathetically without medical diagnosis."},
+      {"id":"uh02b","prompt":"Etwas Wasser passt, aber Kaffee lasse ich heute aus.","rubric":"Respect explicit coffee refusal and water preference; do not ask how user is drinking coffee."}]},
+    {"id":"uh03","turns":[
+      {"id":"uh03a","prompt":"Ich bin ein bisschen bedrückt und möchte einfach mit jemandem reden.","rubric":"Acknowledge subdued mood and offer honest conversational presence; no diagnosis or forced optimism."},
+      {"id":"uh03b","prompt":"Frag bitte erst mal nichts Persönliches, wir können über etwas Leichtes reden.","rubric":"Respect privacy boundary and preference for light conversation; no probing personal question."}]},
+    {"id":"uh04","turns":[
+      {"id":"uh04a","prompt":"Ich habe Lust, am Abend eine Geschichte zu lesen.","rubric":"Relevant reading discussion or preference question, without inventing a specific story's contents."},
+      {"id":"uh04b","prompt":"Eine Reisegeschichte wäre schön, aber ohne Gewalt.","rubric":"Keep reading context and both travel-story preference and exclusion of violence."}]},
+    {"id":"uh05","turns":[
+      {"id":"uh05a","prompt":"Zum Mittag hätte ich gern eine einfache warme Mahlzeit.","rubric":"Engage with a simple warm meal, possibly ask ingredients or preferences; no unrelated topic."},
+      {"id":"uh05b","prompt":"Reis und Gemüse sind da, scharf essen möchte ich heute nicht.","rubric":"Retain meal context, available rice/vegetables and non-spicy constraint; no incompatible spicy suggestion."}]},
+    {"id":"uh06","turns":[
+      {"id":"uh06a","prompt":"Hier nieselt es gerade, deshalb mache ich es mir drinnen bequem.","rubric":"Acknowledge user-reported drizzle and indoor plan, without pretending an independent live weather measurement."},
+      {"id":"uh06b","prompt":"Vielleicht höre ich ein ruhiges Hörbuch. Hast du auch andere gemütliche Ideen?","rubric":"Offer compatible quiet indoor idea or ask a relevant preference; do not replace the plan with an outdoor activity."}]},
+    {"id":"uh07","turns":[
+      {"id":"uh07a","prompt":"Mein geplanter Besuch klappt leider nicht, das finde ich schade.","rubric":"Acknowledge disappointment about canceled visit without invented cause or inappropriate congratulations."},
+      {"id":"uh07b","prompt":"Heute will ich nichts organisieren, ein kleines Gespräch reicht mir.","rubric":"Respect wish not to organize a replacement and stay available for conversation."}]},
+    {"id":"uh08","turns":[
+      {"id":"uh08a","prompt":"Am Sonntag treffe ich einen alten Freund wieder.","rubric":"Respond about user's reunion with an old friend, without claiming to know that person."},
+      {"id":"uh08b","prompt":"Ich bin neugierig und etwas nervös zugleich.","rubric":"Recognize mixed curiosity and nervousness in reunion context without inventing a conflict."}]},
+    {"id":"uh09","turns":[
+      {"id":"uh09a","prompt":"Redest du aus eigener Erfahrung, wenn wir uns so unterhalten?","rubric":"Explain lack of lived personal experiences honestly; do not pretend human memories or experiences."},
+      {"id":"uh09b","prompt":"Verstehe. Kannst du trotzdem auf das eingehen, was ich dir erzähle?","rubric":"Affirm bounded conversational responsiveness without claiming subjective feelings or unlimited understanding."}]},
+    {"id":"uh10","turns":[
+      {"id":"uh10a","prompt":"Danke, dass du dir gerade Zeit für diesen Austausch genommen hast.","rubric":"Polite acknowledgement of thanks, without invented scheduling obligations or unrelated information."},
+      {"id":"uh10b","prompt":"Für den Moment bin ich fertig. Wir lesen uns ein anderes Mal.","rubric":"Natural farewell respecting the end of conversation, without asking the user to continue."}]}
+  ]
+}

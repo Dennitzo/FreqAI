@@ -1,0 +1,16 @@
+{
+  "request": {
+    "query": "Hsu Kakade Zhang spectral algorithm learning hidden Markov models 2009",
+    "maximumResults": 8,
+    "language": "de-DE"
+  },
+  "http_status": 200,
+  "retrieved_utc": "2026-09-06T08:23:18.336896+00:00",
+  "response": {
+    "query": "Hsu Kakade Zhang spectral algorithm learning hidden Markov models 2009",
+    "results": [],
+    "provider": "searxng",
+    "isFallback": false,
+    "retrievedAt": "2026-09-06T08:23:18.3357234+00:00"
+  }
+}

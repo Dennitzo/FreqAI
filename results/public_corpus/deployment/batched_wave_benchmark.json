@@ -1,0 +1,9 @@
+{
+  "documents": 621,
+  "old_snapshot_median_seconds": 0.045966499999849475,
+  "batched_snapshot_median_seconds": 0.012893650000478374,
+  "full_addressed_modes": 118656,
+  "distinct_transform_lengths": 97,
+  "numerical_test": "tests/test_batched_waves.py: exact equality at four times plus append",
+  "speedup": 3.5650494621882904
+}

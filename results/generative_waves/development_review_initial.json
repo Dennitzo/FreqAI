@@ -1,0 +1,217 @@
+{
+  "reviewer": "Independent Codex evaluation agent; qualitative inspection, not an external human study",
+  "run_path": "results/generative_waves/development_20260906T084010976886Z.json",
+  "run_sha256": "908e957957570e5682054e7c8da18d4a3c1a2a95a0f1633c48a84946c3ccfd74",
+  "judgments": {
+    "gw-dev-01": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort behauptet einen besonderen Schritt, obwohl nur ein Gespraech gewuenscht ist."
+    },
+    "gw-dev-02": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort wechselt ohne Grundlage zu Regen und Sonne und beantwortet die Rueckfrage nicht."
+    },
+    "gw-dev-03": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die freundliche Rueckmeldung wird angenommen und die Fortsetzung angeboten."
+    },
+    "gw-dev-04": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Eine ruhige Nachfrage passt zur beschriebenen Erschoepfung."
+    },
+    "gw-dev-05": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort wiederholt wortgleich die vorige Muede-Antwort und nimmt die Veraenderung nicht auf."
+    },
+    "gw-dev-06": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Frage nach Gruenem oder Nachbarschaft passt zur gewuenschten Aktivitaet draussen."
+    },
+    "gw-dev-07": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Ein Abendritual und die Frage nach der Sorte lassen sich im Musikzusammenhang sinnvoll verstehen."
+    },
+    "gw-dev-08": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Ein Schauer und ein Gang nach draussen haben keinen Bezug zur Gesangsabneigung."
+    },
+    "gw-dev-09": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Kruste und erster Bissen haben keinen Bezug zur Frage nach eigenen Hoergewohnheiten."
+    },
+    "gw-dev-10": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Es wird ein bereits fertiges nachzuwuerzendes Essen angenommen statt die Kochabsicht aufzugreifen."
+    },
+    "gw-dev-11": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort wechselt von fleischfreiem Essen zu sozialen Kontakten."
+    },
+    "gw-dev-12": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort behandelt gemeinsames Essen statt die angekuendigte Gespraechsfortsetzung."
+    },
+    "gw-dev-13": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Nachfrage nach dem vollen Arbeitstag ist passend."
+    },
+    "gw-dev-14": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Zufriedenheit wird korrekt anerkannt und vertieft."
+    },
+    "gw-dev-15": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort verlagert den Wunsch fuer morgen auf Perfektion und Pausen heute."
+    },
+    "gw-dev-16": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Rueckfrage bleibt beim Regenwetter."
+    },
+    "gw-dev-17": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Ein gemuetliches Ritual und die Frage nach der Teesorte sind passend."
+    },
+    "gw-dev-18": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort verabschiedet sich, obwohl ein Gespraech ueber Buecher gewuenscht ist."
+    },
+    "gw-dev-19": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort nimmt den Wunsch nach Gesellschaft nicht konkret auf."
+    },
+    "gw-dev-20": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort fragt nach einem Spaziergang statt nach dem geplanten Anruf."
+    },
+    "gw-dev-21": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die gewuenschte Gespraechsfortsetzung wird angenommen."
+    },
+    "gw-dev-22": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Bitte um die Anrede Lennart wird nicht aufgenommen."
+    },
+    "gw-dev-23": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Antwort wechselt zur Brotkruste statt das Programm zu beschreiben."
+    },
+    "gw-dev-24": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": false,
+      "note": "Der Name wird nicht erinnert; stattdessen werden unangenehme Gedanken und Gefuehle unterstellt."
+    },
+    "gw-dev-25": {
+      "grammar": false,
+      "relevance": false,
+      "coherence": false,
+      "roles_negation": true,
+      "note": "Die Frage enthaelt die ungrammatische Dopplung worauf/darauf und erfindet einen Besuch."
+    },
+    "gw-dev-26": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Das angenehme Gespraech wird positiv aufgegriffen; die Nachfrage ist inhaltlich anschlussfaehig."
+    },
+    "gw-dev-27": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Bitte um Zuhoeren ohne Ratschlaege wird passend anerkannt."
+    },
+    "gw-dev-28": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die gute Nachricht wird passend aufgegriffen."
+    },
+    "gw-dev-29": {
+      "grammar": true,
+      "relevance": false,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Antwort nimmt die Freude nicht auf und behandelt stattdessen ein Zoegern beim Sprechen."
+    },
+    "gw-dev-30": {
+      "grammar": true,
+      "relevance": true,
+      "coherence": true,
+      "roles_negation": true,
+      "note": "Die Verabschiedung wird passend erwidert."
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "request": {
+    "query": "\"Shannon\" \"A Mathematical Theory of Communication\" pdf",
+    "maximumResults": 8,
+    "language": "de-DE"
+  },
+  "http_status": 200,
+  "retrieved_utc": "2026-09-06T08:23:45.620842+00:00",
+  "response": {
+    "query": "\"Shannon\" \"A Mathematical Theory of Communication\" pdf",
+    "results": [
+      {
+        "title": "Shannon verstehen",
+        "url": "https://d-nb.info/1138129240/34",
+        "snippet": "Shannon, Claude E. (1948): A Mathematical Theory of Communication. The Bell System Tech- nical Journal. Vol. 27, July 1948, pp. 379-423; and October 1948 ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSfuPlieivamS5rQpW7nFu0QuYESFbPVMNsr8leBuCvdxK9eAtFmAbiXM0"
+      },
+      {
+        "title": "Einführung - Dirk W. Hoffmann",
+        "url": "http://www.dirkwhoffmann.de/ICT/slides/MM_Einfuehrung.pdf",
+        "snippet": "Shannon-, Fano-, Huffman-Codierung,. Arithmetische Codierung, Lempel-Ziv ... A Mathematical Theory of Communication. By C. E. SHANNON. INTRODUCTION. T HE ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRXT7JH8y8zzIkEI2pf9N9MW05ibQwMl7B4PKd-8fVYCmNmKpFSr3yo1cY"
+      },
+      {
+        "title": "Shannon: Informationstheorie - Horst Völz",
+        "url": "http://horstvoelz.de/PDF%20TU/3Shannon.pdf",
+        "snippet": "Kybernetik, Shannon Maus, Labyrinth usw. Shannon-Literatur. A Mathematical Theory of Communication) Bell Systems Technical Journal 27 (Juli 1948) S. 379-423 ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpfRD8wibTeedFCTtC2xcbFrdwQyPczVOiSvEP4Un9-0zEKkyEAWNdVHfJ"
+      },
+      {
+        "title": "Strukturdynamik - Ing. Johannes Wandinger",
+        "url": "https://wandinger.userweb.mwn.de/StruktDyn/index.html",
+        "snippet": "pdf · u5_4.pdf · l5_4.pdf. 5.5 Teilstrukturen, v5_5.pdf. 5.6 Dämpfungsmodelle, v5_6.pdf ... Shannon, C. E., A mathematical theory of communication, The Bell ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ7y5xTqJR397eQ2gblD1nQutsSR-2_82CfQcQz0RU0Z73mowPQZkb_Yr8c"
+      },
+      {
+        "title": "Inhaltsverzeichnis",
+        "url": "https://hps.vi4io.org/_media/teaching/sommersemester_2016/sds16-rolff-kompression-ausarbeitung.pdf",
+        "snippet": "doi=10.1.1.300.9031&rep=rep1&type=pdf . . . . . . . . . . . . . . 17. 15 ... beit von Claude Shannon “A Mathematical Theory of Communication”. Hierbei ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBT0H_MaSoYVWIyobGAVDVDFNFfrYO8q-qL48VwZp7TpTwaWuFORuVevqR"
+      },
+      {
+        "title": "Theorie und Messung in der Psychologie - FIS Universität Bamberg",
+        "url": "https://fis.uni-bamberg.de/bitstream/uniba/56781/3/fisba56781.pdf",
+        "snippet": "v49-Borgstede2_corrected.pdf. Borgstede, M. & Scholz, M. (2021) ... Shannon, C. E. (1948). A mathematical theory of communication. Bell sys- tem ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRsRep2gVfFKeYF4MpURi47v-lfGqzYO-AZ6rzP--UQ4v1AUG18CQRsuwGi"
+      },
+      {
+        "title": "Zur „Spontaneität des Menschen“",
+        "url": "https://www.medienpaed-ludwigsburg.de/article/download/511/470",
+        "snippet": "pdf. Barberi, Alessandro (2020): Von der Performanz. Zur Methodologie der ... Shannon, Claude Elwood (1948): A Mathematical Theory of Communication. In ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ7ngRe4U-7Rtv39BW5uEyakmfHr8ShkXrCywpXU9-gm59POmjPGdCaSjJI"
+      },
+      {
+        "title": "Kybernetik und die Pioniere der Computerkunst - netzliteratur.net",
+        "url": "https://dreher.netzliteratur.net/4_Medienkunst_Kybernetik.html",
+        "snippet": "Claude Elwood Shannon schlägt in der 1948 publizierten \"A Mathematical Theory of Communication ... shannon/ shannon45.pdf (4.8.2016). Shannon, Claude ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTmEUtagn1Y6QTH3pqKGAiQQhPaqJL2ZOFDmMqVEbBmqotRkLz0sOHLE9Q"
+      }
+    ],
+    "provider": "searxng",
+    "isFallback": false,
+    "retrievedAt": "2026-09-06T08:23:45.6196654+00:00"
+  }
+}

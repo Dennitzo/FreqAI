@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "freqai-wave-memory"
+version = "0.1.0"
+description = "Experimental autoregressive Fourier text fields and live text memory"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0,<3", "scipy>=1.13,<2", "threadpoolctl>=3.5,<4"]
+
+[project.optional-dependencies]
+experiments = ["matplotlib>=3.9,<4", "pytest>=8,<10"]
+corpora = ["pyarrow==25.0.1"]
+cuda = ["cupy-cuda13x>=14,<15"]
+
+[project.scripts]
+freqai = "freqai.cli:main"
+
+[tool.setuptools]
+packages = ["freqai"]
+
+[tool.setuptools.package-data]
+freqai = ["dashboard.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

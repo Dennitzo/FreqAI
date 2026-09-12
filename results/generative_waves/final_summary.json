@@ -1,0 +1,131 @@
+{
+  "model_freeze_verified": true,
+  "quality": {
+    "development": {
+      "turns": 30,
+      "surface_form_ok": 29,
+      "contains_rubric_hint": 13,
+      "proxy_pass": 13,
+      "explicit_contradictions": 0,
+      "new_complete_texts": 5,
+      "texts_with_new_sentences": 1,
+      "semantic_pass": 13,
+      "manual_dimensions": {
+        "grammar": 29,
+        "relevance": 13,
+        "coherence": 18,
+        "roles_negation": 30
+      }
+    },
+    "holdout": {
+      "turns": 30,
+      "surface_form_ok": 25,
+      "contains_rubric_hint": 11,
+      "proxy_pass": 11,
+      "explicit_contradictions": 0,
+      "new_complete_texts": 2,
+      "texts_with_new_sentences": 0,
+      "semantic_pass": 6,
+      "manual_dimensions": {
+        "grammar": 25,
+        "relevance": 6,
+        "coherence": 10,
+        "roles_negation": 26
+      }
+    }
+  },
+  "numerics": {
+    "token_channel_null": {
+      "checked": 90,
+      "changed_distributions": 27,
+      "changed_argmax": 6,
+      "raw_argmax_changed": 6,
+      "mean_total_variation": 0.032778556183614,
+      "max_absolute_error": 0.25950475087512037
+    },
+    "feature_channel_null": {
+      "checked": 90,
+      "changed_distributions": 80,
+      "changed_argmax": 36,
+      "raw_argmax_changed": 36,
+      "mean_total_variation": 0.467126501192539,
+      "max_absolute_error": 0.9935375373299999
+    },
+    "both_prompt_channels_null": {
+      "checked": 90,
+      "changed_distributions": 83,
+      "changed_argmax": 37,
+      "raw_argmax_changed": 37,
+      "mean_total_variation": 0.47814480603905246,
+      "max_absolute_error": 0.9920261484629632
+    },
+    "prompt_gain_zero": {
+      "checked": 90,
+      "changed_distributions": 83,
+      "changed_argmax": 37,
+      "raw_argmax_changed": 37,
+      "mean_total_variation": 0.47814480603905246,
+      "max_absolute_error": 0.9920261484629632
+    },
+    "relative_phase_pi": {
+      "checked": 90,
+      "changed_distributions": 27,
+      "changed_argmax": 14,
+      "raw_argmax_changed": 14,
+      "mean_total_variation": 0.09017017453749464,
+      "max_absolute_error": 0.6655537941642322
+    },
+    "feature_spectral_phase_scramble": {
+      "checked": 90,
+      "changed_distributions": 59,
+      "changed_argmax": 35,
+      "raw_argmax_changed": 35,
+      "mean_total_variation": 0.42695733397461305,
+      "max_absolute_error": 0.9966380414119899
+    },
+    "data_spectral_phase_scramble": {
+      "checked": 90,
+      "changed_distributions": 34,
+      "changed_argmax": 28,
+      "raw_argmax_changed": 28,
+      "mean_total_variation": 0.22798384006005812,
+      "max_absolute_error": 0.989863831283
+    },
+    "time_1_375": {
+      "checked": 90,
+      "changed_distributions": 0,
+      "changed_argmax": 0,
+      "raw_argmax_changed": 0,
+      "mean_total_variation": 0.0,
+      "max_absolute_error": 0.0
+    },
+    "time_86400_125": {
+      "checked": 90,
+      "changed_distributions": 0,
+      "changed_argmax": 0,
+      "raw_argmax_changed": 0,
+      "mean_total_variation": 0.0,
+      "max_absolute_error": 0.0
+    },
+    "direct_calculation": {
+      "checked": 90,
+      "changed_distributions": 0,
+      "changed_argmax": 0,
+      "raw_argmax_changed": 0,
+      "mean_total_variation": 0.0,
+      "max_absolute_error": 0.0
+    }
+  },
+  "null_memory_explicit_refusals": 90,
+  "new_meaningful_sentence": "Wenn du erschöpft bist, kann ein ruhiger Moment angenehm sein.",
+  "new_sentence_is_bounded_development_example": true,
+  "source_files": {
+    "model_freeze.json": "565c17cd44fde5971069c414ce0d8a7ea30cc73345978b9887272f2fb53d6c02",
+    "holdout.json": "2ca50e097d1c5e40e6651c1d811d6426f3ff985bc7b3a94aaf3314c7acb7568a",
+    "holdout_review.json": "9007d2f1759b6e451916d6e916dbffc1f50b66a4bdd1adf263efd5e6b503fd9a",
+    "development_review.json": "b8b2c1ea9eeddf00a961a7af2ca04261910b28f160c57dfa1307d9df67f36e6d",
+    "numerics_20260906T090014976834Z.json": "73f70ad52364e7a5977fd4f1f4ca05f4c9b949f5433ca3422c3e3d265df836f2",
+    "new_sentence_evidence.json": "f560d5493dc3ad116324d0d5b435ce5063980efb15a62b6eb70a983780d1d6ed"
+  },
+  "review_identity": "Qualitative assessment by a separate Codex agent; not a human user study."
+}

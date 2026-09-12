@@ -1,0 +1,123 @@
+{
+  "fnet": {
+    "url": "https://aclanthology.org/2022.naacl-main.319/",
+    "retrieved_utc": "2026-09-06T08:24:22.471511+00:00",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://aclanthology.org/2022.naacl-main.319/",
+    "bytes": 42400,
+    "sha256": "2afdd9224437a068dbb2371683306f9f0c243383fa03d35f77fffa64f7db8db1",
+    "file": "results\\generative_waves\\research\\fnet.html"
+  },
+  "hmm": {
+    "url": "https://arxiv.org/abs/0811.4413",
+    "retrieved_utc": "2026-09-06T08:24:22.472024+00:00",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://arxiv.org/abs/0811.4413",
+    "bytes": 43451,
+    "sha256": "c253c81fbe0115fd5786b3dcb74f2741ee02a42a0278230172da10c9e94169ff",
+    "file": "results\\generative_waves\\research\\hmm.html"
+  },
+  "shannon": {
+    "url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf",
+    "retrieved_utc": "2026-09-06T08:24:22.473027+00:00",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "final_url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf",
+    "bytes": 366296,
+    "sha256": "6e4e3411984f3edf99dbfe8b941cb5e8a321379ff0cae6ae5c1f592ad8882ca8",
+    "file": "results\\generative_waves\\research\\shannon.pdf"
+  },
+  "plate_doi": {
+    "url": "https://doi.org/10.1109/72.377968",
+    "retrieved_utc": "2026-09-06T08:24:22.473027+00:00",
+    "http_status": 202,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://ieeexplore.ieee.org/document/377968/",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "file": "results\\generative_waves\\research\\plate_doi.html",
+    "usable_content": false,
+    "limitation": "HTTP 202, empty response; not used for substantive claims"
+  },
+  "plate_pubmed": {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18263348/",
+    "retrieved_utc": "2026-09-06T08:24:22.757642+00:00",
+    "http_status": 203,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/18263348/",
+    "bytes": 5565,
+    "sha256": "efb618a0cce8c27a2b95132065006fbd4e8f0f8b70d8a42d4647bfbae465c980",
+    "file": "results\\generative_waves\\research\\plate_pubmed.html",
+    "usable_content": false,
+    "limitation": "Cookie challenge, not article text; not used for claims"
+  },
+  "white": {
+    "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.92.148102",
+    "retrieved_utc": "2026-09-06T08:24:23.018934+00:00",
+    "error": "<HTTPError 403: 'Forbidden'>"
+  },
+  "jaeger": {
+    "url": "https://publica.fraunhofer.de/entities/publication/7d4a7eec-a22c-4df0-903d-93f9cd5aca02",
+    "retrieved_utc": "2026-09-06T08:24:23.121450+00:00",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://publica.fraunhofer.de/entities/publication/7d4a7eec-a22c-4df0-903d-93f9cd5aca02",
+    "bytes": 7479,
+    "sha256": "22b76a1f1797777853fcee3a1e4c1957325e62eb0bc891a018b4ba02fd73fdfd",
+    "file": "results\\generative_waves\\research\\jaeger.html",
+    "usable_content": false,
+    "limitation": "Anti-bot challenge, not article text; corrected author PDF used instead"
+  },
+  "chen_goodman": {
+    "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-10-98.pdf",
+    "retrieved_utc": "2026-09-06T08:24:23.144535+00:00",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "final_url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-10-98.pdf",
+    "bytes": 798195,
+    "sha256": "939b8e5e99e426b83e29863bd26ccf4141130befa8c3225c5ae908a25170d928",
+    "file": "results\\generative_waves\\research\\chen_goodman.pdf"
+  },
+  "associative_lstm": {
+    "url": "https://proceedings.mlr.press/v48/danihelka16.html",
+    "retrieved_utc": "2026-09-06T08:26:24.246617+00:00",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://proceedings.mlr.press/v48/danihelka16.html",
+    "bytes": 15760,
+    "sha256": "1a1a6a4e357cb198fe9f73595dc3f2a91c986795c1decae395e32477595b54d4",
+    "file": "results\\generative_waves\\research\\associative_lstm.html"
+  },
+  "associative_lstm_paper": {
+    "url": "https://proceedings.mlr.press/v48/danihelka16.pdf",
+    "retrieved_utc": "2026-09-06T08:26:24.246617+00:00",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "final_url": "https://proceedings.mlr.press/v48/danihelka16.pdf",
+    "bytes": 2498621,
+    "sha256": "8c0a5e8e291d4f244a162f3ffe2e43f63e26ffa768f1b251a6602e4c31509b16",
+    "file": "results\\generative_waves\\research\\associative_lstm_paper.pdf"
+  },
+  "cornn": {
+    "url": "https://arxiv.org/abs/2010.00951",
+    "retrieved_utc": "2026-09-06T08:26:24.248138+00:00",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://arxiv.org/abs/2010.00951",
+    "bytes": 42418,
+    "sha256": "2ef2553c380b3462f3fd506ea6f17998f28422e06d0e29e9aae7db9441d7adc5",
+    "file": "results\\generative_waves\\research\\cornn.html"
+  },
+  "jaeger_corrected": {
+    "url": "https://www.ai.rug.nl/minds/uploads/EchoStatesTechRep.pdf",
+    "retrieved_utc": "2026-09-06T08:26:24.248138+00:00",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "final_url": "https://www.ai.rug.nl/minds/uploads/EchoStatesTechRep.pdf",
+    "bytes": 587185,
+    "sha256": "0a0296f586f86a0e49e651e4581ce2aef3a926ca9cb3d57653c8963b7b83e625",
+    "file": "results\\generative_waves\\research\\jaeger_corrected.pdf"
+  }
+}

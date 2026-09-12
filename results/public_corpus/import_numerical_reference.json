@@ -1,0 +1,1812 @@
+{
+  "corpus_source": "fixed independent import-quality sample v1; no evaluation corpus",
+  "selection": "six shortest complete answers per dataset by token length, to bound dense-reference memory; no quality selection",
+  "record_count": 12,
+  "selected_ids": [
+    "oasst2-de-896df4d5-25f5-4083-a578-3e4bb665ca4a",
+    "oasst2-de-a0ecf897-6478-4c29-9c16-0baf5754d2f1",
+    "oasst2-de-ca5f9574-ab7c-466e-943a-91761e47aed4",
+    "oasst2-de-27611255-a850-4871-928e-f681e2c9f9d8",
+    "oasst2-de-387361c5-a255-4f2f-9f2f-23ae40a58ac7",
+    "oasst2-de-4ae23199-206c-4539-9b6e-97efd9a993cc",
+    "germanquad-train-47290",
+    "germanquad-train-48579",
+    "germanquad-train-66191",
+    "germanquad-train-53085",
+    "germanquad-train-56552",
+    "germanquad-train-56606"
+  ],
+  "vocabulary_size": 245,
+  "checks": [
+    {
+      "id": "oasst2-de-896df4d5-25f5-4083-a578-3e4bb665ca4a",
+      "prefix": [],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-896df4d5-25f5-4083-a578-3e4bb665ca4a",
+      "prefix": [],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-896df4d5-25f5-4083-a578-3e4bb665ca4a",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-896df4d5-25f5-4083-a578-3e4bb665ca4a",
+      "prefix": [
+        "mit",
+        "einer"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-896df4d5-25f5-4083-a578-3e4bb665ca4a",
+      "prefix": [
+        "mit",
+        "einer"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-896df4d5-25f5-4083-a578-3e4bb665ca4a",
+      "prefix": [
+        "mit",
+        "einer"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-896df4d5-25f5-4083-a578-3e4bb665ca4a",
+      "prefix": [
+        "mit",
+        "einer",
+        "frau",
+        "wird",
+        "häufig"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-896df4d5-25f5-4083-a578-3e4bb665ca4a",
+      "prefix": [
+        "mit",
+        "einer",
+        "frau",
+        "wird",
+        "häufig"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-896df4d5-25f5-4083-a578-3e4bb665ca4a",
+      "prefix": [
+        "mit",
+        "einer",
+        "frau",
+        "wird",
+        "häufig"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-896df4d5-25f5-4083-a578-3e4bb665ca4a",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-896df4d5-25f5-4083-a578-3e4bb665ca4a",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-896df4d5-25f5-4083-a578-3e4bb665ca4a",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-a0ecf897-6478-4c29-9c16-0baf5754d2f1",
+      "prefix": [],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-a0ecf897-6478-4c29-9c16-0baf5754d2f1",
+      "prefix": [],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-a0ecf897-6478-4c29-9c16-0baf5754d2f1",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-a0ecf897-6478-4c29-9c16-0baf5754d2f1",
+      "prefix": [
+        "die",
+        "pointe"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-a0ecf897-6478-4c29-9c16-0baf5754d2f1",
+      "prefix": [
+        "die",
+        "pointe"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-a0ecf897-6478-4c29-9c16-0baf5754d2f1",
+      "prefix": [
+        "die",
+        "pointe"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-a0ecf897-6478-4c29-9c16-0baf5754d2f1",
+      "prefix": [
+        "die",
+        "pointe",
+        "des",
+        "witzes",
+        "liegt"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-a0ecf897-6478-4c29-9c16-0baf5754d2f1",
+      "prefix": [
+        "die",
+        "pointe",
+        "des",
+        "witzes",
+        "liegt"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-a0ecf897-6478-4c29-9c16-0baf5754d2f1",
+      "prefix": [
+        "die",
+        "pointe",
+        "des",
+        "witzes",
+        "liegt"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-a0ecf897-6478-4c29-9c16-0baf5754d2f1",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-a0ecf897-6478-4c29-9c16-0baf5754d2f1",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-a0ecf897-6478-4c29-9c16-0baf5754d2f1",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-ca5f9574-ab7c-466e-943a-91761e47aed4",
+      "prefix": [],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-ca5f9574-ab7c-466e-943a-91761e47aed4",
+      "prefix": [],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-ca5f9574-ab7c-466e-943a-91761e47aed4",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-ca5f9574-ab7c-466e-943a-91761e47aed4",
+      "prefix": [
+        "der",
+        "neueste"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-ca5f9574-ab7c-466e-943a-91761e47aed4",
+      "prefix": [
+        "der",
+        "neueste"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-ca5f9574-ab7c-466e-943a-91761e47aed4",
+      "prefix": [
+        "der",
+        "neueste"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-ca5f9574-ab7c-466e-943a-91761e47aed4",
+      "prefix": [
+        "der",
+        "neueste",
+        "trend",
+        "auf",
+        "tiktok"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-ca5f9574-ab7c-466e-943a-91761e47aed4",
+      "prefix": [
+        "der",
+        "neueste",
+        "trend",
+        "auf",
+        "tiktok"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-ca5f9574-ab7c-466e-943a-91761e47aed4",
+      "prefix": [
+        "der",
+        "neueste",
+        "trend",
+        "auf",
+        "tiktok"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-ca5f9574-ab7c-466e-943a-91761e47aed4",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-ca5f9574-ab7c-466e-943a-91761e47aed4",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-ca5f9574-ab7c-466e-943a-91761e47aed4",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-27611255-a850-4871-928e-f681e2c9f9d8",
+      "prefix": [],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-27611255-a850-4871-928e-f681e2c9f9d8",
+      "prefix": [],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-27611255-a850-4871-928e-f681e2c9f9d8",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-27611255-a850-4871-928e-f681e2c9f9d8",
+      "prefix": [
+        "leider",
+        "kann"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-27611255-a850-4871-928e-f681e2c9f9d8",
+      "prefix": [
+        "leider",
+        "kann"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-27611255-a850-4871-928e-f681e2c9f9d8",
+      "prefix": [
+        "leider",
+        "kann"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-27611255-a850-4871-928e-f681e2c9f9d8",
+      "prefix": [
+        "leider",
+        "kann",
+        "ich",
+        "diese",
+        "frage"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-27611255-a850-4871-928e-f681e2c9f9d8",
+      "prefix": [
+        "leider",
+        "kann",
+        "ich",
+        "diese",
+        "frage"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-27611255-a850-4871-928e-f681e2c9f9d8",
+      "prefix": [
+        "leider",
+        "kann",
+        "ich",
+        "diese",
+        "frage"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-27611255-a850-4871-928e-f681e2c9f9d8",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-27611255-a850-4871-928e-f681e2c9f9d8",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-27611255-a850-4871-928e-f681e2c9f9d8",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-387361c5-a255-4f2f-9f2f-23ae40a58ac7",
+      "prefix": [],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-387361c5-a255-4f2f-9f2f-23ae40a58ac7",
+      "prefix": [],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-387361c5-a255-4f2f-9f2f-23ae40a58ac7",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-387361c5-a255-4f2f-9f2f-23ae40a58ac7",
+      "prefix": [
+        "beide",
+        "welten"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-387361c5-a255-4f2f-9f2f-23ae40a58ac7",
+      "prefix": [
+        "beide",
+        "welten"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-387361c5-a255-4f2f-9f2f-23ae40a58ac7",
+      "prefix": [
+        "beide",
+        "welten"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-387361c5-a255-4f2f-9f2f-23ae40a58ac7",
+      "prefix": [
+        "beide",
+        "welten",
+        "haben",
+        "ihre",
+        "schwerpunkte"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-387361c5-a255-4f2f-9f2f-23ae40a58ac7",
+      "prefix": [
+        "beide",
+        "welten",
+        "haben",
+        "ihre",
+        "schwerpunkte"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-387361c5-a255-4f2f-9f2f-23ae40a58ac7",
+      "prefix": [
+        "beide",
+        "welten",
+        "haben",
+        "ihre",
+        "schwerpunkte"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-387361c5-a255-4f2f-9f2f-23ae40a58ac7",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-387361c5-a255-4f2f-9f2f-23ae40a58ac7",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-387361c5-a255-4f2f-9f2f-23ae40a58ac7",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-4ae23199-206c-4539-9b6e-97efd9a993cc",
+      "prefix": [],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-4ae23199-206c-4539-9b6e-97efd9a993cc",
+      "prefix": [],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-4ae23199-206c-4539-9b6e-97efd9a993cc",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-4ae23199-206c-4539-9b6e-97efd9a993cc",
+      "prefix": [
+        "eine",
+        "möglichkeit"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-4ae23199-206c-4539-9b6e-97efd9a993cc",
+      "prefix": [
+        "eine",
+        "möglichkeit"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-4ae23199-206c-4539-9b6e-97efd9a993cc",
+      "prefix": [
+        "eine",
+        "möglichkeit"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-4ae23199-206c-4539-9b6e-97efd9a993cc",
+      "prefix": [
+        "eine",
+        "möglichkeit",
+        "konversationen",
+        "einzusehen",
+        ","
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-4ae23199-206c-4539-9b6e-97efd9a993cc",
+      "prefix": [
+        "eine",
+        "möglichkeit",
+        "konversationen",
+        "einzusehen",
+        ","
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-4ae23199-206c-4539-9b6e-97efd9a993cc",
+      "prefix": [
+        "eine",
+        "möglichkeit",
+        "konversationen",
+        "einzusehen",
+        ","
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-4ae23199-206c-4539-9b6e-97efd9a993cc",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-4ae23199-206c-4539-9b6e-97efd9a993cc",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "oasst2-de-4ae23199-206c-4539-9b6e-97efd9a993cc",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-47290",
+      "prefix": [],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-47290",
+      "prefix": [],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-47290",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-47290",
+      "prefix": [
+        "gegen",
+        "die"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-47290",
+      "prefix": [
+        "gegen",
+        "die"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-47290",
+      "prefix": [
+        "gegen",
+        "die"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-47290",
+      "prefix": [
+        "gegen",
+        "die",
+        "reformation",
+        "wendete",
+        "sich"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-47290",
+      "prefix": [
+        "gegen",
+        "die",
+        "reformation",
+        "wendete",
+        "sich"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-47290",
+      "prefix": [
+        "gegen",
+        "die",
+        "reformation",
+        "wendete",
+        "sich"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-47290",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-47290",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-47290",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-48579",
+      "prefix": [],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-48579",
+      "prefix": [],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-48579",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-48579",
+      "prefix": [
+        "die",
+        "165"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-48579",
+      "prefix": [
+        "die",
+        "165"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-48579",
+      "prefix": [
+        "die",
+        "165"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-48579",
+      "prefix": [
+        "die",
+        "165",
+        "schnellladesäulen",
+        "sind",
+        "nach"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-48579",
+      "prefix": [
+        "die",
+        "165",
+        "schnellladesäulen",
+        "sind",
+        "nach"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-48579",
+      "prefix": [
+        "die",
+        "165",
+        "schnellladesäulen",
+        "sind",
+        "nach"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-48579",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-48579",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-48579",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-66191",
+      "prefix": [],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-66191",
+      "prefix": [],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-66191",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-66191",
+      "prefix": [
+        "die",
+        "analphabetenrate"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-66191",
+      "prefix": [
+        "die",
+        "analphabetenrate"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-66191",
+      "prefix": [
+        "die",
+        "analphabetenrate"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-66191",
+      "prefix": [
+        "die",
+        "analphabetenrate",
+        "betrug",
+        "im",
+        "jahr"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-66191",
+      "prefix": [
+        "die",
+        "analphabetenrate",
+        "betrug",
+        "im",
+        "jahr"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-66191",
+      "prefix": [
+        "die",
+        "analphabetenrate",
+        "betrug",
+        "im",
+        "jahr"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-66191",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-66191",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-66191",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-53085",
+      "prefix": [],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-53085",
+      "prefix": [],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-53085",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-53085",
+      "prefix": [
+        "starke",
+        "wetterschwankungen"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-53085",
+      "prefix": [
+        "starke",
+        "wetterschwankungen"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-53085",
+      "prefix": [
+        "starke",
+        "wetterschwankungen"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-53085",
+      "prefix": [
+        "starke",
+        "wetterschwankungen",
+        "sind",
+        "vor",
+        "allem"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-53085",
+      "prefix": [
+        "starke",
+        "wetterschwankungen",
+        "sind",
+        "vor",
+        "allem"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-53085",
+      "prefix": [
+        "starke",
+        "wetterschwankungen",
+        "sind",
+        "vor",
+        "allem"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-53085",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-53085",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-53085",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56552",
+      "prefix": [],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56552",
+      "prefix": [],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56552",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56552",
+      "prefix": [
+        "nur",
+        "die"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56552",
+      "prefix": [
+        "nur",
+        "die"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56552",
+      "prefix": [
+        "nur",
+        "die"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56552",
+      "prefix": [
+        "nur",
+        "die",
+        "nationalstrassen",
+        ",",
+        "einige"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56552",
+      "prefix": [
+        "nur",
+        "die",
+        "nationalstrassen",
+        ",",
+        "einige"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56552",
+      "prefix": [
+        "nur",
+        "die",
+        "nationalstrassen",
+        ",",
+        "einige"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56552",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56552",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56552",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56606",
+      "prefix": [],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56606",
+      "prefix": [],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56606",
+      "prefix": [],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56606",
+      "prefix": [
+        "durch",
+        "einwanderungen"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56606",
+      "prefix": [
+        "durch",
+        "einwanderungen"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56606",
+      "prefix": [
+        "durch",
+        "einwanderungen"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56606",
+      "prefix": [
+        "durch",
+        "einwanderungen",
+        "aus",
+        "der",
+        "ehemaligen"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56606",
+      "prefix": [
+        "durch",
+        "einwanderungen",
+        "aus",
+        "der",
+        "ehemaligen"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56606",
+      "prefix": [
+        "durch",
+        "einwanderungen",
+        "aus",
+        "der",
+        "ehemaligen"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56606",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 0,
+      "phase": 0,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56606",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 123.456,
+      "phase": 0.8,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    },
+    {
+      "id": "germanquad-train-56606",
+      "prefix": [
+        "unbekannt"
+      ],
+      "time_s": 1000000000.0,
+      "phase": 3.141592653589793,
+      "dense_max_error": 0.0,
+      "direct_max_error": 0.0,
+      "same_top_token": true
+    }
+  ],
+  "outputs": [
+    {
+      "id": "oasst2-de-896df4d5-25f5-4083-a578-3e4bb665ca4a",
+      "tokens_equal": true,
+      "output": "Mit einer Frau wird häufig ein menschliches Wesen benannt, welches über weibliche körperliche Merkmale verfügt und das Gegenstück zum Konzept des Mannes darstellt"
+    },
+    {
+      "id": "oasst2-de-a0ecf897-6478-4c29-9c16-0baf5754d2f1",
+      "tokens_equal": true,
+      "output": "Die Pointe des Witzes liegt darin das sich die beiden Jäger treffen, was in diesem falle mit dem sinn des Abschießens gestellt werden"
+    },
+    {
+      "id": "oasst2-de-ca5f9574-ab7c-466e-943a-91761e47aed4",
+      "tokens_equal": true,
+      "output": "Der neueste Trend auf Tiktok könnte sein, den Belag eines Toastbrots zu erkennen, wobei das Brot in einem dunklen Raum nur von"
+    },
+    {
+      "id": "oasst2-de-27611255-a850-4871-928e-f681e2c9f9d8",
+      "tokens_equal": true,
+      "output": "Leider kann ich diese Frage nicht zufriedenstellend beantworten. Ob ein Discounter bestimmte Produkte anbietet oder aus dem Sortiment nimmt, entscheidet in der"
+    },
+    {
+      "id": "oasst2-de-387361c5-a255-4f2f-9f2f-23ae40a58ac7",
+      "tokens_equal": true,
+      "output": "Beide Welten haben ihre Schwerpunkte und daher hängt es stark vom Geschmack des Konsumenten ab, welches Universum besser ist. Star Wars setzt"
+    },
+    {
+      "id": "oasst2-de-4ae23199-206c-4539-9b6e-97efd9a993cc",
+      "tokens_equal": true,
+      "output": "Eine Möglichkeit Konversationen einzusehen, an denen sie teilgenommen haben ist, über den Nachrichten-Reiter auf den entsprechenden Beitrag zu klicken. 1."
+    },
+    {
+      "id": "germanquad-train-47290",
+      "tokens_equal": true,
+      "output": "Gegen die Reformation wendete sich die katholische Gegenreformation."
+    },
+    {
+      "id": "germanquad-train-48579",
+      "tokens_equal": true,
+      "output": "Die 165 Schnellladesäulen sind nach dem CHAdeMO-Standard ausgerüstet."
+    },
+    {
+      "id": "germanquad-train-66191",
+      "tokens_equal": true,
+      "output": "Die Analphabetenrate betrug im Jahr 2015 etwa 26%."
+    },
+    {
+      "id": "germanquad-train-53085",
+      "tokens_equal": true,
+      "output": "Starke Wetterschwankungen sind vor allem vom Frühjahr bis zum Sommer zu beobachten."
+    },
+    {
+      "id": "germanquad-train-56552",
+      "tokens_equal": true,
+      "output": "Nur die Nationalstraßen, einige Hauptstraßen sowie die wichtigsten innerstädtischen Straßen (etwa 6. 700 Kilometer) sind asphaltiert."
+    },
+    {
+      "id": "germanquad-train-56606",
+      "tokens_equal": true,
+      "output": "Durch Einwanderungen aus der ehemaligen Sowjetunion kamen Wissenschaftler und Akademiker ins Land, die für Israels Zukunft von beträchtlichem Wert sind."
+    }
+  ],
+  "summary": {
+    "probability_checks": 144,
+    "maximum_dense_error": 0.0,
+    "maximum_direct_error": 0.0,
+    "same_top_tokens": 144,
+    "same_complete_outputs": 12
+  },
+  "storage": {
+    "compact": {
+      "storage": "compact",
+      "vocabulary_size": 245,
+      "field_count": 4902,
+      "complex_coefficient_bytes": 120352,
+      "support_index_bytes": 60176,
+      "reference_probability_bytes": 8080,
+      "association_bytes": 21456,
+      "numerical_payload_bytes": 210064,
+      "equivalent_dense_coefficient_bytes": 19215840,
+      "equivalent_dense_association_bytes": 480200,
+      "excludes": "Python objects, count tables, token strings, temporary compilation and generation arrays"
+    },
+    "dense": {
+      "storage": "dense",
+      "vocabulary_size": 245,
+      "field_count": 4902,
+      "complex_coefficient_bytes": 19215840,
+      "support_index_bytes": 60176,
+      "reference_probability_bytes": 1213240,
+      "association_bytes": 480200,
+      "numerical_payload_bytes": 20969456,
+      "equivalent_dense_coefficient_bytes": 19215840,
+      "equivalent_dense_association_bytes": 480200,
+      "excludes": "Python objects, count tables, token strings, temporary compilation and generation arrays"
+    }
+  },
+  "interpretation": "Numerical equivalence on real German source vocabulary, not a claim of conversational accuracy."
+}

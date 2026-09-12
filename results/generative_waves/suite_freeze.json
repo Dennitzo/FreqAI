@@ -1,0 +1,15 @@
+{
+  "dataset_sha256": "1a777778257634de8c5eb21b52c379b86e1632236c8860c109a9c62487c6dc6a",
+  "counts": {
+    "development": 30,
+    "holdout": 30
+  },
+  "prior_normalized_prompts_checked": 490,
+  "overlap_with_prior_prompts": 0,
+  "corpus_contains_evaluation_prompt": false,
+  "holdout_implementer_access": "not yet disclosed by evaluator",
+  "corpus_sha256": "9827b7339f85fdae01f996b3b39a0cfc025c2a4b7d3400722f5985cbdc2377ef",
+  "initial_dataset_sha256": "d0b7662bf21810f90d2c29f9d3bd2174615e3bdec273484cf97e2048c2cb1f88",
+  "metadata_correction": "Before model freeze, review_policy clarified AI-agent versus human reviewer. All scenarios, prompts and rubrics unchanged.",
+  "scenarios_sha256": "4e558996df4efa32c29319043b00f3f8bb075b4bc66564cf45a6e3f1f85c4107"
+}

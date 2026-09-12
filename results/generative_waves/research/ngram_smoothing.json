@@ -1,0 +1,73 @@
+{
+  "request": {
+    "query": "\"Kneser\" \"Ney\" language model",
+    "maximumResults": 8,
+    "language": "de-DE"
+  },
+  "http_status": 200,
+  "retrieved_utc": "2026-09-06T08:23:45.374259+00:00",
+  "response": {
+    "query": "\"Kneser\" \"Ney\" language model",
+    "results": [
+      {
+        "title": "Hermann Ney: Wie Aachen Google Translate mitprägte | AixBlog",
+        "url": "https://aixblog.de/blog/made-in-aachen-hermann-ney-wie-aachener-sprachforschung-google-translate-mitpraegte",
+        "snippet": "24.08.2026 ... 1995 veröffentlichten Kneser und Ney das wissenschaftliche Verfahren „Improved Backing-off for M-gram Language Modeling“. Heute ist die daraus ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcStznehC7eLsyvWB44cyEOedNpmujOjL9CRgdqlRQWzm-Wgri-oUYAR7EA"
+      },
+      {
+        "title": "Entscheidungsbaum und Sprachmodell im Vergleich - KIT",
+        "url": "https://publikationen.bibliothek.kit.edu/1000166336/163649959",
+        "snippet": "Das Smoothing erfolgt nach dem durch Chen und Goodman abgewandelten Kneser-. Ney-Discounting. ... niques for language modeling. Technical Report TR-10-98 ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRSb9TpWX6rJd-KCyAiz-sIBvR49XvtsXFSnBoW4CIHmgw1Gs5J3UQNuR0b"
+      },
+      {
+        "title": "Quiz: Quiz on Speech recognition - Studocu",
+        "url": "https://www.studocu.com/de/quiz/quiz-on-speech-recognition/8505145",
+        "snippet": "N-grams are Markov models that estimate words from a fixed window of previous words. Frage 6 von 59. What is the intuition behind the interpolated Kneser-Ney ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFXdyaZ0YTJSPruvirKvORloj1VEjvhCpY_v1zFJfeUFka4QvAljVC9XA"
+      },
+      {
+        "title": "Themenspezifische Vor-Adaptierung von Sprachmodellen - KIT",
+        "url": "https://isl.iar.kit.edu/english/4081.php",
+        "snippet": "Es gibt noch viele Smoothing Methoden, wie Good-Turing, Katz Smoothing, Kneser-Ney ... semantic language model adaptation. INTERSPEECH, 2005. [Bel04].",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoe9cOHHbCrYZpGbvFfz7BjWvho40OLCS5ivGtW6A1HsFfKCLwrovftNU"
+      },
+      {
+        "title": "Qi Han – Aptiv - LinkedIn",
+        "url": "https://de.linkedin.com/in/qi-han",
+        "snippet": "I am a machine learning expert at Aptiv. Currently, I focus on 3D scene understanding… · Berufserfahrung: Aptiv · Ausbildung: University of Stuttgart · Ort: ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpEnMCOR-ytx0ZXHO2rgJlezc4CfXm5iHZMEjL8fSfOciDiTG4CU0Uc8QO"
+      },
+      {
+        "title": "Dieter Geller",
+        "url": "https://www.lfb.rwth-aachen.de/de/institute/alumni/geller/",
+        "snippet": "Ney, H.-W. Ruehl Design and use of Speech Recognition algorithms for a ... Kneser, H. Lehmann, D. Geller, Y. Qian, J. Weese Towards Knowledge-Enhanced ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFxLObVsbS94iYjVbcElm8v3XGf6FQG2e1RAPzdNVPL6V26ZpAfxuFAruY"
+      },
+      {
+        "title": "Publikationen von Open-Access-Publikationskosten / 2022-2024 ...",
+        "url": "https://epub.ub.uni-muenchen.de/view/dfg/Open-Access-Publikationskosten_=2F_2022-2024_=2F_Ludwig-Maximilians-Universit=E4t_M=FCnchen.html",
+        "snippet": "; Kneser, Ulrich; Dulleck, Uwe und Hutmacher, Dietmar W. (2024): Lost in ... Ney, Ludwig; Weig, Thomas; Hinske, Ludiwg; Niedermayer, Sebastian; Kilger ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRG2Xz5F0fGL7j9FT_P9iT2PuWvTa3xfdWKFIC9yZ_yzPvZzJ4ob4jZ3Q"
+      },
+      {
+        "title": "Prof. Dr. Martin Alexander Kriegel - Medizinische Fakultät Münster",
+        "url": "https://www.medizin.uni-muenster.de/fakultaet/fakultaet/personen-preise/details.html?uid=224&L=0",
+        "snippet": "... Kneser U, Langer S, Lehnhardt M, Machens HG, Mailänder P, Reichert B, Radtke ... Ney PA, Nezis IP, Ng CCW, Ng TB, Nguyen HTT, Nguyen LT, Ni HM, Ní ...",
+        "source": "google cse",
+        "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpxI_9IMLUGA7WhINELUimyOoN3HtzWldXMLDZIK2I_jczpwuUxjRd3V5x"
+      }
+    ],
+    "provider": "searxng",
+    "isFallback": false,
+    "retrievedAt": "2026-09-06T08:23:45.3731695+00:00"
+  }
+}

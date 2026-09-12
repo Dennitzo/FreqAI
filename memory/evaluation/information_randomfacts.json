@@ -1,0 +1,400 @@
+{
+  "version": 1,
+  "seed": 830117,
+  "created_utc": "2026-09-06T10:47:44.064160+00:00",
+  "records": [
+    {
+      "id": "random-fact-00",
+      "title": "Nocalu",
+      "prompt": "",
+      "source": "evaluation synthetic random declarative facts, never production import",
+      "text": "Nocalu ist ein periodisches Prüfsignal. Die Frequenz von Nocalu beträgt 890 Hertz.",
+      "evaluation_truth": {
+        "entity": "Nocalu",
+        "frequency_hz": 890
+      }
+    },
+    {
+      "id": "random-fact-01",
+      "title": "Kabeme",
+      "prompt": "",
+      "source": "evaluation synthetic random declarative facts, never production import",
+      "text": "Kabeme ist ein periodisches Prüfsignal. Die Frequenz von Kabeme beträgt 462 Hertz.",
+      "evaluation_truth": {
+        "entity": "Kabeme",
+        "frequency_hz": 462
+      }
+    },
+    {
+      "id": "random-fact-02",
+      "title": "Minobo",
+      "prompt": "",
+      "source": "evaluation synthetic random declarative facts, never production import",
+      "text": "Minobo ist ein periodisches Prüfsignal. Die Frequenz von Minobo beträgt 927 Hertz.",
+      "evaluation_truth": {
+        "entity": "Minobo",
+        "frequency_hz": 927
+      }
+    },
+    {
+      "id": "random-fact-03",
+      "title": "Gukobi",
+      "prompt": "",
+      "source": "evaluation synthetic random declarative facts, never production import",
+      "text": "Gukobi ist ein periodisches Prüfsignal. Die Frequenz von Gukobi beträgt 568 Hertz.",
+      "evaluation_truth": {
+        "entity": "Gukobi",
+        "frequency_hz": 568
+      }
+    },
+    {
+      "id": "random-fact-04",
+      "title": "Vimuma",
+      "prompt": "",
+      "source": "evaluation synthetic random declarative facts, never production import",
+      "text": "Vimuma ist ein periodisches Prüfsignal. Die Frequenz von Vimuma beträgt 937 Hertz.",
+      "evaluation_truth": {
+        "entity": "Vimuma",
+        "frequency_hz": 937
+      }
+    },
+    {
+      "id": "random-fact-05",
+      "title": "Tubeve",
+      "prompt": "",
+      "source": "evaluation synthetic random declarative facts, never production import",
+      "text": "Tubeve ist ein periodisches Prüfsignal. Die Frequenz von Tubeve beträgt 598 Hertz.",
+      "evaluation_truth": {
+        "entity": "Tubeve",
+        "frequency_hz": 598
+      }
+    },
+    {
+      "id": "random-fact-06",
+      "title": "Dopeke",
+      "prompt": "",
+      "source": "evaluation synthetic random declarative facts, never production import",
+      "text": "Dopeke ist ein periodisches Prüfsignal. Die Frequenz von Dopeke beträgt 356 Hertz.",
+      "evaluation_truth": {
+        "entity": "Dopeke",
+        "frequency_hz": 356
+      }
+    },
+    {
+      "id": "random-fact-07",
+      "title": "Putopa",
+      "prompt": "",
+      "source": "evaluation synthetic random declarative facts, never production import",
+      "text": "Putopa ist ein periodisches Prüfsignal. Die Frequenz von Putopa beträgt 169 Hertz.",
+      "evaluation_truth": {
+        "entity": "Putopa",
+        "frequency_hz": 169
+      }
+    },
+    {
+      "id": "random-fact-08",
+      "title": "Gadiva",
+      "prompt": "",
+      "source": "evaluation synthetic random declarative facts, never production import",
+      "text": "Gadiva ist ein periodisches Prüfsignal. Die Frequenz von Gadiva beträgt 932 Hertz.",
+      "evaluation_truth": {
+        "entity": "Gadiva",
+        "frequency_hz": 932
+      }
+    },
+    {
+      "id": "random-fact-09",
+      "title": "Cinisi",
+      "prompt": "",
+      "source": "evaluation synthetic random declarative facts, never production import",
+      "text": "Cinisi ist ein periodisches Prüfsignal. Die Frequenz von Cinisi beträgt 515 Hertz.",
+      "evaluation_truth": {
+        "entity": "Cinisi",
+        "frequency_hz": 515
+      }
+    },
+    {
+      "id": "random-fact-10",
+      "title": "Kivadi",
+      "prompt": "",
+      "source": "evaluation synthetic random declarative facts, never production import",
+      "text": "Kivadi ist ein periodisches Prüfsignal. Die Frequenz von Kivadi beträgt 447 Hertz.",
+      "evaluation_truth": {
+        "entity": "Kivadi",
+        "frequency_hz": 447
+      }
+    },
+    {
+      "id": "random-fact-11",
+      "title": "Pesapa",
+      "prompt": "",
+      "source": "evaluation synthetic random declarative facts, never production import",
+      "text": "Pesapa ist ein periodisches Prüfsignal. Die Frequenz von Pesapa beträgt 969 Hertz.",
+      "evaluation_truth": {
+        "entity": "Pesapa",
+        "frequency_hz": 969
+      }
+    }
+  ],
+  "cases": [
+    {
+      "id": "rf00",
+      "direction": "entity_to_value",
+      "entity_index": 0,
+      "prompt": "Welche Frequenz hat das Prüfsignal Nocalu?",
+      "expected_entity": "Nocalu",
+      "expected_value": 890
+    },
+    {
+      "id": "rr00",
+      "direction": "value_to_entity",
+      "entity_index": 0,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 890 Hertz?",
+      "expected_entity": "Nocalu",
+      "expected_value": 890
+    },
+    {
+      "id": "rf01",
+      "direction": "entity_to_value",
+      "entity_index": 1,
+      "prompt": "Welche Frequenz hat das Prüfsignal Kabeme?",
+      "expected_entity": "Kabeme",
+      "expected_value": 462
+    },
+    {
+      "id": "rr01",
+      "direction": "value_to_entity",
+      "entity_index": 1,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 462 Hertz?",
+      "expected_entity": "Kabeme",
+      "expected_value": 462
+    },
+    {
+      "id": "rf02",
+      "direction": "entity_to_value",
+      "entity_index": 2,
+      "prompt": "Welche Frequenz hat das Prüfsignal Minobo?",
+      "expected_entity": "Minobo",
+      "expected_value": 927
+    },
+    {
+      "id": "rr02",
+      "direction": "value_to_entity",
+      "entity_index": 2,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 927 Hertz?",
+      "expected_entity": "Minobo",
+      "expected_value": 927
+    },
+    {
+      "id": "rf03",
+      "direction": "entity_to_value",
+      "entity_index": 3,
+      "prompt": "Welche Frequenz hat das Prüfsignal Gukobi?",
+      "expected_entity": "Gukobi",
+      "expected_value": 568
+    },
+    {
+      "id": "rr03",
+      "direction": "value_to_entity",
+      "entity_index": 3,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 568 Hertz?",
+      "expected_entity": "Gukobi",
+      "expected_value": 568
+    },
+    {
+      "id": "rf04",
+      "direction": "entity_to_value",
+      "entity_index": 4,
+      "prompt": "Welche Frequenz hat das Prüfsignal Vimuma?",
+      "expected_entity": "Vimuma",
+      "expected_value": 937
+    },
+    {
+      "id": "rr04",
+      "direction": "value_to_entity",
+      "entity_index": 4,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 937 Hertz?",
+      "expected_entity": "Vimuma",
+      "expected_value": 937
+    },
+    {
+      "id": "rf05",
+      "direction": "entity_to_value",
+      "entity_index": 5,
+      "prompt": "Welche Frequenz hat das Prüfsignal Tubeve?",
+      "expected_entity": "Tubeve",
+      "expected_value": 598
+    },
+    {
+      "id": "rr05",
+      "direction": "value_to_entity",
+      "entity_index": 5,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 598 Hertz?",
+      "expected_entity": "Tubeve",
+      "expected_value": 598
+    },
+    {
+      "id": "rf06",
+      "direction": "entity_to_value",
+      "entity_index": 6,
+      "prompt": "Welche Frequenz hat das Prüfsignal Dopeke?",
+      "expected_entity": "Dopeke",
+      "expected_value": 356
+    },
+    {
+      "id": "rr06",
+      "direction": "value_to_entity",
+      "entity_index": 6,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 356 Hertz?",
+      "expected_entity": "Dopeke",
+      "expected_value": 356
+    },
+    {
+      "id": "rf07",
+      "direction": "entity_to_value",
+      "entity_index": 7,
+      "prompt": "Welche Frequenz hat das Prüfsignal Putopa?",
+      "expected_entity": "Putopa",
+      "expected_value": 169
+    },
+    {
+      "id": "rr07",
+      "direction": "value_to_entity",
+      "entity_index": 7,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 169 Hertz?",
+      "expected_entity": "Putopa",
+      "expected_value": 169
+    },
+    {
+      "id": "rf08",
+      "direction": "entity_to_value",
+      "entity_index": 8,
+      "prompt": "Welche Frequenz hat das Prüfsignal Gadiva?",
+      "expected_entity": "Gadiva",
+      "expected_value": 932
+    },
+    {
+      "id": "rr08",
+      "direction": "value_to_entity",
+      "entity_index": 8,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 932 Hertz?",
+      "expected_entity": "Gadiva",
+      "expected_value": 932
+    },
+    {
+      "id": "rf09",
+      "direction": "entity_to_value",
+      "entity_index": 9,
+      "prompt": "Welche Frequenz hat das Prüfsignal Cinisi?",
+      "expected_entity": "Cinisi",
+      "expected_value": 515
+    },
+    {
+      "id": "rr09",
+      "direction": "value_to_entity",
+      "entity_index": 9,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 515 Hertz?",
+      "expected_entity": "Cinisi",
+      "expected_value": 515
+    },
+    {
+      "id": "rf10",
+      "direction": "entity_to_value",
+      "entity_index": 10,
+      "prompt": "Welche Frequenz hat das Prüfsignal Kivadi?",
+      "expected_entity": "Kivadi",
+      "expected_value": 447
+    },
+    {
+      "id": "rr10",
+      "direction": "value_to_entity",
+      "entity_index": 10,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 447 Hertz?",
+      "expected_entity": "Kivadi",
+      "expected_value": 447
+    },
+    {
+      "id": "rf11",
+      "direction": "entity_to_value",
+      "entity_index": 11,
+      "prompt": "Welche Frequenz hat das Prüfsignal Pesapa?",
+      "expected_entity": "Pesapa",
+      "expected_value": 969
+    },
+    {
+      "id": "rr11",
+      "direction": "value_to_entity",
+      "entity_index": 11,
+      "prompt": "Welches Prüfsignal hat eine Frequenz von 969 Hertz?",
+      "expected_entity": "Pesapa",
+      "expected_value": 969
+    },
+    {
+      "id": "rn00",
+      "direction": "negation",
+      "entity_index": 0,
+      "prompt": "Hat Nocalu eine Frequenz von 462 Hertz?",
+      "expected_entity": "Nocalu",
+      "expected_value": 890,
+      "rejected_value": 462
+    },
+    {
+      "id": "rn01",
+      "direction": "negation",
+      "entity_index": 1,
+      "prompt": "Hat Kabeme eine Frequenz von 927 Hertz?",
+      "expected_entity": "Kabeme",
+      "expected_value": 462,
+      "rejected_value": 927
+    },
+    {
+      "id": "rn02",
+      "direction": "negation",
+      "entity_index": 2,
+      "prompt": "Hat Minobo eine Frequenz von 568 Hertz?",
+      "expected_entity": "Minobo",
+      "expected_value": 927,
+      "rejected_value": 568
+    },
+    {
+      "id": "rn03",
+      "direction": "negation",
+      "entity_index": 3,
+      "prompt": "Hat Gukobi eine Frequenz von 937 Hertz?",
+      "expected_entity": "Gukobi",
+      "expected_value": 568,
+      "rejected_value": 937
+    },
+    {
+      "id": "ru00",
+      "direction": "unknown",
+      "prompt": "Welche Frequenz hat das Prüfsignal Javuro?",
+      "expected_entity": "Javuro",
+      "expected_value": null
+    },
+    {
+      "id": "ru01",
+      "direction": "unknown",
+      "prompt": "Welche Frequenz hat das Prüfsignal Tepali?",
+      "expected_entity": "Tepali",
+      "expected_value": null
+    },
+    {
+      "id": "ru02",
+      "direction": "unknown",
+      "prompt": "Welche Frequenz hat das Prüfsignal Wemuko?",
+      "expected_entity": "Wemuko",
+      "expected_value": null
+    },
+    {
+      "id": "ru03",
+      "direction": "unknown",
+      "prompt": "Welche Frequenz hat das Prüfsignal Xarifo?",
+      "expected_entity": "Xarifo",
+      "expected_value": null
+    }
+  ],
+  "protocol": "All input records are declarative prose with empty prompt. evaluation_truth and cases never reach constructor. 12 forward,12 reverse,4 negation,4 unknown. No training or tuned mix/source gains.",
+  "permutation": "Rotate all frequency values one position among the same entity titles, then repeat12 entity-to-value questions. Success requires the output to follow changed facts.",
+  "seal": "Do not generate answers until final candidate code freeze. This is a small synthetic capability diagnosis, not natural language generalization proof."
+}

@@ -1,0 +1,109 @@
+{
+  "evaluation_files_read": [],
+  "filters": {
+    "german_check": "author language tag plus German function-word heuristic; no external language model",
+    "oasst_active_root_prompts_only": true,
+    "oasst_allowed_tree_states": [
+      "ready_for_export",
+      "growing",
+      "ranking"
+    ],
+    "oasst_answer_words": [
+      6,
+      200
+    ],
+    "oasst_max_binary_adverse_label": 0.25,
+    "oasst_max_toxicity_or_violence": 0.5,
+    "oasst_min_answer_quality": 0.5,
+    "oasst_prompt_words_max": 120,
+    "quad_answer_chars_max": 900,
+    "quad_answer_is_verbatim_context_sentences": true,
+    "quad_answer_words": [
+      6,
+      140
+    ],
+    "quad_question_words": [
+      3,
+      80
+    ],
+    "quad_split": "train",
+    "version": 1
+  },
+  "outputs": {
+    "combined": {
+      "bytes": 18680063,
+      "path": "memory/imports/public_dialogue_expansion.jsonl",
+      "records": 11375,
+      "sha256": "18aa66001f4afe34bf9c34f6fd62871a1c6930c796a11c82c03081f7356a5671"
+    },
+    "dialogue": {
+      "bytes": 1867903,
+      "path": "memory/imports/public_dialogue_oasst2_de.jsonl",
+      "records": 759,
+      "sha256": "f76c25f7c023a1b5e2403fb425e6507d8f734c8e5352cdf69851e0286f5dfc34"
+    },
+    "inactive_followups": {
+      "bytes": 2290228,
+      "path": "memory/sources/openassistant-oasst2/followup_candidates_de.jsonl",
+      "records": 625,
+      "sha256": "0dd59f0a0bd8c2382eb4a21838b95324e1f187c844383d2bba32a8def09fa08e"
+    },
+    "knowledge": {
+      "bytes": 16812160,
+      "path": "memory/imports/public_knowledge_germanquad_de.jsonl",
+      "records": 10616,
+      "sha256": "ee370663ff92d5de5d13fc0a06c0cb06f6e3a4c6451f5a661f42758f0d746bae"
+    }
+  },
+  "quality_note": "Filtered historical source data, not independently fact-checked. More corpus entries do not prove better generated answers. OASST alternative replies share roots; GermanQuAD questions share source passages.",
+  "schema_version": 1,
+  "script_sha256": "9fcfece92aa65f4ae0f3808b02e5a9cd668f00ece87eb63c800ce3571288754f",
+  "source_statistics": {
+    "germanquad": {
+      "active_pairs": 10616,
+      "distinct_contexts": 2513,
+      "raw_train_questions": 11518,
+      "rejections": {
+        "answer_format_or_language": 8,
+        "answer_length": 80,
+        "duplicate_pair": 2,
+        "fragment_or_list_item": 341,
+        "no_valid_complete_answer_sentence": 396,
+        "question_length_or_language": 75
+      }
+    },
+    "oasst2": {
+      "active_root_pairs": 759,
+      "german_messages": 8398,
+      "inactive_followup_pairs": 625,
+      "raw_messages": 208584,
+      "rejections": {
+        "adverse_review_label": 612,
+        "answer_quality": 530,
+        "code_or_external_reference": 246,
+        "duplicate_pair": 2,
+        "invalid_parent_chain": 2,
+        "language_heuristic": 68,
+        "length": 333,
+        "not_accepted_or_deleted": 334,
+        "parent_quality": 486,
+        "toxicity_or_violence_label": 6,
+        "unfinished_answer": 126,
+        "unfinished_or_rejected_tree": 27
+      }
+    }
+  },
+  "sources": {
+    "germanquad": {
+      "bytes": 3299993,
+      "sha256": "319334092605ed9ade8a1e6535584debb2e99def474697417a06ad4a455bf0ec",
+      "url": "https://huggingface.co/datasets/deepset/germanquad/resolve/a2f3a59f0be843fc305d0417d7292ef0b1a66884/plain_text/train/0000.parquet"
+    },
+    "oasst2": {
+      "bytes": 75076341,
+      "sha256": "820146830e78634170f5a33d79d0b3e5022a7f169ce054886ad1f16e1d53a764",
+      "url": "https://huggingface.co/datasets/OpenAssistant/oasst2/resolve/179dd21fc55192153d94adb0e0ce8f69e222bf75/2023-11-05_oasst2_all.messages.jsonl.gz"
+    }
+  },
+  "sqlite_import_performed": false
+}

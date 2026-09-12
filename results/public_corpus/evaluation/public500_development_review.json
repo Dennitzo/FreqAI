@@ -1,0 +1,195 @@
+{
+  "reviewer": "Independent AI evaluation agent; no human study",
+  "run_path": "results/public_corpus/evaluation/public500_development.json",
+  "run_sha256": "e682a4037f8a8893a2bec69f0109502ba41dd33b79c93d42e02fe00ccfa60c65",
+  "rubric_interpretation": "Pass requires a relevant conversational response fulfilling the main request. A generic acknowledgement alone does not satisfy a request with explicit content preferences. Surface plausibility and exact sentence novelty are separate from correctness.",
+  "decisions": [
+    {
+      "id": "d01a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Friendly opening and invitation to converse.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d01b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Positive-mood acknowledgement replaced by an unrelated mathematical definition.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d02a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Responds directly to exhaustion with modest rest suggestion.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d02b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Unrelated glassworking warning follows acknowledgement of taking a rest.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d03a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Relevant question about preferred aspects of books.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d03b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Malformed birthday/factorial sentence does not engage with reading preference.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d04a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Relevant music preference follow-up.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d04b",
+      "appropriate": false,
+      "role_ok": false,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Unrequested factual discussion of an extremist music group does not answer assistant preference question.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d05a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Acknowledges a demanding day and asks what support would help.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d05b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Invites discussion without prescribing advice.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d06a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Generic experimenting follow-up does not respond to request for a simple meal.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d06b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Malformed birthday/factorial sentence ignores meat-free cooking preference.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d07a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Responds to user-reported rain without claiming weather access.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d07b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Asking what the user sees neither suggests an indoor activity nor asks a useful preference question.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d08a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "No explanation of system identity; unrelated thought-sharing prompt.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d08b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Truncated swimming-pool comparison replaces answer about conversational memory.",
+      "grammatical_sentences": false
+    },
+    {
+      "id": "d09a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Shifts from meeting friends to choosing a walk location.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d09b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Quiet activity alternatives respect indoor preference.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d10a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Unrelated glassworking warning and protective-equipment advice replace thanks acknowledgement.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d10b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Natural farewell, although noun capitalization in 'gelingen' is imperfect.",
+      "grammatical_sentences": true
+    }
+  ],
+  "summary": {
+    "appropriate": 9,
+    "role_ok": 19,
+    "negation_ok": 20,
+    "topic_ok": 9,
+    "grammatical_sentences": 17
+  }
+}

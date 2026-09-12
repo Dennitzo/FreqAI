@@ -1,0 +1,605 @@
+{
+  "checked_at": "2026-09-06T08:11:31.908968+00:00",
+  "deployment_stage": "V2",
+  "url": "http://127.0.0.1:8765",
+  "reported_three_turn_dialogue_passed": true,
+  "reload_restored_history_and_context": true,
+  "contextual_reciprocal_after_reload_passed": true,
+  "tabs_have_independent_sessions": true,
+  "session_histories_have_no_name_leakage": true,
+  "new_conversation_resets_context": true,
+  "javascript_errors": [],
+  "v1_session_after_restart": {
+    "session_id": "5eb1dd77-aff2-417b-92f4-520ece6437dc",
+    "preserved_turns": 7,
+    "all_prompts_and_answers_unchanged": true
+  },
+  "v2_checks": {
+    "negation_with_reciprocal_handled": true,
+    "self_correction_replaces_old_mood": true,
+    "nenn_mich_changes_name_only_in_own_session": true
+  },
+  "wave_advanced_ticks": 54,
+  "wave_advanced_seconds": 5.407979300000079,
+  "live_revision_unchanged": 2,
+  "backup": {
+    "documents_sha256": "8ac2c2496d8395e4d76905e42c0453679224ff8bd22a0ad4ebb1d327722fc697",
+    "document_count": 120,
+    "archive_count": 48,
+    "history_count": 22,
+    "integrity_check": "ok"
+  },
+  "active_before": {
+    "documents_sha256": "8ac2c2496d8395e4d76905e42c0453679224ff8bd22a0ad4ebb1d327722fc697",
+    "document_count": 120,
+    "archive_count": 48,
+    "history_count": 22,
+    "integrity_check": "ok"
+  },
+  "active_after": {
+    "documents_sha256": "8ac2c2496d8395e4d76905e42c0453679224ff8bd22a0ad4ebb1d327722fc697",
+    "document_count": 120,
+    "archive_count": 48,
+    "history_count": 39,
+    "integrity_check": "ok"
+  },
+  "documents_and_archive_unchanged": true,
+  "ordinary_test_queries": 17,
+  "replies": [
+    {
+      "prompt": "Hallo",
+      "answer": "Hallo! Schön, dass du da bist. Wie geht es dir heute?",
+      "abstained": false,
+      "generated": false,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "greeting",
+            "target": "user",
+            "value": "",
+            "topic": "",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "Hallo",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": null
+      },
+      "response_acts": [
+        "greeting"
+      ],
+      "session_id": "8aece458-0b26-4110-b669-b8e0b98b7ad4",
+      "conversation_revision": 1
+    },
+    {
+      "prompt": "Mir geht es gut, wie geht es dir denn?",
+      "answer": "Das klingt schön. Ich bin bereit für unser Gespräch.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "mood_statement",
+            "target": "user",
+            "value": "positive",
+            "topic": "wellbeing",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "Mir geht es gut",
+            "subject": "",
+            "predicate": "positive"
+          },
+          {
+            "kind": "wellbeing_question",
+            "target": "assistant",
+            "value": "",
+            "topic": "wellbeing",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "wie geht es dir denn?",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": "wellbeing"
+      },
+      "response_acts": [
+        "user_mood",
+        "assistant_status"
+      ],
+      "session_id": "8aece458-0b26-4110-b669-b8e0b98b7ad4",
+      "conversation_revision": 2
+    },
+    {
+      "prompt": "gut und dir?",
+      "answer": "Das klingt schön. Ich bin bereit für unser Gespräch.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "mood_statement",
+            "target": "user",
+            "value": "positive",
+            "topic": "wellbeing",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "gut",
+            "subject": "",
+            "predicate": "positive"
+          },
+          {
+            "kind": "wellbeing_question",
+            "target": "assistant",
+            "value": "",
+            "topic": "wellbeing",
+            "negated": false,
+            "confidence": 0.9,
+            "text": "dir?",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": "wellbeing"
+      },
+      "response_acts": [
+        "user_mood",
+        "assistant_status"
+      ],
+      "session_id": "8aece458-0b26-4110-b669-b8e0b98b7ad4",
+      "conversation_revision": 3
+    },
+    {
+      "prompt": "Und dir?",
+      "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+      "abstained": false,
+      "generated": false,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "wellbeing_question",
+            "target": "assistant",
+            "value": "",
+            "topic": "wellbeing",
+            "negated": false,
+            "confidence": 0.9,
+            "text": "Und dir?",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": true,
+        "question_topic": "wellbeing"
+      },
+      "response_acts": [
+        "assistant_status"
+      ],
+      "session_id": "8aece458-0b26-4110-b669-b8e0b98b7ad4",
+      "conversation_revision": 4
+    },
+    {
+      "prompt": "Ich heiße Elena.",
+      "answer": "Schön, dich kennenzulernen, Elena.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "name_statement",
+            "target": "user",
+            "value": "Elena",
+            "topic": "name",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "Ich heiße Elena",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": null
+      },
+      "response_acts": [
+        "remember_name"
+      ],
+      "session_id": "8aece458-0b26-4110-b669-b8e0b98b7ad4",
+      "conversation_revision": 5
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir gesagt, dass du Elena heißt.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "name_question",
+            "target": "user",
+            "value": "",
+            "topic": "name",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "Wie heiße ich?",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": "name"
+      },
+      "response_acts": [
+        "recall_name"
+      ],
+      "session_id": "8aece458-0b26-4110-b669-b8e0b98b7ad4",
+      "conversation_revision": 6
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir deinen Namen in diesem Gespräch noch nicht genannt. Wie heißt du?",
+      "abstained": true,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "name_question",
+            "target": "user",
+            "value": "",
+            "topic": "name",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "Wie heiße ich?",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": "name"
+      },
+      "response_acts": [
+        "clarification"
+      ],
+      "session_id": "dd8ef76c-a4b6-4853-8aa0-b83346556d94",
+      "conversation_revision": 1
+    },
+    {
+      "prompt": "Ich heiße Sofia.",
+      "answer": "Schön, dich kennenzulernen, Sofia.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "name_statement",
+            "target": "user",
+            "value": "Sofia",
+            "topic": "name",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "Ich heiße Sofia",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": null
+      },
+      "response_acts": [
+        "remember_name"
+      ],
+      "session_id": "dd8ef76c-a4b6-4853-8aa0-b83346556d94",
+      "conversation_revision": 2
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir gesagt, dass du Sofia heißt.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "name_question",
+            "target": "user",
+            "value": "",
+            "topic": "name",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "Wie heiße ich?",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": "name"
+      },
+      "response_acts": [
+        "recall_name"
+      ],
+      "session_id": "dd8ef76c-a4b6-4853-8aa0-b83346556d94",
+      "conversation_revision": 3
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir gesagt, dass du Elena heißt.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "name_question",
+            "target": "user",
+            "value": "",
+            "topic": "name",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "Wie heiße ich?",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": "name"
+      },
+      "response_acts": [
+        "recall_name"
+      ],
+      "session_id": "8aece458-0b26-4110-b669-b8e0b98b7ad4",
+      "conversation_revision": 7
+    },
+    {
+      "prompt": "Gut geht es mir nicht, dir vielleicht?",
+      "answer": "Du sagst, dass du dich nicht Gut fühlst. Magst du mehr darüber erzählen? Ich bin bereit für unser Gespräch.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "mood_statement",
+            "target": "user",
+            "value": "negative",
+            "topic": "wellbeing",
+            "negated": true,
+            "confidence": 0.85,
+            "text": "Gut geht es mir nicht",
+            "subject": "",
+            "predicate": "positive"
+          },
+          {
+            "kind": "wellbeing_question",
+            "target": "assistant",
+            "value": "",
+            "topic": "wellbeing",
+            "negated": false,
+            "confidence": 0.9,
+            "text": "dir vielleicht?",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": "wellbeing"
+      },
+      "response_acts": [
+        "user_mood",
+        "assistant_status"
+      ],
+      "session_id": "8aece458-0b26-4110-b669-b8e0b98b7ad4",
+      "conversation_revision": 8
+    },
+    {
+      "prompt": "Mir geht es schlecht, nein, eigentlich gut.",
+      "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+      "abstained": false,
+      "generated": false,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "mood_statement",
+            "target": "user",
+            "value": "positive",
+            "topic": "wellbeing",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "eigentlich gut",
+            "subject": "",
+            "predicate": "positive"
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": null
+      },
+      "response_acts": [
+        "user_mood"
+      ],
+      "session_id": "8aece458-0b26-4110-b669-b8e0b98b7ad4",
+      "conversation_revision": 9
+    },
+    {
+      "prompt": "Nenn mich bitte Mara.",
+      "answer": "Schön, dich kennenzulernen, Mara.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "name_statement",
+            "target": "user",
+            "value": "Mara",
+            "topic": "name",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "Nenn mich bitte Mara",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": null
+      },
+      "response_acts": [
+        "remember_name"
+      ],
+      "session_id": "8aece458-0b26-4110-b669-b8e0b98b7ad4",
+      "conversation_revision": 10
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir gesagt, dass du Mara heißt.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "name_question",
+            "target": "user",
+            "value": "",
+            "topic": "name",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "Wie heiße ich?",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": "name"
+      },
+      "response_acts": [
+        "recall_name"
+      ],
+      "session_id": "8aece458-0b26-4110-b669-b8e0b98b7ad4",
+      "conversation_revision": 11
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir gesagt, dass du Sofia heißt.",
+      "abstained": false,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "name_question",
+            "target": "user",
+            "value": "",
+            "topic": "name",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "Wie heiße ich?",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": "name"
+      },
+      "response_acts": [
+        "recall_name"
+      ],
+      "session_id": "dd8ef76c-a4b6-4853-8aa0-b83346556d94",
+      "conversation_revision": 4
+    },
+    {
+      "prompt": "Und dir?",
+      "answer": "Worauf beziehst du dich mit deiner Rückfrage?",
+      "abstained": true,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "context_clarification",
+            "target": "assistant",
+            "value": "",
+            "topic": "",
+            "negated": false,
+            "confidence": 0.0,
+            "text": "Und dir?",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [
+          "Und dir?"
+        ],
+        "used_context": false,
+        "question_topic": null
+      },
+      "response_acts": [
+        "clarification"
+      ],
+      "session_id": "4ade2fcd-c205-4b11-8541-7a9fac2ae57e",
+      "conversation_revision": 1
+    },
+    {
+      "prompt": "Wie heiße ich?",
+      "answer": "Du hast mir deinen Namen in diesem Gespräch noch nicht genannt. Wie heißt du?",
+      "abstained": true,
+      "generated": true,
+      "method": "semantic_wave_dialogue",
+      "interpretation": {
+        "acts": [
+          {
+            "kind": "name_question",
+            "target": "user",
+            "value": "",
+            "topic": "name",
+            "negated": false,
+            "confidence": 1.0,
+            "text": "Wie heiße ich?",
+            "subject": "",
+            "predicate": ""
+          }
+        ],
+        "unsupported": [],
+        "used_context": false,
+        "question_topic": "name"
+      },
+      "response_acts": [
+        "clarification"
+      ],
+      "session_id": "4ade2fcd-c205-4b11-8541-7a9fac2ae57e",
+      "conversation_revision": 2
+    }
+  ],
+  "final_running_check": {
+    "ticks_before": 1714,
+    "ticks_after": 1717,
+    "healthy": true,
+    "time_s": 171.62341390000074,
+    "document_count": 120
+  }
+}

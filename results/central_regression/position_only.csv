@@ -1,0 +1,4 @@
+modes,time_s,displacement_l2,quadrature_l2,recovered_coefficient_error,position_only_mode_invisible
+16,0.13333333333333333,6.123233995736766e-17,1.0,0.0,True
+64,0.5333333333333333,6.123233995736766e-17,1.0,0.0,True
+256,2.1333333333333333,6.123233995736766e-17,1.0,0.0,True

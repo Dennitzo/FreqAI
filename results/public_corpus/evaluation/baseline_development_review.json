@@ -1,0 +1,195 @@
+{
+  "reviewer": "Independent AI evaluation agent; no human study",
+  "run_path": "results/public_corpus/evaluation/baseline_development.json",
+  "rubric_interpretation": "Pass requires a relevant conversational response fulfilling the main request. A generic acknowledgement alone does not satisfy a request with explicit content preferences. Surface plausibility and exact sentence novelty are separate from correctness. Semantic relevance and syntactic quality are recorded separately; minor noun-capitalization errors alone are not classified as a broken sentence.",
+  "decisions": [
+    {
+      "id": "d01a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Friendly opening and invitation to converse.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d01b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Acknowledges positive mood and answers assistant question with honest limit.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d02a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Responds directly to exhaustion with modest rest suggestion.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d02b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Coherent acknowledgement of an accepted suggestion and thanks.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d03a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Relevant question about preferred aspects of books.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d03b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Generic acknowledgement does not engage with humorous reading preference; no explicit contradiction.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d04a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Relevant music preference follow-up.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d04b",
+      "appropriate": false,
+      "role_ok": false,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Repeats question about the user's preference instead of answering assistant-directed preference question.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d05a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Sympathetic response and support question preserve negative mood; expectation detail is speculative but not asserted as fact.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d05b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Invites discussion without prescribing advice.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d06a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Generic experimenting follow-up does not respond to request for a simple meal.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d06b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Generic acknowledgement does not connect vegetarian preference to cooking context.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d07a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Responds to user-reported rain without claiming weather access.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d07b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Asking what the user sees neither suggests an indoor activity nor asks a useful preference question.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d08a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "No explanation of system identity; unrelated thought-sharing prompt.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d08b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "No answer about conversational memory or its limits.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d09a",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": false,
+      "reason": "Shifts from meeting friends to choosing a walk location.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d09b",
+      "appropriate": false,
+      "role_ok": true,
+      "negation_ok": false,
+      "topic_ok": false,
+      "reason": "Offers outdoor walking alternatives after the explicit preference to stay inside.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d10a",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Natural response to thanks.",
+      "grammatical_sentences": true
+    },
+    {
+      "id": "d10b",
+      "appropriate": true,
+      "role_ok": true,
+      "negation_ok": true,
+      "topic_ok": true,
+      "reason": "Natural farewell, although noun capitalization in 'gelingen' is imperfect.",
+      "grammatical_sentences": true
+    }
+  ],
+  "run_sha256": "8369c52c804e5596048130e36e729c60d2946db47bc3bd88757b0f0894c4c153",
+  "summary": {
+    "appropriate": 11,
+    "role_ok": 19,
+    "negation_ok": 19,
+    "topic_ok": 12,
+    "grammatical_sentences": 20
+  }
+}

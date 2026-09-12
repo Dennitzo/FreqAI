@@ -1,0 +1,206 @@
+{
+  "new_two_hop_answer": {
+    "subject": "Pudel",
+    "target": "Tier",
+    "predicate": "is_a",
+    "answer": "Pudel ist ein Tier.",
+    "entailed": true,
+    "status": "proved",
+    "path": [
+      "Pudel",
+      "Hund",
+      "Tier"
+    ],
+    "proof": [
+      {
+        "subject": "Pudel",
+        "predicate": "is_a",
+        "object": "Hund",
+        "source": "demo:taxonomy:1"
+      },
+      {
+        "subject": "Hund",
+        "predicate": "is_a",
+        "object": "Tier",
+        "source": "demo:taxonomy:2"
+      }
+    ],
+    "sources": [
+      "demo:taxonomy:1",
+      "demo:taxonomy:2"
+    ],
+    "steps": 2,
+    "max_hops": 8,
+    "reason": "proved_by_transitivity",
+    "node_count": 6,
+    "numerical_tolerance": 1e-08,
+    "max_imaginary_error": 9.024255979873883e-17,
+    "max_integer_error": 4.440892098500626e-16,
+    "operator_reconstruction_error": 6.690533783366612e-16,
+    "rules": [
+      "explicit is_a edges",
+      "is_a transitivity",
+      "known-node is_a reflexivity"
+    ],
+    "method": "H=F A F*, repeated H@v, inverse FFT, Boolean frontier projection",
+    "general_language_model": false
+  },
+  "new_three_hop_answer": {
+    "subject": "Pudel",
+    "target": "Lebewesen",
+    "predicate": "is_a",
+    "answer": "Pudel ist ein Lebewesen.",
+    "entailed": true,
+    "status": "proved",
+    "path": [
+      "Pudel",
+      "Hund",
+      "Tier",
+      "Lebewesen"
+    ],
+    "proof": [
+      {
+        "subject": "Pudel",
+        "predicate": "is_a",
+        "object": "Hund",
+        "source": "demo:taxonomy:1"
+      },
+      {
+        "subject": "Hund",
+        "predicate": "is_a",
+        "object": "Tier",
+        "source": "demo:taxonomy:2"
+      },
+      {
+        "subject": "Tier",
+        "predicate": "is_a",
+        "object": "Lebewesen",
+        "source": "demo:taxonomy:3"
+      }
+    ],
+    "sources": [
+      "demo:taxonomy:1",
+      "demo:taxonomy:2",
+      "demo:taxonomy:3"
+    ],
+    "steps": 3,
+    "max_hops": 8,
+    "reason": "proved_by_transitivity",
+    "node_count": 6,
+    "numerical_tolerance": 1e-08,
+    "max_imaginary_error": 9.287196608840454e-17,
+    "max_integer_error": 6.661338147750939e-16,
+    "operator_reconstruction_error": 6.690533783366612e-16,
+    "rules": [
+      "explicit is_a edges",
+      "is_a transitivity",
+      "known-node is_a reflexivity"
+    ],
+    "method": "H=F A F*, repeated H@v, inverse FFT, Boolean frontier projection",
+    "general_language_model": false
+  },
+  "hop_limit": {
+    "subject": "Pudel",
+    "target": "Tier",
+    "predicate": "is_a",
+    "answer": "Ob Pudel ein Tier ist, bleibt anhand der gespeicherten Beziehungen unbekannt.",
+    "entailed": false,
+    "status": "unknown",
+    "path": [],
+    "proof": [],
+    "sources": [],
+    "steps": 1,
+    "max_hops": 1,
+    "reason": "hop_limit",
+    "node_count": 6,
+    "numerical_tolerance": 1e-08,
+    "max_imaginary_error": 9.024255979873883e-17,
+    "max_integer_error": 4.440892098500626e-16,
+    "operator_reconstruction_error": 6.690533783366612e-16,
+    "rules": [
+      "explicit is_a edges",
+      "is_a transitivity",
+      "known-node is_a reflexivity"
+    ],
+    "method": "H=F A F*, repeated H@v, inverse FFT, Boolean frontier projection",
+    "general_language_model": false
+  },
+  "reverse_relation_is_unknown": {
+    "subject": "Tier",
+    "target": "Pudel",
+    "predicate": "is_a",
+    "answer": "Ob Tier ein Pudel ist, bleibt anhand der gespeicherten Beziehungen unbekannt.",
+    "entailed": false,
+    "status": "unknown",
+    "path": [],
+    "proof": [],
+    "sources": [],
+    "steps": 2,
+    "max_hops": 8,
+    "reason": "no_path",
+    "node_count": 6,
+    "numerical_tolerance": 1e-08,
+    "max_imaginary_error": 9.287196608840454e-17,
+    "max_integer_error": 6.661338147750939e-16,
+    "operator_reconstruction_error": 6.690533783366612e-16,
+    "rules": [
+      "explicit is_a edges",
+      "is_a transitivity",
+      "known-node is_a reflexivity"
+    ],
+    "method": "H=F A F*, repeated H@v, inverse FFT, Boolean frontier projection",
+    "general_language_model": false
+  },
+  "unrelated_classes_are_unknown": {
+    "subject": "Pudel",
+    "target": "Baum",
+    "predicate": "is_a",
+    "answer": "Ob Pudel ein Baum ist, bleibt anhand der gespeicherten Beziehungen unbekannt.",
+    "entailed": false,
+    "status": "unknown",
+    "path": [],
+    "proof": [],
+    "sources": [],
+    "steps": 4,
+    "max_hops": 8,
+    "reason": "no_path",
+    "node_count": 6,
+    "numerical_tolerance": 1e-08,
+    "max_imaginary_error": 9.287196608840454e-17,
+    "max_integer_error": 6.661338147750939e-16,
+    "operator_reconstruction_error": 6.690533783366612e-16,
+    "rules": [
+      "explicit is_a edges",
+      "is_a transitivity",
+      "known-node is_a reflexivity"
+    ],
+    "method": "H=F A F*, repeated H@v, inverse FFT, Boolean frontier projection",
+    "general_language_model": false
+  },
+  "unknown_entity": {
+    "subject": "Einhorn",
+    "target": "Tier",
+    "predicate": "is_a",
+    "answer": "Ob Einhorn ein Tier ist, bleibt anhand der gespeicherten Beziehungen unbekannt.",
+    "entailed": false,
+    "status": "unknown",
+    "path": [],
+    "proof": [],
+    "sources": [],
+    "steps": 0,
+    "max_hops": 8,
+    "reason": "unknown_node",
+    "node_count": 6,
+    "numerical_tolerance": 1e-08,
+    "max_imaginary_error": 0.0,
+    "max_integer_error": 0.0,
+    "operator_reconstruction_error": 6.690533783366612e-16,
+    "rules": [
+      "explicit is_a edges",
+      "is_a transitivity",
+      "known-node is_a reflexivity"
+    ],
+    "method": "H=F A F*, repeated H@v, inverse FFT, Boolean frontier projection",
+    "general_language_model": false
+  }
+}

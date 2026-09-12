@@ -1,0 +1,167 @@
+{
+  "reviewer": "Independent AI evaluation agent; no human study",
+  "run_path": "results/public_corpus/evaluation/final_facts.json",
+  "run_sha256": "06541335f9c032e101b78162abd6e50d87f63069c81717253f5251b92b1d2728",
+  "scope": "Closed-corpus generation without reference context, not the standard extractive reading benchmark. Article-title overlap is reported; official test contexts are not imported.",
+  "decisions": [
+    {
+      "id": 36431,
+      "factually_correct_against_source": false,
+      "reason": "Unrelated religious and royal-history fragments omit the nickname."
+    },
+    {
+      "id": 38853,
+      "factually_correct_against_source": false,
+      "reason": "Unrelated medical-transport statement omits the drought period."
+    },
+    {
+      "id": 37104,
+      "factually_correct_against_source": false,
+      "reason": "Swiss running event and bird-migration fragment do not name North Carolina events."
+    },
+    {
+      "id": 40487,
+      "factually_correct_against_source": false,
+      "reason": "Budget and labor-policy statement does not address historical tuberculosis measures."
+    },
+    {
+      "id": 37407,
+      "factually_correct_against_source": false,
+      "reason": "Generic crisis/research-funding statement does not identify the affected regions."
+    },
+    {
+      "id": 36597,
+      "factually_correct_against_source": false,
+      "reason": "Names an old church instead of the membership of the church association."
+    },
+    {
+      "id": 36539,
+      "factually_correct_against_source": false,
+      "reason": "Mixes Canadian police and football organizations; no airport destinations."
+    },
+    {
+      "id": 38059,
+      "factually_correct_against_source": false,
+      "reason": "Royal biography omits the requested broadcast dates."
+    },
+    {
+      "id": 37442,
+      "factually_correct_against_source": false,
+      "reason": "Natural theology does not answer the biological-needs question."
+    },
+    {
+      "id": 37689,
+      "factually_correct_against_source": false,
+      "reason": "Atlantic slavery history does not describe the coastal soils."
+    },
+    {
+      "id": 38590,
+      "factually_correct_against_source": false,
+      "reason": "Lake volume is substituted for stomach volume."
+    },
+    {
+      "id": 37707,
+      "factually_correct_against_source": false,
+      "reason": "Industrial production does not identify the western mountain border."
+    },
+    {
+      "id": 38157,
+      "factually_correct_against_source": false,
+      "reason": "An unrelated genocide statement does not give earthquake casualties."
+    },
+    {
+      "id": 44115,
+      "factually_correct_against_source": false,
+      "reason": "General immune-response terminology does not answer the overreaction condition; inconsistent reference alternatives do not rescue this answer."
+    },
+    {
+      "id": 37208,
+      "factually_correct_against_source": false,
+      "reason": "City-location statement omits the human developmental period."
+    },
+    {
+      "id": 41047,
+      "factually_correct_against_source": false,
+      "reason": "Egyptian political biography does not identify the Cypriot head-of-state office."
+    },
+    {
+      "id": 36667,
+      "factually_correct_against_source": false,
+      "reason": "American Revolutionary War passage does not give Israeli war dates."
+    },
+    {
+      "id": 41467,
+      "factually_correct_against_source": false,
+      "reason": "Time-zone fragment does not explain the delayed banknote."
+    },
+    {
+      "id": 38115,
+      "factually_correct_against_source": false,
+      "reason": "North American language revitalization does not describe Catalan repression."
+    },
+    {
+      "id": 40515,
+      "factually_correct_against_source": false,
+      "reason": "Palace description does not name the successor king."
+    },
+    {
+      "id": 36558,
+      "factually_correct_against_source": false,
+      "reason": "British invasion of the Philippines does not date French conquest of Mali."
+    },
+    {
+      "id": 37180,
+      "factually_correct_against_source": false,
+      "reason": "Basketball-team passage does not identify Canadian football officials."
+    },
+    {
+      "id": 40421,
+      "factually_correct_against_source": false,
+      "reason": "Temperature and pressure statement does not date Ottoman rule."
+    },
+    {
+      "id": 38331,
+      "factually_correct_against_source": false,
+      "reason": "No answer generated."
+    },
+    {
+      "id": 38791,
+      "factually_correct_against_source": false,
+      "reason": "Religious music instrumentation does not date literary change."
+    },
+    {
+      "id": 41390,
+      "factually_correct_against_source": false,
+      "reason": "Royal relationship passage omits the year of death."
+    },
+    {
+      "id": 37688,
+      "factually_correct_against_source": false,
+      "reason": "Alpine regions are substituted for North Carolina regions."
+    },
+    {
+      "id": 41503,
+      "factually_correct_against_source": false,
+      "reason": "British India passage does not locate Auhof."
+    },
+    {
+      "id": 36639,
+      "factually_correct_against_source": false,
+      "reason": "Copper toxicity and pipe usage do not give thermal conductivity."
+    },
+    {
+      "id": 37692,
+      "factually_correct_against_source": false,
+      "reason": "Central-bank passage does not define Outer Banks."
+    }
+  ],
+  "summary": {
+    "correct": 0,
+    "questions": 30,
+    "empty_answers": 1,
+    "reference_string_in_corpus": 8,
+    "reference_string_same_article_in_corpus": 4,
+    "correct_among_same_article_string_cases": 0
+  },
+  "reference_caveat": "Conflicting answer annotations in some original records require context-aware review. None of the generated answers supplies the requested fact or a supported equivalent here."
+}

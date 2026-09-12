@@ -1,0 +1,102 @@
+{
+  "active_records": 20093,
+  "measured_records": 20093,
+  "read_only_database": true,
+  "requested_workers": 32,
+  "runs": [
+    {
+      "mode": "parallel",
+      "compile_seconds": 33.9872901000017,
+      "policy": {
+        "logical_cores": 32,
+        "physical_cores": 16,
+        "workers": 32,
+        "threads_per_worker": 1,
+        "parallel_enabled": true,
+        "in_worker": false,
+        "pool_active": true,
+        "pool_workers": 32,
+        "pool_failed": false,
+        "pool_error": null
+      },
+      "signature": {
+        "corpus_digest": "9c58dca98377d3cf74e75f61d89af98fc842387bf8ad295351f7779e7bc7cdd3",
+        "coefficient_sha256": "5a8e6fb4e87db1fc5f5c0d2701fce90780b81f4deae012875e9879f9d67a56c5",
+        "rendering_sha256": "e57e24a85a942e99f66ae0b4a81d98212df375ec163c848527b2b506e5d90023",
+        "order": 2,
+        "coefficient_rule": "sqrt(count/sum(count))",
+        "storage": {
+          "record_count": 20093,
+          "statement_count": 49143,
+          "vocabulary_size": 117055,
+          "group_count": 65074,
+          "prefix_fields": 2778879,
+          "observed_edges": 4148364,
+          "unaddressed_statement_count": 2397,
+          "context_surface_forms": 80101,
+          "complex_coefficient_bytes": 66373824,
+          "support_index_bytes": 33186912,
+          "numerical_payload_bytes": 104021376,
+          "no_gradient_optimization": true,
+          "no_qa_pairs": true,
+          "excludes": "Python objects, token strings and temporary compilation counts",
+          "declarative_facts": 11219,
+          "lexical_role_bytes": 4460640,
+          "explicit_grammar": true,
+          "optimizer_steps": 0,
+          "requires_question_answer_pairs": false
+        },
+        "declaration_role_sha256": "61e68826be78562b4b74b452151c6a73dd243fb9a9ed4af4c2c2184cfc27edce",
+        "grammar_version": "unpaired_roles_v2"
+      },
+      "symbol_energy_sha256": "97ce6087f417587c33cc38113d215752dabc1a73002ca92d8c1df53af98d97ff",
+      "resonance_floor": 0.25,
+      "answers": {
+        "Was ist eine Frequenz?": {
+          "text": "Die Frequenz ist der Kehrwert der Periodendauer.",
+          "tokens": [
+            "die",
+            "frequenz",
+            "ist",
+            "der",
+            "kehrwert",
+            "der",
+            "periodendauer",
+            "."
+          ],
+          "ended": true,
+          "reason": ""
+        },
+        "Wie heißt du?": {
+          "text": "Ich heiße FreqAI.",
+          "tokens": [
+            "ich",
+            "heiße",
+            "freqai",
+            "."
+          ],
+          "ended": true,
+          "reason": ""
+        },
+        "Hallo": {
+          "text": "Hallo! Wie geht es dir?",
+          "tokens": [
+            "hallo",
+            "!",
+            "wie",
+            "geht",
+            "es",
+            "dir",
+            "?"
+          ],
+          "ended": true,
+          "reason": ""
+        }
+      },
+      "signature_matches_serial": true
+    }
+  ],
+  "reference": "results\\compiler_benchmark_full.json",
+  "reference_serial_seconds": 104.75357259999873,
+  "speedup": 3.0821395966486156
+}

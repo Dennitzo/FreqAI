@@ -1,0 +1,40 @@
+{
+  "code_unchanged_since_final_freeze": {
+    "freqai\\__init__.py": true,
+    "freqai\\__main__.py": true,
+    "freqai\\cli.py": true,
+    "freqai\\codec.py": true,
+    "freqai\\dialogue.py": true,
+    "freqai\\features.py": true,
+    "freqai\\generation_runtime.py": true,
+    "freqai\\generative.py": true,
+    "freqai\\information.py": true,
+    "freqai\\information_runtime.py": true,
+    "freqai\\memory.py": true,
+    "freqai\\reasoning.py": true,
+    "freqai\\semantics.py": true,
+    "freqai\\server.py": true,
+    "freqai\\spectral_storage.py": true,
+    "freqai\\store.py": true,
+    "freqai\\synthesis.py": true,
+    "memory\\language\\generative_categories.json": true
+  },
+  "data_unchanged_since_final_freeze": true,
+  "statistics": {
+    "path": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\memory.sqlite3",
+    "revision": 6,
+    "document_count": 32000,
+    "archive_document_count": 48,
+    "history_count": 88,
+    "relation_count": 0,
+    "canonical_format": "sqlite_text",
+    "wave_storage": "derived_in_memory",
+    "configuration": {
+      "dimensions": 4096,
+      "feature_mode": "morphology",
+      "min_coverage": 0.6,
+      "min_score": 0.18,
+      "retrieval_policy": "coverage"
+    }
+  }
+}

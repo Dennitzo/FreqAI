@@ -1,0 +1,411 @@
+{
+  "run_sha256": "4900f4474e02aa698b3679dc8e114f7d19e30ed3c2c41aff1f507263717f19f5",
+  "review": "Independent AI-agent semantic review of all44 outputs against the declared random truth. Historical known regression; no fresh-holdout claim.",
+  "rows": [
+    {
+      "section": "rows",
+      "id": "rf00",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rr00",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rf01",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rr01",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rf02",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rr02",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rf03",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rr03",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rf04",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rr04",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rf05",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rr05",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rf06",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rr06",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rf07",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rr07",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rf08",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rr08",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rf09",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rr09",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rf10",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rr10",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rf11",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rr11",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "rows",
+      "id": "rn00",
+      "correct_informative_answer": false,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": false,
+      "exact_declarative_source_sentence": false,
+      "note": "Empty response; unknown cases safely abstain, but known and false-value questions are not answered."
+    },
+    {
+      "section": "rows",
+      "id": "rn01",
+      "correct_informative_answer": false,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": false,
+      "exact_declarative_source_sentence": false,
+      "note": "Empty response; unknown cases safely abstain, but known and false-value questions are not answered."
+    },
+    {
+      "section": "rows",
+      "id": "rn02",
+      "correct_informative_answer": false,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": false,
+      "exact_declarative_source_sentence": false,
+      "note": "Empty response; unknown cases safely abstain, but known and false-value questions are not answered."
+    },
+    {
+      "section": "rows",
+      "id": "rn03",
+      "correct_informative_answer": false,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": false,
+      "exact_declarative_source_sentence": false,
+      "note": "Empty response; unknown cases safely abstain, but known and false-value questions are not answered."
+    },
+    {
+      "section": "rows",
+      "id": "ru00",
+      "correct_informative_answer": false,
+      "safe_unknown_refusal": true,
+      "grammatical_nonempty": false,
+      "exact_declarative_source_sentence": false,
+      "note": "Empty response; unknown cases safely abstain, but known and false-value questions are not answered."
+    },
+    {
+      "section": "rows",
+      "id": "ru01",
+      "correct_informative_answer": false,
+      "safe_unknown_refusal": true,
+      "grammatical_nonempty": false,
+      "exact_declarative_source_sentence": false,
+      "note": "Empty response; unknown cases safely abstain, but known and false-value questions are not answered."
+    },
+    {
+      "section": "rows",
+      "id": "ru02",
+      "correct_informative_answer": false,
+      "safe_unknown_refusal": true,
+      "grammatical_nonempty": false,
+      "exact_declarative_source_sentence": false,
+      "note": "Empty response; unknown cases safely abstain, but known and false-value questions are not answered."
+    },
+    {
+      "section": "rows",
+      "id": "ru03",
+      "correct_informative_answer": false,
+      "safe_unknown_refusal": true,
+      "grammatical_nonempty": false,
+      "exact_declarative_source_sentence": false,
+      "note": "Empty response; unknown cases safely abstain, but known and false-value questions are not answered."
+    },
+    {
+      "section": "permuted_rows",
+      "id": "rf00",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "permuted_rows",
+      "id": "rf01",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "permuted_rows",
+      "id": "rf02",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "permuted_rows",
+      "id": "rf03",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "permuted_rows",
+      "id": "rf04",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "permuted_rows",
+      "id": "rf05",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "permuted_rows",
+      "id": "rf06",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "permuted_rows",
+      "id": "rf07",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "permuted_rows",
+      "id": "rf08",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "permuted_rows",
+      "id": "rf09",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "permuted_rows",
+      "id": "rf10",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    },
+    {
+      "section": "permuted_rows",
+      "id": "rf11",
+      "correct_informative_answer": true,
+      "safe_unknown_refusal": false,
+      "grammatical_nonempty": true,
+      "exact_declarative_source_sentence": true,
+      "note": "Correctly reconstructs the declared subject/property/value clause; inverse wording binds the same fact."
+    }
+  ],
+  "summary": {
+    "correct_entity_to_value": 12,
+    "correct_value_to_entity": 12,
+    "correct_data_permutation": 12,
+    "correct_negation": 0,
+    "safe_unknown_refusals": 4,
+    "all_correct_outputs_reconstruct_declared_source_sentences": true,
+    "empty_total": 8
+  }
+}

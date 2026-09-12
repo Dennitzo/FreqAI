@@ -1,0 +1,120 @@
+{
+  "purpose": "Compiler-only diagnostic of public semantic-label cross-talk; all sources kept unchanged; no holdout read",
+  "models": {
+    "baseline": {
+      "documents": 621,
+      "weight_public": 1.0,
+      "build_seconds": 0.5551734999990003,
+      "features": {
+        "semantic:thanks:user::": {
+          "glas": 0,
+          "colaflaschen": 0,
+          "werkzeuge": 0
+        },
+        "semantic:mood_statement:user:positive:wellbeing": {
+          "markov": 0,
+          "markov-prozess": 0
+        }
+      },
+      "answers": {
+        "Danke.": {
+          "text": "Gern. Du kannst in deinem Tempo weitererzählen."
+        },
+        "Mir geht es gut.": {
+          "text": "Es ist schön, wenn dir etwas gut gelingt. Welcher Teil daran bedeutet dir besonders viel?"
+        },
+        "Hallo": {
+          "text": "Hallo! Schön, dass du hier bist."
+        }
+      }
+    },
+    "plus500": {
+      "documents": 1121,
+      "weight_public": 1.0,
+      "build_seconds": 16.837944799999605,
+      "features": {
+        "semantic:thanks:user::": {
+          "glas": 0.00495049504950495,
+          "colaflaschen": 0.004950495049504952,
+          "werkzeuge": 0.004950495049504948
+        },
+        "semantic:mood_statement:user:positive:wellbeing": {
+          "markov": 6.804528059718878e-35,
+          "markov-prozess": 0.006779661016949137
+        }
+      },
+      "answers": {
+        "Danke.": {
+          "text": "Das bearbeiten von Glas ist nicht ungefährlich, da es splittern kann und eventuell schädlicher Glasstaub entsteht. Als Werkzeug würde ich dir unbedingt eine Schutzbrille und eine Staubschutzmaske empfehlen."
+        },
+        "Mir geht es gut.": {
+          "text": "Es ist schön, wenn dir etwas gut gelingt. Welcher Teil daran bedeutet dir besonders viel?"
+        },
+        "Hallo": {
+          "text": "Hallo Heikki! Wie kann ich Ihnen heute weiterhelfen?"
+        }
+      }
+    },
+    "plus500_public_lexical_only": {
+      "documents": 1121,
+      "weight_public": 1.0,
+      "build_seconds": 14.559327900000426,
+      "features": {
+        "semantic:thanks:user::": {
+          "glas": 3.9548352662231496e-35,
+          "colaflaschen": 8.241415706880173e-35,
+          "werkzeuge": 5.980278292288014e-35
+        },
+        "semantic:mood_statement:user:positive:wellbeing": {
+          "markov": 2.195542266687791e-34,
+          "markov-prozess": 1.3670483947633825e-35
+        }
+      },
+      "answers": {
+        "Danke.": {
+          "text": "Gern. Du kannst jederzeit einen neuen Gedanken einbringen."
+        },
+        "Mir geht es gut.": {
+          "text": "Es ist schön, wenn dir etwas gut gelingt. Welcher Teil daran bedeutet dir besonders viel?"
+        },
+        "Hallo": {
+          "text": "Hallo! Schön, dass du hier bist."
+        }
+      }
+    }
+  },
+  "configuration": {
+    "order": 2,
+    "public_pair_weight": 1.0,
+    "runtime_prompt_features": "unchanged for all three variants"
+  },
+  "source_corpus_sha256": "832754653cdd1dcd0c2c0cb7043d3edae71f8e28558b5ed7a145362c0b73d9fa",
+  "numerical_note": "Reported mode intensities were demodulated from stored complex fields. This diagnostic did not measure FFT round-trip error; sub-1e-30 values are numerical noise.",
+  "public_prompt_collision_with_own_data": [
+    "Wie geht es dir?"
+  ],
+  "first500_semantic_label_counts": {
+    "semantic:topic_statement:user::conversation": 4,
+    "semantic:greeting:user::": 12,
+    "semantic:thanks:user::": 2,
+    "topic:leisure": 8,
+    "semantic:topic_statement:user::leisure": 8,
+    "semantic:mood_statement:assistant:negative:wellbeing": 2,
+    "semantic:capability_question:assistant::capabilities": 5,
+    "semantic:wellbeing_question:assistant::wellbeing": 5,
+    "semantic:identity_question:assistant::identity": 1,
+    "topic:weather": 5,
+    "topic:music": 3,
+    "topic:work": 5,
+    "semantic:topic_statement:user::work": 5,
+    "topic:books": 3,
+    "semantic:topic_statement:user::books": 2,
+    "semantic:mood_statement:user:positive:wellbeing": 1,
+    "semantic:topic_statement:user::music": 2,
+    "semantic:mood_statement:user:negative:wellbeing": 1,
+    "topic:movies": 1,
+    "semantic:topic_statement:user::movies": 1,
+    "topic:food": 2,
+    "semantic:topic_statement:user::food": 2
+  }
+}

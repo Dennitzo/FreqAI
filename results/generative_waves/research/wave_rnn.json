@@ -1,0 +1,24 @@
+{
+  "request": {
+    "query": "White Lee Sompolinsky 2004 short term memory orthogonal networks oscillators sequence",
+    "maximumResults": 8,
+    "language": "de-DE"
+  },
+  "http_status": 200,
+  "retrieved_utc": "2026-09-06T08:23:18.649930+00:00",
+  "response": {
+    "query": "White Lee Sompolinsky 2004 short term memory orthogonal networks oscillators sequence",
+    "results": [
+      {
+        "title": "Items where Subject is \"570 Life sciences\" - heiDOK",
+        "url": "https://archiv.ub.uni-heidelberg.de/volltextserver/view/subjects/ddc-570.html",
+        "snippet": "... networks with time delayed recurrent neural networks and clustering techniques. ... Lissek, Thomas (2025) Learning and memory in molecular networks. [Preprint].",
+        "source": "google cse",
+        "thumbnailUrl": ""
+      }
+    ],
+    "provider": "searxng",
+    "isFallback": false,
+    "retrievedAt": "2026-09-06T08:23:18.6494422+00:00"
+  }
+}

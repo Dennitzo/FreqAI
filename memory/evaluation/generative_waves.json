@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "description": "Independent conversational evaluation for autoregressive spectral word generation. Authored before the decoder was inspected; 30 development and 30 holdout turns. Quality, novelty and numerical mechanism are assessed separately. This file is evaluation data and must never be indexed as language memory.",
+  "review_policy": "Automatic checks are limited proxies. A separate qualitative review of every answer judges whether it is grammatical, relevant, coherent and respects negation. The reviewer identity must be stated; an AI-agent review is not an independent human study. Novel output alone is not success. Holdout results are evaluated once after implementation and configuration hashes are frozen.",
+  "scenarios": [
+    {"id":"gw-dev-welcome","split":"development","turns":[
+      {"id":"gw-dev-01","prompt":"Guten Tag! Ich hätte Lust auf ein kleines Gespräch.","rubric":"Acknowledge the greeting and invite conversation.","topics":["greeting","conversation"],"require_any":["hallo","hey","guten","gern","gespräch","unterhalten","plaudern"]},
+      {"id":"gw-dev-02","prompt":"Mein Tag war angenehm, und deiner?","rubric":"Acknowledge a pleasant day and respond without inventing the program's lived day.","topics":["positive","assistant_status"],"require_any":["schön","freu","angenehm","bereit","gespräch","gefühl","programm"],"forbid_patterns":["ich (?:hatte|habe) (?:auch )?einen (?:schönen|angenehmen|guten) tag"]},
+      {"id":"gw-dev-03","prompt":"Danke, das war eine nette Begrüßung.","rubric":"Respond naturally to thanks, with no unrelated advice.","topics":["thanks"],"require_any":["gern","freut","schön","danke"]}
+    ]},
+    {"id":"gw-dev-energy","split":"development","turns":[
+      {"id":"gw-dev-04","prompt":"Nach dem langen Tag bin ich ziemlich erschöpft.","rubric":"Acknowledge fatigue or suggest a gentle break without medical claims.","topics":["tired"],"require_any":["pause","ruhe","ruhig","anstreng","erhol","müde","erschöpft","ausruh"]},
+      {"id":"gw-dev-05","prompt":"Jetzt bin ich aber nicht mehr müde.","rubric":"Respect that tiredness has ended; do not assert the user is still tired.","topics":["not_tired"],"require_any":["gut","schön","wach","energie","nicht","verstand","klar"],"forbid_patterns":["du bist (?:gerade |noch |sehr |ziemlich )?müde","weil du (?:so )?müde bist"]},
+      {"id":"gw-dev-06","prompt":"Ich würde heute gern noch etwas draußen machen.","rubric":"Discuss an outdoor activity or ask what the user would enjoy.","topics":["leisure"],"require_any":["draußen","spazier","gehen","luft","park","unternehmen","machen","lust"]}
+    ]},
+    {"id":"gw-dev-music","split":"development","turns":[
+      {"id":"gw-dev-07","prompt":"Abends höre ich am liebsten ruhige Musik.","rubric":"Engage with calm music, not food or work.","topics":["music"],"require_any":["musik","hör","lied","klang","melodie","ruhig"]},
+      {"id":"gw-dev-08","prompt":"Gesang mag ich dabei nicht besonders.","rubric":"Respect the stated dislike of vocals and retain the music topic.","topics":["music","negation"],"require_any":["musik","gesang","instrument","hör","ohne","nicht"],"forbid_patterns":["du (?:magst|liebst) gesang","weil du gesang (?:magst|liebst)"]},
+      {"id":"gw-dev-09","prompt":"Und was hörst du selbst gerne?","rubric":"Address the question while avoiding invented personal listening habits.","topics":["music","assistant_status"],"require_any":["musik","hör","vorlieb","gefühl","programm","eigene","selbst"],"forbid_patterns":["ich höre (?:am liebsten|gerne|oft|jeden)","mein lieblings"]}
+    ]},
+    {"id":"gw-dev-food","split":"development","turns":[
+      {"id":"gw-dev-10","prompt":"Ich habe Hunger und möchte etwas Einfaches kochen.","rubric":"Discuss a simple meal or ask which ingredients are available.","topics":["food"],"require_any":["koch","essen","gericht","zutat","gemüse","nudel","brot","suppe"]},
+      {"id":"gw-dev-11","prompt":"Fleisch möchte ich dafür nicht verwenden.","rubric":"Respect the meat-free preference; do not suggest meat as a desired ingredient.","topics":["food","negation"],"require_any":["fleisch","gemüse","vegetar","ohne","zutat","koch","essen"],"forbid_patterns":["(?:nimm|brat|koche|probier) (?:doch |etwas )?(?:hähnchen|rindfleisch|schweinefleisch|wurst)"]},
+      {"id":"gw-dev-12","prompt":"Nach dem Essen würde ich gern noch plaudern.","rubric":"Accept continued conversation without issuing a farewell.","topics":["conversation"],"require_any":["gern","plauder","gespräch","erzähl","unterhalten","sprechen"],"forbid_patterns":["^tschüss","^auf wiedersehen"]}
+    ]},
+    {"id":"gw-dev-work","split":"development","turns":[
+      {"id":"gw-dev-13","prompt":"Bei der Arbeit war heute ziemlich viel los.","rubric":"Acknowledge a busy workday or invite the user to describe it.","topics":["work"],"require_any":["arbeit","tag","anstreng","viel","pause","erzähl"]},
+      {"id":"gw-dev-14","prompt":"Trotzdem bin ich mit dem Ergebnis zufrieden.","rubric":"Recognize satisfaction rather than assume distress.","topics":["positive"],"require_any":["schön","freu","gut","zufrieden","geschafft","ergebnis"]},
+      {"id":"gw-dev-15","prompt":"Für morgen wünsche ich mir einen ruhigeren Start.","rubric":"Discuss a calmer start or ask what would help; do not predict actual events.","topics":["work","calm"],"require_any":["ruhig","morgen","start","pause","zeit","plan","ruhe"]}
+    ]},
+    {"id":"gw-dev-rain","split":"development","turns":[
+      {"id":"gw-dev-16","prompt":"Hier regnet es seit Stunden, deshalb bleibe ich drinnen.","rubric":"Acknowledge rain or indoor plans without inventing local weather data.","topics":["weather","leisure"],"require_any":["regen","drinnen","gemütlich","wetter","haus","machen"]},
+      {"id":"gw-dev-17","prompt":"Ein Buch und ein warmer Tee wären jetzt schön.","rubric":"Respond coherently to reading and tea.","topics":["books","food"],"require_any":["buch","bücher","les","tee","gemütlich","warm"]},
+      {"id":"gw-dev-18","prompt":"Über Bücher können wir doch ein wenig reden.","rubric":"Continue the books topic with a relevant question or comment.","topics":["books"],"require_any":["buch","bücher","les","roman","geschichte"]}
+    ]},
+    {"id":"gw-dev-company","split":"development","turns":[
+      {"id":"gw-dev-19","prompt":"Heute fehlt mir ein bisschen Gesellschaft.","rubric":"Acknowledge a desire for company with a supportive conversational response.","topics":["lonely","conversation"],"require_any":["gesellschaft","einsam","zu","erzähl","gespräch","jemand","kontakt"]},
+      {"id":"gw-dev-20","prompt":"Vielleicht rufe ich nachher einen Freund an.","rubric":"Engage with contacting a friend, without claiming a call has already happened.","topics":["friends"],"require_any":["freund","anruf","telefon","kontakt","gespräch","idee"]},
+      {"id":"gw-dev-21","prompt":"Bis dahin können wir uns noch unterhalten.","rubric":"Offer continued conversation in the present.","topics":["conversation"],"require_any":["gern","unterhalten","gespräch","erzähl","sprechen","da"]}
+    ]},
+    {"id":"gw-dev-name","split":"development","turns":[
+      {"id":"gw-dev-22","prompt":"Für unser Gespräch darfst du mich Lennart nennen.","rubric":"Acknowledge the user's requested name accurately.","topics":["name"],"require_any":["Lennart"],"name":"Lennart"},
+      {"id":"gw-dev-23","prompt":"Mich interessiert, wie du dich selbst beschreiben würdest.","rubric":"Describe the assistant truthfully as a program or conversational system.","topics":["identity"],"require_any":["freqai","programm","system","gespräch","modell","schwing","welle"]},
+      {"id":"gw-dev-24","prompt":"Welchen Namen hatte ich dir vorhin genannt?","rubric":"Recall Lennart from this conversation, without substituting another name.","topics":["name"],"require_any":["Lennart"],"name":"Lennart"}
+    ]},
+    {"id":"gw-dev-not-sad","split":"development","turns":[
+      {"id":"gw-dev-25","prompt":"Ich bin heute nicht traurig, nur etwas still.","rubric":"Respect the denial of sadness and avoid claiming that quietness means sadness.","topics":["neutral","negation"],"require_any":["still","ruhig","nicht","klar","verstand","erzähl"],"forbid_patterns":["du bist (?:heute |gerade |sehr )?traurig","deine traurigkeit"]},
+      {"id":"gw-dev-26","prompt":"Mir tut ein ruhiges Gespräch gerade gut.","rubric":"Continue a calm conversation rather than infer a crisis.","topics":["conversation","calm"],"require_any":["ruhig","gern","gespräch","erzähl","zeit","ruhe"]},
+      {"id":"gw-dev-27","prompt":"Dabei möchte ich gar keine Ratschläge haben.","rubric":"Respect the preference for listening instead of giving unsolicited advice.","topics":["listen","negation"],"require_any":["zu","erzähl","verstand","klar","ratschl","ohne","gern"],"forbid_patterns":["du solltest","du musst","versuch (?:doch|mal)"]}
+    ]},
+    {"id":"gw-dev-end","split":"development","turns":[
+      {"id":"gw-dev-28","prompt":"Ich habe gerade eine kleine gute Nachricht bekommen.","rubric":"Acknowledge the positive news or ask about it.","topics":["positive"],"require_any":["schön","freu","gut","nachricht","erzähl"]},
+      {"id":"gw-dev-29","prompt":"Darüber freue ich mich wirklich sehr.","rubric":"Maintain the positive emotional context.","topics":["positive"],"require_any":["freu","schön","gut","glück","moment"]},
+      {"id":"gw-dev-30","prompt":"Für jetzt verabschiede ich mich. Bis ein anderes Mal!","rubric":"Offer a natural farewell, without asking the user to continue immediately.","topics":["farewell"],"require_any":["tschüss","bis","wiedersehen","angenehm","pass","bald"]}
+    ]},
+    {"id":"gw-holdout-arrival","split":"holdout","turns":[
+      {"id":"gw-holdout-01","prompt":"Hi zusammen, ich schaue für ein paar Minuten hier rein.","rubric":"Greet the user and make space for a short conversation.","topics":["greeting","conversation"],"require_any":["hallo","hey","hi","schön","gern","gespräch","erzähl"]},
+      {"id":"gw-holdout-02","prompt":"Bei mir ist alles entspannt. Wie steht es um dich?","rubric":"Respond to calm wellbeing and the reciprocal question without invented experiences.","topics":["neutral","assistant_status"],"require_any":["schön","ruhig","entspannt","bereit","gespräch","gefühl","programm"],"forbid_patterns":["ich bin (?:auch )?(?:entspannt|müde|traurig|glücklich)","mir geht es (?:auch )?gut"]},
+      {"id":"gw-holdout-03","prompt":"Nett, dass du dir Zeit zum Zuhören nimmst.","rubric":"Acknowledge the appreciation and keep the conversation open.","topics":["thanks","listen"],"require_any":["gern","danke","freut","schön","zu","erzähl"]}
+    ]},
+    {"id":"gw-holdout-fatigue","split":"holdout","turns":[
+      {"id":"gw-holdout-04","prompt":"Meine Energie ist nach dem Aufräumen ziemlich aufgebraucht.","rubric":"Recognize fatigue despite the absence of the word tired.","topics":["tired"],"require_any":["pause","ruhe","ruhig","anstreng","erhol","müde","ausruh","energie"]},
+      {"id":"gw-holdout-05","prompt":"Nach der Pause fühle ich mich nicht mehr erschöpft.","rubric":"Respect the ended fatigue and avoid asserting current exhaustion.","topics":["not_tired"],"require_any":["gut","schön","wach","energie","nicht","verstand","klar","pause"],"forbid_patterns":["du bist (?:gerade |noch |sehr |ziemlich )?erschöpft","weil du (?:so )?erschöpft bist"]},
+      {"id":"gw-holdout-06","prompt":"Ein kurzer Spaziergang würde jetzt zu meiner Stimmung passen.","rubric":"Engage with a short walk in a coherent way.","topics":["leisure"],"require_any":["spazier","gehen","draußen","luft","park","runde","beweg"]}
+    ]},
+    {"id":"gw-holdout-sound","split":"holdout","turns":[
+      {"id":"gw-holdout-07","prompt":"Zum Abschalten lege ich gern leise Klavierstücke auf.","rubric":"Recognize music as a way to unwind, without switching to unrelated tasks.","topics":["music","calm"],"require_any":["musik","klavier","stück","hör","ruhig","entspann","klang"]},
+      {"id":"gw-holdout-08","prompt":"Laute Lieder sind dabei überhaupt nicht mein Fall.","rubric":"Respect the dislike of loud songs.","topics":["music","negation"],"require_any":["musik","lied","laut","leise","ruhig","nicht","hör"],"forbid_patterns":["du (?:magst|liebst) laute", "weil du laute (?:musik|lieder) (?:magst|liebst)"]},
+      {"id":"gw-holdout-09","prompt":"Hast du eigentlich selbst einen Musikgeschmack?","rubric":"Explain the absence of personal taste while addressing music.","topics":["music","assistant_status"],"require_any":["musik","geschmack","vorlieb","programm","eigene","selbst"],"forbid_patterns":["ich (?:liebe|bevorzuge) (?:jazz|rock|pop|klassik)","mein musikgeschmack ist"]}
+    ]},
+    {"id":"gw-holdout-kitchen","split":"holdout","turns":[
+      {"id":"gw-holdout-10","prompt":"Für heute Abend suche ich eine unkomplizierte Essensidee.","rubric":"Discuss a simple meal or ask about available ingredients.","topics":["food"],"require_any":["koch","essen","gericht","zutat","gemüse","nudel","brot","suppe"]},
+      {"id":"gw-holdout-11","prompt":"Etwas ohne Fleisch wäre mir dabei am liebsten.","rubric":"Respect the meat-free food preference.","topics":["food","negation"],"require_any":["fleisch","gemüse","vegetar","ohne","zutat","koch","essen"],"forbid_patterns":["(?:nimm|brat|koche|probier) (?:doch |etwas )?(?:hähnchen|rindfleisch|schweinefleisch|wurst)"]},
+      {"id":"gw-holdout-12","prompt":"Wenn ich fertig gegessen habe, erzähle ich dir mehr von meinem Tag.","rubric":"Acknowledge the planned continuation without inventing what happened during the day.","topics":["conversation"],"require_any":["gern","erzähl","tag","gespräch","zeit","essen"]}
+    ]},
+    {"id":"gw-holdout-busy","split":"holdout","turns":[
+      {"id":"gw-holdout-13","prompt":"Mein Arbeitstag bestand fast nur aus kleinen Unterbrechungen.","rubric":"Address a fragmented workday or its effect on the user.","topics":["work"],"require_any":["arbeit","tag","anstreng","unterbrech","ruhe","konzentr","erzähl"]},
+      {"id":"gw-holdout-14","prompt":"Dass ich trotzdem etwas geschafft habe, macht mich froh.","rubric":"Acknowledge pride or happiness at an accomplishment.","topics":["positive"],"require_any":["schön","freu","gut","froh","geschafft","erfolg"]},
+      {"id":"gw-holdout-15","prompt":"Am nächsten Morgen will ich mir zuerst einen ruhigen Moment gönnen.","rubric":"Respond coherently to the user's plan for a calm morning.","topics":["work","calm"],"require_any":["ruhig","morgen","moment","pause","zeit","ruhe"]}
+    ]},
+    {"id":"gw-holdout-home","split":"holdout","turns":[
+      {"id":"gw-holdout-16","prompt":"Der Wind ist mir heute zu ungemütlich, ich mache es mir zu Hause bequem.","rubric":"Engage with staying comfortably indoors without invented forecasts.","topics":["weather","leisure"],"require_any":["wind","drinnen","gemütlich","wetter","haus","bequem"]},
+      {"id":"gw-holdout-17","prompt":"Vielleicht lese ich dabei ein paar Seiten und trinke Kakao.","rubric":"Respond to reading or a warm drink without an unrelated topic jump.","topics":["books","food"],"require_any":["buch","bücher","les","seite","kakao","gemütlich","warm"]},
+      {"id":"gw-holdout-18","prompt":"Was für Geschichten bieten sich als Gesprächsthema an?","rubric":"Discuss books or stories conversationally; a relevant clarifying question is acceptable.","topics":["books"],"require_any":["buch","bücher","les","roman","geschichte","thema"]}
+    ]},
+    {"id":"gw-holdout-contact","split":"holdout","turns":[
+      {"id":"gw-holdout-19","prompt":"So ein Abend allein kann sich ganz schön leer anfühlen.","rubric":"Acknowledge loneliness in an empathetic but non-clinical way.","topics":["lonely","conversation"],"require_any":["allein","einsam","leer","zu","erzähl","gespräch","kontakt"]},
+      {"id":"gw-holdout-20","prompt":"Ich könnte meiner Schwester später eine Nachricht schreiben.","rubric":"Engage with planned contact with the sister; do not claim she has replied.","topics":["friends"],"require_any":["schwester","nachricht","schreib","kontakt","idee","gespräch"]},
+      {"id":"gw-holdout-21","prompt":"Vorher bleibe ich gern noch ein bisschen im Gespräch mit dir.","rubric":"Welcome continued conversation naturally.","topics":["conversation"],"require_any":["gern","unterhalten","gespräch","erzähl","sprechen","da"]}
+    ]},
+    {"id":"gw-holdout-name","split":"holdout","turns":[
+      {"id":"gw-holdout-22","prompt":"Du kannst mich übrigens Marit nennen.","rubric":"Acknowledge the requested user name accurately.","topics":["name"],"require_any":["Marit"],"name":"Marit"},
+      {"id":"gw-holdout-23","prompt":"Was bist du eigentlich für ein Gesprächspartner?","rubric":"Explain truthfully that the assistant is a program or system.","topics":["identity"],"require_any":["freqai","programm","system","gespräch","modell","schwing","welle"]},
+      {"id":"gw-holdout-24","prompt":"Erinnerst du dich noch daran, wie ich genannt werden möchte?","rubric":"Recall Marit from this conversation, without guessing another name.","topics":["name"],"require_any":["Marit"],"name":"Marit"}
+    ]},
+    {"id":"gw-holdout-quiet","split":"holdout","turns":[
+      {"id":"gw-holdout-25","prompt":"Nur weil ich wenig rede, bin ich heute nicht unglücklich.","rubric":"Respect that silence does not imply unhappiness.","topics":["neutral","negation"],"require_any":["ruhig","nicht","klar","verstand","erzähl","rede"],"forbid_patterns":["du bist (?:heute |gerade |sehr )?unglücklich","dein unglück"]},
+      {"id":"gw-holdout-26","prompt":"Ein Gespräch ohne Eile passt gerade gut zu mir.","rubric":"Offer a calm conversation without rushing the user.","topics":["conversation","calm"],"require_any":["ruhig","gern","gespräch","erzähl","zeit","ruhe"]},
+      {"id":"gw-holdout-27","prompt":"Lösungen suche ich nicht, ich will einfach etwas erzählen.","rubric":"Respect the request to listen rather than prescribe solutions.","topics":["listen","negation"],"require_any":["zu","erzähl","verstand","klar","ohne","gern"],"forbid_patterns":["du solltest","du musst","versuch (?:doch|mal)"]}
+    ]},
+    {"id":"gw-holdout-goodbye","split":"holdout","turns":[
+      {"id":"gw-holdout-28","prompt":"Eine unerwartete kleine Überraschung hat mich heute glücklich gemacht.","rubric":"Acknowledge the happy surprise or ask about it.","topics":["positive"],"require_any":["schön","freu","gut","glück","überrasch","erzähl"]},
+      {"id":"gw-holdout-29","prompt":"Solche Augenblicke möchte ich mir gern merken.","rubric":"Stay with the positive memory or invite elaboration.","topics":["positive","memory"],"require_any":["moment","augenblick","erinner","merk","schön","erzähl"]},
+      {"id":"gw-holdout-30","prompt":"Ich bin dann mal weg und wünsche dir noch einen schönen Abend.","rubric":"Respond with a courteous farewell without claiming an experienced evening.","topics":["farewell"],"require_any":["tschüss","bis","wiedersehen","angenehm","abend","bald"]}
+    ]}
+  ]
+}

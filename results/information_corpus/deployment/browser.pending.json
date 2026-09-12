@@ -1,0 +1,3722 @@
+{
+  "url": "http://127.0.0.1:8765",
+  "server_process": {
+    "commandLine": "\"C:\\Users\\AMD\\AppData\\Local\\Programs\\Python\\Python311\\python.exe\" -m freqai serve --memory \"C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\memory.sqlite3\" --port 8765 ",
+    "url": "http://127.0.0.1:8765",
+    "launchedPid": 24992,
+    "executable": "C:\\Users\\AMD\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "pid": 19748
+  },
+  "expected_document_count": 32000,
+  "corpus_sha256": "2f5b876d904346ca4b9082e05ff5e4bc5e8a729f2a479c777f47e1332a0a5674",
+  "source_data_mutations": 0,
+  "answers": [
+    {
+      "prompt": "Hallo",
+      "seconds": 54.527772900000855,
+      "result": {
+        "answer": "Hallo! Schön, dass du hier bist.",
+        "abstained": false,
+        "matches": [],
+        "method": "autoregressive_spectral_decoder",
+        "wave_generation": true,
+        "generated": true,
+        "time_s": 399.3335928999986,
+        "tokens": [
+          "hallo",
+          "!",
+          "schön",
+          ",",
+          "dass",
+          "du",
+          "hier",
+          "bist",
+          "."
+        ],
+        "ended": true,
+        "truncated": false,
+        "prompt_encoding": {
+          "known_content_tokens": [
+            "hallo"
+          ],
+          "unknown_content_tokens": [],
+          "source": "response_token_cooccurrence",
+          "context_weight": 0.35,
+          "condition_features": {
+            "word:hallo": 1.0,
+            "semantic:greeting:user::": 8.0
+          },
+          "matched_condition_features": [
+            "word:hallo",
+            "semantic:greeting:user::"
+          ],
+          "persistent_context_field": true
+        },
+        "unanswered_bands": 0,
+        "generation_reason": null,
+        "decoder": {
+          "method": "token_field_demodulation",
+          "steps": [
+            {
+              "prefix": [],
+              "field_sources": [
+                [
+                  "<BOS>",
+                  "<BOS>"
+                ],
+                [
+                  "<BOS>"
+                ]
+              ],
+              "field_weights": [
+                0.92,
+                0.08
+              ],
+              "decoder": "operator",
+              "support_size": 8,
+              "carrier_bins": 44800,
+              "conditioned_field_sources": [
+                {
+                  "feature": "semantic:greeting:user::",
+                  "prefix": [
+                    "<BOS>",
+                    "<BOS>"
+                  ],
+                  "weight": 7.999999999999983
+                },
+                {
+                  "feature": "word:hallo",
+                  "prefix": [
+                    "<BOS>",
+                    "<BOS>"
+                  ],
+                  "weight": 0.3333333333333326
+                }
+              ],
+              "feature_field_norm": 8.006941432976209,
+              "feature_decoder": "inverse_dft_mode_amplitude",
+              "runtime_source": "imported_complex_transition_spectra",
+              "fft_roundtrip_max_error": 7.46132779436365e-18,
+              "phase_time_s": 399.3335928999986,
+              "prompt_gain": 1.2,
+              "grammar_mask": true,
+              "support_source": "corpus_ngram_edges",
+              "phase_error": 0.0,
+              "step": 0,
+              "selected_token": "hallo",
+              "selected_bin": 17491,
+              "selected_frequency_hz": 5.673970847283659,
+              "selection": "beam",
+              "probability": 0.32277913392829366,
+              "top_modes": [
+                {
+                  "token": "guten",
+                  "probability": 0.36781941939099855
+                },
+                {
+                  "token": "hallo",
+                  "probability": 0.32277913392829366
+                },
+                {
+                  "token": "hi",
+                  "probability": 0.1546711576863006
+                },
+                {
+                  "token": "hey",
+                  "probability": 0.15462663346253885
+                },
+                {
+                  "token": "als",
+                  "probability": 4.567095361805816e-05
+                }
+              ]
+            },
+            {
+              "prefix": [
+                "hallo"
+              ],
+              "field_sources": [
+                [
+                  "<BOS>",
+                  "hallo"
+                ],
+                [
+                  "hallo"
+                ]
+              ],
+              "field_weights": [
+                0.92,
+                0.08
+              ],
+              "decoder": "operator",
+              "support_size": 3,
+              "carrier_bins": 44800,
+              "conditioned_field_sources": [
+                {
+                  "feature": "semantic:greeting:user::",
+                  "prefix": [
+                    "<BOS>",
+                    "hallo"
+                  ],
+                  "weight": 7.999999999999983
+                },
+                {
+                  "feature": "word:hallo",
+                  "prefix": [
+                    "<BOS>",
+                    "hallo"
+                  ],
+                  "weight": 0.3333333333333326
+                }
+              ],
+              "feature_field_norm": 8.006941432976209,
+              "feature_decoder": "inverse_dft_mode_amplitude",
+              "runtime_source": "imported_complex_transition_spectra",
+              "fft_roundtrip_max_error": 5.553824967135427e-18,
+              "phase_time_s": 399.3335928999986,
+              "prompt_gain": 1.2,
+              "grammar_mask": true,
+              "support_source": "corpus_ngram_edges",
+              "phase_error": 0.0,
+              "step": 1,
+              "selected_token": "!",
+              "selected_bin": 0,
+              "selected_frequency_hz": 18.979061673674654,
+              "selection": "beam",
+              "probability": 0.4550965418012735,
+              "top_modes": [
+                {
+                  "token": ",",
+                  "probability": 0.5445565889855898
+                },
+                {
+                  "token": "!",
+                  "probability": 0.4550965418012735
+                },
+                {
+                  "token": "heikki",
+                  "probability": 0.0003468692131367026
+                }
+              ]
+            },
+            {
+              "prefix": [
+                "hallo",
+                "!"
+              ],
+              "field_sources": [
+                [
+                  "hallo",
+                  "!"
+                ],
+                [
+                  "!"
+                ]
+              ],
+              "field_weights": [
+                0.92,
+                0.08
+              ],
+              "decoder": "operator",
+              "support_size": 2,
+              "carrier_bins": 44800,
+              "conditioned_field_sources": [
+                {
+                  "feature": "semantic:greeting:user::",
+                  "prefix": [
+                    "hallo",
+                    "!"
+                  ],
+                  "weight": 7.999999999999983
+                },
+                {
+                  "feature": "word:hallo",
+                  "prefix": [
+                    "hallo",
+                    "!"
+                  ],
+                  "weight": 0.3333333333333326
+                }
+              ],
+              "feature_field_norm": 8.006941432976209,
+              "feature_decoder": "inverse_dft_mode_amplitude",
+              "runtime_source": "imported_complex_transition_spectra",
+              "fft_roundtrip_max_error": 1.443577633914349e-17,
+              "phase_time_s": 399.3335928999986,
+              "prompt_gain": 1.2,
+              "grammar_mask": true,
+              "support_source": "corpus_ngram_edges",
+              "phase_error": 0.0,
+              "step": 2,
+              "selected_token": "schön",
+              "selected_bin": 33686,
+              "selected_frequency_hz": 26.097724518680348,
+              "selection": "beam",
+              "probability": 0.9999842655684992,
+              "top_modes": [
+                {
+                  "token": "schön",
+                  "probability": 0.9999842655684992
+                },
+                {
+                  "token": "als",
+                  "probability": 1.573443150084179e-05
+                }
+              ]
+            },
+            {
+              "prefix": [
+                "!",
+                "schön"
+              ],
+              "field_sources": [
+                [
+                  "!",
+                  "schön"
+                ],
+                [
+                  "schön"
+                ]
+              ],
+              "field_weights": [
+                0.92,
+                0.08
+              ],
+              "decoder": "operator",
+              "support_size": 1,
+              "carrier_bins": 44800,
+              "conditioned_field_sources": [
+                {
+                  "feature": "semantic:greeting:user::",
+                  "prefix": [
+                    "!",
+                    "schön"
+                  ],
+                  "weight": 7.999999999999983
+                },
+                {
+                  "feature": "word:hallo",
+                  "prefix": [
+                    "!",
+                    "schön"
+                  ],
+                  "weight": 0.3333333333333326
+                }
+              ],
+              "feature_field_norm": 8.006941432976209,
+              "feature_decoder": "inverse_dft_mode_amplitude",
+              "runtime_source": "imported_complex_transition_spectra",
+              "fft_roundtrip_max_error": 7.031659201885603e-18,
+              "phase_time_s": 399.3335928999986,
+              "prompt_gain": 1.2,
+              "grammar_mask": true,
+              "support_source": "corpus_ngram_edges",
+              "phase_error": 0.0,
+              "step": 3,
+              "selected_token": ",",
+              "selected_bin": 11,
+              "selected_frequency_hz": 5.754014851511337,
+              "selection": "beam",
+              "probability": 1.0,
+              "top_modes": [
+                {
+                  "token": ",",
+                  "probability": 1.0
+                }
+              ]
+            },
+            {
+              "prefix": [
+                "schön",
+                ","
+              ],
+              "field_sources": [
+                [
+                  "schön",
+                  ","
+                ],
+                [
+                  ","
+                ]
+              ],
+              "field_weights": [
+                0.92,
+                0.08
+              ],
+              "decoder": "operator",
+              "support_size": 2,
+              "carrier_bins": 44800,
+              "conditioned_field_sources": [
+                {
+                  "feature": "semantic:greeting:user::",
+                  "prefix": [
+                    "schön",
+                    ","
+                  ],
+                  "weight": 7.999999999999983
+                },
+                {
+                  "feature": "word:hallo",
+                  "prefix": [
+                    "schön",
+                    ","
+                  ],
+                  "weight": 0.3333333333333326
+                }
+              ],
+              "feature_field_norm": 8.006941432976209,
+              "feature_decoder": "inverse_dft_mode_amplitude",
+              "runtime_source": "imported_complex_transition_spectra",
+              "fft_roundtrip_max_error": 1.1116112906877063e-17,
+              "phase_time_s": 399.3335928999986,
+              "prompt_gain": 1.2,
+              "grammar_mask": true,
+              "support_source": "corpus_ngram_edges",
+              "phase_error": 0.0,
+              "step": 4,
+              "selected_token": "dass",
+              "selected_bin": 9002,
+              "selected_frequency_hz": 23.08847215758789,
+              "selection": "beam",
+              "probability": 0.9290150524613304,
+              "top_modes": [
+                {
+                  "token": "dass",
+                  "probability": 0.9290150524613304
+                },
+                {
+                  "token": "von",
+                  "probability": 0.07098494753866952
+                }
+              ]
+            },
+            {
+              "prefix": [
+                ",",
+                "dass"
+              ],
+              "field_sources": [
+                [
+                  ",",
+                  "dass"
+                ],
+                [
+                  "dass"
+                ]
+              ],
+              "field_weights": [
+                0.92,
+                0.08
+              ],
+              "decoder": "operator",
+              "support_size": 2,
+              "carrier_bins": 44800,
+              "conditioned_field_sources": [
+                {
+                  "feature": "semantic:greeting:user::",
+                  "prefix": [
+                    ",",
+                    "dass"
+                  ],
+                  "weight": 7.999999999999983
+                },
+                {
+                  "feature": "word:hallo",
+                  "prefix": [
+                    ",",
+                    "dass"
+                  ],
+                  "weight": 0.3333333333333326
+                }
+              ],
+              "feature_field_norm": 8.006941432976209,
+              "feature_decoder": "inverse_dft_mode_amplitude",
+              "runtime_source": "imported_complex_transition_spectra",
+              "fft_roundtrip_max_error": 1.1677214766175423e-17,
+              "phase_time_s": 399.3335928999986,
+              "prompt_gain": 1.2,
+              "grammar_mask": true,
+              "support_source": "corpus_ngram_edges",
+              "phase_error": 0.0,
+              "step": 5,
+              "selected_token": "du",
+              "selected_bin": 10088,
+              "selected_frequency_hz": 21.207272743529934,
+              "selection": "beam",
+              "probability": 0.9999880016370303,
+              "top_modes": [
+                {
+                  "token": "du",
+                  "probability": 0.9999880016370303
+                },
+                {
+                  "token": "man",
+                  "probability": 1.1998362969635587e-05
+                }
+              ]
+            },
+            {
+              "prefix": [
+                "dass",
+                "du"
+              ],
+              "field_sources": [
+                [
+                  "dass",
+                  "du"
+                ],
+                [
+                  "du"
+                ]
+              ],
+              "field_weights": [
+                0.92,
+                0.08
+              ],
+              "decoder": "operator",
+              "support_size": 3,
+              "carrier_bins": 44800,
+              "conditioned_field_sources": [
+                {
+                  "feature": "semantic:greeting:user::",
+                  "prefix": [
+                    "dass",
+                    "du"
+                  ],
+                  "weight": 7.999999999999983
+                },
+                {
+                  "feature": "word:hallo",
+                  "prefix": [
+                    "dass",
+                    "du"
+                  ],
+                  "weight": 0.3333333333333326
+                }
+              ],
+              "feature_field_norm": 8.006941432976209,
+              "feature_decoder": "inverse_dft_mode_amplitude",
+              "runtime_source": "imported_complex_transition_spectra",
+              "fft_roundtrip_max_error": 8.716877585302702e-18,
+              "phase_time_s": 399.3335928999986,
+              "prompt_gain": 1.2,
+              "grammar_mask": true,
+              "support_source": "corpus_ngram_edges",
+              "phase_error": 0.0,
+              "step": 6,
+              "selected_token": "hier",
+              "selected_bin": 18350,
+              "selected_frequency_hz": 15.09322908886457,
+              "selection": "beam",
+              "probability": 0.5497001405785903,
+              "top_modes": [
+                {
+                  "token": "hier",
+                  "probability": 0.5497001405785903
+                },
+                {
+                  "token": "da",
+                  "probability": 0.2652205749394263
+                },
+                {
+                  "token": "vorbeischaust",
+                  "probability": 0.18507928448198338
+                }
+              ]
+            },
+            {
+              "prefix": [
+                "du",
+                "hier"
+              ],
+              "field_sources": [
+                [
+                  "du",
+                  "hier"
+                ],
+                [
+                  "hier"
+                ]
+              ],
+              "field_weights": [
+                0.92,
+                0.08
+              ],
+              "decoder": "operator",
+              "support_size": 1,
+              "carrier_bins": 44800,
+              "conditioned_field_sources": [
+                {
+                  "feature": "semantic:greeting:user::",
+                  "prefix": [
+                    "du",
+                    "hier"
+                  ],
+                  "weight": 7.999999999999983
+                }
+              ],
+              "feature_field_norm": 8.006941432976209,
+              "feature_decoder": "inverse_dft_mode_amplitude",
+              "runtime_source": "imported_complex_transition_spectra",
+              "fft_roundtrip_max_error": 6.732537572691846e-18,
+              "phase_time_s": 399.3335928999986,
+              "prompt_gain": 1.2,
+              "grammar_mask": true,
+              "support_source": "corpus_ngram_edges",
+              "phase_error": 0.0,
+              "step": 7,
+              "selected_token": "bist",
+              "selected_bin": 6999,
+              "selected_frequency_hz": 7.476405427064581,
+              "selection": "beam",
+              "probability": 1.0,
+              "top_modes": [
+                {
+                  "token": "bist",
+                  "probability": 1.0
+                }
+              ]
+            },
+            {
+              "prefix": [
+                "hier",
+                "bist"
+              ],
+              "field_sources": [
+                [
+                  "hier",
+                  "bist"
+                ],
+                [
+                  "bist"
+                ]
+              ],
+              "field_weights": [
+                0.92,
+                0.08
+              ],
+              "decoder": "operator",
+              "support_size": 1,
+              "carrier_bins": 44800,
+              "conditioned_field_sources": [
+                {
+                  "feature": "semantic:greeting:user::",
+                  "prefix": [
+                    "hier",
+                    "bist"
+                  ],
+                  "weight": 7.999999999999983
+                }
+              ],
+              "feature_field_norm": 8.006941432976209,
+              "feature_decoder": "inverse_dft_mode_amplitude",
+              "runtime_source": "imported_complex_transition_spectra",
+              "fft_roundtrip_max_error": 6.447129612864634e-18,
+              "phase_time_s": 399.3335928999986,
+              "prompt_gain": 1.2,
+              "grammar_mask": true,
+              "support_source": "corpus_ngram_edges",
+              "phase_error": 0.0,
+              "step": 8,
+              "selected_token": ".",
+              "selected_bin": 13,
+              "selected_frequency_hz": 15.641089826498797,
+              "selection": "beam",
+              "probability": 1.0,
+              "top_modes": [
+                {
+                  "token": ".",
+                  "probability": 1.0
+                }
+              ]
+            }
+          ],
+          "vocabulary_size": 44614,
+          "max_transform_error": 1.443577633914349e-17,
+          "output_sha256": "d326b063bb5e1c89616caa6f92b879a457e42f66c77d92e397c4013b94155aca",
+          "quality_note": "Tokenfolge aus dem Ergebnisfeld; numerische Korrektheit garantiert keine sinnvolle Antwort."
+        },
+        "configuration": {
+          "order": 2,
+          "conditioning": "semantic",
+          "method": "operator",
+          "decoding": "beam",
+          "prompt_gain": 1.2,
+          "split_acts": true,
+          "require_conditioning": true,
+          "seed": 17,
+          "max_tokens": 40
+        },
+        "note": "Wortweise Generierung aus gezählten spektralen Kopplungen. Keine Auswahl einer gespeicherten Antwort; keine Gradientenoptimierung.",
+        "context_wave": {
+          "time_s": 399.3335928999986,
+          "displacement": [
+            0.005660603596287815,
+            0.0031813773960866266,
+            -0.0027785141612124515,
+            -0.0007460735590461173,
+            -0.0026910695823915655,
+            0.0005185078250112083,
+            -0.003203669841629144,
+            0.0059412651797190255,
+            -0.00860249403589501,
+            0.005386242349272785,
+            -0.008182107229810123,
+            0.006070137015544611,
+            -0.011083294295415474,
+            0.0038344616879716804,
+            -0.0014345518601327975,
+            0.0008944466001983723,
+            -0.0034189968190913166,
+            -0.0007029117005185444,
+            0.005467542643392045,
+            -0.006989686583925991,
+            -0.003324445919131996,
+            -7.744378001396977e-05,
+            0.002366863726619499,
+            0.0024717548054447986,
+            0.003392683955280219,
+            0.005873366099624695,
+            -0.002346635126238572,
+            -0.0016990867185130067,
+            0.0003631417891047259,
+            -0.006611107687527129,
+            0.005760261602285041,
+            -0.0112392593628242,
+            0.00899862098164539,
+            -0.0028287365420490676,
+            0.010164873330168028,
+            -0.010628155757830552,
+            -0.0006433514747425541,
+            -0.009020528703154455,
+            -0.0022962494905649595,
+            -0.0012827208067841536,
+            0.005039062490954563,
+            -0.005454669967143091,
+            0.007054909550644277,
+            -0.0004712921935814447,
+            -0.00015065494488355772,
+            -0.008817386579834266,
+            0.008225022145227266,
+            -0.0074663738791523986,
+            0.0002977609501402343,
+            -0.00119046682145957,
+            0.009772339054178805,
+            0.0004294550039922534,
+            -0.0006149697240357924,
+            -0.0063580758712824745,
+            -0.0012763430830254295,
+            -0.0030489932210505007,
+            0.0047186594519080345,
+            -0.00244259623684018,
+            0.006385516283731998,
+            0.0006441644649851757,
+            -0.000552606213475449,
+            -0.0006397534933187153,
+            0.0015388991782399595,
+            -0.009008803984417687,
+            0.0036191743647847954,
+            0.004841082348250848,
+            -0.002296283553632928,
+            0.003269907475682875,
+            0.004180322092006764,
+            -0.0022818095185220453,
+            -0.009117914075685905,
+            0.00239399499328054,
+            0.005940413816338709,
+            0.003608279936441531,
+            -0.0037763270410217844,
+            0.008519980390407949,
+            -0.0020267389685891886,
+            0.00033112202692753994,
+            -0.01156142717969189,
+            0.002921409034847014,
+            -0.003957757842549704,
+            0.003039803801978771,
+            -0.0030179132438966213,
+            0.014259619213855225,
+            -0.002280212684976999,
+            -0.00043160550165962557,
+            -0.005680355205158995,
+            0.006049783355628139,
+            -0.004132004966601509,
+            0.003238737318743582,
+            0.003286289125005476,
+            0.00682729076050021,
+            -0.004102065509384825,
+            0.005008620976572738,
+            -0.00489970655552873,
+            0.00030737933269294073,
+            -0.004831796165777528,
+            0.005899250599496857,
+            -0.0011316327743704927,
+            0.004786674194288038,
+            -0.00048811363343918363,
+            0.0018971204889483627,
+            -0.006469634856906493,
+            -0.002418465005284514,
+            -0.0023898295759161516,
+            0.00517536674319859,
+            -0.005410283779104334,
+            -0.006813861457764589,
+            -0.0023759862972196916,
+            0.0025187933712558287,
+            -0.0015487056724266942,
+            -0.005687809901258817,
+            -0.004352745164871915,
+            -0.0026274521431098076,
+            -0.0015644483206977639,
+            -0.00282590525015018,
+            0.0008088968929072279,
+            -0.0011361859024972968,
+            0.007362520938339903,
+            -0.0001488127461197726,
+            -0.0053207371850391766,
+            -0.0018551642173228063,
+            0.006284165436650326,
+            -0.0041971246335732095,
+            -0.0023095996630623805,
+            0.0053208075482584745,
+            0.007913091780496892,
+            -0.004619845554334567
+          ],
+          "quadrature": [
+            -0.0032118975586352145,
+            -0.0012044227936815698,
+            0.00010724393897904118,
+            0.0058754833196150245,
+            -0.0014372017074121032,
+            0.0008485236016724727,
+            -0.004089945085828743,
+            0.0005580110122231447,
+            -0.00138355209434557,
+            0.008213339033770766,
+            -0.002922257372692794,
+            0.0024713957964447903,
+            -0.009200322621834957,
+            0.00803820117807376,
+            -0.010113323762320185,
+            0.0037714178514804725,
+            -0.0029739020369758448,
+            0.00595479041226202,
+            -0.0012846204757901753,
+            0.00982692943380048,
+            0.0020026806170259856,
+            0.004096148955735557,
+            -0.00717974385676374,
+            0.00044012794169527656,
+            -0.008547540463423603,
+            0.009782560196492802,
+            -0.009822765570857421,
+            0.003622686719321018,
+            -0.008811675261899134,
+            0.0005350582611687528,
+            -0.00730033943398364,
+            -0.0003340260181153735,
+            0.0007082509256105191,
+            -0.004049970168895443,
+            0.002584684535558284,
+            0.003545700337108732,
+            -0.0013210709719773542,
+            -0.00048088757434983347,
+            -0.00647231755283437,
+            -0.0016831120691029114,
+            -0.007431198847511493,
+            0.008506238020093851,
+            -0.0011421150690488866,
+            0.0031220752420059983,
+            0.00045836736000583027,
+            -0.0036518647337552635,
+            0.003988668565905278,
+            -0.006945239342245124,
+            0.0028125636973862695,
+            -0.006213413839284095,
+            0.00920082351569657,
+            -0.005503739075836408,
+            -0.0005188942145655869,
+            0.00038067122044647766,
+            0.0008338803881681347,
+            -0.00624532376277055,
+            -0.003926628163606564,
+            -0.0026520158175178847,
+            0.007471829854988435,
+            -0.00391066271319522,
+            0.0041197047350804645,
+            -0.007566670611916843,
+            0.011356600515276151,
+            -0.010485992005465643,
+            0.002820454125175172,
+            -0.007406440861724798,
+            0.005550075315356466,
+            -0.005525775954230066,
+            0.006931047435979762,
+            0.0005776007133585097,
+            -0.0002752776035583362,
+            -0.0032233098520049242,
+            -0.00013643737412660428,
+            -0.006050232944664586,
+            -0.002152470481072543,
+            -0.006661221923997211,
+            0.005605457960465874,
+            -0.00444796349346275,
+            0.007986075943862178,
+            -0.007490780886973958,
+            0.0028933202979241307,
+            -0.0057566698843585454,
+            -0.0009395699110617746,
+            -0.00046812731878718565,
+            0.006103510057602196,
+            0.0038462191578737368,
+            -0.00023603178758718944,
+            0.0037248472310872217,
+            -0.0049335514737843126,
+            -0.0063482974161447195,
+            -0.0016188605044691632,
+            0.001672896306560534,
+            0.004934565283788711,
+            0.0030524212868519515,
+            0.0051070141153928385,
+            0.008463712048957035,
+            -0.0002121617728335591,
+            -0.001044406222091089,
+            -0.009473795281727943,
+            0.006961466323302926,
+            0.0011785758515892135,
+            0.008382750693542893,
+            -0.007542679495271474,
+            0.005803507347782829,
+            -0.0021526126795300394,
+            -0.001156117524833911,
+            -0.003948749262430826,
+            -0.0005746063004843758,
+            0.005990906164647884,
+            0.00046197432438633033,
+            -0.0006249825352741882,
+            0.007502835570593631,
+            -0.0005692143829844607,
+            0.002700848384488243,
+            -0.007453456049002976,
+            0.0011385700718437681,
+            -0.0029404498394520326,
+            0.004602363552046202,
+            -0.0020593696977857846,
+            0.007128682323687765,
+            -0.004302566794432817,
+            0.0014084609683224678,
+            -0.0006259722727333884,
+            -0.003617878075448465,
+            -0.002981602578126479,
+            0.0004194085371295221,
+            0.0007260496896083122,
+            0.0002763711698153992
+          ],
+          "energy": 2.396985761738521,
+          "mode_count": 44614,
+          "carrier_size": 44800,
+          "nonzero_modes": 37,
+          "representation": "persistent_token_amplitudes",
+          "reference_phase": 0.0
+        },
+        "revision": 6,
+        "live_revision": 6,
+        "mode": "wave",
+        "session_id": "ee35e69c-9ac6-40d4-87cb-984811263abf",
+        "conversation_revision": 1
+      }
+    },
+    {
+      "prompt": "Was ist eine Frequenz?",
+      "seconds": 0.47974669999894104,
+      "result": {
+        "answer": "Die Frequenz (auch Schwingungszahl genannt) ist in Physik und Technik ein Maß dafür, wie schnell bei einem periodischen Vorgang die Wiederholungen aufeinander folgen, z. B. bei einer fortdauernden Schwingung.",
+        "tokens": [
+          "die",
+          "frequenz",
+          "(",
+          "auch",
+          "schwingungszahl",
+          "genannt",
+          ")",
+          "ist",
+          "in",
+          "physik",
+          "und",
+          "technik",
+          "ein",
+          "mass",
+          "dafür",
+          ",",
+          "wie",
+          "schnell",
+          "bei",
+          "einem",
+          "periodischen",
+          "vorgang",
+          "die",
+          "wiederholungen",
+          "aufeinander",
+          "folgen",
+          ",",
+          "z",
+          ".",
+          "b",
+          ".",
+          "bei",
+          "einer",
+          "fortdauernden",
+          "schwingung",
+          "."
+        ],
+        "ended": true,
+        "abstained": false,
+        "truncated": false,
+        "matches": [],
+        "generated": true,
+        "wave_generation": true,
+        "method": "autoregressive_information_spectral_decoder",
+        "time_s": 403.029506699997,
+        "generation_reason": "",
+        "prompt_encoding": {
+          "supported": true,
+          "subjects": [
+            "frequenz"
+          ],
+          "facets": [
+            "definition"
+          ],
+          "groups_by_facet": {
+            "definition": [
+              21544,
+              21545
+            ]
+          },
+          "used_context": false,
+          "unbound_terms": [],
+          "unsupported_negation": false,
+          "reason": ""
+        },
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [],
+              "active_token_indices": [
+                24722
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "<BOS>",
+                    "<BOS>"
+                  ]
+                },
+                {
+                  "group": 21545,
+                  "prefix": [
+                    "<BOS>",
+                    "<BOS>"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 1.9999999999999991,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 0,
+              "facet": "definition",
+              "selected_token": "die",
+              "selected_bin": 24722,
+              "selected_frequency_hz": 0.5657247245438375,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "die"
+              ],
+              "active_token_indices": [
+                36055
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "<BOS>",
+                    "die"
+                  ]
+                },
+                {
+                  "group": 21545,
+                  "prefix": [
+                    "<BOS>",
+                    "die"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 1.9999999999999991,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 1,
+              "facet": "definition",
+              "selected_token": "frequenz",
+              "selected_bin": 36055,
+              "selected_frequency_hz": 27.9596919148966,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "die",
+                "frequenz"
+              ],
+              "active_token_indices": [
+                7,
+                50764
+              ],
+              "carrier_size": 2,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "die",
+                    "frequenz"
+                  ]
+                },
+                {
+                  "group": 21545,
+                  "prefix": [
+                    "die",
+                    "frequenz"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.9999999999999996,
+              "fft_roundtrip_max_error": 1.1443916996305594e-16,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 2,
+              "facet": "definition",
+              "selected_token": "(",
+              "selected_bin": 7,
+              "selected_frequency_hz": 5.777273793887537,
+              "probability": 0.5
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "frequenz",
+                "("
+              ],
+              "active_token_indices": [
+                9375
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "frequenz",
+                    "("
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 3,
+              "facet": "definition",
+              "selected_token": "auch",
+              "selected_bin": 9375,
+              "selected_frequency_hz": 4.06611981015447,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "(",
+                "auch"
+              ],
+              "active_token_indices": [
+                89559
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "(",
+                    "auch"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 4,
+              "facet": "definition",
+              "selected_token": "schwingungszahl",
+              "selected_bin": 89559,
+              "selected_frequency_hz": 21.840344842415185,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "auch",
+                "schwingungszahl"
+              ],
+              "active_token_indices": [
+                39002
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "auch",
+                    "schwingungszahl"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 5,
+              "facet": "definition",
+              "selected_token": "genannt",
+              "selected_bin": 39002,
+              "selected_frequency_hz": 14.680890277936776,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "schwingungszahl",
+                "genannt"
+              ],
+              "active_token_indices": [
+                8
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "schwingungszahl",
+                    "genannt"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 6,
+              "facet": "definition",
+              "selected_token": ")",
+              "selected_bin": 8,
+              "selected_frequency_hz": 19.955129577083643,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "genannt",
+                ")"
+              ],
+              "active_token_indices": [
+                50764
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "genannt",
+                    ")"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 7,
+              "facet": "definition",
+              "selected_token": "ist",
+              "selected_bin": 50764,
+              "selected_frequency_hz": 20.00519510593812,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ")",
+                "ist"
+              ],
+              "active_token_indices": [
+                49296
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    ")",
+                    "ist"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 8,
+              "facet": "definition",
+              "selected_token": "in",
+              "selected_bin": 49296,
+              "selected_frequency_hz": 14.494195491368037,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "ist",
+                "in"
+              ],
+              "active_token_indices": [
+                77933
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "ist",
+                    "in"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 9,
+              "facet": "definition",
+              "selected_token": "physik",
+              "selected_bin": 77933,
+              "selected_frequency_hz": 4.7900106064620145,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "in",
+                "physik"
+              ],
+              "active_token_indices": [
+                103353
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "in",
+                    "physik"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 10,
+              "facet": "definition",
+              "selected_token": "und",
+              "selected_bin": 103353,
+              "selected_frequency_hz": 2.845686734304827,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "physik",
+                "und"
+              ],
+              "active_token_indices": [
+                98860
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "physik",
+                    "und"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 11,
+              "facet": "definition",
+              "selected_token": "technik",
+              "selected_bin": 98860,
+              "selected_frequency_hz": 2.0722544125506546,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "und",
+                "technik"
+              ],
+              "active_token_indices": [
+                27895
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "und",
+                    "technik"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 12,
+              "facet": "definition",
+              "selected_token": "ein",
+              "selected_bin": 27895,
+              "selected_frequency_hz": 10.637472766213703,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "technik",
+                "ein"
+              ],
+              "active_token_indices": [
+                65007
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "technik",
+                    "ein"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 13,
+              "facet": "definition",
+              "selected_token": "mass",
+              "selected_bin": 65007,
+              "selected_frequency_hz": 17.81727142427499,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "ein",
+                "mass"
+              ],
+              "active_token_indices": [
+                22975
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "ein",
+                    "mass"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 14,
+              "facet": "definition",
+              "selected_token": "dafür",
+              "selected_bin": 22975,
+              "selected_frequency_hz": 2.8688624834045973,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "mass",
+                "dafür"
+              ],
+              "active_token_indices": [
+                11
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "mass",
+                    "dafür"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 15,
+              "facet": "definition",
+              "selected_token": ",",
+              "selected_bin": 11,
+              "selected_frequency_hz": 5.754014851511337,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "dafür",
+                ","
+              ],
+              "active_token_indices": [
+                110949
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "dafür",
+                    ","
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 16,
+              "facet": "definition",
+              "selected_token": "wie",
+              "selected_bin": 110949,
+              "selected_frequency_hz": 5.174224058624727,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ",",
+                "wie"
+              ],
+              "active_token_indices": [
+                88688
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    ",",
+                    "wie"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 17,
+              "facet": "definition",
+              "selected_token": "schnell",
+              "selected_bin": 88688,
+              "selected_frequency_hz": 0.26321848674702,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "wie",
+                "schnell"
+              ],
+              "active_token_indices": [
+                13140
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "wie",
+                    "schnell"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 18,
+              "facet": "definition",
+              "selected_token": "bei",
+              "selected_bin": 13140,
+              "selected_frequency_hz": 27.13731855854181,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "schnell",
+                "bei"
+              ],
+              "active_token_indices": [
+                27956
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "schnell",
+                    "bei"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 19,
+              "facet": "definition",
+              "selected_token": "einem",
+              "selected_bin": 27956,
+              "selected_frequency_hz": 10.307100110919967,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "bei",
+                "einem"
+              ],
+              "active_token_indices": [
+                77136
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "bei",
+                    "einem"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 20,
+              "facet": "definition",
+              "selected_token": "periodischen",
+              "selected_bin": 77136,
+              "selected_frequency_hz": 4.754682906735915,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "einem",
+                "periodischen"
+              ],
+              "active_token_indices": [
+                107968
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "einem",
+                    "periodischen"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 21,
+              "facet": "definition",
+              "selected_token": "vorgang",
+              "selected_bin": 107968,
+              "selected_frequency_hz": 14.098478065672504,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "periodischen",
+                "vorgang"
+              ],
+              "active_token_indices": [
+                24722
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "periodischen",
+                    "vorgang"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 22,
+              "facet": "definition",
+              "selected_token": "die",
+              "selected_bin": 24722,
+              "selected_frequency_hz": 0.5657247245438375,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "vorgang",
+                "die"
+              ],
+              "active_token_indices": [
+                111011
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "vorgang",
+                    "die"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 23,
+              "facet": "definition",
+              "selected_token": "wiederholungen",
+              "selected_bin": 111011,
+              "selected_frequency_hz": 20.79836491671077,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "die",
+                "wiederholungen"
+              ],
+              "active_token_indices": [
+                9457
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "die",
+                    "wiederholungen"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 24,
+              "facet": "definition",
+              "selected_token": "aufeinander",
+              "selected_bin": 9457,
+              "selected_frequency_hz": 20.680757396863225,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "wiederholungen",
+                "aufeinander"
+              ],
+              "active_token_indices": [
+                34970
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "wiederholungen",
+                    "aufeinander"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 25,
+              "facet": "definition",
+              "selected_token": "folgen",
+              "selected_bin": 34970,
+              "selected_frequency_hz": 3.215672818903421,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "aufeinander",
+                "folgen"
+              ],
+              "active_token_indices": [
+                11
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "aufeinander",
+                    "folgen"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 26,
+              "facet": "definition",
+              "selected_token": ",",
+              "selected_bin": 11,
+              "selected_frequency_hz": 5.754014851511337,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "folgen",
+                ","
+              ],
+              "active_token_indices": [
+                113029
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "folgen",
+                    ","
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 27,
+              "facet": "definition",
+              "selected_token": "z",
+              "selected_bin": 113029,
+              "selected_frequency_hz": 5.858080594215365,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ",",
+                "z"
+              ],
+              "active_token_indices": [
+                13
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    ",",
+                    "z"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 28,
+              "facet": "definition",
+              "selected_token": ".",
+              "selected_bin": 13,
+              "selected_frequency_hz": 15.641089826498797,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "z",
+                "."
+              ],
+              "active_token_indices": [
+                11078
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "z",
+                    "."
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 29,
+              "facet": "definition",
+              "selected_token": "b",
+              "selected_bin": 11078,
+              "selected_frequency_hz": 13.88277803669175,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ".",
+                "b"
+              ],
+              "active_token_indices": [
+                13
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    ".",
+                    "b"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 30,
+              "facet": "definition",
+              "selected_token": ".",
+              "selected_bin": 13,
+              "selected_frequency_hz": 15.641089826498797,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "b",
+                "."
+              ],
+              "active_token_indices": [
+                13140
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "b",
+                    "."
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 31,
+              "facet": "definition",
+              "selected_token": "bei",
+              "selected_bin": 13140,
+              "selected_frequency_hz": 27.13731855854181,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ".",
+                "bei"
+              ],
+              "active_token_indices": [
+                27958
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    ".",
+                    "bei"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 32,
+              "facet": "definition",
+              "selected_token": "einer",
+              "selected_bin": 27958,
+              "selected_frequency_hz": 9.23906209177623,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "bei",
+                "einer"
+              ],
+              "active_token_indices": [
+                35317
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "bei",
+                    "einer"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 33,
+              "facet": "definition",
+              "selected_token": "fortdauernden",
+              "selected_bin": 35317,
+              "selected_frequency_hz": 5.7154080668549785,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "einer",
+                "fortdauernden"
+              ],
+              "active_token_indices": [
+                89545
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "einer",
+                    "fortdauernden"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 34,
+              "facet": "definition",
+              "selected_token": "schwingung",
+              "selected_bin": 89545,
+              "selected_frequency_hz": 17.984467617644388,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "fortdauernden",
+                "schwingung"
+              ],
+              "active_token_indices": [
+                13
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "fortdauernden",
+                    "schwingung"
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 35,
+              "facet": "definition",
+              "selected_token": ".",
+              "selected_bin": 13,
+              "selected_frequency_hz": 15.641089826498797,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "schwingung",
+                "."
+              ],
+              "active_token_indices": [
+                3221
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21544,
+                  "prefix": [
+                    "schwingung",
+                    "."
+                  ]
+                }
+              ],
+              "feature_field_energy": 0.9999999999999996,
+              "mixed_data_energy_before_normalization": 0.4999999999999998,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 403.029506699997,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 36,
+              "facet": "definition",
+              "selected_token": "<EOS>",
+              "selected_bin": 3221,
+              "selected_frequency_hz": 19.241093151490176,
+              "probability": 1.0
+            }
+          ],
+          "vocabulary_size": 116649,
+          "output_sha256": "7d83ca517d8d39199b58d10b2901c7ff962e64c1afbd752a142021e472dcc845",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "configuration": {
+          "order": 2,
+          "method": "operator",
+          "decoding": "beam",
+          "max_tokens": 40,
+          "seed": 17,
+          "optimizer_steps": 0,
+          "requires_question_answer_pairs": false
+        },
+        "note": "Koeffizienten direkt aus Informationstexten berechnet; keine Gradientenoptimierung.",
+        "context_wave": {
+          "time_s": 403.029506699997,
+          "displacement": [
+            0.00806494411911628,
+            0.14637076281840558,
+            0.05510457221242319,
+            -0.11433284112552715,
+            0.11589457366098993,
+            -0.1139640265864313,
+            0.16666119357766263,
+            0.01346978596189857,
+            -0.2500028028137546,
+            0.24656108685948872,
+            -0.24090512152618995,
+            0.1064442462614946,
+            0.020695281648173375,
+            -0.15274542149366413,
+            -0.030983435845226323,
+            -0.12127248058465787,
+            0.11520135410959176,
+            -0.13777723513361798,
+            0.03816124619839198,
+            0.009827360024247977,
+            -0.09910788493122066,
+            0.16884144107502494,
+            -0.00503298391653337,
+            0.09583204091100601,
+            -0.02754588822536492,
+            -0.23966656857643653,
+            0.2864128246231162
+          ],
+          "quadrature": [
+            0.05466376868623031,
+            0.16756322494788448,
+            -0.3428504435252422,
+            0.07246323528983493,
+            -0.17636540379079896,
+            -0.11367639918291007,
+            -0.026118824819854693,
+            -0.11173660948551255,
+            0.21621200511161215,
+            -0.03181881155343599,
+            0.018979641965315215,
+            0.002127474924012597,
+            -0.2004540075958096,
+            0.09441789021190726,
+            -0.020447239707432494,
+            0.14659456546502161,
+            -0.04386209112620327,
+            -0.14759724224315893,
+            0.1233324416287811,
+            -0.10981153194161294,
+            -0.033465891422849635,
+            -0.09322280316781059,
+            -0.14342010212549136,
+            0.06278514984405191,
+            -0.12758490532733352,
+            0.02848363570849954,
+            0.1476029860965155
+          ],
+          "energy": 1.0,
+          "mode_count": 27,
+          "carrier_size": 27,
+          "active_token_indices": [
+            9375,
+            9457,
+            11078,
+            13140,
+            22975,
+            24722,
+            27895,
+            27956,
+            27958,
+            34970,
+            35317,
+            36055,
+            39002,
+            49296,
+            50764,
+            65007,
+            77136,
+            77933,
+            88688,
+            89545,
+            89559,
+            98860,
+            103353,
+            107968,
+            110949,
+            111011,
+            113029
+          ],
+          "known_vocabulary_size": 116649,
+          "representation": "exact_nonzero_context_modes_before_sentence_specific_support_projection"
+        },
+        "revision": 6,
+        "live_revision": 6,
+        "mode": "wave",
+        "session_id": "ee35e69c-9ac6-40d4-87cb-984811263abf",
+        "conversation_revision": 2
+      }
+    },
+    {
+      "prompt": "Und welche Einheit hat sie?",
+      "seconds": 5.070120899999893,
+      "result": {
+        "answer": "Das Hertz (Einheitenzeichen: Hz) ist die SI-Einheit der Frequenz.",
+        "tokens": [
+          "das",
+          "hertz",
+          "(",
+          "einheitenzeichen",
+          ":",
+          "hz",
+          ")",
+          "ist",
+          "die",
+          "si-einheit",
+          "der",
+          "frequenz",
+          "."
+        ],
+        "ended": true,
+        "abstained": false,
+        "truncated": false,
+        "matches": [],
+        "generated": true,
+        "wave_generation": true,
+        "method": "autoregressive_information_spectral_decoder",
+        "time_s": 408.20930379999845,
+        "generation_reason": "",
+        "prompt_encoding": {
+          "supported": true,
+          "subjects": [
+            "frequenz"
+          ],
+          "facets": [
+            "unit"
+          ],
+          "groups_by_facet": {
+            "unit": [
+              21548
+            ]
+          },
+          "used_context": true,
+          "unbound_terms": [],
+          "unsupported_negation": false,
+          "reason": ""
+        },
+        "decoder": {
+          "method": "unpaired_information_field_demodulation",
+          "steps": [
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [],
+              "active_token_indices": [
+                23328
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "<BOS>",
+                    "<BOS>"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 408.20930379999845,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 0,
+              "facet": "unit",
+              "selected_token": "das",
+              "selected_bin": 23328,
+              "selected_frequency_hz": 18.80809502022526,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "das"
+              ],
+              "active_token_indices": [
+                46121
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "<BOS>",
+                    "das"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 408.20930379999845,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 1,
+              "facet": "unit",
+              "selected_token": "hertz",
+              "selected_bin": 46121,
+              "selected_frequency_hz": 24.189272176559186,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "das",
+                "hertz"
+              ],
+              "active_token_indices": [
+                7
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "das",
+                    "hertz"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 408.20930379999845,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 2,
+              "facet": "unit",
+              "selected_token": "(",
+              "selected_bin": 7,
+              "selected_frequency_hz": 5.777273793887537,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "hertz",
+                "("
+              ],
+              "active_token_indices": [
+                28178
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "hertz",
+                    "("
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 408.20930379999845,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 3,
+              "facet": "unit",
+              "selected_token": "einheitenzeichen",
+              "selected_bin": 28178,
+              "selected_frequency_hz": 21.863939465165167,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "(",
+                "einheitenzeichen"
+              ],
+              "active_token_indices": [
+                3218
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "(",
+                    "einheitenzeichen"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 408.20930379999845,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 4,
+              "facet": "unit",
+              "selected_token": ":",
+              "selected_bin": 3218,
+              "selected_frequency_hz": 20.420992716557127,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "einheitenzeichen",
+                ":"
+              ],
+              "active_token_indices": [
+                48337
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "einheitenzeichen",
+                    ":"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 408.20930379999845,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 5,
+              "facet": "unit",
+              "selected_token": "hz",
+              "selected_bin": 48337,
+              "selected_frequency_hz": 17.23681595225769,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ":",
+                "hz"
+              ],
+              "active_token_indices": [
+                8
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    ":",
+                    "hz"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 408.20930379999845,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 6,
+              "facet": "unit",
+              "selected_token": ")",
+              "selected_bin": 8,
+              "selected_frequency_hz": 19.955129577083643,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "hz",
+                ")"
+              ],
+              "active_token_indices": [
+                50764
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "hz",
+                    ")"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 408.20930379999845,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 7,
+              "facet": "unit",
+              "selected_token": "ist",
+              "selected_bin": 50764,
+              "selected_frequency_hz": 20.00519510593812,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                ")",
+                "ist"
+              ],
+              "active_token_indices": [
+                24722
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    ")",
+                    "ist"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 408.20930379999845,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 8,
+              "facet": "unit",
+              "selected_token": "die",
+              "selected_bin": 24722,
+              "selected_frequency_hz": 0.5657247245438375,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "ist",
+                "die"
+              ],
+              "active_token_indices": [
+                91301
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "ist",
+                    "die"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 408.20930379999845,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 9,
+              "facet": "unit",
+              "selected_token": "si-einheit",
+              "selected_bin": 91301,
+              "selected_frequency_hz": 14.774895299187845,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "die",
+                "si-einheit"
+              ],
+              "active_token_indices": [
+                24120
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "die",
+                    "si-einheit"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 408.20930379999845,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 10,
+              "facet": "unit",
+              "selected_token": "der",
+              "selected_bin": 24120,
+              "selected_frequency_hz": 20.991874856787803,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "si-einheit",
+                "der"
+              ],
+              "active_token_indices": [
+                36055
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "si-einheit",
+                    "der"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 408.20930379999845,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 11,
+              "facet": "unit",
+              "selected_token": "frequenz",
+              "selected_bin": 36055,
+              "selected_frequency_hz": 27.9596919148966,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "der",
+                "frequenz"
+              ],
+              "active_token_indices": [
+                13
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "der",
+                    "frequenz"
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 408.20930379999845,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 12,
+              "facet": "unit",
+              "selected_token": ".",
+              "selected_bin": 13,
+              "selected_frequency_hz": 15.641089826498797,
+              "probability": 1.0
+            },
+            {
+              "runtime_source": "imported_complex_information_transition_spectra",
+              "method": "operator",
+              "prefix": [
+                "frequenz",
+                "."
+              ],
+              "active_token_indices": [
+                3221
+              ],
+              "carrier_size": 1,
+              "known_vocabulary_size": 116649,
+              "all_supported_modes_included": true,
+              "support_rule": "union_of_all_edges_of_longest_available_conjunctive_prefix_fields",
+              "field_addresses": [
+                {
+                  "group": 21548,
+                  "prefix": [
+                    "frequenz",
+                    "."
+                  ]
+                }
+              ],
+              "feature_field_energy": 1.0,
+              "mixed_data_energy_before_normalization": 1.0,
+              "fft_roundtrip_max_error": 0.0,
+              "time_s": 408.20930379999845,
+              "phase_error": 0.0,
+              "coefficient_rule": "square_root_observed_transition_probability_then_unit_energy_superposition",
+              "step": 13,
+              "facet": "unit",
+              "selected_token": "<EOS>",
+              "selected_bin": 3221,
+              "selected_frequency_hz": 19.241093151490176,
+              "probability": 1.0
+            }
+          ],
+          "vocabulary_size": 116649,
+          "output_sha256": "5f7f80ad42e4d6ba774f3887374828d49fee20e93abe1bb76eda52cefe961b0c",
+          "quality_note": "Wortfolge aus Informationsfeldern; Fakten und Sprachqualität bleiben experimentell.",
+          "coefficient_policy": "observed_counts_unit_energy_no_fitted_gains"
+        },
+        "configuration": {
+          "order": 2,
+          "method": "operator",
+          "decoding": "beam",
+          "max_tokens": 40,
+          "seed": 17,
+          "optimizer_steps": 0,
+          "requires_question_answer_pairs": false
+        },
+        "note": "Koeffizienten direkt aus Informationstexten berechnet; keine Gradientenoptimierung.",
+        "context_wave": {
+          "time_s": 408.20930379999845,
+          "displacement": [
+            -0.0018336145574701583,
+            -0.020020720984991188,
+            -0.0035485054708343316,
+            -0.003249528977570313,
+            -0.1505947864821339,
+            0.1644416456355126,
+            0.03471550876640532,
+            -0.17155246242533037,
+            0.07859857634687976,
+            0.013262107057876244,
+            0.047825520407174804,
+            -0.07173211529426268,
+            0.15273101681005,
+            -0.29345127636838253,
+            0.16959706010109807,
+            -0.12874443348414696,
+            -0.036005639005370224,
+            0.1872295438070017,
+            0.0803298524600318,
+            0.0013006483680233646,
+            -0.021462439746918454,
+            -0.09368240686902514,
+            0.001813009843724964,
+            0.13186367101437174,
+            0.0005995653062913551,
+            -0.08078413422605064,
+            -0.15414221927507252,
+            0.09904266866825163,
+            -0.005726787199906547,
+            0.03478415208727574,
+            0.08595786629717563,
+            -0.1281808380678371,
+            0.23843771702666106
+          ],
+          "quadrature": [
+            0.07322379149315938,
+            -0.16892835604958525,
+            0.11600457389669415,
+            -0.019027035401928485,
+            0.08768569092044515,
+            0.08307087334167756,
+            -0.32405591597577027,
+            0.09506942927159202,
+            0.019296817370636925,
+            -0.03646416330895344,
+            -0.06359427446024647,
+            0.04689921093503192,
+            -0.21906435752260842,
+            0.06927831742794231,
+            0.011855868667629551,
+            -0.19134737939262977,
+            0.21678949760106436,
+            -0.004956874116349035,
+            0.04353519543049537,
+            -0.20102023780366293,
+            0.08141614875958479,
+            -0.22210532156902615,
+            0.1933951318447747,
+            0.03470130941561403,
+            -0.1355471980795549,
+            0.05379451705852484,
+            -0.022556472745082587,
+            0.07386798073146952,
+            -0.03247510865723219,
+            0.09241399991886691,
+            -0.18418164237804244,
+            0.17177168709641283,
+            -0.034844190255553235
+          ],
+          "energy": 1.0,
+          "mode_count": 33,
+          "carrier_size": 33,
+          "active_token_indices": [
+            9375,
+            9457,
+            11078,
+            13140,
+            22975,
+            23328,
+            24120,
+            24722,
+            27895,
+            27956,
+            27958,
+            28174,
+            28178,
+            34970,
+            35317,
+            36055,
+            39002,
+            46121,
+            48337,
+            49296,
+            50764,
+            65007,
+            77136,
+            77933,
+            88688,
+            89545,
+            89559,
+            98860,
+            103353,
+            107968,
+            110949,
+            111011,
+            113029
+          ],
+          "known_vocabulary_size": 116649,
+          "representation": "exact_nonzero_context_modes_before_sentence_specific_support_projection"
+        },
+        "revision": 6,
+        "live_revision": 6,
+        "mode": "wave",
+        "session_id": "ee35e69c-9ac6-40d4-87cb-984811263abf",
+        "conversation_revision": 3
+      }
+    }
+  ],
+  "javascript_errors": [],
+  "console_errors": [],
+  "document_requests": [
+    "http://127.0.0.1:8765/api/documents?offset=0&limit=50",
+    "http://127.0.0.1:8765/api/documents?offset=50&limit=50&revision=6",
+    "http://127.0.0.1:8765/api/documents?offset=0&limit=50&revision=6",
+    "http://127.0.0.1:8765/api/documents?offset=31950&limit=50&revision=6"
+  ],
+  "posts": [
+    "http://127.0.0.1:8765/api/ask",
+    "http://127.0.0.1:8765/api/ask",
+    "http://127.0.0.1:8765/api/ask"
+  ],
+  "session_id": "ee35e69c-9ac6-40d4-87cb-984811263abf",
+  "new_empty_audit_session": true,
+  "initial_live_revision": 6,
+  "initial_state": {
+    "time_s": 278.9374653999985,
+    "displacement": [
+      -0.12809852598289134,
+      -0.35062072090790186,
+      -0.2821220846062599,
+      0.2575113783545499,
+      -0.05763975336116742,
+      -0.642605775761111,
+      -0.20006635348162344,
+      -0.1997042515515444,
+      -0.09516369696449081,
+      -0.23440445510122357,
+      -0.02894839451371213,
+      -0.13645570037308935,
+      -0.3833195008428675,
+      -0.4631963119224273,
+      -0.23287019949483007,
+      -0.20497366397379158,
+      -0.213839161530487,
+      0.211487704058397,
+      -0.13000064805563666,
+      -0.4092406205501206,
+      -0.19080058854970997,
+      -0.09285882158692832,
+      -0.5863936373187975,
+      -0.23679271625100692,
+      -0.1910348438079886,
+      -0.22940001816817568,
+      -0.25226067070378233,
+      -0.23505654224355868,
+      -0.3384370056361017,
+      -0.1608557836880877,
+      -0.40458806568296074,
+      -0.3514902320490846,
+      -0.385418538949022,
+      -0.37670724400719807,
+      -0.22686542007636684,
+      -0.21520294791225397,
+      -0.36071297337588204,
+      -0.20471873388632084,
+      -0.45705302678261145,
+      -0.6946589915917099,
+      -0.24038304827673182,
+      -0.1404478422101249,
+      -0.2961658150168724,
+      -0.29867512167892196,
+      -0.4718715722928753,
+      -0.18570696719944274,
+      -0.2670451026321129,
+      -0.08463986524090351,
+      -0.418978592834777,
+      -0.1902724308121012,
+      -0.2769745880976576,
+      -0.34510931948325135,
+      -0.11793040993869358,
+      -0.47756152925947537,
+      -0.24770489843273785,
+      -0.2236894303105743,
+      -0.2259273847776066,
+      -0.4594731874597007,
+      -0.4709672532680761,
+      -0.4335271600423187,
+      -0.29950850855475536,
+      -0.08473252581675408,
+      -0.4230805332281083,
+      -0.3635788884041908,
+      -0.3615036407167343,
+      -0.4143995714023556,
+      -0.4147444118173955,
+      -0.3484823678184181,
+      0.1834126210542345,
+      -0.3560477492317061,
+      -0.3040181766079735,
+      -0.2023803888966138,
+      -0.3048301298138787,
+      -0.4797420135061932,
+      -0.06074708770553956,
+      -0.14319085812914764,
+      -0.5650188290386312,
+      -0.35899955016109353,
+      -0.2095240781992747,
+      -0.26666175809678916,
+      -0.4740871787688379,
+      -0.11226737019851636,
+      -0.10468081971199232,
+      -0.14133487192586097,
+      -0.4117099127505623,
+      -0.3608577401053308,
+      -0.7874398536587937,
+      -0.4513402263871579,
+      -0.20368380694651278,
+      -0.21428967248862324,
+      -0.2156251684979857,
+      -0.48914625240019227,
+      -0.351322729853806,
+      -0.1140398144261478,
+      -0.4289430427939189,
+      -0.5356003261225531,
+      -0.11712805046662916,
+      -0.23826030734120127,
+      -0.08774660548034559,
+      -0.31244973410230387,
+      -0.4254613634725344,
+      -0.03575138922320084,
+      -0.4002763983477077,
+      -0.16724896972066916,
+      -0.35049194088286584,
+      -0.16341215531201986,
+      -0.04276549980112204,
+      -0.11740223870598104,
+      -0.3696594352475262,
+      -0.18932117380992985,
+      0.2955336189928973,
+      -0.5215869658061837,
+      -0.5672045166463864,
+      -0.1450490163814085,
+      -0.15020606987655555,
+      -0.3064966607376857,
+      -0.12438164117260941,
+      -0.3354651191116407,
+      -0.2615815618620462,
+      -0.25162252897806325,
+      -0.3974288669588823,
+      -0.6742761216869257,
+      -0.37344224485134553,
+      -0.10467101030777781,
+      -0.623777930754632,
+      -0.541737035246566,
+      -0.33847204312588886,
+      -0.6173253676215642,
+      -0.15520398510676603,
+      -0.11453533775653765,
+      -0.3786862995689242,
+      -0.33813338052175856,
+      -0.1461241595817222,
+      -0.3896784687185407,
+      -0.35342505257391005,
+      -0.12928693057450452,
+      -0.5038932821184781,
+      -0.2394577440501604,
+      -0.16726391746378885,
+      -0.5453074222606854,
+      0.0378700333290349,
+      -0.15217532426792368,
+      -0.19625146212506478,
+      -0.35608729989948823,
+      -0.3683749659113005,
+      -0.5022797520550559,
+      -0.35480010353954733,
+      -0.15440211669402165,
+      -0.016220175421134186,
+      -0.40296950735818393,
+      -0.6255368153872856,
+      -0.3150091751691838,
+      0.3144153647966691,
+      -0.10798880192778604,
+      -0.14367146985582077,
+      -0.12233191004315652,
+      -0.30574071822353693,
+      -0.4462999976453534,
+      -0.4534082889425768,
+      -0.12047407683864107,
+      -0.19090639486566244,
+      -0.1879451634419398,
+      -0.45916771173646553,
+      -0.2337592094014594,
+      -0.48013404712922364,
+      -0.43643413807000636,
+      -0.6772974094711522,
+      -0.6100505902852773,
+      -0.5392750771650908,
+      -0.2761763018162431,
+      -0.3916374030821722,
+      -0.4339911312560616,
+      -0.34264551554409295,
+      -0.19027650693136255,
+      -0.19570456157010382,
+      -0.6345942119866279,
+      -0.3554172773353152,
+      -0.36491796985803493,
+      0.09491348093047292,
+      -0.1131129276348714,
+      -0.6319832699041142,
+      -0.3753099936532145,
+      -0.6257778969348446,
+      -0.17008363252757425,
+      -0.17287686693106524,
+      -0.3353598642805583,
+      -0.3227826553933636,
+      -0.09754276236338101,
+      -0.1255462364506329,
+      -0.07159168963284618,
+      -0.1770130758427664,
+      -0.2693178745426103,
+      -0.14433818648371294,
+      -0.5053264098328784,
+      -0.3205788149729476,
+      -0.4166152833196506,
+      -0.3771630267437099,
+      -0.6816817937212174,
+      -0.19334675291392944,
+      -0.3747656764600907,
+      -0.32531913933476236,
+      -0.6225213896074724,
+      -0.3729244698637003,
+      -0.1023356991422962,
+      -0.24019259599032322,
+      -0.14773287278908162,
+      -0.30348064144476916,
+      -0.14625135811788492,
+      -0.11286969618901198,
+      -0.22438707744796588,
+      -0.4668362712057712,
+      -0.44677251348774116,
+      -0.2237519503284729,
+      -0.1875544439255117,
+      -0.40815171861357175,
+      -0.3732184512396711,
+      -0.30643053661703823,
+      -0.09744363328982641,
+      -0.6598148235230831,
+      -0.4928360927474702,
+      -0.09637127189504245,
+      -0.2705216282276871,
+      -0.4926488038126151,
+      -0.07290256663902361,
+      -0.41305011354948745,
+      -0.058795034959136794,
+      -0.15700627282347618,
+      -0.4085386205553869,
+      -0.23365803545311542,
+      -0.4381464228681991,
+      -0.42744703354399916,
+      -0.2843063156850908,
+      -0.4390814905064134,
+      -0.13836686022088612,
+      -0.5223416340552919,
+      -0.18961168887670654,
+      -0.4493144507012359,
+      -0.7082664396041252,
+      -0.10433726241533624,
+      -0.28074996214839315,
+      -0.42629063725442756,
+      -0.3029426883466988,
+      -0.17656086925205197,
+      -0.7050751199117931,
+      -0.33896848287668196,
+      -0.7107724582744854,
+      -0.444284510901784,
+      -0.3290982641069099,
+      -0.3850273755992965,
+      -0.46523258012799223,
+      -0.3817464673615698,
+      -0.25379469767674956,
+      -0.1471067806376047,
+      -0.6042763960533384,
+      -0.17728831117016441,
+      -0.6332110586812697
+    ],
+    "quadrature": [
+      -0.11379872875095583,
+      0.15874979991078758,
+      -0.17772741764522365,
+      -0.1913631859832999,
+      -0.0014051678369965681,
+      -0.16080914112352804,
+      0.31319349848074995,
+      0.24453341228127523,
+      -0.06441195597181877,
+      -0.24618075246398902,
+      0.028318567953737078,
+      -0.22271096657574163,
+      0.3929424863853928,
+      -0.1659632151771125,
+      0.06016335233553448,
+      0.07547121605599835,
+      0.15058180973016566,
+      -0.13926230902586895,
+      -0.15824087738651227,
+      -0.0118874910669503,
+      0.0730622048979515,
+      -0.12846277278951201,
+      -0.18259095936380246,
+      0.21862073988100042,
+      0.021202023805804666,
+      0.2030816627066641,
+      0.10675441226110538,
+      -0.13425410836327686,
+      0.1565323073782804,
+      -0.22443147252876336,
+      -0.030544577126281336,
+      0.20390706294350366,
+      0.03489744108465834,
+      -0.30423147511185317,
+      0.08875886631934292,
+      0.008604000101021695,
+      0.2110468726072929,
+      0.165401023408087,
+      0.3147422977204364,
+      0.03552999680674215,
+      -0.22472069793841531,
+      -0.2110355911088876,
+      -0.016700962338252412,
+      0.11561585828287493,
+      -0.2211428025676101,
+      0.008913028622848037,
+      0.10278274912710705,
+      0.01281015162337,
+      -0.10066196474030839,
+      0.06519437679273214,
+      -0.1723043476700709,
+      0.16700366025474528,
+      0.0993902577612184,
+      -0.20363253632158607,
+      -0.0637608134886805,
+      0.017092001089533487,
+      -0.030412444059099104,
+      -0.035587289695976784,
+      0.024979490921688025,
+      0.13852099791963424,
+      0.266305556057122,
+      -0.09556341867334804,
+      -0.029377138762941908,
+      -0.23767989763344632,
+      -0.36987057711575516,
+      0.3309835222932422,
+      -0.07064763784830513,
+      0.09598813607073473,
+      -0.003730818200382957,
+      -0.2621824880280218,
+      0.20081637042040396,
+      0.22413224465924825,
+      0.1366956521170409,
+      0.054329435746144863,
+      -0.12347408613144689,
+      -0.11161915652780374,
+      0.023408686384704086,
+      0.16734825237251602,
+      0.27448146768529347,
+      -0.1050528615500047,
+      -0.156329967321596,
+      -0.12862673453535658,
+      0.1281192138237771,
+      -0.013397817080247065,
+      -0.10535143282890835,
+      0.03389881710168273,
+      0.06346621214905068,
+      0.039153293326169854,
+      0.08112273302646186,
+      0.24717011797978594,
+      0.11846336784543847,
+      0.16344888164755836,
+      -0.03226592442413108,
+      -0.14669739029163525,
+      -0.1988556521728243,
+      0.14558565698962614,
+      -0.016305130508256088,
+      0.21399782631775197,
+      -0.14160945472399622,
+      0.13361556725726648,
+      0.008170060485878969,
+      -0.17981539763528484,
+      0.0030546688664066235,
+      -0.07418537946421616,
+      0.3621150178000946,
+      -0.08052951182701693,
+      0.003523584335643412,
+      -0.11025924176221998,
+      -0.04109923168587419,
+      0.24467034807975202,
+      -0.08479179172663612,
+      0.12891440548245314,
+      -0.23107250734579027,
+      -0.16870839933181167,
+      0.17241561351806683,
+      -0.26568798492062695,
+      -0.019479873041247445,
+      0.18344400646537914,
+      -0.07478285491656866,
+      0.012470732168044342,
+      0.09267139576906641,
+      0.02031698005494533,
+      -0.2927330947616748,
+      -0.15096652179139208,
+      -0.188264087138893,
+      -0.05991688643761146,
+      -0.0037657802425383434,
+      0.05404121394342301,
+      0.07656104215778765,
+      -0.028094645030624137,
+      0.1593766998908353,
+      -0.11077017102734417,
+      0.10296348250307019,
+      -0.031440113243421164,
+      -0.1670144195659327,
+      0.20662074613443293,
+      0.14241028434009215,
+      -0.26639861338208765,
+      -0.051236154715506355,
+      0.1658983533766552,
+      0.2504774241979401,
+      0.22893081955994757,
+      -0.02425568585673854,
+      -0.06348601013493654,
+      0.05852561304232501,
+      0.36360916853159386,
+      -0.01852972383381524,
+      -0.4634856659466722,
+      -0.26067546975585526,
+      0.07022091272288855,
+      -0.11114155430459641,
+      -0.05505281022827177,
+      0.056556699570631,
+      0.006902338593603155,
+      0.05503622981192033,
+      0.029015982306461505,
+      -0.3451810869092678,
+      0.026147152217949172,
+      -0.23534465906640387,
+      0.014255779484682665,
+      0.13013645325997256,
+      -0.09864889026032886,
+      0.056885912080692304,
+      -0.1280644939197971,
+      -0.06512550331062934,
+      -0.0029829294214019225,
+      0.058522542453824086,
+      -0.3739428098499779,
+      0.11937614299484327,
+      0.12182656097116054,
+      0.218512235247146,
+      -0.08118604468740237,
+      0.06292953383443278,
+      0.17640360535380156,
+      -0.01184093783865659,
+      -0.14707357116366174,
+      -0.18085024758901935,
+      0.0023524739791319837,
+      0.15920042040251633,
+      -0.16794420815868105,
+      -0.2401457491906096,
+      -0.1488690977180798,
+      -0.11887397700219542,
+      0.2508881810997136,
+      -0.15070738264654104,
+      -0.16412284006323413,
+      0.15302846412483267,
+      -0.1864159985121852,
+      -0.011321103590380077,
+      -0.2246428748744272,
+      0.09552439618695326,
+      -0.3142569825215632,
+      -0.09940470033043516,
+      -0.05289786320703863,
+      0.10691957762334711,
+      0.08926864761240197,
+      0.3171373544318406,
+      -0.18934826997883858,
+      0.117027328617373,
+      0.13924205192879568,
+      0.21538332992626666,
+      0.29856609493802133,
+      -0.034416741193615014,
+      -0.1279678445918868,
+      0.18320403103821126,
+      0.03146639718956256,
+      0.011806944693556386,
+      -0.017413757351059128,
+      0.46107182792653884,
+      0.08384177769890057,
+      0.06483063990180277,
+      -0.08447748265393923,
+      0.051451353133696795,
+      -0.07479886420823505,
+      -0.06526019596237989,
+      0.007254775124137219,
+      -0.05811888359940988,
+      -0.21234893970542212,
+      -0.19803367229669322,
+      0.3632806839285031,
+      0.002911942859545713,
+      0.13577055704281152,
+      0.15945325211323125,
+      0.03589145215337401,
+      -0.16107121436445188,
+      0.6099106962226046,
+      -0.08317662827819554,
+      -0.10435285638530109,
+      0.1202290709857865,
+      -0.06253167296400904,
+      -0.2404374226771812,
+      0.23135305509518067,
+      0.5761513329833987,
+      0.0016494110945240448,
+      -0.3323717716268979,
+      -0.04205156055889113,
+      -0.0028431807307755796,
+      -0.13954365857739387,
+      0.010442807038770638,
+      0.11692103599207643,
+      -0.0029913147031455645,
+      0.3390447864123064,
+      0.00023873348883887832,
+      0.2887010030795675,
+      -0.3519851133453459,
+      -0.196325609789978,
+      -0.02077292332907983,
+      -0.12107999948348201,
+      -0.4104105572408797,
+      0.22057910890944354,
+      0.007425434156632684,
+      0.10082963225116973,
+      0.1070789481677766,
+      0.04212013186978583,
+      0.18394755009343008,
+      -0.19308491096741237
+    ],
+    "energy": 2407360.6140715107,
+    "physical_energy": 4147867789.1714644,
+    "modal_count": 16267618,
+    "display_points": 256,
+    "text_mode_count": 8718348,
+    "metadata_mode_count": 7549270,
+    "wave_layout": "append_only_addressed_documents",
+    "document_count": 32000,
+    "dimensions": 4096,
+    "key_mode_count": 131072000,
+    "key_energy": 32000.000000000007,
+    "stored_bytes": 16267618,
+    "feature_mode": "morphology",
+    "retrieval_policy": "coverage",
+    "ticks": 73,
+    "target_hz": 10,
+    "running": true,
+    "error": null,
+    "sync_error": null,
+    "revision": 6,
+    "live_revision": 6,
+    "persistent": true,
+    "session_id": "ee35e69c-9ac6-40d4-87cb-984811263abf",
+    "conversation_revision": 0
+  },
+  "first_page": "1–50 von 32.000 Texten · Seite 1",
+  "second_page": "51–100 von 32.000 Texten · Seite 2",
+  "previous_page_identical": true,
+  "last_page": "31.951–32.000 von 32.000 Texten · Seite 640",
+  "source_example": "Wikimedia Wikipedia 20231101.de | article_id=10990596 | Kriegsgräberstätte Heimbach | https://de.wikipedia.org/wiki/Kriegsgr%C3%A4berst%C3%A4tte%20Heimbach\nwikipedia-de-20231101-10990596-lead",
+  "maximum_rendered_document_rows": 50,
+  "information_prompts_empty_in_last_page": true
+}

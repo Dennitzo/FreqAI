@@ -1,0 +1,12 @@
+{
+  "states": 64,
+  "basis_change_max_output_error": 7.32410687763558e-15,
+  "basis_change_max_singular_value_error": 7.993605777301127e-15,
+  "direct_coefficient_max_energy_error": 6.661338147750939e-16,
+  "deterministic_coefficient_rebuilds": 64,
+  "data_changes_affect_output": 64,
+  "optimizer_steps": 0,
+  "fitted_parameters": 0,
+  "conclusion": "A Fourier basis change preserves the operator and its parameter dependence. Direct count-derived unit-energy coefficients avoid fitting, but are still data-dependent numerical weights.",
+  "scope": "Synthetic linear algebra control, not a conversation or factual quality benchmark."
+}

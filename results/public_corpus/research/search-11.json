@@ -1,0 +1,64 @@
+{
+  "query": "\"GermanQuAD\" \"dataset\"",
+  "results": [
+    {
+      "title": "deepset/germanquad · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/deepset/germanquad",
+      "snippet": "In order to raise the bar for non-English QA, we are releasing a high-quality, human-labeled German QA dataset consisting of 13 722 questions, incl. a three-way annotated test set. The creation of GermanQuAD is inspired by insights from existing datasets as well as our labeling experience from several industry projects.",
+      "source": "brave",
+      "thumbnailUrl": ""
+    },
+    {
+      "title": "GermanQuAD: High-Quality German QA Dataset",
+      "url": "https://www.kaggle.com/datasets/thedevastator/germanquad-high-quality-german-qa-dataset",
+      "snippet": "Checking your browser before accessing www.kaggle.com · Click here if you are not automatically redirected after 5 seconds",
+      "source": "brave",
+      "thumbnailUrl": ""
+    },
+    {
+      "title": "[2104.12741] GermanQuAD and GermanDPR: Improving Non-English Question Answering and Passage Retrieval",
+      "url": "https://arxiv.org/abs/2104.12741",
+      "snippet": "major challenge of research on non-English machine reading for question answering (QA) is the lack of annotated datasets. In this paper, we present GermanQuAD, a dataset of 13,722 extractive question/answer pairs. To improve the reproducibility ...",
+      "source": "brave",
+      "thumbnailUrl": ""
+    },
+    {
+      "title": "GermanQuAD and GermanDPR:",
+      "url": "https://arxiv.org/pdf/2104.12741",
+      "snippet": "of GermanQuAD along with our model’s performance on each type (in percent). ... MLQA dataset12.",
+      "source": "brave",
+      "thumbnailUrl": ""
+    },
+    {
+      "title": "deepset/gelectra-large-germanquad · Hugging Face",
+      "url": "https://huggingface.co/deepset/gelectra-large-germanquad",
+      "snippet": "Language model: gelectra-large... model with a gelectra-large model as its basis. The dataset is GermanQuAD, a new, German language dataset, which we hand-annotated and published online....",
+      "source": "brave",
+      "thumbnailUrl": ""
+    },
+    {
+      "title": "deepset/gelectra-base-germanquad · Hugging Face",
+      "url": "https://huggingface.co/deepset/gelectra-base-germanquad",
+      "snippet": "Language model: gelectra-base-... model with a gelectra-base model as its basis. The dataset is GermanQuAD, a new, German language dataset, which we hand-annotated and published online....",
+      "source": "brave",
+      "thumbnailUrl": ""
+    },
+    {
+      "title": "GermanQuAD and GermanDPR: Improving Non-English ...",
+      "url": "https://aclanthology.org/2021.mrqa-1.4.pdf",
+      "snippet": "MLQA dataset12. ... SQuAD v2.0. We continue ﬁnetuning the baseline ... Accuracy scores. Top-N-Accuracy is a binary hit · or miss score for the ﬁrst N model predictions. The · value is one if there is any positional overlap be- ... Table 4: QA model performance on the three-way annotated GermanQuAD test set (in percent).",
+      "source": "brave",
+      "thumbnailUrl": ""
+    },
+    {
+      "title": "README.md · deepset/gelectra-base-germanquad at main",
+      "url": "https://huggingface.co/deepset/gelectra-base-germanquad/blob/main/README.md",
+      "snippet": "Language model: gelectra-base-... model with a gelectra-base model as its basis. The dataset is GermanQuAD, a new, German language dataset, which we hand-annotated and published online....",
+      "source": "brave",
+      "thumbnailUrl": ""
+    }
+  ],
+  "provider": "searxng",
+  "isFallback": false,
+  "retrievedAt": "2026-09-06T09:19:37.7128128+00:00"
+}

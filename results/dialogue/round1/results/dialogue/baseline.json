@@ -1,0 +1,4669 @@
+{
+  "stage": "baseline",
+  "created_utc": "2026-09-06T07:56:08.520433+00:00",
+  "suite": {
+    "created_utc": "2026-09-06T07:43:51.246157+00:00",
+    "suite_sha256": "33dc0af1ca027b10243aff432635b851e6221d03c96dde79d37cb723d066dc24",
+    "corpus_sha256": "8dbfad5536db23888bc667ec73653e3f63128b7503acf510371fc5625e5dff02",
+    "turns": 134,
+    "unique_prompts": 129,
+    "new_unique_prompts": 129,
+    "scenarios": 26,
+    "split_counts": {
+      "development": 51,
+      "holdout": 50,
+      "stress": 33
+    }
+  },
+  "configuration": {
+    "dimensions": 4096,
+    "feature_mode": "morphology",
+    "min_score": 0.18,
+    "retrieval_policy": "coverage",
+    "min_coverage": 0.6
+  },
+  "implementation": {
+    "freqai\\__init__.py": "0e634154d3a7ed97b743819529122dcfe1d59ce6dca186c208d93ef872ee46e2",
+    "freqai\\__main__.py": "19f07de3d1765a6803d4332ab1e67346381236f7769f47640e73849922394790",
+    "freqai\\cli.py": "d9336bd2248a03754d10412339476b8b979ee6ce7a02e10bf31b245ed9ba13a4",
+    "freqai\\codec.py": "1741858964d007a8baa1173cb559ac896d07bb4d8eb7d7be840c12c1a5acdc03",
+    "freqai\\dialogue.py": "25ebb0ca95f42c932cc0d98b42eb234966f125735fd16fd27ff797f42d83669b",
+    "freqai\\features.py": "c48eb11bff823f8329bdbf1509426f1928e19c213793145e30c1ef4abe234535",
+    "freqai\\memory.py": "baf20b7039036112c3bf1e503f88a77a7f740e104926470210b80263ee49ea73",
+    "freqai\\reasoning.py": "4819d011b22b1e8d4049172094e124abb43114e84ba059cff946bea1f0835a3a",
+    "freqai\\semantics.py": "9d65a524e4a2ba4ecd69e4b5e1f086e8b8476bf1048045636aaf541ec89c6a4d",
+    "freqai\\server.py": "6d1fc09af86d1ecbe7e307ef73323b9a1e1bca24b88d8deba99f35ec6ce7218c",
+    "freqai\\store.py": "ced6af26368edd586a1e913449a900a173c632fe8ef71722f2429a020fe126f0",
+    "freqai\\synthesis.py": "6183f5403543c4f686a959f9c7d3a4afb636e7df7b03038ab6ca1e8c0a99caad",
+    "memory\\language\\german.json": "8a44d37d7d68cf15f3854aa5a05707a02b15553efb2956bc69a3ce682571cf9f"
+  },
+  "scorer_sha256": "8e7f0dde8b859938099833efd3290c88ceb04bc7f89c2a0ad895f7859a3fadff",
+  "summary": {
+    "development": {
+      "passed": 16,
+      "total": 51,
+      "novel_complete_answers": 0,
+      "abstentions": 34,
+      "failures": {
+        "answer_missing:positive": 11,
+        "answer_missing:assistant_status": 10,
+        "unnecessary_abstention": 27,
+        "answer_missing:negative": 6,
+        "answer_missing:tired": 1,
+        "answer_missing:greeting": 6,
+        "answer_missing:thanks": 3,
+        "answer_missing:introduce_name": 1,
+        "answer_missing:recall_name": 2,
+        "answer_missing:farewell": 1
+      }
+    },
+    "holdout": {
+      "passed": 7,
+      "total": 50,
+      "novel_complete_answers": 0,
+      "abstentions": 46,
+      "failures": {
+        "answer_missing:greeting": 6,
+        "answer_missing:positive": 17,
+        "answer_missing:assistant_status": 16,
+        "unnecessary_abstention": 32,
+        "answer_missing:negative": 7,
+        "answer_missing:tired": 3,
+        "answer_missing:thanks": 8,
+        "answer_missing:not_tired": 1,
+        "answer_missing:third_positive": 2,
+        "answer_missing:third_negative": 2,
+        "answer_missing:third_tired": 1,
+        "answer_missing:introduce_name": 3,
+        "answer_missing:recall_name": 4,
+        "answer_missing:unknown_name": 1,
+        "answer_missing:farewell": 1
+      }
+    },
+    "stress": {
+      "passed": 14,
+      "total": 33,
+      "novel_complete_answers": 0,
+      "abstentions": 26,
+      "failures": {
+        "answer_missing:clarification": 4,
+        "answer_missing:unknown_reason": 2,
+        "answer_missing:negative": 2,
+        "unnecessary_abstention": 9,
+        "answer_missing:assistant_status": 3,
+        "answer_missing:tired": 2,
+        "answer_missing:third_not_tired": 1,
+        "answer_missing:third_positive": 1,
+        "answer_missing:positive": 2,
+        "answer_missing:introduce_name": 1,
+        "answer_missing:recall_name": 1,
+        "answer_missing:unknown_name": 2
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "original-regression-1",
+      "scenario": "original-regression",
+      "split": "development",
+      "prompt": "Hallo",
+      "expected": {
+        "concepts": [
+          "greeting"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Hallo! Schön, dass du da bist. Wie geht es dir heute?",
+      "result": {
+        "answer": "Hallo! Schön, dass du da bist. Wie geht es dir heute?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-001",
+            "text": "Hallo! Schön, dass du da bist. Wie geht es dir heute?",
+            "source": "Alltagsgespräch / Begrüßung",
+            "score": 0.48843565162162844,
+            "interference": 0.9768713032432569,
+            "matched_prompt": "Hallo, schön dich zu sehen.",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0028683999998975196,
+      "time_s": 0.0
+    },
+    {
+      "id": "original-regression-2",
+      "scenario": "original-regression",
+      "split": "development",
+      "prompt": "Mir geht es gut, wie geht es dir denn?",
+      "expected": {
+        "concepts": [
+          "positive",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.004767999999785388,
+      "time_s": 0.0
+    },
+    {
+      "id": "original-regression-3",
+      "scenario": "original-regression",
+      "split": "development",
+      "prompt": "gut und dir?",
+      "expected": {
+        "concepts": [
+          "positive",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0025845999998637126,
+      "time_s": 0.0
+    },
+    {
+      "id": "simple-positive-1",
+      "scenario": "simple-positive",
+      "split": "development",
+      "prompt": "Mir geht es gut.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+      "result": {
+        "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-011",
+            "text": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+            "source": "Alltagsgespräch / Befinden",
+            "score": 0.6901166794085413,
+            "interference": 1.3802333588170825,
+            "matched_prompt": "Mir geht es heute richtig gut.",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0025703000001158216,
+      "time_s": 0.0
+    },
+    {
+      "id": "simple-positive-2",
+      "scenario": "simple-positive",
+      "split": "development",
+      "prompt": "Heute geht es mir wirklich prima.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002210900000136462,
+      "time_s": 0.0
+    },
+    {
+      "id": "simple-positive-3",
+      "scenario": "simple-positive",
+      "split": "development",
+      "prompt": "Ich fühle mich wohl.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.001823500000682543,
+      "time_s": 0.0
+    },
+    {
+      "id": "simple-positive-4",
+      "scenario": "simple-positive",
+      "split": "development",
+      "prompt": "Mir geht's heute super.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0017975000000660657,
+      "time_s": 0.0
+    },
+    {
+      "id": "simple-positive-5",
+      "scenario": "simple-positive",
+      "split": "development",
+      "prompt": "Ich bin ganz zufrieden.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das ist ein schöner Moment. Was hat zu dieser Zufriedenheit beigetragen?",
+      "result": {
+        "answer": "Das ist ein schöner Moment. Was hat zu dieser Zufriedenheit beigetragen?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-016",
+            "text": "Das ist ein schöner Moment. Was hat zu dieser Zufriedenheit beigetragen?",
+            "source": "Alltagsgespräch / Befinden",
+            "score": 0.8638922842664637,
+            "interference": 1.7277845685329274,
+            "matched_prompt": "Gerade bin ich ganz zufrieden mit mir.",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0023000999999567284,
+      "time_s": 0.0
+    },
+    {
+      "id": "simple-positive-6",
+      "scenario": "simple-positive",
+      "split": "development",
+      "prompt": "Bei mir ist alles in Ordnung.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0025153999995382037,
+      "time_s": 0.0
+    },
+    {
+      "id": "simple-positive-7",
+      "scenario": "simple-positive",
+      "split": "development",
+      "prompt": "Heute bin ich fröhlich.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0021569000000454253,
+      "time_s": 0.0
+    },
+    {
+      "id": "simple-positive-8",
+      "scenario": "simple-positive",
+      "split": "development",
+      "prompt": "Ich freue mich gerade.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0017569999999977881,
+      "time_s": 0.0
+    },
+    {
+      "id": "simple-negative-1",
+      "scenario": "simple-negative",
+      "split": "development",
+      "prompt": "Mir geht es schlecht.",
+      "expected": {
+        "concepts": [
+          "negative"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:negative",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0016920999996727915,
+      "time_s": 0.0
+    },
+    {
+      "id": "simple-negative-2",
+      "scenario": "simple-negative",
+      "split": "development",
+      "prompt": "Ich bin traurig.",
+      "expected": {
+        "concepts": [
+          "negative"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:negative",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0017013000006045331,
+      "time_s": 0.0
+    },
+    {
+      "id": "simple-negative-3",
+      "scenario": "simple-negative",
+      "split": "development",
+      "prompt": "Ich fühle mich mies.",
+      "expected": {
+        "concepts": [
+          "negative"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:negative",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0017180000004373142,
+      "time_s": 0.0
+    },
+    {
+      "id": "simple-negative-4",
+      "scenario": "simple-negative",
+      "split": "development",
+      "prompt": "Heute bin ich ziemlich gestresst.",
+      "expected": {
+        "concepts": [
+          "negative"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:negative",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002276900000651949,
+      "time_s": 0.0
+    },
+    {
+      "id": "simple-negative-5",
+      "scenario": "simple-negative",
+      "split": "development",
+      "prompt": "Ich bin total müde.",
+      "expected": {
+        "concepts": [
+          "tired"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:tired",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002225699999144126,
+      "time_s": 0.0
+    },
+    {
+      "id": "simple-negative-6",
+      "scenario": "simple-negative",
+      "split": "development",
+      "prompt": "Ich habe gerade keine gute Laune.",
+      "expected": {
+        "concepts": [
+          "negative"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:negative",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0027781999997387175,
+      "time_s": 0.0
+    },
+    {
+      "id": "direct-assistant-1",
+      "scenario": "direct-assistant",
+      "split": "development",
+      "prompt": "Wie geht's dir denn so?",
+      "expected": {
+        "concepts": [
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0021985000003041932,
+      "time_s": 0.0
+    },
+    {
+      "id": "direct-assistant-2",
+      "scenario": "direct-assistant",
+      "split": "development",
+      "prompt": "Und wie geht es dir heute?",
+      "expected": {
+        "concepts": [
+          "assistant_status"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+      "result": {
+        "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-007",
+            "text": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+            "source": "Alltagsgespräch / Begrüßung",
+            "score": 0.8110522892555522,
+            "interference": 1.6221045785111043,
+            "matched_prompt": "Wie geht es dir?",
+            "query_coverage": 0.7870760091913556
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.00227309999991121,
+      "time_s": 0.0
+    },
+    {
+      "id": "direct-assistant-3",
+      "scenario": "direct-assistant",
+      "split": "development",
+      "prompt": "Alles gut bei dir?",
+      "expected": {
+        "concepts": [
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0019674000004670233,
+      "time_s": 0.0
+    },
+    {
+      "id": "direct-assistant-4",
+      "scenario": "direct-assistant",
+      "split": "development",
+      "prompt": "Wie fühlst du dich?",
+      "expected": {
+        "concepts": [
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018057999996017315,
+      "time_s": 0.0
+    },
+    {
+      "id": "direct-assistant-5",
+      "scenario": "direct-assistant",
+      "split": "development",
+      "prompt": "Geht es dir gut?",
+      "expected": {
+        "concepts": [
+          "assistant_status"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+      "result": {
+        "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-007",
+            "text": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+            "source": "Alltagsgespräch / Begrüßung",
+            "score": 0.8224144482999943,
+            "interference": 1.6448288965999887,
+            "matched_prompt": "Wie geht es dir?",
+            "query_coverage": 0.659719763780477
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0021230000002105953,
+      "time_s": 0.0
+    },
+    {
+      "id": "direct-assistant-6",
+      "scenario": "direct-assistant",
+      "split": "development",
+      "prompt": "Bist du müde?",
+      "expected": {
+        "concepts": [
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018931999993583304,
+      "time_s": 0.0
+    },
+    {
+      "id": "greeting-forms-1",
+      "scenario": "greeting-forms",
+      "split": "development",
+      "prompt": "Hey, schön dich zu treffen!",
+      "expected": {
+        "concepts": [
+          "greeting"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:greeting",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0020474000002650428,
+      "time_s": 0.0
+    },
+    {
+      "id": "greeting-forms-2",
+      "scenario": "greeting-forms",
+      "split": "development",
+      "prompt": "Huhu!",
+      "expected": {
+        "concepts": [
+          "greeting"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:greeting",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0017649000001256354,
+      "time_s": 0.0
+    },
+    {
+      "id": "greeting-forms-3",
+      "scenario": "greeting-forms",
+      "split": "development",
+      "prompt": "Guten Morgen!",
+      "expected": {
+        "concepts": [
+          "greeting"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Guten Morgen! Bist du schon richtig wach oder brauchst du noch einen ruhigen Moment?",
+      "result": {
+        "answer": "Guten Morgen! Bist du schon richtig wach oder brauchst du noch einen ruhigen Moment?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-002",
+            "text": "Guten Morgen! Bist du schon richtig wach oder brauchst du noch einen ruhigen Moment?",
+            "source": "Alltagsgespräch / Begrüßung",
+            "score": 0.6231214079532331,
+            "interference": 1.2462428159064662,
+            "matched_prompt": "Guten Morgen, ich bin gerade aufgestanden.",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0017284000005020062,
+      "time_s": 0.0
+    },
+    {
+      "id": "greeting-forms-4",
+      "scenario": "greeting-forms",
+      "split": "development",
+      "prompt": "Guten Abend!",
+      "expected": {
+        "concepts": [
+          "greeting"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Guten Abend! Möchtest du von deinem Tag erzählen oder einfach ein bisschen plaudern?",
+      "result": {
+        "answer": "Guten Abend! Möchtest du von deinem Tag erzählen oder einfach ein bisschen plaudern?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-003",
+            "text": "Guten Abend! Möchtest du von deinem Tag erzählen oder einfach ein bisschen plaudern?",
+            "source": "Alltagsgespräch / Begrüßung",
+            "score": 0.5830127018922202,
+            "interference": 1.1660254037844404,
+            "matched_prompt": "Guten Abend, mein Tag ist jetzt vorbei.",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0016196000005948008,
+      "time_s": 0.0
+    },
+    {
+      "id": "greeting-forms-5",
+      "scenario": "greeting-forms",
+      "split": "development",
+      "prompt": "Hi!",
+      "expected": {
+        "concepts": [
+          "greeting"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Hi! Ich bin bereit für unser Gespräch. Wie läuft dein Tag bisher?",
+      "result": {
+        "answer": "Hi! Ich bin bereit für unser Gespräch. Wie läuft dein Tag bisher?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-010",
+            "text": "Hi! Ich bin bereit für unser Gespräch. Wie läuft dein Tag bisher?",
+            "source": "Alltagsgespräch / Begrüßung",
+            "score": 0.46338834764831877,
+            "interference": 0.9267766952966375,
+            "matched_prompt": "Hi, wie läuft es heute bei dir?",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.001677199999903678,
+      "time_s": 0.0
+    },
+    {
+      "id": "greeting-forms-6",
+      "scenario": "greeting-forms",
+      "split": "development",
+      "prompt": "Servus!",
+      "expected": {
+        "concepts": [
+          "greeting"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:greeting",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.00229360000048473,
+      "time_s": 0.0
+    },
+    {
+      "id": "compound-dev-1",
+      "scenario": "compound-dev",
+      "split": "development",
+      "prompt": "Hallo, mir geht es gut. Und dir?",
+      "expected": {
+        "concepts": [
+          "greeting",
+          "positive",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:greeting",
+        "answer_missing:positive",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.00187149999965186,
+      "time_s": 0.0
+    },
+    {
+      "id": "compound-dev-2",
+      "scenario": "compound-dev",
+      "split": "development",
+      "prompt": "Ich bin traurig, wie geht es dir?",
+      "expected": {
+        "concepts": [
+          "negative",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:negative",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0019294999992780504,
+      "time_s": 0.0
+    },
+    {
+      "id": "compound-dev-3",
+      "scenario": "compound-dev",
+      "split": "development",
+      "prompt": "Mir geht es super und dir?",
+      "expected": {
+        "concepts": [
+          "positive",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive"
+      ],
+      "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+      "result": {
+        "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-007",
+            "text": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+            "source": "Alltagsgespräch / Begrüßung",
+            "score": 0.8013546722004102,
+            "interference": 1.6027093444008205,
+            "matched_prompt": "Wie geht es dir?",
+            "query_coverage": 0.6110851090305013
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0022195000001374865,
+      "time_s": 0.0
+    },
+    {
+      "id": "compound-dev-4",
+      "scenario": "compound-dev",
+      "split": "development",
+      "prompt": "Also, mir geht es gut, und wie geht's dir?",
+      "expected": {
+        "concepts": [
+          "positive",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0024474000001646345,
+      "time_s": 0.0
+    },
+    {
+      "id": "compound-dev-5",
+      "scenario": "compound-dev",
+      "split": "development",
+      "prompt": "Danke, mir geht es gut.",
+      "expected": {
+        "concepts": [
+          "thanks",
+          "positive"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:thanks"
+      ],
+      "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+      "result": {
+        "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-011",
+            "text": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+            "source": "Alltagsgespräch / Befinden",
+            "score": 0.5599982098965948,
+            "interference": 1.1199964197931895,
+            "matched_prompt": "Mir geht es heute richtig gut.",
+            "query_coverage": 0.6666666666666666
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002504800000679097,
+      "time_s": 0.0
+    },
+    {
+      "id": "compound-dev-6",
+      "scenario": "compound-dev",
+      "split": "development",
+      "prompt": "Hi, ich bin müde.",
+      "expected": {
+        "concepts": [
+          "greeting",
+          "tired"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:greeting"
+      ],
+      "answer": "Dann wäre vielleicht ein ruhiger Moment angenehm. War dein Tag besonders anstrengend?",
+      "result": {
+        "answer": "Dann wäre vielleicht ein ruhiger Moment angenehm. War dein Tag besonders anstrengend?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-012",
+            "text": "Dann wäre vielleicht ein ruhiger Moment angenehm. War dein Tag besonders anstrengend?",
+            "source": "Alltagsgespräch / Befinden",
+            "score": 0.5621121467658008,
+            "interference": 1.1242242935316016,
+            "matched_prompt": "Ich bin gerade ziemlich müde.",
+            "query_coverage": 0.6224786216248512
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.001895899999908579,
+      "time_s": 0.0
+    },
+    {
+      "id": "context-dev-1",
+      "scenario": "context-dev",
+      "split": "development",
+      "prompt": "Hallo zusammen!",
+      "expected": {
+        "concepts": [
+          "greeting"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:greeting",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018604999995659455,
+      "time_s": 0.0
+    },
+    {
+      "id": "context-dev-2",
+      "scenario": "context-dev",
+      "split": "development",
+      "prompt": "Gut.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+      "result": {
+        "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-011",
+            "text": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+            "source": "Alltagsgespräch / Befinden",
+            "score": 0.48602711490407385,
+            "interference": 0.9720542298081477,
+            "matched_prompt": "Mir geht es heute richtig gut.",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0016480000003866735,
+      "time_s": 0.0
+    },
+    {
+      "id": "context-dev-3",
+      "scenario": "context-dev",
+      "split": "development",
+      "prompt": "Und du?",
+      "expected": {
+        "concepts": [
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0015538999996351777,
+      "time_s": 0.0
+    },
+    {
+      "id": "context-dev-4",
+      "scenario": "context-dev",
+      "split": "development",
+      "prompt": "Ich bin müde.",
+      "expected": {
+        "concepts": [
+          "tired"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Dann wäre vielleicht ein ruhiger Moment angenehm. War dein Tag besonders anstrengend?",
+      "result": {
+        "answer": "Dann wäre vielleicht ein ruhiger Moment angenehm. War dein Tag besonders anstrengend?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-012",
+            "text": "Dann wäre vielleicht ein ruhiger Moment angenehm. War dein Tag besonders anstrengend?",
+            "source": "Alltagsgespräch / Befinden",
+            "score": 0.6746676531873175,
+            "interference": 1.349335306374635,
+            "matched_prompt": "Ich bin gerade ziemlich müde.",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.001588600000104634,
+      "time_s": 0.0
+    },
+    {
+      "id": "context-dev-5",
+      "scenario": "context-dev",
+      "split": "development",
+      "prompt": "Und dir?",
+      "expected": {
+        "concepts": [
+          "assistant_status"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+      "result": {
+        "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-007",
+            "text": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+            "source": "Alltagsgespräch / Begrüßung",
+            "score": 0.6917043919818885,
+            "interference": 1.383408783963777,
+            "matched_prompt": "Wie geht es dir?",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0016562999999223393,
+      "time_s": 0.0
+    },
+    {
+      "id": "name-dev-1",
+      "scenario": "name-dev",
+      "split": "development",
+      "prompt": "Ich heiße Clara.",
+      "expected": {
+        "concepts": [
+          "introduce_name"
+        ],
+        "name": "Clara"
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:introduce_name"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0020543000000543543,
+      "time_s": 0.0
+    },
+    {
+      "id": "name-dev-2",
+      "scenario": "name-dev",
+      "split": "development",
+      "prompt": "Wie heiße ich?",
+      "expected": {
+        "concepts": [
+          "recall_name"
+        ],
+        "name": "Clara"
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:recall_name"
+      ],
+      "answer": "Dann darf der Tag vielleicht etwas langsamer sein. Gibt es bei dir einen angenehm kühlen Ort?",
+      "result": {
+        "answer": "Dann darf der Tag vielleicht etwas langsamer sein. Gibt es bei dir einen angenehm kühlen Ort?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-064",
+            "text": "Dann darf der Tag vielleicht etwas langsamer sein. Gibt es bei dir einen angenehm kühlen Ort?",
+            "source": "Alltagsgespräch / Wetter und Umgebung",
+            "score": 0.3784224402251587,
+            "interference": 0.7568448804503174,
+            "matched_prompt": "Es ist so heiß, dass ich kaum Lust habe, etwas zu tun.",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0021128999997017672,
+      "time_s": 0.0
+    },
+    {
+      "id": "name-dev-3",
+      "scenario": "name-dev",
+      "split": "development",
+      "prompt": "Mir geht es gut.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+      "result": {
+        "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-011",
+            "text": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+            "source": "Alltagsgespräch / Befinden",
+            "score": 0.6901166794085413,
+            "interference": 1.3802333588170825,
+            "matched_prompt": "Mir geht es heute richtig gut.",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0022843000006105285,
+      "time_s": 0.0
+    },
+    {
+      "id": "name-dev-4",
+      "scenario": "name-dev",
+      "split": "development",
+      "prompt": "Weißt du noch meinen Namen?",
+      "expected": {
+        "concepts": [
+          "recall_name"
+        ],
+        "name": "Clara"
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:recall_name",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0020622000001822016,
+      "time_s": 0.0
+    },
+    {
+      "id": "social-dev-1",
+      "scenario": "social-dev",
+      "split": "development",
+      "prompt": "Vielen lieben Dank!",
+      "expected": {
+        "concepts": [
+          "thanks"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:thanks"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002409599999737111,
+      "time_s": 0.0
+    },
+    {
+      "id": "social-dev-2",
+      "scenario": "social-dev",
+      "split": "development",
+      "prompt": "Danke dir.",
+      "expected": {
+        "concepts": [
+          "thanks"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:thanks"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.001901700000416895,
+      "time_s": 0.0
+    },
+    {
+      "id": "social-dev-3",
+      "scenario": "social-dev",
+      "split": "development",
+      "prompt": "Bis dann!",
+      "expected": {
+        "concepts": [
+          "farewell"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:farewell"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0016021000001273933,
+      "time_s": 0.0
+    },
+    {
+      "id": "social-dev-4",
+      "scenario": "social-dev",
+      "split": "development",
+      "prompt": "Tschüss!",
+      "expected": {
+        "concepts": [
+          "farewell"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Tschüss! Hab einen angenehmen Tag.",
+      "result": {
+        "answer": "Tschüss! Hab einen angenehmen Tag.",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-120",
+            "text": "Tschüss! Hab einen angenehmen Tag.",
+            "source": "Alltagsgespräch / Abschied und Gesprächsführung",
+            "score": 1.0000000000000007,
+            "interference": 2.0000000000000013,
+            "matched_prompt": "Tschüss",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002252799999951094,
+      "time_s": 0.0
+    },
+    {
+      "id": "unsupported-dev-1",
+      "scenario": "unsupported-dev",
+      "split": "development",
+      "prompt": "Wie viele Monde hat der unbekannte Planet Zuralix?",
+      "expected": {
+        "concepts": [
+          "unknown"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.003912500000296859,
+      "time_s": 0.0
+    },
+    {
+      "id": "unsupported-dev-2",
+      "scenario": "unsupported-dev",
+      "split": "development",
+      "prompt": "Welche Farbe hat mein Sofa?",
+      "expected": {
+        "concepts": [
+          "unknown"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002122199999575969,
+      "time_s": 0.0
+    },
+    {
+      "id": "unsupported-dev-3",
+      "scenario": "unsupported-dev",
+      "split": "development",
+      "prompt": "Erzähle mir meine geheime Kontonummer.",
+      "expected": {
+        "concepts": [
+          "unknown"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0023874999997133273,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-filler-composition-1",
+      "scenario": "holdout-filler-composition",
+      "split": "holdout",
+      "prompt": "Ach hallo, also bei mir läuft es prima, und wie geht es dir denn heute?",
+      "expected": {
+        "concepts": [
+          "greeting",
+          "positive",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:greeting",
+        "answer_missing:positive",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002552300000388641,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-filler-composition-2",
+      "scenario": "holdout-filler-composition",
+      "split": "holdout",
+      "prompt": "Ehrlich gesagt bin ich sehr zufrieden; wie sieht es bei dir aus?",
+      "expected": {
+        "concepts": [
+          "positive",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0027649000003293622,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-filler-composition-3",
+      "scenario": "holdout-filler-composition",
+      "split": "holdout",
+      "prompt": "Naja, heute geht es mir mies. Und dir so?",
+      "expected": {
+        "concepts": [
+          "negative",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:negative",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002254299999549403,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-filler-composition-4",
+      "scenario": "holdout-filler-composition",
+      "split": "holdout",
+      "prompt": "Übrigens: Ich bin total müde, geht es dir auch so?",
+      "expected": {
+        "concepts": [
+          "tired",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:tired",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0031515000000581495,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-filler-composition-5",
+      "scenario": "holdout-filler-composition",
+      "split": "holdout",
+      "prompt": "Hey! Bei mir ist alles gut. Wie fühlst du dich heute?",
+      "expected": {
+        "concepts": [
+          "greeting",
+          "positive",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:greeting",
+        "answer_missing:positive",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0019462000000203261,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-filler-composition-6",
+      "scenario": "holdout-filler-composition",
+      "split": "holdout",
+      "prompt": "Danke der Nachfrage, ich bin fröhlich. Wie geht's dir selbst?",
+      "expected": {
+        "concepts": [
+          "thanks",
+          "positive",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:thanks",
+        "answer_missing:positive",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018195000002378947,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-negation-1",
+      "scenario": "holdout-negation",
+      "split": "holdout",
+      "prompt": "Mir geht es nicht gut.",
+      "expected": {
+        "concepts": [
+          "negative"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:negative"
+      ],
+      "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+      "result": {
+        "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-011",
+            "text": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+            "source": "Alltagsgespräch / Befinden",
+            "score": 0.5858221839589315,
+            "interference": 1.171644367917863,
+            "matched_prompt": "Mir geht es heute richtig gut.",
+            "query_coverage": 0.7484893117705375
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0025759000000107335,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-negation-2",
+      "scenario": "holdout-negation",
+      "split": "holdout",
+      "prompt": "Heute fühle ich mich nicht schlecht.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0022555999994438025,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-negation-3",
+      "scenario": "holdout-negation",
+      "split": "holdout",
+      "prompt": "Nein, ich bin nicht glücklich.",
+      "expected": {
+        "concepts": [
+          "negative"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:negative",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.001957800000127463,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-negation-4",
+      "scenario": "holdout-negation",
+      "split": "holdout",
+      "prompt": "Ich bin nicht traurig.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002023600000029546,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-negation-5",
+      "scenario": "holdout-negation",
+      "split": "holdout",
+      "prompt": "Mir geht es gar nicht gut, wie geht es dir?",
+      "expected": {
+        "concepts": [
+          "negative",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:negative",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0021924000002400135,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-negation-6",
+      "scenario": "holdout-negation",
+      "split": "holdout",
+      "prompt": "Nicht schlecht, und dir?",
+      "expected": {
+        "concepts": [
+          "positive",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002162000000680564,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-negation-7",
+      "scenario": "holdout-negation",
+      "split": "holdout",
+      "prompt": "Heute bin ich nicht müde.",
+      "expected": {
+        "concepts": [
+          "not_tired"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:not_tired"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0019659000008687144,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-negation-8",
+      "scenario": "holdout-negation",
+      "split": "holdout",
+      "prompt": "Ich bin nicht unzufrieden.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.00187629999982164,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-person-roles-1",
+      "scenario": "holdout-person-roles",
+      "split": "holdout",
+      "prompt": "Anna geht es gut.",
+      "expected": {
+        "concepts": [
+          "third_positive"
+        ],
+        "subject": "Anna",
+        "forbid_user_mood": true
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:third_positive"
+      ],
+      "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+      "result": {
+        "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-011",
+            "text": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+            "source": "Alltagsgespräch / Befinden",
+            "score": 0.5599982098965985,
+            "interference": 1.119996419793197,
+            "matched_prompt": "Mir geht es heute richtig gut.",
+            "query_coverage": 0.6184506625964775
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002394099999946775,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-person-roles-2",
+      "scenario": "holdout-person-roles",
+      "split": "holdout",
+      "prompt": "Anna geht es schlecht, mir geht es gut.",
+      "expected": {
+        "concepts": [
+          "third_negative",
+          "positive"
+        ],
+        "subject": "Anna"
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:third_negative",
+        "answer_missing:positive",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002624699999614677,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-person-roles-3",
+      "scenario": "holdout-person-roles",
+      "split": "holdout",
+      "prompt": "Meinem Hund geht es schlecht.",
+      "expected": {
+        "concepts": [
+          "third_negative"
+        ],
+        "subject": "Hund",
+        "forbid_user_mood": true
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:third_negative"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018009000004894915,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-person-roles-4",
+      "scenario": "holdout-person-roles",
+      "split": "holdout",
+      "prompt": "Meinem Hund geht es gut, aber ich bin traurig.",
+      "expected": {
+        "concepts": [
+          "third_positive",
+          "negative"
+        ],
+        "subject": "Hund"
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:third_positive",
+        "answer_missing:negative",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0038413000002037734,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-person-roles-5",
+      "scenario": "holdout-person-roles",
+      "split": "holdout",
+      "prompt": "Paul ist müde und ich bin zufrieden.",
+      "expected": {
+        "concepts": [
+          "third_tired",
+          "positive"
+        ],
+        "subject": "Paul"
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:third_tired",
+        "answer_missing:positive",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018739999995887047,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-person-roles-6",
+      "scenario": "holdout-person-roles",
+      "split": "holdout",
+      "prompt": "Wie geht es Anna?",
+      "expected": {
+        "concepts": [
+          "unknown"
+        ],
+        "forbid_user_mood": true
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0016581999998379615,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-short-context-1",
+      "scenario": "holdout-short-context",
+      "split": "holdout",
+      "prompt": "Guten Tag! Wie geht es dir?",
+      "expected": {
+        "concepts": [
+          "greeting",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:greeting",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0020459999996091938,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-short-context-2",
+      "scenario": "holdout-short-context",
+      "split": "holdout",
+      "prompt": "Prima, danke.",
+      "expected": {
+        "concepts": [
+          "positive",
+          "thanks"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "answer_missing:thanks",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0019513999995979248,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-short-context-3",
+      "scenario": "holdout-short-context",
+      "split": "holdout",
+      "prompt": "Du auch?",
+      "expected": {
+        "concepts": [
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0016657999995004502,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-short-context-4",
+      "scenario": "holdout-short-context",
+      "split": "holdout",
+      "prompt": "Eigentlich bin ich müde.",
+      "expected": {
+        "concepts": [
+          "tired"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:tired",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002274099999340251,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-short-context-5",
+      "scenario": "holdout-short-context",
+      "split": "holdout",
+      "prompt": "Und wie sieht es bei dir aus?",
+      "expected": {
+        "concepts": [
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0020799999992959783,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-short-context-6",
+      "scenario": "holdout-short-context",
+      "split": "holdout",
+      "prompt": "Schön, danke!",
+      "expected": {
+        "concepts": [
+          "thanks"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:thanks"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0024532999996154103,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-name-switch-1",
+      "scenario": "holdout-name-switch",
+      "split": "holdout",
+      "prompt": "Mein Name ist Meryem.",
+      "expected": {
+        "concepts": [
+          "introduce_name"
+        ],
+        "name": "Meryem"
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:introduce_name"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0021254000002954854,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-name-switch-2",
+      "scenario": "holdout-name-switch",
+      "split": "holdout",
+      "prompt": "Heute geht es mir gut, wie ist mein Name?",
+      "expected": {
+        "concepts": [
+          "positive",
+          "recall_name"
+        ],
+        "name": "Meryem"
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:recall_name"
+      ],
+      "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+      "result": {
+        "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-011",
+            "text": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+            "source": "Alltagsgespräch / Befinden",
+            "score": 0.6519834035247216,
+            "interference": 1.3039668070494432,
+            "matched_prompt": "Mir geht es heute richtig gut.",
+            "query_coverage": 0.6716960365012473
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0021188999999139924,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-name-switch-3",
+      "scenario": "holdout-name-switch",
+      "split": "holdout",
+      "prompt": "Nenn mich bitte Lukas.",
+      "expected": {
+        "concepts": [
+          "introduce_name"
+        ],
+        "name": "Lukas",
+        "forbidden_names": [
+          "Meryem"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:introduce_name"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0017864000001281966,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-name-switch-4",
+      "scenario": "holdout-name-switch",
+      "split": "holdout",
+      "prompt": "Kannst du dich noch an meinen Namen erinnern?",
+      "expected": {
+        "concepts": [
+          "recall_name"
+        ],
+        "name": "Lukas",
+        "forbidden_names": [
+          "Meryem"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:recall_name",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.00235049999992043,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-name-switch-5",
+      "scenario": "holdout-name-switch",
+      "split": "holdout",
+      "prompt": "Meine Freundin heißt Julia.",
+      "expected": {
+        "concepts": [
+          "third_person"
+        ],
+        "subject": "Julia",
+        "forbid_name_update": true
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018201000002591172,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-name-switch-6",
+      "scenario": "holdout-name-switch",
+      "split": "holdout",
+      "prompt": "Wie heiße ich jetzt?",
+      "expected": {
+        "concepts": [
+          "recall_name"
+        ],
+        "name": "Lukas",
+        "forbidden_names": [
+          "Julia"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:recall_name",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0019714999998541316,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-independent-session-1",
+      "scenario": "holdout-independent-session",
+      "split": "holdout",
+      "prompt": "Weißt du meinen Namen?",
+      "expected": {
+        "concepts": [
+          "unknown_name"
+        ],
+        "forbidden_names": [
+          "Clara",
+          "Meryem",
+          "Lukas",
+          "Julia"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:unknown_name"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002743900000496069,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-independent-session-2",
+      "scenario": "holdout-independent-session",
+      "split": "holdout",
+      "prompt": "Ich heiße Özlem.",
+      "expected": {
+        "concepts": [
+          "introduce_name"
+        ],
+        "name": "Özlem"
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:introduce_name"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.00219569999990199,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-independent-session-3",
+      "scenario": "holdout-independent-session",
+      "split": "holdout",
+      "prompt": "Wie ist mein Name?",
+      "expected": {
+        "concepts": [
+          "recall_name"
+        ],
+        "name": "Özlem"
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:recall_name",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002187400000366324,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-punctuation-case-1",
+      "scenario": "holdout-punctuation-case",
+      "split": "holdout",
+      "prompt": "HALLO!!! mir geht es GUT, UND DIR???",
+      "expected": {
+        "concepts": [
+          "greeting",
+          "positive",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:greeting",
+        "answer_missing:positive",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0019238000004406786,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-punctuation-case-2",
+      "scenario": "holdout-punctuation-case",
+      "split": "holdout",
+      "prompt": "mir geht's gut… wie geht’s dir denn?",
+      "expected": {
+        "concepts": [
+          "positive",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018968000003951602,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-punctuation-case-3",
+      "scenario": "holdout-punctuation-case",
+      "split": "holdout",
+      "prompt": "Ähm — ich bin traurig; wie geht es dir?",
+      "expected": {
+        "concepts": [
+          "negative",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:negative",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0019003000006705406,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-punctuation-case-4",
+      "scenario": "holdout-punctuation-case",
+      "split": "holdout",
+      "prompt": "Gut & dir?",
+      "expected": {
+        "concepts": [
+          "positive",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002053199999863864,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-punctuation-case-5",
+      "scenario": "holdout-punctuation-case",
+      "split": "holdout",
+      "prompt": "Mir geht es gut :) Und dir?",
+      "expected": {
+        "concepts": [
+          "positive",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive"
+      ],
+      "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+      "result": {
+        "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-007",
+            "text": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+            "source": "Alltagsgespräch / Begrüßung",
+            "score": 0.8224144482999943,
+            "interference": 1.6448288965999887,
+            "matched_prompt": "Wie geht es dir?",
+            "query_coverage": 0.659719763780477
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002101300000504125,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-mixed-social-1",
+      "scenario": "holdout-mixed-social",
+      "split": "holdout",
+      "prompt": "Hi und danke, dass du da bist. Mir geht es gut!",
+      "expected": {
+        "concepts": [
+          "greeting",
+          "thanks",
+          "positive"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:greeting",
+        "answer_missing:thanks",
+        "answer_missing:positive",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.00349129999995057,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-mixed-social-2",
+      "scenario": "holdout-mixed-social",
+      "split": "holdout",
+      "prompt": "Mir geht es schlecht. Danke fürs Zuhören.",
+      "expected": {
+        "concepts": [
+          "negative",
+          "thanks"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:negative",
+        "answer_missing:thanks",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002417800000330317,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-mixed-social-3",
+      "scenario": "holdout-mixed-social",
+      "split": "holdout",
+      "prompt": "Ich bin zufrieden, danke und bis später!",
+      "expected": {
+        "concepts": [
+          "positive",
+          "thanks",
+          "farewell"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "answer_missing:thanks",
+        "answer_missing:farewell",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0019781000000875792,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-mixed-social-4",
+      "scenario": "holdout-mixed-social",
+      "split": "holdout",
+      "prompt": "Hallo, wie geht es dir? Danke schon mal.",
+      "expected": {
+        "concepts": [
+          "greeting",
+          "assistant_status",
+          "thanks"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:greeting",
+        "answer_missing:assistant_status",
+        "answer_missing:thanks",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0017907999999806634,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-mixed-social-5",
+      "scenario": "holdout-mixed-social",
+      "split": "holdout",
+      "prompt": "Müde bin ich, aber danke der Nachfrage.",
+      "expected": {
+        "concepts": [
+          "tired",
+          "thanks"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:tired",
+        "answer_missing:thanks",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0024859999994077953,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-unknown-facts-1",
+      "scenario": "holdout-unknown-facts",
+      "split": "holdout",
+      "prompt": "Wie ist mein Passwort?",
+      "expected": {
+        "concepts": [
+          "unknown"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002088500000354543,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-unknown-facts-2",
+      "scenario": "holdout-unknown-facts",
+      "split": "holdout",
+      "prompt": "Welche Temperatur hat es gerade in Reykjavík?",
+      "expected": {
+        "concepts": [
+          "unknown"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0021972000004097936,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-unknown-facts-3",
+      "scenario": "holdout-unknown-facts",
+      "split": "holdout",
+      "prompt": "Wann landet Flug XY9999 heute?",
+      "expected": {
+        "concepts": [
+          "unknown"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0023307999999815365,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-unknown-facts-4",
+      "scenario": "holdout-unknown-facts",
+      "split": "holdout",
+      "prompt": "Was hat mein Nachbar gestern gegessen?",
+      "expected": {
+        "concepts": [
+          "unknown"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002158400000553229,
+      "time_s": 0.0
+    },
+    {
+      "id": "holdout-unknown-facts-5",
+      "scenario": "holdout-unknown-facts",
+      "split": "holdout",
+      "prompt": "Wer hat im Jahr 2080 die Wahl gewonnen?",
+      "expected": {
+        "concepts": [
+          "unknown"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0021924000002400135,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-context-absent-1",
+      "scenario": "stress-context-absent",
+      "split": "stress",
+      "prompt": "Und du?",
+      "expected": {
+        "concepts": [
+          "clarification"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0020343999995020567,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-context-absent-2",
+      "scenario": "stress-context-absent",
+      "split": "stress",
+      "prompt": "Und dir?",
+      "expected": {
+        "concepts": [
+          "clarification"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:clarification"
+      ],
+      "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+      "result": {
+        "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-007",
+            "text": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+            "source": "Alltagsgespräch / Begrüßung",
+            "score": 0.6917043919818885,
+            "interference": 1.383408783963777,
+            "matched_prompt": "Wie geht es dir?",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.001750499999616295,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-context-absent-3",
+      "scenario": "stress-context-absent",
+      "split": "stress",
+      "prompt": "Du auch?",
+      "expected": {
+        "concepts": [
+          "clarification"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0015428000006068032,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-malformed-1",
+      "scenario": "stress-malformed",
+      "split": "stress",
+      "prompt": "dir gut es wie und geht mir?",
+      "expected": {
+        "concepts": [
+          "clarification"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:clarification"
+      ],
+      "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+      "result": {
+        "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-007",
+            "text": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+            "source": "Alltagsgespräch / Begrüßung",
+            "score": 0.8224144482999943,
+            "interference": 1.6448288965999887,
+            "matched_prompt": "Wie geht es dir?",
+            "query_coverage": 0.659719763780477
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002074400000310561,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-malformed-2",
+      "scenario": "stress-malformed",
+      "split": "stress",
+      "prompt": "wie wie wie geht es wer?",
+      "expected": {
+        "concepts": [
+          "clarification"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:clarification"
+      ],
+      "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+      "result": {
+        "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-007",
+            "text": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+            "source": "Alltagsgespräch / Begrüßung",
+            "score": 0.7212707398464031,
+            "interference": 1.4425414796928062,
+            "matched_prompt": "Wie geht es dir?",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0020365999998830375,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-malformed-3",
+      "scenario": "stress-malformed",
+      "split": "stress",
+      "prompt": "asdkj qweui zxcvb",
+      "expected": {
+        "concepts": [
+          "clarification"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0035795999992842553,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-malformed-4",
+      "scenario": "stress-malformed",
+      "split": "stress",
+      "prompt": "???",
+      "expected": {
+        "concepts": [
+          "clarification"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002210699999523058,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-malformed-5",
+      "scenario": "stress-malformed",
+      "split": "stress",
+      "prompt": "Wasser Uhr laut schnell weshalb?",
+      "expected": {
+        "concepts": [
+          "clarification"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018061000000670901,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-malformed-6",
+      "scenario": "stress-malformed",
+      "split": "stress",
+      "prompt": "Und wie geht es dem?",
+      "expected": {
+        "concepts": [
+          "clarification"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:clarification"
+      ],
+      "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+      "result": {
+        "answer": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-007",
+            "text": "Ich bin bereit für unser Gespräch. Wie geht es dir heute?",
+            "source": "Alltagsgespräch / Begrüßung",
+            "score": 0.7212707398464031,
+            "interference": 1.4425414796928062,
+            "matched_prompt": "Wie geht es dir?",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0027769999996962724,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-question-scope-1",
+      "scenario": "stress-question-scope",
+      "split": "stress",
+      "prompt": "Warum geht es mir gut?",
+      "expected": {
+        "concepts": [
+          "unknown_reason"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:unknown_reason"
+      ],
+      "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+      "result": {
+        "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-011",
+            "text": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+            "source": "Alltagsgespräch / Befinden",
+            "score": 0.6901166794085413,
+            "interference": 1.3802333588170825,
+            "matched_prompt": "Mir geht es heute richtig gut.",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002756200000476383,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-question-scope-2",
+      "scenario": "stress-question-scope",
+      "split": "stress",
+      "prompt": "Wann geht es mir wieder gut?",
+      "expected": {
+        "concepts": [
+          "unknown_reason"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:unknown_reason"
+      ],
+      "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+      "result": {
+        "answer": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-011",
+            "text": "Das klingt schön. Gab es heute einen besonderen Moment, der dir gutgetan hat?",
+            "source": "Alltagsgespräch / Befinden",
+            "score": 0.5566839092810488,
+            "interference": 1.1133678185620977,
+            "matched_prompt": "Mir geht es heute richtig gut.",
+            "query_coverage": 0.701155751062941
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002793499999825144,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-question-scope-3",
+      "scenario": "stress-question-scope",
+      "split": "stress",
+      "prompt": "Wird es Anna morgen gut gehen?",
+      "expected": {
+        "concepts": [
+          "unknown"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.003031600000213075,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-question-scope-4",
+      "scenario": "stress-question-scope",
+      "split": "stress",
+      "prompt": "Ich weiß nicht, ob es mir gut geht.",
+      "expected": {
+        "concepts": [
+          "uncertain"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0021200999999564374,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-question-scope-5",
+      "scenario": "stress-question-scope",
+      "split": "stress",
+      "prompt": "Mir geht es gut oder vielleicht auch nicht.",
+      "expected": {
+        "concepts": [
+          "uncertain"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018371000005572569,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-question-scope-6",
+      "scenario": "stress-question-scope",
+      "split": "stress",
+      "prompt": "Wenn es mir gut geht, bin ich draußen.",
+      "expected": {
+        "concepts": [
+          "conditional"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018798000000970205,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-question-scope-7",
+      "scenario": "stress-question-scope",
+      "split": "stress",
+      "prompt": "Ich wünschte, mir ginge es gut.",
+      "expected": {
+        "concepts": [
+          "negative"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:negative",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018883000002460903,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-role-and-negation-1",
+      "scenario": "stress-role-and-negation",
+      "split": "stress",
+      "prompt": "Du bist traurig.",
+      "expected": {
+        "concepts": [
+          "assistant_status"
+        ],
+        "forbid_user_mood": true
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0017582999998921878,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-role-and-negation-2",
+      "scenario": "stress-role-and-negation",
+      "split": "stress",
+      "prompt": "Dir geht es nicht gut, oder?",
+      "expected": {
+        "concepts": [
+          "assistant_status"
+        ],
+        "forbid_user_mood": true
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0031532000002698624,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-role-and-negation-3",
+      "scenario": "stress-role-and-negation",
+      "split": "stress",
+      "prompt": "Nicht Anna ist müde, sondern ich.",
+      "expected": {
+        "concepts": [
+          "tired"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:tired",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0028149999998277053,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-role-and-negation-4",
+      "scenario": "stress-role-and-negation",
+      "split": "stress",
+      "prompt": "Anna ist nicht müde, ich aber schon.",
+      "expected": {
+        "concepts": [
+          "tired",
+          "third_not_tired"
+        ],
+        "subject": "Anna"
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:tired",
+        "answer_missing:third_not_tired",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0023022000004857546,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-role-and-negation-5",
+      "scenario": "stress-role-and-negation",
+      "split": "stress",
+      "prompt": "Mein Hund ist nicht traurig.",
+      "expected": {
+        "concepts": [
+          "third_positive"
+        ],
+        "subject": "Hund",
+        "forbid_user_mood": true
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:third_positive"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0022969999999986612,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-role-and-negation-6",
+      "scenario": "stress-role-and-negation",
+      "split": "stress",
+      "prompt": "Gut geht es mir nicht, dir vielleicht?",
+      "expected": {
+        "concepts": [
+          "negative",
+          "assistant_status"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:negative",
+        "answer_missing:assistant_status",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002128699999957462,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-role-and-negation-7",
+      "scenario": "stress-role-and-negation",
+      "split": "stress",
+      "prompt": "Mir geht es schlecht, nein, eigentlich gut.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ],
+        "forbid_negative": true
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0021295000005920883,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-session-isolation-a-1",
+      "scenario": "stress-session-isolation-a",
+      "split": "stress",
+      "prompt": "Ich heiße Xaver.",
+      "expected": {
+        "concepts": [
+          "introduce_name"
+        ],
+        "name": "Xaver"
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:introduce_name"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0020480000002862653,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-session-isolation-a-2",
+      "scenario": "stress-session-isolation-a",
+      "split": "stress",
+      "prompt": "Merkst du dir meinen Namen?",
+      "expected": {
+        "concepts": [
+          "recall_name"
+        ],
+        "name": "Xaver"
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:recall_name",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0023279000006368733,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-session-isolation-b-1",
+      "scenario": "stress-session-isolation-b",
+      "split": "stress",
+      "prompt": "Welchen Namen habe ich dir genannt?",
+      "expected": {
+        "concepts": [
+          "unknown_name"
+        ],
+        "forbidden_names": [
+          "Xaver",
+          "Clara",
+          "Özlem"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:unknown_name"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0017438999993828475,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-session-isolation-b-2",
+      "scenario": "stress-session-isolation-b",
+      "split": "stress",
+      "prompt": "Ich bin froh, dass du da bist.",
+      "expected": {
+        "concepts": [
+          "positive"
+        ],
+        "forbid_name_update": true
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:positive",
+        "unnecessary_abstention"
+      ],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0020694999993793317,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-session-isolation-b-3",
+      "scenario": "stress-session-isolation-b",
+      "split": "stress",
+      "prompt": "Wie heiße ich?",
+      "expected": {
+        "concepts": [
+          "unknown_name"
+        ],
+        "forbidden_names": [
+          "Froh",
+          "Xaver",
+          "Clara",
+          "Özlem"
+        ]
+      },
+      "passed": false,
+      "failures": [
+        "answer_missing:unknown_name"
+      ],
+      "answer": "Dann darf der Tag vielleicht etwas langsamer sein. Gibt es bei dir einen angenehm kühlen Ort?",
+      "result": {
+        "answer": "Dann darf der Tag vielleicht etwas langsamer sein. Gibt es bei dir einen angenehm kühlen Ort?",
+        "abstained": false,
+        "matches": [
+          {
+            "id": "chat-064",
+            "text": "Dann darf der Tag vielleicht etwas langsamer sein. Gibt es bei dir einen angenehm kühlen Ort?",
+            "source": "Alltagsgespräch / Wetter und Umgebung",
+            "score": 0.3784224402251587,
+            "interference": 0.7568448804503174,
+            "matched_prompt": "Es ist so heiß, dass ich kaum Lust habe, etwas zu tun.",
+            "query_coverage": 1.0
+          }
+        ],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018522000000302796,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-independent-unsupported-1",
+      "scenario": "stress-independent-unsupported",
+      "split": "stress",
+      "prompt": "Schreib ein neues Gedicht über ein blaues Einhorn.",
+      "expected": {
+        "concepts": [
+          "unknown"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002093600000080187,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-independent-unsupported-2",
+      "scenario": "stress-independent-unsupported",
+      "split": "stress",
+      "prompt": "Beweise die Riemannsche Vermutung.",
+      "expected": {
+        "concepts": [
+          "unknown"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018369999997958075,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-independent-unsupported-3",
+      "scenario": "stress-independent-unsupported",
+      "split": "stress",
+      "prompt": "Berechne meine genauen Gefühle aus den Schwingungen.",
+      "expected": {
+        "concepts": [
+          "unknown"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.002075700000204961,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-independent-unsupported-4",
+      "scenario": "stress-independent-unsupported",
+      "split": "stress",
+      "prompt": "Was denke ich gerade?",
+      "expected": {
+        "concepts": [
+          "unknown"
+        ]
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.0018085000001519802,
+      "time_s": 0.0
+    },
+    {
+      "id": "stress-independent-unsupported-5",
+      "scenario": "stress-independent-unsupported",
+      "split": "stress",
+      "prompt": "Ich bin nicht dein Benutzer, sondern Marie.",
+      "expected": {
+        "concepts": [
+          "clarification"
+        ],
+        "forbid_name_update": true
+      },
+      "passed": true,
+      "failures": [],
+      "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+      "result": {
+        "answer": "Das habe ich noch nicht sicher verstanden. Kannst du es anders formulieren?",
+        "abstained": true,
+        "matches": [],
+        "method": "coherent_fourier_interference_then_inverse_standing_wave",
+        "feature_mode": "morphology",
+        "retrieval_policy": "coverage",
+        "time_s": 0.0,
+        "note": "Extraktive Antwort aus dem Wellenspeicher; keine frei gelernte Sprachgenerierung."
+      },
+      "context_before": null,
+      "context_after": null,
+      "novel_complete_answer": false,
+      "elapsed_s": 0.003327500000523287,
+      "time_s": 0.0
+    }
+  ]
+}

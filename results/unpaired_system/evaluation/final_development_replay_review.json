@@ -1,0 +1,198 @@
+{
+  "run_sha256": "a26fe1d118144472d4e016861acd6cb7271a6935736c3068ca2524a8e39f6cf0",
+  "review": "Independent AI-agent review, not a human study. Same predeclared adequacy criteria as v1. A short acceptance of an explicit request can be adequate; bare repeated user emotions or wishes without an answer are partial. Quality remains separate from mere fluency and source novelty. This is a known Development replay after final freeze, not another unseen test. All20 token streams match v2; three rendered texts differ.",
+  "rows": [
+    {
+      "id": "ud01a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Natural morning greeting and wellbeing question."
+    },
+    {
+      "id": "ud01b",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Acknowledges the relaxed start and accurately answers assistant wellbeing without claiming feelings."
+    },
+    {
+      "id": "ud02a",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Only repeats exhaustion; platt capitalization corrected by final renderer; still partial."
+    },
+    {
+      "id": "ud02b",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": false,
+      "empty": false,
+      "note": "Only repeats no-new-tasks preference; final renderer introduces internal Heute capitalization; still partial."
+    },
+    {
+      "id": "ud03a",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Only repeats wish for company without offering conversation; Schreiben capitalization now correct; still partial."
+    },
+    {
+      "id": "ud03b",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Concise acceptance of listening without giving advice."
+    },
+    {
+      "id": "ud04a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Relevant question about desired reading, without fabricated book claims."
+    },
+    {
+      "id": "ud04b",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Concise acceptance of the stated non-scary/cheerful preference; no contradictory suggestion."
+    },
+    {
+      "id": "ud05a",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Asks what the user wants to cook but does not ask about available ingredients or quick preparation; partial."
+    },
+    {
+      "id": "ud05b",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Accurately repeats vegetables and meat-free preference but does not advance the cooking request; partial."
+    },
+    {
+      "id": "ud06a",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": false,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Only retains the outdoor rejection, losing boredom; nicht placement yields an awkward nonstandard sentence."
+    },
+    {
+      "id": "ud06b",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Concise acceptance of the quiet music constraint."
+    },
+    {
+      "id": "ud07a",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Bare repetition of disappointment, no sympathy or reference to the cancellation; same partial standard as v1."
+    },
+    {
+      "id": "ud07b",
+      "appropriate": false,
+      "partial": false,
+      "grammatical": false,
+      "orthography_ok": false,
+      "empty": true,
+      "note": "Empty answer, no acknowledgement that talking helps."
+    },
+    {
+      "id": "ud08a",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": false,
+      "empty": false,
+      "note": "Preserves family/person/future facts but only paraphrases the user; awkward time position, Morgen wrongly capitalized."
+    },
+    {
+      "id": "ud08b",
+      "appropriate": false,
+      "partial": true,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Only repeats nervousness, omitting the mixed feeling/reunion context; partial."
+    },
+    {
+      "id": "ud09a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Accurately identifies as a text-based assistant program."
+    },
+    {
+      "id": "ud09b",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Accurately states lack of own feelings."
+    },
+    {
+      "id": "ud10a",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Appropriate concise thanks acknowledgement."
+    },
+    {
+      "id": "ud10b",
+      "appropriate": true,
+      "partial": false,
+      "grammatical": true,
+      "orthography_ok": true,
+      "empty": false,
+      "note": "Respects farewell and ends naturally."
+    }
+  ],
+  "summary": {
+    "appropriate": 10,
+    "partial": 9,
+    "turns": 20,
+    "grammatical_nonempty": 18,
+    "orthography_ok_nonempty": 17,
+    "nonempty": 19,
+    "empty": 1,
+    "fully_appropriate_two_turn_sessions": 4
+  },
+  "exact_v2_tokens": 20,
+  "exact_v2_texts": 17
+}

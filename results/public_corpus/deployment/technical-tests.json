@@ -1,0 +1,9 @@
+{
+  "command": ".venv/Scripts/python.exe -m pytest -q",
+  "date": "2026-09-06",
+  "passed": 475,
+  "failed": 0,
+  "elapsed_seconds": 26.99,
+  "scope": "Complete repository suite including compact spectra, source conditioning, import validation, batched document waves, pagination, runtime sessions and the equivalent padded operator carrier.",
+  "language_quality_claim": false
+}

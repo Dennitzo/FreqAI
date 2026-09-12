@@ -1,0 +1,337 @@
+{
+  "run_sha256": "d7d49ace8b5580f566ba4cab0b0fe16ab4cdb76f3dc1c58e894bd1d781ea6e48",
+  "historical_references": {
+    "results\\information_corpus\\evaluation\\runtime_v3_development.json": "68fed1cc8d89677ebf73ba9b9fb9bf09440e849d2db89bd52bfcd3ff761a50d3",
+    "results\\information_corpus\\evaluation\\final_holdout.json": "3d06b8d5cf996505b3dc1c9e3fde337cc46695188980e5369d03c6cb778c46fd"
+  },
+  "review": "Independent AI-agent review against unchanged historical rubrics. Old labels no longer mean unseen performance. Empty refusal of an unknown measurement is safe but not an informative answer.",
+  "rows": [
+    {
+      "id": "id01",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": true,
+      "empty": false,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id02",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": true,
+      "empty": false,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id03",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": true,
+      "empty": false,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id04",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id05",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id06",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id07",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id08",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id09",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": true,
+      "empty": false,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id10",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id11",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id12",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id13",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id14",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id15",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id16",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id17",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id18",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id19",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "id20",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih01",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih02",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih03",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih04",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih05",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih06",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih07",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih08",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih09",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih10",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih11",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih12",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih13",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih14",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih15",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih16",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih17",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih18",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih19",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    },
+    {
+      "id": "ih20",
+      "exact_previous_text": true,
+      "exact_previous_tokens": true,
+      "correct": false,
+      "empty": true,
+      "note": "Known regression; former holdout rows are already observed."
+    }
+  ],
+  "summary": {
+    "cases": 40,
+    "correct": 4,
+    "empty": 36,
+    "exact_previous_text": 40,
+    "exact_previous_tokens": 40
+  }
+}

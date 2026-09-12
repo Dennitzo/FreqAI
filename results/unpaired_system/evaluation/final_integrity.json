@@ -1,0 +1,33 @@
+{
+  "scope": "Final evaluation and known core integrity, current ingestion changes recorded separately",
+  "created_utc": "2026-09-06T12:36:53.500137+00:00",
+  "report_sha256": "5799b0498b2b39b8197b90a05852238763f6cb052caef4e1639bf7e5d06b96f4",
+  "summary_sha256": "c9cde250a090bd5346f77a35377effb5565974a1c531af267f0d9657ad6e0f55",
+  "final_freeze_sha256": "beed5dc47e41b0e900cb2fbbcbbed71719509b05714af62f2a102f0dfc95ffe8",
+  "unchanged_core_files": [
+    "unpaired.py",
+    "unpaired_runtime.py",
+    "information.py",
+    "generation_runtime.py",
+    "features.py",
+    "spectral_ops.py",
+    "memory.py"
+  ],
+  "changed_live_files": [
+    {
+      "path": "freqai\\cli.py",
+      "frozen": "ad9d3f7b2bba6494567d406f6048cac4222aebd64862b17934a2063525fee2e1",
+      "current": "e590dc6c1e894f709cd258f1ee3300f7b54b5a3e006dc9b2ec89a73e3b682668"
+    },
+    {
+      "path": "freqai\\server.py",
+      "frozen": "74a022294287f914dafc802f92be94e20db3a5759596a3000fd519df254a85b0",
+      "current": "d08b8ee0bfa3dd724bc8360c145807f9bd53794ac0f702e7e808b1e1a4da40a1"
+    }
+  ],
+  "added_live_package_files": [
+    "freqai\\record_contract.py"
+  ],
+  "all_report_links_exist": true,
+  "all_summary_artifact_hashes_match": true
+}

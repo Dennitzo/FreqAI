@@ -1,0 +1,205 @@
+{
+  "created_at": "2026-09-06T12:22:26.827729+00:00",
+  "scope": "numerical controls on 45 authored declarations and 3 openly generated facts; not a language holdout",
+  "code_sha256": "f99d23332e3ae7dee869b93bd4fd8aa2226f3fbb1005a2a0a9640b36b4830bba",
+  "conversation_facts_sha256": "688706468d39cc203f83cd8c2f0e4b9b8f7b65261a4469d6bcfcff3c274cea5e",
+  "all_inputs_unpaired": true,
+  "optimizer_steps": 0,
+  "fitted_mixing_gains": 0,
+  "checked_prefix_time_states": 255,
+  "fft_direct_max_probability_error_after_rounding": 0.0,
+  "prompt_phase_total_variation": 0.8,
+  "phase_changes_selected_symbol": true,
+  "data_role_phase_total_variation": 0.8,
+  "data_role_phase_changes_selected_symbol": true,
+  "zero_roles_refuse_with_prose_transition_fields_intact": true,
+  "unknown_name_byte_roundtrip": "Xyrländo",
+  "unknown_name_isolated_between_sessions": true,
+  "zero_prompt_refuses": true,
+  "zero_data_responses": {
+    "Hallo": "",
+    "Wie heißt du?": "",
+    "Was ist Befinden?": ""
+  },
+  "same_inputs_rebuild_identical_coefficients": true,
+  "queries_do_not_modify_corpus_coefficients": true,
+  "no_global_session_roles_retained": true,
+  "counterfactual_responses": {
+    "Wie heißt du?": "Ich heiße Kymara.",
+    "Welche Frequenz hat das Signal Lumor?": "Das Signal Lumor hat eine Frequenz von 73 Hertz.",
+    "Welches Signal hat eine Frequenz von 19 Hertz?": "Das Signal Tavor hat eine Frequenz von 19 Hertz."
+  },
+  "model_signature": {
+    "corpus_digest": "989946a483b9b0ecc3795210b663f1b34f029197ddf7257cdbba62b217c5562c",
+    "coefficient_sha256": "5ac476768139188b5d16c0fa84c200089e090fb3c628673c75841afbc48afa71",
+    "rendering_sha256": "33e94f01ec3334ae74ce86eaa7cf7bb77e70426fc8fef92ac775eb60fd1fec94",
+    "order": 2,
+    "coefficient_rule": "sqrt(count/sum(count))",
+    "storage": {
+      "record_count": 48,
+      "statement_count": 138,
+      "vocabulary_size": 877,
+      "group_count": 158,
+      "prefix_fields": 4941,
+      "observed_edges": 7320,
+      "unaddressed_statement_count": 0,
+      "context_surface_forms": 16,
+      "complex_coefficient_bytes": 117120,
+      "support_index_bytes": 58560,
+      "numerical_payload_bytes": 192216,
+      "no_gradient_optimization": true,
+      "no_qa_pairs": true,
+      "excludes": "Python objects, token strings and temporary compilation counts",
+      "declarative_facts": 74,
+      "lexical_role_bytes": 16536,
+      "explicit_grammar": true,
+      "optimizer_steps": 0,
+      "requires_question_answer_pairs": false
+    },
+    "declaration_role_sha256": "9d46309ea92f73b22399c116226c7dc87a9578b600f9c50538564ec651fee047",
+    "grammar_version": "unpaired_roles_v2"
+  },
+  "examples": [
+    {
+      "prompt": "Hallo",
+      "answer": "Hallo! Wie geht es dir?",
+      "tokenization": {
+        "budget_unit": "spectral_symbols_including_punctuation_utf8_bytes_and_eos",
+        "decoder_steps": 8,
+        "emitted_symbols": 7,
+        "utf8_byte_symbols": 0,
+        "utf8_truncated_bytes": 0,
+        "utf8_complete": true,
+        "rendered_lexical_tokens": 7,
+        "unknown_prompt_words": "lossless_fixed_utf8_byte_modes_scoped_to_session"
+      },
+      "whole_answer_occurs_in_input": false
+    },
+    {
+      "prompt": "Wie heißt du?",
+      "answer": "Ich heiße FreqAI.",
+      "tokenization": {
+        "budget_unit": "spectral_symbols_including_punctuation_utf8_bytes_and_eos",
+        "decoder_steps": 5,
+        "emitted_symbols": 4,
+        "utf8_byte_symbols": 0,
+        "utf8_truncated_bytes": 0,
+        "utf8_complete": true,
+        "rendered_lexical_tokens": 4,
+        "unknown_prompt_words": "lossless_fixed_utf8_byte_modes_scoped_to_session"
+      },
+      "whole_answer_occurs_in_input": false
+    },
+    {
+      "prompt": "Was kannst du?",
+      "answer": "Ich kann Informationstexte verarbeiten und Begriffe beschreiben.",
+      "tokenization": {
+        "budget_unit": "spectral_symbols_including_punctuation_utf8_bytes_and_eos",
+        "decoder_steps": 9,
+        "emitted_symbols": 8,
+        "utf8_byte_symbols": 0,
+        "utf8_truncated_bytes": 0,
+        "utf8_complete": true,
+        "rendered_lexical_tokens": 8,
+        "unknown_prompt_words": "lossless_fixed_utf8_byte_modes_scoped_to_session"
+      },
+      "whole_answer_occurs_in_input": false
+    },
+    {
+      "prompt": "Hast du Gefühle?",
+      "answer": "Ich habe keine eigenen Gefühle.",
+      "tokenization": {
+        "budget_unit": "spectral_symbols_including_punctuation_utf8_bytes_and_eos",
+        "decoder_steps": 7,
+        "emitted_symbols": 6,
+        "utf8_byte_symbols": 0,
+        "utf8_truncated_bytes": 0,
+        "utf8_complete": true,
+        "rendered_lexical_tokens": 6,
+        "unknown_prompt_words": "lossless_fixed_utf8_byte_modes_scoped_to_session"
+      },
+      "whole_answer_occurs_in_input": false
+    },
+    {
+      "prompt": "Mir geht es gut, wie geht es dir?",
+      "answer": "Dir geht es gut. Ich habe kein menschliches Befinden.",
+      "tokenization": {
+        "budget_unit": "spectral_symbols_including_punctuation_utf8_bytes_and_eos",
+        "decoder_steps": 12,
+        "emitted_symbols": 11,
+        "utf8_byte_symbols": 0,
+        "utf8_truncated_bytes": 0,
+        "utf8_complete": true,
+        "rendered_lexical_tokens": 11,
+        "unknown_prompt_words": "lossless_fixed_utf8_byte_modes_scoped_to_session"
+      },
+      "whole_answer_occurs_in_input": false
+    },
+    {
+      "prompt": "Ich bin müde.",
+      "answer": "Du bist müde.",
+      "tokenization": {
+        "budget_unit": "spectral_symbols_including_punctuation_utf8_bytes_and_eos",
+        "decoder_steps": 9,
+        "emitted_symbols": 8,
+        "utf8_byte_symbols": 5,
+        "utf8_truncated_bytes": 0,
+        "utf8_complete": true,
+        "rendered_lexical_tokens": 4,
+        "unknown_prompt_words": "lossless_fixed_utf8_byte_modes_scoped_to_session"
+      },
+      "whole_answer_occurs_in_input": false
+    },
+    {
+      "prompt": "Ich heiße Xyrländo.",
+      "answer": "Du heißt Xyrländo.",
+      "tokenization": {
+        "budget_unit": "spectral_symbols_including_punctuation_utf8_bytes_and_eos",
+        "decoder_steps": 13,
+        "emitted_symbols": 12,
+        "utf8_byte_symbols": 9,
+        "utf8_truncated_bytes": 0,
+        "utf8_complete": true,
+        "rendered_lexical_tokens": 4,
+        "unknown_prompt_words": "lossless_fixed_utf8_byte_modes_scoped_to_session"
+      },
+      "whole_answer_occurs_in_input": false
+    },
+    {
+      "prompt": "Welche Frequenz hat das Signal Lumor?",
+      "answer": "Das Signal Lumor hat eine Frequenz von 19 Hertz.",
+      "tokenization": {
+        "budget_unit": "spectral_symbols_including_punctuation_utf8_bytes_and_eos",
+        "decoder_steps": 11,
+        "emitted_symbols": 10,
+        "utf8_byte_symbols": 0,
+        "utf8_truncated_bytes": 0,
+        "utf8_complete": true,
+        "rendered_lexical_tokens": 10,
+        "unknown_prompt_words": "lossless_fixed_utf8_byte_modes_scoped_to_session"
+      },
+      "whole_answer_occurs_in_input": true
+    },
+    {
+      "prompt": "Welches Signal hat eine Frequenz von 73 Hertz?",
+      "answer": "Das Signal Tavor hat eine Frequenz von 73 Hertz.",
+      "tokenization": {
+        "budget_unit": "spectral_symbols_including_punctuation_utf8_bytes_and_eos",
+        "decoder_steps": 11,
+        "emitted_symbols": 10,
+        "utf8_byte_symbols": 0,
+        "utf8_truncated_bytes": 0,
+        "utf8_complete": true,
+        "rendered_lexical_tokens": 10,
+        "unknown_prompt_words": "lossless_fixed_utf8_byte_modes_scoped_to_session"
+      },
+      "whole_answer_occurs_in_input": true
+    }
+  ],
+  "limitations": [
+    "Semantic role binding and speech-act grammar are explicit human-authored algorithms.",
+    "Passing numerical controls does not establish general conversation ability or factual coverage.",
+    "Unknown prompt words consume UTF-8 byte symbols; token budgets are not always word budgets.",
+    "Declarations retain ordered predicate arguments; grammar composes responses without stored full-answer candidates."
+  ]
+}

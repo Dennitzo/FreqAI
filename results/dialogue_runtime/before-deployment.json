@@ -1,0 +1,11 @@
+{
+  "backup": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\backups\\before-dialogue-20260906T075539Z.sqlite3",
+  "created_utc": "20260906T075539Z",
+  "counts": {
+    "documents": 120,
+    "query_history": 10,
+    "document_archive": 48
+  },
+  "integrity_check": "ok",
+  "documents_sha256": "8ac2c2496d8395e4d76905e42c0453679224ff8bd22a0ad4ebb1d327722fc697"
+}
