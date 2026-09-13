@@ -5,13 +5,32 @@ import json
 
 import numpy as np
 
-from experiments.run_extended import EXTENSION, QUERIES, load_inputs, read_jsonl
+from experiments.run_extended import validate_inputs
 from freqai.codec import decode_coefficients, decode_text, modal_state, recover_coefficients
 from freqai.memory import Document, WaveMemory
 
 
+def extension_inputs():
+    """Fresh numerical fixtures, not copies of the removed training pairs."""
+    extension = [{"id": f"station-{index:03}",
+                  "text": f"Die Station Standort{index:03} besitzt {index + 7} Messgeräte für Größe α.",
+                  "source": f"Synthetischer Prüfbereich {index // 10}"} for index in range(120)]
+    cases = []
+    for split, indices, nulls in (("development", range(50), 10), ("holdout", range(50, 120), 14),
+                                  ("stress", range(0), 20)):
+        for index in indices:
+            cases.append({"id": f"{split}-{index}", "split": split, "group": "known",
+                          "prompt": f"Welche Messgeräte besitzt Standort{index:03}?",
+                          "expected_id": f"station-{index:03}"})
+        for index in range(nulls):
+            cases.append({"id": f"{split}-null-{index}", "split": split, "group": "null",
+                          "prompt": f"Unbekannter Prüfgegenstand Fremdort{index:03}?", "expected_id": None})
+    return [], extension, cases
+
+
 def test_extension_is_additional_diverse_and_has_separate_holdout():
-    base, extension, cases = load_inputs()
+    base, extension, cases = extension_inputs()
+    validate_inputs(base, extension, cases)
     assert len(extension) == 120
     assert not ({item["id"] for item in base} & {item["id"] for item in extension})
     assert len({item["source"] for item in extension}) == 12
@@ -25,7 +44,7 @@ def test_extension_is_additional_diverse_and_has_separate_holdout():
 def test_extension_payloads_survive_full_quadrature_recovery():
     from freqai.codec import encode_text
 
-    for document in read_jsonl(EXTENSION):
+    for document in extension_inputs()[1]:
         packet = encode_text(document["text"])
         for time_s in (.017, 1e12):
             q, p = modal_state(packet, time_s)
@@ -66,14 +85,14 @@ def test_120_incremental_additions_preserve_previous_modes_and_return_new_payloa
 
 
 def test_incremental_and_full_construction_have_same_numerical_lookup():
-    extension = [Document(**item) for item in read_jsonl(EXTENSION)]
+    extension = [Document(**item) for item in extension_inputs()[1]]
     initial = WaveMemory(extension[:40], dimensions=1024, feature_mode="morphology",
                          retrieval_policy="coverage", min_coverage=.6)
     appended = initial.with_documents_added(extension[40:])
     rebuilt = WaveMemory(extension, dimensions=1024, feature_mode="morphology",
                          retrieval_policy="coverage", min_coverage=.6)
     np.testing.assert_array_equal(appended.spectra, rebuilt.spectra)
-    cases = json.loads(QUERIES.read_text(encoding="utf-8"))["cases"]
+    cases = extension_inputs()[2]
     # Only development prompts are used by regression tests before freeze.
     for case in cases:
         if case["split"] != "development":

@@ -1,0 +1,291 @@
+{
+  "cold": {
+    "port": 8765,
+    "max_gib": 12,
+    "launcher_pid": 24440,
+    "health": {
+      "ok": true,
+      "running": true,
+      "ticks": 1,
+      "error": null,
+      "document_count": 569210,
+      "revision": 11,
+      "live_revision": 11,
+      "compiler_ready": true,
+      "frame_ms": 964.8156999974162,
+      "compute": {
+        "requested_backend": "auto",
+        "cuda_probed": false,
+        "cuda_available": null,
+        "cuda_devices": [],
+        "fallback_reason": null,
+        "last_backend": null,
+        "precision": "float64/complex128",
+        "last_backend_by_operation": {},
+        "cpu_workers": 32,
+        "cuda_min_elements": 262144,
+        "completed_operations": {},
+        "device_completed_operations": {}
+      },
+      "parallel": {
+        "logical_cores": 32,
+        "physical_cores": 16,
+        "workers": 32,
+        "threads_per_worker": 1,
+        "parallel_enabled": true,
+        "in_worker": false,
+        "pool_active": true,
+        "pool_workers": 32,
+        "pool_failed": false,
+        "pool_error": null
+      },
+      "compiler": {
+        "state": "ready",
+        "cache": "incremental",
+        "scope": "paged_full_corpus",
+        "compiled_documents": 569210,
+        "reused_documents": 0
+      }
+    },
+    "elapsed_s": 575.9690000000046,
+    "peak_tree_rss_gib": 2.3609962463378906,
+    "child_pids": [
+      35120,
+      38296,
+      41008,
+      41832,
+      39652,
+      42744,
+      42108,
+      38904,
+      28484,
+      36868,
+      32556,
+      33388,
+      32056,
+      38712,
+      17824,
+      32828,
+      27388,
+      30176,
+      32584,
+      14932,
+      27996,
+      5376,
+      8344,
+      38376,
+      31104,
+      11116,
+      36024,
+      31076,
+      6604,
+      24220,
+      15464,
+      6740,
+      37700,
+      29736,
+      6364
+    ],
+    "success": true
+  },
+  "warm": {
+    "port": 8765,
+    "max_gib": 12,
+    "launcher_pid": 33360,
+    "health": {
+      "ok": true,
+      "running": true,
+      "ticks": 5,
+      "error": null,
+      "document_count": 569210,
+      "revision": 11,
+      "live_revision": 11,
+      "compiler_ready": true,
+      "frame_ms": 167.9699000014807,
+      "compute": {
+        "requested_backend": "auto",
+        "cuda_probed": true,
+        "cuda_available": true,
+        "cuda_devices": [
+          {
+            "id": 0,
+            "name": "Quadro RTX 8000",
+            "total_memory_bytes": 51539279872
+          },
+          {
+            "id": 1,
+            "name": "Quadro RTX 8000",
+            "total_memory_bytes": 51539279872
+          }
+        ],
+        "fallback_reason": null,
+        "last_backend": "cuda",
+        "precision": "float64/complex128",
+        "last_backend_by_operation": {
+          "wave_snapshot": "cuda"
+        },
+        "cpu_workers": 32,
+        "cuda_min_elements": 262144,
+        "completed_operations": {
+          "cuda_wave_snapshot": 5
+        },
+        "device_completed_operations": {
+          "0": 5,
+          "1": 5
+        }
+      },
+      "parallel": {
+        "logical_cores": 32,
+        "physical_cores": 16,
+        "workers": 32,
+        "threads_per_worker": 1,
+        "parallel_enabled": true,
+        "in_worker": false,
+        "pool_active": false,
+        "pool_workers": 0,
+        "pool_failed": false,
+        "pool_error": null
+      },
+      "compiler": {
+        "state": "ready",
+        "cache": "hit",
+        "scope": "paged_full_corpus",
+        "compiled_documents": 0,
+        "reused_documents": 569210
+      }
+    },
+    "elapsed_s": 30.31300000000192,
+    "peak_tree_rss_gib": 0.6461677551269531,
+    "child_pids": [
+      28296,
+      27944,
+      28700
+    ],
+    "success": true
+  },
+  "cache_audit": {
+    "documents_verified": 569210,
+    "full_text_bytes": 2466967143,
+    "all_passages_exact": true,
+    "packet_count": 569210,
+    "elapsed_s": 36.39100000000326
+  },
+  "runtime": {
+    "health": {
+      "ok": true,
+      "running": true,
+      "ticks": 527,
+      "error": null,
+      "document_count": 569210,
+      "revision": 11,
+      "live_revision": 11,
+      "compiler_ready": true,
+      "frame_ms": 155.79040000011446,
+      "compute": {
+        "requested_backend": "auto",
+        "cuda_probed": true,
+        "cuda_available": true,
+        "cuda_devices": [
+          {
+            "id": 0,
+            "name": "Quadro RTX 8000",
+            "total_memory_bytes": 51539279872
+          },
+          {
+            "id": 1,
+            "name": "Quadro RTX 8000",
+            "total_memory_bytes": 51539279872
+          }
+        ],
+        "fallback_reason": null,
+        "last_backend": "cuda",
+        "precision": "float64/complex128",
+        "last_backend_by_operation": {
+          "wave_snapshot": "cuda"
+        },
+        "cpu_workers": 32,
+        "cuda_min_elements": 262144,
+        "completed_operations": {
+          "cuda_wave_snapshot": 527
+        },
+        "device_completed_operations": {
+          "0": 527,
+          "1": 527
+        }
+      },
+      "parallel": {
+        "logical_cores": 32,
+        "physical_cores": 16,
+        "workers": 32,
+        "threads_per_worker": 1,
+        "parallel_enabled": true,
+        "in_worker": false,
+        "pool_active": false,
+        "pool_workers": 0,
+        "pool_failed": false,
+        "pool_error": null
+      },
+      "compiler": {
+        "state": "ready",
+        "cache": "hit",
+        "scope": "paged_full_corpus",
+        "compiled_documents": 0,
+        "reused_documents": 569210
+      }
+    },
+    "frame_ms_samples": [
+      162.66729999915697,
+      186.5890000044601,
+      152.32699999614852,
+      141.81599999574246,
+      156.22830000211252,
+      148.80970000376692,
+      147.19099999638274,
+      155.79040000011446
+    ],
+    "tree_rss_gib": 0.6461181640625,
+    "default_document_page_size": 50
+  },
+  "tests": {
+    "passed": 462,
+    "elapsed_s": 29.76,
+    "log": "runtime/paged-final-tests.log"
+  },
+  "cache_bytes": 25596080128,
+  "decoder_limitations": [
+    "Retrieval of bounded passages precedes generation; no global full-corpus language model.",
+    "Browser unit follow-up still returned a tautology despite correct subject binding."
+  ],
+  "ui_test_queries": [
+    {
+      "sequence": 137,
+      "prompt": "Wie heißt du?",
+      "answer": "Ich heiße FreqAI.",
+      "elapsed_ms": 2482.21360000025
+    },
+    {
+      "sequence": 138,
+      "prompt": "Was ist eine Frequenz?",
+      "answer": "Die Frequenz ist der Kehrwert der Periodendauer.",
+      "elapsed_ms": 999.1250000020955
+    },
+    {
+      "sequence": 139,
+      "prompt": "Und welche Einheit hat sie?",
+      "answer": "In der Praxis findet nicht immer eine saubere Unterscheidung zwischen Größenwert bzw. Einheit einer physikalischen Größe einerseits und bloßen Zusatzangaben andererseits statt, sodass es zu Vermischungen kommt.",
+      "elapsed_ms": 1280.1363000035053
+    },
+    {
+      "sequence": 140,
+      "prompt": "Was ist eine Frequenz?",
+      "answer": "Die Frequenz ist der Kehrwert der Periodendauer.",
+      "elapsed_ms": 204.73130000027595
+    },
+    {
+      "sequence": 141,
+      "prompt": "Und welche Einheit hat sie?",
+      "answer": "Die Einheit der Frequenz ist die SI-Einheit der Frequenz.",
+      "elapsed_ms": 359.1253999984474
+    }
+  ]
+}

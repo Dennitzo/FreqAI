@@ -175,7 +175,9 @@ def main(argv: list[str] | None = None) -> None:
             print(json.dumps(result, ensure_ascii=False, indent=2) if args.json else result["answer"])
         elif args.command == "serve":
             from .server import serve as serve_dashboard
-            migration = store.migrate_information_only()
+            from .progress import phase
+            with phase('Start: zentrales Informationsschema prüfen'):
+                migration = store.migrate_information_only()
             if migration["changed"]:
                 print(f"Informationsschema aktiviert; {migration['archived']} Alttexte zentral archiviert.", flush=True)
             if args.data:
@@ -194,8 +196,8 @@ def main(argv: list[str] | None = None) -> None:
         elif args.command == "oscillate":
             if not 0 < args.hz <= 1000 or args.duration < 0:
                 raise ValueError("hz must be in (0,1000] and duration nonnegative")
-            revision, documents = store.snapshot()
-            memory = WaveMemory(documents, **store.configuration())
+            revision = store.revision()
+            memory = store.load_memory()
             started = time.perf_counter()
             tick = 0
             while True:
@@ -203,12 +205,12 @@ def main(argv: list[str] | None = None) -> None:
                 if args.duration and elapsed >= args.duration:
                     break
                 try:
-                    current, additions = store.changes_since(revision)
-                    if additions:
-                        memory = memory.with_documents_added(additions)
+                    current = store.revision()
+                    if current != revision:
+                        memory = store.load_memory()
                 except SnapshotRequired:
-                    current, documents = store.snapshot()
-                    memory = WaveMemory(documents, **store.configuration())
+                    current = store.revision()
+                    memory = store.load_memory()
                 revision = current
                 snapshot = memory.snapshot(elapsed)
                 print(json.dumps({**{key: snapshot[key] for key in

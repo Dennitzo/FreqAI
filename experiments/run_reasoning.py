@@ -80,7 +80,7 @@ def run(output_dir: Path, seed: int = 20260906, graph_count: int = 96) -> dict:
                           "shortest_path": shortest_path,
                           "pass": answer["entailed"] == expected and proof_valid and shortest_path
                           and answer["reason"] != "numerical_error"})
-    supplied = json.loads((ROOT / "memory" / "fixtures" / "relations.json").read_text(encoding="utf-8"))
+    supplied = json.loads((ROOT / "tests" / "fixtures" / "relations.json").read_text(encoding="utf-8"))
     demo = WaveReasoner(supplied)
     examples = {
         "new_two_hop_answer": demo.infer("Pudel", "Tier"),

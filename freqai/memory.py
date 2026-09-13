@@ -21,6 +21,23 @@ from .compute import AddressedWaveAccelerator, fft_rows, record_cpu_snapshot
 from .features import content_terms, feature_vector, text_spectrum, tokenize
 from .parallel import chunk_ranges, shared_fill, worker_count
 
+MAX_DENSE_BYTES = 512 * 1024**2
+
+
+def dense_bytes(documents, dimensions):
+    return sum(max(1, len(d.text.encode('utf-8'))) * 32 for d in documents) + len(documents)*dimensions*32
+
+
+def needs_paging(documents, dimensions):
+    return (dense_bytes(documents, dimensions) > MAX_DENSE_BYTES or
+            sum(len(d.text.encode('utf-8')) for d in documents) > 2*1024**2)
+
+
+def require_dense_budget(documents, dimensions):
+    if dense_bytes(documents, dimensions) > MAX_DENSE_BYTES:
+        raise ValueError('Bestand überschreitet das RAM-Budget der direkten WaveMemory. '
+                         'Über MemoryStore.load_memory() den dateigestützten Modus verwenden.')
+
 
 class _SpectraJob:
     """Ein Merkmals-Paket: rechnet diese Texte in den gemeinsamen Puffer.
@@ -102,6 +119,7 @@ class WaveMemory:
             raise ValueError("Each document needs a nonempty ID and text")
         if len({d.id for d in self.documents}) != len(self.documents):
             raise ValueError("Document IDs must be unique")
+        require_dense_budget(self.documents, self.dimensions)
         self._rebuild()
 
     def _rebuild(self) -> None:
@@ -169,6 +187,7 @@ class WaveMemory:
             existing.add(document.id)
         if not documents:
             return self
+        require_dense_budget(self.documents + documents, self.dimensions)
         added_payloads = [encode_text(d.text) for d in documents]
         added_metadata = [self._metadata_packet(d) for d in documents]
         added_spectra = document_spectra([d.text for d in documents], self.dimensions, self.feature_mode)

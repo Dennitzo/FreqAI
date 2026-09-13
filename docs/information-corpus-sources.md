@@ -1,6 +1,8 @@
 # Deutscher Informationskorpus ohne Frage-Antwort-Paare
 
-Der finale Kandidat **v3** enthält **20.000 vollständige deutsche Wikipedia-Einleitungen** mit jeweils leerem `prompt`. Es werden keine Fragen, Antwortvorlagen oder ergänzten Fakten erzeugt. Die Auswahl ist unabhängig von den Evaluationsfragen. Der Importer bereitet Dateien vor und öffnet keine SQLite-Datenbank; die Integration in den aktiven Speicher erfolgt getrennt.
+> Historische Dokumentation der früheren Einleitungs-Auswahl. Seit der Konsolidierung vom 13.09.2026 sind alle 569.062 Artikel der vier lokalen Shards vollständig in `memory/memory.sqlite3` gespeichert. Rohdateien und Teilimporte wurden nach vollständigem Abgleich gelöscht; Quellenunterlagen liegen jetzt in `docs/data_sources/`. Der aktuelle Stand steht im [Konsolidierungsbericht](../results/memory_consolidation.md).
+
+Der finale Kandidat **v3** enthält **20.000 vollständige deutsche Wikipedia-Einleitungen** mit jeweils leerem `prompt`. Es werden keine Fragen, Antwortvorlagen oder ergänzten Fakten erzeugt. Die Auswahl ist unabhängig von den Evaluationsfragen. Der Importer bereitet Dateien vor und öffnet keine SQLite-Datenbank; die Integration in den aktiven Speicher erfolgt getrennt. Ergänzend kuratierte die naturwissenschaftliche Erweiterung **v1** 199 zusätzliche Artikel zu Themen und Personen; siehe unten.
 
 ## Quelle und lokal vorhandener Umfang
 
@@ -75,3 +77,42 @@ Die 23 Importtests prüfen unter anderem leere Prompts, vollständige Absatzgren
 Im finalen Audit stimmen alle 20.000 Originalstellen und Text-Hashes; der zweite Aufbau erzeugt exakt denselben Kandidaten-Hash. Aus den ursprünglichen 40 Stichproben-IDs bleiben 32 mit identischem Text erhalten, acht werden durch die generischen Quellenfilter entfernt. Vier entfernte Fälle enthielten eingebettete Abschnittsüberschriften, vier leere oder beschädigte Klammerfelder. Die verbliebenen Texte sind deshalb nicht pauschal als sprachlich fehlerfrei bewertet: Beispielsweise enthält die originale Wappenbeschreibung in `wikipedia-de-20231101-5116118-lead` elliptische Formulierungen und Grammatikfehler. Die 32 verbliebenen Fälle sind eine Teilmenge derselben Stichprobe, keine neue Zufallsstichprobe zur Schätzung einer finalen Fehlerquote.
 
 Die Daten entsprechen dem Snapshot vom 1. November 2023. Zeitabhängige Aussagen können überholt sein. Die Bereinigung durch den Herausgeber hat teilweise Formeln, Formelzeichen oder Klammerinhalte verloren; auch ein vollständig übernommener Absatz kann deshalb bereits unvollständige Aussagen enthalten. Diese Inhalte werden nicht aus Vermutungen ergänzt. Eine gewählte Einleitung kann zudem nur eine Definition enthalten, während die Einheit oder weitere Eigenschaften ausschließlich im vollständig lokal archivierten Folgeartikel stehen. Quellen- und Hashprüfungen belegen Herkunft und nachvollziehbare Übernahme; die sprachliche und inhaltliche Qualität der aus den Schwingungen berechneten Antworten muss separat am Generator gemessen werden.
+
+## Kuratierte naturwissenschaftliche Erweiterung v1
+
+Ergänzend zum breiten v3-Korpus kuratiert `experiments/science_extension_titles.json` 210 deutsche Wikipedia-Titel aus Physik, Biologie, Chemie, Astronomie, Geologie und verwandten Gebieten, darunter Personen wie Albert Einstein, Marie Curie, Charles Darwin oder Emmanuelle Charpentier. `experiments/select_science_extension.py` übernimmt für jeden Titel die vollständige Einleitungsprosa nach derselben Grundrezeptur wie v3 – bevorzugt aus denselben vier geprüften Parquet-Shards, andernfalls über die MediaWiki-API von `de.wikipedia.org`. Titel, die v3 bereits führt, werden übersprungen; identischer Titel-plus-Prosa-Inhalt wird dedupliziert.
+
+Auswahl und Abweisung:
+
+| Messwert | Ergebnis |
+|---|---:|
+| kuratierte Titel | 210 |
+| in den vier Shards gefunden | 168 |
+| bereits produktiv in v3 | 7 |
+| übernommen aus Shards | 144 |
+| übernommen über MediaWiki-API | 55 |
+| insgesamt übernommen | 199 |
+| verworfen (Begriffsklärung oder Exportartefakt) | 4 |
+| fehlende Titel | 0 |
+| Textzeichen einschließlich Titel | 93.566 |
+
+Verteilung der 199 übernommenen Einträge: Physik 71, Biologie 47, Chemie 32, Astronomie 31, Geologie 13, Naturwissenschaft 2, Physik/Chemie 2, Technik 1. Verworfen wurden `Quark`, `Virus`, `Urknall` und `Natürliche Selektion`; die ersten drei sind Begriffsklärungshauptartikel mit unvollständiger Einleitungsprosa im Export, `Urknall` zusätzlich mit leerem Exportfeld.
+
+Der Kandidat ist `memory/imports/information_science_extension_v1.jsonl` mit 393.061 Bytes, SHA-256:
+
+```text
+ccc5ec8614f708b9eb4dbb887023518888e82b7e6c2f483de865cdd8c5c44ca6
+```
+
+Das Manifest `memory/imports/information_science_extension_v1.provenance.json` hält jeden ausgewählten Titel mit Artikel-ID, Kuratierungsdomäne, Quelle (Shard oder API), Rohdatei-, Prosa- und Text-Hashes, URL, Zeitstempel und Transformationsregel fest. Titelkette und Selektor-Skript sind dort ebenfalls mit SHA-256 verankert (`experiments/science_extension_titles.json` mit `606d89779ae4cee5d796e89b76c14e8914ec76245a6b6d62d7a8bfce882c10c7`).
+
+Reproduzieren und Import:
+
+```powershell
+.venv\Scripts\python.exe experiments\select_science_extension.py --workers 8 --api-delay 1.5
+.venv\Scripts\python.exe -m freqai import memory\imports\information_science_extension_v1.jsonl
+```
+
+Der Import in `memory/memory.sqlite3` erfolgte atomar und ohne Überschreiben: 199 Dokumente hinzugefügt, 0 vorhanden, 0 Konflikte, neue Revision 10, Bestand damit 20.292 Dokumente. Vorher wurde die Datenbank nach `memory/backups/` gesichert. Alle 199 Datensätze erfüllen den Record-Vertrag (leeres `prompt`, Titel plus vollständige Einleitungsprosa, vollständige Provenienz) und haben weder ID- noch Textüberschneidung mit den 20.000 v3-Einträgen.
+
+Grenzen: Die 144 Shard-Artikel lassen sich wie v3 an den lokal archivierten Rohartikeln prüfen. Die 55 API-Artikel stammen aus dem Live-Stand der MediaWiki-API zum jeweiligen Abrufzeitpunkt (`retrieved_utc`) und nicht aus dem Snapshot vom 1. November 2023; für sie liegt kein lokaler Rohartikel vor. Für API-Artikel weicht die Extraktionsrezeptur dokumentiert ab: Leere Klammerartefakte werden gelöscht statt den Artikel zu verwerfen, ein Absatz über der Längenobergrenze wird nach seinem letzten vollständigen Satz gekürzt, und das Mindestmaß liegt mit 100 Zeichen leicht unter den 120 Zeichen der v3-Rezeptur. Jede Abweichung ist in der Provenienz des jeweiligen Datensatzes vermerkt. Die Auswahl ist ein kuratierter Schwerpunkt, keine vollständige oder statistisch repräsentative naturwissenschaftliche Abdeckung der deutschen Wikipedia.

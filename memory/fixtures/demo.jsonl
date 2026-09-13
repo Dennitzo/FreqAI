@@ -1,9 +1,0 @@
-{"id":"fourier","text":"Eine Fourierreihe stellt ein periodisches Signal als Summe von Sinus- und Kosinusschwingungen dar. Die Koeffizienten bestimmen Amplituden und Phasen.","source":"FreqAI-Demotext"}
-{"id":"standing","text":"Eine stehende Welle besitzt ortsfeste Knoten. Sie entsteht beispielsweise durch Überlagerung zweier gegenläufiger Wellen mit gleicher Frequenz.","source":"FreqAI-Demotext"}
-{"id":"interference","text":"Interferenz bezeichnet die Überlagerung von Wellen. Gleiche Phasen verstärken sich; entgegengesetzte Phasen können sich auslöschen.","source":"FreqAI-Demotext"}
-{"id":"decode","text":"FreqAI wandelt Text in UTF-8-Bytes und dann mit einer diskreten Kosinustransformation in Wellenkoeffizienten um. Die inverse Transformation rekonstruiert die Bytes; SHA-256 prüft die Unversehrtheit.","source":"FreqAI-Implementierung"}
-{"id":"training","text":"FreqAI benötigt kein Gradienten-Training und kein vortrainiertes Sprachmodell. Der Speicher wird deterministisch aus eingegebenen Texten aufgebaut; Suchmerkmale sind fest programmiert.","source":"FreqAI-Implementierung"}
-{"id":"limits","text":"Die Interferenzsuche von FreqAI misst sprachliche Oberflächenähnlichkeit. Sie garantiert kein Bedeutungsverständnis. Ohne passende Wörter oder gespeicherte Information kann eine Frage unbeantwortet bleiben oder ein falscher Text ausgewählt werden.","source":"FreqAI-Implementierung"}
-{"id":"quadrature","text":"Die Quadratur ist eine um 90 Grad phasenverschobene Komponente. Gemeinsam mit der Auslenkung erlaubt sie das Rücklesen einer stehenden Welle auch dann, wenn die Auslenkung einer Mode gerade null ist.","source":"FreqAI-Demotext"}
-{"id":"addresses","text":"Getrennte Speicheradressen verhindern, dass verschiedene Texte bei einer unmarkierten Summation ununterscheidbar werden. Der Wellenspeicher wächst mit der Menge der gespeicherten Daten.","source":"FreqAI-Implementierung"}
-

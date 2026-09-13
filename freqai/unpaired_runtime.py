@@ -67,7 +67,9 @@ def generator_for(memory):
             started = time.perf_counter()
             memory._compiler_status = {"state": "loading", "cache": "pending"}
             try:
-                model = load_compiled(records, 2, cache_dir) if cache_dir is not None else None
+                from .progress import phase, report
+                with phase('Antwortcompiler: Cache prüfen/laden'):
+                    model = load_compiled(records, 2, cache_dir) if cache_dir is not None else None
                 cache_result = "hit" if model is not None else "miss" if cache_dir is not None else "disabled"
                 saved = False
                 previous_loaded = False
@@ -77,10 +79,14 @@ def generator_for(memory):
                         previous = load_previous_compiled(2, cache_dir)
                         previous_loaded = previous is not None
                     memory._compiler_status = {"state": "building", "cache": cache_result}
-                    model = UnpairedWaveModel(records, order=2, previous_model=previous)
+                    from .progress import phase
+                    with phase(f'Antwortcompiler: {len(records):,} Informationstexte'):
+                        model = UnpairedWaveModel(records, order=2, previous_model=previous)
                     if cache_dir is not None:
                         memory._compiler_status = {"state": "saving", "cache": cache_result}
-                        saved = bool(save_compiled(model, records, 2, cache_dir))
+                        with phase('Antwortcompiler: Cache speichern'):
+                            saved = bool(save_compiled(model, records, 2, cache_dir))
+                report(f'Antwortcompiler bereit; Cache: {cache_result}')
                 memory._compiler_status = {
                     "state": "ready", "cache": cache_result, "cache_saved": saved,
                     "previous_cache_loaded": previous_loaded,
@@ -133,6 +139,9 @@ def _context_vector(model, context):
 
 
 def context_snapshot(memory, context=None, time_s=0.0, points=128):
+    if getattr(memory, 'paged', False):
+        with memory._selection_lock:
+            return context_snapshot(memory.working_memory('', context), context, time_s, points)
     if not _saved_field(context):
         return {"time_s": float(time_s), "displacement": [], "quadrature": [],
                 "energy": 0.0, "mode_count": 0, "carrier_size": 0}
@@ -141,6 +150,16 @@ def context_snapshot(memory, context=None, time_s=0.0, points=128):
 
 
 def respond_wave(memory, prompt, context=None, time_s=0.0, top_k=1, max_tokens=40, seed=17):
+    if getattr(memory, 'paged', False):
+        with memory._selection_lock:
+            working = memory.working_memory(prompt, context)
+            result, state = respond_wave(working, prompt, context, time_s, top_k, max_tokens, seed)
+            state['unpaired']['working_set_key'] = working._paged_key
+            result['configuration']['compiler_scope'] = 'retrieved_information_passages'
+            result['configuration']['working_documents'] = len(working.documents)
+            result['configuration']['corpus_documents'] = len(memory.documents)
+            result['note'] = 'Vollbestand auf Festplatte; passende Informationsabschnitte werden mit demselben Wellencompiler generiert.'
+            return result, state
     if not isinstance(prompt, str) or not prompt.strip():
         raise ValueError("Prompt must contain text")
     if not np.isfinite(time_s) or type(max_tokens) is not int or not 1 <= max_tokens <= 128:

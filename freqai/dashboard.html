@@ -270,7 +270,9 @@
       const compiler = currentState.compiler || {};
       if (currentState.compiler_ready && compiler.state === 'ready') {
         const reuse = compiler.reuse || {};
-        const cacheText = compiler.cache === 'hit' ? 'Compiler aus Cache geladen' :
+        const cacheText = compiler.scope === 'paged_full_corpus' ?
+          'Vollbestand indexiert · Antwortcompiler arbeitet mit passenden Abschnitten' :
+          compiler.cache === 'hit' ? 'Compiler aus Cache geladen' :
           reuse.groups_reused ? number(reuse.groups_reused) + ' Compilergruppen wiederverwendet' : 'Compiler bereit';
         byId('compute-status').textContent += ' · ' + cacheText;
       }

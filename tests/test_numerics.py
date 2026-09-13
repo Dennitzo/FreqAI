@@ -164,7 +164,14 @@ def test_single_hrr_binding_is_invertible_but_unlabelled_superposition_has_noise
 def test_benchmark_has_required_groups_and_no_question_leakage():
     from experiments.run_experiments import validate_benchmark
 
-    benchmark = json.loads((Path(__file__).resolve().parents[1] / "memory" / "fixtures" / "benchmark.json").read_text(encoding="utf-8"))
+    # Validate the format with fresh synthetic records, not an imported corpus copy.
+    benchmark = {"documents": [{"id": f"test-{i}", "text": f"Speichermarker{i}."}
+                               for i in range(40)], "cases": []}
+    for group, count in (("known", 32), ("null", 10), ("semantic_no_overlap", 8)):
+        benchmark["cases"].extend({"id": f"{group}-{i}", "group": group,
+                                   "prompt": f"Prüfbegriff{i}?", "expected_id":
+                                   None if group == "null" else f"test-{i}"}
+                                  for i in range(count))
     validate_benchmark(benchmark)
     assert len(benchmark["documents"]) == 40
     assert len(benchmark["cases"]) == 50

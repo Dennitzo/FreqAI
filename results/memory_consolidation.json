@@ -1,0 +1,108 @@
+{
+  "before": {
+    "path": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\memory.sqlite3",
+    "revision": 10,
+    "document_count": 20292,
+    "archive_document_count": 12048,
+    "history_count": 136,
+    "relation_count": 0,
+    "canonical_format": "sqlite_text",
+    "wave_storage": "derived_in_memory",
+    "knowledge_format": "information_texts",
+    "legacy_schema": false,
+    "configuration": {
+      "dimensions": 4096,
+      "feature_mode": "morphology",
+      "min_coverage": 0.6,
+      "min_score": 0.18,
+      "retrieval_policy": "coverage"
+    }
+  },
+  "after": {
+    "path": "C:\\Users\\AMD\\Documents\\GitHub\\FreqAI\\memory\\memory.sqlite3",
+    "revision": 11,
+    "document_count": 569210,
+    "archive_document_count": 0,
+    "history_count": 136,
+    "relation_count": 0,
+    "canonical_format": "sqlite_text",
+    "wave_storage": "derived_in_memory",
+    "knowledge_format": "information_texts",
+    "legacy_schema": false,
+    "configuration": {
+      "dimensions": 4096,
+      "feature_mode": "morphology",
+      "min_coverage": 0.6,
+      "min_score": 0.18,
+      "retrieval_policy": "coverage"
+    }
+  },
+  "sources": [
+    {
+      "file": "memory/sources/information_wikipedia_20231101_de/train-00000-of-00020.parquet",
+      "articles": 142266,
+      "inserted": 142266,
+      "existing": 0,
+      "replaced_leads": 5569
+    },
+    {
+      "file": "memory/sources/information_wikipedia_20231101_de/train-00007-of-00020.parquet",
+      "articles": 142266,
+      "inserted": 142266,
+      "existing": 0,
+      "replaced_leads": 4869
+    },
+    {
+      "file": "memory/sources/information_wikipedia_20231101_de/train-00013-of-00020.parquet",
+      "articles": 142265,
+      "inserted": 142265,
+      "existing": 0,
+      "replaced_leads": 4917
+    },
+    {
+      "file": "memory/sources/information_wikipedia_20231101_de/train-00019-of-00020.parquet",
+      "articles": 142265,
+      "inserted": 142265,
+      "existing": 0,
+      "replaced_leads": 4789
+    }
+  ],
+  "verification": {
+    "articles_verified": 569062,
+    "integrity_check": "ok",
+    "foreign_key_check": "ok"
+  },
+  "full_texts": true,
+  "source_files_deleted": true,
+  "seconds": 558.5196797999961,
+  "cleanup": {
+    "planned_files": 90,
+    "remaining_files": 0,
+    "central_documents": 569210,
+    "deleted_bytes": 2528747674,
+    "metadata_moves": 16,
+    "deleted_files": 90,
+    "central_revision": 11,
+    "completed_utc": "2026-09-13T05:59:24.4647309Z"
+  },
+  "post_cleanup_verification": {
+    "articles_verified": 569062,
+    "integrity_check": "ok",
+    "foreign_key_check": "ok",
+    "source_files_required": false,
+    "verification_scope": "stored hashes and source receipts"
+  },
+  "database_bytes_after_vacuum": 6879019008,
+  "final_counts": {
+    "documents": 569210,
+    "archive": 0,
+    "history": 136
+  },
+  "remaining_dataset_or_backup_files": [],
+  "tests": {
+    "passed": 449,
+    "seconds": 24.95
+  },
+  "full_corpus_compiler_run": false,
+  "server_started": false
+}

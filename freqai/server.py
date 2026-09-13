@@ -63,7 +63,9 @@ class WaveEngine:
         self._frame_seconds = 0.0
         self._last_error: str | None = None
         self._sync_error: str | None = None
-        if central_store is not None:
+        if central_store is not None and getattr(memory, 'paged', False):
+            self._revision = memory.store_revision
+        elif central_store is not None:
             self._revision, documents = central_store.snapshot()
             if memory.documents != documents:
                 self.memory = type(memory)(documents, dimensions=memory.dimensions,
@@ -111,12 +113,21 @@ class WaveEngine:
                 with self.lock:
                     self._sync_error = None
                 return
+            if getattr(self.memory, 'paged', False):
+                candidate = self.central_store.load_memory()
+                self._publish(candidate, candidate.store_revision,
+                              candidate.snapshot(time_s=self.elapsed(), points=self.points))
+                return
             try:
                 revision, additions = self.central_store.changes_since(self._revision)
-                candidate = self.memory.with_documents_added(additions)
+                from .memory import needs_paging
+                if needs_paging(self.memory.documents + additions, self.memory.dimensions):
+                    candidate = self.central_store.load_memory()
+                else:
+                    candidate = self.memory.with_documents_added(additions)
             except SnapshotRequired:
-                revision, documents = self.central_store.snapshot()
-                candidate = WaveMemory(documents, **self.central_store.configuration())
+                candidate = self.central_store.load_memory()
+                revision = getattr(candidate, 'store_revision', self.central_store.revision())
             state = candidate.snapshot(time_s=self.elapsed(), points=self.points)
             self._publish(candidate, revision, state)
             with self.lock:
@@ -188,8 +199,8 @@ class WaveEngine:
             state.update({
                 "ticks": self._ticks,
                 "frame_ms": self._frame_seconds * 1000.0,
-                "compiler_ready": generator is not None and generator.version ==
-                    (id(memory.documents), len(memory.documents)),
+                "compiler_ready": getattr(memory, 'paged', False) or (generator is not None and generator.version ==
+                    (id(memory.documents), len(memory.documents))),
                 "target_hz": self.frequency_hz,
                 "running": (self._thread is not None and self._thread.is_alive()
                             and (self.central_store is None or self._sync_thread is not None and self._sync_thread.is_alive())),
@@ -279,10 +290,14 @@ class WaveEngine:
             result.update({"document_count": len(self.memory.documents),
                            "live_revision": self._revision,
                            "persistent": self.central_store is not None or self.store_path is not None})
+            if getattr(self.memory, 'paged', False):
+                result['wave_storage'] = 'derived_on_disk'
         return result
 
     def documents(self, offset: int = 0, limit: int | None = None,
                   expected_revision: int | None = None) -> dict[str, Any]:
+        if limit is None and getattr(self.memory, 'paged', False):
+            limit = 50
         if type(offset) is not int or offset < 0:
             raise ValueError("offset muss eine nichtnegative ganze Zahl sein.")
         if limit is not None and (type(limit) is not int or not 1 <= limit <= 200):
@@ -343,6 +358,18 @@ class WaveEngine:
                     "added": [{"id": doc.id, "text": doc.text, "source": doc.source} for doc in documents], "existing": []}
 
     def _add_to_store(self, documents: list[Document]) -> dict[str, Any]:
+        from .memory import needs_paging
+        if (getattr(self.memory, 'paged', False) or
+                needs_paging(self.memory.documents + documents, self.memory.dimensions)):
+            with self._mutation_lock:
+                self.sync()
+                result = self.central_store.append_documents(documents, expected_revision=self._revision)
+                self.sync()
+                added = [{"id": d.id, "text": d.text, "source": d.source} for d in result['added']]
+                existing = [{"id": d.id, "text": d.text, "source": d.source} for d in result['existing']]
+                return {"id": (added or existing)[0]['id'], "added": added, "existing": existing,
+                        "document_count": len(self.memory.documents), "revision": self._revision,
+                        "live_revision": self._revision}
         with self._mutation_lock:
             for _ in range(32):
                 self.sync()

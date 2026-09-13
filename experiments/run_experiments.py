@@ -1,6 +1,6 @@
 """Reproducible, non-training numerical experiments for the FreqAI prototype.
 
-Run: .venv/Scripts/python.exe experiments/run_experiments.py
+Run: .venv/Scripts/python.exe experiments/run_experiments.py --benchmark PATH.json
 All benchmark prompts remain outside the memory. Failures are reported, not
 silently excluded. Configuration comparisons are diagnostic, not an independent
 held-out evaluation of the selected configuration.
@@ -418,9 +418,11 @@ def report(destination: Path, result: dict) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=ROOT / "results" / "numerical")
+    parser.add_argument("--benchmark", type=Path, required=True,
+                        help="Explicit external evaluation corpus; no imported corpus copy is kept in the project")
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
-    benchmark_path = ROOT / "memory" / "fixtures" / "benchmark.json"
+    benchmark_path = args.benchmark
     benchmark = json.loads(benchmark_path.read_text(encoding="utf-8"))
     validate_benchmark(benchmark)
     started = time.perf_counter()

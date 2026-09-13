@@ -444,14 +444,24 @@ class InformationWaveModel:
     def __init__(self, records, order=2, *, previous_model=None):
         if type(order) is not int or not 1 <= order <= 5:
             raise ValueError("order must be an integer from 1 to 5")
+        records = list(records)
+        total_chars = sum(len(record if isinstance(record, str) else record.get('text', '')
+                              if isinstance(record, dict) else getattr(record, 'text', '')) for record in records)
+        if total_chars > 4*1024**2:
+            raise ValueError('Informationscompiler benötigt begrenzte Textabschnitte; '
+                             'große Bestände über MemoryStore.load_memory() verwenden.')
         self.order = order
+        from .progress import report
+        report('Compiler 1/5: Texte normalisieren')
         normalized, self.corpus_digest, self.input_record_count = normalize_records(records)
         self.record_count = len(normalized)
+        report('Compiler 2/5: Begriffe und Themen erfassen')
         self.concepts, terms_by_record = collect_concepts(normalized)
         self._concept_heads = defaultdict(list)
         for concept in sorted(self.concepts):
             words = tuple(concept.split())
             self._concept_heads[words[0]].append((words, concept))
+        report('Compiler 3/5: Informationsaussagen aufbauen')
         prepared, surface_forms, self.statement_count, self.unaddressed_statement_count = \
             compile_statements(normalized, terms_by_record, self._concept_heads)
         self.vocabulary = sorted({token for _, _, _, tokens in prepared for token in tokens} | {EOS})
@@ -509,6 +519,7 @@ class InformationWaveModel:
             else:
                 fresh.append((group, sequences))
         work = [fresh[start:stop] for start, stop in chunk_ranges(len(fresh), max(1, worker_count() * 4))]
+        report('Compiler 4/5: Spektrale Übergänge berechnen')
         packets.extend(parallel_map(_TransitionPass(order), work, min_items=2 if len(fresh) >= 32 else len(work) + 1))
         # Mixed reuse/rebuild packets can span nonconsecutive group IDs. Flatten
         # group slices before assembling in the original deterministic order.

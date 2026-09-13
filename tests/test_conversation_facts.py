@@ -10,8 +10,9 @@ from pathlib import Path
 import re
 
 
-CORPUS = Path(__file__).resolve().parents[1] / "memory/information/conversation_facts.jsonl"
-ROWS = [json.loads(line) for line in CORPUS.read_text(encoding="utf-8").splitlines()]
+from central_information import records
+
+ROWS = records("conversation-fact-")
 
 
 def dictionary_keys(value):

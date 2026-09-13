@@ -196,6 +196,8 @@ class UnpairedWaveModel(InformationWaveModel):
         self.state_vocabulary = set()
         texts = [record if isinstance(record, str) else record.get("text", "")
                  if isinstance(record, dict) else getattr(record, "text", "") for record in records]
+        from .progress import report
+        report('Compiler 5/5: Fakten und sprachliche Rollen berechnen')
         for declarations in parallel_map(_parse_declarations, texts, min_items=32):
             for declaration in declarations:
                 if declaration[0] == "lexical":

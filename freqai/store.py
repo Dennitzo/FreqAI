@@ -19,7 +19,6 @@ from .memory import Document, WaveMemory
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_MEMORY_PATH = PROJECT_ROOT / "memory" / "memory.sqlite3"
-FIXTURES_PATH = PROJECT_ROOT / "memory" / "fixtures"
 DEFAULT_FEATURE_MODE = "morphology"
 DEFAULT_RETRIEVAL_POLICY = "coverage"
 DEFAULT_MIN_COVERAGE = 0.6
@@ -143,6 +142,10 @@ class MemoryStore:
             columns = self._document_columns(connection)
             paired_column = columns.endswith(",prompt")
             revision = self._revision(connection)
+            if not paired_column and not connection.execute(
+                    "SELECT 1 FROM documents WHERE source GLOB 'Authored synthetic language prior / *' LIMIT 1").fetchone():
+                count = connection.execute('SELECT count(*) FROM documents').fetchone()[0]
+                return {"revision": revision, "archived": 0, "retained": count, "changed": False}
             rows = connection.execute(f"SELECT sequence,{columns},added_revision FROM documents ORDER BY sequence").fetchall()
             selected = []
             retained = []
@@ -310,7 +313,22 @@ class MemoryStore:
                 "SELECT id,text,source,prompt FROM document_archive ORDER BY sequence")]
 
     def load_memory(self) -> WaveMemory:
-        memory = WaveMemory(self.snapshot()[1], **self.configuration())
+        from .progress import phase, report
+        with phase('Memory-Größe und Speicherbedarf prüfen'):
+            with self._connection() as connection:
+                count, text_bytes = connection.execute(
+                    'SELECT count(*),coalesce(sum(length(cast(text AS BLOB))),0) FROM documents').fetchone()
+            configuration = self.configuration()
+            lower_bound = text_bytes*32 + count*configuration['dimensions']*32
+            report(f'{count:,} Dokumente; monolithische Arrays mindestens {lower_bound/1024**3:.1f} GiB')
+        # A conservative fixed ceiling also protects small machines. Corpus-size
+        # growth must never silently choose the unbounded in-memory constructor.
+        from .memory import MAX_DENSE_BYTES
+        if lower_bound > MAX_DENSE_BYTES or text_bytes > 2*1024**2:
+            from .paged_memory import PagedWaveMemory
+            return PagedWaveMemory(self)
+        with phase('Kleine Memory: Schwingungen aufbauen'):
+            memory = WaveMemory(self.snapshot()[1], **configuration)
         memory._compiler_cache_dir = self.path.parent / '.compiler-cache' / self.path.name
         return memory
 

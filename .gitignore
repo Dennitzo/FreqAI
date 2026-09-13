@@ -71,9 +71,8 @@ events.out.tfevents.*
 /memory/sources/**/*.zst
 /results/public_corpus/evaluation/germanquad_test-*.parquet
 
-# Keep dataset/manifest.json and dataset/corpus/*.jsonl.gz versionable:
-# these are the pinned, curated corpora checked by tests/test_central_dataset.py.
-# Also keep memory fixtures, evaluations, information texts and results reports.
+# The sole imported information corpus is memory/memory.sqlite3 (local only).
+# Keep source receipts/reports and independent evaluation/test definitions.
 # Git ignore rules match paths, not file sizes; do not blanket-ignore JSON/JSONL.
 
 # Local secrets and operating-system files

@@ -20,7 +20,9 @@ ROOT = Path(__file__).resolve().parents[1]
 @pytest.fixture
 def knowledge(tmp_path):
     store = MemoryStore(tmp_path / "unpaired.sqlite3")
-    records = read_documents(ROOT / "memory/information/conversation_facts.jsonl")
+    from central_information import records as central_records
+    records = [Document(row["id"], row["text"], row["source"])
+               for row in central_records("conversation-fact-")]
     records += [Document("frequency", "Frequenz\n\nDie Frequenz ist die Anzahl von Wiederholungen pro Zeitspanne.", "Physik"),
                 Document("hertz", "Hertz\n\nDas Hertz ist die SI-Einheit der Frequenz.", "Physik")]
     store.append_documents(records)

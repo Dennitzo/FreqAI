@@ -5,23 +5,24 @@ from pathlib import Path
 import re
 
 
-FOLDER = Path(__file__).resolve().parents[1] / "memory/information"
-PATH = FOLDER / "conversation_lexicon_v1.jsonl"
-ROWS = [json.loads(line) for line in PATH.read_text(encoding="utf-8").splitlines()]
-MANIFEST = json.loads(PATH.with_suffix(".provenance.json").read_text(encoding="utf-8"))
+from central_information import records, receipt
+
+ROWS = records("conversation-lexicon-v1-")
+RECEIPT = receipt("memory/information/conversation_lexicon_v1.jsonl")
+MANIFEST = RECEIPT["metadata"]["manifest"]
 
 
 def test_lexicon_is_bound_to_its_versioned_manifest():
     assert MANIFEST["corpus_version"] == 1
-    assert MANIFEST["sha256"] == hashlib.sha256(PATH.read_bytes()).hexdigest()
+    assert MANIFEST["sha256"] == RECEIPT["sha256"]
     assert MANIFEST["records"] == len(ROWS)
-    assert MANIFEST["bytes"] == PATH.stat().st_size
+    assert MANIFEST["bytes"] == RECEIPT["bytes"]
     assert all(row["provenance"]["corpus_version"] == 1 for row in ROWS)
 
 
 def test_existing_facts_remain_identical_to_the_prelexicon_version():
     assert MANIFEST["original_facts"]["unchanged"] is True
-    assert hashlib.sha256((FOLDER / "conversation_facts.jsonl").read_bytes()).hexdigest() == MANIFEST["original_facts"]["sha256"]
+    assert receipt("memory/information/conversation_facts.jsonl")["sha256"] == MANIFEST["original_facts"]["sha256"]
 
 
 def test_lexicon_has_information_records_without_qa_or_turn_fields():

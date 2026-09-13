@@ -1,0 +1,784 @@
+{
+  "central_database": "memory/memory.sqlite3",
+  "revision": 11,
+  "articles_verified": 569062,
+  "coverage": [
+    {
+      "file": "dataset/corpus/combined_step1_20000.jsonl.gz",
+      "records": 20093,
+      "covered": true
+    },
+    {
+      "file": "dataset/corpus/combined_step2_60000.jsonl.gz",
+      "records": 60093,
+      "covered": true
+    },
+    {
+      "file": "dataset/corpus/combined_step3_100000.jsonl.gz",
+      "records": 100093,
+      "covered": true
+    },
+    {
+      "file": "memory/imports/information_science_extension_v1.jsonl",
+      "records": 199,
+      "covered": true
+    },
+    {
+      "file": "memory/imports/information_wikipedia_20000.jsonl",
+      "records": 20000,
+      "covered": true
+    },
+    {
+      "file": "memory/imports/information_wikipedia_20000_v2.jsonl",
+      "records": 20000,
+      "covered": true
+    },
+    {
+      "file": "memory/imports/information_wikipedia_20000_v3.jsonl",
+      "records": 20000,
+      "covered": true
+    },
+    {
+      "file": "memory/information/conversation_facts.jsonl",
+      "records": 45,
+      "covered": true
+    },
+    {
+      "file": "memory/information/conversation_lexicon_v1.jsonl",
+      "records": 48,
+      "covered": true
+    },
+    {
+      "file": "results/information_corpus/evaluation/corpora/wikipedia_v1.jsonl",
+      "records": 20000,
+      "covered": true
+    },
+    {
+      "file": "results/information_corpus/evaluation/corpora/wikipedia_v3.jsonl",
+      "records": 20000,
+      "covered": true
+    },
+    {
+      "file": "results/unpaired_system/evaluation/corpora/conversation_facts_v1.jsonl",
+      "records": 45,
+      "covered": true
+    },
+    {
+      "file": "results/unpaired_system/evaluation/corpora/conversation_lexicon_v1.jsonl",
+      "records": 48,
+      "covered": true
+    },
+    {
+      "file": "results/unpaired_system/evaluation/corpora/wikipedia_v3.jsonl",
+      "records": 20000,
+      "covered": true
+    }
+  ],
+  "files": [
+    {
+      "path": "dataset/corpus/combined_step1_20000.jsonl.gz",
+      "bytes": 6978192,
+      "sha256": "b4d7cc0c00265da6a97cd45e0a4bbda643e842393bfd3a5235560e3a66a7505c",
+      "reason": "information_verified_in_central_memory"
+    },
+    {
+      "path": "dataset/corpus/combined_step2_60000.jsonl.gz",
+      "bytes": 20789712,
+      "sha256": "2e281f1d184e7142cd1065f0079766a86ab6bab651b78e4926f7cf815c4bef73",
+      "reason": "information_verified_in_central_memory"
+    },
+    {
+      "path": "dataset/corpus/combined_step3_100000.jsonl.gz",
+      "bytes": 34501222,
+      "sha256": "9dafe4a0c2ebcb749b1abee94ee42837fd4ae67cbf1bd96754ad06018c4a13b1",
+      "reason": "information_verified_in_central_memory"
+    },
+    {
+      "path": "memory/imports/information_science_extension_v1.jsonl",
+      "bytes": 393061,
+      "sha256": "ccc5ec8614f708b9eb4dbb887023518888e82b7e6c2f483de865cdd8c5c44ca6",
+      "reason": "superseded_import_or_legacy_paired_dataset"
+    },
+    {
+      "path": "memory/imports/information_wikipedia_20000.jsonl",
+      "bytes": 33393180,
+      "sha256": "8473462b187b219f7270db292e0fdc95ee82245ad047efb21e69b4eb16c77497",
+      "reason": "superseded_import_or_legacy_paired_dataset"
+    },
+    {
+      "path": "memory/imports/information_wikipedia_20000_v2.jsonl",
+      "bytes": 32889084,
+      "sha256": "61497ef4f4ee4c09cde7b0b772e60d853e6b495d58f1e6d681b77c7469910b4c",
+      "reason": "superseded_import_or_legacy_paired_dataset"
+    },
+    {
+      "path": "memory/imports/information_wikipedia_20000_v3.jsonl",
+      "bytes": 34889094,
+      "sha256": "2f5b876d904346ca4b9082e05ff5e4bc5e8a729f2a479c777f47e1332a0a5674",
+      "reason": "superseded_import_or_legacy_paired_dataset"
+    },
+    {
+      "path": "memory/information/conversation_facts.jsonl",
+      "bytes": 41153,
+      "sha256": "688706468d39cc203f83cd8c2f0e4b9b8f7b65261a4469d6bcfcff3c274cea5e",
+      "reason": "information_and_provenance_preserved_centrally"
+    },
+    {
+      "path": "memory/information/conversation_lexicon_v1.jsonl",
+      "bytes": 42436,
+      "sha256": "092dbbb0bf668bc6e5c404f1bfcc2e03b3f22c75ae2d9cff7c2b421606762f2e",
+      "reason": "information_and_provenance_preserved_centrally"
+    },
+    {
+      "path": "results/information_corpus/evaluation/corpora/wikipedia_v1.jsonl",
+      "bytes": 33393180,
+      "sha256": "8473462b187b219f7270db292e0fdc95ee82245ad047efb21e69b4eb16c77497",
+      "reason": "historical_corpus_copy_or_paired_dataset"
+    },
+    {
+      "path": "results/information_corpus/evaluation/corpora/wikipedia_v3.jsonl",
+      "bytes": 34889094,
+      "sha256": "2f5b876d904346ca4b9082e05ff5e4bc5e8a729f2a479c777f47e1332a0a5674",
+      "reason": "historical_corpus_copy_or_paired_dataset"
+    },
+    {
+      "path": "results/unpaired_system/evaluation/corpora/conversation_facts_v1.jsonl",
+      "bytes": 41153,
+      "sha256": "688706468d39cc203f83cd8c2f0e4b9b8f7b65261a4469d6bcfcff3c274cea5e",
+      "reason": "historical_corpus_copy_or_paired_dataset"
+    },
+    {
+      "path": "results/unpaired_system/evaluation/corpora/conversation_lexicon_v1.jsonl",
+      "bytes": 42436,
+      "sha256": "092dbbb0bf668bc6e5c404f1bfcc2e03b3f22c75ae2d9cff7c2b421606762f2e",
+      "reason": "historical_corpus_copy_or_paired_dataset"
+    },
+    {
+      "path": "results/unpaired_system/evaluation/corpora/wikipedia_v3.jsonl",
+      "bytes": 34889094,
+      "sha256": "2f5b876d904346ca4b9082e05ff5e4bc5e8a729f2a479c777f47e1332a0a5674",
+      "reason": "historical_corpus_copy_or_paired_dataset"
+    },
+    {
+      "path": "memory/backups/before-dialogue-20260906T075539Z.sqlite3",
+      "bytes": 135168,
+      "sha256": "436f44022e6f21256849afa31f9e02eb195e5e900bb8a8bc3c97a7999721e83c",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-dialogue-20260906T075539Z.sqlite3-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-dialogue-20260906T075539Z.sqlite3-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-dialogue-v2-20260906T080858Z.sqlite3",
+      "bytes": 172032,
+      "sha256": "82d29101f9ebd49f6b08dd4ae01da1b5d97d39ffde8b2a6f702dce00f083c27b",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-dialogue-v2-20260906T080858Z.sqlite3-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-dialogue-v2-20260906T080858Z.sqlite3-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-final-unpaired-migration-20260906-142535.sqlite3",
+      "bytes": 39931904,
+      "sha256": "153ff792387ebf924831b15112c86a6500405bc4b3fdef16b9c460010c109a78",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-full-corpus-20260913-073415.sqlite3",
+      "bytes": 77561856,
+      "sha256": "2cf53bd60c8456981b31453e53ed28660889ba08eeeccd6e8138454471cd8f00",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-generative-waves-20260906-110355.sqlite3",
+      "bytes": 217088,
+      "sha256": "5cadc80893e4a5d4f24d3bce243b85d1ea27182de4c42c38a8999d4ba9a399f9",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-information-corpus-20260906-130806.sqlite3",
+      "bytes": 14966784,
+      "sha256": "146248c3b8fd2f2cbbcdb0b0351870596d09887d8f223f2effabeeb7414f9495",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-public-corpus-20260906-111538.sqlite3",
+      "bytes": 688128,
+      "sha256": "dcd4f056ae08c7d07189504cad9102b31b6b1ea66746f41d1d2ba5ccca7ae688",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-public-corpus-deployment-20260906-115145.sqlite3",
+      "bytes": 688128,
+      "sha256": "dcd4f056ae08c7d07189504cad9102b31b6b1ea66746f41d1d2ba5ccca7ae688",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-science-extension-20260913-042637.sqlite3",
+      "bytes": 77561856,
+      "sha256": "e0115025a110c6d7400cde6eb14915d23b7aa891b9297f4a15e175bee86a470d",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-unpaired-system-20260906-134254.sqlite3",
+      "bytes": 39895040,
+      "sha256": "b088cda33a47a042bfd5d6c374211eae759bd15d6feadfa083ac556bbb25f227",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-central-store/demo.npz",
+      "bytes": 15366,
+      "sha256": "155846a56590c8045384074b6d1cc7c549dcc6b3ebb6da0b35061c61ad326e99",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/before-central-store/memory.npz",
+      "bytes": 15366,
+      "sha256": "155846a56590c8045384074b6d1cc7c549dcc6b3ebb6da0b35061c61ad326e99",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/legacy-20260906T072405Z/benchmark.json",
+      "bytes": 10609,
+      "sha256": "c0f10efc6076a26b5d42439ccf3b436092e7a9d5dbccd0131354be6b27a24bff",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/legacy-20260906T072405Z/demo.jsonl",
+      "bytes": 1922,
+      "sha256": "916653e5ac5d3c58433353dc86f404b80a0f65275713076162f22708bbe0d1fd",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/legacy-20260906T072405Z/demo.npz",
+      "bytes": 15366,
+      "sha256": "155846a56590c8045384074b6d1cc7c549dcc6b3ebb6da0b35061c61ad326e99",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/legacy-20260906T072405Z/memory.npz",
+      "bytes": 15366,
+      "sha256": "155846a56590c8045384074b6d1cc7c549dcc6b3ebb6da0b35061c61ad326e99",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/legacy-originals/demo.npz",
+      "bytes": 15366,
+      "sha256": "155846a56590c8045384074b6d1cc7c549dcc6b3ebb6da0b35061c61ad326e99",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/backups/legacy-originals/memory.npz",
+      "bytes": 15366,
+      "sha256": "155846a56590c8045384074b6d1cc7c549dcc6b3ebb6da0b35061c61ad326e99",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/.compiler-cache/memory.sqlite3/compiled.npz",
+      "bytes": 258583678,
+      "sha256": "d5b7cb03c2ffe7fa3d25f405b44a15de764e33a458871cc5c351cc8e3af065ff",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/language/generative_categories.json",
+      "bytes": 1742,
+      "sha256": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/language/generative_corpus.jsonl",
+      "bytes": 96285,
+      "sha256": "9827b7339f85fdae01f996b3b39a0cfc025c2a4b7d3400722f5985cbdc2377ef",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/language/generative_corpus.provenance.json",
+      "bytes": 1390,
+      "sha256": "55de66fcfba2e42390f0cfca5109ac1121640d326404c1ac0a0c4092f91128f1",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/language/german.json",
+      "bytes": 3097,
+      "sha256": "ed0dc70c01f8c7f2b7c2e22231e215eaa158697fecf98244b7ec84c7dab90fdb",
+      "reason": "obsolete_backup_cache_or_paired_language_data"
+    },
+    {
+      "path": "memory/imports/information_science_extension_v1.provenance.json",
+      "bytes": 20717,
+      "sha256": "741630b2488ffaa80f1da3ebbba8b72b017a02e5852ab38b40d69666f5b91cdc",
+      "reason": "superseded_import_or_legacy_paired_dataset"
+    },
+    {
+      "path": "memory/imports/information_wikipedia_20000.provenance.json",
+      "bytes": 6698,
+      "sha256": "02bb636cd64f053131d9b5667fd4ba357aad55a6b43b2231c7a5c28fbb078810",
+      "reason": "superseded_import_or_legacy_paired_dataset"
+    },
+    {
+      "path": "memory/imports/information_wikipedia_20000_v2.provenance.json",
+      "bytes": 6566,
+      "sha256": "e75f19b45ce95d42d8af3dcea64801b8403450fadc35869748473eaaf8987eb4",
+      "reason": "superseded_import_or_legacy_paired_dataset"
+    },
+    {
+      "path": "memory/imports/information_wikipedia_20000_v3.provenance.json",
+      "bytes": 6566,
+      "sha256": "7ba55c09fec50431739899a7014ddff575d1c6a5bec80d627d647a6a506367a8",
+      "reason": "superseded_import_or_legacy_paired_dataset"
+    },
+    {
+      "path": "memory/imports/public_dialogue_expansion.jsonl",
+      "bytes": 18752488,
+      "sha256": "832754653cdd1dcd0c2c0cb7043d3edae71f8e28558b5ed7a145362c0b73d9fa",
+      "reason": "superseded_import_or_legacy_paired_dataset"
+    },
+    {
+      "path": "memory/imports/public_dialogue_expansion.provenance.json",
+      "bytes": 4287,
+      "sha256": "f980aa3d4d195ce94787063305717080eb9398bce7220cc8a499dd7b804df54c",
+      "reason": "superseded_import_or_legacy_paired_dataset"
+    },
+    {
+      "path": "memory/imports/public_dialogue_oasst2_de.jsonl",
+      "bytes": 1256071,
+      "sha256": "3b43b8fa2d5383091bb4e5af3ea4cec0c07c71635fc2223c98b6da0dc87f01d2",
+      "reason": "superseded_import_or_legacy_paired_dataset"
+    },
+    {
+      "path": "memory/imports/public_knowledge_germanquad_de.jsonl",
+      "bytes": 17496417,
+      "sha256": "d267143ea047f0b2d8c84ac061a26a9a7fcf1a233ba3e81e35b855ea3a5d4e40",
+      "reason": "superseded_import_or_legacy_paired_dataset"
+    },
+    {
+      "path": "memory/information/conversation_facts.legacy_audit.json",
+      "bytes": 2321816,
+      "sha256": "8fcfa14b0ff3d25670abde1696fd2eb39709c9a5d3c2a828e99255a4ad4eca21",
+      "reason": "information_and_provenance_preserved_centrally"
+    },
+    {
+      "path": "memory/information/conversation_facts.provenance.json",
+      "bytes": 2271,
+      "sha256": "9659fe5cdbb8086270051006d3984b65ba128bf99af3f4652aeb150928827920",
+      "reason": "information_and_provenance_preserved_centrally"
+    },
+    {
+      "path": "memory/information/conversation_lexicon_v1.provenance.json",
+      "bytes": 3272,
+      "sha256": "373668a50b272a0c1b0205a954b95e68553641065f0d458c4e865e885ccc91b9",
+      "reason": "information_and_provenance_preserved_centrally"
+    },
+    {
+      "path": "memory/fixtures/demo.jsonl",
+      "bytes": 1922,
+      "sha256": "916653e5ac5d3c58433353dc86f404b80a0f65275713076162f22708bbe0d1fd",
+      "reason": "legacy_imported_dataset"
+    },
+    {
+      "path": "memory/fixtures/extension_120.jsonl",
+      "bytes": 26514,
+      "sha256": "8dbfad5536db23888bc667ec73653e3f63128b7503acf510371fc5625e5dff02",
+      "reason": "legacy_imported_dataset"
+    },
+    {
+      "path": "dataset/manifest.json",
+      "bytes": 4478,
+      "sha256": "cc2d2058f5f3e3c110c68e3b2145655881358b4a6d98d0222267d55b93c8f734",
+      "reason": "old_export_stage_manifest_replaced_by_central_catalog"
+    },
+    {
+      "path": "recs.pkl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "empty_temporary_dataset"
+    },
+    {
+      "path": "tests/fixtures/benchmark.json",
+      "bytes": 10609,
+      "sha256": "c0f10efc6076a26b5d42439ccf3b436092e7a9d5dbccd0131354be6b27a24bff",
+      "reason": "historically_imported_benchmark_replaced_by_generated_test_records"
+    },
+    {
+      "path": "memory/sources/deepset-germanquad/train-0000.parquet",
+      "bytes": 3299993,
+      "sha256": "319334092605ed9ade8a1e6535584debb2e99def474697417a06ad4a455bf0ec",
+      "reason": "verified_wikipedia_source_or_excluded_qa_download"
+    },
+    {
+      "path": "memory/sources/information_wikipedia_20231101_de/train-00000-of-00020.parquet",
+      "bytes": 781271996,
+      "sha256": "8778fa2f0907e4eb65917b27092a911a400f9f2ee2eea4271423b706c29249a6",
+      "reason": "verified_wikipedia_source_or_excluded_qa_download"
+    },
+    {
+      "path": "memory/sources/information_wikipedia_20231101_de/train-00007-of-00020.parquet",
+      "bytes": 258122020,
+      "sha256": "e35fec0fe1ca3614b2a44c53db7251e94863cb3c72a20b7cce73ede0bd4fae96",
+      "reason": "verified_wikipedia_source_or_excluded_qa_download"
+    },
+    {
+      "path": "memory/sources/information_wikipedia_20231101_de/train-00013-of-00020.parquet",
+      "bytes": 228591696,
+      "sha256": "69d92a94ba4b28a9ea38311a33070b7f9cebf31f0bea51ba13e4e2ef9867409f",
+      "reason": "verified_wikipedia_source_or_excluded_qa_download"
+    },
+    {
+      "path": "memory/sources/information_wikipedia_20231101_de/train-00019-of-00020.parquet",
+      "bytes": 228498582,
+      "sha256": "380fdb4baf70df935d3fec62761d36c8bff2f000a2cc7b720ebde743a8352e18",
+      "reason": "verified_wikipedia_source_or_excluded_qa_download"
+    },
+    {
+      "path": "memory/sources/openassistant-oasst2/2023-11-05_oasst2_all.messages.jsonl.gz",
+      "bytes": 75076341,
+      "sha256": "820146830e78634170f5a33d79d0b3e5022a7f169ce054886ad1f16e1d53a764",
+      "reason": "verified_wikipedia_source_or_excluded_qa_download"
+    },
+    {
+      "path": "memory/sources/openassistant-oasst2/2023-11-05_oasst2_ready.messages.jsonl.gz",
+      "bytes": 54301900,
+      "sha256": "a9f240c4c77aa1378364f70d37e753c07ba284e247b019d700e1947a0e5da751",
+      "reason": "verified_wikipedia_source_or_excluded_qa_download"
+    },
+    {
+      "path": "memory/sources/openassistant-oasst2/followup_candidates_de.jsonl",
+      "bytes": 1789056,
+      "sha256": "445b50b0a4df67c4a57ab435b0441c3f699f081bb78a0dcac7c0cad5345f7e25",
+      "reason": "verified_wikipedia_source_or_excluded_qa_download"
+    },
+    {
+      "path": "results/dialogue/round1/memory/fixtures/extension_120.jsonl",
+      "bytes": 26514,
+      "sha256": "8dbfad5536db23888bc667ec73653e3f63128b7503acf510371fc5625e5dff02",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/extended/superseded/extension_120.jsonl",
+      "bytes": 18986,
+      "sha256": "ee889ab79540675a1b8331739ce41a8c466a4adb0ad9a8453eaeccc02ae87512",
+      "reason": "historical_corpus_copy_or_paired_dataset"
+    },
+    {
+      "path": "results/information_corpus/evaluation/baseline_documents.jsonl",
+      "bytes": 6193005,
+      "sha256": "0d8ea03f0943f4bce3479164f362a2ece2f78caad68a143c3ce156441ff82d64",
+      "reason": "historical_corpus_copy_or_paired_dataset"
+    },
+    {
+      "path": "results/public_corpus/evaluation/baseline_documents.jsonl",
+      "bytes": 130455,
+      "sha256": "c4279b342af9e9798ea6fc59f706b3c7acfd8a30495b716f603c7c4f0f16e065",
+      "reason": "historical_corpus_copy_or_paired_dataset"
+    },
+    {
+      "path": "results/public_corpus/evaluation/corpora/v1.jsonl",
+      "bytes": 18680063,
+      "sha256": "18aa66001f4afe34bf9c34f6fd62871a1c6930c796a11c82c03081f7356a5671",
+      "reason": "historical_corpus_copy_or_paired_dataset"
+    },
+    {
+      "path": "results/public_corpus/evaluation/corpora/v2.jsonl",
+      "bytes": 18353084,
+      "sha256": "3e3fd101794e08ebdd62cdb1fe031879171e2e24ed17a479f82c79abca2e9211",
+      "reason": "historical_corpus_copy_or_paired_dataset"
+    },
+    {
+      "path": "results/public_corpus/evaluation/corpora/v3.jsonl",
+      "bytes": 18752488,
+      "sha256": "832754653cdd1dcd0c2c0cb7043d3edae71f8e28558b5ed7a145362c0b73d9fa",
+      "reason": "historical_corpus_copy_or_paired_dataset"
+    },
+    {
+      "path": "results/unpaired_system/evaluation/baseline_documents.jsonl",
+      "bytes": 16918039,
+      "sha256": "a56fca5757a3967ba5ec31f015d7ce8fc60045c11c9654b0420e9010a19a1a8c",
+      "reason": "historical_corpus_copy_or_paired_dataset"
+    },
+    {
+      "path": "results/dialogue/round1/memory/evaluation/dialogue_generalization.json",
+      "bytes": 34830,
+      "sha256": "33dc0af1ca027b10243aff432635b851e6221d03c96dde79d37cb723d066dc24",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/dialogue/round1/memory/language/german.json",
+      "bytes": 2675,
+      "sha256": "8a44d37d7d68cf15f3854aa5a05707a02b15553efb2956bc69a3ce682571cf9f",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/information_corpus/evaluation/baseline_code/memory/language/generative_categories.json",
+      "bytes": 1742,
+      "sha256": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/information_corpus/evaluation/runtime_v1_code/memory/language/generative_categories.json",
+      "bytes": 1742,
+      "sha256": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/information_corpus/evaluation/runtime_v2_code/memory/language/generative_categories.json",
+      "bytes": 1742,
+      "sha256": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/information_corpus/evaluation/runtime_v3_code/memory/language/generative_categories.json",
+      "bytes": 1742,
+      "sha256": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/information_corpus/evaluation/trial_v1_code/memory/language/generative_categories.json",
+      "bytes": 1742,
+      "sha256": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/information_corpus/evaluation/trial_v2_code/memory/language/generative_categories.json",
+      "bytes": 1742,
+      "sha256": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/public_corpus/evaluation/baseline_code/memory/language/generative_categories.json",
+      "bytes": 1430,
+      "sha256": "c2e86689ed55efcc68bc2dbc4ea053d20b6247c0ae054233e299013dd54933fe",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/public_corpus/evaluation/fast_code/memory/language/generative_categories.json",
+      "bytes": 1742,
+      "sha256": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/public_corpus/evaluation/final_code/memory/language/generative_categories.json",
+      "bytes": 1742,
+      "sha256": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/public_corpus/evaluation/weighted_code/memory/language/generative_categories.json",
+      "bytes": 1592,
+      "sha256": "f544898927d11014a4c9f63ed8af497997ad7eeb2133c384a7ab7bb6bff557d0",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/unpaired_system/evaluation/baseline_code/memory/language/generative_categories.json",
+      "bytes": 1742,
+      "sha256": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/unpaired_system/evaluation/final_code/memory/language/generative_categories.json",
+      "bytes": 1742,
+      "sha256": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/unpaired_system/evaluation/trial_v1_code/memory/language/generative_categories.json",
+      "bytes": 1742,
+      "sha256": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/unpaired_system/evaluation/trial_v2_code/memory/language/generative_categories.json",
+      "bytes": 1742,
+      "sha256": "807b97ec49f1d9957c44eabfded23ebca0f024218b8f18e0c938818c90af8673",
+      "reason": "historical_dataset_copy"
+    },
+    {
+      "path": "results/public_corpus/evaluation/germanquad_test-0000.parquet",
+      "bytes": 894803,
+      "sha256": "c154513e016e73e4e32b46b48010f24a435ad7b0e96cc3858cfc20c7d29649bc",
+      "reason": "legacy_qa_evaluation_download"
+    }
+  ],
+  "moves": [
+    {
+      "path": "memory/sources/deepset-germanquad/DATASET_CARD.md",
+      "destination": "docs/data_sources/deepset-germanquad/DATASET_CARD.md",
+      "sha256": "9f66bbb6fb8515ae4f7e3385983b82dc0a1ceee1a60a396560b15d2c388be4af"
+    },
+    {
+      "path": "memory/sources/information_research/audit_information_candidate.py",
+      "destination": "docs/data_sources/information_research/audit_information_candidate.py",
+      "sha256": "ab8e73e1af77d5d42ddb9de5038ad650bcd9985c6f2173212c69f1a71c28c81f"
+    },
+    {
+      "path": "memory/sources/information_research/audit_information_candidate_v1.py",
+      "destination": "docs/data_sources/information_research/audit_information_candidate_v1.py",
+      "sha256": "28a3708b52f960e502206bdd4b1e0823e182c6664de27aa179ffdbec2c85d8e3"
+    },
+    {
+      "path": "memory/sources/information_research/candidate_audit.json",
+      "destination": "docs/data_sources/information_research/candidate_audit.json",
+      "sha256": "6e61e7cbc79e8c0c6470c41cd115fd5c4c2fb85b0bf7aef4083e22b9cbe15519"
+    },
+    {
+      "path": "memory/sources/information_research/candidate_audit_v3.json",
+      "destination": "docs/data_sources/information_research/candidate_audit_v3.json",
+      "sha256": "d7c7c58ee58b365bec975337f91217d641c60ae0e53748cc34b20761fe6161ac"
+    },
+    {
+      "path": "memory/sources/information_research/import_information_corpus_v1.py",
+      "destination": "docs/data_sources/information_research/import_information_corpus_v1.py",
+      "sha256": "e90870b3e756531e0efcdc7e09b77fb6ccc1acb9f92ac7f74ad7a83401f16152"
+    },
+    {
+      "path": "memory/sources/information_research/import_information_corpus_v2.py",
+      "destination": "docs/data_sources/information_research/import_information_corpus_v2.py",
+      "sha256": "d2e53d4814588cf4a57a8842c231d37f5a352f4c55630ca6774260fdc67d0bcb"
+    },
+    {
+      "path": "memory/sources/information_research/primary-1.txt",
+      "destination": "docs/data_sources/information_research/primary-1.txt",
+      "sha256": "3ca1a8f9802023337990ce6c32d4e15f90c72f19f31e9079b052fb9d16215bca"
+    },
+    {
+      "path": "memory/sources/information_research/primary-2.txt",
+      "destination": "docs/data_sources/information_research/primary-2.txt",
+      "sha256": "a0f2055ac612f924721e9981fa2a49a18adec1c67cc8026f6c97d12f17211b21"
+    },
+    {
+      "path": "memory/sources/information_research/primary-3.txt",
+      "destination": "docs/data_sources/information_research/primary-3.txt",
+      "sha256": "25ede2d5d3b471f14e31d54ad1bbebf2e0f04fb5c32b1101013a61728c6eed01"
+    },
+    {
+      "path": "memory/sources/information_research/search-1.json",
+      "destination": "docs/data_sources/information_research/search-1.json",
+      "sha256": "3cb08d3c60ffed02f12b7e02fa5f57c970128465444ec481bd35cb97e8e5cd1f"
+    },
+    {
+      "path": "memory/sources/information_research/search-2.json",
+      "destination": "docs/data_sources/information_research/search-2.json",
+      "sha256": "046388f982089dca40b2898b66705c2a8453c8b65412ee29d8fb9aa599613383"
+    },
+    {
+      "path": "memory/sources/information_research/search-3.json",
+      "destination": "docs/data_sources/information_research/search-3.json",
+      "sha256": "d7c57b9597fee8ce903969b88c2fdc9934b52e5a5bfb97a861f5e87ecfbbb4ef"
+    },
+    {
+      "path": "memory/sources/information_wikipedia_20231101_de/source_manifest.json",
+      "destination": "docs/data_sources/information_wikipedia_20231101_de/source_manifest.json",
+      "sha256": "783cac47d318ac74869b84ef0cfdebd287deb8d4622c18ffc3284146dc88a722"
+    },
+    {
+      "path": "memory/sources/openassistant-oasst2/DATASET_CARD.md",
+      "destination": "docs/data_sources/openassistant-oasst2/DATASET_CARD.md",
+      "sha256": "52bd472cf3cae04a4b21ecd5316f929741c47d991d4763b041c3a94de072dc31"
+    },
+    {
+      "path": "memory/sources/openassistant-oasst2/LICENSE.txt",
+      "destination": "docs/data_sources/openassistant-oasst2/LICENSE.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    }
+  ],
+  "empty_directories": [
+    "results/information_corpus/evaluation/baseline_code/memory/language",
+    "results/information_corpus/evaluation/runtime_v1_code/memory/language",
+    "results/information_corpus/evaluation/runtime_v2_code/memory/language",
+    "results/information_corpus/evaluation/runtime_v3_code/memory/language",
+    "results/information_corpus/evaluation/trial_v1_code/memory/language",
+    "results/information_corpus/evaluation/trial_v2_code/memory/language",
+    "results/public_corpus/evaluation/baseline_code/memory/language",
+    "results/public_corpus/evaluation/fast_code/memory/language",
+    "results/public_corpus/evaluation/final_code/memory/language",
+    "results/public_corpus/evaluation/weighted_code/memory/language",
+    "results/unpaired_system/evaluation/baseline_code/memory/language",
+    "results/unpaired_system/evaluation/final_code/memory/language",
+    "results/unpaired_system/evaluation/trial_v1_code/memory/language",
+    "results/unpaired_system/evaluation/trial_v2_code/memory/language",
+    "results/dialogue/round1/memory/evaluation",
+    "results/dialogue/round1/memory/fixtures",
+    "results/dialogue/round1/memory/language",
+    "results/information_corpus/evaluation/baseline_code/memory",
+    "results/information_corpus/evaluation/runtime_v1_code/memory",
+    "results/information_corpus/evaluation/runtime_v2_code/memory",
+    "results/information_corpus/evaluation/runtime_v3_code/memory",
+    "results/information_corpus/evaluation/trial_v1_code/memory",
+    "results/information_corpus/evaluation/trial_v2_code/memory",
+    "results/public_corpus/evaluation/baseline_code/memory",
+    "results/public_corpus/evaluation/fast_code/memory",
+    "results/public_corpus/evaluation/final_code/memory",
+    "results/public_corpus/evaluation/weighted_code/memory",
+    "results/unpaired_system/evaluation/baseline_code/memory",
+    "results/unpaired_system/evaluation/final_code/memory",
+    "results/unpaired_system/evaluation/trial_v1_code/memory",
+    "results/unpaired_system/evaluation/trial_v2_code/memory",
+    "results/dialogue/round1/memory",
+    "results/information_corpus/evaluation/baseline_code",
+    "results/information_corpus/evaluation/corpora",
+    "results/information_corpus/evaluation/runtime_v1_code",
+    "results/information_corpus/evaluation/runtime_v2_code",
+    "results/information_corpus/evaluation/runtime_v3_code",
+    "results/information_corpus/evaluation/trial_v1_code",
+    "results/information_corpus/evaluation/trial_v2_code",
+    "results/public_corpus/evaluation/baseline_code",
+    "results/public_corpus/evaluation/corpora",
+    "results/public_corpus/evaluation/fast_code",
+    "results/public_corpus/evaluation/final_code",
+    "results/public_corpus/evaluation/weighted_code",
+    "results/unpaired_system/evaluation/baseline_code",
+    "results/unpaired_system/evaluation/corpora",
+    "results/unpaired_system/evaluation/final_code",
+    "results/unpaired_system/evaluation/trial_v1_code",
+    "results/unpaired_system/evaluation/trial_v2_code",
+    "memory/.compiler-cache/memory.sqlite3",
+    "memory/backups/before-central-store",
+    "memory/backups/legacy-20260906T072405Z",
+    "memory/backups/legacy-originals",
+    "memory/sources/deepset-germanquad",
+    "memory/sources/information_research",
+    "memory/sources/information_wikipedia_20231101_de",
+    "memory/sources/openassistant-oasst2",
+    "results/dialogue/round1",
+    "results/extended/superseded",
+    "results/information_corpus/evaluation",
+    "results/public_corpus/evaluation",
+    "results/unpaired_system/evaluation",
+    "dataset/corpus",
+    "memory/.compiler-cache",
+    "memory/backups",
+    "memory/fixtures",
+    "memory/imports",
+    "memory/information",
+    "memory/language",
+    "memory/sources",
+    "results/dialogue",
+    "results/extended",
+    "results/information_corpus",
+    "results/public_corpus",
+    "results/unpaired_system",
+    "tests/fixtures",
+    "dataset",
+    "tests",
+    "unsloth-tmp"
+  ],
+  "delete_bytes": 2528747674,
+  "delete_count": 90
+}
