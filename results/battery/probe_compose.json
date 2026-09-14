@@ -1,0 +1,86 @@
+[
+ {
+  "prompt": "Was ist Musik?",
+  "kind": "definition",
+  "confidence": "hoch",
+  "answer": "Die kasachische Musik ist die in Zentralasien beheimatete Volksmusik und Kunstmusik der Kasachen, die auf alten türkisch-persischen Musikformen und Elementen einer einheimischen schamanischen Tradition basiert. Cajun-Musik ist die jahrhundertealte, traditionelle Musik der frankophonen, Cajuns genannten Einwanderer, die im Cajun Country im US-Bundesstaat Louisiana leben. Musik & Gegenwart ist eine Leipziger Veranstaltungsreihe zur Neuen Musik, die 2007 an der Hochschule für Musik und Theater \"Felix Mendelssohn Bartholdy\" in Leipzig von der Fachrichtung Komposition initiiert wurde und dort seitdem von Lehrkräften und Studierenden der Hochschule mit regelmäßigen Konzerten und einem jährlichen interdisziplinären Symposium gepflegt wird.",
+  "ms": 139
+ },
+ {
+  "prompt": "Wie viele Beine hat ein Hund",
+  "kind": "liste",
+  "confidence": "hoch",
+  "answer": "Mit einem Bein im Grab war eine deutsche satirische Fernsehserie mit dem als Ekel Alfred bekannt gewordenen Heinz Schubert in der Hauptrolle. Beine ist eine französische Gemeinde im Département Yonne (Region Bourgogne-Franche-Comté) in der Nähe von Auxerre und Pontigny. Lügen haben hübsche Beine ist eine im Winter spielende Verwechslungskomödie von Erik Ode aus dem Jahr 1956 mit Paul Hörbiger, Adrian Hoven, Doris Kirchner, Annie Rosar und Gunther Philipp in den Hauptrollen. Maria Beine-Hager (* 1919 in Augsburg; † 1991 in Ansbach) war eine deutsche Künstlerin.",
+  "ms": 214
+ },
+ {
+  "prompt": "Warum ist der Himmel blau?",
+  "kind": "ursache",
+  "confidence": "hoch",
+  "answer": "Macrolex Blau 3R ist ein Anthrachinonfarbstoff, der ein rotstichiges Blau liefert. Die Blau ist ein über 22 km langer Fluss am Südrand der Schwäbischen Alb im Osten von Baden-Württemberg, der in der Stadt Ulm von links und Nordwesten in die obere Donau mündet. Heute blau und morgen blau ist eine deutsche Filmkomödie von Harald Philipp aus dem Jahr 1957, deren Hauptrollen mit Paul Dahlke, Gerty Godden, Marina Orschel, Elmar und Fritz Wepper sowie Roland Kaiser, Hans Reiser, Hans Moser und Rudolf Platte besetzt sind.",
+  "ms": 86
+ },
+ {
+  "prompt": "Beschreibe dich",
+  "kind": "selbstbeschreibung",
+  "confidence": "hoch",
+  "answer": "Die Wendung Grüß dich ist eine Begrüßungsformel.",
+  "ms": 22
+ },
+ {
+  "prompt": "Welche Sprache sprichst du?",
+  "kind": "fahigkeit",
+  "confidence": "mittel",
+  "answer": "Ich sehe ausschliesslich Informationstexte meines Bestands und den gespeicherten Verlauf dieses Gesprächs. Eigene Sinneswahrnehmung habe ich nicht.",
+  "ms": 77
+ },
+ {
+  "prompt": "Hast du ein Gewissen?",
+  "kind": "fahigkeit",
+  "confidence": "mittel",
+  "answer": "Der Assistent hat kein Gewissen. Ein Gewissen ist ein menschliches Urteil über eigenes Handeln; der Assistent handelt nicht eigenständig und bildet keine moralischen Urteile.",
+  "ms": 31
+ },
+ {
+  "prompt": "Was siehst du?",
+  "kind": "fahigkeit",
+  "confidence": "mittel",
+  "answer": "Ich sehe ausschliesslich Informationstexte meines Bestands und den gespeicherten Verlauf dieses Gesprächs. Eigene Sinneswahrnehmung habe ich nicht.",
+  "ms": 4
+ },
+ {
+  "prompt": "Wo kommst du her",
+  "kind": "stichwort",
+  "confidence": "hoch",
+  "answer": "Da schau her war ein vom Bayerischen Rundfunk produziertes Wissensmagazin, das in den Jahren 1981-1986 produziert wurde. Her Majesty's SPIFFING (auf Deutsch etwa: Das SPIFFING ihrer Majestät, wobei SPIFFING eine Abkürzung darstellt, die auch als Auftakeln gelesen werden kann) ist ein Computerspiel des nordirischen Entwicklerstudios Billy Goat Entertainment. Her First Adventure ist ein US-amerikanischer Stummfilm.",
+  "ms": 86
+ },
+ {
+  "prompt": "Nenne mir drei Planeten des Sonnensystems.",
+  "kind": "liste",
+  "confidence": "hoch",
+  "answer": "Planet Neun ist der vorläufige Name eines hypothetischen planetenartigen Himmelskörpers, der im äußeren Sonnensystem weit außerhalb der Umlaufbahn des Planeten Neptun (etwa 30 AE zur Sonne) vermutet wird. Ein Planet ist nach traditioneller Sicht einer der acht oder neun großen Himmelskörper im Sonnensystem, welche die Sonne auf kreisähnlichen Bahnen umrunden. Das Sonnensystem hat acht Planeten: Merkur, Venus, Erde, Mars, Jupiter, Saturn, Uranus und Neptun. Die Venus ist mit einer durchschnittlichen Sonnenentfernung von 108 Millionen Kilometern der zweitinnerste und mit einem Durchmesser von ca. 12.100 Kilometern der drittkleinste Planet des Sonnensystems.",
+  "ms": 277
+ },
+ {
+  "prompt": "Was ist Twitch?",
+  "kind": "definition",
+  "confidence": "hoch",
+  "answer": "Twitch ist eine US-amerikanische Plattform für Live-Streams, kurz Livestreaming. Im Schwerpunkt überträgt Twitch Computerspiele, eSports und Unterhaltung; Zuschauer können während der Übertragung mit den Sendenden chatten. Turner \"Tfue\" Tenney (* 2. Januar 1998 in Indian Rocks Beach, Florida, USA) ist ein US-amerikanischer Twitch-Streamer und Webvideoproduzent.",
+  "ms": 47
+ },
+ {
+  "prompt": "Was ist Bitcoin",
+  "kind": "definition",
+  "confidence": "hoch",
+  "answer": "Die futurum bank AG ist ein Unternehmen der Bitcoin Group SE, welches unter der Domain bitcoin.de eine Handelsplattform für Kryptowährungen betreibt. Die Bitcoin Foundation ist eine im September 2012 gegründete Non-Profit-Körperschaft mit Sitz in Washington, D.C. Bitcoin ist eine Form von digitalem Geld ohne zentrale Ausgabebehörde; die Einheiten werden durch Rechenarbeit erzeugt und in einer öffentlichen Blockchain-Liste geführt.",
+  "ms": 52
+ },
+ {
+  "prompt": "Wie funktioniert eine Suchmaschine?",
+  "kind": "erklaerung",
+  "confidence": "hoch",
+  "answer": "Eine Suchmaschine durchsucht das Web mit automatischen Programmen, speichert die gefundenen Texte in einem Index und ordnet sie nach Passung zu einer Suchanfrage. Archie war eine Suchmaschine, die speziell für das Indizieren von FTP-Archiven entwickelt wurde. Eine Suchmaschine ist ein Programm zur Recherche von Dokumenten, die in einem Computer oder einem Computernetzwerk wie z. B. dem World Wide Web gespeichert sind. Die wesentlichen Bestandteile bzw. Aufgabenbereiche einer Suchmaschine sind:\n Erstellung und Pflege eines Index (Datenstruktur mit Informationen über Dokumente),\n Verarbeiten von Suchanfragen (Finden und Ordnen von Ergebnissen) sowie\n Aufbereitung der Ergebnisse in einer möglichst sinnvollen Form.",
+  "ms": 59
+ }
+]

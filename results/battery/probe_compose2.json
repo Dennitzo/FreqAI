@@ -1,0 +1,170 @@
+[
+ {
+  "prompt": "Was ist Musik?",
+  "kind": "definition",
+  "confidence": "hoch",
+  "answer": "Musik ist ein planvolles Arrangement von Klängen und Geräuschen mit den Elementen Rhythmus, Melodie, Harmonie und Klangfarbe. Cajun-Musik ist die jahrhundertealte, traditionelle Musik der frankophonen, Cajuns genannten Einwanderer, die im Cajun Country im US-Bundesstaat Louisiana leben. Gattung bezeichnet in der Musik einen Kompositionstypus.",
+  "ms": 147
+ },
+ {
+  "prompt": "Wie viele Beine hat ein Hund",
+  "kind": "liste",
+  "confidence": "hoch",
+  "answer": "Hunde haben kurze Beine (Arbeitstitel: Auf den Hund gekommen) ist ein deutscher Liebesfilm und eine Filmkomödie des Regisseurs Josh Broecker aus dem Jahr 2006. In der Hauptrolle verkörpert Tim Bergmann den erfolgreichen Immobilienmakler Thomas Andersen. Beine ist eine französische Gemeinde im Département Yonne (Region Bourgogne-Franche-Comté) in der Nähe von Auxerre und Pontigny. Dass ausgerechnet Hoss, der Hund seines Onkels, Toms treuester Begleiter wird, hätte er sich vorher nicht im Traum vorstellen können. Mit einem Bein im Leben ist ein Roman der deutschen Schriftstellerin Cordula Zickgraf und erschien 1987. Er handelt von der jungen Andrea, die als aktive Jugend-Sportlerin durch einen Verkehrsunfall ein Bein verliert und sich mit der nun völlig veränderten Lage zurechtfinden muss.",
+  "ms": 221
+ },
+ {
+  "prompt": "Warum ist der Himmel blau?",
+  "kind": "ursache",
+  "confidence": "hoch",
+  "answer": "Die Blau ist ein über 22 km langer Fluss am Südrand der Schwäbischen Alb im Osten von Baden-Württemberg, der in der Stadt Ulm von links und Nordwesten in die obere Donau mündet. Der Himmel erscheint blau, weil Luftmoleküle das kurze blaue Licht des Sonnenlichts stärker streuen als das lange rote Licht; dieser Effekt heißt Rayleigh-Streuung. Radio Blau ist ein nichtkommerzielles Freies Radio für die Region Leipzig.",
+  "ms": 89
+ },
+ {
+  "prompt": "Beschreibe dich",
+  "kind": "selbstauskunft",
+  "confidence": "hoch",
+  "answer": "Der Assistent ist ein textbasiertes Assistenzprogramm. Er berechnet Antworten aus deklarierten Informationstexten, der aktuellen Nachricht und dem gespeicherten Gesprächsverlauf.",
+  "ms": 67
+ },
+ {
+  "prompt": "Welche Sprache sprichst du?",
+  "kind": "selbstauskunft",
+  "confidence": "mittel",
+  "answer": "Der Assistent sieht ausschließlich Informationstexte seines Bestands und den gespeicherten Verlauf des Gesprächs. Eine eigene Sinneswahrnehmung hat er nicht.",
+  "ms": 77
+ },
+ {
+  "prompt": "Hast du ein Gewissen?",
+  "kind": "selbstauskunft",
+  "confidence": "hoch",
+  "answer": "Der Assistent hat kein Gewissen. Rückgrat seiner Antworten sind überprüfbare Informationstexte statt einer inneren Instanz.",
+  "ms": 31
+ },
+ {
+  "prompt": "Was siehst du?",
+  "kind": "selbstauskunft",
+  "confidence": "hoch",
+  "answer": "Der Assistent sieht ausschließlich Informationstexte seines Informationsbestands und den gespeicherten Verlauf des jeweiligen Gesprächs. Der Assistent sieht keine Kamerabilder, keinen Bildschirm, keine Standorte und keine personenbezogenen Daten außerhalb des gespeicherten Gesprächsverlaufs.",
+  "ms": 49
+ },
+ {
+  "prompt": "Wo kommst du her",
+  "kind": "selbstauskunft",
+  "confidence": "hoch",
+  "answer": "Der Assistent ist ein Programm und wächst nicht auf. Die Grundlage des Assistenten sind sein Informationsbestand und seine Rechnerumgebung.",
+  "ms": 79
+ },
+ {
+  "prompt": "Nenne mir drei Planeten des Sonnensystems.",
+  "kind": "liste",
+  "confidence": "hoch",
+  "answer": "Der Neptun ist der achte und äußerste bekannte Planet unseres Sonnensystems. Planet Neun ist der vorläufige Name eines hypothetischen planetenartigen Himmelskörpers, der im äußeren Sonnensystem weit außerhalb der Umlaufbahn des Planeten Neptun (etwa 30 AE zur Sonne) vermutet wird. Das Sonnensystem hat acht Planeten: Merkur, Venus, Erde, Mars, Jupiter, Saturn, Uranus und Neptun. Ein Planet ist nach traditioneller Sicht einer der acht oder neun großen Himmelskörper im Sonnensystem, welche die Sonne auf kreisähnlichen Bahnen umrunden.",
+  "ms": 282
+ },
+ {
+  "prompt": "Was ist Twitch?",
+  "kind": "definition",
+  "confidence": "hoch",
+  "answer": "Twitch ist eine US-amerikanische Plattform für Live-Streams, kurz Livestreaming. Der Dienst wurde 2014 von Amazon übernommen. Im Schwerpunkt überträgt Twitch Computerspiele, eSports und Unterhaltung; Zuschauer können während der Übertragung mit den Sendenden chatten.",
+  "ms": 50
+ },
+ {
+  "prompt": "Was ist Bitcoin",
+  "kind": "definition",
+  "confidence": "hoch",
+  "answer": "Bitcoin ist eine Form von digitalem Geld ohne zentrale Ausgabebehörde; die Einheiten werden durch Rechenarbeit erzeugt und in einer öffentlichen Blockchain-Liste geführt. Die futurum bank AG ist ein Unternehmen der Bitcoin Group SE, welches unter der Domain bitcoin.de eine Handelsplattform für Kryptowährungen betreibt. Die Bitcoin Foundation ist eine im September 2012 gegründete Non-Profit-Körperschaft mit Sitz in Washington, D.C.",
+  "ms": 55
+ },
+ {
+  "prompt": "Was ist eine Temperatur in der Physik",
+  "kind": "definition",
+  "confidence": "hoch",
+  "answer": "Die Temperatur ist eine physikalische Zustandsgröße, die angibt, wie heiß oder kalt ein Körper ist. Die pseudopotentielle Temperatur in K ist ein fiktives Temperaturmaß, das vor allem in der Meteorologie dazu dient, die Temperaturen unterschiedlicher Luftmassen zu vergleichen. Im Internationalen Einheitensystem ist ihre Basiseinheit das Kelvin; im Alltag sind Grad Celsius üblich.",
+  "ms": 81
+ },
+ {
+  "prompt": "Wie lange gibt es die deutsche Sprache",
+  "kind": "zeit",
+  "confidence": "hoch",
+  "answer": "Amtssprache ist Deutsch in Deutschland, Österreich, der Schweiz, Liechtenstein und Luxemburg. Deutsch war im 19. und zu Beginn des 20. Jahrhunderts eine der am häufigsten gesprochenen Sprachen in den Vereinigten Staaten von Amerika.",
+  "ms": 554
+ },
+ {
+  "prompt": "Wie viele Sprachen gibt es?",
+  "kind": "liste",
+  "confidence": "hoch",
+  "answer": "Der Mann, der mit Schlangen sprach (estn. Leemet versucht trotz zahlreicher Rückschläge, die im Laufe seines Erwachsenwerdens immer schwerer werden, auf gewohnte, ursprüngliche Art zu leben. Das gewohnte Leben als Jäger und Sammler im Wald wird von Rittern und Mönchen, die aus fernen Ländern stammen und Deutsch oder Latein sprechen, bedroht. Sprach- und kulturwissenschaftlicher Dienst bezeichnet in Deutschland eine Gruppe von Laufbahnen für Beamte, die verwandte Vor- und Ausbildungen voraussetzen.",
+  "ms": 339
+ },
+ {
+  "prompt": "Was ist Scifi",
+  "kind": "definition",
+  "confidence": "niedrig",
+  "answer": "Im Bestand ist dazu nur ein loser Zusammenhang: Seit 1949 ist Science-Fiction auch Bestandteil des Fernsehprogrammes.",
+  "ms": 106
+ },
+ {
+  "prompt": "Erkläre Sci-Fi",
+  "kind": "erklaerung",
+  "confidence": "hoch",
+  "answer": "Die Fieseler Fi 156 Storch ist ein kolbenmotorgetriebenes STOL-Flugzeug, das erstmals 1936 flog. Der Frederikshavn forenede Idrætsklubber ist ein Sportverein aus Frederikshavn in der dänischen Region Nordjylland. PGM-FI, Kurzform von Programmed Fuel Injection, ist ein digitales Motorsteuergerät (ECU) für Ottomotoren mit Saugrohreinspritzung, das von Honda 1985 auf den Markt gebracht wurde. Sowohl die Fußballer als auch die Handballerinnen gehörten mehrere Jahre den jeweils höchsten Spielklassen des Landes an.",
+  "ms": 80
+ },
+ {
+  "prompt": "Künstliche Intelligenz",
+  "kind": "stichwort",
+  "confidence": "hoch",
+  "answer": "Künstliche Intelligenz in der Medizin ist ein stark wachsender Teilbereich der künstlichen Intelligenz (KI), bei dem digital vorliegende Informationen ausgewertet werden, um möglichst aussagekräftige Diagnosen zu stellen und bzw. oder optimierte Therapien vorzuschlagen. Künstliche Intelligenz ist ein Teilgebiet der Informatik, das Maschinen Fähigkeiten wie Planen, Erkennen und Sprachverstehen geben will. Das Deutsche Forschungszentrum für Künstliche Intelligenz GmbH (DFKI) ist eine öffentlich-private Partnerschaft mit Großunternehmen, Mittelständlern, den Ländern Bremen, Rheinland-Pfalz und Saarland als Gesellschaftern und dem deutschen Bundesministerium für Bildung und Forschung als Projektförderer.",
+  "ms": 89
+ },
+ {
+  "prompt": "Giraffe",
+  "kind": "stichwort",
+  "confidence": "hoch",
+  "answer": "Giraffe ist ein Filmdrama von Anna Sofie Hartmann. Die Massai-Giraffe (Giraffa tippelskirchi) ist nach neuesten Erkenntnissen eine eigenständige Art innerhalb der Gattung der Giraffen (Giraffa) der Familie der Giraffenartigen (Giraffidae). Die Giraffe oder der Kamelopard ist ein Sternbild des Nordhimmels.",
+  "ms": 47
+ },
+ {
+  "prompt": "eBay",
+  "kind": "stichwort",
+  "confidence": "hoch",
+  "answer": "EBay ist ein 1995 gegründetes US-amerikanisches Unternehmen für Online-Marktplätze, auf denen private und gewerbliche Anbieter Waren versteigern oder fest anbieten. On Ebay ist ein 2004 entstandenes Lied der britischen Band Chumbawamba. Mit ebay.de betreibt das Unternehmen einen der meistgenutzten Verkaufsmärkte Deutschlands.",
+  "ms": 53
+ },
+ {
+  "prompt": "Fender",
+  "kind": "stichwort",
+  "confidence": "hoch",
+  "answer": "Fender ist ein US-amerikanischer Hersteller von Gitarren, Bässen und Verstärkern mit Sitz in Kalifornien. Kevin Fend (* 8. April 1990 in Hohenems) ist ein österreichischer Fußballtorwart. Fritz Fend (* 14. Oktober 1915 in Frankfurt am Main; † 16. Dezember 1944 in Kiew, Ukrainische SSR, Sowjetunion) war ein deutscher Fußballspieler.",
+  "ms": 57
+ },
+ {
+  "prompt": "KI",
+  "kind": "stichwort",
+  "confidence": "hoch",
+  "answer": "Ki-Yang-Yang war eine Bewegung junger Balanta-Frauen in Guinea-Bissau. Das Qwan Ki Do (vietnamesisch Quán Khí Đạo) ist eine asiatische Kampfkunst. Kim Ki-duk (* 20. Dezember 1960 in Bonghwa, Südkorea; † 11. Dezember 2020 in Riga, Lettland) war ein südkoreanischer Filmregisseur, Drehbuchautor und Filmproduzent.",
+  "ms": 69
+ },
+ {
+  "prompt": "Was ist eine Substanz",
+  "kind": "definition",
+  "confidence": "hoch",
+  "answer": "In der Philosophie ist Substanz die Bezeichnung des Begriffs für das unveränderliche, beharrende und selbstständige Seiende, dasjenige, das 'unter' den veränderlichen Eigenschaften bzw. Akzidenzien 'steht'. Die Substanz (lateinisch substantia, von) ist, woraus etwas besteht. Eine psychotrope Substanz ist ein Wirkstoff, der die menschliche Psyche beeinflusst.",
+  "ms": 78
+ },
+ {
+  "prompt": "Was ist Liebe?",
+  "kind": "definition",
+  "confidence": "hoch",
+  "answer": "Lieb & Teuer, auch lieb & teuer, war eine erstmals am 11. März 2001 ausgestrahlte Kunst- und Antiquitätenshow des NDR, die sonntags ab 16 Uhr vom NDR Fernsehen und Radio Bremen TV gesendet wurde. Silvia Lieb (* 25. Oktober 1970) ist eine Tiroler Medienmanagerin. Ernst Lieb (* 13. Januar 1898 in Stein am Rhein; † 5. Dezember 1989 in Schaffhausen, heimatberechtigt in Stein am Rhein) war ein Schweizer Politiker (BGB).",
+  "ms": 107
+ },
+ {
+  "prompt": "Was ist Kunst?",
+  "kind": "definition",
+  "confidence": "hoch",
+  "answer": "Die Kunst des Krieges bezeichnet:\n die Theorie und Praxis im Militärwesen, siehe Kriegskunst\n das Buch Sūnzǐ bīngfǎ von Sunzi, siehe Die Kunst des Krieges (Sunzi)\n das Buch Dell'Arte della Guerra von Niccolò Machiavelli, siehe Die Kunst des Krieges (Machiavelli)\n einen Fernsehfilm aus der Krimireihe Tatort (2016), siehe Tatort: Die Kunst des Krieges. Naive Kunst ist eine Sammelbezeichnung für künstlerische Arbeiten von Autodidakten, vorwiegend in der Malerei (auch Laienmaler genannt), mit betont einfacher, unbekümmerter, fantasievoller Wahl der Bildmotive. Digitale Kunst oder Digitalkunst, oft gleichbedeutend mit Computerkunst gebraucht, sind im allgemeinen Sprachgebrauch Sammelbegriffe für Kunst, die digital mit dem Computer erzeugt wird.",
+  "ms": 108
+ }
+]

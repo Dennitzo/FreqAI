@@ -149,6 +149,22 @@ def context_snapshot(memory, context=None, time_s=0.0, points=128):
     return model.context_snapshot(_context_vector(model, context), time_s=time_s, points=points)
 
 
+def compose_from_corpus(memory, prompt, context=None, *, allow_generative=True):
+    """Satzfelder-Antwort aus dem Bestand; liefert None, wenn nichts getragen ist."""
+    if not len(memory.documents):
+        return None
+    from .sentence_waves import compose_answer
+    focus = (context or {}).get("unpaired") or (context or {})
+    try:
+        composed = compose_answer(memory, prompt, focus, allow_generative=allow_generative)
+    except Exception as error:  # noqa: BLE001 - Die Feldantwort darf nie abbrechen
+        return {"answer": "", "error": f"{type(error).__name__}: {error}", "kind": "fehler",
+                "confidence": "keine", "evidence": [], "used_terms": []}
+    if not composed.get("answer"):
+        return None
+    return composed
+
+
 def respond_wave(memory, prompt, context=None, time_s=0.0, top_k=1, max_tokens=40, seed=17):
     if getattr(memory, 'paged', False):
         with memory._selection_lock:
@@ -159,7 +175,21 @@ def respond_wave(memory, prompt, context=None, time_s=0.0, top_k=1, max_tokens=4
             result['configuration']['working_documents'] = len(working.documents)
             result['configuration']['corpus_documents'] = len(memory.documents)
             result['note'] = 'Vollbestand auf Festplatte; passende Informationsabschnitte werden mit demselben Wellencompiler generiert.'
-            return result, state
+        composed = None if result.get("answer") else compose_from_corpus(
+            memory, prompt, context)
+        if composed:
+            result["answer"] = composed["answer"]
+            result["abstained"] = False
+            result["truncated"] = False
+            result["generation_reason"] = "sentence_field_readout"
+            result["answer_method"] = {"kind": composed.get("kind"),
+                                       "confidence": composed.get("confidence"),
+                                       "evidence": composed.get("evidence", []),
+                                       "wave_verification_error":
+                                           composed.get("wave_verification_error")}
+            state["unpaired"]["focus"] = composed.get("focus") or ""
+            state["unpaired"]["used_terms"] = composed.get("used_terms", [])
+        return result, state
     if not isinstance(prompt, str) or not prompt.strip():
         raise ValueError("Prompt must contain text")
     if not np.isfinite(time_s) or type(max_tokens) is not int or not 1 <= max_tokens <= 128:

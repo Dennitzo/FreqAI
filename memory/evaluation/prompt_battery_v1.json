@@ -1,0 +1,785 @@
+{
+ "version": 1,
+ "purpose": "Prompt-Batterie: real beobachtete Schwächen plus Sprachverstaendnis-Probes",
+ "cases": [
+  {
+   "id": "log01",
+   "kind": "factoid_person",
+   "turns": [
+    {
+     "prompt": "Wer ist Albert Einstein?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log02",
+   "kind": "factoid_person",
+   "turns": [
+    {
+     "prompt": "Wer war Max Planck"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log03",
+   "kind": "keyword_only",
+   "turns": [
+    {
+     "prompt": "Kinofilm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log04",
+   "kind": "keyword_only",
+   "turns": [
+    {
+     "prompt": "Physik"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log05",
+   "kind": "keyword_only",
+   "turns": [
+    {
+     "prompt": "Mathematik"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log06",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist die Antike"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log07",
+   "kind": "definition_ambiguous",
+   "turns": [
+    {
+     "prompt": "Was ist Python"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log08",
+   "kind": "multi_question",
+   "turns": [
+    {
+     "prompt": "Was ist eine Frequenz und wie lautet ihre SI Einheit?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log09",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist eine Frequenz?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log10",
+   "kind": "anaphora_followup",
+   "turns": [
+    {
+     "prompt": "Was ist eine Frequenz?"
+    },
+    {
+     "prompt": "Wie ist ihre Einheit?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log11",
+   "kind": "keyword_phrase",
+   "turns": [
+    {
+     "prompt": "SI Einheit einer Frequenz"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log12",
+   "kind": "numeric_fact",
+   "turns": [
+    {
+     "prompt": "Wie viele Beine hat ein Hund"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log13",
+   "kind": "keyword_only",
+   "turns": [
+    {
+     "prompt": "Giraffe"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log14",
+   "kind": "phatic_request",
+   "turns": [
+    {
+     "prompt": "Gib mir einen Tipp"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log15",
+   "kind": "definition_it",
+   "turns": [
+    {
+     "prompt": "Was ist Twitch?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log16",
+   "kind": "definition_it",
+   "turns": [
+    {
+     "prompt": "Was ist Youtube"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log17",
+   "kind": "self_descriptive",
+   "turns": [
+    {
+     "prompt": "Was ist FreqAI"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log18",
+   "kind": "definition_it",
+   "turns": [
+    {
+     "prompt": "Was ist Bitcoin"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log19",
+   "kind": "keyword_only",
+   "turns": [
+    {
+     "prompt": "Bitcoin"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log20",
+   "kind": "keyword_only",
+   "turns": [
+    {
+     "prompt": "eBay"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log21",
+   "kind": "keyword_ambiguous",
+   "turns": [
+    {
+     "prompt": "Fender"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log22",
+   "kind": "abbreviation",
+   "turns": [
+    {
+     "prompt": "KI"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log23",
+   "kind": "keyword_only",
+   "turns": [
+    {
+     "prompt": "Künstliche Intelligenz"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log24",
+   "kind": "explain_request",
+   "turns": [
+    {
+     "prompt": "Erkläre mir künstliche Intelligenz."
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log25",
+   "kind": "explain_request",
+   "turns": [
+    {
+     "prompt": "Erkläre mir eine Schwingung"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log26",
+   "kind": "phatic_request",
+   "turns": [
+    {
+     "prompt": "Führe ein Gespräch mit mir"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log27",
+   "kind": "assistant_state",
+   "turns": [
+    {
+     "prompt": "Wie geht es dir?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log28",
+   "kind": "capability_question",
+   "turns": [
+    {
+     "prompt": "Welche Daten siehst du?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log29",
+   "kind": "unknown_entity_subjective",
+   "turns": [
+    {
+     "prompt": "Was ist für dich ChatGPT"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log30",
+   "kind": "definition_lower",
+   "turns": [
+    {
+     "prompt": "was ist ein compiler"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log31",
+   "kind": "spelling_variant",
+   "turns": [
+    {
+     "prompt": "Was ist Scifi"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log32",
+   "kind": "spelling_variant_explain",
+   "turns": [
+    {
+     "prompt": "Erkläre Sci-Fi"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log33",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist der Weltraum"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log34",
+   "kind": "disambiguated_definition",
+   "turns": [
+    {
+     "prompt": "Was ist eine Temperatur in der Physik"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log35",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist eine Temperatur"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log36",
+   "kind": "process_question",
+   "turns": [
+    {
+     "prompt": "Wie entstehen Blitze"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log37",
+   "kind": "process_question",
+   "turns": [
+    {
+     "prompt": "Wie entsteht ein Gewitter"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log38",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist Stickstoffdioxid"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log39",
+   "kind": "explain_request",
+   "turns": [
+    {
+     "prompt": "Erkläre mir ein Oxidationsmittel"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log40",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist ein Oxidationsmittel"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log41",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist eine Substanz"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log42",
+   "kind": "numeric_fact",
+   "turns": [
+    {
+     "prompt": "Wie viele Sprachen gibt es?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log43",
+   "kind": "temporal_fact",
+   "turns": [
+    {
+     "prompt": "Wie lange gibt es die deutsche Sprache"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log44",
+   "kind": "capability_question",
+   "turns": [
+    {
+     "prompt": "Welche Sprache sprichst du?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log45",
+   "kind": "keyword_only",
+   "turns": [
+    {
+     "prompt": "Deutsch"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log46",
+   "kind": "assistant_name",
+   "turns": [
+    {
+     "prompt": "Wie heißt du?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log47",
+   "kind": "assistant_personal",
+   "turns": [
+    {
+     "prompt": "Wo kommst du her"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log48",
+   "kind": "assistant_personal",
+   "turns": [
+    {
+     "prompt": "Wo bist du aufgewachsen?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log49",
+   "kind": "self_descriptive",
+   "turns": [
+    {
+     "prompt": "Beschreibe dich"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log50",
+   "kind": "capability_question",
+   "turns": [
+    {
+     "prompt": "Was siehst du?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log51",
+   "kind": "capability_question",
+   "turns": [
+    {
+     "prompt": "Über was denkst du nach?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "log52",
+   "kind": "capability_question",
+   "turns": [
+    {
+     "prompt": "Hast du ein Gewissen?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p01",
+   "kind": "comparison",
+   "turns": [
+    {
+     "prompt": "Was ist der Unterschied zwischen Temperatur und Wärme?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p02",
+   "kind": "list_request",
+   "turns": [
+    {
+     "prompt": "Nenne mir drei Planeten des Sonnensystems."
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p03",
+   "kind": "summarize_request",
+   "turns": [
+    {
+     "prompt": "Fasse den Artikel über Quantenmechanik zusammen."
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p04",
+   "kind": "instruction_unsupported",
+   "turns": [
+    {
+     "prompt": "Übersetze 'Hund' ins Englische."
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p05",
+   "kind": "causal_question",
+   "turns": [
+    {
+     "prompt": "Warum ist der Himmel blau?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p06",
+   "kind": "temporal_fact",
+   "turns": [
+    {
+     "prompt": "Was hat Einstein 1921 bekommen?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p07",
+   "kind": "yes_no_question",
+   "turns": [
+    {
+     "prompt": "Stimmt es, dass Fische denken können?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p08",
+   "kind": "open_request",
+   "turns": [
+    {
+     "prompt": "Erzähl mir etwas über das Römische Reich."
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p09",
+   "kind": "relational_fact",
+   "turns": [
+    {
+     "prompt": "Wer schrieb die deutsche Nationalhymne?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p10",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist ein Neuron?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p11",
+   "kind": "anglicism_definition",
+   "turns": [
+    {
+     "prompt": "Was ist Machine Learning?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p12",
+   "kind": "process_question",
+   "turns": [
+    {
+     "prompt": "Wie funktioniert eine Suchmaschine?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p13",
+   "kind": "phatic",
+   "turns": [
+    {
+     "prompt": "Danke!"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p14",
+   "kind": "phatic",
+   "turns": [
+    {
+     "prompt": "Tschüss"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p15",
+   "kind": "phatic",
+   "turns": [
+    {
+     "prompt": "Guten Morgen"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p16",
+   "kind": "memory_session",
+   "turns": [
+    {
+     "prompt": "Ich heiße Markus."
+    },
+    {
+     "prompt": "Wie heißt du?"
+    },
+    {
+     "prompt": "Erinnerst du dich an meinen Namen?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p17",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist ein Algorithmus?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p18",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist ein Molekül?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p19",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist Licht?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p20",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist Schwerkraft?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p21",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist der menschliche Körper?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p22",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist Musik?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p23",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist Kunst?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p24",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist Liebe?"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "p25",
+   "kind": "definition",
+   "turns": [
+    {
+     "prompt": "Was ist Gerechtigkeit?"
+    }
+   ],
+   "note": ""
+  }
+ ]
+}
